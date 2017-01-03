@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Buildings>
+
+  <ThingDef Name="BuildingBaseC" Abstract="True">
+    <category>Building</category>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+  </ThingDef>
+	
+  <ThingDef ParentName="BuildingBaseC" Name="Wall">
+    <defName>Fence</defName>
+    <label>fence</label>
+    <thingClass>Building</thingClass>
+    <category>Building</category>
+    <description>A good old fashioned fence.</description>
+    <graphicData>
+      <texPath>Fence/FenceAtlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <linkType>Basic</linkType>
+      <linkFlags>
+        <li>Custom2</li>
+      </linkFlags>
+    </graphicData>	
+    <uiIconPath>Fence/Fence_Menu_Icon</uiIconPath>
+    <blueprintGraphicData>
+      <texPath>Fence/Fence_Blueprint_Atlas</texPath>
+    </blueprintGraphicData>
+		<costStuffCount>8</costStuffCount>
+		<statBases>
+			<MaxHitPoints>225</MaxHitPoints>
+			<WorkToMake>200</WorkToMake>
+			<Flammability>1</Flammability>
+		</statBases>
+    <stuffCategories>
+      <li>Woody</li>
+    </stuffCategories>
+    <altitudeLayer>BuildingTall</altitudeLayer>
+    <passability>Impassable</passability>
+    <castEdgeShadows>true</castEdgeShadows>
+    <fillPercent>0.3</fillPercent>
+    <coversFloor>false</coversFloor>
+    <placingDraggableDimensions>1</placingDraggableDimensions>
+    <tickerType>Never</tickerType>
+    <rotatable>false</rotatable>
+    <selectable>true</selectable>
+    <neverMultiSelect>true</neverMultiSelect>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+    <holdsRoof>false</holdsRoof>
+    <designationCategory>Structure</designationCategory>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <blockLight>true</blockLight>
+    <building>
+      <ignoreNeedsPower>true</ignoreNeedsPower>
+    </building>
+    <damageMultipliers>
+      <li>
+        <damageDef>Bomb</damageDef>
+        <multiplier>3</multiplier>
+      </li>
+    </damageMultipliers>
+  </ThingDef>
+  
+  <!--========================= Doors =============================-->
+
+  <ThingDef ParentName="BuildingBaseC" Name="DoorBase" Abstract="True">
+    <thingClass>Building_Door</thingClass>
+    <blueprintClass>Blueprint_Door</blueprintClass>
+    <category>Building</category>
+    <altitudeLayer>DoorMoveable</altitudeLayer>
+    <fillPercent>1</fillPercent>
+    <useHitPoints>true</useHitPoints>
+    <stuffCategories>
+      <li>Woody</li>
+    </stuffCategories>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <selectable>true</selectable>
+    <tickerType>Normal</tickerType>
+    <size>(1,1)</size>
+    <rotatable>false</rotatable>
+    <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <designationCategory>Structure</designationCategory>
+    <staticSunShadowHeight>1.0</staticSunShadowHeight>
+    <blockLight>true</blockLight>
+    <drawerType>RealtimeOnly</drawerType>
+    <building>
+      <soundDoorOpenPowered>DoorOpenPowered</soundDoorOpenPowered>
+      <soundDoorClosePowered>DoorClosePowered</soundDoorClosePowered>
+      <soundDoorOpenManual>DoorOpenManual</soundDoorOpenManual>
+      <soundDoorCloseManual>DoorCloseManual</soundDoorCloseManual>
+      <ignoreNeedsPower>true</ignoreNeedsPower>
+      <canPlaceOverWall>true</canPlaceOverWall>
+    </building>
+  </ThingDef>
+
+
+
+  <ThingDef ParentName="DoorBase">
+    <defName>FenceGate</defName>
+    <label>fence gate</label>
+    <description>A good old fashioned fence gate.</description>
+    <statBases>
+      <WorkToMake>200</WorkToMake>
+    </statBases>
+    <holdsRoof>false</holdsRoof>
+    <graphicData>
+      <texPath>Fence/FenceGate</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>		
+    <uiIconPath>Fence/FenceGateMenu</uiIconPath>
+    <blueprintGraphicData>
+      <texPath>Fence/FenceGateBlueprint</texPath>
+    </blueprintGraphicData>
+    <costStuffCount>25</costStuffCount>
+  </ThingDef>
+
+</Buildings>

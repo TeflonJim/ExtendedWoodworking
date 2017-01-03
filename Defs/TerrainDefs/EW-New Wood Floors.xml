@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TerrainDefs>
+
+  <TerrainDef Name="FloorBase" Abstract="True">
+    <layerable>true</layerable>
+    <affordances>
+      <li>Light</li>
+      <li>Heavy</li>
+      <li>SmoothHard</li>
+    </affordances>
+    <statBases>
+      <WorkToMake>135</WorkToMake>
+    </statBases>
+    <designationCategory>Floors</designationCategory>
+    <Fertility>0</Fertility>
+    <constructEffect>ConstructDirt</constructEffect>
+    <AcceptTerrainSourceFilth>True</AcceptTerrainSourceFilth>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+  </TerrainDef>
+
+  <TerrainDef Abstract="True" ParentName="FloorBase" Name="WoodFloorBase">
+    <RenderPrecedence>250</RenderPrecedence>
+    <Description>Wood plank flooring. For that warm, homey feeling.</Description>
+    <texturePath>Floor/WoodFloorBase</texturePath>
+    <constructEffect>ConstructWood</constructEffect>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="WoodFloorBase">
+    <DefName>WoodFloor_Oak</DefName>
+    <label>oak wood floor</label>
+    <color>(185,142,96)</color>
+    <CostList>
+      <WoodLog_Oak>6</WoodLog_Oak>
+    </CostList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="WoodFloorBase">
+    <DefName>WoodFloor_Poplar</DefName>
+    <label>poplar wood floor</label>
+    <color>(154,102,59)</color>
+    <CostList>
+      <WoodLog_Poplar>6</WoodLog_Poplar>
+    </CostList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="WoodFloorBase">
+    <DefName>WoodFloor_Pine</DefName>
+    <label>pine wood floor</label>
+    <color>(198,146,68)</color>
+    <CostList>
+      <WoodLog_Pine>6</WoodLog_Pine>
+    </CostList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="WoodFloorBase">
+    <DefName>WoodFloor_Birch</DefName>
+    <label>birch wood floor</label>
+    <color>(235,228,216)</color>
+    <CostList>
+      <WoodLog_Birch>6</WoodLog_Birch>
+    </CostList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="WoodFloorBase">
+    <DefName>WoodFloor_Cecropia</DefName>
+    <label>cecropia wood floor</label>
+    <color>(126,74,63)</color>
+    <CostList>
+      <WoodLog_Cecropia>6</WoodLog_Cecropia>
+    </CostList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="WoodFloorBase">
+    <DefName>WoodFloor_Red</DefName>
+    <label>red painted wood floor</label>
+    <color>(200,0,0)</color>
+    <CostList>
+      <Wood_Red>6</Wood_Red>
+    </CostList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="WoodFloorBase">
+    <DefName>WoodFloor_Green</DefName>
+    <label>green painted wood floor</label>
+    <color>(0,200,0)</color>
+    <CostList>
+      <Wood_Green>6</Wood_Green>
+    </CostList>
+  </TerrainDef>  
+
+  <TerrainDef ParentName="WoodFloorBase">
+    <DefName>WoodFloor_Blue</DefName>
+    <label>blue painted wood floor</label>
+    <color>(0,0,200)</color>
+    <CostList>
+      <Wood_Blue>6</Wood_Blue>
+    </CostList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="WoodFloorBase">
+    <DefName>WoodFloor_Yellow</DefName>
+    <label>yellow painted wood floor</label>
+    <color>(200,200,0)</color>
+    <CostList>
+      <Wood_Yellow>6</Wood_Yellow>
+    </CostList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="WoodFloorBase">
+    <DefName>WoodFloor_White</DefName>
+    <label>white painted wood floor</label>
+    <color>(255,255,255)</color>
+    <CostList>
+      <Wood_White>6</Wood_White>
+    </CostList>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="WoodFloorBase">
+    <DefName>WoodFloor_Black</DefName>
+    <label>black painted wood floor</label>
+    <color>(50,50,50)</color>
+    <CostList>
+      <Wood_Black>6</Wood_Black>
+    </CostList>
+  </TerrainDef>
+  
+</TerrainDefs>
