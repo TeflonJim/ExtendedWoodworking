@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-  <name>Extended Woodworking v1.19c</name>
+  <name>Extended Woodworking</name>
   <author>ItchyFlea</author>
-  <targetVersion>Alpha 13</targetVersion>
+  <targetVersion>0.16.1393</targetVersion>
   <description>This mod changes trees so that when they are cut down, they produce wood of that tree type. Different wood types have slightly different properties.
 
 You can also paint wood to be different colours. The currently available colours are: Red, Green, Blue, Yellow, White, Black.
 This is done at the woodworking table. The woodworking table will also allow you to convert the different wood types into normal wood so you can build various buildings that require normal wood.
-</description>
+    </description>
 </ModMetaData>

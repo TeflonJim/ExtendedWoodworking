@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ThingCategoryDefs>
 
-	  <ThingCategoryDef>
+    <ThingCategoryDef>
         <defName>WoodTypes</defName>
         <label>wood types</label>
         <parent>ResourcesRaw</parent>
         <resourceReadoutRoot>true</resourceReadoutRoot>
         <iconPath>Logs/WoodLog</iconPath>
-      </ThingCategoryDef>
+    </ThingCategoryDef>
 
 </ThingCategoryDefs>

@@ -1,365 +1,364 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Resources>
 
+    <!-- =========== bases =========== -->
 
-  <!-- =========== bases =========== -->
+    <ThingDef Name="ResourceBase" Abstract="True">
+        <thingClass>ThingWithComps</thingClass>
+        <label>unspecified resource</label>
+        <category>Item</category>
+        <resourceReadoutPriority>Middle</resourceReadoutPriority>
+        <useHitPoints>true</useHitPoints>
+        <selectable>true</selectable>
+        <altitudeLayer>Item</altitudeLayer>
+        <stackLimit>75</stackLimit>
+        <comps>
+            <li>
+                <compClass>CompForbiddable</compClass>
+            </li>
+        </comps>
+        <alwaysHaulable>true</alwaysHaulable>
+        <drawGUIOverlay>true</drawGUIOverlay>
+        <rotatable>false</rotatable>
+        <pathCost>15</pathCost>
+    </ThingDef>
 
-  <ThingDef Name="ResourceBase" Abstract="True">
-    <thingClass>ThingWithComps</thingClass>
-    <label>unspecified resource</label>
-    <category>Item</category>
-    <resourceReadoutPriority>Middle</resourceReadoutPriority>
-    <useHitPoints>true</useHitPoints>
-    <selectable>true</selectable>
-    <altitudeLayer>Item</altitudeLayer>
-    <stackLimit>75</stackLimit>
-    <comps>
-      <li>
-        <compClass>CompForbiddable</compClass>
-      </li>
-    </comps>
-    <alwaysHaulable>true</alwaysHaulable>
-    <drawGUIOverlay>true</drawGUIOverlay>
-    <rotatable>false</rotatable>
-    <pathCost>15</pathCost>
-  </ThingDef>
+    <ThingDef Name="ResourceVerbBase" ParentName="ResourceBase" Abstract="True">
+        <equipmentType>Primary</equipmentType>
+        <techLevel>Neolithic</techLevel>
+        <comps>
+            <li>
+                <compClass>CompEquippable</compClass>
+            </li>
+        </comps>
+        <statBases>
+            <DeteriorationRate>1</DeteriorationRate>
+            <MeleeWeapon_DamageAmount>8</MeleeWeapon_DamageAmount>
+            <MeleeWeapon_Cooldown>2.2</MeleeWeapon_Cooldown>
+            <SharpDamageMultiplier>0.3</SharpDamageMultiplier>
+            <BluntDamageMultiplier>0.8</BluntDamageMultiplier>
+        </statBases>
+        <stuffProps>
+            <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
+            <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
+        </stuffProps>
+        <verbs>
+            <li>
+                <verbClass>Verb_MeleeAttack</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <meleeDamageDef>Blunt</meleeDamageDef>
+            </li>
+        </verbs>
+    </ThingDef>
 
-  <ThingDef Name="ResourceVerbBase" ParentName="ResourceBase" Abstract="True">
-    <equipmentType>Primary</equipmentType>
-    <techLevel>Neolithic</techLevel>
-    <comps>
-      <li>
-        <compClass>CompEquippable</compClass>
-      </li>
-    </comps>
-    <statBases>
-      <DeteriorationRate>1</DeteriorationRate>
-      <MeleeWeapon_DamageAmount>8</MeleeWeapon_DamageAmount>
-      <MeleeWeapon_Cooldown>2.2</MeleeWeapon_Cooldown>
-      <SharpDamageMultiplier>0.3</SharpDamageMultiplier>
-      <BluntDamageMultiplier>0.8</BluntDamageMultiplier>
-    </statBases>
-	<stuffProps>
-      <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
-      <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
-    </stuffProps>
-	<verbs>
-      <li>
-        <verbClass>Verb_MeleeAttack</verbClass>
-        <hasStandardCommand>true</hasStandardCommand>
-        <meleeDamageDef>Blunt</meleeDamageDef>
-      </li>
-    </verbs>
-  </ThingDef>
+    <ThingDef ParentName="ResourceVerbBase">
+        <defName>WoodLog</defName>
+        <label>generic Wood</label>
+        <description>The most generic piece of wood you've ever seen. So generic you can't even tell what kind of wood it is.</description>
+        <graphicData>
+            <texPath>Logs/WoodLog</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <color>(133,97,67)</color>
+        </graphicData>
+        <soundInteract>Wood_Drop</soundInteract>
+        <soundDrop>Wood_Drop</soundDrop>
+        <statBases>
+            <MarketValue>1.4</MarketValue>
+            <MaxHitPoints>150</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+            <DeteriorationRate>1</DeteriorationRate>
+            <MeleeWeapon_DamageAmount>8</MeleeWeapon_DamageAmount>
+            <MeleeWeapon_Cooldown>2.2</MeleeWeapon_Cooldown>
+        </statBases>
+        <equippedAngleOffset>-55</equippedAngleOffset>
+        <stuffProps>
+            <stuffAdjective>wooden</stuffAdjective>
+            <categories>
+                <li>Woody</li>
+            </categories>
+            <color>(133,97,67)</color>
+            <constructEffect>ConstructWood</constructEffect>
+            <appearance>Planks</appearance>
+            <soundImpactStuff>BulletImpactWood</soundImpactStuff>
+            <statOffsets>
+                <Beauty>2</Beauty>
+            </statOffsets>
+            <statFactors>
+                <MaxHitPoints>0.5</MaxHitPoints>
+                <Beauty>1.5</Beauty>
+                <Flammability>1</Flammability>
+                <WorkToMake>0.7</WorkToMake>
+                <DoorOpenSpeed>1.2</DoorOpenSpeed>
+                <MeleeWeapon_Cooldown>0.9</MeleeWeapon_Cooldown>
+            </statFactors>
+        </stuffProps>
+        <isBodyPartOrImplant>true</isBodyPartOrImplant>
+        <thingCategories>
+            <li>WoodTypes</li>
+        </thingCategories>
+        <techHediffsTags>
+            <li>Poor</li>
+        </techHediffsTags>
+    </ThingDef>
 
-  <ThingDef ParentName="ResourceVerbBase">
-    <defName>WoodLog</defName>
-    <label>generic Wood</label>
-    <description>The most generic piece of wood you've ever seen. So generic you can't even tell what kind of wood it is.</description>
-    <graphicData>
-      <texPath>Logs/WoodLog</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <color>(133,97,67)</color>
-    </graphicData>
-    <soundInteract>Wood_Drop</soundInteract>
-    <soundDrop>Wood_Drop</soundDrop>
-    <statBases>
-      <MarketValue>1.4</MarketValue>
-      <MaxHitPoints>150</MaxHitPoints>
-      <Flammability>1.0</Flammability>
-      <DeteriorationRate>1</DeteriorationRate>
-      <MeleeWeapon_DamageAmount>8</MeleeWeapon_DamageAmount>
-      <MeleeWeapon_Cooldown>2.2</MeleeWeapon_Cooldown>
-    </statBases>
-    <equippedAngleOffset>-55</equippedAngleOffset>
-    <stuffProps>
-      <stuffAdjective>wooden</stuffAdjective>
-      <categories>
-        <li>Woody</li>
-      </categories>
-      <color>(133,97,67)</color>
-      <constructEffect>ConstructWood</constructEffect>
-      <appearance>Planks</appearance>
-      <soundImpactStuff>BulletImpactWood</soundImpactStuff>
-      <statOffsets>
-        <Beauty>2</Beauty>
-      </statOffsets>
-      <statFactors>
-        <MaxHitPoints>0.5</MaxHitPoints>
-        <Beauty>1.5</Beauty>
-        <Flammability>1</Flammability>
-        <WorkToMake>0.7</WorkToMake>
-        <DoorOpenSpeed>1.2</DoorOpenSpeed>
-        <MeleeWeapon_Cooldown>0.9</MeleeWeapon_Cooldown>
-      </statFactors>
-    </stuffProps>
-    <isBodyPartOrImplant>true</isBodyPartOrImplant>
-    <thingCategories>
-      <li>WoodTypes</li>
-    </thingCategories>
-    <techHediffsTags>
-      <li>Poor</li>
-    </techHediffsTags>
-  </ThingDef>
-  
-  <ThingDef ParentName="ResourceVerbBase">
-    <defName>WoodLog_Oak</defName>
-    <label>oak wood</label>
-    <description>Wood from trees or other woody plants. Useful for building structures, weapons, and even simple prosthetics. A raw of wood can be used as a weapon in a pinch.</description>
-    <graphicData>
-      <texPath>Logs/WoodLog</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <color>(185,142,96)</color>
-    </graphicData>
-    <soundInteract>Wood_Drop</soundInteract>
-    <soundDrop>Wood_Drop</soundDrop>
-    <equippedAngleOffset>-55</equippedAngleOffset>
-    <stuffProps>
-      <stuffAdjective>oak</stuffAdjective>
-      <categories>
-        <li>Woody</li>
-      </categories>
-	  <!-- Oak colour http://www.tikkurila.com/industrial_coatings/wood_finishes/colour_cards/colours_for_wood/tvt_5707.3658.xhtml -->
-      <color>(185,142,96)</color>
-      <constructEffect>ConstructWood</constructEffect>
-      <appearance>Planks</appearance>
-      <soundImpactStuff>BulletImpactWood</soundImpactStuff>
-      <statOffsets>
-        <Beauty>2</Beauty>
-      </statOffsets>
-      <statFactors>
-        <MaxHitPoints>0.75</MaxHitPoints>
-        <Beauty>2.5</Beauty>
-        <Flammability>1</Flammability>
-        <WorkToMake>0.9</WorkToMake>
-        <DoorOpenSpeed>1.1</DoorOpenSpeed>
-        <MeleeWeapon_Cooldown>0.9</MeleeWeapon_Cooldown>
-      </statFactors>
-    </stuffProps>
-    <isBodyPartOrImplant>true</isBodyPartOrImplant>
-    <thingCategories>
-      <li>WoodTypes</li>
-    </thingCategories>
-    <techHediffsTags>
-      <li>Poor</li>
-    </techHediffsTags>
-  </ThingDef>
-  
-  <ThingDef ParentName="ResourceVerbBase">
-    <defName>WoodLog_Poplar</defName>
-    <label>poplar wood</label>
-    <description>Wood from trees or other woody plants. Useful for building structures, weapons, and even simple prosthetics. A raw of wood can be used as a weapon in a pinch.</description>
-    <graphicData>
-      <texPath>Logs/WoodLog</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <color>(184,156,108)</color>
-    </graphicData>
-    <soundInteract>Wood_Drop</soundInteract>
-    <soundDrop>Wood_Drop</soundDrop>
-    <equippedAngleOffset>-55</equippedAngleOffset>
-    <stuffProps>
-      <stuffAdjective>poplar</stuffAdjective>
-      <categories>
-        <li>Woody</li>
-      </categories>
-	  <!-- Poplar colour http://www.wattyl.net.au/WattylWebCS/Orders/Samples.aspx -->
-      <color>(184,156,108)</color>
-      <constructEffect>ConstructWood</constructEffect>
-      <appearance>Planks</appearance>
-      <soundImpactStuff>BulletImpactWood</soundImpactStuff>
-      <statOffsets>
-        <Beauty>2</Beauty>
-      </statOffsets>
-      <statFactors>
-        <MaxHitPoints>0.7</MaxHitPoints>
-        <Beauty>1.5</Beauty>
-        <Flammability>1</Flammability>
-        <WorkToMake>0.9</WorkToMake>
-        <DoorOpenSpeed>1.2</DoorOpenSpeed>
-        <MeleeWeapon_Cooldown>0.9</MeleeWeapon_Cooldown>
-      </statFactors>
-    </stuffProps>
-    <isBodyPartOrImplant>true</isBodyPartOrImplant>
-    <thingCategories>
-      <li>WoodTypes</li>
-    </thingCategories>
-    <techHediffsTags>
-      <li>Poor</li>
-    </techHediffsTags>
-  </ThingDef>
+    <ThingDef ParentName="ResourceVerbBase">
+        <defName>WoodLog_Oak</defName>
+        <label>oak wood</label>
+        <description>Wood from trees or other woody plants. Useful for building structures, weapons, and even simple prosthetics. A raw of wood can be used as a weapon in a pinch.</description>
+        <graphicData>
+            <texPath>Logs/WoodLog</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <color>(185,142,96)</color>
+        </graphicData>
+        <soundInteract>Wood_Drop</soundInteract>
+        <soundDrop>Wood_Drop</soundDrop>
+        <equippedAngleOffset>-55</equippedAngleOffset>
+        <stuffProps>
+            <stuffAdjective>oak</stuffAdjective>
+            <categories>
+                <li>Woody</li>
+            </categories>
+            <!-- Oak colour http://www.tikkurila.com/industrial_coatings/wood_finishes/colour_cards/colours_for_wood/tvt_5707.3658.xhtml -->
+            <color>(185,142,96)</color>
+            <constructEffect>ConstructWood</constructEffect>
+            <appearance>Planks</appearance>
+            <soundImpactStuff>BulletImpactWood</soundImpactStuff>
+            <statOffsets>
+                <Beauty>2</Beauty>
+            </statOffsets>
+            <statFactors>
+                <MaxHitPoints>0.75</MaxHitPoints>
+                <Beauty>2.5</Beauty>
+                <Flammability>1</Flammability>
+                <WorkToMake>0.9</WorkToMake>
+                <DoorOpenSpeed>1.1</DoorOpenSpeed>
+                <MeleeWeapon_Cooldown>0.9</MeleeWeapon_Cooldown>
+            </statFactors>
+        </stuffProps>
+        <isBodyPartOrImplant>true</isBodyPartOrImplant>
+        <thingCategories>
+            <li>WoodTypes</li>
+        </thingCategories>
+        <techHediffsTags>
+            <li>Poor</li>
+        </techHediffsTags>
+    </ThingDef>
 
-  <ThingDef ParentName="ResourceVerbBase">
-    <defName>WoodLog_Pine</defName>
-    <label>pine wood</label>
-    <description>Wood from trees or other woody plants. Useful for building structures, weapons, and even simple prosthetics. A raw of wood can be used as a weapon in a pinch.</description>
-    <graphicData>
-      <texPath>Logs/WoodLog</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <color>(198,146,68)</color>
-    </graphicData>
-    <soundInteract>Wood_Drop</soundInteract>
-    <soundDrop>Wood_Drop</soundDrop>
-    <equippedAngleOffset>-55</equippedAngleOffset>
-    <stuffProps>
-      <stuffAdjective>pine</stuffAdjective>
-      <categories>
-        <li>Woody</li>
-      </categories>
-	  <!-- Pine colour http://www.tikkurila.com/industrial_coatings/wood_finishes/colour_cards/colours_for_wood/tvt_5706.3658.xhtml -->
-      <color>(198,146,68)</color>
-      <constructEffect>ConstructWood</constructEffect>
-      <appearance>Planks</appearance>
-      <soundImpactStuff>BulletImpactWood</soundImpactStuff>
-      <statOffsets>
-        <Beauty>2</Beauty>
-      </statOffsets>
-      <statFactors>
-        <MaxHitPoints>0.6</MaxHitPoints>
-        <Beauty>1.5</Beauty>
-        <Flammability>1</Flammability>
-        <WorkToMake>0.7</WorkToMake>
-        <DoorOpenSpeed>1.2</DoorOpenSpeed>
-        <MeleeWeapon_Cooldown>0.9</MeleeWeapon_Cooldown>
-      </statFactors>
-    </stuffProps>
-    <isBodyPartOrImplant>true</isBodyPartOrImplant>
-    <thingCategories>
-      <li>WoodTypes</li>
-    </thingCategories>
-    <techHediffsTags>
-      <li>Poor</li>
-    </techHediffsTags>
-  </ThingDef>
-  
-  <ThingDef ParentName="ResourceVerbBase">
-    <defName>WoodLog_Birch</defName>
-    <label>birch wood</label>
-    <description>Wood from trees or other woody plants. Useful for building structures, weapons, and even simple prosthetics. A raw of wood can be used as a weapon in a pinch.</description>
-    <graphicData>
-      <texPath>Logs/WoodLog</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <color>(235,228,216)</color>
-    </graphicData>
-    <soundInteract>Wood_Drop</soundInteract>
-    <soundDrop>Wood_Drop</soundDrop>
-    <equippedAngleOffset>-55</equippedAngleOffset>
-    <stuffProps>
-      <stuffAdjective>birch</stuffAdjective>
-      <categories>
-        <li>Woody</li>
-      </categories>
-	  <!-- Snow White colour http://www.tikkurila.com/industrial_coatings/wood_finishes/colour_cards/colours_for_wood/tvt_5716.3658.xhtml -->
-      <color>(235,228,216)</color>
-      <constructEffect>ConstructWood</constructEffect>
-      <appearance>Planks</appearance>
-      <soundImpactStuff>BulletImpactWood</soundImpactStuff>
-      <statOffsets>
-        <Beauty>2</Beauty>
-      </statOffsets>
-      <statFactors>
-        <MaxHitPoints>0.7</MaxHitPoints>
-        <Beauty>1.5</Beauty>
-        <Flammability>1</Flammability>
-        <WorkToMake>0.7</WorkToMake>
-        <DoorOpenSpeed>1.3</DoorOpenSpeed>
-        <MeleeWeapon_Cooldown>0.9</MeleeWeapon_Cooldown>
-      </statFactors>
-    </stuffProps>
-    <isBodyPartOrImplant>true</isBodyPartOrImplant>
-    <thingCategories>
-      <li>WoodTypes</li>
-    </thingCategories>
-    <techHediffsTags>
-      <li>Poor</li>
-    </techHediffsTags>
-  </ThingDef>  
-  
-  <ThingDef ParentName="ResourceVerbBase">
-    <defName>WoodLog_Cecropia</defName>
-    <label>cecropia wood</label>
-    <description>Wood from trees or other woody plants. Useful for building structures, weapons, and even simple prosthetics. A raw of wood can be used as a weapon in a pinch.</description>
-    <graphicData>
-      <texPath>Logs/WoodLog</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <color>(126,74,63)</color>
-    </graphicData>
-    <soundInteract>Wood_Drop</soundInteract>
-    <soundDrop>Wood_Drop</soundDrop>
-    <equippedAngleOffset>-55</equippedAngleOffset>
-    <stuffProps>
-      <stuffAdjective>cecropia</stuffAdjective>
-      <categories>
-        <li>Woody</li>
-      </categories>
-	  <!-- Mahongy colour http://www.tikkurila.com/industrial_coatings/wood_finishes/colour_cards/colours_for_wood/tvt_5713.3658.xhtml -->
-      <color>(126,74,63)</color>
-      <constructEffect>ConstructWood</constructEffect>
-      <appearance>Planks</appearance>
-      <soundImpactStuff>BulletImpactWood</soundImpactStuff>
-      <statOffsets>
-        <Beauty>2</Beauty>
-      </statOffsets>
-      <statFactors>
-        <MaxHitPoints>0.5</MaxHitPoints>
-        <Beauty>1.5</Beauty>
-        <Flammability>1</Flammability>
-        <WorkToMake>0.7</WorkToMake>
-        <DoorOpenSpeed>1.2</DoorOpenSpeed>
-        <MeleeWeapon_Cooldown>0.9</MeleeWeapon_Cooldown>
-      </statFactors>
-    </stuffProps>
-    <isBodyPartOrImplant>true</isBodyPartOrImplant>
-    <thingCategories>
-      <li>WoodTypes</li>
-    </thingCategories>
-    <techHediffsTags>
-      <li>Poor</li>
-    </techHediffsTags>
-  </ThingDef>
-  
-  <ThingDef ParentName="ResourceVerbBase">
-    <defName>WoodLog_Teak</defName>
-    <label>teak wood</label>
-    <description>Wood from trees or other woody plants. Useful for building structures, weapons, and even simple prosthetics. A raw of wood can be used as a weapon in a pinch.</description>
-    <graphicData>
-      <texPath>Logs/WoodLog</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <color>(154,102,59)</color>
-    </graphicData>
-    <soundInteract>Wood_Drop</soundInteract>
-    <soundDrop>Wood_Drop</soundDrop>
-    <equippedAngleOffset>-55</equippedAngleOffset>
-    <stuffProps>
-      <stuffAdjective>teak</stuffAdjective>
-      <categories>
-        <li>Woody</li>
-      </categories>
-	  <!-- Teak colour http://www.tikkurila.com/industrial_coatings/wood_finishes/colour_cards/colours_for_wood/tvt_5710.3658.xhtml -->
-      <color>(154,102,59)</color>
-      <constructEffect>ConstructWood</constructEffect>
-      <appearance>Planks</appearance>
-      <soundImpactStuff>BulletImpactWood</soundImpactStuff>
-      <statOffsets>
-        <Beauty>2</Beauty>
-      </statOffsets>
-      <statFactors>
-        <MaxHitPoints>0.7</MaxHitPoints>
-        <Beauty>1.5</Beauty>
-        <Flammability>1</Flammability>
-        <WorkToMake>0.9</WorkToMake>
-        <DoorOpenSpeed>1.2</DoorOpenSpeed>
-        <MeleeWeapon_Cooldown>0.9</MeleeWeapon_Cooldown>
-      </statFactors>
-    </stuffProps>
-    <isBodyPartOrImplant>true</isBodyPartOrImplant>
-    <thingCategories>
-      <li>WoodTypes</li>
-    </thingCategories>
-    <techHediffsTags>
-      <li>Poor</li>
-    </techHediffsTags>
-  </ThingDef>
-  
+    <ThingDef ParentName="ResourceVerbBase">
+        <defName>WoodLog_Poplar</defName>
+        <label>poplar wood</label>
+        <description>Wood from trees or other woody plants. Useful for building structures, weapons, and even simple prosthetics. A raw of wood can be used as a weapon in a pinch.</description>
+        <graphicData>
+            <texPath>Logs/WoodLog</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <color>(184,156,108)</color>
+        </graphicData>
+        <soundInteract>Wood_Drop</soundInteract>
+        <soundDrop>Wood_Drop</soundDrop>
+        <equippedAngleOffset>-55</equippedAngleOffset>
+        <stuffProps>
+            <stuffAdjective>poplar</stuffAdjective>
+            <categories>
+                <li>Woody</li>
+            </categories>
+            <!-- Poplar colour http://www.wattyl.net.au/WattylWebCS/Orders/Samples.aspx -->
+            <color>(184,156,108)</color>
+            <constructEffect>ConstructWood</constructEffect>
+            <appearance>Planks</appearance>
+            <soundImpactStuff>BulletImpactWood</soundImpactStuff>
+            <statOffsets>
+                <Beauty>2</Beauty>
+            </statOffsets>
+            <statFactors>
+                <MaxHitPoints>0.7</MaxHitPoints>
+                <Beauty>1.5</Beauty>
+                <Flammability>1</Flammability>
+                <WorkToMake>0.9</WorkToMake>
+                <DoorOpenSpeed>1.2</DoorOpenSpeed>
+                <MeleeWeapon_Cooldown>0.9</MeleeWeapon_Cooldown>
+            </statFactors>
+        </stuffProps>
+        <isBodyPartOrImplant>true</isBodyPartOrImplant>
+        <thingCategories>
+            <li>WoodTypes</li>
+        </thingCategories>
+        <techHediffsTags>
+            <li>Poor</li>
+        </techHediffsTags>
+    </ThingDef>
+
+    <ThingDef ParentName="ResourceVerbBase">
+        <defName>WoodLog_Pine</defName>
+        <label>pine wood</label>
+        <description>Wood from trees or other woody plants. Useful for building structures, weapons, and even simple prosthetics. A raw of wood can be used as a weapon in a pinch.</description>
+        <graphicData>
+            <texPath>Logs/WoodLog</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <color>(198,146,68)</color>
+        </graphicData>
+        <soundInteract>Wood_Drop</soundInteract>
+        <soundDrop>Wood_Drop</soundDrop>
+        <equippedAngleOffset>-55</equippedAngleOffset>
+        <stuffProps>
+            <stuffAdjective>pine</stuffAdjective>
+            <categories>
+                <li>Woody</li>
+            </categories>
+            <!-- Pine colour http://www.tikkurila.com/industrial_coatings/wood_finishes/colour_cards/colours_for_wood/tvt_5706.3658.xhtml -->
+            <color>(198,146,68)</color>
+            <constructEffect>ConstructWood</constructEffect>
+            <appearance>Planks</appearance>
+            <soundImpactStuff>BulletImpactWood</soundImpactStuff>
+            <statOffsets>
+                <Beauty>2</Beauty>
+            </statOffsets>
+            <statFactors>
+                <MaxHitPoints>0.6</MaxHitPoints>
+                <Beauty>1.5</Beauty>
+                <Flammability>1</Flammability>
+                <WorkToMake>0.7</WorkToMake>
+                <DoorOpenSpeed>1.2</DoorOpenSpeed>
+                <MeleeWeapon_Cooldown>0.9</MeleeWeapon_Cooldown>
+            </statFactors>
+        </stuffProps>
+        <isBodyPartOrImplant>true</isBodyPartOrImplant>
+        <thingCategories>
+            <li>WoodTypes</li>
+        </thingCategories>
+        <techHediffsTags>
+            <li>Poor</li>
+        </techHediffsTags>
+    </ThingDef>
+
+    <ThingDef ParentName="ResourceVerbBase">
+        <defName>WoodLog_Birch</defName>
+        <label>birch wood</label>
+        <description>Wood from trees or other woody plants. Useful for building structures, weapons, and even simple prosthetics. A raw of wood can be used as a weapon in a pinch.</description>
+        <graphicData>
+            <texPath>Logs/WoodLog</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <color>(235,228,216)</color>
+        </graphicData>
+        <soundInteract>Wood_Drop</soundInteract>
+        <soundDrop>Wood_Drop</soundDrop>
+        <equippedAngleOffset>-55</equippedAngleOffset>
+        <stuffProps>
+            <stuffAdjective>birch</stuffAdjective>
+            <categories>
+                <li>Woody</li>
+            </categories>
+            <!-- Snow White colour http://www.tikkurila.com/industrial_coatings/wood_finishes/colour_cards/colours_for_wood/tvt_5716.3658.xhtml -->
+            <color>(235,228,216)</color>
+            <constructEffect>ConstructWood</constructEffect>
+            <appearance>Planks</appearance>
+            <soundImpactStuff>BulletImpactWood</soundImpactStuff>
+            <statOffsets>
+                <Beauty>2</Beauty>
+            </statOffsets>
+            <statFactors>
+                <MaxHitPoints>0.7</MaxHitPoints>
+                <Beauty>1.5</Beauty>
+                <Flammability>1</Flammability>
+                <WorkToMake>0.7</WorkToMake>
+                <DoorOpenSpeed>1.3</DoorOpenSpeed>
+                <MeleeWeapon_Cooldown>0.9</MeleeWeapon_Cooldown>
+            </statFactors>
+        </stuffProps>
+        <isBodyPartOrImplant>true</isBodyPartOrImplant>
+        <thingCategories>
+            <li>WoodTypes</li>
+        </thingCategories>
+        <techHediffsTags>
+            <li>Poor</li>
+        </techHediffsTags>
+    </ThingDef>  
+
+    <ThingDef ParentName="ResourceVerbBase">
+        <defName>WoodLog_Cecropia</defName>
+        <label>cecropia wood</label>
+        <description>Wood from trees or other woody plants. Useful for building structures, weapons, and even simple prosthetics. A raw of wood can be used as a weapon in a pinch.</description>
+        <graphicData>
+            <texPath>Logs/WoodLog</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <color>(126,74,63)</color>
+        </graphicData>
+        <soundInteract>Wood_Drop</soundInteract>
+        <soundDrop>Wood_Drop</soundDrop>
+        <equippedAngleOffset>-55</equippedAngleOffset>
+        <stuffProps>
+            <stuffAdjective>cecropia</stuffAdjective>
+            <categories>
+                <li>Woody</li>
+            </categories>
+            <!-- Mahongy colour http://www.tikkurila.com/industrial_coatings/wood_finishes/colour_cards/colours_for_wood/tvt_5713.3658.xhtml -->
+            <color>(126,74,63)</color>
+            <constructEffect>ConstructWood</constructEffect>
+            <appearance>Planks</appearance>
+            <soundImpactStuff>BulletImpactWood</soundImpactStuff>
+            <statOffsets>
+                <Beauty>2</Beauty>
+            </statOffsets>
+            <statFactors>
+                <MaxHitPoints>0.5</MaxHitPoints>
+                <Beauty>1.5</Beauty>
+                <Flammability>1</Flammability>
+                <WorkToMake>0.7</WorkToMake>
+                <DoorOpenSpeed>1.2</DoorOpenSpeed>
+                <MeleeWeapon_Cooldown>0.9</MeleeWeapon_Cooldown>
+            </statFactors>
+        </stuffProps>
+        <isBodyPartOrImplant>true</isBodyPartOrImplant>
+        <thingCategories>
+            <li>WoodTypes</li>
+        </thingCategories>
+        <techHediffsTags>
+            <li>Poor</li>
+        </techHediffsTags>
+    </ThingDef>
+
+    <ThingDef ParentName="ResourceVerbBase">
+        <defName>WoodLog_Teak</defName>
+        <label>teak wood</label>
+        <description>Wood from trees or other woody plants. Useful for building structures, weapons, and even simple prosthetics. A raw of wood can be used as a weapon in a pinch.</description>
+        <graphicData>
+            <texPath>Logs/WoodLog</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <color>(154,102,59)</color>
+        </graphicData>
+        <soundInteract>Wood_Drop</soundInteract>
+        <soundDrop>Wood_Drop</soundDrop>
+        <equippedAngleOffset>-55</equippedAngleOffset>
+        <stuffProps>
+            <stuffAdjective>teak</stuffAdjective>
+            <categories>
+                <li>Woody</li>
+            </categories>
+            <!-- Teak colour http://www.tikkurila.com/industrial_coatings/wood_finishes/colour_cards/colours_for_wood/tvt_5710.3658.xhtml -->
+            <color>(154,102,59)</color>
+            <constructEffect>ConstructWood</constructEffect>
+            <appearance>Planks</appearance>
+            <soundImpactStuff>BulletImpactWood</soundImpactStuff>
+            <statOffsets>
+                <Beauty>2</Beauty>
+            </statOffsets>
+            <statFactors>
+                <MaxHitPoints>0.7</MaxHitPoints>
+                <Beauty>1.5</Beauty>
+                <Flammability>1</Flammability>
+                <WorkToMake>0.9</WorkToMake>
+                <DoorOpenSpeed>1.2</DoorOpenSpeed>
+                <MeleeWeapon_Cooldown>0.9</MeleeWeapon_Cooldown>
+            </statFactors>
+        </stuffProps>
+        <isBodyPartOrImplant>true</isBodyPartOrImplant>
+        <thingCategories>
+            <li>WoodTypes</li>
+        </thingCategories>
+        <techHediffsTags>
+            <li>Poor</li>
+        </techHediffsTags>
+    </ThingDef>
+
 <!-- Below this line are bits and pieces so that this works with Igabod's Xtra Plants mod -->
-  
+
 </Resources>
