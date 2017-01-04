@@ -51,6 +51,7 @@ Copy-RWModDef @commonParams -NewName 'WoodLog_Oak' -Update @{
     'stuffProps.statFactors.Beauty'        = 2.5
     'stuffProps.statFactors.WorkToMake'    = 0.9
     'stuffProps.statFactors.DoorOpenSpeed' = 1.1
+    'stuffProps.stuffAdjective'            = 'oak'
     thingCategories                        = @('WoodTypes')
 }
 
@@ -64,6 +65,7 @@ Copy-RWModDef @commonParams -NewName WoodLog_Poplar -Update @{
     'stuffProps.statFactors.Beauty'        = 1.5
     'stuffProps.statFactors.WorkToMake'    = 0.9
     'stuffProps.statFactors.DoorOpenSpeed' = 1.2
+    'stuffProps.stuffAdjective'            = 'poplar'
     thingCategories                        = @('WoodTypes')
 }
 
@@ -77,6 +79,7 @@ Copy-RWModDef @commonParams -NewName WoodLog_Pine -Update @{
     'stuffProps.statFactors.Beauty'        = 1.5
     'stuffProps.statFactors.WorkToMake'    = 0.7
     'stuffProps.statFactors.DoorOpenSpeed' = 1.2
+    'stuffProps.stuffAdjective'            = 'pine'
     thingCategories                        = @('WoodTypes')
 }
 
@@ -90,6 +93,7 @@ Copy-RWModDef @commonParams -NewName WoodLog_Birch -Update @{
     'stuffProps.statFactors.Beauty'        = 1.5
     'stuffProps.statFactors.WorkToMake'    = 0.7
     'stuffProps.statFactors.DoorOpenSpeed' = 1.3
+    'stuffProps.stuffAdjective'            = 'birch'
     thingCategories                        = @('WoodTypes')
 }
 
@@ -103,6 +107,7 @@ Copy-RWModDef @commonParams -NewName WoodLog_Cecropia -Update @{
     'stuffProps.statFactors.Beauty'        = 1.5
     'stuffProps.statFactors.WorkToMake'    = 0.7
     'stuffProps.statFactors.DoorOpenSpeed' = 1.2
+    'stuffProps.stuffAdjective'            = 'cecropia'
     thingCategories                        = @('WoodTypes')
 }
 
@@ -116,6 +121,7 @@ Copy-RWModDef @commonParams -NewName WoodLog_Teak -Update @{
     'stuffProps.statFactors.Beauty'        = 1.5
     'stuffProps.statFactors.WorkToMake'    = 0.9
     'stuffProps.statFactors.DoorOpenSpeed' = 1.2
+    'stuffProps.stuffAdjective'            = 'teak'
     thingCategories                        = @('WoodTypes')
 }
 
@@ -129,11 +135,12 @@ $commonParams = @{
 
 foreach ($colour in $painted.Keys) {
     Copy-RWModDef @commonParams -NewName "WoodLog_$colour" -Update @{
-        ParentName          = 'ResourceBasePainted'
-        label               = "$($colour.ToLower()) painted wood"
-        description         = 'Wood that has been painted $($colour.ToLower()).'
-        'graphicData.color' = $painted.$colour
-        'stuffProps.color'  = $painted.$colour
-        thingCategories     = @('WoodTypes')
+        ParentName                  = 'ResourceBasePainted'
+        label                       = "$($colour.ToLower()) painted wood"
+        description                 = 'Wood that has been painted $($colour.ToLower()).'
+        'graphicData.color'         = $painted.$colour
+        'stuffProps.color'          = $painted.$colour
+        'stuffProps.stuffAdjective' = 'painted'
+        thingCategories             = @('WoodTypes')
     }
 }
