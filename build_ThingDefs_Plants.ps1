@@ -6,7 +6,7 @@
 
 $commonParams = @{
     DefType = 'ThingDefs_Plants'
-    SaveAs  = "$psscriptroot\build\Defs\ThingDefs_Plants\EW-Base.xml"
+    SaveAs  = "$build\Defs\ThingDefs_Plants\EW-Base.xml"
 }
 
 Copy-RWModDef @commonParams -Name 'Core\PlantBase'
@@ -16,7 +16,7 @@ Copy-RWModDef @commonParams -Name 'Core\TreeBase'
 
 $commonParams = @{
     DefType = 'ThingDefs_Plants'
-    SaveAs  = "$psscriptroot\build\Defs\ThingDefs_Plants\EW-Trees.xml"
+    SaveAs  = "$build\Defs\ThingDefs_Plants\EW-Trees.xml"
 }
 
 foreach ($woodType in $natural.Keys) {

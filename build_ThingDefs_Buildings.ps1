@@ -4,7 +4,7 @@
 
 # Base
 
-$path = "$psscriptroot\build\Defs\ThingDefs_Buildings\EW-Base.xml"
+$path = "$build\Defs\ThingDefs_Buildings\EW-Base.xml"
 
 $commonParams = @{
     Name    = 'Core\BuildingBase'
@@ -35,7 +35,7 @@ Copy-RWModDef @params
 $params = @{
     Name    = 'Core\Campfire'
     DefType = 'ThingDefs_Buildings'
-    SaveAs  = "$psscriptroot\build\Defs\ThingDefs_Buildings\EW-Temperature.xml"
+    SaveAs  = "$build\Defs\ThingDefs_Buildings\EW-Temperature.xml"
     Remove  = 'costList'
     Update  = @{
         ParentName                                             = 'BuildingBaseNoResources'
@@ -51,7 +51,7 @@ Copy-RWModDef @params
 $params = @{
     Name    = 'Core\FueledGenerator'
     DefType = 'ThingDefs_Buildings'
-    SaveAs  = "$psscriptroot\build\Defs\ThingDefs_Buildings\EW-Power.xml"
+    SaveAs  = "$build\Defs\ThingDefs_Buildings\EW-Power.xml"
     Update  = @{
         'comps.CompProperties_Refuelable.fuelFilter.thingDefs' = $allWood
     }
