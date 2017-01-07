@@ -19,7 +19,7 @@ $commonParams = @{
     SaveAs  = "$build\Defs\ThingDefs_Plants\EW-Trees.xml"
 }
 
-foreach ($woodType in $natural.Keys) {
+foreach ($woodType in $natural) {
     Copy-RWModDef @commonParams -Name "Core\PlantTree$woodType" -Update @{
         'plant.harvestedThingDef' = "WoodLog_$woodType"
     }
