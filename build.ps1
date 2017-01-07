@@ -1,4 +1,6 @@
-﻿param(
+﻿#Requires -Module Indented.RimWorld
+
+param(
     [ValidateSet('Major', 'Minor', 'Build')]
     [String]$ReleaseType = 'Build'
 )
@@ -170,9 +172,8 @@ try {
     throw
 }
 
-
 #
-# Packaging
+# Release packaging
 #
 
 Write-Host
@@ -182,4 +183,13 @@ Get-ChildItem "$psscriptroot\build" -Directory | ForEach-Object {
     Write-Host "    $($_.Name)" -ForegroundColor Cyan
     
     Compress-Archive -Path $_.FullName -DestinationPath "$psscriptroot\build\$($_.Name).zip"
+}
+
+#
+# Push to Mods
+#
+
+$path = (Get-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 294100' -Name 'InstallLocation').InstallLocation
+Get-ChildItem "$psscriptroot\build" -Directory | ForEach-Object {
+    Copy-Item $_.FullName "$path\Mods" -Recurse -Force
 }
