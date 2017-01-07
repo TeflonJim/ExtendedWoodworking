@@ -19,7 +19,7 @@ function Invoke-BuildStep {
         try {
             . "$psscriptroot\build_$_.ps1"
         } catch {
-            $result = 'Failed'
+            $result = 'Fail'
             $messageColor = 'Red'
 
             throw
