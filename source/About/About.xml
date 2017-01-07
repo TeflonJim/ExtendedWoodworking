@@ -3,9 +3,17 @@
   <name>Extended Woodworking</name>
   <author>ItchyFlea</author>
   <targetVersion>0.16.1393</targetVersion>
-  <description>This mod changes trees so that when they are cut down, they produce wood of that tree type. Different wood types have slightly different properties.
+  <description>
+This is an update of the Extended Woodworking mod (A13) for A16. All credit for the original creative work goes to ItchyFlea.
 
-You can also paint wood to be different colours. The currently available colours are: Red, Green, Blue, Yellow, White, Black.
-This is done at the woodworking table. The woodworking table will also allow you to convert the different wood types into normal wood so you can build various buildings that require normal wood.
+https://ludeon.com/forums/index.php?topic=7893.0
+
+The Vegetable Garden version of this mod must be loaded after Vegetable Garden (XML changes only).
+
+This mod changes trees so that when they are cut down, they produce wood of that tree type. Different wood types have slightly different properties.
+
+Wood may be painted in different colours. The available colours are: Red, Green, Blue, Yellow, White, Black.
+
+A Woodworking table is available to paint wood or convert specific types of wood to the original wood type (generic wood).
     </description>
 </ModMetaData>

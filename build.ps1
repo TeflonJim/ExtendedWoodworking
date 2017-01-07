@@ -117,6 +117,8 @@ $build = "$psscriptroot\build\ExtendedWoodworking"
 $null = New-Item $build -ItemType Directory
 Copy-Item "$psscriptroot\source\*" $build -Recurse
 
+Set-Content $build\About\PublishedFileId.txt -Value '836912371'
+
 $natural = 'Oak',
            'Poplar',
            'Pine',
@@ -151,6 +153,8 @@ $build = "$psscriptroot\build\ExtendedWoodworking_VG"
 
 $null = New-Item $build -ItemType Directory
 Copy-Item "$psscriptroot\source\*" $build -Recurse
+
+Set-Content $build\About\PublishedFileId.txt -Value '836915139'
 
 $XDocument = [System.Xml.Linq.XDocument]::Load("$build\About\About.xml")
 $XDocument.Element('ModMetaData').Element('name').SetValue('Extended Woodworking for Vegetable Garden')
