@@ -48,10 +48,10 @@ foreach ($woodType in $natural) {
         'graphicData.graphicClass'             = 'Graphic_Single'
         'graphicData.color'                    = $colours.$woodType
         'stuffProps.color'                     = $colours.$woodType
-        'stuffProps.statFactors.MaxHitPoints'  = $woodLogStats.$woodType.MaxHitPoints
-        'stuffProps.statFactors.Beauty'        = $woodLogStats.$woodType.MaxHitPoints
-        'stuffProps.statFactors.WorkToMake'    = $woodLogStats.$woodType.MaxHitPoints
-        'stuffProps.statFactors.DoorOpenSpeed' = $woodLogStats.$woodType.MaxHitPoints
+        'stuffProps.statFactors.MaxHitPoints'  = $woodStats.$woodType.MaxHitPoints
+        'stuffProps.statFactors.Beauty'        = $woodStats.$woodType.MaxHitPoints
+        'stuffProps.statFactors.WorkToMake'    = $woodStats.$woodType.MaxHitPoints
+        'stuffProps.statFactors.DoorOpenSpeed' = $woodStats.$woodType.MaxHitPoints
         'stuffProps.stuffAdjective'            = $woodType.ToLower()
         thingCategories                        = @('WoodTypes')
     }

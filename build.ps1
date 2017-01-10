@@ -84,19 +84,19 @@ $colours = @{
 
 # Stats need fixing up.
 
-$woodLogStats = @{
-    Oak           = [PSCustomObject]@{ MaxHitPoints = 0.75; Beauty = 2.5; WorkToMake = 0.9; DoorOpenSpeed = 1.1 }
-    Poplar        = [PSCustomObject]@{ MaxHitPoints = 0.7;  Beauty = 1.5; WorkToMake = 0.7; DoorOpenSpeed = 1.2 }
-    Pine          = [PSCustomObject]@{ MaxHitPoints = 0.6;  Beauty = 1.5; WorkToMake = 0.7; DoorOpenSpeed = 1.2 }
-    Birch         = [PSCustomObject]@{ MaxHitPoints = 0.7;  Beauty = 1.5; WorkToMake = 0.7; DoorOpenSpeed = 1.3 }
-    Cecropia      = [PSCustomObject]@{ MaxHitPoints = 0.5;  Beauty = 1.5; WorkToMake = 0.7; DoorOpenSpeed = 1.2 }
-    Teak          = [PSCustomObject]@{ MaxHitPoints = 0.7;  Beauty = 1.5; WorkToMake = 0.9; DoorOpenSpeed = 1.2 }
-    WeepingWillow = [PSCustomObject]@{ MaxHitPoints = 0.2;  Beauty = 1.3; WorkToMake = 0.5; DoorOpenSpeed = 1.6 }
-    JapaneseMaple = [PSCustomObject]@{ MaxHitPoints = 0.6;  Beauty = 1.5; WorkToMake = 0.7; DoorOpenSpeed = 1.2 }
-    CherryBlossom = [PSCustomObject]@{ MaxHitPoints = 0.6;  Beauty = 1.5; WorkToMake = 0.7; DoorOpenSpeed = 1.2 }
-    Camellia      = [PSCustomObject]@{ MaxHitPoints = 0.6;  Beauty = 1.5; WorkToMake = 0.7; DoorOpenSpeed = 1.2 }
-    Acacia        = [PSCustomObject]@{ MaxHitPoints = 0.6;  Beauty = 1.5; WorkToMake = 0.7; DoorOpenSpeed = 1.2 }
-    Palm          = [PSCustomObject]@{ MaxHitPoints = 0.6;  Beauty = 1.5; WorkToMake = 0.7; DoorOpenSpeed = 1.2 }
+$woodStats = @{
+    Oak           = [PSCustomObject]@{ MaxHitPoints = 0.75; StructuralBeauty = 2.5; WorkToMake = 0.9; DoorOpenSpeed = 1.1 }
+    Poplar        = [PSCustomObject]@{ MaxHitPoints = 0.7;  StructuralBeauty = 1.5; WorkToMake = 0.7; DoorOpenSpeed = 1.2 }
+    Pine          = [PSCustomObject]@{ MaxHitPoints = 0.6;  StructuralBeauty = 1.5; WorkToMake = 0.7; DoorOpenSpeed = 1.2 }
+    Birch         = [PSCustomObject]@{ MaxHitPoints = 0.6;  StructuralBeauty = 1.5; WorkToMake = 0.7; DoorOpenSpeed = 1.3 }
+    Cecropia      = [PSCustomObject]@{ MaxHitPoints = 0.5;  StructuralBeauty = 1;   WorkToMake = 0.5; DoorOpenSpeed = 1.2 }
+    Teak          = [PSCustomObject]@{ MaxHitPoints = 0.7;  StructuralBeauty = 2.5; WorkToMake = 1.1; DoorOpenSpeed = 1.2 }
+    WeepingWillow = [PSCustomObject]@{ MaxHitPoints = 0.2;  StructuralBeauty = 0.5; WorkToMake = 0.5; DoorOpenSpeed = 1.6 }
+    JapaneseMaple = [PSCustomObject]@{ MaxHitPoints = 0.6;  StructuralBeauty = 1.5; WorkToMake = 0.5; DoorOpenSpeed = 1.2 }
+    CherryBlossom = [PSCustomObject]@{ MaxHitPoints = 0.7;  StructuralBeauty = 1;   WorkToMake = 0.7; DoorOpenSpeed = 1.2 }
+    Camellia      = [PSCustomObject]@{ MaxHitPoints = 0.6;  StructuralBeauty = 2;   WorkToMake = 0.7; DoorOpenSpeed = 1.2 }
+    Acacia        = [PSCustomObject]@{ MaxHitPoints = 0.3;  StructuralBeauty = 1.5; WorkToMake = 0.7; DoorOpenSpeed = 1.2 }
+    Palm          = [PSCustomObject]@{ MaxHitPoints = 0.6;  StructuralBeauty = 1.5; WorkToMake = 0.7; DoorOpenSpeed = 1.2 }
 }
 
 #
@@ -134,7 +134,6 @@ $painted = 'Red',
            'Black'
 
 $allWood = @('WoodLog') + @($natural + $painted | ForEach-Object { 'WoodLog_{0}' -f $_ })
-
 
 try {
     'RecipeDefs', 'TerrainDefs', 'ThingDefs_Buildings', 'ThingDefs_Items', 'ThingDefs_Plants' | Invoke-BuildStep
