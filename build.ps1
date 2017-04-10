@@ -74,6 +74,7 @@ $colours = @{
     Camellia      = '(201, 160, 130)'
     Acacia        = '(219, 184, 144)'
     Palm          = '(224, 150, 87)'
+    RedMaple      = '(222, 197, 167)'
     Red           = '(200,0,0)'
     Green         = '(0,200,0)'
     Blue          = '(0,0,200)'
@@ -97,6 +98,7 @@ $woodStats = @{
     Camellia      = [PSCustomObject]@{ MaxHitPoints = 0.6;  StructuralBeauty = 2;   WorkToMake = 0.7; DoorOpenSpeed = 1.2 }
     Acacia        = [PSCustomObject]@{ MaxHitPoints = 0.3;  StructuralBeauty = 1.5; WorkToMake = 0.7; DoorOpenSpeed = 1.2 }
     Palm          = [PSCustomObject]@{ MaxHitPoints = 0.6;  StructuralBeauty = 1.5; WorkToMake = 0.7; DoorOpenSpeed = 1.2 }
+    RedMaple      = [PSCustomObject]@{ MaxHitPoints = 0.3;  StructuralBeauty = 1.5; WorkToMake = 0.5; DoorOpenSpped = 1.2 }
 }
 
 #
@@ -164,7 +166,8 @@ $natural += 'WeepingWillow',
             'CherryBlossom',
             'Camellia',
             'Acacia',
-            'Palm'
+            'Palm',
+            'RedMaple'
 
 $allWood = @('WoodLog') + @($natural + $painted | ForEach-Object { 'WoodLog_{0}' -f $_ })
 
