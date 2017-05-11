@@ -150,33 +150,33 @@ try {
 Write-Host
 Write-Host "Building Extended Woodworking for Vegetable Garden" -ForegroundColor White
 
-$build = "$psscriptroot\build\ExtendedWoodworking_VG"
-
-$null = New-Item $build -ItemType Directory
-Copy-Item "$psscriptroot\source\*" $build -Recurse
-
-Set-Content $build\About\PublishedFileId.txt -Value '836915139'
-
-$XDocument = [System.Xml.Linq.XDocument]::Load("$build\About\About.xml")
-$XDocument.Element('ModMetaData').Element('name').SetValue('Extended Woodworking for Vegetable Garden')
-$XDocument.Save("$build\About\About.xml")
-
-$natural += 'WeepingWillow',
-            'JapaneseMaple',
-            'CherryBlossom',
-            'Camellia',
-            'Acacia',
-            'Palm',
-            'RedMaple'
-
-$allWood = @('WoodLog') + @($natural + $painted | ForEach-Object { 'WoodLog_{0}' -f $_ })
-
-try {
-    'RecipeDefs', 'TerrainDefs', 'ThingDefs_Buildings', 'ThingDefs_Items', 'ThingDefs_Plants_VegetableGarden' |
-        Invoke-BuildStep
-} catch {
-    throw
-}
+#$build = "$psscriptroot\build\ExtendedWoodworking_VG"
+#
+#$null = New-Item $build -ItemType Directory
+#Copy-Item "$psscriptroot\source\*" $build -Recurse
+#
+#Set-Content $build\About\PublishedFileId.txt -Value '836915139'
+#
+#$XDocument = [System.Xml.Linq.XDocument]::Load("$build\About\About.xml")
+#$XDocument.Element('ModMetaData').Element('name').SetValue('Extended Woodworking for Vegetable Garden')
+#$XDocument.Save("$build\About\About.xml")
+#
+#$natural += 'WeepingWillow',
+#            'JapaneseMaple',
+#            'CherryBlossom',
+#            'Camellia',
+#            'Acacia',
+#            'Palm',
+#            'RedMaple'
+#
+#$allWood = @('WoodLog') + @($natural + $painted | ForEach-Object { 'WoodLog_{0}' -f $_ })
+#
+#try {
+#    'RecipeDefs', 'TerrainDefs', 'ThingDefs_Buildings', 'ThingDefs_Items', 'ThingDefs_Plants_VegetableGarden' |
+#        Invoke-BuildStep
+#} catch {
+#    throw
+#}
 
 #
 # Release packaging
