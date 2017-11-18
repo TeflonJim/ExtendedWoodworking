@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<Buildings>
+<Defs>
 
     <ThingDef ParentName="BuildingBaseNoResources" Name="Wall">
         <defName>Fence</defName>
@@ -44,7 +44,7 @@
         <staticSunShadowHeight>1.0</staticSunShadowHeight>
         <blockLight>false</blockLight>
         <building>
-            <ignoreNeedsPower>true</ignoreNeedsPower>
+            <isInert>true</isInert>
         </building>
         <damageMultipliers>
             <li>
@@ -73,4 +73,4 @@
         <costStuffCount>25</costStuffCount>
     </ThingDef>
 
-</Buildings>
+</Defs>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ThingCategoryDefs>
+<Defs>
 
     <ThingCategoryDef>
         <defName>WoodTypes</defName>
@@ -9,4 +9,4 @@
         <iconPath>Logs/WoodLog</iconPath>
     </ThingCategoryDef>
 
-</ThingCategoryDefs>
+</Defs>

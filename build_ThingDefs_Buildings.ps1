@@ -49,7 +49,7 @@ Copy-RWModDef @params
 # FuelGen
 
 $params = @{
-    Name    = 'Core\FueledGenerator'
+    Name    = 'Core\WoodFiredGenerator'
     DefType = 'ThingDefs_Buildings'
     SaveAs  = "$build\Defs\ThingDefs_Buildings\EW-Power.xml"
     Update  = @{

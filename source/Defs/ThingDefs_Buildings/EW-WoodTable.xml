@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ThingDefs>
+<Defs>
 
     <ThingDef Name="BuildingBaseB" Abstract="True">
         <category>Building</category>
@@ -11,28 +11,28 @@
     </ThingDef>
 
     <ThingDef ParentName="BuildingBaseB">
-        <DefName>TableWoodworking</DefName>
+        <defName>TableWoodworking</defName>
         <label>woodworking table</label>
-        <ThingClass>Building_WorkTable_HeatPush</ThingClass>
-        <Description>A small woodworking table.</Description>
+        <thingClass>Building_WorkTable_HeatPush</thingClass>
+        <description>A small woodworking table.</description>
         <graphicData>
             <texPath>sawmill</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <drawSize>(3,1)</drawSize>
         </graphicData>
-        <CostList>
+        <costList>
             <Steel>30</Steel>
-        </CostList>
-        <AltitudeLayer>Building</AltitudeLayer>
+        </costList>
+        <altitudeLayer>Building</altitudeLayer>
         <statBases>
             <MaxHitPoints>180</MaxHitPoints>
             <WorkToMake>850</WorkToMake>
             <Flammability>0</Flammability>
         </statBases>
         <useHitPoints>True</useHitPoints>
-        <Size>(3,1)</Size>
-        <DesignationCategory>Production</DesignationCategory>
-        <Passability>Impassable</Passability>
+        <size>(3,1)</size>
+        <designationCategory>Production</designationCategory>
+        <passability>Impassable</passability>
         <hasInteractionCell>True</hasInteractionCell>
         <interactionCellOffset>(0,0,-1)</interactionCellOffset>
         <surfaceType>Item</surfaceType>
@@ -41,4 +41,4 @@
         </inspectorTabs>
     </ThingDef>
 
-</ThingDefs>
+</Defs>
