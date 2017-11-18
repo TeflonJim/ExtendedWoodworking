@@ -169,7 +169,7 @@ Copy-Item "$psscriptroot\source\Defs\ThingDefs_Items*" "$build\Defs" -Exclude 'E
 Copy-Item "$psscriptroot\source\Defs\ThingDefs_Plants*" "$build\Defs" -Recurse
 Copy-Item "$psscriptroot\source\Textures\Logs*" "$build\Textures" -Recurse
 
-# Set-Content $build\About\PublishedFileId.txt -Value '836915139'
+Set-Content $build\About\PublishedFileId.txt -Value '1204886236'
 
 $XDocument = [System.Xml.Linq.XDocument]::Load("$build\About\About.xml")
 $XDocument.Element('ModMetaData').Element('name').SetValue('Extended Woodworking - Vegetable Garden add-on')
