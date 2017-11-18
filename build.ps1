@@ -62,19 +62,22 @@ Write-Host "Starting build for $version" -ForegroundColor Yellow
 # These values are only used if the build profile implements the WoodLog
 
 $colours = @{
-    Oak           = '(185,142,96)'
-    Poplar        = '(184,156,108)'
-    Pine          = '(198,146,68)'
-    Birch         = '(235,228,216)'
-    Cecropia      = '(126,74,63)'
-    Teak          = '(154,102,59)'
-    WeepingWillow = '(221, 186, 141)'
-    JapaneseMaple = '(252, 170, 124)'
-    CherryBlossom = '(165, 82, 40)'
-    Camellia      = '(201, 160, 130)'
     Acacia        = '(219, 184, 144)'
+    Birch         = '(235,228,216)'
+    Camellia      = '(201, 160, 130)'
+    Cecropia      = '(126,74,63)'
+    CherryBlossom = '(165, 82, 40)'
+    Cypress       = '(239, 217, 184)'
+    Drago         = '(171, 159, 142)'
+    JapaneseMaple = '(252, 170, 124)'
+    Maple         = '(236, 201, 163)'
+    Oak           = '(185,142,96)'
     Palm          = '(224, 150, 87)'
+    Pine          = '(198,146,68)'
+    Poplar        = '(184,156,108)'
     RedMaple      = '(222, 197, 167)'
+    Teak          = '(154,102,59)'
+    Willow        = '(221, 186, 141)'
     Red           = '(200,0,0)'
     Green         = '(0,200,0)'
     Blue          = '(0,0,200)'
@@ -86,19 +89,22 @@ $colours = @{
 # Stats need fixing up.
 
 $woodStats = @{
-    Oak           = [PSCustomObject]@{ MaxHitPoints = 0.75; StructuralBeauty = 2.5; WorkToMake = 0.9; DoorOpenSpeed = 1.1 }
-    Poplar        = [PSCustomObject]@{ MaxHitPoints = 0.7;  StructuralBeauty = 1.5; WorkToMake = 0.7; DoorOpenSpeed = 1.2 }
-    Pine          = [PSCustomObject]@{ MaxHitPoints = 0.6;  StructuralBeauty = 1.5; WorkToMake = 0.7; DoorOpenSpeed = 1.2 }
-    Birch         = [PSCustomObject]@{ MaxHitPoints = 0.6;  StructuralBeauty = 1.5; WorkToMake = 0.7; DoorOpenSpeed = 1.3 }
-    Cecropia      = [PSCustomObject]@{ MaxHitPoints = 0.5;  StructuralBeauty = 1;   WorkToMake = 0.5; DoorOpenSpeed = 1.2 }
-    Teak          = [PSCustomObject]@{ MaxHitPoints = 0.7;  StructuralBeauty = 2.5; WorkToMake = 1.1; DoorOpenSpeed = 1.2 }
-    WeepingWillow = [PSCustomObject]@{ MaxHitPoints = 0.2;  StructuralBeauty = 0.5; WorkToMake = 0.5; DoorOpenSpeed = 1.6 }
-    JapaneseMaple = [PSCustomObject]@{ MaxHitPoints = 0.6;  StructuralBeauty = 1.5; WorkToMake = 0.5; DoorOpenSpeed = 1.2 }
-    CherryBlossom = [PSCustomObject]@{ MaxHitPoints = 0.7;  StructuralBeauty = 1;   WorkToMake = 0.7; DoorOpenSpeed = 1.2 }
-    Camellia      = [PSCustomObject]@{ MaxHitPoints = 0.6;  StructuralBeauty = 2;   WorkToMake = 0.7; DoorOpenSpeed = 1.2 }
     Acacia        = [PSCustomObject]@{ MaxHitPoints = 0.3;  StructuralBeauty = 1.5; WorkToMake = 0.7; DoorOpenSpeed = 1.2 }
+    Birch         = [PSCustomObject]@{ MaxHitPoints = 0.6;  StructuralBeauty = 1.5; WorkToMake = 0.7; DoorOpenSpeed = 1.3 }
+    Camellia      = [PSCustomObject]@{ MaxHitPoints = 0.6;  StructuralBeauty = 2;   WorkToMake = 0.7; DoorOpenSpeed = 1.2 }
+    Cecropia      = [PSCustomObject]@{ MaxHitPoints = 0.5;  StructuralBeauty = 1;   WorkToMake = 0.5; DoorOpenSpeed = 1.2 }
+    CherryBlossom = [PSCustomObject]@{ MaxHitPoints = 0.7;  StructuralBeauty = 1;   WorkToMake = 0.7; DoorOpenSpeed = 1.2 }
+    Cypress       = [PSCustomObject]@{ MaxHitPoints = 0.7;  StructuralBeauty = 2.5; WorkToMake = 0.7; DoorOpenSpeed = 1.1 }
+    Drago         = [PSCustomObject]@{ MaxHitPoints = 0.2;  StructuralBeauty = 0.5; WorkToMake = 0.9; DoorOpenSpeed = 1.6 }
+    JapaneseMaple = [PSCustomObject]@{ MaxHitPoints = 0.6;  StructuralBeauty = 1.5; WorkToMake = 0.5; DoorOpenSpeed = 1.2 }
+    Maple         = [PSCustomObject]@{ MaxHitPoints = 0.3;  StructuralBeauty = 1.5; WorkToMake = 0.5; DoorOpenSpeed = 1.2 }
+    Oak           = [PSCustomObject]@{ MaxHitPoints = 0.75; StructuralBeauty = 2.5; WorkToMake = 0.9; DoorOpenSpeed = 1.1 }
     Palm          = [PSCustomObject]@{ MaxHitPoints = 0.6;  StructuralBeauty = 1.5; WorkToMake = 0.7; DoorOpenSpeed = 1.2 }
+    Pine          = [PSCustomObject]@{ MaxHitPoints = 0.6;  StructuralBeauty = 1.5; WorkToMake = 0.7; DoorOpenSpeed = 1.2 }
+    Poplar        = [PSCustomObject]@{ MaxHitPoints = 0.7;  StructuralBeauty = 1.5; WorkToMake = 0.7; DoorOpenSpeed = 1.2 }
     RedMaple      = [PSCustomObject]@{ MaxHitPoints = 0.3;  StructuralBeauty = 1.5; WorkToMake = 0.5; DoorOpenSpped = 1.2 }
+    Teak          = [PSCustomObject]@{ MaxHitPoints = 0.7;  StructuralBeauty = 2.5; WorkToMake = 1.1; DoorOpenSpeed = 1.2 }
+    Willow        = [PSCustomObject]@{ MaxHitPoints = 0.2;  StructuralBeauty = 0.5; WorkToMake = 0.5; DoorOpenSpeed = 1.6 }
 }
 
 #
@@ -121,12 +127,17 @@ Copy-Item "$psscriptroot\source\*" $build -Recurse
 
 Set-Content $build\About\PublishedFileId.txt -Value '836912371'
 
-$natural = 'Oak',
+$natural = 'Birch',
+           'Cecropia',
+           'Cypress',
+           'Drago',
+           'Maple',
+           'Oak',
+           'Palm',
            'Poplar',
            'Pine',
-           'Birch',
-           'Cecropia',
-           'Teak'
+           'Teak',
+           'Willow'
 
 $painted = 'Red',
            'Green',
@@ -148,31 +159,31 @@ try {
 #
 
 Write-Host
-Write-Host "Building Extended Woodworking for Vegetable Garden" -ForegroundColor White
+Write-Host "Building Extended Woodworking - Vegetable Garden add-on" -ForegroundColor White
 
-$build = "$psscriptroot\build\ExtendedWoodworking_VG"
+$build = "$psscriptroot\build\ExtendedWoodworking_VGAddOn"
 
-$null = New-Item $build -ItemType Directory
-Copy-Item "$psscriptroot\source\*" $build -Recurse
+$null = New-Item "$build\Defs", "$build\Textures" -ItemType Directory -Force
+Copy-Item "$psscriptroot\source\About*" $build -Recurse
+Copy-Item "$psscriptroot\source\Defs\ThingDefs_Items*" "$build\Defs" -Exclude 'EW-PaintedWood.xml' -Recurse
+Copy-Item "$psscriptroot\source\Defs\ThingDefs_Plants*" "$build\Defs" -Recurse
+Copy-Item "$psscriptroot\source\Textures\Logs*" "$build\Textures" -Recurse
 
-Set-Content $build\About\PublishedFileId.txt -Value '836915139'
+# Set-Content $build\About\PublishedFileId.txt -Value '836915139'
 
 $XDocument = [System.Xml.Linq.XDocument]::Load("$build\About\About.xml")
-$XDocument.Element('ModMetaData').Element('name').SetValue('Extended Woodworking for Vegetable Garden')
+$XDocument.Element('ModMetaData').Element('name').SetValue('Extended Woodworking - Vegetable Garden add-on')
 $XDocument.Save("$build\About\About.xml")
 
-$natural += 'WeepingWillow',
-            'JapaneseMaple',
-            'CherryBlossom',
-            'Camellia',
-            'Acacia',
-            'Palm',
-            'RedMaple'
-
-$allWood = @('WoodLog') + @($natural + $painted | ForEach-Object { 'WoodLog_{0}' -f $_ })
+$natural = 'Acacia',
+           'Camellia',
+           'CherryBlossom',
+           'JapaneseMaple',
+           'RedMaple'
+$painted = $null
 
 try {
-    'RecipeDefs', 'TerrainDefs', 'ThingDefs_Buildings', 'ThingDefs_Items', 'ThingDefs_Plants_VegetableGarden' |
+    'ThingDefs_Items', 'ThingDefs_Plants_VegetableGarden' |
         Invoke-BuildStep
 } catch {
     throw
