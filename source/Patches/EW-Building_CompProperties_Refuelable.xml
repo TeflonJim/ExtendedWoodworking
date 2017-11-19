@@ -1,0 +1,8 @@
+﻿<Patch>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/ThingDef[category="Building" or contains(thingClass, "Building")]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[(li="WoodLog" and not(li!="WoodLog")) or li="WoodLog_Oak"]</xpath>
+        <value>
+            <thingDefs />
+        </value>
+    </Operation>
+</Patch>

@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
     <ThingDef Name="BuildingBaseB" Abstract="True">
         <category>Building</category>
         <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
@@ -9,7 +8,6 @@
         <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
         <repairEffect>Repair</repairEffect>
     </ThingDef>
-
     <ThingDef ParentName="BuildingBaseB">
         <defName>TableWoodworking</defName>
         <label>woodworking table</label>
@@ -40,5 +38,4 @@
             <li>ITab_Bills</li>
         </inspectorTabs>
     </ThingDef>
-
 </Defs>

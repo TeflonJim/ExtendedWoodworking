@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
     <ThingDef ParentName="BuildingBaseNoResources" Name="Wall">
         <defName>Fence</defName>
         <label>fence</label>
@@ -53,7 +52,6 @@
             </li>
         </damageMultipliers>
     </ThingDef>
-
     <ThingDef ParentName="DoorBase">
         <defName>FenceGate</defName>
         <label>fence gate</label>

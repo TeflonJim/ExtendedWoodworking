@@ -7,7 +7,7 @@
 $path = "$build\Defs\RecipeDefs\EW-Woodworking.xml"
 
 $xDocument = [System.Xml.Linq.XDocument]::Load($path)
-$template = $xDocument.Root.Elements('RecipeDef').Where( { $_.Element('defName').Value -eq 'PaintWoodLogTemplate'} )[0]
+$template = $xDocument.Root.Elements('RecipeDef').Where( { $_.Element('defName').Value -eq 'PaintWoodLogTemplate' } )[0]
 
 foreach ($colour in $painted) {
     $recipe = New-Object System.Xml.Linq.XElement($template)

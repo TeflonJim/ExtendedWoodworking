@@ -34,31 +34,6 @@ foreach ($woodType in $natural) {
     Copy-RWModDef @commonParams @params
 }
 
-# Floors (Polished). Likely to need an assembly.
-
-# $commonParams = @{
-#     Name    = 'Core\WoodPlankFloor'
-#     DefType = 'TerrainDefs'
-#     SaveAs  = "$build\Defs\TerrainDefs\EW-Wood Floors.xml"
-#     Remove  = 'CostList', 'designationHotkey'
-# }
-# foreach ($woodType in $natural) {
-#     $params = @{
-#         NewName = "WoodPlankFloor_Polished$woodType"
-#         Update  = @{
-#             label                        = "Polished $($woodType.ToLower()) wood floor"
-#             description                  = "Polished $woodType flooring. It takes a lot of work to turn rough floor into this polished surface. Polished surfaces are easier to keep clean."
-#             color                        = $colours.$woodType
-#             "CostList.WoodLog_$woodType" = 0
-#             "statBases.Cleanliness"      = 0.2
-#             "statBases.Beauty"           = $woodStats.StructuralBeauty + 1
-#             "statBases.WorkToMake"       = 1000
-#             texturePath                  = 'Floor/WoodFloorBase'
-#         }
-#     }
-#     Copy-RWModDef @commonParams @params
-# }
-
 # Floors (Painted)
 
 $commonParams = @{

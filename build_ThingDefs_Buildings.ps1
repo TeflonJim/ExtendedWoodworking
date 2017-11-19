@@ -20,40 +20,10 @@ $params = @{
     Name    = 'Core\DoorBase'
     DefType = 'ThingDefs_Buildings'
     SaveAs  = $path
-    Remove  = 'stuffCategories'
     Update  = @{
-        stuffCategories          = @('Woody')
         'statBases.MaxHitPoints' = 150
         holdsRoof                = 'false'
         blockLight               = 'false'
-    }
-}
-Copy-RWModDef @params
-
-# Temperature
-
-$params = @{
-    Name    = 'Core\Campfire'
-    DefType = 'ThingDefs_Buildings'
-    SaveAs  = "$build\Defs\ThingDefs_Buildings\EW-Temperature.xml"
-    Remove  = 'costList', 'constructEffect'
-    Update  = @{
-        ParentName                                             = 'BuildingBaseNoResources'
-        costStuffCount                                         = 30
-        stuffCategories                                        = @('Woody')
-        'comps.CompProperties_Refuelable.fuelFilter.thingDefs' = $allWood
-    }
-}
-Copy-RWModDef @params
-
-# FuelGen
-
-$params = @{
-    Name    = 'Core\WoodFiredGenerator'
-    DefType = 'ThingDefs_Buildings'
-    SaveAs  = "$build\Defs\ThingDefs_Buildings\EW-Power.xml"
-    Update  = @{
-        'comps.CompProperties_Refuelable.fuelFilter.thingDefs' = $allWood
     }
 }
 Copy-RWModDef @params

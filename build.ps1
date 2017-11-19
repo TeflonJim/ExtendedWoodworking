@@ -15,24 +15,24 @@ function Invoke-BuildStep {
         $result = 'Success'
         $messageColor = 'Cyan'
 
+        Write-Host -ForegroundColor $messageColor -Object ('    {0}' -f $step.PadRight(40, ' ')) -NoNewline
+
         $stopWatch = New-Object System.Diagnostics.StopWatch
         $stopWatch.Start()
 
         try {
             . "$psscriptroot\build_$_.ps1"
+            $result = 'Success'
+            Write-Host -ForegroundColor $messageColor -Object ('    {0}' -f $result.PadRight(10, ' ')) -NoNewline
         } catch {
             $result = 'Fail'
-            $messageColor = 'Red'
-
+            Write-Host -ForegroundColor 'Red' -Object ('    {0}' -f $result.PadRight(10, ' ')) -NoNewline
+            
             throw
         } finally {
             $stopWatch.Stop()
-
-            Write-Host -ForegroundColor $messageColor -Object ('    {0}{1}{2}' -f
-                $step.PadRight(40, ' '),
-                $result.PadRight(10, ' '),
-                $stopWatch.Elapsed
-            )
+                
+            Write-Host -ForegroundColor $messageColor -Object $stopWatch.Elapsed
         }
     }
 }
@@ -117,6 +117,8 @@ Remove-Item build -Recurse
 # Default
 #
 
+$sourceModName = 'Core'
+
 Write-Host
 Write-Host "Building Extended Woodworking" -ForegroundColor White
 
@@ -149,7 +151,7 @@ $painted = 'Red',
 $allWood = @('WoodLog') + @($natural + $painted | ForEach-Object { 'WoodLog_{0}' -f $_ })
 
 try {
-    'RecipeDefs', 'TerrainDefs', 'ThingDefs_Buildings', 'ThingDefs_Items', 'ThingDefs_Plants' | Invoke-BuildStep
+    'RecipeDefs', 'TerrainDefs', 'ThingDefs_Buildings', 'ThingDefs_Items', 'Patches' | Invoke-BuildStep
 } catch {
     throw
 }
@@ -157,6 +159,8 @@ try {
 #
 # Vegetable Garden
 #
+
+$sourceModName = 'VGP Xtra Trees and Flowers'
 
 Write-Host
 Write-Host "Building Extended Woodworking - Vegetable Garden add-on" -ForegroundColor White
@@ -167,6 +171,7 @@ $null = New-Item "$build\Defs", "$build\Textures" -ItemType Directory -Force
 Copy-Item "$psscriptroot\source\About*" $build -Recurse
 Copy-Item "$psscriptroot\source\Defs\ThingDefs_Items*" "$build\Defs" -Exclude 'EW-PaintedWood.xml' -Recurse
 Copy-Item "$psscriptroot\source\Defs\ThingDefs_Plants*" "$build\Defs" -Recurse
+Copy-Item "$psscriptroot\source\Patches*" $build -Recurse
 Copy-Item "$psscriptroot\source\Textures\Logs*" "$build\Textures" -Recurse
 
 Set-Content $build\About\PublishedFileId.txt -Value '1204886236'
@@ -182,8 +187,10 @@ $natural = 'Acacia',
            'RedMaple'
 $painted = $null
 
+$allWood = $allWood + ($natural | ForEach-Object { 'WoodLog_{0}' -f $_ })
+
 try {
-    'ThingDefs_Items', 'ThingDefs_Plants_VegetableGarden' |
+    'ThingDefs_Items', 'Patches' |
         Invoke-BuildStep
 } catch {
     throw
@@ -202,11 +209,19 @@ Get-ChildItem "$psscriptroot\build" -Directory | ForEach-Object {
     Compress-Archive -Path $_.FullName -DestinationPath "$psscriptroot\build\$($_.Name).zip"
 }
 
+# Clean up
+
+Remove-Item "$psscriptroot\build\*\Patches\EW-*%*"
+
 #
 # Push to Mods
 #
 
 $path = (Get-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 294100' -Name 'InstallLocation').InstallLocation
 Get-ChildItem "$psscriptroot\build" -Directory | ForEach-Object {
+    if (Test-Path "$path\Mods\$($_.Name)") {
+        Remove-Item "$path\Mods\$($_.Name)" -Recurse
+    }
+
     Copy-Item $_.FullName "$path\Mods" -Recurse -Force
 }

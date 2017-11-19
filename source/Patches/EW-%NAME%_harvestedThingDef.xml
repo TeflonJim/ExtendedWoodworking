@@ -1,0 +1,8 @@
+﻿<Patch>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="PlantTree%NAME%"]/plant</xpath>
+        <value>
+            <harvestedThingDef>WoodLog_%NAME%</harvestedThingDef>
+        </value>
+    </Operation>
+</Patch>
