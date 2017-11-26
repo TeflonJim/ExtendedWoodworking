@@ -1,0 +1,73 @@
+﻿<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationReplace">
+                <success>Always</success>
+                <xpath>/Defs/ThingDef[category="Building" or contains(thingClass, "Building")]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="WoodLog" and not(li!="WoodLog")]</xpath>
+                <value>
+                    <thingDefs>
+                        <li>WoodLog</li>
+                        <li>WoodLog_Birch</li>
+                        <li>WoodLog_Cecropia</li>
+                        <li>WoodLog_Cypress</li>
+                        <li>WoodLog_Drago</li>
+                        <li>WoodLog_Maple</li>
+                        <li>WoodLog_Oak</li>
+                        <li>WoodLog_Palm</li>
+                        <li>WoodLog_Pine</li>
+                        <li>WoodLog_Poplar</li>
+                        <li>WoodLog_Teak</li>
+                        <li>WoodLog_Willow</li>
+                    </thingDefs>
+                </value>
+            </li>
+            <li Class="PatchOperationFindMod">
+                <success>Always</success>
+                <mods>
+                    <li>VGP Xtra Trees and Flowers</li>
+                </mods>
+                <match Class="PatchOperationSequence">
+                    <success>Always</success>
+                    <operations>
+                        <li Class="PatchOperationAdd">
+                            <xpath>/Defs/ThingDef[category="Building" or contains(thingClass, "Building")]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="WoodLog_Birch"]</xpath>
+                            <value>
+                                <li>WoodLog_Acacia</li>
+                            </value>
+                        </li>
+                        <li Class="PatchOperationAdd">
+                            <xpath>/Defs/ThingDef[category="Building" or contains(thingClass, "Building")]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="WoodLog_Birch"]</xpath>
+                            <value>
+                                <li>WoodLog_Camellia</li>
+                            </value>
+                        </li>
+                        <li Class="PatchOperationAdd">
+                            <xpath>/Defs/ThingDef[category="Building" or contains(thingClass, "Building")]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="WoodLog_Birch"]</xpath>
+                            <value>
+                                <li>WoodLog_JapeneseMaple</li>
+                            </value>
+                        </li>
+                        <li Class="PatchOperationAdd">
+                            <xpath>/Defs/ThingDef[category="Building" or contains(thingClass, "Building")]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="WoodLog_Birch"]</xpath>
+                            <value>
+                                <li>WoodLog_RedMaple</li>
+                            </value>
+                        </li>
+                    </operations>
+                </match>
+            </li>
+            <li Class="PatchOperationFindMod">
+                <success>Always</success>
+                <mods>
+                    <li>Nature's Pretty Sweet</li>
+                </mods>
+                <match Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[category="Building" or contains(thingClass, "Building")]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="WoodLog_Birch"]</xpath>
+                    <value>
+                        <li>RedWoodLog</li>
+                    </value>
+                </match>
+            </li>
+        </operations>
+    </Operation>
+</Patch>

@@ -19,15 +19,15 @@ $commonParams = @{
     SaveAs  = "$build\Defs\TerrainDefs\EW-Wood Floors.xml"
     Remove  = 'costList', 'designationHotkey'
 }
-foreach ($woodType in $natural) {
+foreach ($woodType in $woodStats.Keys) {
     $params = @{
         NewName = "WoodPlankFloor_$woodType"
         Update  = @{
             label                        = "$($woodType.ToLower()) wood floor"
             description                  = "$woodType plank flooring. For that warm, homey feeling."
-            color                        = $colours.$woodType
+            color                        = $woodStats[$woodType].Colour
             "costList.WoodLog_$woodType" = 6
-            "statBases.Beauty"           = $woodStats.$woodType.StructuralBeauty
+            "statBases.Beauty"           = $woodStats[$woodType].StructuralBeauty
             texturePath                  = 'Floor/WoodFloorBase'
         }
     }
@@ -42,11 +42,11 @@ $commonParams = @{
     SaveAs  = "$build\Defs\TerrainDefs\EW-Wood Floors.xml"
     Remove  = 'CostList', 'designationHotkey'
 }
-foreach ($colour in $painted) {
+foreach ($colour in $painted.Keys) {
     Copy-RWModDef @commonParams -NewName "WoodPlankFloor_$colour" -Update @{
         label                      = "$($colour.ToLower()) painted wood floor"
         description                = "$colour wood plank flooring. For that warm, homey feeling."
-        color                      = $colours.$colour
+        color                      = $painted[$colour]
         "costList.WoodLog_$colour" = 6
         "statBases.Beauty"         = 2
         texturePath                = 'Floor/WoodFloorBase'

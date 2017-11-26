@@ -1,0 +1,12 @@
+<Patch>
+    <Operation Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="PlantTreeWillow"]</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="PlantTreeWillow"]/plant</xpath>
+            <value>
+                <harvestedThingDef>WoodLog_Willow</harvestedThingDef>
+            </value>
+        </match>
+    </Operation>
+</Patch>

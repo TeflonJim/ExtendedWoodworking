@@ -1,8 +1,12 @@
 ﻿<Patch>
-    <Operation Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="PlantTree%NAME%"]/plant</xpath>
-        <value>
-            <harvestedThingDef>WoodLog_%NAME%</harvestedThingDef>
-        </value>
+    <Operation Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="PlantTree%NAME%"]</xpath>
+        <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="PlantTree%NAME%"]/plant</xpath>
+            <value>
+                <harvestedThingDef>WoodLog_%NAME%</harvestedThingDef>
+            </value>
+        </match>
     </Operation>
 </Patch>

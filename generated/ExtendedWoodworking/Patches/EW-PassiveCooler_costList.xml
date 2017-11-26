@@ -1,17 +1,17 @@
-﻿<Patch>
+<Patch>
     <Operation Class="PatchOperationSequence">
         <operations>    
             <li Class="PatchOperationRemove">
-                <xpath>/Defs/ThingDef[defName="%NAME%"]/costList/WoodLog</xpath>
+                <xpath>/Defs/ThingDef[defName="PassiveCooler"]/costList/WoodLog</xpath>
             </li>
             <li Class="PatchOperationConditional">
-                <xpath>/Defs/ThingDef[defName="%NAME%"]/constructEffect</xpath>
+                <xpath>/Defs/ThingDef[defName="PassiveCooler"]/constructEffect</xpath>
                 <match Class="PatchOperationRemove">
-                    <xpath>/Defs/ThingDef[defName="%NAME%"]/constructEffect</xpath>
+                    <xpath>/Defs/ThingDef[defName="PassiveCooler"]/constructEffect</xpath>
                 </match>
             </li>
             <li Class="PatchOperationAdd">
-                <xpath>/Defs/ThingDef[defName="%NAME%"]</xpath>
+                <xpath>/Defs/ThingDef[defName="PassiveCooler"]</xpath>
                 <value>
                     <stuffCategories>
                         <li>Woody</li>
@@ -19,9 +19,9 @@
                 </value>
             </li>
             <li Class="PatchOperationAdd">
-                <xpath>/Defs/ThingDef[defName="%NAME%"]</xpath>
+                <xpath>/Defs/ThingDef[defName="PassiveCooler"]</xpath>
                 <value>
-                    <costStuffCount>%COST%</costStuffCount>
+                    <costStuffCount>50</costStuffCount>
                 </value>
             </li>
         </operations>

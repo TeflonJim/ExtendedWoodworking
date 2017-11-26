@@ -9,7 +9,7 @@ $path = "$build\Defs\RecipeDefs\EW-Woodworking.xml"
 $xDocument = [System.Xml.Linq.XDocument]::Load($path)
 $template = $xDocument.Root.Elements('RecipeDef').Where( { $_.Element('defName').Value -eq 'PaintWoodLogTemplate' } )[0]
 
-foreach ($colour in $painted) {
+foreach ($colour in $painted.Keys) {
     $recipe = New-Object System.Xml.Linq.XElement($template)
 
     $recipe.Element('defName').SetValue("PaintWoodLog_$colour")
@@ -21,7 +21,7 @@ foreach ($colour in $painted) {
             25
         )
     ))
-    $painted | Where-Object { $_ -ne $colour } | ForEach-Object {
+    $painted.Keys | Where-Object { $_ -ne $colour } | ForEach-Object {
         $recipe.Element('defaultIngredientFilter').
                 Element('exceptedThingDefs').
                 Add((

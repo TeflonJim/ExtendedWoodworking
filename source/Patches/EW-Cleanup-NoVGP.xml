@@ -1,0 +1,45 @@
+﻿<Patch>
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationFindMod">
+                <success>Always</success>
+                <mods>
+                    <li>VGP Xtra Trees and Flowers</li>
+                </mods>
+                <nomatch Class="PatchOperationSequence">
+                    <operations>
+                        <!-- Floors -->
+
+                        <li Class="PatchOperationRemove">
+                            <xpath>/Defs/TerrainDef[defName="WoodPlankFloor_Acacia"]</xpath>
+                        </li>
+                        <li Class="PatchOperationRemove">
+                            <xpath>/Defs/TerrainDef[defName="WoodPlankFloor_Camellia"]</xpath>
+                        </li>
+                        <li Class="PatchOperationRemove">
+                            <xpath>/Defs/TerrainDef[defName="WoodPlankFloor_JapaneseMaple"]</xpath>
+                        </li>
+                        <li Class="PatchOperationRemove">
+                            <xpath>/Defs/TerrainDef[defName="WoodPlankFloor_RedMaple"]</xpath>
+                        </li>
+
+                        <!-- WoodLog -->
+
+                        <li Class="PatchOperationRemove">
+                            <xpath>/Defs/ThingDef[defName="WoodLog_Acacia"]</xpath>
+                        </li>
+                        <li Class="PatchOperationRemove">
+                            <xpath>/Defs/ThingDef[defName="WoodLog_Camellia"]</xpath>
+                        </li>
+                        <li Class="PatchOperationRemove">
+                            <xpath>/Defs/ThingDef[defName="WoodLog_JapaneseMaple"]</xpath>
+                        </li>
+                        <li Class="PatchOperationRemove">
+                            <xpath>/Defs/ThingDef[defName="WoodLog_RedMaple"]</xpath>
+                        </li>
+                    </operations>
+                </nomatch>
+            </li>
+        </operations>
+    </Operation>
+</Patch>
