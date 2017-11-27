@@ -17,7 +17,7 @@ $commonParams = @{
     Name    = 'Core\WoodPlankFloor'
     DefType = 'TerrainDefs'
     SaveAs  = "$build\Defs\TerrainDefs\EW-Wood Floors.xml"
-    Remove  = 'costList', 'designationHotkey'
+    Remove  = 'costList', 'designationHotKey'
 }
 foreach ($woodType in $woodStats.Keys) {
     $params = @{
@@ -40,7 +40,7 @@ $commonParams = @{
     Name    = 'Core\WoodPlankFloor'
     DefType = 'TerrainDefs'
     SaveAs  = "$build\Defs\TerrainDefs\EW-Wood Floors.xml"
-    Remove  = 'CostList', 'designationHotkey'
+    Remove  = 'costList', 'designationHotKey'
 }
 foreach ($colour in $painted.Keys) {
     Copy-RWModDef @commonParams -NewName "WoodPlankFloor_$colour" -Update @{

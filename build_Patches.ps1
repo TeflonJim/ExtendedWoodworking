@@ -1,24 +1,34 @@
-﻿foreach ($mod in 'Core', 'VGP Xtra Trees and Flowers') {
-    Get-RWModDef -ModName $mod -ErrorAction SilentlyContinue |
+﻿foreach ($mod in $supportedMods) {
+    $modInfo = Get-RWMod $mod
+    $shortName = $mod -replace '[^A-Za-z]'
+
+    Get-ChildItem (Join-Path $modInfo.Path 'Defs') -Filter *.xml -Recurse | ForEach-Object {
+        Select-Xml -Path $_.FullName -XPath '/Defs/*[defName and not(stuffCategories)]/costList[WoodLog]'
+    } | ForEach-Object {
+        $def = $_.Node.ParentNode
+
+        $content = Get-Content "$build\Patches\EW-%NAME%_costList.xml" -Raw
+        $content = $content -replace '%NAME%', $def.defName
+        $content = $content -replace '%COST%', $def.costList.WoodLog
+        Set-Content -Path "$build\Patches\EW-$shortName-$($def.DefName)_costList.xml" -Value $content
+    }
+}
+
+foreach ($mod in $supportedMods) {
+    $modInfo = Get-RWMod $mod
+    $shortName = $mod -replace '[^A-Za-z]'
+
+    Get-ChildItem (Join-Path $modInfo.Path 'Defs') -Filter *.xml -Recurse |
         ForEach-Object {
-            if ($_.DefType -eq 'ThingDef' -and
-                (
-                    $_.XElement.Element('category').Value -eq 'Building' -or
-                    $_.XElement.Element('thingClass').Value -like 'Building*'
-                ) -and
-                $_.XElement.Element('costList') -and
-                $_.XElement.Element('costList').Element('WoodLog') -and
-                -not $_.XElement.Element('stuffCategories')
-            ) {
-                $content = Get-Content "$build\Patches\EW-%NAME%_costList.xml" -Raw
-                $content = $content -replace '%NAME%', $_.DefName
-                $content = $content -replace '%COST%', $_.XElement.Element('costList').Element('WoodLog').Value
-                Set-Content -Path "$build\Patches\EW-$($_.DefName)_costList.xml" -Value $content
-            } elseif ($woodStats.Contains(($_.DefName -replace 'PlantTree'))) {
-                $content = Get-Content "$build\Patches\EW-%NAME%_harvestedThingDef.xml" -Raw
-                $content = $content -replace '%NAME%', ($_.DefName -replace 'PlantTree')
-                Set-Content -Path "$build\Patches\EW-$($_.DefName)_harvestedThingDef.xml" -Value $content
-            }
+            Select-Xml -Path $_.FullName -XPath '/Defs/*[contains(defName, "PlantTree")]'
+        } |
+        Where-Object { $woodStats.Contains(($_.Node.defName -replace 'PlantTree')) } |
+        ForEach-Object {
+            $def = $_.Node
+
+            $content = Get-Content "$build\Patches\EW-%NAME%_harvestedThingDef.xml" -Raw
+            $content = $content -replace '%NAME%', ($def.DefName -replace 'PlantTree')
+            Set-Content -Path "$build\Patches\EW-$shortName-$($def.DefName)_harvestedThingDef.xml" -Value $content
         }
 }
 

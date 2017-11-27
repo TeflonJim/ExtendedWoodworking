@@ -56,6 +56,22 @@ Set-Content "$psscriptroot\source\About\version.txt" -Value $version.ToString()
 Write-Host "Starting build for $version" -ForegroundColor Yellow
 
 #
+# Supported mods (costList rewriting)
+#
+
+$supportedMods = @(
+    'Core'
+    '[RF] Basic Bridges - Fishing Add-On'
+    '[RF] Fertile Fields'
+    '[T] ExpandedCloth'
+    '[T] MoreFloors'
+    'A Dog Said...'
+    'Area Rugs'
+    'Misc. Training'
+    'VGP Xtra Trees and Flowers'
+)
+
+#
 # WoodLog stats table
 #
 
@@ -140,7 +156,7 @@ try {
 Write-Host
 Write-Host "Creating packages"
 
-Get-ChildItem "$psscriptroot\build" -Directory | ForEach-Object {
+Get-ChildItem "$psscriptroot\generated" -Directory | ForEach-Object {
     Write-Host "    $($_.Name)" -ForegroundColor Cyan
     
     Compress-Archive -Path $_.FullName -DestinationPath "$psscriptroot\build\$($_.Name).zip"

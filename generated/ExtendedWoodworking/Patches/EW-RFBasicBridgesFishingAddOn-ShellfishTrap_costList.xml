@@ -1,14 +1,14 @@
-﻿<Patch>
+<Patch>
     <Operation Class="PatchOperationConditional">
         <success>Always</success>
-        <xpath>/Defs/ThingDef[defName="%NAME%" and not(stuffCategories)]/costList[WoodLog]</xpath>
+        <xpath>/Defs/ThingDef[defName="ShellfishTrap" and not(stuffCategories)]/costList[WoodLog]</xpath>
         <match Class="PatchOperationSequence">
             <operations>
                 <li Class="PatchOperationRemove">
-                    <xpath>/Defs/ThingDef[defName="%NAME%"]/costList/WoodLog</xpath>
+                    <xpath>/Defs/ThingDef[defName="ShellfishTrap"]/costList/WoodLog</xpath>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="%NAME%"]</xpath>
+                    <xpath>/Defs/ThingDef[defName="ShellfishTrap"]</xpath>
                     <value>
                         <stuffCategories>
                             <li>Woody</li>
@@ -16,16 +16,16 @@
                     </value>
                 </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/ThingDef[defName="%NAME%"]</xpath>
+                    <xpath>/Defs/ThingDef[defName="ShellfishTrap"]</xpath>
                     <value>
-                        <costStuffCount>%COST%</costStuffCount>
+                        <costStuffCount>2</costStuffCount>
                     </value>
                 </li>
                 <li Class="PatchOperationConditional">
                     <success>Always</success>
-                    <xpath>/Defs/ThingDef[defName="%NAME%"]/constructEffect</xpath>
+                    <xpath>/Defs/ThingDef[defName="ShellfishTrap"]/constructEffect</xpath>
                     <match Class="PatchOperationRemove">
-                        <xpath>/Defs/ThingDef[defName="%NAME%"]/constructEffect</xpath>
+                        <xpath>/Defs/ThingDef[defName="ShellfishTrap"]/constructEffect</xpath>
                     </match>
                 </li>
             </operations>

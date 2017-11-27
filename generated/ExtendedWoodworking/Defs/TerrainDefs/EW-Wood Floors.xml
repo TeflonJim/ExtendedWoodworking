@@ -14,7 +14,6 @@
       <Beauty>1.5</Beauty>
     </statBases>
     <constructEffect>ConstructWood</constructEffect>
-    <designationHotKey>Misc7</designationHotKey>
     <costList>
       <WoodLog_Acacia>6</WoodLog_Acacia>
     </costList>
@@ -33,7 +32,6 @@
       <Beauty>1.5</Beauty>
     </statBases>
     <constructEffect>ConstructWood</constructEffect>
-    <designationHotKey>Misc7</designationHotKey>
     <costList>
       <WoodLog_Birch>6</WoodLog_Birch>
     </costList>
@@ -52,7 +50,6 @@
       <Beauty>2</Beauty>
     </statBases>
     <constructEffect>ConstructWood</constructEffect>
-    <designationHotKey>Misc7</designationHotKey>
     <costList>
       <WoodLog_Camellia>6</WoodLog_Camellia>
     </costList>
@@ -71,7 +68,6 @@
       <Beauty>1</Beauty>
     </statBases>
     <constructEffect>ConstructWood</constructEffect>
-    <designationHotKey>Misc7</designationHotKey>
     <costList>
       <WoodLog_Cecropia>6</WoodLog_Cecropia>
     </costList>
@@ -90,7 +86,6 @@
       <Beauty>1</Beauty>
     </statBases>
     <constructEffect>ConstructWood</constructEffect>
-    <designationHotKey>Misc7</designationHotKey>
     <costList>
       <WoodLog_CherryBlossom>6</WoodLog_CherryBlossom>
     </costList>
@@ -109,7 +104,6 @@
       <Beauty>2.5</Beauty>
     </statBases>
     <constructEffect>ConstructWood</constructEffect>
-    <designationHotKey>Misc7</designationHotKey>
     <costList>
       <WoodLog_Cypress>6</WoodLog_Cypress>
     </costList>
@@ -128,7 +122,6 @@
       <Beauty>0.5</Beauty>
     </statBases>
     <constructEffect>ConstructWood</constructEffect>
-    <designationHotKey>Misc7</designationHotKey>
     <costList>
       <WoodLog_Drago>6</WoodLog_Drago>
     </costList>
@@ -147,7 +140,6 @@
       <Beauty>1.5</Beauty>
     </statBases>
     <constructEffect>ConstructWood</constructEffect>
-    <designationHotKey>Misc7</designationHotKey>
     <costList>
       <WoodLog_JapaneseMaple>6</WoodLog_JapaneseMaple>
     </costList>
@@ -166,7 +158,6 @@
       <Beauty>1.5</Beauty>
     </statBases>
     <constructEffect>ConstructWood</constructEffect>
-    <designationHotKey>Misc7</designationHotKey>
     <costList>
       <WoodLog_Maple>6</WoodLog_Maple>
     </costList>
@@ -185,7 +176,6 @@
       <Beauty>2.5</Beauty>
     </statBases>
     <constructEffect>ConstructWood</constructEffect>
-    <designationHotKey>Misc7</designationHotKey>
     <costList>
       <WoodLog_Oak>6</WoodLog_Oak>
     </costList>
@@ -204,7 +194,6 @@
       <Beauty>1.5</Beauty>
     </statBases>
     <constructEffect>ConstructWood</constructEffect>
-    <designationHotKey>Misc7</designationHotKey>
     <costList>
       <WoodLog_Palm>6</WoodLog_Palm>
     </costList>
@@ -223,7 +212,6 @@
       <Beauty>1.5</Beauty>
     </statBases>
     <constructEffect>ConstructWood</constructEffect>
-    <designationHotKey>Misc7</designationHotKey>
     <costList>
       <WoodLog_Pine>6</WoodLog_Pine>
     </costList>
@@ -242,7 +230,6 @@
       <Beauty>1.5</Beauty>
     </statBases>
     <constructEffect>ConstructWood</constructEffect>
-    <designationHotKey>Misc7</designationHotKey>
     <costList>
       <WoodLog_Poplar>6</WoodLog_Poplar>
     </costList>
@@ -261,7 +248,6 @@
       <Beauty>1.5</Beauty>
     </statBases>
     <constructEffect>ConstructWood</constructEffect>
-    <designationHotKey>Misc7</designationHotKey>
     <costList>
       <WoodLog_RedMaple>6</WoodLog_RedMaple>
     </costList>
@@ -280,7 +266,6 @@
       <Beauty>2.5</Beauty>
     </statBases>
     <constructEffect>ConstructWood</constructEffect>
-    <designationHotKey>Misc7</designationHotKey>
     <costList>
       <WoodLog_Teak>6</WoodLog_Teak>
     </costList>
@@ -299,7 +284,6 @@
       <Beauty>0.5</Beauty>
     </statBases>
     <constructEffect>ConstructWood</constructEffect>
-    <designationHotKey>Misc7</designationHotKey>
     <costList>
       <WoodLog_Willow>6</WoodLog_Willow>
     </costList>
@@ -317,12 +301,10 @@
       <Flammability>0.22</Flammability>
       <Beauty>2</Beauty>
     </statBases>
+    <constructEffect>ConstructWood</constructEffect>
     <costList>
-      <WoodLog>3</WoodLog>
       <WoodLog_Red>6</WoodLog_Red>
     </costList>
-    <constructEffect>ConstructWood</constructEffect>
-    <designationHotKey>Misc7</designationHotKey>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>WoodPlankFloor_Green</defName>
@@ -337,12 +319,10 @@
       <Flammability>0.22</Flammability>
       <Beauty>2</Beauty>
     </statBases>
+    <constructEffect>ConstructWood</constructEffect>
     <costList>
-      <WoodLog>3</WoodLog>
       <WoodLog_Green>6</WoodLog_Green>
     </costList>
-    <constructEffect>ConstructWood</constructEffect>
-    <designationHotKey>Misc7</designationHotKey>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>WoodPlankFloor_Blue</defName>
@@ -357,12 +337,10 @@
       <Flammability>0.22</Flammability>
       <Beauty>2</Beauty>
     </statBases>
+    <constructEffect>ConstructWood</constructEffect>
     <costList>
-      <WoodLog>3</WoodLog>
       <WoodLog_Blue>6</WoodLog_Blue>
     </costList>
-    <constructEffect>ConstructWood</constructEffect>
-    <designationHotKey>Misc7</designationHotKey>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>WoodPlankFloor_Yellow</defName>
@@ -377,12 +355,10 @@
       <Flammability>0.22</Flammability>
       <Beauty>2</Beauty>
     </statBases>
+    <constructEffect>ConstructWood</constructEffect>
     <costList>
-      <WoodLog>3</WoodLog>
       <WoodLog_Yellow>6</WoodLog_Yellow>
     </costList>
-    <constructEffect>ConstructWood</constructEffect>
-    <designationHotKey>Misc7</designationHotKey>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>WoodPlankFloor_White</defName>
@@ -397,12 +373,10 @@
       <Flammability>0.22</Flammability>
       <Beauty>2</Beauty>
     </statBases>
+    <constructEffect>ConstructWood</constructEffect>
     <costList>
-      <WoodLog>3</WoodLog>
       <WoodLog_White>6</WoodLog_White>
     </costList>
-    <constructEffect>ConstructWood</constructEffect>
-    <designationHotKey>Misc7</designationHotKey>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>WoodPlankFloor_Black</defName>
@@ -417,11 +391,9 @@
       <Flammability>0.22</Flammability>
       <Beauty>2</Beauty>
     </statBases>
+    <constructEffect>ConstructWood</constructEffect>
     <costList>
-      <WoodLog>3</WoodLog>
       <WoodLog_Black>6</WoodLog_Black>
     </costList>
-    <constructEffect>ConstructWood</constructEffect>
-    <designationHotKey>Misc7</designationHotKey>
   </TerrainDef>
 </Defs>
