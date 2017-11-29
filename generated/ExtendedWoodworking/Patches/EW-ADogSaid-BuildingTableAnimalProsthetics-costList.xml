@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <success>Always</success>
+      <li Class="ModCheck.isModLoaded">
+        <modName>A Dog Said...</modName>
+        <yourMod>Extended Woodworking</yourMod>
+      </li>
+      <li Class="ModCheck.loadOrder">
+        <modName>A Dog Said...</modName>
+        <yourMod>Extended Woodworking</yourMod>
+        <errorOnFail>true</errorOnFail>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/ThingDef[defName="TableAnimalProsthetics"]/costList/WoodLog</xpath>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="TableAnimalProsthetics"]</xpath>
+        <value>
+          <stuffCategories>
+            <li>Woody</li>
+          </stuffCategories>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="TableAnimalProsthetics"]</xpath>
+        <value>
+          <costStuffCount>50</costStuffCount>
+        </value>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="TableAnimalProsthetics"]/constructEffect</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="TableAnimalProsthetics"]/constructEffect</xpath>
+        </match>
+      </li>
+    </operations>
+  </Operation>
+</Patch>

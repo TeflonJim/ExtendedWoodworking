@@ -31,15 +31,3 @@ foreach ($mod in $supportedMods) {
             Set-Content -Path "$build\Patches\EW-$shortName-$($def.DefName)_harvestedThingDef.xml" -Value $content
         }
 }
-
-# $path = "$build\Patches\EW-Building_CompProperties_Refuelable.xml"
-# $xDocument = [System.Xml.Linq.XDocument]::Load($path)
-# foreach ($woodLog in $allWood) {
-#     $xDocument.Descendants('thingDefs'). Add((
-#         New-Object System.Xml.Linq.XElement(
-#             New-Object System.Xml.Linq.XElement([System.Xml.Linq.XName]'li'),
-#             $woodLog
-#         )
-#     ))
-# }
-# $xDocument.Save($path)

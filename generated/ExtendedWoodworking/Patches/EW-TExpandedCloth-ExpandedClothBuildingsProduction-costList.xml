@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <success>Always</success>
+      <li Class="ModCheck.isModLoaded">
+        <modName>[T] ExpandedCloth</modName>
+        <yourMod>Extended Woodworking</yourMod>
+      </li>
+      <li Class="ModCheck.loadOrder">
+        <modName>[T] ExpandedCloth</modName>
+        <yourMod>Extended Woodworking</yourMod>
+        <errorOnFail>true</errorOnFail>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/ThingDef[defName="BenchTextile"]/costList/WoodLog</xpath>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="BenchTextile"]</xpath>
+        <value>
+          <stuffCategories>
+            <li>Woody</li>
+          </stuffCategories>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="BenchTextile"]</xpath>
+        <value>
+          <costStuffCount>20</costStuffCount>
+        </value>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="BenchTextile"]/constructEffect</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="BenchTextile"]/constructEffect</xpath>
+        </match>
+      </li>
+    </operations>
+  </Operation>
+</Patch>

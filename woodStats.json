@@ -1,0 +1,119 @@
+﻿{
+    "Acacia":  {
+                   "MaxHitPoints":  0.3,
+                   "StructuralBeauty":  1.5,
+                   "WorkToMake":  0.7,
+                   "DoorOpenSpeed":  1.2,
+                   "Colour":  "(219, 184, 144)",
+                   "Mod":  "VGP Xtra Trees and Flowers"
+               },
+    "Birch":  {
+                  "MaxHitPoints":  0.6,
+                  "StructuralBeauty":  1.5,
+                  "WorkToMake":  0.7,
+                  "DoorOpenSpeed":  1.3,
+                  "Colour":  "(235,228,216)"
+              },
+    "Camellia":  {
+                     "MaxHitPoints":  0.6,
+                     "StructuralBeauty":  2,
+                     "WorkToMake":  0.7,
+                     "DoorOpenSpeed":  1.2,
+                     "Colour":  "(201, 160, 130)",
+                     "Mod":  "VGP Xtra Trees and Flowers"
+                 },
+    "Cecropia":  {
+                     "MaxHitPoints":  0.5,
+                     "StructuralBeauty":  1,
+                     "WorkToMake":  0.5,
+                     "DoorOpenSpeed":  1.2,
+                     "Colour":  "(126,74,63)"
+                 },
+    "CherryBlossom":  {
+                          "MaxHitPoints":  0.7,
+                          "StructuralBeauty":  1,
+                          "WorkToMake":  0.7,
+                          "DoorOpenSpeed":  1.2,
+                          "Colour":  "(165, 82, 40)",
+                          "Mod":  "VGP Xtra Trees and Flowers"
+                      },
+    "Cypress":  {
+                    "MaxHitPoints":  0.7,
+                    "StructuralBeauty":  2.5,
+                    "WorkToMake":  0.7,
+                    "DoorOpenSpeed":  1.1,
+                    "Colour":  "(239, 217, 184)"
+                },
+    "Drago":  {
+                  "MaxHitPoints":  0.2,
+                  "StructuralBeauty":  0.5,
+                  "WorkToMake":  0.9,
+                  "DoorOpenSpeed":  1.6,
+                  "Colour":  "(171, 159, 142)"
+              },
+    "JapaneseMaple":  {
+                          "MaxHitPoints":  0.6,
+                          "StructuralBeauty":  1.5,
+                          "WorkToMake":  0.5,
+                          "DoorOpenSpeed":  1.2,
+                          "Colour":  "(252, 170, 124)",
+                          "Mod":  "VGP Xtra Trees and Flowers"
+                      },
+    "Maple":  {
+                  "MaxHitPoints":  0.3,
+                  "StructuralBeauty":  1.5,
+                  "WorkToMake":  0.5,
+                  "DoorOpenSpeed":  1.2,
+                  "Colour":  "(236, 201, 163)"
+              },
+    "Oak":  {
+                "MaxHitPoints":  0.75,
+                "StructuralBeauty":  2.5,
+                "WorkToMake":  0.9,
+                "DoorOpenSpeed":  1,
+                "Colour":  "(185,142,96)"
+            },
+    "Palm":  {
+                 "MaxHitPoints":  0.6,
+                 "StructuralBeauty":  1.5,
+                 "WorkToMake":  0.7,
+                 "DoorOpenSpeed":  1.2,
+                 "Colour":  "(224, 150, 87)"
+             },
+    "Pine":  {
+                 "MaxHitPoints":  0.6,
+                 "StructuralBeauty":  1.5,
+                 "WorkToMake":  0.7,
+                 "DoorOpenSpeed":  1,
+                 "Colour":  "(198,146,68)"
+             },
+    "Poplar":  {
+                   "MaxHitPoints":  0.7,
+                   "StructuralBeauty":  1.5,
+                   "WorkToMake":  0.7,
+                   "DoorOpenSpeed":  1.2,
+                   "Colour":  "(184,156,108)"
+               },
+    "RedMaple":  {
+                     "MaxHitPoints":  0.3,
+                     "StructuralBeauty":  1.5,
+                     "WorkToMake":  0.5,
+                     "DoorOpenSpeed":  1.2,
+                     "Colour":  "(222, 197, 167)",
+                     "Mod":  "VGP Xtra Trees and Flowers"
+                 },
+    "Teak":  {
+                 "MaxHitPoints":  0.7,
+                 "StructuralBeauty":  2.5,
+                 "WorkToMake":  1.1,
+                 "DoorOpenSpeed":  1.2,
+                 "Colour":  "(154,102,59)"
+             },
+    "Willow":  {
+                   "MaxHitPoints":  0.2,
+                   "StructuralBeauty":  0.5,
+                   "WorkToMake":  0.5,
+                   "DoorOpenSpeed":  1.6,
+                   "Colour":  "(221, 186, 141)"
+               }
+}

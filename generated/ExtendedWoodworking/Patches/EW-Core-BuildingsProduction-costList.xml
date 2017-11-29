@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <success>Always</success>
+      <li Class="ModCheck.isModLoaded">
+        <modName>Core</modName>
+        <yourMod>Extended Woodworking</yourMod>
+      </li>
+      <li Class="ModCheck.loadOrder">
+        <modName>Core</modName>
+        <yourMod>Extended Woodworking</yourMod>
+        <errorOnFail>true</errorOnFail>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/ThingDef[defName="Brewery"]/costList/WoodLog</xpath>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Brewery"]</xpath>
+        <value>
+          <stuffCategories>
+            <li>Woody</li>
+          </stuffCategories>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="Brewery"]</xpath>
+        <value>
+          <costStuffCount>120</costStuffCount>
+        </value>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Brewery"]/constructEffect</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="Brewery"]/constructEffect</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/ThingDef[defName="FermentingBarrel"]/costList/WoodLog</xpath>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="FermentingBarrel"]</xpath>
+        <value>
+          <stuffCategories>
+            <li>Woody</li>
+          </stuffCategories>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="FermentingBarrel"]</xpath>
+        <value>
+          <costStuffCount>30</costStuffCount>
+        </value>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="FermentingBarrel"]/constructEffect</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="FermentingBarrel"]/constructEffect</xpath>
+        </match>
+      </li>
+    </operations>
+  </Operation>
+</Patch>

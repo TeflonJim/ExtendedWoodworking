@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <success>Always</success>
+      <li Class="ModCheck.isModLoaded">
+        <modName>Core</modName>
+        <yourMod>Extended Woodworking</yourMod>
+      </li>
+      <li Class="ModCheck.loadOrder">
+        <modName>Core</modName>
+        <yourMod>Extended Woodworking</yourMod>
+        <errorOnFail>true</errorOnFail>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="PlantTreeWillow"]/plant</xpath>
+        <value>
+          <harvestedThingDef>WoodLog_Willow</harvestedThingDef>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="PlantTreeCypress"]/plant</xpath>
+        <value>
+          <harvestedThingDef>WoodLog_Cypress</harvestedThingDef>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="PlantTreeMaple"]/plant</xpath>
+        <value>
+          <harvestedThingDef>WoodLog_Maple</harvestedThingDef>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+</Patch>
