@@ -1,22 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Patch>
   <Operation Class="PatchOperationSequence">
+    <success>Always</success>
     <operations>
-      <success>Always</success>
       <li Class="ModCheck.isModLoaded">
-        <modName>Misc. Training</modName>
+        <modName>[T] ExpandedCloth</modName>
         <yourMod>Extended Woodworking</yourMod>
       </li>
       <li Class="ModCheck.loadOrder">
-        <modName>Misc. Training</modName>
+        <modName>[T] ExpandedCloth</modName>
         <yourMod>Extended Woodworking</yourMod>
         <errorOnFail>true</errorOnFail>
       </li>
       <li Class="PatchOperationRemove">
-        <xpath>/Defs/ThingDef[defName="MartialArtsTarget"]/costList/WoodLog</xpath>
+        <xpath>Defs/*[defName="BenchTextile"]/costList/WoodLog</xpath>
       </li>
       <li Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="MartialArtsTarget"]</xpath>
+        <xpath>Defs/*[defName="BenchTextile"]</xpath>
         <value>
           <stuffCategories>
             <li>Woody</li>
@@ -24,16 +24,16 @@
         </value>
       </li>
       <li Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="MartialArtsTarget"]</xpath>
+        <xpath>Defs/*[defName="BenchTextile"]</xpath>
         <value>
-          <costStuffCount>35</costStuffCount>
+          <costStuffCount>20</costStuffCount>
         </value>
       </li>
       <li Class="PatchOperationConditional">
         <success>Always</success>
-        <xpath>/Defs/ThingDef[defName="MartialArtsTarget"]/constructEffect</xpath>
+        <xpath>Defs/*[defName="BenchTextile"]/constructEffect</xpath>
         <match Class="PatchOperationRemove">
-          <xpath>/Defs/ThingDef[defName="MartialArtsTarget"]/constructEffect</xpath>
+          <xpath>Defs/*[defName="BenchTextile"]/constructEffect</xpath>
         </match>
       </li>
     </operations>

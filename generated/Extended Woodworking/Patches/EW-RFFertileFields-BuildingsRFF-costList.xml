@@ -1,22 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Patch>
   <Operation Class="PatchOperationSequence">
+    <success>Always</success>
     <operations>
-      <success>Always</success>
       <li Class="ModCheck.isModLoaded">
-        <modName>[RF] Fertile Fields</modName>
+        <modName>[RF] Fertile Fields [b18]</modName>
         <yourMod>Extended Woodworking</yourMod>
       </li>
       <li Class="ModCheck.loadOrder">
-        <modName>[RF] Fertile Fields</modName>
+        <modName>[RF] Fertile Fields [b18]</modName>
         <yourMod>Extended Woodworking</yourMod>
         <errorOnFail>true</errorOnFail>
       </li>
       <li Class="PatchOperationRemove">
-        <xpath>/Defs/ThingDef[defName="CompostBin"]/costList/WoodLog</xpath>
+        <xpath>Defs/*[defName="CompostBin"]/costList/WoodLog</xpath>
       </li>
       <li Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="CompostBin"]</xpath>
+        <xpath>Defs/*[defName="CompostBin"]</xpath>
         <value>
           <stuffCategories>
             <li>Woody</li>
@@ -24,23 +24,23 @@
         </value>
       </li>
       <li Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="CompostBin"]</xpath>
+        <xpath>Defs/*[defName="CompostBin"]</xpath>
         <value>
           <costStuffCount>2</costStuffCount>
         </value>
       </li>
       <li Class="PatchOperationConditional">
         <success>Always</success>
-        <xpath>/Defs/ThingDef[defName="CompostBin"]/constructEffect</xpath>
+        <xpath>Defs/*[defName="CompostBin"]/constructEffect</xpath>
         <match Class="PatchOperationRemove">
-          <xpath>/Defs/ThingDef[defName="CompostBin"]/constructEffect</xpath>
+          <xpath>Defs/*[defName="CompostBin"]/constructEffect</xpath>
         </match>
       </li>
       <li Class="PatchOperationRemove">
-        <xpath>/Defs/ThingDef[defName="CompostBarrel"]/costList/WoodLog</xpath>
+        <xpath>Defs/*[defName="CompostBarrel"]/costList/WoodLog</xpath>
       </li>
       <li Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="CompostBarrel"]</xpath>
+        <xpath>Defs/*[defName="CompostBarrel"]</xpath>
         <value>
           <stuffCategories>
             <li>Woody</li>
@@ -48,16 +48,16 @@
         </value>
       </li>
       <li Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="CompostBarrel"]</xpath>
+        <xpath>Defs/*[defName="CompostBarrel"]</xpath>
         <value>
           <costStuffCount>10</costStuffCount>
         </value>
       </li>
       <li Class="PatchOperationConditional">
         <success>Always</success>
-        <xpath>/Defs/ThingDef[defName="CompostBarrel"]/constructEffect</xpath>
+        <xpath>Defs/*[defName="CompostBarrel"]/constructEffect</xpath>
         <match Class="PatchOperationRemove">
-          <xpath>/Defs/ThingDef[defName="CompostBarrel"]/constructEffect</xpath>
+          <xpath>Defs/*[defName="CompostBarrel"]/constructEffect</xpath>
         </match>
       </li>
     </operations>

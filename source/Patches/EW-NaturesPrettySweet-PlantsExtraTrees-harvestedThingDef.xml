@@ -1,21 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Patch>
   <Operation Class="PatchOperationSequence">
+    <success>Always</success>
     <operations>
-      <success>Always</success>
       <li Class="ModCheck.isModLoaded">
-        <modName>Core</modName>
+        <modName>Nature's Pretty Sweet</modName>
         <yourMod>Extended Woodworking</yourMod>
       </li>
       <li Class="ModCheck.loadOrder">
-        <modName>Core</modName>
+        <modName>Nature's Pretty Sweet</modName>
         <yourMod>Extended Woodworking</yourMod>
         <errorOnFail>true</errorOnFail>
       </li>
       <li Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="PlantTreeDrago"]/plant</xpath>
+        <xpath>Defs/ThingDef[defName="TKKN_OldGrowth_PlantTreeOak"]/plant</xpath>
         <value>
-          <harvestedThingDef>WoodLog_Drago</harvestedThingDef>
+          <harvestedThingDef>WoodLog_Oak</harvestedThingDef>
         </value>
       </li>
     </operations>

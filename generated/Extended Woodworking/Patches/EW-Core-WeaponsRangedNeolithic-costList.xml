@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Patch>
   <Operation Class="PatchOperationSequence">
+    <success>Always</success>
     <operations>
-      <success>Always</success>
       <li Class="ModCheck.isModLoaded">
         <modName>Core</modName>
         <yourMod>Extended Woodworking</yourMod>
@@ -13,10 +13,10 @@
         <errorOnFail>true</errorOnFail>
       </li>
       <li Class="PatchOperationRemove">
-        <xpath>/Defs/ThingDef[defName="Bow_Short"]/costList/WoodLog</xpath>
+        <xpath>Defs/*[defName="Bow_Short"]/costList/WoodLog</xpath>
       </li>
       <li Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="Bow_Short"]</xpath>
+        <xpath>Defs/*[defName="Bow_Short"]</xpath>
         <value>
           <stuffCategories>
             <li>Woody</li>
@@ -24,23 +24,23 @@
         </value>
       </li>
       <li Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="Bow_Short"]</xpath>
+        <xpath>Defs/*[defName="Bow_Short"]</xpath>
         <value>
           <costStuffCount>30</costStuffCount>
         </value>
       </li>
       <li Class="PatchOperationConditional">
         <success>Always</success>
-        <xpath>/Defs/ThingDef[defName="Bow_Short"]/constructEffect</xpath>
+        <xpath>Defs/*[defName="Bow_Short"]/constructEffect</xpath>
         <match Class="PatchOperationRemove">
-          <xpath>/Defs/ThingDef[defName="Bow_Short"]/constructEffect</xpath>
+          <xpath>Defs/*[defName="Bow_Short"]/constructEffect</xpath>
         </match>
       </li>
       <li Class="PatchOperationRemove">
-        <xpath>/Defs/ThingDef[defName="Pila"]/costList/WoodLog</xpath>
+        <xpath>Defs/*[defName="Pila"]/costList/WoodLog</xpath>
       </li>
       <li Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="Pila"]</xpath>
+        <xpath>Defs/*[defName="Pila"]</xpath>
         <value>
           <stuffCategories>
             <li>Woody</li>
@@ -48,23 +48,23 @@
         </value>
       </li>
       <li Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="Pila"]</xpath>
+        <xpath>Defs/*[defName="Pila"]</xpath>
         <value>
           <costStuffCount>70</costStuffCount>
         </value>
       </li>
       <li Class="PatchOperationConditional">
         <success>Always</success>
-        <xpath>/Defs/ThingDef[defName="Pila"]/constructEffect</xpath>
+        <xpath>Defs/*[defName="Pila"]/constructEffect</xpath>
         <match Class="PatchOperationRemove">
-          <xpath>/Defs/ThingDef[defName="Pila"]/constructEffect</xpath>
+          <xpath>Defs/*[defName="Pila"]/constructEffect</xpath>
         </match>
       </li>
       <li Class="PatchOperationRemove">
-        <xpath>/Defs/ThingDef[defName="Bow_Recurve"]/costList/WoodLog</xpath>
+        <xpath>Defs/*[defName="Bow_Recurve"]/costList/WoodLog</xpath>
       </li>
       <li Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="Bow_Recurve"]</xpath>
+        <xpath>Defs/*[defName="Bow_Recurve"]</xpath>
         <value>
           <stuffCategories>
             <li>Woody</li>
@@ -72,23 +72,23 @@
         </value>
       </li>
       <li Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="Bow_Recurve"]</xpath>
+        <xpath>Defs/*[defName="Bow_Recurve"]</xpath>
         <value>
           <costStuffCount>40</costStuffCount>
         </value>
       </li>
       <li Class="PatchOperationConditional">
         <success>Always</success>
-        <xpath>/Defs/ThingDef[defName="Bow_Recurve"]/constructEffect</xpath>
+        <xpath>Defs/*[defName="Bow_Recurve"]/constructEffect</xpath>
         <match Class="PatchOperationRemove">
-          <xpath>/Defs/ThingDef[defName="Bow_Recurve"]/constructEffect</xpath>
+          <xpath>Defs/*[defName="Bow_Recurve"]/constructEffect</xpath>
         </match>
       </li>
       <li Class="PatchOperationRemove">
-        <xpath>/Defs/ThingDef[defName="Bow_Great"]/costList/WoodLog</xpath>
+        <xpath>Defs/*[defName="Bow_Great"]/costList/WoodLog</xpath>
       </li>
       <li Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="Bow_Great"]</xpath>
+        <xpath>Defs/*[defName="Bow_Great"]</xpath>
         <value>
           <stuffCategories>
             <li>Woody</li>
@@ -96,16 +96,16 @@
         </value>
       </li>
       <li Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="Bow_Great"]</xpath>
+        <xpath>Defs/*[defName="Bow_Great"]</xpath>
         <value>
           <costStuffCount>50</costStuffCount>
         </value>
       </li>
       <li Class="PatchOperationConditional">
         <success>Always</success>
-        <xpath>/Defs/ThingDef[defName="Bow_Great"]/constructEffect</xpath>
+        <xpath>Defs/*[defName="Bow_Great"]/constructEffect</xpath>
         <match Class="PatchOperationRemove">
-          <xpath>/Defs/ThingDef[defName="Bow_Great"]/constructEffect</xpath>
+          <xpath>Defs/*[defName="Bow_Great"]/constructEffect</xpath>
         </match>
       </li>
     </operations>

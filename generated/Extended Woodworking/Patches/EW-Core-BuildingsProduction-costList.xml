@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Patch>
   <Operation Class="PatchOperationSequence">
+    <success>Always</success>
     <operations>
-      <success>Always</success>
       <li Class="ModCheck.isModLoaded">
         <modName>Core</modName>
         <yourMod>Extended Woodworking</yourMod>
@@ -13,10 +13,10 @@
         <errorOnFail>true</errorOnFail>
       </li>
       <li Class="PatchOperationRemove">
-        <xpath>/Defs/ThingDef[defName="Campfire"]/costList/WoodLog</xpath>
+        <xpath>Defs/*[defName="Brewery"]/costList/WoodLog</xpath>
       </li>
       <li Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="Campfire"]</xpath>
+        <xpath>Defs/*[defName="Brewery"]</xpath>
         <value>
           <stuffCategories>
             <li>Woody</li>
@@ -24,23 +24,23 @@
         </value>
       </li>
       <li Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="Campfire"]</xpath>
+        <xpath>Defs/*[defName="Brewery"]</xpath>
         <value>
-          <costStuffCount>20</costStuffCount>
+          <costStuffCount>120</costStuffCount>
         </value>
       </li>
       <li Class="PatchOperationConditional">
         <success>Always</success>
-        <xpath>/Defs/ThingDef[defName="Campfire"]/constructEffect</xpath>
+        <xpath>Defs/*[defName="Brewery"]/constructEffect</xpath>
         <match Class="PatchOperationRemove">
-          <xpath>/Defs/ThingDef[defName="Campfire"]/constructEffect</xpath>
+          <xpath>Defs/*[defName="Brewery"]/constructEffect</xpath>
         </match>
       </li>
       <li Class="PatchOperationRemove">
-        <xpath>/Defs/ThingDef[defName="PassiveCooler"]/costList/WoodLog</xpath>
+        <xpath>Defs/*[defName="FermentingBarrel"]/costList/WoodLog</xpath>
       </li>
       <li Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="PassiveCooler"]</xpath>
+        <xpath>Defs/*[defName="FermentingBarrel"]</xpath>
         <value>
           <stuffCategories>
             <li>Woody</li>
@@ -48,16 +48,16 @@
         </value>
       </li>
       <li Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="PassiveCooler"]</xpath>
+        <xpath>Defs/*[defName="FermentingBarrel"]</xpath>
         <value>
-          <costStuffCount>50</costStuffCount>
+          <costStuffCount>30</costStuffCount>
         </value>
       </li>
       <li Class="PatchOperationConditional">
         <success>Always</success>
-        <xpath>/Defs/ThingDef[defName="PassiveCooler"]/constructEffect</xpath>
+        <xpath>Defs/*[defName="FermentingBarrel"]/constructEffect</xpath>
         <match Class="PatchOperationRemove">
-          <xpath>/Defs/ThingDef[defName="PassiveCooler"]/constructEffect</xpath>
+          <xpath>Defs/*[defName="FermentingBarrel"]/constructEffect</xpath>
         </match>
       </li>
     </operations>

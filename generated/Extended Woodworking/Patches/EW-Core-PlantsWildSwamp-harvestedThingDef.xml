@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Patch>
   <Operation Class="PatchOperationSequence">
+    <success>Always</success>
     <operations>
-      <success>Always</success>
       <li Class="ModCheck.isModLoaded">
         <modName>Core</modName>
         <yourMod>Extended Woodworking</yourMod>
@@ -13,27 +13,21 @@
         <errorOnFail>true</errorOnFail>
       </li>
       <li Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="PlantTreeOak"]/plant</xpath>
+        <xpath>Defs/ThingDef[defName="PlantTreeWillow"]/plant</xpath>
         <value>
-          <harvestedThingDef>WoodLog_Oak</harvestedThingDef>
+          <harvestedThingDef>WoodLog_Willow</harvestedThingDef>
         </value>
       </li>
       <li Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="PlantTreePoplar"]/plant</xpath>
+        <xpath>Defs/ThingDef[defName="PlantTreeCypress"]/plant</xpath>
         <value>
-          <harvestedThingDef>WoodLog_Poplar</harvestedThingDef>
+          <harvestedThingDef>WoodLog_Cypress</harvestedThingDef>
         </value>
       </li>
       <li Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="PlantTreePine"]/plant</xpath>
+        <xpath>Defs/ThingDef[defName="PlantTreeMaple"]/plant</xpath>
         <value>
-          <harvestedThingDef>WoodLog_Pine</harvestedThingDef>
-        </value>
-      </li>
-      <li Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="PlantTreeBirch"]/plant</xpath>
-        <value>
-          <harvestedThingDef>WoodLog_Birch</harvestedThingDef>
+          <harvestedThingDef>WoodLog_Maple</harvestedThingDef>
         </value>
       </li>
     </operations>

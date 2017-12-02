@@ -1,22 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Patch>
   <Operation Class="PatchOperationSequence">
+    <success>Always</success>
     <operations>
-      <success>Always</success>
       <li Class="ModCheck.isModLoaded">
-        <modName>Core</modName>
+        <modName>A Dog Said...</modName>
         <yourMod>Extended Woodworking</yourMod>
       </li>
       <li Class="ModCheck.loadOrder">
-        <modName>Core</modName>
+        <modName>A Dog Said...</modName>
         <yourMod>Extended Woodworking</yourMod>
         <errorOnFail>true</errorOnFail>
       </li>
       <li Class="PatchOperationRemove">
-        <xpath>/Defs/ThingDef[defName="WoodPlankFloor"]/costList/WoodLog</xpath>
+        <xpath>Defs/*[defName="TableAnimalProsthetics"]/costList/WoodLog</xpath>
       </li>
       <li Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="WoodPlankFloor"]</xpath>
+        <xpath>Defs/*[defName="TableAnimalProsthetics"]</xpath>
         <value>
           <stuffCategories>
             <li>Woody</li>
@@ -24,16 +24,16 @@
         </value>
       </li>
       <li Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="WoodPlankFloor"]</xpath>
+        <xpath>Defs/*[defName="TableAnimalProsthetics"]</xpath>
         <value>
-          <costStuffCount>3</costStuffCount>
+          <costStuffCount>50</costStuffCount>
         </value>
       </li>
       <li Class="PatchOperationConditional">
         <success>Always</success>
-        <xpath>/Defs/ThingDef[defName="WoodPlankFloor"]/constructEffect</xpath>
+        <xpath>Defs/*[defName="TableAnimalProsthetics"]/constructEffect</xpath>
         <match Class="PatchOperationRemove">
-          <xpath>/Defs/ThingDef[defName="WoodPlankFloor"]/constructEffect</xpath>
+          <xpath>Defs/*[defName="TableAnimalProsthetics"]/constructEffect</xpath>
         </match>
       </li>
     </operations>

@@ -1,7 +1,7 @@
 ﻿<Patch>
     <Operation Class="PatchOperationSequence">
+        <success>Always</success>
         <operations>
-            <success>Always</success>
             <li Class="ModCheck.isModLoaded">
                 <modName>%MOD%</modName>
                 <yourMod>Extended Woodworking</yourMod>
@@ -11,11 +11,12 @@
                 <yourMod>Extended Woodworking</yourMod>
                 <errorOnFail>true</errorOnFail>
             </li>
+            <li Class="PatchOperationTest">
+                <xpath>Defs/TerrainDef[defName='WoodPlankFloor_Birch']</xpath>
+            </li>
             <li Class="PatchOperationAdd">
-                <xpath>/Defs/ThingDef[defName="PlantTree%NAME%"]/plant</xpath>
-                <value>
-                    <harvestedThingDef>WoodLog_%NAME%</harvestedThingDef>
-                </value>
+                <xpath>Defs</xpath>
+                <value />
             </li>
         </operations>
     </Operation>

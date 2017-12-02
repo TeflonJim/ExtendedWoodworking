@@ -1,22 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Patch>
   <Operation Class="PatchOperationSequence">
+    <success>Always</success>
     <operations>
-      <success>Always</success>
       <li Class="ModCheck.isModLoaded">
-        <modName>Core</modName>
+        <modName>Area Rugs B18</modName>
         <yourMod>Extended Woodworking</yourMod>
       </li>
       <li Class="ModCheck.loadOrder">
-        <modName>Core</modName>
+        <modName>Area Rugs B18</modName>
         <yourMod>Extended Woodworking</yourMod>
         <errorOnFail>true</errorOnFail>
       </li>
       <li Class="PatchOperationRemove">
-        <xpath>/Defs/ThingDef[defName="Brewery"]/costList/WoodLog</xpath>
+        <xpath>Defs/*[defName="BarrelDye"]/costList/WoodLog</xpath>
       </li>
       <li Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="Brewery"]</xpath>
+        <xpath>Defs/*[defName="BarrelDye"]</xpath>
         <value>
           <stuffCategories>
             <li>Woody</li>
@@ -24,23 +24,23 @@
         </value>
       </li>
       <li Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="Brewery"]</xpath>
+        <xpath>Defs/*[defName="BarrelDye"]</xpath>
         <value>
-          <costStuffCount>120</costStuffCount>
+          <costStuffCount>75</costStuffCount>
         </value>
       </li>
       <li Class="PatchOperationConditional">
         <success>Always</success>
-        <xpath>/Defs/ThingDef[defName="Brewery"]/constructEffect</xpath>
+        <xpath>Defs/*[defName="BarrelDye"]/constructEffect</xpath>
         <match Class="PatchOperationRemove">
-          <xpath>/Defs/ThingDef[defName="Brewery"]/constructEffect</xpath>
+          <xpath>Defs/*[defName="BarrelDye"]/constructEffect</xpath>
         </match>
       </li>
       <li Class="PatchOperationRemove">
-        <xpath>/Defs/ThingDef[defName="FermentingBarrel"]/costList/WoodLog</xpath>
+        <xpath>Defs/*[defName="TableRugMaking"]/costList/WoodLog</xpath>
       </li>
       <li Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="FermentingBarrel"]</xpath>
+        <xpath>Defs/*[defName="TableRugMaking"]</xpath>
         <value>
           <stuffCategories>
             <li>Woody</li>
@@ -48,16 +48,16 @@
         </value>
       </li>
       <li Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="FermentingBarrel"]</xpath>
+        <xpath>Defs/*[defName="TableRugMaking"]</xpath>
         <value>
-          <costStuffCount>30</costStuffCount>
+          <costStuffCount>100</costStuffCount>
         </value>
       </li>
       <li Class="PatchOperationConditional">
         <success>Always</success>
-        <xpath>/Defs/ThingDef[defName="FermentingBarrel"]/constructEffect</xpath>
+        <xpath>Defs/*[defName="TableRugMaking"]/constructEffect</xpath>
         <match Class="PatchOperationRemove">
-          <xpath>/Defs/ThingDef[defName="FermentingBarrel"]/constructEffect</xpath>
+          <xpath>Defs/*[defName="TableRugMaking"]/constructEffect</xpath>
         </match>
       </li>
     </operations>
