@@ -302,7 +302,7 @@ task CreateCostListPatch {
             $xDocument = [System.Xml.Linq.XDocument]::Load($item.FullName)
             [System.Xml.XPath.Extensions]::XPathSelectElements(
                 $xDocument,
-                '/Defs/*[defName and not(stuffCategories) and ./costList/WoodLog]'
+                '/Defs/*[name()!="TerrainDef" and defName and not(stuffCategories) and ./costList/WoodLog]'
             )
         } | ForEach-Object {
             [PSCustomObject]@{
