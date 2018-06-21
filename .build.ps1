@@ -537,4 +537,11 @@ task UpdateVersion {
         'Build' { [Version]::new($version.Major, $version.Minor, $version.Build + 1) }
     }
     Set-Content "$psscriptroot\source\About\version.txt" -Value $version.ToString()
+
+    $xDocument = [System.Xml.Linq.XDocument]::Load("$psscriptroot\source\About\ModSync.xml")
+    $xDocument.Descendants('Version').ForEach{ $_.Value = $version }
+    $xDocument.Save("$psscriptroot\source\About\ModSync.xml")
+
+    Copy-Item "$psscriptroot\source\About\version.txt" (Join-Path $buildInfo.Path.Generated 'About')
+    Copy-Item "$psscriptroot\source\About\ModSync.xml" (Join-Path $buildInfo.Path.Generated 'About')
 }
