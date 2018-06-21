@@ -1,22 +1,19 @@
 ﻿<Patch>
-    <Operation Class="PatchOperationSequence">
+    <Operation Class="PatchOperationFindMod">
         <success>Always</success>
-        <operations>
-            <li Class="ModCheck.isModLoaded">
-                <modName>%MOD%</modName>
-                <yourMod>Extended Woodworking</yourMod>
-            </li>
-            <li Class="ModCheck.loadOrder">
-                <modName>%MOD%</modName>
-                <yourMod>Extended Woodworking</yourMod>
-                <errorOnFail>true</errorOnFail>
-            </li>
-            <li Class="PatchOperationAdd">
-                <xpath>Defs/ThingDef[defName="PlantTree%NAME%"]/plant</xpath>
-                <value>
-                    <harvestedThingDef>WoodLog_%NAME%</harvestedThingDef>
-                </value>
-            </li>
-        </operations>
+        <mods>
+            <li>%MOD%</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <success>Always</success>
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="Plant_Tree%NAME%"]/plant</xpath>
+                    <value>
+                        <harvestedThingDef>WoodLog_%NAME%</harvestedThingDef>
+                    </value>
+                </li>
+            </operations>
+        </match>
     </Operation>
 </Patch>

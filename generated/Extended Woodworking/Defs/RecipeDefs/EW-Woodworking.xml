@@ -30,9 +30,9 @@
       <categories>
         <li>WoodTypes</li>
       </categories>
-      <exceptedThingDefs>
+      <disallowedThingDefs>
         <li>WoodLog</li>
-      </exceptedThingDefs>
+      </disallowedThingDefs>
     </defaultIngredientFilter>
     <recipeUsers>
       <li>TableWoodworking</li>
@@ -68,13 +68,13 @@
       <categories>
         <li>WoodTypes</li>
       </categories>
-      <exceptedThingDefs>
+      <disallowedThingDefs>
         <li>WoodLog_Green</li>
         <li>WoodLog_Blue</li>
         <li>WoodLog_Yellow</li>
         <li>WoodLog_White</li>
         <li>WoodLog_Black</li>
-      </exceptedThingDefs>
+      </disallowedThingDefs>
     </defaultIngredientFilter>
     <recipeUsers>
       <li>TableWoodworking</li>
@@ -110,13 +110,13 @@
       <categories>
         <li>WoodTypes</li>
       </categories>
-      <exceptedThingDefs>
+      <disallowedThingDefs>
         <li>WoodLog_Red</li>
         <li>WoodLog_Blue</li>
         <li>WoodLog_Yellow</li>
         <li>WoodLog_White</li>
         <li>WoodLog_Black</li>
-      </exceptedThingDefs>
+      </disallowedThingDefs>
     </defaultIngredientFilter>
     <recipeUsers>
       <li>TableWoodworking</li>
@@ -152,13 +152,13 @@
       <categories>
         <li>WoodTypes</li>
       </categories>
-      <exceptedThingDefs>
+      <disallowedThingDefs>
         <li>WoodLog_Red</li>
         <li>WoodLog_Green</li>
         <li>WoodLog_Yellow</li>
         <li>WoodLog_White</li>
         <li>WoodLog_Black</li>
-      </exceptedThingDefs>
+      </disallowedThingDefs>
     </defaultIngredientFilter>
     <recipeUsers>
       <li>TableWoodworking</li>
@@ -194,13 +194,13 @@
       <categories>
         <li>WoodTypes</li>
       </categories>
-      <exceptedThingDefs>
+      <disallowedThingDefs>
         <li>WoodLog_Red</li>
         <li>WoodLog_Green</li>
         <li>WoodLog_Blue</li>
         <li>WoodLog_White</li>
         <li>WoodLog_Black</li>
-      </exceptedThingDefs>
+      </disallowedThingDefs>
     </defaultIngredientFilter>
     <recipeUsers>
       <li>TableWoodworking</li>
@@ -236,13 +236,13 @@
       <categories>
         <li>WoodTypes</li>
       </categories>
-      <exceptedThingDefs>
+      <disallowedThingDefs>
         <li>WoodLog_Red</li>
         <li>WoodLog_Green</li>
         <li>WoodLog_Blue</li>
         <li>WoodLog_Yellow</li>
         <li>WoodLog_Black</li>
-      </exceptedThingDefs>
+      </disallowedThingDefs>
     </defaultIngredientFilter>
     <recipeUsers>
       <li>TableWoodworking</li>
@@ -278,13 +278,13 @@
       <categories>
         <li>WoodTypes</li>
       </categories>
-      <exceptedThingDefs>
+      <disallowedThingDefs>
         <li>WoodLog_Red</li>
         <li>WoodLog_Green</li>
         <li>WoodLog_Blue</li>
         <li>WoodLog_Yellow</li>
         <li>WoodLog_White</li>
-      </exceptedThingDefs>
+      </disallowedThingDefs>
     </defaultIngredientFilter>
     <recipeUsers>
       <li>TableWoodworking</li>

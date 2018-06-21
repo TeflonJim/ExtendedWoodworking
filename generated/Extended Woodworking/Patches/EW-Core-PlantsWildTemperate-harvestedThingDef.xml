@@ -1,41 +1,38 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Patch>
-  <Operation Class="PatchOperationSequence">
+  <Operation Class="PatchOperationFindMod">
     <success>Always</success>
-    <operations>
-      <li Class="ModCheck.isModLoaded">
-        <modName>Core</modName>
-        <yourMod>Extended Woodworking</yourMod>
-      </li>
-      <li Class="ModCheck.loadOrder">
-        <modName>Core</modName>
-        <yourMod>Extended Woodworking</yourMod>
-        <errorOnFail>true</errorOnFail>
-      </li>
-      <li Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="PlantTreeOak"]/plant</xpath>
-        <value>
-          <harvestedThingDef>WoodLog_Oak</harvestedThingDef>
-        </value>
-      </li>
-      <li Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="PlantTreePoplar"]/plant</xpath>
-        <value>
-          <harvestedThingDef>WoodLog_Poplar</harvestedThingDef>
-        </value>
-      </li>
-      <li Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="PlantTreePine"]/plant</xpath>
-        <value>
-          <harvestedThingDef>WoodLog_Pine</harvestedThingDef>
-        </value>
-      </li>
-      <li Class="PatchOperationAdd">
-        <xpath>Defs/ThingDef[defName="PlantTreeBirch"]/plant</xpath>
-        <value>
-          <harvestedThingDef>WoodLog_Birch</harvestedThingDef>
-        </value>
-      </li>
-    </operations>
+    <mods>
+      <li>Core</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="Plant_TreeOak"]/plant</xpath>
+          <value>
+            <harvestedThingDef>WoodLog_Oak</harvestedThingDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="Plant_TreePoplar"]/plant</xpath>
+          <value>
+            <harvestedThingDef>WoodLog_Poplar</harvestedThingDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="Plant_TreePine"]/plant</xpath>
+          <value>
+            <harvestedThingDef>WoodLog_Pine</harvestedThingDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName="Plant_TreeBirch"]/plant</xpath>
+          <value>
+            <harvestedThingDef>WoodLog_Birch</harvestedThingDef>
+          </value>
+        </li>
+      </operations>
+    </match>
   </Operation>
 </Patch>

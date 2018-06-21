@@ -19,49 +19,33 @@
         </value>
     </Operation>
     <!-- VGP Xtra Trees and Flowers -->
-    <Operation Class="PatchOperationSequence">
+    <Operation Class="PatchOperationFindMod">
         <success>Always</success>
-        <operations>
-            <li Class="ModCheck.isModLoaded">
-                <modName>VGP Xtra Trees and Flowers</modName>
-                <yourMod>Extended Woodworking</yourMod>
-            </li>
-            <li Class="ModCheck.loadOrder">
-                <modName>VGP Xtra Trees and Flowers</modName>
-                <yourMod>Extended Woodworking</yourMod>
-                <errorOnFail>true</errorOnFail>
-            </li>
-            <li Class="PatchOperationAdd">
-                <xpath>Defs/ThingDef[category="Building" or contains(thingClass, "Building")]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="WoodLog"]</xpath>
-                <value>
-                    <li>WoodLog_Acacia</li>
-                    <li>WoodLog_Camellia</li>
-                    <li>WoodLog_CherryBlossom</li>
-                    <li>WoodLog_JapaneseMaple</li>
-                    <li>WoodLog_RedMaple</li>
-                </value>
-            </li>
-        </operations>
+        <mods>
+            <li>VGP Xtra Trees and Flowers</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[category="Building" or contains(thingClass, "Building")]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="WoodLog"]</xpath>
+            <value>
+                <li>WoodLog_Acacia</li>
+                <li>WoodLog_Camellia</li>
+                <li>WoodLog_CherryBlossom</li>
+                <li>WoodLog_JapaneseMaple</li>
+                <li>WoodLog_RedMaple</li>
+            </value>
+        </match>
     </Operation>
     <!-- Nature's Pretty Sweet -->
-    <Operation Class="PatchOperationSequence">
+    <Operation Class="PatchOperationFindMod">
         <success>Always</success>
-        <operations>
-            <li Class="ModCheck.isModLoaded">
-                <modName>Nature's Pretty Sweet</modName>
-                <yourMod>Extended Woodworking</yourMod>
-            </li>
-            <li Class="ModCheck.loadOrder">
-                <modName>Nature's Pretty Sweet</modName>
-                <yourMod>Extended Woodworking</yourMod>
-                <errorOnFail>true</errorOnFail>
-            </li>
-            <li Class="PatchOperationAdd">
-                <xpath>Defs/ThingDef[category="Building" or contains(thingClass, "Building")]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="WoodLog"]</xpath>
-                <value>
-                    <li>RedWoodLog</li>
-                </value>
-            </li>
-        </operations>
+        <mods>
+            <li>Nature's Pretty Sweet</li>
+        </mods>
+        <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[category="Building" or contains(thingClass, "Building")]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="WoodLog"]</xpath>
+            <value>
+                <li>RedWoodLog</li>
+            </value>
+        </match>
     </Operation>
 </Patch>

@@ -30,9 +30,9 @@
             <categories>
                 <li>WoodTypes</li>
             </categories>
-            <exceptedThingDefs>
+            <disallowedThingDefs>
                 <li>WoodLog</li>
-            </exceptedThingDefs>
+            </disallowedThingDefs>
         </defaultIngredientFilter>
         <recipeUsers>
             <li>TableWoodworking</li>
@@ -66,7 +66,7 @@
             <categories>
                 <li>WoodTypes</li>
             </categories>
-            <exceptedThingDefs />
+            <disallowedThingDefs />
         </defaultIngredientFilter>
         <recipeUsers>
             <li>TableWoodworking</li>

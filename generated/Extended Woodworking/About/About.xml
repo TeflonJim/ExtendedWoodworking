@@ -2,19 +2,15 @@
 <ModMetaData>
   <name>Extended Woodworking</name>
   <author>ItchyFlea</author>
-  <targetVersion>0.18.1722</targetVersion>
+  <targetVersion>1.0.0</targetVersion>
   <description>
-This is an update of the Extended Woodworking mod (A13) for B18. All credit for the original creative work goes to ItchyFlea.
+This is an update of the Extended Woodworking mod (A13). All credit for the original creative work goes to ItchyFlea.
 
 https://ludeon.com/forums/index.php?topic=7893.0
 
 Previous versions of this module can be downloaded from GitHub:
 
 https://github.com/indented-automation/ExtendedWoodworking/releases
-
-The Vegetable Garden add-on changes the trees in the "VGP Xtra Trees and Flowers" to use specific trees. The Vegetable Garden add-on requires "Extended Woodworking".
-
-The Vegetable Garden add-on must be loaded after Vegetable Garden (XML changes only).
 
 This mod changes trees so that when they are cut down, they produce wood of that tree type. Different wood types have slightly different properties.
 

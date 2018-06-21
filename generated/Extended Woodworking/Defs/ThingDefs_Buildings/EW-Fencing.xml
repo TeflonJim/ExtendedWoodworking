@@ -15,9 +15,6 @@
             </linkFlags>
         </graphicData>	
         <uiIconPath>Fence/Fence_Menu_Icon</uiIconPath>
-        <blueprintGraphicData>
-            <texPath>Fence/Fence_Blueprint_Atlas</texPath>
-        </blueprintGraphicData>
         <costStuffCount>8</costStuffCount>
         <statBases>
             <MaxHitPoints>225</MaxHitPoints>
@@ -44,6 +41,9 @@
         <blockLight>false</blockLight>
         <building>
             <isInert>true</isInert>
+            <blueprintGraphicData>
+                <texPath>Fence/Fence_Blueprint_Atlas</texPath>
+            </blueprintGraphicData>            
         </building>
         <damageMultipliers>
             <li>
@@ -65,9 +65,11 @@
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>		
         <uiIconPath>Fence/FenceGateMenu</uiIconPath>
-        <blueprintGraphicData>
-            <texPath>Fence/FenceGateBlueprint</texPath>
-        </blueprintGraphicData>
+        <building>
+            <blueprintGraphicData>
+                <texPath>Fence/FenceGateBlueprint</texPath>
+            </blueprintGraphicData>
+        </building>
         <costStuffCount>25</costStuffCount>
     </ThingDef>
 

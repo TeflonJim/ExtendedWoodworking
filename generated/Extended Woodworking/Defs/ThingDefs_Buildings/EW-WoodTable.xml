@@ -2,7 +2,6 @@
 <Defs>
     <ThingDef Name="BuildingBaseB" Abstract="True">
         <category>Building</category>
-        <soundImpactDefault>BulletImpactMetal</soundImpactDefault>
         <selectable>true</selectable>
         <drawerType>MapMeshAndRealTime</drawerType>
         <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>

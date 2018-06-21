@@ -17,8 +17,13 @@
       <Mass>0.4</Mass>
       <Flammability>1.0</Flammability>
       <DeteriorationRate>1</DeteriorationRate>
-      <SharpDamageMultiplier>0.3</SharpDamageMultiplier>
-      <BluntDamageMultiplier>0.8</BluntDamageMultiplier>
+      <StuffPower_Armor_Sharp>0.30</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.30</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.5</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>0.4</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0.9</BluntDamageMultiplier>
     </statBases>
     <stuffProps>
       <stuffAdjective>wooden</stuffAdjective>
@@ -29,7 +34,7 @@
       <color>(133,97,67)</color>
       <constructEffect>ConstructWood</constructEffect>
       <appearance>Planks</appearance>
-      <soundImpactStuff>BulletImpactWood</soundImpactStuff>
+      <soundImpactStuff>BulletImpact_Wood</soundImpactStuff>
       <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
       <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
       <statFactors>
@@ -42,7 +47,7 @@
         <MeleeWeapon_CooldownMultiplier>0.9</MeleeWeapon_CooldownMultiplier>
       </statFactors>
     </stuffProps>
-    <isBodyPartOrImplant>true</isBodyPartOrImplant>
+    <isTechHediff>true</isTechHediff>
     <thingCategories>
       <li>ResourcesRaw</li>
       <li>WoodTypes</li>
@@ -55,7 +60,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>8</power>
+        <power>9.7</power>
         <cooldownTime>2.2</cooldownTime>
       </li>
     </tools>
@@ -63,7 +68,7 @@
   <ThingDef ParentName="ResourceVerbBase">
     <defName>WoodLog_Birch</defName>
     <label>Birch wood</label>
-    <description>Wood from trees or other fibrous plants. Useful for building structures, weapons, and even simple prosthetics. A raw stick of wood can be used as a weapon in a pinch.</description>
+    <description>Wood from trees or other fibrous plants. Useful for building structures and weapons. It is a good fuel for campfires and generators, and can be refined into chemfuel. In a pinch, a piece of wood can be used as a weapon or a leg.</description>
     <graphicData>
       <texPath>Logs/WoodLog</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -78,8 +83,13 @@
       <Mass>0.4</Mass>
       <Flammability>1.0</Flammability>
       <DeteriorationRate>1</DeteriorationRate>
-      <SharpDamageMultiplier>0.3</SharpDamageMultiplier>
-      <BluntDamageMultiplier>0.8</BluntDamageMultiplier>
+      <StuffPower_Armor_Sharp>0.30</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.30</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.5</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>0.4</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0.9</BluntDamageMultiplier>
     </statBases>
     <stuffProps>
       <stuffAdjective>birch</stuffAdjective>
@@ -90,7 +100,7 @@
       <color>(235,228,216)</color>
       <constructEffect>ConstructWood</constructEffect>
       <appearance>Planks</appearance>
-      <soundImpactStuff>BulletImpactWood</soundImpactStuff>
+      <soundImpactStuff>BulletImpact_Wood</soundImpactStuff>
       <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
       <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
       <statFactors>
@@ -103,7 +113,7 @@
         <MeleeWeapon_CooldownMultiplier>0.9</MeleeWeapon_CooldownMultiplier>
       </statFactors>
     </stuffProps>
-    <isBodyPartOrImplant>true</isBodyPartOrImplant>
+    <isTechHediff>true</isTechHediff>
     <thingCategories>
       <li>ResourcesRaw</li>
       <li>WoodTypes</li>
@@ -116,7 +126,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>8</power>
+        <power>9.7</power>
         <cooldownTime>2.2</cooldownTime>
       </li>
     </tools>
@@ -124,7 +134,7 @@
   <ThingDef ParentName="ResourceVerbBase">
     <defName>WoodLog_Cecropia</defName>
     <label>Cecropia wood</label>
-    <description>Wood from trees or other fibrous plants. Useful for building structures, weapons, and even simple prosthetics. A raw stick of wood can be used as a weapon in a pinch.</description>
+    <description>Wood from trees or other fibrous plants. Useful for building structures and weapons. It is a good fuel for campfires and generators, and can be refined into chemfuel. In a pinch, a piece of wood can be used as a weapon or a leg.</description>
     <graphicData>
       <texPath>Logs/WoodLog</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -139,8 +149,13 @@
       <Mass>0.4</Mass>
       <Flammability>1.0</Flammability>
       <DeteriorationRate>1</DeteriorationRate>
-      <SharpDamageMultiplier>0.3</SharpDamageMultiplier>
-      <BluntDamageMultiplier>0.8</BluntDamageMultiplier>
+      <StuffPower_Armor_Sharp>0.30</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.30</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.5</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>0.4</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0.9</BluntDamageMultiplier>
     </statBases>
     <stuffProps>
       <stuffAdjective>cecropia</stuffAdjective>
@@ -151,7 +166,7 @@
       <color>(126,74,63)</color>
       <constructEffect>ConstructWood</constructEffect>
       <appearance>Planks</appearance>
-      <soundImpactStuff>BulletImpactWood</soundImpactStuff>
+      <soundImpactStuff>BulletImpact_Wood</soundImpactStuff>
       <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
       <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
       <statFactors>
@@ -164,7 +179,7 @@
         <MeleeWeapon_CooldownMultiplier>0.9</MeleeWeapon_CooldownMultiplier>
       </statFactors>
     </stuffProps>
-    <isBodyPartOrImplant>true</isBodyPartOrImplant>
+    <isTechHediff>true</isTechHediff>
     <thingCategories>
       <li>ResourcesRaw</li>
       <li>WoodTypes</li>
@@ -177,7 +192,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>8</power>
+        <power>9.7</power>
         <cooldownTime>2.2</cooldownTime>
       </li>
     </tools>
@@ -185,7 +200,7 @@
   <ThingDef ParentName="ResourceVerbBase">
     <defName>WoodLog_Cypress</defName>
     <label>Cypress wood</label>
-    <description>Wood from trees or other fibrous plants. Useful for building structures, weapons, and even simple prosthetics. A raw stick of wood can be used as a weapon in a pinch.</description>
+    <description>Wood from trees or other fibrous plants. Useful for building structures and weapons. It is a good fuel for campfires and generators, and can be refined into chemfuel. In a pinch, a piece of wood can be used as a weapon or a leg.</description>
     <graphicData>
       <texPath>Logs/WoodLog</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -200,8 +215,13 @@
       <Mass>0.4</Mass>
       <Flammability>1.0</Flammability>
       <DeteriorationRate>1</DeteriorationRate>
-      <SharpDamageMultiplier>0.3</SharpDamageMultiplier>
-      <BluntDamageMultiplier>0.8</BluntDamageMultiplier>
+      <StuffPower_Armor_Sharp>0.30</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.30</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.5</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>0.4</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0.9</BluntDamageMultiplier>
     </statBases>
     <stuffProps>
       <stuffAdjective>cypress</stuffAdjective>
@@ -212,7 +232,7 @@
       <color>(239, 217, 184)</color>
       <constructEffect>ConstructWood</constructEffect>
       <appearance>Planks</appearance>
-      <soundImpactStuff>BulletImpactWood</soundImpactStuff>
+      <soundImpactStuff>BulletImpact_Wood</soundImpactStuff>
       <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
       <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
       <statFactors>
@@ -225,7 +245,7 @@
         <MeleeWeapon_CooldownMultiplier>0.9</MeleeWeapon_CooldownMultiplier>
       </statFactors>
     </stuffProps>
-    <isBodyPartOrImplant>true</isBodyPartOrImplant>
+    <isTechHediff>true</isTechHediff>
     <thingCategories>
       <li>ResourcesRaw</li>
       <li>WoodTypes</li>
@@ -238,7 +258,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>8</power>
+        <power>9.7</power>
         <cooldownTime>2.2</cooldownTime>
       </li>
     </tools>
@@ -246,7 +266,7 @@
   <ThingDef ParentName="ResourceVerbBase">
     <defName>WoodLog_Drago</defName>
     <label>Drago wood</label>
-    <description>Wood from trees or other fibrous plants. Useful for building structures, weapons, and even simple prosthetics. A raw stick of wood can be used as a weapon in a pinch.</description>
+    <description>Wood from trees or other fibrous plants. Useful for building structures and weapons. It is a good fuel for campfires and generators, and can be refined into chemfuel. In a pinch, a piece of wood can be used as a weapon or a leg.</description>
     <graphicData>
       <texPath>Logs/WoodLog</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -261,8 +281,13 @@
       <Mass>0.4</Mass>
       <Flammability>1.0</Flammability>
       <DeteriorationRate>1</DeteriorationRate>
-      <SharpDamageMultiplier>0.3</SharpDamageMultiplier>
-      <BluntDamageMultiplier>0.8</BluntDamageMultiplier>
+      <StuffPower_Armor_Sharp>0.30</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.30</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.5</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>0.4</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0.9</BluntDamageMultiplier>
     </statBases>
     <stuffProps>
       <stuffAdjective>drago</stuffAdjective>
@@ -273,7 +298,7 @@
       <color>(171, 159, 142)</color>
       <constructEffect>ConstructWood</constructEffect>
       <appearance>Planks</appearance>
-      <soundImpactStuff>BulletImpactWood</soundImpactStuff>
+      <soundImpactStuff>BulletImpact_Wood</soundImpactStuff>
       <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
       <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
       <statFactors>
@@ -286,7 +311,7 @@
         <MeleeWeapon_CooldownMultiplier>0.9</MeleeWeapon_CooldownMultiplier>
       </statFactors>
     </stuffProps>
-    <isBodyPartOrImplant>true</isBodyPartOrImplant>
+    <isTechHediff>true</isTechHediff>
     <thingCategories>
       <li>ResourcesRaw</li>
       <li>WoodTypes</li>
@@ -299,7 +324,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>8</power>
+        <power>9.7</power>
         <cooldownTime>2.2</cooldownTime>
       </li>
     </tools>
@@ -307,7 +332,7 @@
   <ThingDef ParentName="ResourceVerbBase">
     <defName>WoodLog_Maple</defName>
     <label>Maple wood</label>
-    <description>Wood from trees or other fibrous plants. Useful for building structures, weapons, and even simple prosthetics. A raw stick of wood can be used as a weapon in a pinch.</description>
+    <description>Wood from trees or other fibrous plants. Useful for building structures and weapons. It is a good fuel for campfires and generators, and can be refined into chemfuel. In a pinch, a piece of wood can be used as a weapon or a leg.</description>
     <graphicData>
       <texPath>Logs/WoodLog</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -322,8 +347,13 @@
       <Mass>0.4</Mass>
       <Flammability>1.0</Flammability>
       <DeteriorationRate>1</DeteriorationRate>
-      <SharpDamageMultiplier>0.3</SharpDamageMultiplier>
-      <BluntDamageMultiplier>0.8</BluntDamageMultiplier>
+      <StuffPower_Armor_Sharp>0.30</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.30</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.5</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>0.4</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0.9</BluntDamageMultiplier>
     </statBases>
     <stuffProps>
       <stuffAdjective>maple</stuffAdjective>
@@ -334,7 +364,7 @@
       <color>(236, 201, 163)</color>
       <constructEffect>ConstructWood</constructEffect>
       <appearance>Planks</appearance>
-      <soundImpactStuff>BulletImpactWood</soundImpactStuff>
+      <soundImpactStuff>BulletImpact_Wood</soundImpactStuff>
       <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
       <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
       <statFactors>
@@ -347,7 +377,7 @@
         <MeleeWeapon_CooldownMultiplier>0.9</MeleeWeapon_CooldownMultiplier>
       </statFactors>
     </stuffProps>
-    <isBodyPartOrImplant>true</isBodyPartOrImplant>
+    <isTechHediff>true</isTechHediff>
     <thingCategories>
       <li>ResourcesRaw</li>
       <li>WoodTypes</li>
@@ -360,7 +390,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>8</power>
+        <power>9.7</power>
         <cooldownTime>2.2</cooldownTime>
       </li>
     </tools>
@@ -368,7 +398,7 @@
   <ThingDef ParentName="ResourceVerbBase">
     <defName>WoodLog_Oak</defName>
     <label>Oak wood</label>
-    <description>Wood from trees or other fibrous plants. Useful for building structures, weapons, and even simple prosthetics. A raw stick of wood can be used as a weapon in a pinch.</description>
+    <description>Wood from trees or other fibrous plants. Useful for building structures and weapons. It is a good fuel for campfires and generators, and can be refined into chemfuel. In a pinch, a piece of wood can be used as a weapon or a leg.</description>
     <graphicData>
       <texPath>Logs/WoodLog</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -383,8 +413,13 @@
       <Mass>0.4</Mass>
       <Flammability>1.0</Flammability>
       <DeteriorationRate>1</DeteriorationRate>
-      <SharpDamageMultiplier>0.3</SharpDamageMultiplier>
-      <BluntDamageMultiplier>0.8</BluntDamageMultiplier>
+      <StuffPower_Armor_Sharp>0.30</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.30</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.5</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>0.4</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0.9</BluntDamageMultiplier>
     </statBases>
     <stuffProps>
       <stuffAdjective>oak</stuffAdjective>
@@ -395,7 +430,7 @@
       <color>(185,142,96)</color>
       <constructEffect>ConstructWood</constructEffect>
       <appearance>Planks</appearance>
-      <soundImpactStuff>BulletImpactWood</soundImpactStuff>
+      <soundImpactStuff>BulletImpact_Wood</soundImpactStuff>
       <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
       <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
       <statFactors>
@@ -408,7 +443,7 @@
         <MeleeWeapon_CooldownMultiplier>0.9</MeleeWeapon_CooldownMultiplier>
       </statFactors>
     </stuffProps>
-    <isBodyPartOrImplant>true</isBodyPartOrImplant>
+    <isTechHediff>true</isTechHediff>
     <thingCategories>
       <li>ResourcesRaw</li>
       <li>WoodTypes</li>
@@ -421,7 +456,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>8</power>
+        <power>9.7</power>
         <cooldownTime>2.2</cooldownTime>
       </li>
     </tools>
@@ -429,7 +464,7 @@
   <ThingDef ParentName="ResourceVerbBase">
     <defName>WoodLog_Palm</defName>
     <label>Palm wood</label>
-    <description>Wood from trees or other fibrous plants. Useful for building structures, weapons, and even simple prosthetics. A raw stick of wood can be used as a weapon in a pinch.</description>
+    <description>Wood from trees or other fibrous plants. Useful for building structures and weapons. It is a good fuel for campfires and generators, and can be refined into chemfuel. In a pinch, a piece of wood can be used as a weapon or a leg.</description>
     <graphicData>
       <texPath>Logs/WoodLog</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -444,8 +479,13 @@
       <Mass>0.4</Mass>
       <Flammability>1.0</Flammability>
       <DeteriorationRate>1</DeteriorationRate>
-      <SharpDamageMultiplier>0.3</SharpDamageMultiplier>
-      <BluntDamageMultiplier>0.8</BluntDamageMultiplier>
+      <StuffPower_Armor_Sharp>0.30</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.30</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.5</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>0.4</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0.9</BluntDamageMultiplier>
     </statBases>
     <stuffProps>
       <stuffAdjective>palm</stuffAdjective>
@@ -456,7 +496,7 @@
       <color>(224, 150, 87)</color>
       <constructEffect>ConstructWood</constructEffect>
       <appearance>Planks</appearance>
-      <soundImpactStuff>BulletImpactWood</soundImpactStuff>
+      <soundImpactStuff>BulletImpact_Wood</soundImpactStuff>
       <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
       <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
       <statFactors>
@@ -469,7 +509,7 @@
         <MeleeWeapon_CooldownMultiplier>0.9</MeleeWeapon_CooldownMultiplier>
       </statFactors>
     </stuffProps>
-    <isBodyPartOrImplant>true</isBodyPartOrImplant>
+    <isTechHediff>true</isTechHediff>
     <thingCategories>
       <li>ResourcesRaw</li>
       <li>WoodTypes</li>
@@ -482,7 +522,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>8</power>
+        <power>9.7</power>
         <cooldownTime>2.2</cooldownTime>
       </li>
     </tools>
@@ -490,7 +530,7 @@
   <ThingDef ParentName="ResourceVerbBase">
     <defName>WoodLog_Pine</defName>
     <label>Pine wood</label>
-    <description>Wood from trees or other fibrous plants. Useful for building structures, weapons, and even simple prosthetics. A raw stick of wood can be used as a weapon in a pinch.</description>
+    <description>Wood from trees or other fibrous plants. Useful for building structures and weapons. It is a good fuel for campfires and generators, and can be refined into chemfuel. In a pinch, a piece of wood can be used as a weapon or a leg.</description>
     <graphicData>
       <texPath>Logs/WoodLog</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -505,8 +545,13 @@
       <Mass>0.4</Mass>
       <Flammability>1.0</Flammability>
       <DeteriorationRate>1</DeteriorationRate>
-      <SharpDamageMultiplier>0.3</SharpDamageMultiplier>
-      <BluntDamageMultiplier>0.8</BluntDamageMultiplier>
+      <StuffPower_Armor_Sharp>0.30</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.30</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.5</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>0.4</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0.9</BluntDamageMultiplier>
     </statBases>
     <stuffProps>
       <stuffAdjective>pine</stuffAdjective>
@@ -517,7 +562,7 @@
       <color>(198,146,68)</color>
       <constructEffect>ConstructWood</constructEffect>
       <appearance>Planks</appearance>
-      <soundImpactStuff>BulletImpactWood</soundImpactStuff>
+      <soundImpactStuff>BulletImpact_Wood</soundImpactStuff>
       <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
       <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
       <statFactors>
@@ -530,7 +575,7 @@
         <MeleeWeapon_CooldownMultiplier>0.9</MeleeWeapon_CooldownMultiplier>
       </statFactors>
     </stuffProps>
-    <isBodyPartOrImplant>true</isBodyPartOrImplant>
+    <isTechHediff>true</isTechHediff>
     <thingCategories>
       <li>ResourcesRaw</li>
       <li>WoodTypes</li>
@@ -543,7 +588,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>8</power>
+        <power>9.7</power>
         <cooldownTime>2.2</cooldownTime>
       </li>
     </tools>
@@ -551,7 +596,7 @@
   <ThingDef ParentName="ResourceVerbBase">
     <defName>WoodLog_Poplar</defName>
     <label>Poplar wood</label>
-    <description>Wood from trees or other fibrous plants. Useful for building structures, weapons, and even simple prosthetics. A raw stick of wood can be used as a weapon in a pinch.</description>
+    <description>Wood from trees or other fibrous plants. Useful for building structures and weapons. It is a good fuel for campfires and generators, and can be refined into chemfuel. In a pinch, a piece of wood can be used as a weapon or a leg.</description>
     <graphicData>
       <texPath>Logs/WoodLog</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -566,8 +611,13 @@
       <Mass>0.4</Mass>
       <Flammability>1.0</Flammability>
       <DeteriorationRate>1</DeteriorationRate>
-      <SharpDamageMultiplier>0.3</SharpDamageMultiplier>
-      <BluntDamageMultiplier>0.8</BluntDamageMultiplier>
+      <StuffPower_Armor_Sharp>0.30</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.30</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.5</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>0.4</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0.9</BluntDamageMultiplier>
     </statBases>
     <stuffProps>
       <stuffAdjective>poplar</stuffAdjective>
@@ -578,7 +628,7 @@
       <color>(184,156,108)</color>
       <constructEffect>ConstructWood</constructEffect>
       <appearance>Planks</appearance>
-      <soundImpactStuff>BulletImpactWood</soundImpactStuff>
+      <soundImpactStuff>BulletImpact_Wood</soundImpactStuff>
       <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
       <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
       <statFactors>
@@ -591,7 +641,7 @@
         <MeleeWeapon_CooldownMultiplier>0.9</MeleeWeapon_CooldownMultiplier>
       </statFactors>
     </stuffProps>
-    <isBodyPartOrImplant>true</isBodyPartOrImplant>
+    <isTechHediff>true</isTechHediff>
     <thingCategories>
       <li>ResourcesRaw</li>
       <li>WoodTypes</li>
@@ -604,7 +654,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>8</power>
+        <power>9.7</power>
         <cooldownTime>2.2</cooldownTime>
       </li>
     </tools>
@@ -612,7 +662,7 @@
   <ThingDef ParentName="ResourceVerbBase">
     <defName>WoodLog_Teak</defName>
     <label>Teak wood</label>
-    <description>Wood from trees or other fibrous plants. Useful for building structures, weapons, and even simple prosthetics. A raw stick of wood can be used as a weapon in a pinch.</description>
+    <description>Wood from trees or other fibrous plants. Useful for building structures and weapons. It is a good fuel for campfires and generators, and can be refined into chemfuel. In a pinch, a piece of wood can be used as a weapon or a leg.</description>
     <graphicData>
       <texPath>Logs/WoodLog</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -627,8 +677,13 @@
       <Mass>0.4</Mass>
       <Flammability>1.0</Flammability>
       <DeteriorationRate>1</DeteriorationRate>
-      <SharpDamageMultiplier>0.3</SharpDamageMultiplier>
-      <BluntDamageMultiplier>0.8</BluntDamageMultiplier>
+      <StuffPower_Armor_Sharp>0.30</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.30</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.5</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>0.4</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0.9</BluntDamageMultiplier>
     </statBases>
     <stuffProps>
       <stuffAdjective>teak</stuffAdjective>
@@ -639,7 +694,7 @@
       <color>(154,102,59)</color>
       <constructEffect>ConstructWood</constructEffect>
       <appearance>Planks</appearance>
-      <soundImpactStuff>BulletImpactWood</soundImpactStuff>
+      <soundImpactStuff>BulletImpact_Wood</soundImpactStuff>
       <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
       <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
       <statFactors>
@@ -652,7 +707,7 @@
         <MeleeWeapon_CooldownMultiplier>0.9</MeleeWeapon_CooldownMultiplier>
       </statFactors>
     </stuffProps>
-    <isBodyPartOrImplant>true</isBodyPartOrImplant>
+    <isTechHediff>true</isTechHediff>
     <thingCategories>
       <li>ResourcesRaw</li>
       <li>WoodTypes</li>
@@ -665,7 +720,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>8</power>
+        <power>9.7</power>
         <cooldownTime>2.2</cooldownTime>
       </li>
     </tools>
@@ -673,7 +728,7 @@
   <ThingDef ParentName="ResourceVerbBase">
     <defName>WoodLog_Willow</defName>
     <label>Willow wood</label>
-    <description>Wood from trees or other fibrous plants. Useful for building structures, weapons, and even simple prosthetics. A raw stick of wood can be used as a weapon in a pinch.</description>
+    <description>Wood from trees or other fibrous plants. Useful for building structures and weapons. It is a good fuel for campfires and generators, and can be refined into chemfuel. In a pinch, a piece of wood can be used as a weapon or a leg.</description>
     <graphicData>
       <texPath>Logs/WoodLog</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -688,8 +743,13 @@
       <Mass>0.4</Mass>
       <Flammability>1.0</Flammability>
       <DeteriorationRate>1</DeteriorationRate>
-      <SharpDamageMultiplier>0.3</SharpDamageMultiplier>
-      <BluntDamageMultiplier>0.8</BluntDamageMultiplier>
+      <StuffPower_Armor_Sharp>0.30</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.30</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.5</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>0.4</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0.9</BluntDamageMultiplier>
     </statBases>
     <stuffProps>
       <stuffAdjective>willow</stuffAdjective>
@@ -700,7 +760,7 @@
       <color>(221, 186, 141)</color>
       <constructEffect>ConstructWood</constructEffect>
       <appearance>Planks</appearance>
-      <soundImpactStuff>BulletImpactWood</soundImpactStuff>
+      <soundImpactStuff>BulletImpact_Wood</soundImpactStuff>
       <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
       <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
       <statFactors>
@@ -713,7 +773,7 @@
         <MeleeWeapon_CooldownMultiplier>0.9</MeleeWeapon_CooldownMultiplier>
       </statFactors>
     </stuffProps>
-    <isBodyPartOrImplant>true</isBodyPartOrImplant>
+    <isTechHediff>true</isTechHediff>
     <thingCategories>
       <li>ResourcesRaw</li>
       <li>WoodTypes</li>
@@ -726,7 +786,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>8</power>
+        <power>9.7</power>
         <cooldownTime>2.2</cooldownTime>
       </li>
     </tools>

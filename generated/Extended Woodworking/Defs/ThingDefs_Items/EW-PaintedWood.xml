@@ -18,8 +18,13 @@
       <Mass>0.4</Mass>
       <Flammability>1.0</Flammability>
       <DeteriorationRate>1</DeteriorationRate>
-      <SharpDamageMultiplier>0.3</SharpDamageMultiplier>
-      <BluntDamageMultiplier>0.8</BluntDamageMultiplier>
+      <StuffPower_Armor_Sharp>0.30</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.30</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.5</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>0.4</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0.9</BluntDamageMultiplier>
     </statBases>
     <stuffProps>
       <stuffAdjective>painted</stuffAdjective>
@@ -30,7 +35,7 @@
       <color>(200,0,0)</color>
       <constructEffect>ConstructWood</constructEffect>
       <appearance>Planks</appearance>
-      <soundImpactStuff>BulletImpactWood</soundImpactStuff>
+      <soundImpactStuff>BulletImpact_Wood</soundImpactStuff>
       <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
       <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
       <statFactors>
@@ -43,7 +48,7 @@
         <MeleeWeapon_CooldownMultiplier>0.9</MeleeWeapon_CooldownMultiplier>
       </statFactors>
     </stuffProps>
-    <isBodyPartOrImplant>true</isBodyPartOrImplant>
+    <isTechHediff>true</isTechHediff>
     <thingCategories>
       <li>ResourcesRaw</li>
       <li>WoodTypes</li>
@@ -56,7 +61,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>8</power>
+        <power>9.7</power>
         <cooldownTime>2.2</cooldownTime>
       </li>
     </tools>
@@ -79,8 +84,13 @@
       <Mass>0.4</Mass>
       <Flammability>1.0</Flammability>
       <DeteriorationRate>1</DeteriorationRate>
-      <SharpDamageMultiplier>0.3</SharpDamageMultiplier>
-      <BluntDamageMultiplier>0.8</BluntDamageMultiplier>
+      <StuffPower_Armor_Sharp>0.30</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.30</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.5</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>0.4</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0.9</BluntDamageMultiplier>
     </statBases>
     <stuffProps>
       <stuffAdjective>painted</stuffAdjective>
@@ -91,7 +101,7 @@
       <color>(0,200,0)</color>
       <constructEffect>ConstructWood</constructEffect>
       <appearance>Planks</appearance>
-      <soundImpactStuff>BulletImpactWood</soundImpactStuff>
+      <soundImpactStuff>BulletImpact_Wood</soundImpactStuff>
       <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
       <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
       <statFactors>
@@ -104,7 +114,7 @@
         <MeleeWeapon_CooldownMultiplier>0.9</MeleeWeapon_CooldownMultiplier>
       </statFactors>
     </stuffProps>
-    <isBodyPartOrImplant>true</isBodyPartOrImplant>
+    <isTechHediff>true</isTechHediff>
     <thingCategories>
       <li>ResourcesRaw</li>
       <li>WoodTypes</li>
@@ -117,7 +127,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>8</power>
+        <power>9.7</power>
         <cooldownTime>2.2</cooldownTime>
       </li>
     </tools>
@@ -140,8 +150,13 @@
       <Mass>0.4</Mass>
       <Flammability>1.0</Flammability>
       <DeteriorationRate>1</DeteriorationRate>
-      <SharpDamageMultiplier>0.3</SharpDamageMultiplier>
-      <BluntDamageMultiplier>0.8</BluntDamageMultiplier>
+      <StuffPower_Armor_Sharp>0.30</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.30</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.5</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>0.4</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0.9</BluntDamageMultiplier>
     </statBases>
     <stuffProps>
       <stuffAdjective>painted</stuffAdjective>
@@ -152,7 +167,7 @@
       <color>(0,0,200)</color>
       <constructEffect>ConstructWood</constructEffect>
       <appearance>Planks</appearance>
-      <soundImpactStuff>BulletImpactWood</soundImpactStuff>
+      <soundImpactStuff>BulletImpact_Wood</soundImpactStuff>
       <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
       <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
       <statFactors>
@@ -165,7 +180,7 @@
         <MeleeWeapon_CooldownMultiplier>0.9</MeleeWeapon_CooldownMultiplier>
       </statFactors>
     </stuffProps>
-    <isBodyPartOrImplant>true</isBodyPartOrImplant>
+    <isTechHediff>true</isTechHediff>
     <thingCategories>
       <li>ResourcesRaw</li>
       <li>WoodTypes</li>
@@ -178,7 +193,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>8</power>
+        <power>9.7</power>
         <cooldownTime>2.2</cooldownTime>
       </li>
     </tools>
@@ -201,8 +216,13 @@
       <Mass>0.4</Mass>
       <Flammability>1.0</Flammability>
       <DeteriorationRate>1</DeteriorationRate>
-      <SharpDamageMultiplier>0.3</SharpDamageMultiplier>
-      <BluntDamageMultiplier>0.8</BluntDamageMultiplier>
+      <StuffPower_Armor_Sharp>0.30</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.30</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.5</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>0.4</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0.9</BluntDamageMultiplier>
     </statBases>
     <stuffProps>
       <stuffAdjective>painted</stuffAdjective>
@@ -213,7 +233,7 @@
       <color>(200,200,0)</color>
       <constructEffect>ConstructWood</constructEffect>
       <appearance>Planks</appearance>
-      <soundImpactStuff>BulletImpactWood</soundImpactStuff>
+      <soundImpactStuff>BulletImpact_Wood</soundImpactStuff>
       <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
       <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
       <statFactors>
@@ -226,7 +246,7 @@
         <MeleeWeapon_CooldownMultiplier>0.9</MeleeWeapon_CooldownMultiplier>
       </statFactors>
     </stuffProps>
-    <isBodyPartOrImplant>true</isBodyPartOrImplant>
+    <isTechHediff>true</isTechHediff>
     <thingCategories>
       <li>ResourcesRaw</li>
       <li>WoodTypes</li>
@@ -239,7 +259,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>8</power>
+        <power>9.7</power>
         <cooldownTime>2.2</cooldownTime>
       </li>
     </tools>
@@ -262,8 +282,13 @@
       <Mass>0.4</Mass>
       <Flammability>1.0</Flammability>
       <DeteriorationRate>1</DeteriorationRate>
-      <SharpDamageMultiplier>0.3</SharpDamageMultiplier>
-      <BluntDamageMultiplier>0.8</BluntDamageMultiplier>
+      <StuffPower_Armor_Sharp>0.30</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.30</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.5</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>0.4</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0.9</BluntDamageMultiplier>
     </statBases>
     <stuffProps>
       <stuffAdjective>painted</stuffAdjective>
@@ -274,7 +299,7 @@
       <color>(255,255,255)</color>
       <constructEffect>ConstructWood</constructEffect>
       <appearance>Planks</appearance>
-      <soundImpactStuff>BulletImpactWood</soundImpactStuff>
+      <soundImpactStuff>BulletImpact_Wood</soundImpactStuff>
       <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
       <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
       <statFactors>
@@ -287,7 +312,7 @@
         <MeleeWeapon_CooldownMultiplier>0.9</MeleeWeapon_CooldownMultiplier>
       </statFactors>
     </stuffProps>
-    <isBodyPartOrImplant>true</isBodyPartOrImplant>
+    <isTechHediff>true</isTechHediff>
     <thingCategories>
       <li>ResourcesRaw</li>
       <li>WoodTypes</li>
@@ -300,7 +325,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>8</power>
+        <power>9.7</power>
         <cooldownTime>2.2</cooldownTime>
       </li>
     </tools>
@@ -323,8 +348,13 @@
       <Mass>0.4</Mass>
       <Flammability>1.0</Flammability>
       <DeteriorationRate>1</DeteriorationRate>
-      <SharpDamageMultiplier>0.3</SharpDamageMultiplier>
-      <BluntDamageMultiplier>0.8</BluntDamageMultiplier>
+      <StuffPower_Armor_Sharp>0.30</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.30</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.5</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat>
+      <SharpDamageMultiplier>0.4</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0.9</BluntDamageMultiplier>
     </statBases>
     <stuffProps>
       <stuffAdjective>painted</stuffAdjective>
@@ -335,7 +365,7 @@
       <color>(50,50,50)</color>
       <constructEffect>ConstructWood</constructEffect>
       <appearance>Planks</appearance>
-      <soundImpactStuff>BulletImpactWood</soundImpactStuff>
+      <soundImpactStuff>BulletImpact_Wood</soundImpactStuff>
       <soundMeleeHitSharp>MeleeHit_Wood</soundMeleeHitSharp>
       <soundMeleeHitBlunt>MeleeHit_Wood</soundMeleeHitBlunt>
       <statFactors>
@@ -348,7 +378,7 @@
         <MeleeWeapon_CooldownMultiplier>0.9</MeleeWeapon_CooldownMultiplier>
       </statFactors>
     </stuffProps>
-    <isBodyPartOrImplant>true</isBodyPartOrImplant>
+    <isTechHediff>true</isTechHediff>
     <thingCategories>
       <li>ResourcesRaw</li>
       <li>WoodTypes</li>
@@ -361,7 +391,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>8</power>
+        <power>9.7</power>
         <cooldownTime>2.2</cooldownTime>
       </li>
     </tools>

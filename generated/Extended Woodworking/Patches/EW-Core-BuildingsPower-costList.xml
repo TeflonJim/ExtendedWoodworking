@@ -9,21 +9,21 @@
       <success>Always</success>
       <operations>
         <li Class="PatchOperationTest">
-          <xpath>Defs/ThingDef[defName="TorchLamp"]/costList/WoodLog</xpath>
+          <xpath>Defs/ThingDef[defName="WatermillGenerator"]/costList/WoodLog</xpath>
         </li>
         <li Class="PatchOperationRemove">
-          <xpath>Defs/ThingDef[defName="TorchLamp"]/costList/WoodLog</xpath>
+          <xpath>Defs/ThingDef[defName="WatermillGenerator"]/costList/WoodLog</xpath>
         </li>
         <li Class="PatchOperationConditional">
-          <xpath>Defs/ThingDef[defName="TorchLamp" and (stuffCategories)]</xpath>
+          <xpath>Defs/ThingDef[defName="WatermillGenerator" and (stuffCategories)]</xpath>
           <match Class="PatchOperationAdd">
-            <xpath>Defs/ThingDef[defName="TorchLamp"]/stuffCategories</xpath>
+            <xpath>Defs/ThingDef[defName="WatermillGenerator"]/stuffCategories</xpath>
             <value>
               <li>Woody</li>
             </value>
           </match>
           <nomatch Class="PatchOperationAdd">
-            <xpath>Defs/ThingDef[defName="TorchLamp"]</xpath>
+            <xpath>Defs/ThingDef[defName="WatermillGenerator"]</xpath>
             <value>
               <stuffCategories>
                 <li>Woody</li>
@@ -33,19 +33,19 @@
         </li>
         <li Class="PatchOperationConditional">
           <success>Always</success>
-          <xpath>Defs/ThingDef[defName="TorchLamp" and not(costStuffCount)]</xpath>
+          <xpath>Defs/ThingDef[defName="WatermillGenerator" and not(costStuffCount)]</xpath>
           <match Class="PatchOperationAdd">
-            <xpath>Defs/ThingDef[defName="TorchLamp"]</xpath>
+            <xpath>Defs/ThingDef[defName="WatermillGenerator"]</xpath>
             <value>
-              <costStuffCount>20</costStuffCount>
+              <costStuffCount>340</costStuffCount>
             </value>
           </match>
         </li>
         <li Class="PatchOperationConditional">
           <success>Always</success>
-          <xpath>Defs/ThingDef[defName="TorchLamp"]/constructEffect</xpath>
+          <xpath>Defs/ThingDef[defName="WatermillGenerator"]/constructEffect</xpath>
           <match Class="PatchOperationRemove">
-            <xpath>Defs/ThingDef[defName="TorchLamp"]/constructEffect</xpath>
+            <xpath>Defs/ThingDef[defName="WatermillGenerator"]/constructEffect</xpath>
           </match>
         </li>
       </operations>

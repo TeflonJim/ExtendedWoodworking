@@ -8,7 +8,7 @@ param (
 task Build Setup,
            Clean,
            CopyFramework,
-           GetModCheck,
+           # GetModCheck,
            SetPublishedItemID,
            UpdateRecipeDefs,
            UpdateTerrainDefs,
@@ -78,6 +78,8 @@ task CopyFramework {
 }
 
 task GetModCheck {
+    [Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
+
     $path = Join-Path $buildInfo.Path.Build 'ModCheck.zip'
     $destinationPath = Join-Path $buildInfo.Path.Build 'ModCheck'
     $assemblyPath = Join-Path $buildInfo.Path.Generated 'Assemblies'
@@ -115,7 +117,7 @@ task UpdateRecipeDefs {
         )
         $buildInfo.Data.WoodPainted.Keys | Where-Object { $_ -ne $colour } | ForEach-Object {
             $recipe.Element('defaultIngredientFilter').
-                    Element('exceptedThingDefs').
+                    Element('disallowedThingDefs').
                     Add(
                         [System.Xml.Linq.XElement]::new([System.Xml.Linq.XName]'li', "WoodLog_$_")
                     )
@@ -294,50 +296,52 @@ task UpdateThingDefsItems {
 task CreateCostListPatch {
     foreach ($mod in $buildInfo.Data.SupportedMods) {
         $modInfo = Get-RWMod $mod
-        $shortName = $mod -replace '[^A-Za-z0-9]'
-        
-        Get-ChildItem (Join-Path $modInfo.Path 'Defs') -Filter *.xml -Recurse | ForEach-Object {
-            $item = $_
+        if ($modInfo) {
+            $shortName = $mod -replace '[^A-Za-z0-9]'
             
-            $xDocument = [System.Xml.Linq.XDocument]::Load($item.FullName)
-            [System.Xml.XPath.Extensions]::XPathSelectElements(
-                $xDocument,
-                '/Defs/*[name()!="TerrainDef" and defName and not(stuffCategories) and ./costList/WoodLog]'
-            )
-        } | ForEach-Object {
-            [PSCustomObject]@{
-                BaseName = $item.BaseName -replace '[^A-Za-z0-9]'
-                Path     = $item.FullName
-                Node     = $_
-            }
-        } | Group-Object Path | ForEach-Object {
-            $newName = 'Patches/EW-%MOD%-%GROUP%-costList.xml' -replace '%MOD%', $shortName -replace '%GROUP%', $_.Group[0].BaseName
-            $newPath = Join-Path $buildInfo.Path.Generated $newName
-            $template = Join-Path $buildInfo.Path.Source 'Patches/EW-%MOD%-%GROUP%-costList.xml'
-
-            Copy-Item $template $newPath -Force
-            
-            $xDocument = [System.Xml.Linq.XDocument]::Load($newPath)
-            $xDocument.Descendants('modName').ForEach{ $_.Value = (Get-RWMod -Name $mod).RawName }
-
-            $template = [System.Xml.XPath.Extensions]::XPathSelectElements(
-                $xDocument,
-                '//operations/li[not(contains(@Class, "ModCheck"))]'
-            ) | ForEach-Object { $_ }
-            
-            foreach ($item in $_.Group) {
-                foreach ($templateItem in $template) {
-                    $xmlString = $templateItem.ToString() -replace '%NAME%', $item.Node.Element('defName').Value
-                    $xmlString = $xmlString -replace '%COST%', $item.Node.Element('costList').Element('WoodLog').Value
-
-                    $xElement = [System.Xml.Linq.XElement]::new($xmlString)
-                    $xDocument.Descendants('operations')[0].Add($xElement)
+            Get-ChildItem (Join-Path $modInfo.Path 'Defs') -Filter *.xml -Recurse | ForEach-Object {
+                $item = $_
+                
+                $xDocument = [System.Xml.Linq.XDocument]::Load($item.FullName)
+                [System.Xml.XPath.Extensions]::XPathSelectElements(
+                    $xDocument,
+                    '/Defs/*[name()!="TerrainDef" and defName and not(stuffCategories) and ./costList/WoodLog]'
+                )
+            } | ForEach-Object {
+                [PSCustomObject]@{
+                    BaseName = $item.BaseName -replace '[^A-Za-z0-9]'
+                    Path     = $item.FullName
+                    Node     = $_
                 }
+            } | Group-Object Path | ForEach-Object {
+                $newName = 'Patches/EW-%MOD%-%GROUP%-costList.xml' -replace '%MOD%', $shortName -replace '%GROUP%', $_.Group[0].BaseName
+                $newPath = Join-Path $buildInfo.Path.Generated $newName
+                $template = Join-Path $buildInfo.Path.Source 'Patches/EW-%MOD%-%GROUP%-costList.xml'
+
+                Copy-Item $template $newPath -Force
+                
+                $xDocument = [System.Xml.Linq.XDocument]::Load($newPath)
+                $xDocument.Descendants('mods').ForEach{ $_.Element('li').Value = (Get-RWMod -Name $mod).RawName }
+
+                $template = [System.Xml.XPath.Extensions]::XPathSelectElements(
+                    $xDocument,
+                    '//operations/li[not(contains(@Class, "ModCheck"))]'
+                ) | ForEach-Object { $_ }
+                
+                foreach ($item in $_.Group) {
+                    foreach ($templateItem in $template) {
+                        $xmlString = $templateItem.ToString() -replace '%NAME%', $item.Node.Element('defName').Value
+                        $xmlString = $xmlString -replace '%COST%', $item.Node.Element('costList').Element('WoodLog').Value
+
+                        $xElement = [System.Xml.Linq.XElement]::new($xmlString)
+                        $xDocument.Descendants('operations')[0].Add($xElement)
+                    }
+                }
+
+                $template.ForEach{ $_.Remove() }
+
+                $xDocument.Save($newPath) 
             }
-
-            $template.ForEach{ $_.Remove() }
-
-            $xDocument.Save($newPath) 
         }
     }
 }
@@ -345,44 +349,47 @@ task CreateCostListPatch {
 task CreateHarvestedThingDefPatch {
     foreach ($mod in $buildInfo.Data.SupportedMods) {
         $modInfo = Get-RWMod $mod
-        $shortName = $mod -replace '[^A-Za-z0-9]'
-        
-        Get-ChildItem (Join-Path $modInfo.Path 'Defs') -Filter *.xml -Recurse | ForEach-Object {
-            $item = $_
+        if ($modInfo) {
+            $shortName = $mod -replace '[^A-Za-z0-9]'
+            
+            Get-ChildItem (Join-Path $modInfo.Path 'Defs') -Filter *.xml -Recurse | ForEach-Object {
+                $item = $_
 
-            $xDocument = [System.Xml.Linq.XDocument]::Load($item.FullName)
-            $xDocument.Descendants('defName').Where{
-                $_.Value -match 'PlantTree' -and
-                $buildInfo.Data.woodStats.Contains($_.Value -replace 'PlantTree')
-            }.ForEach{
-                [PSCustomObject]@{
-                    BaseName = $item.BaseName -replace '[^A-Za-z0-9]'
-                    Path     = $item.FullName
-                    Name     = $_.Value -replace 'PlantTree'
+                $xDocument = [System.Xml.Linq.XDocument]::Load($item.FullName)
+                $xDocument.Descendants('defName').Where{
+                    $_.Value -match 'Plant_Tree' -and
+                    $buildInfo.Data.woodStats.Contains($_.Value -replace 'Plant_Tree')
+                }.ForEach{
+                    [PSCustomObject]@{
+                        BaseName = $item.BaseName -replace '[^A-Za-z0-9]'
+                        Path     = $item.FullName
+                        Name     = $_.Value -replace 'Plant_Tree'
+                    }
                 }
+            } | Group-Object Path | ForEach-Object {
+                $newName = 'Patches/EW-%MOD%-%GROUP%-harvestedThingDef.xml' -replace '%MOD%', $shortName -replace '%GROUP%', $_.Group[0].BaseName
+                $newPath = Join-Path $buildInfo.Path.Generated $newName
+                $template = Join-Path $buildInfo.Path.Source 'Patches/EW-%MOD%-%GROUP%-harvestedThingDef.xml'
+                
+                Copy-Item $template $newPath -Force
+
+                $xDocument = [System.Xml.Linq.XDocument]::Load($newPath)
+                $xDocument.Descendants('mods').ForEach{ $_.Element('li').Value = (Get-RWMod -Name $mod).RawName }
+
+                $template = $xDocument.Descendants().Where{ $_.Attribute('Class').Value -eq 'PatchOperationAdd' }[0]
+                
+                foreach ($item in $_.Group) {
+                    $xmlString = $template.ToString() -replace '%NAME%', $item.Name
+
+                    $xElement = [System.Xml.Linq.XElement]::new($xmlString)
+
+                    $xDocument.Descendants('operations')[0].Add($xElement)
+                }
+
+                $template.Remove()
+
+                $xDocument.Save($newPath)
             }
-        } | Group-Object Path | ForEach-Object {
-            $newName = 'Patches/EW-%MOD%-%GROUP%-harvestedThingDef.xml' -replace '%MOD%', $shortName -replace '%GROUP%', $_.Group[0].BaseName
-            $newPath = Join-Path $buildInfo.Path.Generated $newName
-            $template = Join-Path $buildInfo.Path.Source 'Patches/EW-%MOD%-%GROUP%-harvestedThingDef.xml'
-            
-            Copy-Item $template $newPath -Force
-
-            $xDocument = [System.Xml.Linq.XDocument]::Load($newPath)
-            $xDocument.Descendants('modName').ForEach{ $_.Value = (Get-RWMod -Name $mod).RawName }
-
-            $template = $xDocument.Descendants('li').Where{ $_.Attribute('Class').Value -eq 'PatchOperationAdd' }[0]
-            
-            foreach ($item in $_.Group) {
-                $xmlString = $template.ToString() -replace '%NAME%', $item.Name
-
-                $xElement = [System.Xml.Linq.XElement]::new($xmlString)
-                $xDocument.Descendants('operations')[0].Add($xElement)
-            }
-
-            $template.Remove()
-
-            $xDocument.Save($newPath)
         }
     }
 }
@@ -408,7 +415,7 @@ task CreateWoodLogPatch {
         }
 
         $xDocument = [System.Xml.Linq.XDocument]::Load($path)
-        $xDocument.Descendants('modName').ForEach{ $_.Value = (Get-RWMod -Name $mod).RawName }
+        $xDocument.Descendants('mods').ForEach{ $_.Element('li').Value = (Get-RWMod -Name $mod).RawName }
 
         $template = [System.Xml.XPath.Extensions]::XPathSelectElements(
             $xDocument,
@@ -467,7 +474,7 @@ task CreateWoodFloorPatch {
         }
 
         $xDocument = [System.Xml.Linq.XDocument]::Load($path)
-        $xDocument.Descendants('modName').ForEach{ $_.Value = (Get-RWMod -Name $mod).RawName }
+        $xDocument.Descendants('mods').ForEach{ $_.Element('li').Value = (Get-RWMod -Name $mod).RawName }
         
         $template = [System.Xml.XPath.Extensions]::XPathSelectElements(
             $xDocument,
