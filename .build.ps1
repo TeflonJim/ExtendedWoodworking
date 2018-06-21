@@ -19,9 +19,9 @@ task Build Setup,
            CreateWoodLogPatch,
            CreateWoodFloorPatch,
            CleanPatches,
+           UpdateVersion,
            CreatePackage,
-           UpdateLocal,
-           UpdateVersion
+           UpdateLocal
 
 filter ConvertTo-OrderedDictionary {
     $dictionary = [Ordered]@{}
@@ -510,6 +510,23 @@ task CleanPatches {
     Get-Item (Join-Path $buildInfo.Path.Generated 'Patches\EW-*%*') | Remove-Item
 }
 
+task UpdateVersion {
+    $version = $buildInfo.Version
+    $version = switch ($ReleaseType) {
+        'Major' { [Version]::new($version.Major + 1, 0, 0) }
+        'Minor' { [Version]::new($version.Major, $version.Minor + 1, 0) }
+        'Build' { [Version]::new($version.Major, $version.Minor, $version.Build + 1) }
+    }
+    Set-Content "$psscriptroot\source\About\version.txt" -Value $version.ToString()
+
+    $xDocument = [System.Xml.Linq.XDocument]::Load("$psscriptroot\source\About\ModSync.xml")
+    $xDocument.Descendants('Version').ForEach{ $_.Value = $version }
+    $xDocument.Save("$psscriptroot\source\About\ModSync.xml")
+
+    Copy-Item "$psscriptroot\source\About\version.txt" (Join-Path $buildInfo.Path.Generated 'About')
+    Copy-Item "$psscriptroot\source\About\ModSync.xml" (Join-Path $buildInfo.Path.Generated 'About')
+}
+
 task CreatePackage {
     $params = @{
         Path            = $buildInfo.Path.Generated
@@ -527,21 +544,4 @@ task UpdateLocal {
     }
     
     Copy-Item $buildInfo.Path.Generated "$path\Mods" -Recurse -Force
-}
-
-task UpdateVersion {
-    $version = $buildInfo.Version
-    $version = switch ($ReleaseType) {
-        'Major' { [Version]::new($version.Major + 1, 0, 0) }
-        'Minor' { [Version]::new($version.Major, $version.Minor + 1, 0) }
-        'Build' { [Version]::new($version.Major, $version.Minor, $version.Build + 1) }
-    }
-    Set-Content "$psscriptroot\source\About\version.txt" -Value $version.ToString()
-
-    $xDocument = [System.Xml.Linq.XDocument]::Load("$psscriptroot\source\About\ModSync.xml")
-    $xDocument.Descendants('Version').ForEach{ $_.Value = $version }
-    $xDocument.Save("$psscriptroot\source\About\ModSync.xml")
-
-    Copy-Item "$psscriptroot\source\About\version.txt" (Join-Path $buildInfo.Path.Generated 'About')
-    Copy-Item "$psscriptroot\source\About\ModSync.xml" (Join-Path $buildInfo.Path.Generated 'About')
 }
