@@ -63,6 +63,7 @@
       <blueprintGraphicData>
         <texPath>Things/Building/Door/Door_Blueprint</texPath>
       </blueprintGraphicData>
+      <ai_chillDestination>false</ai_chillDestination>
     </building>
     <comps>
       <li Class="CompProperties_Forbiddable" />

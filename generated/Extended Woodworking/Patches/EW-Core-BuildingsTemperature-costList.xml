@@ -8,9 +8,6 @@
     <match Class="PatchOperationSequence">
       <success>Always</success>
       <operations>
-        <li Class="PatchOperationTest">
-          <xpath>Defs/ThingDef[defName="Campfire"]/costList/WoodLog</xpath>
-        </li>
         <li Class="PatchOperationRemove">
           <xpath>Defs/ThingDef[defName="Campfire"]/costList/WoodLog</xpath>
         </li>
@@ -47,9 +44,6 @@
           <match Class="PatchOperationRemove">
             <xpath>Defs/ThingDef[defName="Campfire"]/constructEffect</xpath>
           </match>
-        </li>
-        <li Class="PatchOperationTest">
-          <xpath>Defs/ThingDef[defName="PassiveCooler"]/costList/WoodLog</xpath>
         </li>
         <li Class="PatchOperationRemove">
           <xpath>Defs/ThingDef[defName="PassiveCooler"]/costList/WoodLog</xpath>

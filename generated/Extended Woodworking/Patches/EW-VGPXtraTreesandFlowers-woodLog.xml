@@ -31,13 +31,13 @@
                 <MaxHitPoints>150</MaxHitPoints>
                 <Mass>0.4</Mass>
                 <Flammability>1.0</Flammability>
-                <DeteriorationRate>1</DeteriorationRate>
-                <StuffPower_Armor_Sharp>0.30</StuffPower_Armor_Sharp>
-                <StuffPower_Armor_Blunt>0.30</StuffPower_Armor_Blunt>
-                <StuffPower_Armor_Heat>0.5</StuffPower_Armor_Heat>
+                <DeteriorationRate>0.5</DeteriorationRate>
+                <StuffPower_Armor_Sharp>0.54</StuffPower_Armor_Sharp>
+                <StuffPower_Armor_Blunt>0.54</StuffPower_Armor_Blunt>
+                <StuffPower_Armor_Heat>0.9</StuffPower_Armor_Heat>
                 <StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
                 <StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat>
-                <SharpDamageMultiplier>0.4</SharpDamageMultiplier>
+                <SharpDamageMultiplier>0.45</SharpDamageMultiplier>
                 <BluntDamageMultiplier>0.9</BluntDamageMultiplier>
               </statBases>
               <stuffProps>
@@ -59,7 +59,6 @@
                   <WorkToMake>0.7</WorkToMake>
                   <WorkToBuild>0.7</WorkToBuild>
                   <DoorOpenSpeed>1.2</DoorOpenSpeed>
-                  <MeleeWeapon_CooldownMultiplier>0.9</MeleeWeapon_CooldownMultiplier>
                 </statFactors>
               </stuffProps>
               <isTechHediff>true</isTechHediff>
@@ -72,11 +71,12 @@
               </techHediffsTags>
               <tools>
                 <li>
+                  <label>log</label>
                   <capacities>
                     <li>Blunt</li>
                   </capacities>
-                  <power>9.7</power>
-                  <cooldownTime>2.2</cooldownTime>
+                  <power>10</power>
+                  <cooldownTime>2</cooldownTime>
                 </li>
               </tools>
             </ThingDef>
@@ -102,13 +102,13 @@
                 <MaxHitPoints>150</MaxHitPoints>
                 <Mass>0.4</Mass>
                 <Flammability>1.0</Flammability>
-                <DeteriorationRate>1</DeteriorationRate>
-                <StuffPower_Armor_Sharp>0.30</StuffPower_Armor_Sharp>
-                <StuffPower_Armor_Blunt>0.30</StuffPower_Armor_Blunt>
-                <StuffPower_Armor_Heat>0.5</StuffPower_Armor_Heat>
+                <DeteriorationRate>0.5</DeteriorationRate>
+                <StuffPower_Armor_Sharp>0.54</StuffPower_Armor_Sharp>
+                <StuffPower_Armor_Blunt>0.54</StuffPower_Armor_Blunt>
+                <StuffPower_Armor_Heat>0.9</StuffPower_Armor_Heat>
                 <StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
                 <StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat>
-                <SharpDamageMultiplier>0.4</SharpDamageMultiplier>
+                <SharpDamageMultiplier>0.45</SharpDamageMultiplier>
                 <BluntDamageMultiplier>0.9</BluntDamageMultiplier>
               </statBases>
               <stuffProps>
@@ -130,7 +130,6 @@
                   <WorkToMake>0.7</WorkToMake>
                   <WorkToBuild>0.7</WorkToBuild>
                   <DoorOpenSpeed>1.2</DoorOpenSpeed>
-                  <MeleeWeapon_CooldownMultiplier>0.9</MeleeWeapon_CooldownMultiplier>
                 </statFactors>
               </stuffProps>
               <isTechHediff>true</isTechHediff>
@@ -143,11 +142,12 @@
               </techHediffsTags>
               <tools>
                 <li>
+                  <label>log</label>
                   <capacities>
                     <li>Blunt</li>
                   </capacities>
-                  <power>9.7</power>
-                  <cooldownTime>2.2</cooldownTime>
+                  <power>10</power>
+                  <cooldownTime>2</cooldownTime>
                 </li>
               </tools>
             </ThingDef>
@@ -173,13 +173,13 @@
                 <MaxHitPoints>150</MaxHitPoints>
                 <Mass>0.4</Mass>
                 <Flammability>1.0</Flammability>
-                <DeteriorationRate>1</DeteriorationRate>
-                <StuffPower_Armor_Sharp>0.30</StuffPower_Armor_Sharp>
-                <StuffPower_Armor_Blunt>0.30</StuffPower_Armor_Blunt>
-                <StuffPower_Armor_Heat>0.5</StuffPower_Armor_Heat>
+                <DeteriorationRate>0.5</DeteriorationRate>
+                <StuffPower_Armor_Sharp>0.54</StuffPower_Armor_Sharp>
+                <StuffPower_Armor_Blunt>0.54</StuffPower_Armor_Blunt>
+                <StuffPower_Armor_Heat>0.9</StuffPower_Armor_Heat>
                 <StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
                 <StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat>
-                <SharpDamageMultiplier>0.4</SharpDamageMultiplier>
+                <SharpDamageMultiplier>0.45</SharpDamageMultiplier>
                 <BluntDamageMultiplier>0.9</BluntDamageMultiplier>
               </statBases>
               <stuffProps>
@@ -201,7 +201,6 @@
                   <WorkToMake>0.7</WorkToMake>
                   <WorkToBuild>0.7</WorkToBuild>
                   <DoorOpenSpeed>1.2</DoorOpenSpeed>
-                  <MeleeWeapon_CooldownMultiplier>0.9</MeleeWeapon_CooldownMultiplier>
                 </statFactors>
               </stuffProps>
               <isTechHediff>true</isTechHediff>
@@ -214,11 +213,12 @@
               </techHediffsTags>
               <tools>
                 <li>
+                  <label>log</label>
                   <capacities>
                     <li>Blunt</li>
                   </capacities>
-                  <power>9.7</power>
-                  <cooldownTime>2.2</cooldownTime>
+                  <power>10</power>
+                  <cooldownTime>2</cooldownTime>
                 </li>
               </tools>
             </ThingDef>
@@ -244,13 +244,13 @@
                 <MaxHitPoints>150</MaxHitPoints>
                 <Mass>0.4</Mass>
                 <Flammability>1.0</Flammability>
-                <DeteriorationRate>1</DeteriorationRate>
-                <StuffPower_Armor_Sharp>0.30</StuffPower_Armor_Sharp>
-                <StuffPower_Armor_Blunt>0.30</StuffPower_Armor_Blunt>
-                <StuffPower_Armor_Heat>0.5</StuffPower_Armor_Heat>
+                <DeteriorationRate>0.5</DeteriorationRate>
+                <StuffPower_Armor_Sharp>0.54</StuffPower_Armor_Sharp>
+                <StuffPower_Armor_Blunt>0.54</StuffPower_Armor_Blunt>
+                <StuffPower_Armor_Heat>0.9</StuffPower_Armor_Heat>
                 <StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
                 <StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat>
-                <SharpDamageMultiplier>0.4</SharpDamageMultiplier>
+                <SharpDamageMultiplier>0.45</SharpDamageMultiplier>
                 <BluntDamageMultiplier>0.9</BluntDamageMultiplier>
               </statBases>
               <stuffProps>
@@ -272,7 +272,6 @@
                   <WorkToMake>0.5</WorkToMake>
                   <WorkToBuild>0.7</WorkToBuild>
                   <DoorOpenSpeed>1.2</DoorOpenSpeed>
-                  <MeleeWeapon_CooldownMultiplier>0.9</MeleeWeapon_CooldownMultiplier>
                 </statFactors>
               </stuffProps>
               <isTechHediff>true</isTechHediff>
@@ -285,11 +284,12 @@
               </techHediffsTags>
               <tools>
                 <li>
+                  <label>log</label>
                   <capacities>
                     <li>Blunt</li>
                   </capacities>
-                  <power>9.7</power>
-                  <cooldownTime>2.2</cooldownTime>
+                  <power>10</power>
+                  <cooldownTime>2</cooldownTime>
                 </li>
               </tools>
             </ThingDef>
@@ -315,13 +315,13 @@
                 <MaxHitPoints>150</MaxHitPoints>
                 <Mass>0.4</Mass>
                 <Flammability>1.0</Flammability>
-                <DeteriorationRate>1</DeteriorationRate>
-                <StuffPower_Armor_Sharp>0.30</StuffPower_Armor_Sharp>
-                <StuffPower_Armor_Blunt>0.30</StuffPower_Armor_Blunt>
-                <StuffPower_Armor_Heat>0.5</StuffPower_Armor_Heat>
+                <DeteriorationRate>0.5</DeteriorationRate>
+                <StuffPower_Armor_Sharp>0.54</StuffPower_Armor_Sharp>
+                <StuffPower_Armor_Blunt>0.54</StuffPower_Armor_Blunt>
+                <StuffPower_Armor_Heat>0.9</StuffPower_Armor_Heat>
                 <StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
                 <StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat>
-                <SharpDamageMultiplier>0.4</SharpDamageMultiplier>
+                <SharpDamageMultiplier>0.45</SharpDamageMultiplier>
                 <BluntDamageMultiplier>0.9</BluntDamageMultiplier>
               </statBases>
               <stuffProps>
@@ -343,7 +343,6 @@
                   <WorkToMake>0.5</WorkToMake>
                   <WorkToBuild>0.7</WorkToBuild>
                   <DoorOpenSpeed>1.2</DoorOpenSpeed>
-                  <MeleeWeapon_CooldownMultiplier>0.9</MeleeWeapon_CooldownMultiplier>
                 </statFactors>
               </stuffProps>
               <isTechHediff>true</isTechHediff>
@@ -356,11 +355,12 @@
               </techHediffsTags>
               <tools>
                 <li>
+                  <label>log</label>
                   <capacities>
                     <li>Blunt</li>
                   </capacities>
-                  <power>9.7</power>
-                  <cooldownTime>2.2</cooldownTime>
+                  <power>10</power>
+                  <cooldownTime>2</cooldownTime>
                 </li>
               </tools>
             </ThingDef>

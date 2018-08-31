@@ -8,9 +8,6 @@
     <match Class="PatchOperationSequence">
       <success>Always</success>
       <operations>
-        <li Class="PatchOperationTest">
-          <xpath>Defs/ThingDef[defName="WatermillGenerator"]/costList/WoodLog</xpath>
-        </li>
         <li Class="PatchOperationRemove">
           <xpath>Defs/ThingDef[defName="WatermillGenerator"]/costList/WoodLog</xpath>
         </li>
@@ -37,7 +34,7 @@
           <match Class="PatchOperationAdd">
             <xpath>Defs/ThingDef[defName="WatermillGenerator"]</xpath>
             <value>
-              <costStuffCount>340</costStuffCount>
+              <costStuffCount>280</costStuffCount>
             </value>
           </match>
         </li>
