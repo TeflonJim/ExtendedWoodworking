@@ -3,7 +3,7 @@
   <Operation Class="PatchOperationFindMod">
     <success>Always</success>
     <mods>
-      <li>Area Rugs B18</li>
+      <li>Area Rugs B19</li>
     </mods>
     <match Class="PatchOperationSequence">
       <success>Always</success>
