@@ -3,24 +3,24 @@
   <Operation Class="PatchOperationFindMod">
     <success>Always</success>
     <mods>
-      <li>[RF] Basic Bridges - Fishing Add-On [b18]</li>
+      <li>RimWriter - Books, Scrolls, Tablets, and Libraries</li>
     </mods>
     <match Class="PatchOperationSequence">
       <success>Always</success>
       <operations>
         <li Class="PatchOperationRemove">
-          <xpath>Defs/ThingDef[defName="ShellfishTrap"]/costList/WoodLog</xpath>
+          <xpath>Defs/ThingDef[defName="Jecrell_Paper"]/costList/WoodLog</xpath>
         </li>
         <li Class="PatchOperationConditional">
-          <xpath>Defs/ThingDef[defName="ShellfishTrap" and (stuffCategories)]</xpath>
+          <xpath>Defs/ThingDef[defName="Jecrell_Paper" and (stuffCategories)]</xpath>
           <match Class="PatchOperationAdd">
-            <xpath>Defs/ThingDef[defName="ShellfishTrap"]/stuffCategories</xpath>
+            <xpath>Defs/ThingDef[defName="Jecrell_Paper"]/stuffCategories</xpath>
             <value>
               <li>Woody</li>
             </value>
           </match>
           <nomatch Class="PatchOperationAdd">
-            <xpath>Defs/ThingDef[defName="ShellfishTrap"]</xpath>
+            <xpath>Defs/ThingDef[defName="Jecrell_Paper"]</xpath>
             <value>
               <stuffCategories>
                 <li>Woody</li>
@@ -30,19 +30,19 @@
         </li>
         <li Class="PatchOperationConditional">
           <success>Always</success>
-          <xpath>Defs/ThingDef[defName="ShellfishTrap" and not(costStuffCount)]</xpath>
+          <xpath>Defs/ThingDef[defName="Jecrell_Paper" and not(costStuffCount)]</xpath>
           <match Class="PatchOperationAdd">
-            <xpath>Defs/ThingDef[defName="ShellfishTrap"]</xpath>
+            <xpath>Defs/ThingDef[defName="Jecrell_Paper"]</xpath>
             <value>
-              <costStuffCount>2</costStuffCount>
+              <costStuffCount>5</costStuffCount>
             </value>
           </match>
         </li>
         <li Class="PatchOperationConditional">
           <success>Always</success>
-          <xpath>Defs/ThingDef[defName="ShellfishTrap"]/constructEffect</xpath>
+          <xpath>Defs/ThingDef[defName="Jecrell_Paper"]/constructEffect</xpath>
           <match Class="PatchOperationRemove">
-            <xpath>Defs/ThingDef[defName="ShellfishTrap"]/constructEffect</xpath>
+            <xpath>Defs/ThingDef[defName="Jecrell_Paper"]/constructEffect</xpath>
           </match>
         </li>
       </operations>

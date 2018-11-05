@@ -3,7 +3,7 @@
   <Operation Class="PatchOperationFindMod">
     <success>Always</success>
     <mods>
-      <li>[RF] Fertile Fields [b18]</li>
+      <li>[RF] Fertile Fields [1.0]</li>
     </mods>
     <match Class="PatchOperationSequence">
       <success>Always</success>

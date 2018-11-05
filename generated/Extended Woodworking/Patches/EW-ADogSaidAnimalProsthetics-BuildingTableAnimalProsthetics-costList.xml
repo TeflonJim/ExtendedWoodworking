@@ -3,7 +3,7 @@
   <Operation Class="PatchOperationFindMod">
     <success>Always</success>
     <mods>
-      <li>A Dog Said...</li>
+      <li>A Dog Said... Animal Prosthetics</li>
     </mods>
     <match Class="PatchOperationSequence">
       <success>Always</success>
