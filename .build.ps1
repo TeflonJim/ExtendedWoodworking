@@ -288,7 +288,7 @@ task UpdateThingDefsItems {
                 description                 = 'Wood that has been painted {0}' -f $colour.ToLower()
                 'graphicData.color'         = $buildInfo.Data.WoodPainted[$colour]
                 'stuffProps.color'          = $buildInfo.Data.WoodPainted[$colour]
-                'stuffProps.stuffAdjective' = 'painted'
+                'stuffProps.stuffAdjective' = $colour.ToLower()
                 thingCategories             = @('WoodTypes')
             }
         }

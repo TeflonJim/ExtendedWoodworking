@@ -7,7 +7,7 @@
     <graphicData>
       <texPath>Things/Item/Resource/WoodLog</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
-      <color>(200,0,0)</color>
+      <color>(159,23,18)</color>
     </graphicData>
     <equippedAngleOffset>-20</equippedAngleOffset>
     <soundInteract>Wood_Drop</soundInteract>
@@ -27,12 +27,12 @@
       <BluntDamageMultiplier>0.9</BluntDamageMultiplier>
     </statBases>
     <stuffProps>
-      <stuffAdjective>painted</stuffAdjective>
+      <stuffAdjective>red</stuffAdjective>
       <categories>
         <li>Woody</li>
       </categories>
       <commonality>1.00</commonality>
-      <color>(200,0,0)</color>
+      <color>(159,23,18)</color>
       <constructEffect>ConstructWood</constructEffect>
       <appearance>Planks</appearance>
       <soundImpactStuff>BulletImpact_Wood</soundImpactStuff>
@@ -73,7 +73,7 @@
     <graphicData>
       <texPath>Things/Item/Resource/WoodLog</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
-      <color>(0,200,0)</color>
+      <color>(31,71,35)</color>
     </graphicData>
     <equippedAngleOffset>-20</equippedAngleOffset>
     <soundInteract>Wood_Drop</soundInteract>
@@ -93,12 +93,12 @@
       <BluntDamageMultiplier>0.9</BluntDamageMultiplier>
     </statBases>
     <stuffProps>
-      <stuffAdjective>painted</stuffAdjective>
+      <stuffAdjective>green</stuffAdjective>
       <categories>
         <li>Woody</li>
       </categories>
       <commonality>1.00</commonality>
-      <color>(0,200,0)</color>
+      <color>(31,71,35)</color>
       <constructEffect>ConstructWood</constructEffect>
       <appearance>Planks</appearance>
       <soundImpactStuff>BulletImpact_Wood</soundImpactStuff>
@@ -139,7 +139,7 @@
     <graphicData>
       <texPath>Things/Item/Resource/WoodLog</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
-      <color>(0,0,200)</color>
+      <color>(25,132,255)</color>
     </graphicData>
     <equippedAngleOffset>-20</equippedAngleOffset>
     <soundInteract>Wood_Drop</soundInteract>
@@ -159,12 +159,12 @@
       <BluntDamageMultiplier>0.9</BluntDamageMultiplier>
     </statBases>
     <stuffProps>
-      <stuffAdjective>painted</stuffAdjective>
+      <stuffAdjective>blue</stuffAdjective>
       <categories>
         <li>Woody</li>
       </categories>
       <commonality>1.00</commonality>
-      <color>(0,0,200)</color>
+      <color>(25,132,255)</color>
       <constructEffect>ConstructWood</constructEffect>
       <appearance>Planks</appearance>
       <soundImpactStuff>BulletImpact_Wood</soundImpactStuff>
@@ -205,7 +205,7 @@
     <graphicData>
       <texPath>Things/Item/Resource/WoodLog</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
-      <color>(200,200,0)</color>
+      <color>(232,215,137)</color>
     </graphicData>
     <equippedAngleOffset>-20</equippedAngleOffset>
     <soundInteract>Wood_Drop</soundInteract>
@@ -225,12 +225,12 @@
       <BluntDamageMultiplier>0.9</BluntDamageMultiplier>
     </statBases>
     <stuffProps>
-      <stuffAdjective>painted</stuffAdjective>
+      <stuffAdjective>yellow</stuffAdjective>
       <categories>
         <li>Woody</li>
       </categories>
       <commonality>1.00</commonality>
-      <color>(200,200,0)</color>
+      <color>(232,215,137)</color>
       <constructEffect>ConstructWood</constructEffect>
       <appearance>Planks</appearance>
       <soundImpactStuff>BulletImpact_Wood</soundImpactStuff>
@@ -271,7 +271,7 @@
     <graphicData>
       <texPath>Things/Item/Resource/WoodLog</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
-      <color>(255,255,255)</color>
+      <color>(225,232,237)</color>
     </graphicData>
     <equippedAngleOffset>-20</equippedAngleOffset>
     <soundInteract>Wood_Drop</soundInteract>
@@ -291,12 +291,12 @@
       <BluntDamageMultiplier>0.9</BluntDamageMultiplier>
     </statBases>
     <stuffProps>
-      <stuffAdjective>painted</stuffAdjective>
+      <stuffAdjective>white</stuffAdjective>
       <categories>
         <li>Woody</li>
       </categories>
       <commonality>1.00</commonality>
-      <color>(255,255,255)</color>
+      <color>(225,232,237)</color>
       <constructEffect>ConstructWood</constructEffect>
       <appearance>Planks</appearance>
       <soundImpactStuff>BulletImpact_Wood</soundImpactStuff>
@@ -337,7 +337,7 @@
     <graphicData>
       <texPath>Things/Item/Resource/WoodLog</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
-      <color>(50,50,50)</color>
+      <color>(10,10,10)</color>
     </graphicData>
     <equippedAngleOffset>-20</equippedAngleOffset>
     <soundInteract>Wood_Drop</soundInteract>
@@ -357,12 +357,12 @@
       <BluntDamageMultiplier>0.9</BluntDamageMultiplier>
     </statBases>
     <stuffProps>
-      <stuffAdjective>painted</stuffAdjective>
+      <stuffAdjective>black</stuffAdjective>
       <categories>
         <li>Woody</li>
       </categories>
       <commonality>1.00</commonality>
-      <color>(50,50,50)</color>
+      <color>(10,10,10)</color>
       <constructEffect>ConstructWood</constructEffect>
       <appearance>Planks</appearance>
       <soundImpactStuff>BulletImpact_Wood</soundImpactStuff>

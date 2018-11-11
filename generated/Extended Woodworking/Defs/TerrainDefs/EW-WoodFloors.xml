@@ -205,7 +205,7 @@
     <description>Red wood plank flooring. For that warm, homey feeling.</description>
     <texturePath>Floor/WoodFloorBase</texturePath>
     <burnedDef>BurnedWoodPlankFloor</burnedDef>
-    <color>(200,0,0)</color>
+    <color>(159,23,18)</color>
     <statBases>
       <WorkToBuild>85</WorkToBuild>
       <Flammability>0.22</Flammability>
@@ -223,7 +223,7 @@
     <description>Green wood plank flooring. For that warm, homey feeling.</description>
     <texturePath>Floor/WoodFloorBase</texturePath>
     <burnedDef>BurnedWoodPlankFloor</burnedDef>
-    <color>(0,200,0)</color>
+    <color>(31,71,35)</color>
     <statBases>
       <WorkToBuild>85</WorkToBuild>
       <Flammability>0.22</Flammability>
@@ -241,7 +241,7 @@
     <description>Blue wood plank flooring. For that warm, homey feeling.</description>
     <texturePath>Floor/WoodFloorBase</texturePath>
     <burnedDef>BurnedWoodPlankFloor</burnedDef>
-    <color>(0,0,200)</color>
+    <color>(25,132,255)</color>
     <statBases>
       <WorkToBuild>85</WorkToBuild>
       <Flammability>0.22</Flammability>
@@ -259,7 +259,7 @@
     <description>Yellow wood plank flooring. For that warm, homey feeling.</description>
     <texturePath>Floor/WoodFloorBase</texturePath>
     <burnedDef>BurnedWoodPlankFloor</burnedDef>
-    <color>(200,200,0)</color>
+    <color>(232,215,137)</color>
     <statBases>
       <WorkToBuild>85</WorkToBuild>
       <Flammability>0.22</Flammability>
@@ -277,7 +277,7 @@
     <description>White wood plank flooring. For that warm, homey feeling.</description>
     <texturePath>Floor/WoodFloorBase</texturePath>
     <burnedDef>BurnedWoodPlankFloor</burnedDef>
-    <color>(255,255,255)</color>
+    <color>(225,232,237)</color>
     <statBases>
       <WorkToBuild>85</WorkToBuild>
       <Flammability>0.22</Flammability>
@@ -295,7 +295,7 @@
     <description>Black wood plank flooring. For that warm, homey feeling.</description>
     <texturePath>Floor/WoodFloorBase</texturePath>
     <burnedDef>BurnedWoodPlankFloor</burnedDef>
-    <color>(50,50,50)</color>
+    <color>(10,10,10)</color>
     <statBases>
       <WorkToBuild>85</WorkToBuild>
       <Flammability>0.22</Flammability>
