@@ -1,9 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-  <name>Extended Woodworking</name>
-  <author>ItchyFlea</author>
-  <targetVersion>1.0.2059</targetVersion>
-  <description>
+    <name>Extended Woodworking</name>
+    <author>ItchyFlea</author>
+    <supportedVersions>
+        <li>1.0</li>
+    </supportedVersions>
+    <description>
 This is an update of the Extended Woodworking mod (A13). All credit for the original creative work goes to ItchyFlea.
 
 https://ludeon.com/forums/index.php?topic=7893.0
