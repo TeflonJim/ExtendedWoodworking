@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
     <name>Extended Woodworking</name>
-    <author>ItchyFlea</author>
+    <author>TeflonJim</author>
     <supportedVersions>
         <li>1.0</li>
     </supportedVersions>
@@ -12,12 +12,45 @@ https://ludeon.com/forums/index.php?topic=7893.0
 
 Previous versions of this module can be downloaded from GitHub:
 
-https://github.com/indented-automation/ExtendedWoodworking/releases
+https://github.com/TeflonJim/ExtendedWoodworking/releases
 
 This mod changes trees so that when they are cut down, they produce wood of that tree type. Different wood types have slightly different properties.
 
 Wood may be painted in different colours. The available colours are: Red, Green, Blue, Yellow, White, Black.
 
 A Woodworking table is available to paint wood or convert specific types of wood to the original wood type (generic wood).
+
+Extended Woodworking provides direct support via patches for the following mods:
+
+* [RF] Fishing
+* [RF] Fertile Fields
+* [T] ExpandedCloth
+* [T] MoreFloors
+* A Dog Said... Animal Prosthetics
+* A RimWorld of Magic
+* Area Rugs
+* Camping Stuff
+* Children, school and learning
+* Expanded Prosthetics and Organ Engineering
+* GloomyFurniture
+* Lord of the Rims - The Third Age
+* Medieval Times
+* Misc. Training
+* Nature's Pretty Sweet
+* Project Fallout
+* Rimhammer - The End Times
+* RimWriter - Books, Scrolls, Tablets, and Libraries
+* VGP Xtra Trees and Flowers
+* Westerado
+
+Cost lists, ingredient lists, and fuel lists are updated for each mod.
+
+The following mods contain floors, the defs are duplicated for each available wood type. A drop down list is added to allow material selection:
+
+* Evt Floors
+* [T] MoreFloors
+* [WD] Expanded Floors
+* GloomyFurniture
+* RIMkea
     </description>
 </ModMetaData>

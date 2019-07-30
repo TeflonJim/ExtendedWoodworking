@@ -6,7 +6,7 @@
       <li>Nature's Pretty Sweet</li>
     </mods>
     <match Class="PatchOperationAdd">
-      <xpath>Defs/ThingDef[defName="TKKN_OldGrowth_PlantTreeOak"]/plant</xpath>
+      <xpath>/Defs/ThingDef[defName="TKKN_OldGrowth_PlantTreeOak"]/plant</xpath>
       <value>
         <harvestedThingDef>WoodLog_Oak</harvestedThingDef>
       </value>

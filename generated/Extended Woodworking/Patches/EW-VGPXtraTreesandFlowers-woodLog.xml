@@ -8,11 +8,8 @@
     <match Class="PatchOperationSequence">
       <success>Always</success>
       <operations>
-        <li Class="PatchOperationTest">
-          <xpath>Defs/ThingDef[defName='WoodLog_Birch']</xpath>
-        </li>
         <li Class="PatchOperationAdd">
-          <xpath>Defs</xpath>
+          <xpath>/Defs</xpath>
           <value>
             <ThingDef ParentName="ResourceVerbBase">
               <defName>WoodLog_Acacia</defName>
@@ -83,7 +80,7 @@
           </value>
         </li>
         <li Class="PatchOperationAdd">
-          <xpath>Defs</xpath>
+          <xpath>/Defs</xpath>
           <value>
             <ThingDef ParentName="ResourceVerbBase">
               <defName>WoodLog_Camellia</defName>
@@ -154,7 +151,7 @@
           </value>
         </li>
         <li Class="PatchOperationAdd">
-          <xpath>Defs</xpath>
+          <xpath>/Defs</xpath>
           <value>
             <ThingDef ParentName="ResourceVerbBase">
               <defName>WoodLog_CherryBlossom</defName>
@@ -225,7 +222,7 @@
           </value>
         </li>
         <li Class="PatchOperationAdd">
-          <xpath>Defs</xpath>
+          <xpath>/Defs</xpath>
           <value>
             <ThingDef ParentName="ResourceVerbBase">
               <defName>WoodLog_JapaneseMaple</defName>
@@ -296,7 +293,7 @@
           </value>
         </li>
         <li Class="PatchOperationAdd">
-          <xpath>Defs</xpath>
+          <xpath>/Defs</xpath>
           <value>
             <ThingDef ParentName="ResourceVerbBase">
               <defName>WoodLog_RedMaple</defName>

@@ -14,6 +14,7 @@
       <Beauty>1.5</Beauty>
     </statBases>
     <constructEffect>ConstructWood</constructEffect>
+    <designatorDropdown>Floor_WoodPlank</designatorDropdown>
     <costList>
       <WoodLog_Birch>6</WoodLog_Birch>
     </costList>
@@ -32,6 +33,7 @@
       <Beauty>1</Beauty>
     </statBases>
     <constructEffect>ConstructWood</constructEffect>
+    <designatorDropdown>Floor_WoodPlank</designatorDropdown>
     <costList>
       <WoodLog_Cecropia>6</WoodLog_Cecropia>
     </costList>
@@ -50,6 +52,7 @@
       <Beauty>2.5</Beauty>
     </statBases>
     <constructEffect>ConstructWood</constructEffect>
+    <designatorDropdown>Floor_WoodPlank</designatorDropdown>
     <costList>
       <WoodLog_Cypress>6</WoodLog_Cypress>
     </costList>
@@ -71,6 +74,7 @@
     <costList>
       <WoodLog_Drago>6</WoodLog_Drago>
     </costList>
+    <designatorDropdown>Floor_WoodPlank</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>WoodPlankFloor_Maple</defName>
@@ -89,6 +93,7 @@
     <costList>
       <WoodLog_Maple>6</WoodLog_Maple>
     </costList>
+    <designatorDropdown>Floor_WoodPlank</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>WoodPlankFloor_Oak</defName>
@@ -104,6 +109,7 @@
       <Beauty>2.5</Beauty>
     </statBases>
     <constructEffect>ConstructWood</constructEffect>
+    <designatorDropdown>Floor_WoodPlank</designatorDropdown>
     <costList>
       <WoodLog_Oak>6</WoodLog_Oak>
     </costList>
@@ -122,6 +128,7 @@
       <Beauty>1.5</Beauty>
     </statBases>
     <constructEffect>ConstructWood</constructEffect>
+    <designatorDropdown>Floor_WoodPlank</designatorDropdown>
     <costList>
       <WoodLog_Palm>6</WoodLog_Palm>
     </costList>
@@ -143,6 +150,7 @@
     <costList>
       <WoodLog_Pine>6</WoodLog_Pine>
     </costList>
+    <designatorDropdown>Floor_WoodPlank</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>WoodPlankFloor_Poplar</defName>
@@ -158,6 +166,7 @@
       <Beauty>1.5</Beauty>
     </statBases>
     <constructEffect>ConstructWood</constructEffect>
+    <designatorDropdown>Floor_WoodPlank</designatorDropdown>
     <costList>
       <WoodLog_Poplar>6</WoodLog_Poplar>
     </costList>
@@ -179,6 +188,7 @@
     <costList>
       <WoodLog_Teak>6</WoodLog_Teak>
     </costList>
+    <designatorDropdown>Floor_WoodPlank</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>WoodPlankFloor_Willow</defName>
@@ -194,6 +204,7 @@
       <Beauty>0.5</Beauty>
     </statBases>
     <constructEffect>ConstructWood</constructEffect>
+    <designatorDropdown>Floor_WoodPlank</designatorDropdown>
     <costList>
       <WoodLog_Willow>6</WoodLog_Willow>
     </costList>
@@ -212,6 +223,7 @@
       <Beauty>2</Beauty>
     </statBases>
     <constructEffect>ConstructWood</constructEffect>
+    <designatorDropdown>Floor_WoodPlank</designatorDropdown>
     <costList>
       <WoodLog_Red>6</WoodLog_Red>
     </costList>
@@ -233,6 +245,7 @@
     <costList>
       <WoodLog_Green>6</WoodLog_Green>
     </costList>
+    <designatorDropdown>Floor_WoodPlank</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>WoodPlankFloor_Blue</defName>
@@ -251,6 +264,7 @@
     <costList>
       <WoodLog_Blue>6</WoodLog_Blue>
     </costList>
+    <designatorDropdown>Floor_WoodPlank</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>WoodPlankFloor_Yellow</defName>
@@ -269,6 +283,7 @@
     <costList>
       <WoodLog_Yellow>6</WoodLog_Yellow>
     </costList>
+    <designatorDropdown>Floor_WoodPlank</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>WoodPlankFloor_White</defName>
@@ -284,6 +299,7 @@
       <Beauty>2</Beauty>
     </statBases>
     <constructEffect>ConstructWood</constructEffect>
+    <designatorDropdown>Floor_WoodPlank</designatorDropdown>
     <costList>
       <WoodLog_White>6</WoodLog_White>
     </costList>
@@ -302,6 +318,7 @@
       <Beauty>2</Beauty>
     </statBases>
     <constructEffect>ConstructWood</constructEffect>
+    <designatorDropdown>Floor_WoodPlank</designatorDropdown>
     <costList>
       <WoodLog_Black>6</WoodLog_Black>
     </costList>

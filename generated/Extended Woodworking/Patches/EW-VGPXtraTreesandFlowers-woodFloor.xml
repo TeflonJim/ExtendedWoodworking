@@ -6,13 +6,9 @@
       <li>VGP Xtra Trees and Flowers</li>
     </mods>
     <match Class="PatchOperationSequence">
-      <success>Always</success>
       <operations>
-        <li Class="PatchOperationTest">
-          <xpath>Defs/TerrainDef[defName='WoodPlankFloor_Birch']</xpath>
-        </li>
         <li Class="PatchOperationAdd">
-          <xpath>Defs</xpath>
+          <xpath>/Defs</xpath>
           <value>
             <TerrainDef ParentName="FloorBase">
               <defName>WoodPlankFloor_Acacia</defName>
@@ -31,11 +27,12 @@
               <costList>
                 <WoodLog_Acacia>6</WoodLog_Acacia>
               </costList>
+              <designatorDropdown>Floor_WoodPlank</designatorDropdown>
             </TerrainDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
-          <xpath>Defs</xpath>
+          <xpath>/Defs</xpath>
           <value>
             <TerrainDef ParentName="FloorBase">
               <defName>WoodPlankFloor_Camellia</defName>
@@ -54,11 +51,12 @@
               <costList>
                 <WoodLog_Camellia>6</WoodLog_Camellia>
               </costList>
+              <designatorDropdown>Floor_WoodPlank</designatorDropdown>
             </TerrainDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
-          <xpath>Defs</xpath>
+          <xpath>/Defs</xpath>
           <value>
             <TerrainDef ParentName="FloorBase">
               <defName>WoodPlankFloor_CherryBlossom</defName>
@@ -74,6 +72,7 @@
                 <Beauty>1</Beauty>
               </statBases>
               <constructEffect>ConstructWood</constructEffect>
+              <designatorDropdown>Floor_WoodPlank</designatorDropdown>
               <costList>
                 <WoodLog_CherryBlossom>6</WoodLog_CherryBlossom>
               </costList>
@@ -81,7 +80,7 @@
           </value>
         </li>
         <li Class="PatchOperationAdd">
-          <xpath>Defs</xpath>
+          <xpath>/Defs</xpath>
           <value>
             <TerrainDef ParentName="FloorBase">
               <defName>WoodPlankFloor_JapaneseMaple</defName>
@@ -97,6 +96,7 @@
                 <Beauty>1.5</Beauty>
               </statBases>
               <constructEffect>ConstructWood</constructEffect>
+              <designatorDropdown>Floor_WoodPlank</designatorDropdown>
               <costList>
                 <WoodLog_JapaneseMaple>6</WoodLog_JapaneseMaple>
               </costList>
@@ -104,7 +104,7 @@
           </value>
         </li>
         <li Class="PatchOperationAdd">
-          <xpath>Defs</xpath>
+          <xpath>/Defs</xpath>
           <value>
             <TerrainDef ParentName="FloorBase">
               <defName>WoodPlankFloor_RedMaple</defName>
@@ -123,6 +123,7 @@
               <costList>
                 <WoodLog_RedMaple>6</WoodLog_RedMaple>
               </costList>
+              <designatorDropdown>Floor_WoodPlank</designatorDropdown>
             </TerrainDef>
           </value>
         </li>

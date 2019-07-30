@@ -1,4 +1,5 @@
-﻿<Patch>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
     <Operation Class="PatchOperationFindMod">
         <success>Always</success>
         <mods>
@@ -7,11 +8,8 @@
         <match Class="PatchOperationSequence">
             <success>Always</success>
             <operations>
-                <li Class="PatchOperationTest">
-                    <xpath>Defs/ThingDef[defName='WoodLog_Birch']</xpath>
-                </li>
                 <li Class="PatchOperationAdd">
-                    <xpath>Defs</xpath>
+                    <xpath>/Defs</xpath>
                     <value />
                 </li>
             </operations>

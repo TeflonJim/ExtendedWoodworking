@@ -1,8 +1,7 @@
-﻿<Patch>
-    <!-- Core -->
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
     <Operation Class="PatchOperationAdd">
-        <success>Always</success>
-        <xpath>Defs/ThingDef[category="Building" or contains(thingClass, "Building")]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="WoodLog"]</xpath>
+        <xpath>/Defs/ThingDef[category="Building" or contains(thingClass, "Building")]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="WoodLog"]</xpath>
         <value>
             <li>WoodLog</li>
             <li>WoodLog_Birch</li>
@@ -18,14 +17,12 @@
             <li>WoodLog_Willow</li>
         </value>
     </Operation>
-    <!-- VGP Xtra Trees and Flowers -->
     <Operation Class="PatchOperationFindMod">
-        <success>Always</success>
         <mods>
             <li>VGP Xtra Trees and Flowers</li>
         </mods>
         <match Class="PatchOperationAdd">
-            <xpath>Defs/ThingDef[category="Building" or contains(thingClass, "Building")]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="WoodLog"]</xpath>
+            <xpath>/Defs/ThingDef[category="Building" or contains(thingClass, "Building")]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="WoodLog"]</xpath>
             <value>
                 <li>WoodLog_Acacia</li>
                 <li>WoodLog_Camellia</li>
@@ -35,14 +32,12 @@
             </value>
         </match>
     </Operation>
-    <!-- Nature's Pretty Sweet -->
     <Operation Class="PatchOperationFindMod">
-        <success>Always</success>
         <mods>
             <li>Nature's Pretty Sweet</li>
         </mods>
         <match Class="PatchOperationAdd">
-            <xpath>Defs/ThingDef[category="Building" or contains(thingClass, "Building")]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="WoodLog"]</xpath>
+            <xpath>/Defs/ThingDef[category="Building" or contains(thingClass, "Building")]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="WoodLog"]</xpath>
             <value>
                 <li>RedWoodLog</li>
             </value>
