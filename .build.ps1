@@ -49,6 +49,7 @@ task Setup {
             WoodStats          = Get-Content (Join-Path $psscriptroot 'woodStats.json') | ConvertFrom-Json | ConvertTo-OrderedDictionary
             SupportedMods      = @(
                 'Core'
+                'Royalty'
                 '[RF] Fishing'
                 '[RF] Fertile Fields'
                 '[T] ExpandedCloth'
@@ -158,6 +159,8 @@ task UpdateRecipeDefs {
 }
 
 task UpdateTerrainDefs {
+    Write-Verbose 'Copying FloorBase'
+
     $params = @{
         Name    = 'Core\FloorBase'
         SaveAs  = Join-Path $buildInfo.Path.Generated 'Defs\TerrainDefs\EW-Base.xml'
@@ -174,6 +177,8 @@ task UpdateTerrainDefs {
         Remove  = 'costList', 'designationHotKey'
     }
     foreach ($woodType in $buildInfo.Data.WoodStats.Keys) {
+        Write-Verbose ('Copying {0} floor' -f $woodType)
+
         $wood = $buildInfo.Data.WoodStats[$woodType]
 
         if ($buildInfo.Data.WoodStats[$woodType].Mod) {
@@ -203,6 +208,8 @@ task UpdateTerrainDefs {
         Remove  = 'costList', 'designationHotKey'
     }
     foreach ($colour in $buildInfo.Data.WoodPainted.Keys) {
+        Write-Verbose ('Generating {0} painted floor' -f $colour)
+
         $wood = $buildInfo.Data.WoodPainted[$colour]
 
         $params = @{
@@ -396,7 +403,7 @@ task CreateRecipeDefPatch {
                 $xDocument = [System.Xml.Linq.XDocument]::Load($item.FullName)
                 [System.Xml.XPath.Extensions]::XPathSelectElements(
                     $xDocument,
-                    '/Defs/RecipeDef[ingredients/li/filter/thingDefs/li="WoodLog" or fixedIngredientFilter/thingDefs/li="WoodLog"]'
+                    '/Defs/RecipeDef[(@Abstract="False" or not(@Abstract)) and (ingredients/li/filter/thingDefs/li="WoodLog" or fixedIngredientFilter/thingDefs/li="WoodLog")]'
                 )
             } | ForEach-Object {
                 [PSCustomObject]@{
@@ -422,8 +429,14 @@ task CreateRecipeDefPatch {
                 $template = $xDocument.Root.Element('Operation')
 
                 foreach ($item in $_.Group) {
+                    if ($element = $item.Node.Element('defName')) {
+                        $defName = $element.Value
+                    } elseif ($attribute = $item.Node.Attribute('Name')) {
+                        $defName = $attribute.Value
+                    }
+
                     foreach ($templateItem in $template) {
-                        $xmlString = $templateItem.ToString() -replace '%NAME%', $item.Node.Element('defName').Value
+                        $xmlString = $templateItem.ToString() -replace '%NAME%', $defName
                         $count = [System.Xml.XPath.Extensions]::XPathSelectElements(
                             $item.Node,
                             'ingredients/li[filter/thingDefs/li="WoodLog"]/count'

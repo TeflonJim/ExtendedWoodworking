@@ -3,7 +3,7 @@
   <Operation Class="PatchOperationFindMod">
     <success>Always</success>
     <mods>
-      <li>Project Fallout v1.7</li>
+      <li>Project Fallout v1.8b</li>
     </mods>
     <match Class="PatchOperationSequence">
       <operations>
