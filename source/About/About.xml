@@ -4,7 +4,6 @@
     <author>TeflonJim</author>
     <supportedVersions>
         <li>1.0</li>
-        <li>1.1</li>
     </supportedVersions>
     <description>
 This is an update of the Extended Woodworking mod (A13). All credit for the original creative work goes to ItchyFlea.
@@ -54,4 +53,8 @@ The following mods contain floors, the defs are duplicated for each available wo
 * GloomyFurniture
 * RIMkea
     </description>
+    <incompatibleWith>
+        <li>Adventurer.ExpandWoodwork</li>
+    </incompatibleWith>
+    <loadAfter />
 </ModMetaData>

@@ -3,7 +3,7 @@
   <Operation Class="PatchOperationFindMod">
     <success>Always</success>
     <mods>
-      <li>[WD] Expanded Floors</li>
+      <li>[WD] Expanded Floors 1.0</li>
     </mods>
     <match Class="PatchOperationFindMod">
       <success>Always</success>
@@ -145,7 +145,7 @@
                 <statBases>
                   <WorkToBuild>420</WorkToBuild>
                   <Flammability>0.22</Flammability>
-                  <Beauty>1.5</Beauty>
+                  <Beauty>2.5</Beauty>
                 </statBases>
                 <constructEffect>ConstructWood</constructEffect>
                 <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
@@ -170,7 +170,7 @@
                 <statBases>
                   <WorkToBuild>420</WorkToBuild>
                   <Flammability>0.22</Flammability>
-                  <Beauty>2</Beauty>
+                  <Beauty>3</Beauty>
                 </statBases>
                 <constructEffect>ConstructWood</constructEffect>
                 <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
@@ -195,7 +195,7 @@
                 <statBases>
                   <WorkToBuild>420</WorkToBuild>
                   <Flammability>0.22</Flammability>
-                  <Beauty>1</Beauty>
+                  <Beauty>2</Beauty>
                 </statBases>
                 <constructEffect>ConstructWood</constructEffect>
                 <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
@@ -220,7 +220,7 @@
                 <statBases>
                   <WorkToBuild>420</WorkToBuild>
                   <Flammability>0.22</Flammability>
-                  <Beauty>1.5</Beauty>
+                  <Beauty>2.5</Beauty>
                 </statBases>
                 <constructEffect>ConstructWood</constructEffect>
                 <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
@@ -245,7 +245,7 @@
                 <statBases>
                   <WorkToBuild>420</WorkToBuild>
                   <Flammability>0.22</Flammability>
-                  <Beauty>1.5</Beauty>
+                  <Beauty>2.5</Beauty>
                 </statBases>
                 <constructEffect>ConstructWood</constructEffect>
                 <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
@@ -262,7 +262,7 @@
             <value>
               <TerrainDef ParentName="FloorBase">
                 <defName>WDCheckWoodenFloor_Acacia</defName>
-                <label>checkered acacia floor</label>
+                <label>check acacia floor</label>
                 <renderPrecedence>250</renderPrecedence>
                 <description>Nice looking checkered floor made of small acacia planks.</description>
                 <texturePath>Terrain/Surfaces/Wooden/CheckWoodenFloor</texturePath>
@@ -270,7 +270,7 @@
                 <statBases>
                   <WorkToBuild>720</WorkToBuild>
                   <Flammability>0.22</Flammability>
-                  <Beauty>2.5</Beauty>
+                  <Beauty>3.5</Beauty>
                 </statBases>
                 <constructEffect>ConstructWood</constructEffect>
                 <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
@@ -287,7 +287,7 @@
             <value>
               <TerrainDef ParentName="FloorBase">
                 <defName>WDCheckWoodenFloor_Camellia</defName>
-                <label>checkered camellia floor</label>
+                <label>check camellia floor</label>
                 <renderPrecedence>250</renderPrecedence>
                 <description>Nice looking checkered floor made of small camellia planks.</description>
                 <texturePath>Terrain/Surfaces/Wooden/CheckWoodenFloor</texturePath>
@@ -295,7 +295,7 @@
                 <statBases>
                   <WorkToBuild>720</WorkToBuild>
                   <Flammability>0.22</Flammability>
-                  <Beauty>3</Beauty>
+                  <Beauty>4</Beauty>
                 </statBases>
                 <constructEffect>ConstructWood</constructEffect>
                 <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
@@ -312,7 +312,7 @@
             <value>
               <TerrainDef ParentName="FloorBase">
                 <defName>WDCheckWoodenFloor_CherryBlossom</defName>
-                <label>checkered cherryblossom floor</label>
+                <label>check cherryblossom floor</label>
                 <renderPrecedence>250</renderPrecedence>
                 <description>Nice looking checkered floor made of small cherry blossom planks.</description>
                 <texturePath>Terrain/Surfaces/Wooden/CheckWoodenFloor</texturePath>
@@ -320,7 +320,7 @@
                 <statBases>
                   <WorkToBuild>720</WorkToBuild>
                   <Flammability>0.22</Flammability>
-                  <Beauty>2</Beauty>
+                  <Beauty>3</Beauty>
                 </statBases>
                 <constructEffect>ConstructWood</constructEffect>
                 <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
@@ -337,7 +337,7 @@
             <value>
               <TerrainDef ParentName="FloorBase">
                 <defName>WDCheckWoodenFloor_JapaneseMaple</defName>
-                <label>checkered japanesemaple floor</label>
+                <label>check japanesemaple floor</label>
                 <renderPrecedence>250</renderPrecedence>
                 <description>Nice looking checkered floor made of small japanese maple planks.</description>
                 <texturePath>Terrain/Surfaces/Wooden/CheckWoodenFloor</texturePath>
@@ -345,7 +345,7 @@
                 <statBases>
                   <WorkToBuild>720</WorkToBuild>
                   <Flammability>0.22</Flammability>
-                  <Beauty>2.5</Beauty>
+                  <Beauty>3.5</Beauty>
                 </statBases>
                 <constructEffect>ConstructWood</constructEffect>
                 <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
@@ -362,7 +362,7 @@
             <value>
               <TerrainDef ParentName="FloorBase">
                 <defName>WDCheckWoodenFloor_RedMaple</defName>
-                <label>checkered redmaple floor</label>
+                <label>check redmaple floor</label>
                 <renderPrecedence>250</renderPrecedence>
                 <description>Nice looking checkered floor made of small red maple planks.</description>
                 <texturePath>Terrain/Surfaces/Wooden/CheckWoodenFloor</texturePath>
@@ -370,7 +370,7 @@
                 <statBases>
                   <WorkToBuild>720</WorkToBuild>
                   <Flammability>0.22</Flammability>
-                  <Beauty>2.5</Beauty>
+                  <Beauty>3.5</Beauty>
                 </statBases>
                 <constructEffect>ConstructWood</constructEffect>
                 <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
@@ -389,13 +389,13 @@
                 <defName>WDParquet_Acacia</defName>
                 <label>acacia parquet</label>
                 <renderPrecedence>250</renderPrecedence>
-                <description>Floor made of fine smooth acacia planks. Makes any room better, but expensive and hard to build.</description>
+                <description>Floor made of fine smooth acacia planks. Makes any room better, but expencive and hard to build.</description>
                 <texturePath>Terrain/Surfaces/Wooden/Parquet</texturePath>
                 <burnedDef>WDBurnedParquet</burnedDef>
                 <statBases>
                   <WorkToBuild>900</WorkToBuild>
                   <Flammability>0.22</Flammability>
-                  <Beauty>3.5</Beauty>
+                  <Beauty>4.5</Beauty>
                 </statBases>
                 <constructEffect>ConstructWood</constructEffect>
                 <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
@@ -414,13 +414,13 @@
                 <defName>WDParquet_Camellia</defName>
                 <label>camellia parquet</label>
                 <renderPrecedence>250</renderPrecedence>
-                <description>Floor made of fine smooth camellia planks. Makes any room better, but expensive and hard to build.</description>
+                <description>Floor made of fine smooth camellia planks. Makes any room better, but expencive and hard to build.</description>
                 <texturePath>Terrain/Surfaces/Wooden/Parquet</texturePath>
                 <burnedDef>WDBurnedParquet</burnedDef>
                 <statBases>
                   <WorkToBuild>900</WorkToBuild>
                   <Flammability>0.22</Flammability>
-                  <Beauty>4</Beauty>
+                  <Beauty>5</Beauty>
                 </statBases>
                 <constructEffect>ConstructWood</constructEffect>
                 <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
@@ -439,13 +439,13 @@
                 <defName>WDParquet_CherryBlossom</defName>
                 <label>cherryblossom parquet</label>
                 <renderPrecedence>250</renderPrecedence>
-                <description>Floor made of fine smooth cherry blossom planks. Makes any room better, but expensive and hard to build.</description>
+                <description>Floor made of fine smooth cherry blossom planks. Makes any room better, but expencive and hard to build.</description>
                 <texturePath>Terrain/Surfaces/Wooden/Parquet</texturePath>
                 <burnedDef>WDBurnedParquet</burnedDef>
                 <statBases>
                   <WorkToBuild>900</WorkToBuild>
                   <Flammability>0.22</Flammability>
-                  <Beauty>3</Beauty>
+                  <Beauty>4</Beauty>
                 </statBases>
                 <constructEffect>ConstructWood</constructEffect>
                 <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
@@ -464,13 +464,13 @@
                 <defName>WDParquet_JapaneseMaple</defName>
                 <label>japanesemaple parquet</label>
                 <renderPrecedence>250</renderPrecedence>
-                <description>Floor made of fine smooth japanese maple planks. Makes any room better, but expensive and hard to build.</description>
+                <description>Floor made of fine smooth japanese maple planks. Makes any room better, but expencive and hard to build.</description>
                 <texturePath>Terrain/Surfaces/Wooden/Parquet</texturePath>
                 <burnedDef>WDBurnedParquet</burnedDef>
                 <statBases>
                   <WorkToBuild>900</WorkToBuild>
                   <Flammability>0.22</Flammability>
-                  <Beauty>3.5</Beauty>
+                  <Beauty>4.5</Beauty>
                 </statBases>
                 <constructEffect>ConstructWood</constructEffect>
                 <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
@@ -489,13 +489,13 @@
                 <defName>WDParquet_RedMaple</defName>
                 <label>redmaple parquet</label>
                 <renderPrecedence>250</renderPrecedence>
-                <description>Floor made of fine smooth red maple planks. Makes any room better, but expensive and hard to build.</description>
+                <description>Floor made of fine smooth red maple planks. Makes any room better, but expencive and hard to build.</description>
                 <texturePath>Terrain/Surfaces/Wooden/Parquet</texturePath>
                 <burnedDef>WDBurnedParquet</burnedDef>
                 <statBases>
                   <WorkToBuild>900</WorkToBuild>
                   <Flammability>0.22</Flammability>
-                  <Beauty>3.5</Beauty>
+                  <Beauty>4.5</Beauty>
                 </statBases>
                 <constructEffect>ConstructWood</constructEffect>
                 <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
@@ -514,13 +514,13 @@
                 <defName>WDMosaicWoodenFloor_Acacia</defName>
                 <label>mosaic acacia floor</label>
                 <renderPrecedence>250</renderPrecedence>
-                <description>Polished acacia floor made of small planks fitted to each other. Looks fine but very expensive and hard to build.</description>
+                <description>Polished acacia floor made of small planks fitted to each other. Looks fine but very expencive and hard to build.</description>
                 <texturePath>Terrain/Surfaces/Wooden/MosaicWoodenFloor</texturePath>
                 <burnedDef>WDBurnedMosaicWoodenFloor</burnedDef>
                 <statBases>
                   <WorkToBuild>1200</WorkToBuild>
                   <Flammability>0.22</Flammability>
-                  <Beauty>4.5</Beauty>
+                  <Beauty>5.5</Beauty>
                 </statBases>
                 <constructEffect>ConstructWood</constructEffect>
                 <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
@@ -539,13 +539,13 @@
                 <defName>WDMosaicWoodenFloor_Camellia</defName>
                 <label>mosaic camellia floor</label>
                 <renderPrecedence>250</renderPrecedence>
-                <description>Polished camellia floor made of small planks fitted to each other. Looks fine but very expensive and hard to build.</description>
+                <description>Polished camellia floor made of small planks fitted to each other. Looks fine but very expencive and hard to build.</description>
                 <texturePath>Terrain/Surfaces/Wooden/MosaicWoodenFloor</texturePath>
                 <burnedDef>WDBurnedMosaicWoodenFloor</burnedDef>
                 <statBases>
                   <WorkToBuild>1200</WorkToBuild>
                   <Flammability>0.22</Flammability>
-                  <Beauty>5</Beauty>
+                  <Beauty>6</Beauty>
                 </statBases>
                 <constructEffect>ConstructWood</constructEffect>
                 <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
@@ -564,13 +564,13 @@
                 <defName>WDMosaicWoodenFloor_CherryBlossom</defName>
                 <label>mosaic cherryblossom floor</label>
                 <renderPrecedence>250</renderPrecedence>
-                <description>Polished cherry blossom floor made of small planks fitted to each other. Looks fine but very expensive and hard to build.</description>
+                <description>Polished cherry blossom floor made of small planks fitted to each other. Looks fine but very expencive and hard to build.</description>
                 <texturePath>Terrain/Surfaces/Wooden/MosaicWoodenFloor</texturePath>
                 <burnedDef>WDBurnedMosaicWoodenFloor</burnedDef>
                 <statBases>
                   <WorkToBuild>1200</WorkToBuild>
                   <Flammability>0.22</Flammability>
-                  <Beauty>4</Beauty>
+                  <Beauty>5</Beauty>
                 </statBases>
                 <constructEffect>ConstructWood</constructEffect>
                 <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
@@ -589,13 +589,13 @@
                 <defName>WDMosaicWoodenFloor_JapaneseMaple</defName>
                 <label>mosaic japanesemaple floor</label>
                 <renderPrecedence>250</renderPrecedence>
-                <description>Polished japanese maple floor made of small planks fitted to each other. Looks fine but very expensive and hard to build.</description>
+                <description>Polished japanese maple floor made of small planks fitted to each other. Looks fine but very expencive and hard to build.</description>
                 <texturePath>Terrain/Surfaces/Wooden/MosaicWoodenFloor</texturePath>
                 <burnedDef>WDBurnedMosaicWoodenFloor</burnedDef>
                 <statBases>
                   <WorkToBuild>1200</WorkToBuild>
                   <Flammability>0.22</Flammability>
-                  <Beauty>4.5</Beauty>
+                  <Beauty>5.5</Beauty>
                 </statBases>
                 <constructEffect>ConstructWood</constructEffect>
                 <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
@@ -614,13 +614,13 @@
                 <defName>WDMosaicWoodenFloor_RedMaple</defName>
                 <label>mosaic redmaple floor</label>
                 <renderPrecedence>250</renderPrecedence>
-                <description>Polished red maple floor made of small planks fitted to each other. Looks fine but very expensive and hard to build.</description>
+                <description>Polished red maple floor made of small planks fitted to each other. Looks fine but very expencive and hard to build.</description>
                 <texturePath>Terrain/Surfaces/Wooden/MosaicWoodenFloor</texturePath>
                 <burnedDef>WDBurnedMosaicWoodenFloor</burnedDef>
                 <statBases>
                   <WorkToBuild>1200</WorkToBuild>
                   <Flammability>0.22</Flammability>
-                  <Beauty>4.5</Beauty>
+                  <Beauty>5.5</Beauty>
                 </statBases>
                 <constructEffect>ConstructWood</constructEffect>
                 <constructionSkillPrerequisite>6</constructionSkillPrerequisite>

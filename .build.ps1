@@ -5,24 +5,27 @@ param (
     [String]$ReleaseType = 'Build'
 )
 
-task Build Setup,
-           Clean,
-           CopyFramework,
-           SetPublishedItemID,
-           UpdateRecipeDefs,
-           UpdateTerrainDefs,
-           UpdateThingDefsBuildings,
-           UpdateThingDefsItems,
-           CreateHarvestedThingDefPatch,
-           CreateCostListPatch,
-           CreateRecipeDefPatch,
-           CreateWoodLogPatch,
-           CreateWoodFloorPatch,
-           CreateFloorPatches,
-           CleanPatches,
-           UpdateVersion,
-           CreatePackage,
-           UpdateLocal
+task Build @(
+    'Setup'
+    'UpdateLastVersion'
+    'Clean'
+    'CopyFramework'
+    'SetPublishedItemID'
+    'UpdateRecipeDefs'
+    'UpdateTerrainDefs'
+    'UpdateThingDefsBuildings'
+    'UpdateThingDefsItems'
+    'CreateHarvestedThingDefPatch'
+    'CreateCostListPatch'
+    'CreateRecipeDefPatch'
+    'CreateWoodLogPatch'
+    'CreateWoodFloorPatch'
+    'CreateFloorPatches'
+    'CleanPatches'
+    'UpdateVersion'
+    'CreatePackage'
+    'UpdateLocal'
+)
 
 function ConvertTo-OrderedDictionary {
     process {
@@ -39,14 +42,17 @@ task Setup {
         Name            = 'Extended Woodworking'
         PublishedFileID = '836912371'
         Version         = $null
+        RimWorldVersion = $rwVersion = Get-RWVersion
         Path            = [PSCustomObject]@{
-            Build     = Join-Path $psscriptroot 'build'
-            Generated = Join-Path $psscriptroot 'generated\Extended Woodworking'
-            Source    = Join-Path $psscriptroot 'source'
+            Build            = Join-Path -Path $psscriptroot -ChildPath 'build'
+            Generated        = $generatedPath = Join-Path -Path $psscriptroot -ChildPath 'generated\Extended Woodworking'
+            GeneratedVersion = Join-Path -Path $generatedPath -ChildPath $rwVersion.ShortVersion
+            Source           = $source = Join-Path -Path $psscriptroot -ChildPath 'source'
+            About            = Join-Path -Path $source -ChildPath 'About\About.xml'
         }
         Data    = [PSCustomObject]@{
-            WoodPainted        = Get-Content (Join-Path $psscriptroot 'woodPainted.json') | ConvertFrom-Json | ConvertTo-OrderedDictionary
-            WoodStats          = Get-Content (Join-Path $psscriptroot 'woodStats.json') | ConvertFrom-Json | ConvertTo-OrderedDictionary
+            WoodPainted        = Get-Content (Join-Path -Path $psscriptroot -ChildPath 'woodPainted.json') | ConvertFrom-Json | ConvertTo-OrderedDictionary
+            WoodStats          = Get-Content (Join-Path -Path $psscriptroot -ChildPath 'woodStats.json') | ConvertFrom-Json | ConvertTo-OrderedDictionary
             SupportedMods      = @(
                 'Core'
                 'Royalty'
@@ -89,6 +95,58 @@ task Setup {
     $buildInfo.Version = [Version]$xDocument.Element('Manifest').Element('version').Value
 }
 
+# Synopsis: Makes the last generated module content permanent if RimWorlds short version increments.
+task UpdateLastVersion {
+    $aboutXml = [System.Xml.Linq.XDocument]::Load($buildInfo.Path.About)
+    $supportedVersionsNode = $aboutXml.Element('ModMetaData').Element('supportedVersions')
+
+    $supportedVersions = $supportedVersionsNode.Elements('li').Value -as [Version[]] | Sort-Object
+
+    if ($buildInfo.RimWorldVersion.ShortVersion -notin $supportedVersions) {
+        $lastVersion = $supportedVersions[-1]
+        $path = Join-Path -Path $buildInfo.Path.Source -ChildPath $lastVersion
+
+        if (-not (Test-Path $path)) {
+            $contentToArchive = Join-Path -Path $buildInfo.Path.Generated -ChildPath $version
+
+            if (Test-Path $contentToArchive) {
+                Copy-Item -Path $contentToArchive -Destination $buildInfo.Path.Source -Recurse -Force -WhatIf
+            }
+        }
+
+        $supportedVersionsNode.Add(
+            [System.Xml.Linq.XElement]::new(
+                [System.Xml.Linq.XElement]::new([System.Xml.Linq.XName]'li', $buildInfo.RimWorldVersion.ShortVersion)
+            )
+        )
+
+        $aboutXml.Save($buildInfo.Path.About)
+    }
+}
+
+task UpdateLoadOrder {
+    $loadAfterNode = [System.Xml.Linq.XElement]::new(
+        [System.Xml.Linq.XElement]::new([System.Xml.Linq.XName]'loadAfter')
+    )
+
+    foreach ($mod in $buildInfo.Data.SupportedMods) {
+        if ($mod = Get-RWMod -Name $mod) {
+            if ($mod.PackageId) {
+                $loadAfterNode.Add(
+                    [System.Xml.Linq.XElement]::new(
+                        [System.Xml.Linq.XElement]::new([System.Xml.Linq.XName]'li', $mod.PackageId)
+                    )
+                )
+            }
+        }
+    }
+
+    $aboutXml = [System.Xml.Linq.XDocument]::Load($buildInfo.Path.About)
+    $aboutXml.Element('ModMetaData').Element('loadAfter').ReplaceWith($loadAfterNode)
+
+    $aboutXml.Save($buildInfo.Path.About)
+}
+
 task Clean {
     if (Test-Path $buildInfo.Path.Build) {
         Remove-Item $buildInfo.Path.Build -Recurse
@@ -102,23 +160,6 @@ task Clean {
 
 task CopyFramework {
     Copy-Item ('{0}\*' -f $buildInfo.Path.Source) $buildInfo.Path.Generated -Recurse
-}
-
-task GetModCheck {
-    [Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
-
-    $path = Join-Path $buildInfo.Path.Build 'ModCheck.zip'
-    $destinationPath = Join-Path $buildInfo.Path.Build 'ModCheck'
-    $assemblyPath = Join-Path $buildInfo.Path.Generated 'Assemblies'
-    $null = New-Item $assemblyPath -ItemType Directory
-
-    $latest = Invoke-RestMethod https://api.github.com/repos/Nightinggale/ModCheck/releases/latest
-    $webRequest = Invoke-WebRequest $latest.zipball_url
-    Set-Content $path -Value $webRequest.Content -Encoding Byte
-    Expand-Archive $path -DestinationPath (Join-Path $buildInfo.Path.Build 'ModCheck')
-    Get-ChildItem $destinationPath -Filter *.dll -Recurse | Copy-Item -Destination $assemblyPath
-
-    Remove-Item $path, $destinationPath -Recurse
 }
 
 task SetPublishedItemID {

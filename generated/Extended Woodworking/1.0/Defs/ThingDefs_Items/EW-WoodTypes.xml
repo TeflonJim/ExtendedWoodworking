@@ -19,14 +19,12 @@
       <DeteriorationRate>0.5</DeteriorationRate>
       <StuffPower_Armor_Sharp>0.54</StuffPower_Armor_Sharp>
       <StuffPower_Armor_Blunt>0.54</StuffPower_Armor_Blunt>
-      <StuffPower_Armor_Heat>0.40</StuffPower_Armor_Heat>
+      <StuffPower_Armor_Heat>0.9</StuffPower_Armor_Heat>
       <StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
       <StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat>
       <SharpDamageMultiplier>0.45</SharpDamageMultiplier>
       <BluntDamageMultiplier>0.9</BluntDamageMultiplier>
     </statBases>
-    <burnableByRecipe>true</burnableByRecipe>
-    <healthAffectsPrice>false</healthAffectsPrice>
     <stuffProps>
       <stuffAdjective>wooden</stuffAdjective>
       <categories>
@@ -66,7 +64,6 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
-    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
   </ThingDef>
   <ThingDef ParentName="ResourceVerbBase">
     <defName>WoodLog_Birch</defName>
@@ -88,14 +85,12 @@
       <DeteriorationRate>0.5</DeteriorationRate>
       <StuffPower_Armor_Sharp>0.54</StuffPower_Armor_Sharp>
       <StuffPower_Armor_Blunt>0.54</StuffPower_Armor_Blunt>
-      <StuffPower_Armor_Heat>0.40</StuffPower_Armor_Heat>
+      <StuffPower_Armor_Heat>0.9</StuffPower_Armor_Heat>
       <StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
       <StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat>
       <SharpDamageMultiplier>0.45</SharpDamageMultiplier>
       <BluntDamageMultiplier>0.9</BluntDamageMultiplier>
     </statBases>
-    <burnableByRecipe>true</burnableByRecipe>
-    <healthAffectsPrice>false</healthAffectsPrice>
     <stuffProps>
       <stuffAdjective>birch</stuffAdjective>
       <categories>
@@ -135,7 +130,6 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
-    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
   </ThingDef>
   <ThingDef ParentName="ResourceVerbBase">
     <defName>WoodLog_Cecropia</defName>
@@ -157,14 +151,12 @@
       <DeteriorationRate>0.5</DeteriorationRate>
       <StuffPower_Armor_Sharp>0.54</StuffPower_Armor_Sharp>
       <StuffPower_Armor_Blunt>0.54</StuffPower_Armor_Blunt>
-      <StuffPower_Armor_Heat>0.40</StuffPower_Armor_Heat>
+      <StuffPower_Armor_Heat>0.9</StuffPower_Armor_Heat>
       <StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
       <StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat>
       <SharpDamageMultiplier>0.45</SharpDamageMultiplier>
       <BluntDamageMultiplier>0.9</BluntDamageMultiplier>
     </statBases>
-    <burnableByRecipe>true</burnableByRecipe>
-    <healthAffectsPrice>false</healthAffectsPrice>
     <stuffProps>
       <stuffAdjective>cecropia</stuffAdjective>
       <categories>
@@ -204,7 +196,6 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
-    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
   </ThingDef>
   <ThingDef ParentName="ResourceVerbBase">
     <defName>WoodLog_Cypress</defName>
@@ -226,14 +217,12 @@
       <DeteriorationRate>0.5</DeteriorationRate>
       <StuffPower_Armor_Sharp>0.54</StuffPower_Armor_Sharp>
       <StuffPower_Armor_Blunt>0.54</StuffPower_Armor_Blunt>
-      <StuffPower_Armor_Heat>0.40</StuffPower_Armor_Heat>
+      <StuffPower_Armor_Heat>0.9</StuffPower_Armor_Heat>
       <StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
       <StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat>
       <SharpDamageMultiplier>0.45</SharpDamageMultiplier>
       <BluntDamageMultiplier>0.9</BluntDamageMultiplier>
     </statBases>
-    <burnableByRecipe>true</burnableByRecipe>
-    <healthAffectsPrice>false</healthAffectsPrice>
     <stuffProps>
       <stuffAdjective>cypress</stuffAdjective>
       <categories>
@@ -273,7 +262,6 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
-    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
   </ThingDef>
   <ThingDef ParentName="ResourceVerbBase">
     <defName>WoodLog_Drago</defName>
@@ -295,14 +283,12 @@
       <DeteriorationRate>0.5</DeteriorationRate>
       <StuffPower_Armor_Sharp>0.54</StuffPower_Armor_Sharp>
       <StuffPower_Armor_Blunt>0.54</StuffPower_Armor_Blunt>
-      <StuffPower_Armor_Heat>0.40</StuffPower_Armor_Heat>
+      <StuffPower_Armor_Heat>0.9</StuffPower_Armor_Heat>
       <StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
       <StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat>
       <SharpDamageMultiplier>0.45</SharpDamageMultiplier>
       <BluntDamageMultiplier>0.9</BluntDamageMultiplier>
     </statBases>
-    <burnableByRecipe>true</burnableByRecipe>
-    <healthAffectsPrice>false</healthAffectsPrice>
     <stuffProps>
       <stuffAdjective>drago</stuffAdjective>
       <categories>
@@ -342,7 +328,6 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
-    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
   </ThingDef>
   <ThingDef ParentName="ResourceVerbBase">
     <defName>WoodLog_Maple</defName>
@@ -364,14 +349,12 @@
       <DeteriorationRate>0.5</DeteriorationRate>
       <StuffPower_Armor_Sharp>0.54</StuffPower_Armor_Sharp>
       <StuffPower_Armor_Blunt>0.54</StuffPower_Armor_Blunt>
-      <StuffPower_Armor_Heat>0.40</StuffPower_Armor_Heat>
+      <StuffPower_Armor_Heat>0.9</StuffPower_Armor_Heat>
       <StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
       <StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat>
       <SharpDamageMultiplier>0.45</SharpDamageMultiplier>
       <BluntDamageMultiplier>0.9</BluntDamageMultiplier>
     </statBases>
-    <burnableByRecipe>true</burnableByRecipe>
-    <healthAffectsPrice>false</healthAffectsPrice>
     <stuffProps>
       <stuffAdjective>maple</stuffAdjective>
       <categories>
@@ -411,7 +394,6 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
-    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
   </ThingDef>
   <ThingDef ParentName="ResourceVerbBase">
     <defName>WoodLog_Oak</defName>
@@ -433,14 +415,12 @@
       <DeteriorationRate>0.5</DeteriorationRate>
       <StuffPower_Armor_Sharp>0.54</StuffPower_Armor_Sharp>
       <StuffPower_Armor_Blunt>0.54</StuffPower_Armor_Blunt>
-      <StuffPower_Armor_Heat>0.40</StuffPower_Armor_Heat>
+      <StuffPower_Armor_Heat>0.9</StuffPower_Armor_Heat>
       <StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
       <StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat>
       <SharpDamageMultiplier>0.45</SharpDamageMultiplier>
       <BluntDamageMultiplier>0.9</BluntDamageMultiplier>
     </statBases>
-    <burnableByRecipe>true</burnableByRecipe>
-    <healthAffectsPrice>false</healthAffectsPrice>
     <stuffProps>
       <stuffAdjective>oak</stuffAdjective>
       <categories>
@@ -480,7 +460,6 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
-    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
   </ThingDef>
   <ThingDef ParentName="ResourceVerbBase">
     <defName>WoodLog_Palm</defName>
@@ -502,14 +481,12 @@
       <DeteriorationRate>0.5</DeteriorationRate>
       <StuffPower_Armor_Sharp>0.54</StuffPower_Armor_Sharp>
       <StuffPower_Armor_Blunt>0.54</StuffPower_Armor_Blunt>
-      <StuffPower_Armor_Heat>0.40</StuffPower_Armor_Heat>
+      <StuffPower_Armor_Heat>0.9</StuffPower_Armor_Heat>
       <StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
       <StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat>
       <SharpDamageMultiplier>0.45</SharpDamageMultiplier>
       <BluntDamageMultiplier>0.9</BluntDamageMultiplier>
     </statBases>
-    <burnableByRecipe>true</burnableByRecipe>
-    <healthAffectsPrice>false</healthAffectsPrice>
     <stuffProps>
       <stuffAdjective>palm</stuffAdjective>
       <categories>
@@ -549,7 +526,6 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
-    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
   </ThingDef>
   <ThingDef ParentName="ResourceVerbBase">
     <defName>WoodLog_Pine</defName>
@@ -571,14 +547,12 @@
       <DeteriorationRate>0.5</DeteriorationRate>
       <StuffPower_Armor_Sharp>0.54</StuffPower_Armor_Sharp>
       <StuffPower_Armor_Blunt>0.54</StuffPower_Armor_Blunt>
-      <StuffPower_Armor_Heat>0.40</StuffPower_Armor_Heat>
+      <StuffPower_Armor_Heat>0.9</StuffPower_Armor_Heat>
       <StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
       <StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat>
       <SharpDamageMultiplier>0.45</SharpDamageMultiplier>
       <BluntDamageMultiplier>0.9</BluntDamageMultiplier>
     </statBases>
-    <burnableByRecipe>true</burnableByRecipe>
-    <healthAffectsPrice>false</healthAffectsPrice>
     <stuffProps>
       <stuffAdjective>pine</stuffAdjective>
       <categories>
@@ -618,7 +592,6 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
-    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
   </ThingDef>
   <ThingDef ParentName="ResourceVerbBase">
     <defName>WoodLog_Poplar</defName>
@@ -640,14 +613,12 @@
       <DeteriorationRate>0.5</DeteriorationRate>
       <StuffPower_Armor_Sharp>0.54</StuffPower_Armor_Sharp>
       <StuffPower_Armor_Blunt>0.54</StuffPower_Armor_Blunt>
-      <StuffPower_Armor_Heat>0.40</StuffPower_Armor_Heat>
+      <StuffPower_Armor_Heat>0.9</StuffPower_Armor_Heat>
       <StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
       <StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat>
       <SharpDamageMultiplier>0.45</SharpDamageMultiplier>
       <BluntDamageMultiplier>0.9</BluntDamageMultiplier>
     </statBases>
-    <burnableByRecipe>true</burnableByRecipe>
-    <healthAffectsPrice>false</healthAffectsPrice>
     <stuffProps>
       <stuffAdjective>poplar</stuffAdjective>
       <categories>
@@ -687,7 +658,6 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
-    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
   </ThingDef>
   <ThingDef ParentName="ResourceVerbBase">
     <defName>WoodLog_Teak</defName>
@@ -709,14 +679,12 @@
       <DeteriorationRate>0.5</DeteriorationRate>
       <StuffPower_Armor_Sharp>0.54</StuffPower_Armor_Sharp>
       <StuffPower_Armor_Blunt>0.54</StuffPower_Armor_Blunt>
-      <StuffPower_Armor_Heat>0.40</StuffPower_Armor_Heat>
+      <StuffPower_Armor_Heat>0.9</StuffPower_Armor_Heat>
       <StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
       <StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat>
       <SharpDamageMultiplier>0.45</SharpDamageMultiplier>
       <BluntDamageMultiplier>0.9</BluntDamageMultiplier>
     </statBases>
-    <burnableByRecipe>true</burnableByRecipe>
-    <healthAffectsPrice>false</healthAffectsPrice>
     <stuffProps>
       <stuffAdjective>teak</stuffAdjective>
       <categories>
@@ -756,7 +724,6 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
-    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
   </ThingDef>
   <ThingDef ParentName="ResourceVerbBase">
     <defName>WoodLog_Willow</defName>
@@ -778,14 +745,12 @@
       <DeteriorationRate>0.5</DeteriorationRate>
       <StuffPower_Armor_Sharp>0.54</StuffPower_Armor_Sharp>
       <StuffPower_Armor_Blunt>0.54</StuffPower_Armor_Blunt>
-      <StuffPower_Armor_Heat>0.40</StuffPower_Armor_Heat>
+      <StuffPower_Armor_Heat>0.9</StuffPower_Armor_Heat>
       <StuffPower_Insulation_Cold>8</StuffPower_Insulation_Cold>
       <StuffPower_Insulation_Heat>4</StuffPower_Insulation_Heat>
       <SharpDamageMultiplier>0.45</SharpDamageMultiplier>
       <BluntDamageMultiplier>0.9</BluntDamageMultiplier>
     </statBases>
-    <burnableByRecipe>true</burnableByRecipe>
-    <healthAffectsPrice>false</healthAffectsPrice>
     <stuffProps>
       <stuffAdjective>willow</stuffAdjective>
       <categories>
@@ -825,6 +790,5 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
-    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
   </ThingDef>
 </Defs>

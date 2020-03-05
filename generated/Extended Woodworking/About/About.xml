@@ -2,6 +2,7 @@
 <ModMetaData>
     <name>Extended Woodworking</name>
     <author>TeflonJim</author>
+    <packageId>teflonjim.extendedwoodworking</packageId>
     <supportedVersions>
         <li>1.0</li>
         <li>1.1</li>
