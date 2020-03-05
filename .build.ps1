@@ -5,24 +5,28 @@ param (
     [String]$ReleaseType = 'Build'
 )
 
-task Build Setup,
-           Clean,
-           CopyFramework,
-           SetPublishedItemID,
-           UpdateRecipeDefs,
-           UpdateTerrainDefs,
-           UpdateThingDefsBuildings,
-           UpdateThingDefsItems,
-           CreateHarvestedThingDefPatch,
-           CreateCostListPatch,
-           CreateRecipeDefPatch,
-           CreateWoodLogPatch,
-           CreateWoodFloorPatch,
-           CreateFloorPatches,
-           CleanPatches,
-           UpdateVersion,
-           CreatePackage,
-           UpdateLocal
+task Build @(
+    'Setup'
+    'ValidateSupportedMods'
+    'UpdateLastVersion'
+    'Clean'
+    'CopyFramework'
+    'SetPublishedItemID'
+    'UpdateRecipeDefs'
+    'UpdateTerrainDefs'
+    'UpdateThingDefsBuildings'
+    'UpdateThingDefsItems'
+    'CreateHarvestedThingDefPatch'
+    'CreateCostListPatch'
+    'CreateRecipeDefPatch'
+    'CreateWoodLogPatch'
+    'CreateWoodFloorPatch'
+    'CreateFloorPatches'
+    'CleanPatches'
+    'UpdateVersion'
+    'CreatePackage'
+    'UpdateLocal'
+)
 
 function ConvertTo-OrderedDictionary {
     process {
@@ -39,14 +43,18 @@ task Setup {
         Name            = 'Extended Woodworking'
         PublishedFileID = '836912371'
         Version         = $null
+        RimWorldVersion = $rwVersion = Get-RWVersion
         Path            = [PSCustomObject]@{
-            Build     = Join-Path $psscriptroot 'build'
-            Generated = Join-Path $psscriptroot 'generated\Extended Woodworking'
-            Source    = Join-Path $psscriptroot 'source'
+            Build            = Join-Path -Path $psscriptroot -ChildPath 'build'
+            Generated        = $generatedPath = Join-Path -Path $psscriptroot -ChildPath 'generated\Extended Woodworking'
+            GeneratedVersion = Join-Path -Path $generatedPath -ChildPath $rwVersion.ShortVersion
+            Source           = $source = Join-Path -Path $psscriptroot -ChildPath 'source'
+            Template         = Join-Path -Path $source -ChildPath 'template'
+            About            = Join-Path -Path $source -ChildPath 'About\About.xml'
         }
         Data    = [PSCustomObject]@{
-            WoodPainted        = Get-Content (Join-Path $psscriptroot 'woodPainted.json') | ConvertFrom-Json | ConvertTo-OrderedDictionary
-            WoodStats          = Get-Content (Join-Path $psscriptroot 'woodStats.json') | ConvertFrom-Json | ConvertTo-OrderedDictionary
+            WoodPainted        = Get-Content (Join-Path -Path $psscriptroot -ChildPath 'woodPainted.json') | ConvertFrom-Json | ConvertTo-OrderedDictionary
+            WoodStats          = Get-Content (Join-Path -Path $psscriptroot -ChildPath 'woodStats.json') | ConvertFrom-Json | ConvertTo-OrderedDictionary
             SupportedMods      = @(
                 'Core'
                 'Royalty'
@@ -56,7 +64,7 @@ task Setup {
                 '[T] MoreFloors'
                 'A Dog Said... Animal Prosthetics'
                 'A RimWorld of Magic'
-                'Area Rugs for'
+                'Area Rugs'
                 'Camping Stuff'
                 'Children, school and learning'
                 'Expanded Prosthetics and Organ Engineering'
@@ -89,6 +97,69 @@ task Setup {
     $buildInfo.Version = [Version]$xDocument.Element('Manifest').Element('version').Value
 }
 
+# Synopsis: Ensures a local copy exists of each mod
+task ValidateSupportedMods {
+    $missingMods = $buildInfo.Data.SupportedMods + $buildInfo.Data.SupportedFloorMods |
+        Select-Object -Unique |
+        Where-Object { -not (Get-RWMod -Name $_) }
+
+    if ($missingMods) {
+        throw 'Cannot find mod(s) required for patch generation: {0}' -f ($missingMods -join ', ')
+    }
+}
+
+# Synopsis: Makes the last generated module content permanent if RimWorlds short version increments.
+task UpdateLastVersion {
+    $aboutXml = [System.Xml.Linq.XDocument]::Load($buildInfo.Path.About)
+    $supportedVersionsNode = $aboutXml.Element('ModMetaData').Element('supportedVersions')
+
+    $supportedVersions = $supportedVersionsNode.Elements('li').Value -as [Version[]] | Sort-Object
+
+    if ($buildInfo.RimWorldVersion.ShortVersion -notin $supportedVersions) {
+        $lastVersion = $supportedVersions[-1]
+        $path = Join-Path -Path $buildInfo.Path.Source -ChildPath $lastVersion
+
+        if (-not (Test-Path $path)) {
+            $contentToArchive = Join-Path -Path $buildInfo.Path.Generated -ChildPath $lastVersion
+
+            if (Test-Path $contentToArchive) {
+                Copy-Item -Path $contentToArchive -Destination $buildInfo.Path.Source -Recurse -Force
+            }
+        }
+
+        $supportedVersionsNode.Add(
+            [System.Xml.Linq.XElement]::new(
+                [System.Xml.Linq.XElement]::new([System.Xml.Linq.XName]'li', $buildInfo.RimWorldVersion.ShortVersion)
+            )
+        )
+
+        $aboutXml.Save($buildInfo.Path.About)
+    }
+}
+
+task UpdateLoadOrder {
+    $loadAfterNode = [System.Xml.Linq.XElement]::new(
+        [System.Xml.Linq.XElement]::new([System.Xml.Linq.XName]'loadAfter')
+    )
+
+    foreach ($mod in $buildInfo.Data.SupportedMods + $buildInfo.Data.SupportedFloorMods) {
+        if ($mod = Get-RWMod -Name $mod) {
+            if ($mod.PackageId) {
+                $loadAfterNode.Add(
+                    [System.Xml.Linq.XElement]::new(
+                        [System.Xml.Linq.XElement]::new([System.Xml.Linq.XName]'li', $mod.PackageId)
+                    )
+                )
+            }
+        }
+    }
+
+    $aboutXml = [System.Xml.Linq.XDocument]::Load($buildInfo.Path.About)
+    $aboutXml.Element('ModMetaData').Element('loadAfter').ReplaceWith($loadAfterNode)
+
+    $aboutXml.Save($buildInfo.Path.About)
+}
+
 task Clean {
     if (Test-Path $buildInfo.Path.Build) {
         Remove-Item $buildInfo.Path.Build -Recurse
@@ -96,29 +167,13 @@ task Clean {
     if (Test-Path $buildInfo.Path.Generated) {
         Remove-Item $buildInfo.Path.Generated -Recurse
     }
-    $null = New-Item $buildInfo.Path.Build -ItemType Directory
-    $null = New-Item $buildInfo.Path.Generated -ItemType Directory
+    New-Item $buildInfo.Path.Build -ItemType Directory
+    New-Item $buildInfo.Path.GeneratedVersion -ItemType Directory
 }
 
 task CopyFramework {
-    Copy-Item ('{0}\*' -f $buildInfo.Path.Source) $buildInfo.Path.Generated -Recurse
-}
-
-task GetModCheck {
-    [Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]::Tls12
-
-    $path = Join-Path $buildInfo.Path.Build 'ModCheck.zip'
-    $destinationPath = Join-Path $buildInfo.Path.Build 'ModCheck'
-    $assemblyPath = Join-Path $buildInfo.Path.Generated 'Assemblies'
-    $null = New-Item $assemblyPath -ItemType Directory
-
-    $latest = Invoke-RestMethod https://api.github.com/repos/Nightinggale/ModCheck/releases/latest
-    $webRequest = Invoke-WebRequest $latest.zipball_url
-    Set-Content $path -Value $webRequest.Content -Encoding Byte
-    Expand-Archive $path -DestinationPath (Join-Path $buildInfo.Path.Build 'ModCheck')
-    Get-ChildItem $destinationPath -Filter *.dll -Recurse | Copy-Item -Destination $assemblyPath
-
-    Remove-Item $path, $destinationPath -Recurse
+    Get-ChildItem -Path $buildInfo.Path.Source -Exclude template | Copy-Item -Destination $buildInfo.Path.Generated -Recurse
+    Join-Path -Path $buildInfo.Path.Source -ChildPath 'template\*' | Copy-Item -Destination $buildInfo.Path.GeneratedVersion -Recurse
 }
 
 task SetPublishedItemID {
@@ -126,7 +181,7 @@ task SetPublishedItemID {
 }
 
 task UpdateRecipeDefs {
-    $path = Join-Path $buildInfo.Path.Generated 'Defs\RecipeDefs\EW-Woodworking.xml'
+    $path = Join-Path $buildInfo.Path.GeneratedVersion 'Defs\RecipeDefs\EW-Woodworking.xml'
 
     $xDocument = [System.Xml.Linq.XDocument]::Load($path)
     $template = $xDocument.Root.Elements('RecipeDef').Where( { $_.Element('defName').Value -eq 'PaintWoodLogTemplate' } )[0]
@@ -163,13 +218,13 @@ task UpdateTerrainDefs {
 
     $params = @{
         Name    = 'Core\FloorBase'
-        SaveAs  = Join-Path $buildInfo.Path.Generated 'Defs\TerrainDefs\EW-Base.xml'
+        SaveAs  = Join-Path $buildInfo.Path.GeneratedVersion 'Defs\TerrainDefs\EW-Base.xml'
     }
     Copy-RWModDef @params
 
     # Floors (natural)
 
-    $path = Join-Path $buildInfo.Path.Generated 'Defs\TerrainDefs\EW-WoodFloors.xml'
+    $path = Join-Path $buildInfo.Path.GeneratedVersion 'Defs\TerrainDefs\EW-WoodFloors.xml'
 
     $commonParams = @{
         Name    = 'Core\WoodPlankFloor'
@@ -229,7 +284,7 @@ task UpdateTerrainDefs {
 }
 
 task UpdateThingDefsBuildings {
-    $path = Join-Path $buildInfo.Path.Generated 'Defs\ThingDefs_Buildings\EW-Base.xml'
+    $path = Join-Path $buildInfo.Path.GeneratedVersion 'Defs\ThingDefs_Buildings\EW-Base.xml'
 
     $commonParams = @{
         Name    = 'Core\BuildingBase'
@@ -252,7 +307,7 @@ task UpdateThingDefsBuildings {
 
 task UpdateThingDefsItems {
     $commonParams = @{
-        SaveAs  = Join-Path $buildInfo.Path.Generated 'Defs\ThingDefs_Items\EW-Base.xml'
+        SaveAs  = Join-Path $buildInfo.Path.GeneratedVersion 'Defs\ThingDefs_Items\EW-Base.xml'
     }
     Copy-RWModDef @commonParams -Name 'Core\ResourceBase'
 
@@ -271,7 +326,7 @@ task UpdateThingDefsItems {
 
     $commonParams = @{
         Name    = 'Core\WoodLog'
-        SaveAs  = Join-Path $buildInfo.Path.Generated 'Defs\ThingDefs_Items\EW-WoodTypes.xml'
+        SaveAs  = Join-Path $buildInfo.Path.GeneratedVersion 'Defs\ThingDefs_Items\EW-WoodTypes.xml'
     }
 
     # WoodLog (generic)
@@ -314,7 +369,7 @@ task UpdateThingDefsItems {
 
     $commonParams = @{
         Name    = 'Core\WoodLog'
-        SaveAs  = Join-Path $buildInfo.Path.Generated 'Defs\ThingDefs_Items\EW-PaintedWood.xml'
+        SaveAs  = Join-Path $buildInfo.Path.GeneratedVersion 'Defs\ThingDefs_Items\EW-PaintedWood.xml'
     }
 
     foreach ($colour in $buildInfo.Data.WoodPainted.Keys) {
@@ -339,54 +394,52 @@ task UpdateThingDefsItems {
 task CreateCostListPatch {
     foreach ($mod in $buildInfo.Data.SupportedMods) {
         $modInfo = Get-RWMod $mod
-        if ($modInfo) {
-            $shortName = $mod -replace '[^A-Za-z0-9]'
+        $shortName = $mod -replace '[^A-Za-z0-9]'
 
-            Get-ChildItem (Join-Path $modInfo.Path 'Defs') -Filter *.xml -Recurse | ForEach-Object {
-                $item = $_
+        Get-ChildItem (Join-Path $modInfo.Path 'Defs') -Filter *.xml -Recurse | ForEach-Object {
+            $item = $_
 
-                $xDocument = [System.Xml.Linq.XDocument]::Load($item.FullName)
-                [System.Xml.XPath.Extensions]::XPathSelectElements(
-                    $xDocument,
-                    '/Defs/*[name()!="TerrainDef" and defName and not(stuffCategories) and ./costList/WoodLog]'
-                )
-            } | ForEach-Object {
-                [PSCustomObject]@{
-                    Mod  = $shortName
-                    Node = $_
-                }
-            } | Group-Object Mod | ForEach-Object {
-                $newName = 'Patches/EW-%MOD%-costList.xml' -replace '%MOD%', $_.Name
-                $newPath = Join-Path $buildInfo.Path.Generated $newName
-                if ($_.Name -eq 'Core') {
-                    $template = Join-Path $buildInfo.Path.Source 'Patches/EW-CORE-costList.xml'
-                } else {
-                    $template = Join-Path $buildInfo.Path.Source 'Patches/EW-%MOD%-costList.xml'
-                }
-
-                Copy-Item $template $newPath -Force
-
-                $xDocument = [System.Xml.Linq.XDocument]::Load($newPath)
-                $xDocument.Descendants('mods') | ForEach-Object {
-                    $_.Element('li').Value = (Get-RWMod -Name $mod).RawName
-                }
-
-                $template = $xDocument.Root.Element('Operation')
-
-                foreach ($item in $_.Group) {
-                    foreach ($templateItem in $template) {
-                        $xmlString = $templateItem.ToString() -replace '%NAME%', $item.Node.Element('defName').Value
-                        $xmlString = $xmlString -replace '%COST%', $item.Node.Element('costList').Element('WoodLog').Value
-
-                        $xElement = [System.Xml.Linq.XElement]::new($xmlString)
-                        $xDocument.Root.Add($xElement)
-                    }
-                }
-
-                $template.ForEach{ $_.Remove() }
-
-                $xDocument.Save($newPath)
+            $xDocument = [System.Xml.Linq.XDocument]::Load($item.FullName)
+            [System.Xml.XPath.Extensions]::XPathSelectElements(
+                $xDocument,
+                '/Defs/*[name()!="TerrainDef" and defName and not(stuffCategories) and ./costList/WoodLog]'
+            )
+        } | ForEach-Object {
+            [PSCustomObject]@{
+                Mod  = $shortName
+                Node = $_
             }
+        } | Group-Object Mod | ForEach-Object {
+            $newName = 'Patches/EW-%MOD%-costList.xml' -replace '%MOD%', $_.Name
+            $newPath = Join-Path $buildInfo.Path.GeneratedVersion $newName
+            if ($_.Name -eq 'Core') {
+                $template = Join-Path -Path $buildInfo.Path.Template -ChildPath 'Patches/EW-CORE-costList.xml'
+            } else {
+                $template = Join-Path -Path $buildInfo.Path.Template -ChildPath 'Patches/EW-%MOD%-costList.xml'
+            }
+
+            Copy-Item $template $newPath -Force
+
+            $xDocument = [System.Xml.Linq.XDocument]::Load($newPath)
+            $xDocument.Descendants('mods') | ForEach-Object {
+                $_.Element('li').Value = (Get-RWMod -Name $mod).RawName
+            }
+
+            $template = $xDocument.Root.Element('Operation')
+
+            foreach ($item in $_.Group) {
+                foreach ($templateItem in $template) {
+                    $xmlString = $templateItem.ToString() -replace '%NAME%', $item.Node.Element('defName').Value
+                    $xmlString = $xmlString -replace '%COST%', $item.Node.Element('costList').Element('WoodLog').Value
+
+                    $xElement = [System.Xml.Linq.XElement]::new($xmlString)
+                    $xDocument.Root.Add($xElement)
+                }
+            }
+
+            $template.ForEach{ $_.Remove() }
+
+            $xDocument.Save($newPath)
         }
     }
 }
@@ -394,64 +447,62 @@ task CreateCostListPatch {
 task CreateRecipeDefPatch {
     foreach ($mod in $buildInfo.Data.SupportedMods) {
         $modInfo = Get-RWMod $mod
-        if ($modInfo) {
-            $shortName = $mod -replace '[^A-Za-z0-9]'
+        $shortName = $mod -replace '[^A-Za-z0-9]'
 
-            Get-ChildItem (Join-Path $modInfo.Path 'Defs') -Filter *.xml -Recurse | ForEach-Object {
-                $item = $_
+        Get-ChildItem (Join-Path $modInfo.Path 'Defs') -Filter *.xml -Recurse | ForEach-Object {
+            $item = $_
 
-                $xDocument = [System.Xml.Linq.XDocument]::Load($item.FullName)
-                [System.Xml.XPath.Extensions]::XPathSelectElements(
-                    $xDocument,
-                    '/Defs/RecipeDef[(@Abstract="False" or not(@Abstract)) and (ingredients/li/filter/thingDefs/li="WoodLog" or fixedIngredientFilter/thingDefs/li="WoodLog")]'
-                )
-            } | ForEach-Object {
-                [PSCustomObject]@{
-                    Mod  = $shortName
-                    Node = $_
-                }
-            } | Group-Object Mod | ForEach-Object {
-                $newName = 'Patches/EW-%MOD%-ingredients.xml' -replace '%MOD%', $_.Name
-                $newPath = Join-Path $buildInfo.Path.Generated $newName
-                if ($_.Name -eq 'Core') {
-                    $template = Join-Path $buildInfo.Path.Source 'Patches/EW-CORE-ingredients.xml'
-                } else {
-                    $template = Join-Path $buildInfo.Path.Source 'Patches/EW-%MOD%-ingredients.xml'
-                }
-
-                Copy-Item $template $newPath -Force
-
-                $xDocument = [System.Xml.Linq.XDocument]::Load($newPath)
-                $xDocument.Descendants('mods') | ForEach-Object {
-                    $_.Element('li').Value = (Get-RWMod -Name $mod).RawName
-                }
-
-                $template = $xDocument.Root.Element('Operation')
-
-                foreach ($item in $_.Group) {
-                    if ($element = $item.Node.Element('defName')) {
-                        $defName = $element.Value
-                    } elseif ($attribute = $item.Node.Attribute('Name')) {
-                        $defName = $attribute.Value
-                    }
-
-                    foreach ($templateItem in $template) {
-                        $xmlString = $templateItem.ToString() -replace '%NAME%', $defName
-                        $count = [System.Xml.XPath.Extensions]::XPathSelectElements(
-                            $item.Node,
-                            'ingredients/li[filter/thingDefs/li="WoodLog"]/count'
-                        ).Value
-                        $xmlString = $xmlString -replace '%COUNT%', $count
-
-                        $xElement = [System.Xml.Linq.XElement]::new($xmlString)
-                        $xDocument.Root.Add($xElement)
-                    }
-                }
-
-                $template.ForEach{ $_.Remove() }
-
-                $xDocument.Save($newPath)
+            $xDocument = [System.Xml.Linq.XDocument]::Load($item.FullName)
+            [System.Xml.XPath.Extensions]::XPathSelectElements(
+                $xDocument,
+                '/Defs/RecipeDef[(@Abstract="False" or not(@Abstract)) and (ingredients/li/filter/thingDefs/li="WoodLog" or fixedIngredientFilter/thingDefs/li="WoodLog")]'
+            )
+        } | ForEach-Object {
+            [PSCustomObject]@{
+                Mod  = $shortName
+                Node = $_
             }
+        } | Group-Object Mod | ForEach-Object {
+            $newName = 'Patches/EW-%MOD%-ingredients.xml' -replace '%MOD%', $_.Name
+            $newPath = Join-Path $buildInfo.Path.GeneratedVersion $newName
+            if ($_.Name -eq 'Core') {
+                $template = Join-Path -Path $buildInfo.Path.Template -ChildPath 'Patches/EW-CORE-ingredients.xml'
+            } else {
+                $template = Join-Path -Path $buildInfo.Path.Template -ChildPath 'Patches/EW-%MOD%-ingredients.xml'
+            }
+
+            Copy-Item $template $newPath -Force
+
+            $xDocument = [System.Xml.Linq.XDocument]::Load($newPath)
+            $xDocument.Descendants('mods') | ForEach-Object {
+                $_.Element('li').Value = (Get-RWMod -Name $mod).RawName
+            }
+
+            $template = $xDocument.Root.Element('Operation')
+
+            foreach ($item in $_.Group) {
+                if ($element = $item.Node.Element('defName')) {
+                    $defName = $element.Value
+                } elseif ($attribute = $item.Node.Attribute('Name')) {
+                    $defName = $attribute.Value
+                }
+
+                foreach ($templateItem in $template) {
+                    $xmlString = $templateItem.ToString() -replace '%NAME%', $defName
+                    $count = [System.Xml.XPath.Extensions]::XPathSelectElements(
+                        $item.Node,
+                        'ingredients/li[filter/thingDefs/li="WoodLog"]/count'
+                    ).Value
+                    $xmlString = $xmlString -replace '%COUNT%', $count
+
+                    $xElement = [System.Xml.Linq.XElement]::new($xmlString)
+                    $xDocument.Root.Add($xElement)
+                }
+            }
+
+            $template.ForEach{ $_.Remove() }
+
+            $xDocument.Save($newPath)
         }
     }
 }
@@ -459,52 +510,50 @@ task CreateRecipeDefPatch {
 task CreateHarvestedThingDefPatch {
     foreach ($mod in $buildInfo.Data.SupportedMods) {
         $modInfo = Get-RWMod $mod
-        if ($modInfo) {
-            $shortName = $mod -replace '[^A-Za-z0-9]'
+        $shortName = $mod -replace '[^A-Za-z0-9]'
 
-            Get-ChildItem (Join-Path $modInfo.Path 'Defs') -Filter *.xml -Recurse | ForEach-Object {
-                $item = $_
+        Get-ChildItem (Join-Path $modInfo.Path 'Defs') -Filter *.xml -Recurse | ForEach-Object {
+            $item = $_
 
-                $xDocument = [System.Xml.Linq.XDocument]::Load($item.FullName)
-                $xDocument.Descendants('defName').Where{
-                    $_.Value -match 'Plant_Tree' -and
-                    $buildInfo.Data.woodStats.Contains($_.Value -replace 'Plant_Tree')
-                }.ForEach{
-                    [PSCustomObject]@{
-                        Mod      = $shortName
-                        Name     = $_.Value -replace 'Plant_Tree'
-                    }
+            $xDocument = [System.Xml.Linq.XDocument]::Load($item.FullName)
+            $xDocument.Descendants('defName').Where{
+                $_.Value -match 'Plant_Tree' -and
+                $buildInfo.Data.woodStats.Contains($_.Value -replace 'Plant_Tree')
+            }.ForEach{
+                [PSCustomObject]@{
+                    Mod      = $shortName
+                    Name     = $_.Value -replace 'Plant_Tree'
                 }
-            } | Group-Object Mod | ForEach-Object {
-                $newName = 'Patches/EW-%MOD%-harvestedThingDef.xml' -replace '%MOD%', $_.Name
-                $newPath = Join-Path $buildInfo.Path.Generated $newName
-                if ($_.Name -eq 'Core') {
-                    $template = Join-Path $buildInfo.Path.Source 'Patches/EW-CORE-harvestedThingDef.xml'
-                } else {
-                    $template = Join-Path $buildInfo.Path.Source 'Patches/EW-%MOD%-harvestedThingDef.xml'
-                }
-
-                Copy-Item $template $newPath -Force
-
-                $xDocument = [System.Xml.Linq.XDocument]::Load($newPath)
-                $xDocument.Descendants('mods') | ForEach-Object {
-                    $_.Element('li').Value = (Get-RWMod -Name $mod).RawName
-                }
-
-                $template = $xDocument.Descendants().Where{ $_.Attribute('Class').Value -eq 'PatchOperationAdd' }[0]
-
-                foreach ($item in $_.Group) {
-                    $xmlString = $template.ToString() -replace '%NAME%', $item.Name
-
-                    $xElement = [System.Xml.Linq.XElement]::new($xmlString)
-
-                    $xDocument.Descendants('operations')[0].Add($xElement)
-                }
-
-                $template.Remove()
-
-                $xDocument.Save($newPath)
             }
+        } | Group-Object Mod | ForEach-Object {
+            $newName = 'Patches/EW-%MOD%-harvestedThingDef.xml' -replace '%MOD%', $_.Name
+            $newPath = Join-Path $buildInfo.Path.GeneratedVersion $newName
+            if ($_.Name -eq 'Core') {
+                $template = Join-Path -Path $buildInfo.Path.Template -ChildPath 'Patches/EW-CORE-harvestedThingDef.xml'
+            } else {
+                $template = Join-Path -Path $buildInfo.Path.Template -ChildPath 'Patches/EW-%MOD%-harvestedThingDef.xml'
+            }
+
+            Copy-Item $template $newPath -Force
+
+            $xDocument = [System.Xml.Linq.XDocument]::Load($newPath)
+            $xDocument.Descendants('mods') | ForEach-Object {
+                $_.Element('li').Value = (Get-RWMod -Name $mod).RawName
+            }
+
+            $template = $xDocument.Descendants().Where{ $_.Attribute('Class').Value -eq 'PatchOperationAdd' }[0]
+
+            foreach ($item in $_.Group) {
+                $xmlString = $template.ToString() -replace '%NAME%', $item.Name
+
+                $xElement = [System.Xml.Linq.XElement]::new($xmlString)
+
+                $xDocument.Descendants('operations')[0].Add($xElement)
+            }
+
+            $template.Remove()
+
+            $xDocument.Save($newPath)
         }
     }
 }
@@ -514,7 +563,7 @@ task CreateWoodLogPatch {
         Name    = 'Core\WoodLog'
     }
 
-    $templatePath = Join-Path $buildInfo.Path.Generated 'Patches\EW-%MOD%-woodLog.xml'
+    $templatePath = Join-Path $buildInfo.Path.GeneratedVersion 'Patches\EW-%MOD%-woodLog.xml'
     $buildInfo.Data.WoodStats.Keys | Where-Object { $buildInfo.Data.WoodStats[$_].Mod } | ForEach-Object {
         [PSCustomObject]@{
             Mod  = $buildInfo.Data.WoodStats[$_].Mod
@@ -524,7 +573,7 @@ task CreateWoodLogPatch {
         $mod = $_.Name
         $shortName = $mod -replace '[^A-Za-z0-9]'
 
-        $path = Join-Path $buildInfo.Path.Generated ('Patches\EW-{0}-woodLog.xml' -f $shortName)
+        $path = Join-Path $buildInfo.Path.GeneratedVersion ('Patches\EW-{0}-woodLog.xml' -f $shortName)
         if (-not (Test-Path $path)) {
             Copy-Item $templatePath $path
         }
@@ -573,7 +622,7 @@ task CreateWoodFloorPatch {
         Remove  = 'costList', 'designationHotKey'
     }
 
-    $templatePath = Join-Path $buildInfo.Path.Generated 'Patches\EW-%MOD%-woodFloor.xml'
+    $templatePath = Join-Path $buildInfo.Path.GeneratedVersion 'Patches\EW-%MOD%-woodFloor.xml'
     $buildInfo.Data.WoodStats.Keys | Where-Object { $buildInfo.Data.WoodStats[$_].Mod } | ForEach-Object {
         [PSCustomObject]@{
             Mod  = $buildInfo.Data.WoodStats[$_].Mod
@@ -583,7 +632,7 @@ task CreateWoodFloorPatch {
         $mod = $_.Name
         $shortName = $mod -replace '[^A-Za-z0-9]'
 
-        $path = Join-Path $buildInfo.Path.Generated ('Patches\EW-{0}-woodFloor.xml' -f $shortName)
+        $path = Join-Path $buildInfo.Path.GeneratedVersion ('Patches\EW-{0}-woodFloor.xml' -f $shortName)
         if (-not (Test-Path $path)) {
             Copy-Item $templatePath $path
         }
@@ -637,13 +686,13 @@ function CreateFloorPatch {
     $treeModInfo = Get-RWMod $TreeMod
     $shortTreeModName = $treeModInfo.Name -replace '[^A-Za-z0-9]'
 
-    $templatePath = Join-Path $buildInfo.Path.Source 'Patches\EW-%MOD%-woodFloor.xml'
-    $path = Join-Path $buildInfo.Path.Generated ('Patches\EW-{0}-woodFloor.xml' -f @(
+    $templatePath = Join-Path -Path $buildInfo.Path.Template -ChildPath 'Patches\EW-%MOD%-woodFloor.xml'
+    $path = Join-Path $buildInfo.Path.GeneratedVersion ('Patches\EW-{0}-woodFloor.xml' -f @(
         $shortModName
     ))
     if ($TreeMod) {
-        $templatePath = Join-Path $buildInfo.Path.Source 'Patches\EW-%MOD%-%TREEMOD%-woodFloor.xml'
-        $path = Join-Path $buildInfo.Path.Generated ('Patches\EW-{0}-{1}-woodFloor.xml' -f @(
+        $templatePath = Join-Path -Path $buildInfo.Path.Template -ChildPath 'Patches\EW-%MOD%-%TREEMOD%-woodFloor.xml'
+        $path = Join-Path $buildInfo.Path.GeneratedVersion ('Patches\EW-{0}-{1}-woodFloor.xml' -f @(
             $shortModName
             $shortTreeModName
         ))
@@ -816,7 +865,7 @@ task CreateFloorPatches {
 }
 
 task CleanPatches {
-    Get-Item (Join-Path $buildInfo.Path.Generated 'Patches\EW-*%*') | Remove-Item
+    Get-Item (Join-Path $buildInfo.Path.GeneratedVersion 'Patches\EW-*%*') | Remove-Item
 }
 
 task UpdateVersion {
@@ -831,13 +880,13 @@ task UpdateVersion {
     $xDocument = [System.Xml.Linq.XDocument]::Load($path)
     $xDocument.Element('Manifest').Element('version').Value = $version
     $xDocument.Save($path)
-    Copy-Item $path (Join-Path $buildInfo.Path.Generated 'About')
+    Join-Path -Path $buildInfo.Path.Generated -ChildPath 'About' | Copy-Item $path -Destination { $_ }
 
     $path = Join-Path $psscriptroot 'source\About\ModSync.xml'
     $xDocument = [System.Xml.Linq.XDocument]::Load($path)
     $xDocument.Descendants('Version').ForEach{ $_.Value = $version }
     $xDocument.Save($path)
-    Copy-Item $path (Join-Path $buildInfo.Path.Generated 'About')
+    Join-Path -Path $buildInfo.Path.Generated -ChildPath 'About' | Copy-Item $path -Destination { $_ }
 }
 
 task CreatePackage {

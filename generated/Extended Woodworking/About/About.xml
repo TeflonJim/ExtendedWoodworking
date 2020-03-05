@@ -1,12 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-    <name>Extended Woodworking</name>
-    <author>TeflonJim</author>
-    <supportedVersions>
-        <li>1.0</li>
-        <li>1.1</li>
-    </supportedVersions>
-    <description>
+  <name>Extended Woodworking</name>
+  <author>TeflonJim</author>
+  <packageId>teflonjim.extendedwoodworking</packageId>
+  <supportedVersions>
+    <li>1.0</li>
+    <li>1.1</li>
+  </supportedVersions>
+  <description>
 This is an update of the Extended Woodworking mod (A13). All credit for the original creative work goes to ItchyFlea.
 
 https://ludeon.com/forums/index.php?topic=7893.0
@@ -54,4 +55,18 @@ The following mods contain floors, the defs are duplicated for each available wo
 * GloomyFurniture
 * RIMkea
     </description>
+  <incompatibleWith>
+    <li>Adventurer.ExpandWoodwork</li>
+  </incompatibleWith>
+  <loadAfter>
+    <li>Ludeon.RimWorld</li>
+    <li>Ludeon.RimWorld.Royalty</li>
+    <li>spoonshortage.ADogSaidAnimalProsthetics</li>
+    <li>Torann.ARimworldOfMagic</li>
+    <li>Ykara.EPOE</li>
+    <li>Solaris.FurnitureBase</li>
+    <li>Haplo.Miscellaneous.Training</li>
+    <li>tkkntkkn.nps</li>
+    <li>dismarzero.VGP.XtraTreesandFlowers</li>
+  </loadAfter>
 </ModMetaData>
