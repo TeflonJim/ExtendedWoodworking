@@ -1,0 +1,3553 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Evt Floors</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <DesignatorDropdownGroupDef>
+              <defName>Floor_WoodA_Normal_Evt</defName>
+            </DesignatorDropdownGroupDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/TerrainDef[defName="WoodA_Normal_Evt"]</xpath>
+          <value>
+            <designatorDropdown>Floor_WoodA_Normal_Evt</designatorDropdown>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodA_Normal_Evt_Birch</defName>
+              <label>birch flooring</label>
+              <description>It's an emotional birch floor.</description>
+              <color>(235,228,216)</color>
+              <texturePath>Terrain/Surfaces/Evt/Wood1</texturePath>
+              <designatorDropdown>Floor_WoodA_Normal_Evt</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <burnedDef>BurnedWoodA_Evt</burnedDef>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Birch>5</WoodLog_Birch>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodA_Normal_Evt_Cecropia</defName>
+              <label>cecropia flooring</label>
+              <description>It's an emotional cecropia floor.</description>
+              <color>(126,74,63)</color>
+              <texturePath>Terrain/Surfaces/Evt/Wood1</texturePath>
+              <designatorDropdown>Floor_WoodA_Normal_Evt</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <burnedDef>BurnedWoodA_Evt</burnedDef>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Cecropia>5</WoodLog_Cecropia>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodA_Normal_Evt_Cypress</defName>
+              <label>cypress flooring</label>
+              <description>It's an emotional cypress floor.</description>
+              <color>(239, 217, 184)</color>
+              <texturePath>Terrain/Surfaces/Evt/Wood1</texturePath>
+              <designatorDropdown>Floor_WoodA_Normal_Evt</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <burnedDef>BurnedWoodA_Evt</burnedDef>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>2.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Cypress>5</WoodLog_Cypress>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodA_Normal_Evt_Drago</defName>
+              <label>drago flooring</label>
+              <description>It's an emotional drago floor.</description>
+              <color>(171, 159, 142)</color>
+              <texturePath>Terrain/Surfaces/Evt/Wood1</texturePath>
+              <designatorDropdown>Floor_WoodA_Normal_Evt</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <burnedDef>BurnedWoodA_Evt</burnedDef>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>0.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Drago>5</WoodLog_Drago>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodA_Normal_Evt_Maple</defName>
+              <label>maple flooring</label>
+              <description>It's an emotional maple floor.</description>
+              <color>(236, 201, 163)</color>
+              <texturePath>Terrain/Surfaces/Evt/Wood1</texturePath>
+              <designatorDropdown>Floor_WoodA_Normal_Evt</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <burnedDef>BurnedWoodA_Evt</burnedDef>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Maple>5</WoodLog_Maple>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodA_Normal_Evt_Oak</defName>
+              <label>oak flooring</label>
+              <description>It's an emotional oak floor.</description>
+              <color>(185,142,96)</color>
+              <texturePath>Terrain/Surfaces/Evt/Wood1</texturePath>
+              <designatorDropdown>Floor_WoodA_Normal_Evt</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <burnedDef>BurnedWoodA_Evt</burnedDef>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>2.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Oak>5</WoodLog_Oak>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodA_Normal_Evt_Palm</defName>
+              <label>palm flooring</label>
+              <description>It's an emotional palm floor.</description>
+              <color>(224, 150, 87)</color>
+              <texturePath>Terrain/Surfaces/Evt/Wood1</texturePath>
+              <designatorDropdown>Floor_WoodA_Normal_Evt</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <burnedDef>BurnedWoodA_Evt</burnedDef>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Palm>5</WoodLog_Palm>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodA_Normal_Evt_Pine</defName>
+              <label>pine flooring</label>
+              <description>It's an emotional pine floor.</description>
+              <color>(198,146,68)</color>
+              <texturePath>Terrain/Surfaces/Evt/Wood1</texturePath>
+              <designatorDropdown>Floor_WoodA_Normal_Evt</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <burnedDef>BurnedWoodA_Evt</burnedDef>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Pine>5</WoodLog_Pine>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodA_Normal_Evt_Poplar</defName>
+              <label>poplar flooring</label>
+              <description>It's an emotional poplar floor.</description>
+              <color>(184,156,108)</color>
+              <texturePath>Terrain/Surfaces/Evt/Wood1</texturePath>
+              <designatorDropdown>Floor_WoodA_Normal_Evt</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <burnedDef>BurnedWoodA_Evt</burnedDef>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Poplar>5</WoodLog_Poplar>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodA_Normal_Evt_Teak</defName>
+              <label>teak flooring</label>
+              <description>It's an emotional teak floor.</description>
+              <color>(154,102,59)</color>
+              <texturePath>Terrain/Surfaces/Evt/Wood1</texturePath>
+              <designatorDropdown>Floor_WoodA_Normal_Evt</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <burnedDef>BurnedWoodA_Evt</burnedDef>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>2.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Teak>5</WoodLog_Teak>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodA_Normal_Evt_Willow</defName>
+              <label>willow flooring</label>
+              <description>It's an emotional willow floor.</description>
+              <color>(221, 186, 141)</color>
+              <texturePath>Terrain/Surfaces/Evt/Wood1</texturePath>
+              <designatorDropdown>Floor_WoodA_Normal_Evt</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <burnedDef>BurnedWoodA_Evt</burnedDef>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>0.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Willow>5</WoodLog_Willow>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <DesignatorDropdownGroupDef>
+              <defName>Floor_WoodB_Normal_Evt</defName>
+            </DesignatorDropdownGroupDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/TerrainDef[defName="WoodB_Normal_Evt"]</xpath>
+          <value>
+            <designatorDropdown>Floor_WoodB_Normal_Evt</designatorDropdown>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodB_Normal_Evt_Birch</defName>
+              <label>birch parquet decorated stencil (small)</label>
+              <description>This floor has a qualitative and geometric pattern.</description>
+              <burnedDef>BurnedWoodB_Evt</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood2a</texturePath>
+              <color>(235,228,216)</color>
+              <designatorDropdown>Floor_WoodB_Normal_Evt</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Birch>5</WoodLog_Birch>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodB_Normal_Evt_Cecropia</defName>
+              <label>cecropia parquet decorated stencil (small)</label>
+              <description>This floor has a qualitative and geometric pattern.</description>
+              <burnedDef>BurnedWoodB_Evt</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood2a</texturePath>
+              <color>(126,74,63)</color>
+              <designatorDropdown>Floor_WoodB_Normal_Evt</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Cecropia>5</WoodLog_Cecropia>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodB_Normal_Evt_Cypress</defName>
+              <label>cypress parquet decorated stencil (small)</label>
+              <description>This floor has a qualitative and geometric pattern.</description>
+              <burnedDef>BurnedWoodB_Evt</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood2a</texturePath>
+              <color>(239, 217, 184)</color>
+              <designatorDropdown>Floor_WoodB_Normal_Evt</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>2.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Cypress>5</WoodLog_Cypress>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodB_Normal_Evt_Drago</defName>
+              <label>drago parquet decorated stencil (small)</label>
+              <description>This floor has a qualitative and geometric pattern.</description>
+              <burnedDef>BurnedWoodB_Evt</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood2a</texturePath>
+              <color>(171, 159, 142)</color>
+              <designatorDropdown>Floor_WoodB_Normal_Evt</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>0.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Drago>5</WoodLog_Drago>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodB_Normal_Evt_Maple</defName>
+              <label>maple parquet decorated stencil (small)</label>
+              <description>This floor has a qualitative and geometric pattern.</description>
+              <burnedDef>BurnedWoodB_Evt</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood2a</texturePath>
+              <color>(236, 201, 163)</color>
+              <designatorDropdown>Floor_WoodB_Normal_Evt</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Maple>5</WoodLog_Maple>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodB_Normal_Evt_Oak</defName>
+              <label>oak parquet decorated stencil (small)</label>
+              <description>This floor has a qualitative and geometric pattern.</description>
+              <burnedDef>BurnedWoodB_Evt</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood2a</texturePath>
+              <color>(185,142,96)</color>
+              <designatorDropdown>Floor_WoodB_Normal_Evt</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>2.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Oak>5</WoodLog_Oak>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodB_Normal_Evt_Palm</defName>
+              <label>palm parquet decorated stencil (small)</label>
+              <description>This floor has a qualitative and geometric pattern.</description>
+              <burnedDef>BurnedWoodB_Evt</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood2a</texturePath>
+              <color>(224, 150, 87)</color>
+              <designatorDropdown>Floor_WoodB_Normal_Evt</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Palm>5</WoodLog_Palm>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodB_Normal_Evt_Pine</defName>
+              <label>pine parquet decorated stencil (small)</label>
+              <description>This floor has a qualitative and geometric pattern.</description>
+              <burnedDef>BurnedWoodB_Evt</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood2a</texturePath>
+              <color>(198,146,68)</color>
+              <designatorDropdown>Floor_WoodB_Normal_Evt</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Pine>5</WoodLog_Pine>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodB_Normal_Evt_Poplar</defName>
+              <label>poplar parquet decorated stencil (small)</label>
+              <description>This floor has a qualitative and geometric pattern.</description>
+              <burnedDef>BurnedWoodB_Evt</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood2a</texturePath>
+              <color>(184,156,108)</color>
+              <designatorDropdown>Floor_WoodB_Normal_Evt</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Poplar>5</WoodLog_Poplar>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodB_Normal_Evt_Teak</defName>
+              <label>teak parquet decorated stencil (small)</label>
+              <description>This floor has a qualitative and geometric pattern.</description>
+              <burnedDef>BurnedWoodB_Evt</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood2a</texturePath>
+              <color>(154,102,59)</color>
+              <designatorDropdown>Floor_WoodB_Normal_Evt</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>2.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Teak>5</WoodLog_Teak>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodB_Normal_Evt_Willow</defName>
+              <label>willow parquet decorated stencil (small)</label>
+              <description>This floor has a qualitative and geometric pattern.</description>
+              <burnedDef>BurnedWoodB_Evt</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood2a</texturePath>
+              <color>(221, 186, 141)</color>
+              <designatorDropdown>Floor_WoodB_Normal_Evt</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>0.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Willow>5</WoodLog_Willow>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <DesignatorDropdownGroupDef>
+              <defName>Floor_WoodB_Normal_Evt_M</defName>
+            </DesignatorDropdownGroupDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/TerrainDef[defName="WoodB_Normal_Evt_M"]</xpath>
+          <value>
+            <designatorDropdown>Floor_WoodB_Normal_Evt_M</designatorDropdown>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodB_Normal_Evt_M_Birch</defName>
+              <label>birch parquet decorated stencil (middle)</label>
+              <description>This floor has a qualitative and geometric pattern.</description>
+              <burnedDef>BurnedWoodB_Evt_M</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood2b</texturePath>
+              <color>(235,228,216)</color>
+              <designatorDropdown>Floor_WoodB_Normal_Evt_M</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Birch>5</WoodLog_Birch>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodB_Normal_Evt_M_Cecropia</defName>
+              <label>cecropia parquet decorated stencil (middle)</label>
+              <description>This floor has a qualitative and geometric pattern.</description>
+              <burnedDef>BurnedWoodB_Evt_M</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood2b</texturePath>
+              <color>(126,74,63)</color>
+              <designatorDropdown>Floor_WoodB_Normal_Evt_M</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Cecropia>5</WoodLog_Cecropia>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodB_Normal_Evt_M_Cypress</defName>
+              <label>cypress parquet decorated stencil (middle)</label>
+              <description>This floor has a qualitative and geometric pattern.</description>
+              <burnedDef>BurnedWoodB_Evt_M</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood2b</texturePath>
+              <color>(239, 217, 184)</color>
+              <designatorDropdown>Floor_WoodB_Normal_Evt_M</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>2.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Cypress>5</WoodLog_Cypress>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodB_Normal_Evt_M_Drago</defName>
+              <label>drago parquet decorated stencil (middle)</label>
+              <description>This floor has a qualitative and geometric pattern.</description>
+              <burnedDef>BurnedWoodB_Evt_M</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood2b</texturePath>
+              <color>(171, 159, 142)</color>
+              <designatorDropdown>Floor_WoodB_Normal_Evt_M</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>0.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Drago>5</WoodLog_Drago>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodB_Normal_Evt_M_Maple</defName>
+              <label>maple parquet decorated stencil (middle)</label>
+              <description>This floor has a qualitative and geometric pattern.</description>
+              <burnedDef>BurnedWoodB_Evt_M</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood2b</texturePath>
+              <color>(236, 201, 163)</color>
+              <designatorDropdown>Floor_WoodB_Normal_Evt_M</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Maple>5</WoodLog_Maple>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodB_Normal_Evt_M_Oak</defName>
+              <label>oak parquet decorated stencil (middle)</label>
+              <description>This floor has a qualitative and geometric pattern.</description>
+              <burnedDef>BurnedWoodB_Evt_M</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood2b</texturePath>
+              <color>(185,142,96)</color>
+              <designatorDropdown>Floor_WoodB_Normal_Evt_M</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>2.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Oak>5</WoodLog_Oak>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodB_Normal_Evt_M_Palm</defName>
+              <label>palm parquet decorated stencil (middle)</label>
+              <description>This floor has a qualitative and geometric pattern.</description>
+              <burnedDef>BurnedWoodB_Evt_M</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood2b</texturePath>
+              <color>(224, 150, 87)</color>
+              <designatorDropdown>Floor_WoodB_Normal_Evt_M</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Palm>5</WoodLog_Palm>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodB_Normal_Evt_M_Pine</defName>
+              <label>pine parquet decorated stencil (middle)</label>
+              <description>This floor has a qualitative and geometric pattern.</description>
+              <burnedDef>BurnedWoodB_Evt_M</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood2b</texturePath>
+              <color>(198,146,68)</color>
+              <designatorDropdown>Floor_WoodB_Normal_Evt_M</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Pine>5</WoodLog_Pine>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodB_Normal_Evt_M_Poplar</defName>
+              <label>poplar parquet decorated stencil (middle)</label>
+              <description>This floor has a qualitative and geometric pattern.</description>
+              <burnedDef>BurnedWoodB_Evt_M</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood2b</texturePath>
+              <color>(184,156,108)</color>
+              <designatorDropdown>Floor_WoodB_Normal_Evt_M</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Poplar>5</WoodLog_Poplar>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodB_Normal_Evt_M_Teak</defName>
+              <label>teak parquet decorated stencil (middle)</label>
+              <description>This floor has a qualitative and geometric pattern.</description>
+              <burnedDef>BurnedWoodB_Evt_M</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood2b</texturePath>
+              <color>(154,102,59)</color>
+              <designatorDropdown>Floor_WoodB_Normal_Evt_M</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>2.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Teak>5</WoodLog_Teak>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodB_Normal_Evt_M_Willow</defName>
+              <label>willow parquet decorated stencil (middle)</label>
+              <description>This floor has a qualitative and geometric pattern.</description>
+              <burnedDef>BurnedWoodB_Evt_M</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood2b</texturePath>
+              <color>(221, 186, 141)</color>
+              <designatorDropdown>Floor_WoodB_Normal_Evt_M</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>0.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Willow>5</WoodLog_Willow>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <DesignatorDropdownGroupDef>
+              <defName>Floor_WoodB_Normal_Evt_L</defName>
+            </DesignatorDropdownGroupDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/TerrainDef[defName="WoodB_Normal_Evt_L"]</xpath>
+          <value>
+            <designatorDropdown>Floor_WoodB_Normal_Evt_L</designatorDropdown>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodB_Normal_Evt_L_Birch</defName>
+              <label>birch parquet decorated stencil (large)</label>
+              <description>This floor has a qualitative and geometric pattern.</description>
+              <burnedDef>BurnedWoodB_Evt_L</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood2c</texturePath>
+              <color>(235,228,216)</color>
+              <designatorDropdown>Floor_WoodB_Normal_Evt_L</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Birch>5</WoodLog_Birch>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodB_Normal_Evt_L_Cecropia</defName>
+              <label>cecropia parquet decorated stencil (large)</label>
+              <description>This floor has a qualitative and geometric pattern.</description>
+              <burnedDef>BurnedWoodB_Evt_L</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood2c</texturePath>
+              <color>(126,74,63)</color>
+              <designatorDropdown>Floor_WoodB_Normal_Evt_L</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Cecropia>5</WoodLog_Cecropia>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodB_Normal_Evt_L_Cypress</defName>
+              <label>cypress parquet decorated stencil (large)</label>
+              <description>This floor has a qualitative and geometric pattern.</description>
+              <burnedDef>BurnedWoodB_Evt_L</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood2c</texturePath>
+              <color>(239, 217, 184)</color>
+              <designatorDropdown>Floor_WoodB_Normal_Evt_L</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>2.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Cypress>5</WoodLog_Cypress>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodB_Normal_Evt_L_Drago</defName>
+              <label>drago parquet decorated stencil (large)</label>
+              <description>This floor has a qualitative and geometric pattern.</description>
+              <burnedDef>BurnedWoodB_Evt_L</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood2c</texturePath>
+              <color>(171, 159, 142)</color>
+              <designatorDropdown>Floor_WoodB_Normal_Evt_L</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>0.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Drago>5</WoodLog_Drago>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodB_Normal_Evt_L_Maple</defName>
+              <label>maple parquet decorated stencil (large)</label>
+              <description>This floor has a qualitative and geometric pattern.</description>
+              <burnedDef>BurnedWoodB_Evt_L</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood2c</texturePath>
+              <color>(236, 201, 163)</color>
+              <designatorDropdown>Floor_WoodB_Normal_Evt_L</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Maple>5</WoodLog_Maple>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodB_Normal_Evt_L_Oak</defName>
+              <label>oak parquet decorated stencil (large)</label>
+              <description>This floor has a qualitative and geometric pattern.</description>
+              <burnedDef>BurnedWoodB_Evt_L</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood2c</texturePath>
+              <color>(185,142,96)</color>
+              <designatorDropdown>Floor_WoodB_Normal_Evt_L</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>2.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Oak>5</WoodLog_Oak>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodB_Normal_Evt_L_Palm</defName>
+              <label>palm parquet decorated stencil (large)</label>
+              <description>This floor has a qualitative and geometric pattern.</description>
+              <burnedDef>BurnedWoodB_Evt_L</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood2c</texturePath>
+              <color>(224, 150, 87)</color>
+              <designatorDropdown>Floor_WoodB_Normal_Evt_L</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Palm>5</WoodLog_Palm>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodB_Normal_Evt_L_Pine</defName>
+              <label>pine parquet decorated stencil (large)</label>
+              <description>This floor has a qualitative and geometric pattern.</description>
+              <burnedDef>BurnedWoodB_Evt_L</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood2c</texturePath>
+              <color>(198,146,68)</color>
+              <designatorDropdown>Floor_WoodB_Normal_Evt_L</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Pine>5</WoodLog_Pine>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodB_Normal_Evt_L_Poplar</defName>
+              <label>poplar parquet decorated stencil (large)</label>
+              <description>This floor has a qualitative and geometric pattern.</description>
+              <burnedDef>BurnedWoodB_Evt_L</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood2c</texturePath>
+              <color>(184,156,108)</color>
+              <designatorDropdown>Floor_WoodB_Normal_Evt_L</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Poplar>5</WoodLog_Poplar>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodB_Normal_Evt_L_Teak</defName>
+              <label>teak parquet decorated stencil (large)</label>
+              <description>This floor has a qualitative and geometric pattern.</description>
+              <burnedDef>BurnedWoodB_Evt_L</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood2c</texturePath>
+              <color>(154,102,59)</color>
+              <designatorDropdown>Floor_WoodB_Normal_Evt_L</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>2.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Teak>5</WoodLog_Teak>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodB_Normal_Evt_L_Willow</defName>
+              <label>willow parquet decorated stencil (large)</label>
+              <description>This floor has a qualitative and geometric pattern.</description>
+              <burnedDef>BurnedWoodB_Evt_L</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood2c</texturePath>
+              <color>(221, 186, 141)</color>
+              <designatorDropdown>Floor_WoodB_Normal_Evt_L</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>0.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Willow>5</WoodLog_Willow>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <DesignatorDropdownGroupDef>
+              <defName>Floor_WoodC_Normal_Evt</defName>
+            </DesignatorDropdownGroupDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/TerrainDef[defName="WoodC_Normal_Evt"]</xpath>
+          <value>
+            <designatorDropdown>Floor_WoodC_Normal_Evt</designatorDropdown>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodC_Normal_Evt_Birch</defName>
+              <label>birch flooring square (small)</label>
+              <description>It's neat and tidy.</description>
+              <texturePath>Terrain/Surfaces/Evt/Wood3a</texturePath>
+              <color>(235,228,216)</color>
+              <designatorDropdown>Floor_WoodC_Normal_Evt</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Birch>5</WoodLog_Birch>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodC_Normal_Evt_Cecropia</defName>
+              <label>cecropia flooring square (small)</label>
+              <description>It's neat and tidy.</description>
+              <texturePath>Terrain/Surfaces/Evt/Wood3a</texturePath>
+              <color>(126,74,63)</color>
+              <designatorDropdown>Floor_WoodC_Normal_Evt</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Cecropia>5</WoodLog_Cecropia>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodC_Normal_Evt_Cypress</defName>
+              <label>cypress flooring square (small)</label>
+              <description>It's neat and tidy.</description>
+              <texturePath>Terrain/Surfaces/Evt/Wood3a</texturePath>
+              <color>(239, 217, 184)</color>
+              <designatorDropdown>Floor_WoodC_Normal_Evt</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>2.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Cypress>5</WoodLog_Cypress>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodC_Normal_Evt_Drago</defName>
+              <label>drago flooring square (small)</label>
+              <description>It's neat and tidy.</description>
+              <texturePath>Terrain/Surfaces/Evt/Wood3a</texturePath>
+              <color>(171, 159, 142)</color>
+              <designatorDropdown>Floor_WoodC_Normal_Evt</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>0.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Drago>5</WoodLog_Drago>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodC_Normal_Evt_Maple</defName>
+              <label>maple flooring square (small)</label>
+              <description>It's neat and tidy.</description>
+              <texturePath>Terrain/Surfaces/Evt/Wood3a</texturePath>
+              <color>(236, 201, 163)</color>
+              <designatorDropdown>Floor_WoodC_Normal_Evt</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Maple>5</WoodLog_Maple>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodC_Normal_Evt_Oak</defName>
+              <label>oak flooring square (small)</label>
+              <description>It's neat and tidy.</description>
+              <texturePath>Terrain/Surfaces/Evt/Wood3a</texturePath>
+              <color>(185,142,96)</color>
+              <designatorDropdown>Floor_WoodC_Normal_Evt</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>2.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Oak>5</WoodLog_Oak>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodC_Normal_Evt_Palm</defName>
+              <label>palm flooring square (small)</label>
+              <description>It's neat and tidy.</description>
+              <texturePath>Terrain/Surfaces/Evt/Wood3a</texturePath>
+              <color>(224, 150, 87)</color>
+              <designatorDropdown>Floor_WoodC_Normal_Evt</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Palm>5</WoodLog_Palm>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodC_Normal_Evt_Pine</defName>
+              <label>pine flooring square (small)</label>
+              <description>It's neat and tidy.</description>
+              <texturePath>Terrain/Surfaces/Evt/Wood3a</texturePath>
+              <color>(198,146,68)</color>
+              <designatorDropdown>Floor_WoodC_Normal_Evt</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Pine>5</WoodLog_Pine>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodC_Normal_Evt_Poplar</defName>
+              <label>poplar flooring square (small)</label>
+              <description>It's neat and tidy.</description>
+              <texturePath>Terrain/Surfaces/Evt/Wood3a</texturePath>
+              <color>(184,156,108)</color>
+              <designatorDropdown>Floor_WoodC_Normal_Evt</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Poplar>5</WoodLog_Poplar>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodC_Normal_Evt_Teak</defName>
+              <label>teak flooring square (small)</label>
+              <description>It's neat and tidy.</description>
+              <texturePath>Terrain/Surfaces/Evt/Wood3a</texturePath>
+              <color>(154,102,59)</color>
+              <designatorDropdown>Floor_WoodC_Normal_Evt</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>2.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Teak>5</WoodLog_Teak>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodC_Normal_Evt_Willow</defName>
+              <label>willow flooring square (small)</label>
+              <description>It's neat and tidy.</description>
+              <texturePath>Terrain/Surfaces/Evt/Wood3a</texturePath>
+              <color>(221, 186, 141)</color>
+              <designatorDropdown>Floor_WoodC_Normal_Evt</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>0.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Willow>5</WoodLog_Willow>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <DesignatorDropdownGroupDef>
+              <defName>Floor_WoodC_Normal_Evt_M</defName>
+            </DesignatorDropdownGroupDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/TerrainDef[defName="WoodC_Normal_Evt_M"]</xpath>
+          <value>
+            <designatorDropdown>Floor_WoodC_Normal_Evt_M</designatorDropdown>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodC_Normal_Evt_M_Birch</defName>
+              <label>birch flooring square (middle)</label>
+              <description>It's neat and tidy.</description>
+              <texturePath>Terrain/Surfaces/Evt/Wood3b</texturePath>
+              <color>(235,228,216)</color>
+              <designatorDropdown>Floor_WoodC_Normal_Evt_M</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Birch>5</WoodLog_Birch>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodC_Normal_Evt_M_Cecropia</defName>
+              <label>cecropia flooring square (middle)</label>
+              <description>It's neat and tidy.</description>
+              <texturePath>Terrain/Surfaces/Evt/Wood3b</texturePath>
+              <color>(126,74,63)</color>
+              <designatorDropdown>Floor_WoodC_Normal_Evt_M</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Cecropia>5</WoodLog_Cecropia>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodC_Normal_Evt_M_Cypress</defName>
+              <label>cypress flooring square (middle)</label>
+              <description>It's neat and tidy.</description>
+              <texturePath>Terrain/Surfaces/Evt/Wood3b</texturePath>
+              <color>(239, 217, 184)</color>
+              <designatorDropdown>Floor_WoodC_Normal_Evt_M</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>2.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Cypress>5</WoodLog_Cypress>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodC_Normal_Evt_M_Drago</defName>
+              <label>drago flooring square (middle)</label>
+              <description>It's neat and tidy.</description>
+              <texturePath>Terrain/Surfaces/Evt/Wood3b</texturePath>
+              <color>(171, 159, 142)</color>
+              <designatorDropdown>Floor_WoodC_Normal_Evt_M</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>0.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Drago>5</WoodLog_Drago>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodC_Normal_Evt_M_Maple</defName>
+              <label>maple flooring square (middle)</label>
+              <description>It's neat and tidy.</description>
+              <texturePath>Terrain/Surfaces/Evt/Wood3b</texturePath>
+              <color>(236, 201, 163)</color>
+              <designatorDropdown>Floor_WoodC_Normal_Evt_M</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Maple>5</WoodLog_Maple>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodC_Normal_Evt_M_Oak</defName>
+              <label>oak flooring square (middle)</label>
+              <description>It's neat and tidy.</description>
+              <texturePath>Terrain/Surfaces/Evt/Wood3b</texturePath>
+              <color>(185,142,96)</color>
+              <designatorDropdown>Floor_WoodC_Normal_Evt_M</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>2.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Oak>5</WoodLog_Oak>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodC_Normal_Evt_M_Palm</defName>
+              <label>palm flooring square (middle)</label>
+              <description>It's neat and tidy.</description>
+              <texturePath>Terrain/Surfaces/Evt/Wood3b</texturePath>
+              <color>(224, 150, 87)</color>
+              <designatorDropdown>Floor_WoodC_Normal_Evt_M</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Palm>5</WoodLog_Palm>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodC_Normal_Evt_M_Pine</defName>
+              <label>pine flooring square (middle)</label>
+              <description>It's neat and tidy.</description>
+              <texturePath>Terrain/Surfaces/Evt/Wood3b</texturePath>
+              <color>(198,146,68)</color>
+              <designatorDropdown>Floor_WoodC_Normal_Evt_M</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Pine>5</WoodLog_Pine>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodC_Normal_Evt_M_Poplar</defName>
+              <label>poplar flooring square (middle)</label>
+              <description>It's neat and tidy.</description>
+              <texturePath>Terrain/Surfaces/Evt/Wood3b</texturePath>
+              <color>(184,156,108)</color>
+              <designatorDropdown>Floor_WoodC_Normal_Evt_M</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Poplar>5</WoodLog_Poplar>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodC_Normal_Evt_M_Teak</defName>
+              <label>teak flooring square (middle)</label>
+              <description>It's neat and tidy.</description>
+              <texturePath>Terrain/Surfaces/Evt/Wood3b</texturePath>
+              <color>(154,102,59)</color>
+              <designatorDropdown>Floor_WoodC_Normal_Evt_M</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>2.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Teak>5</WoodLog_Teak>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodC_Normal_Evt_M_Willow</defName>
+              <label>willow flooring square (middle)</label>
+              <description>It's neat and tidy.</description>
+              <texturePath>Terrain/Surfaces/Evt/Wood3b</texturePath>
+              <color>(221, 186, 141)</color>
+              <designatorDropdown>Floor_WoodC_Normal_Evt_M</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>0.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Willow>5</WoodLog_Willow>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <DesignatorDropdownGroupDef>
+              <defName>Floor_WoodD_Normal_Evt</defName>
+            </DesignatorDropdownGroupDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/TerrainDef[defName="WoodD_Normal_Evt"]</xpath>
+          <value>
+            <designatorDropdown>Floor_WoodD_Normal_Evt</designatorDropdown>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodD_Normal_Evt_Birch</defName>
+              <label>birch parquet square (small)</label>
+              <description>It's a doublesquare floor.</description>
+              <texturePath>Terrain/Surfaces/Evt/Wood4a</texturePath>
+              <color>(235,228,216)</color>
+              <designatorDropdown>Floor_WoodD_Normal_Evt</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Birch>5</WoodLog_Birch>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodD_Normal_Evt_Cecropia</defName>
+              <label>cecropia parquet square (small)</label>
+              <description>It's a doublesquare floor.</description>
+              <texturePath>Terrain/Surfaces/Evt/Wood4a</texturePath>
+              <color>(126,74,63)</color>
+              <designatorDropdown>Floor_WoodD_Normal_Evt</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Cecropia>5</WoodLog_Cecropia>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodD_Normal_Evt_Cypress</defName>
+              <label>cypress parquet square (small)</label>
+              <description>It's a doublesquare floor.</description>
+              <texturePath>Terrain/Surfaces/Evt/Wood4a</texturePath>
+              <color>(239, 217, 184)</color>
+              <designatorDropdown>Floor_WoodD_Normal_Evt</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>2.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Cypress>5</WoodLog_Cypress>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodD_Normal_Evt_Drago</defName>
+              <label>drago parquet square (small)</label>
+              <description>It's a doublesquare floor.</description>
+              <texturePath>Terrain/Surfaces/Evt/Wood4a</texturePath>
+              <color>(171, 159, 142)</color>
+              <designatorDropdown>Floor_WoodD_Normal_Evt</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>0.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Drago>5</WoodLog_Drago>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodD_Normal_Evt_Maple</defName>
+              <label>maple parquet square (small)</label>
+              <description>It's a doublesquare floor.</description>
+              <texturePath>Terrain/Surfaces/Evt/Wood4a</texturePath>
+              <color>(236, 201, 163)</color>
+              <designatorDropdown>Floor_WoodD_Normal_Evt</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Maple>5</WoodLog_Maple>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodD_Normal_Evt_Oak</defName>
+              <label>oak parquet square (small)</label>
+              <description>It's a doublesquare floor.</description>
+              <texturePath>Terrain/Surfaces/Evt/Wood4a</texturePath>
+              <color>(185,142,96)</color>
+              <designatorDropdown>Floor_WoodD_Normal_Evt</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>2.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Oak>5</WoodLog_Oak>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodD_Normal_Evt_Palm</defName>
+              <label>palm parquet square (small)</label>
+              <description>It's a doublesquare floor.</description>
+              <texturePath>Terrain/Surfaces/Evt/Wood4a</texturePath>
+              <color>(224, 150, 87)</color>
+              <designatorDropdown>Floor_WoodD_Normal_Evt</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Palm>5</WoodLog_Palm>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodD_Normal_Evt_Pine</defName>
+              <label>pine parquet square (small)</label>
+              <description>It's a doublesquare floor.</description>
+              <texturePath>Terrain/Surfaces/Evt/Wood4a</texturePath>
+              <color>(198,146,68)</color>
+              <designatorDropdown>Floor_WoodD_Normal_Evt</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Pine>5</WoodLog_Pine>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodD_Normal_Evt_Poplar</defName>
+              <label>poplar parquet square (small)</label>
+              <description>It's a doublesquare floor.</description>
+              <texturePath>Terrain/Surfaces/Evt/Wood4a</texturePath>
+              <color>(184,156,108)</color>
+              <designatorDropdown>Floor_WoodD_Normal_Evt</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Poplar>5</WoodLog_Poplar>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodD_Normal_Evt_Teak</defName>
+              <label>teak parquet square (small)</label>
+              <description>It's a doublesquare floor.</description>
+              <texturePath>Terrain/Surfaces/Evt/Wood4a</texturePath>
+              <color>(154,102,59)</color>
+              <designatorDropdown>Floor_WoodD_Normal_Evt</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>2.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Teak>5</WoodLog_Teak>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodD_Normal_Evt_Willow</defName>
+              <label>willow parquet square (small)</label>
+              <description>It's a doublesquare floor.</description>
+              <texturePath>Terrain/Surfaces/Evt/Wood4a</texturePath>
+              <color>(221, 186, 141)</color>
+              <designatorDropdown>Floor_WoodD_Normal_Evt</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>0.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Willow>5</WoodLog_Willow>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <DesignatorDropdownGroupDef>
+              <defName>Floor_WoodD_Normal_Evt_M</defName>
+            </DesignatorDropdownGroupDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/TerrainDef[defName="WoodD_Normal_Evt_M"]</xpath>
+          <value>
+            <designatorDropdown>Floor_WoodD_Normal_Evt_M</designatorDropdown>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodD_Normal_Evt_M_Birch</defName>
+              <label>birch parquet square (middle)</label>
+              <description>It's a doublesquare floor.</description>
+              <texturePath>Terrain/Surfaces/Evt/Wood4b</texturePath>
+              <color>(235,228,216)</color>
+              <designatorDropdown>Floor_WoodD_Normal_Evt_M</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Birch>5</WoodLog_Birch>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodD_Normal_Evt_M_Cecropia</defName>
+              <label>cecropia parquet square (middle)</label>
+              <description>It's a doublesquare floor.</description>
+              <texturePath>Terrain/Surfaces/Evt/Wood4b</texturePath>
+              <color>(126,74,63)</color>
+              <designatorDropdown>Floor_WoodD_Normal_Evt_M</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Cecropia>5</WoodLog_Cecropia>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodD_Normal_Evt_M_Cypress</defName>
+              <label>cypress parquet square (middle)</label>
+              <description>It's a doublesquare floor.</description>
+              <texturePath>Terrain/Surfaces/Evt/Wood4b</texturePath>
+              <color>(239, 217, 184)</color>
+              <designatorDropdown>Floor_WoodD_Normal_Evt_M</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>2.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Cypress>5</WoodLog_Cypress>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodD_Normal_Evt_M_Drago</defName>
+              <label>drago parquet square (middle)</label>
+              <description>It's a doublesquare floor.</description>
+              <texturePath>Terrain/Surfaces/Evt/Wood4b</texturePath>
+              <color>(171, 159, 142)</color>
+              <designatorDropdown>Floor_WoodD_Normal_Evt_M</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>0.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Drago>5</WoodLog_Drago>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodD_Normal_Evt_M_Maple</defName>
+              <label>maple parquet square (middle)</label>
+              <description>It's a doublesquare floor.</description>
+              <texturePath>Terrain/Surfaces/Evt/Wood4b</texturePath>
+              <color>(236, 201, 163)</color>
+              <designatorDropdown>Floor_WoodD_Normal_Evt_M</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Maple>5</WoodLog_Maple>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodD_Normal_Evt_M_Oak</defName>
+              <label>oak parquet square (middle)</label>
+              <description>It's a doublesquare floor.</description>
+              <texturePath>Terrain/Surfaces/Evt/Wood4b</texturePath>
+              <color>(185,142,96)</color>
+              <designatorDropdown>Floor_WoodD_Normal_Evt_M</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>2.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Oak>5</WoodLog_Oak>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodD_Normal_Evt_M_Palm</defName>
+              <label>palm parquet square (middle)</label>
+              <description>It's a doublesquare floor.</description>
+              <texturePath>Terrain/Surfaces/Evt/Wood4b</texturePath>
+              <color>(224, 150, 87)</color>
+              <designatorDropdown>Floor_WoodD_Normal_Evt_M</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Palm>5</WoodLog_Palm>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodD_Normal_Evt_M_Pine</defName>
+              <label>pine parquet square (middle)</label>
+              <description>It's a doublesquare floor.</description>
+              <texturePath>Terrain/Surfaces/Evt/Wood4b</texturePath>
+              <color>(198,146,68)</color>
+              <designatorDropdown>Floor_WoodD_Normal_Evt_M</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Pine>5</WoodLog_Pine>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodD_Normal_Evt_M_Poplar</defName>
+              <label>poplar parquet square (middle)</label>
+              <description>It's a doublesquare floor.</description>
+              <texturePath>Terrain/Surfaces/Evt/Wood4b</texturePath>
+              <color>(184,156,108)</color>
+              <designatorDropdown>Floor_WoodD_Normal_Evt_M</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Poplar>5</WoodLog_Poplar>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodD_Normal_Evt_M_Teak</defName>
+              <label>teak parquet square (middle)</label>
+              <description>It's a doublesquare floor.</description>
+              <texturePath>Terrain/Surfaces/Evt/Wood4b</texturePath>
+              <color>(154,102,59)</color>
+              <designatorDropdown>Floor_WoodD_Normal_Evt_M</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>2.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Teak>5</WoodLog_Teak>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodD_Normal_Evt_M_Willow</defName>
+              <label>willow parquet square (middle)</label>
+              <description>It's a doublesquare floor.</description>
+              <texturePath>Terrain/Surfaces/Evt/Wood4b</texturePath>
+              <color>(221, 186, 141)</color>
+              <designatorDropdown>Floor_WoodD_Normal_Evt_M</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>0.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Willow>5</WoodLog_Willow>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <DesignatorDropdownGroupDef>
+              <defName>Floor_WoodE_Normal_Evt</defName>
+            </DesignatorDropdownGroupDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/TerrainDef[defName="WoodE_Normal_Evt"]</xpath>
+          <value>
+            <designatorDropdown>Floor_WoodE_Normal_Evt</designatorDropdown>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodE_Normal_Evt_Birch</defName>
+              <label>birch parquet floor (small)</label>
+              <description>Do you want to draw a chessboard?</description>
+              <burnedDef>BurnedWoodE_Evt</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood5a</texturePath>
+              <color>(235,228,216)</color>
+              <designatorDropdown>Floor_WoodE_Normal_Evt</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Birch>5</WoodLog_Birch>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodE_Normal_Evt_Cecropia</defName>
+              <label>cecropia parquet floor (small)</label>
+              <description>Do you want to draw a chessboard?</description>
+              <burnedDef>BurnedWoodE_Evt</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood5a</texturePath>
+              <color>(126,74,63)</color>
+              <designatorDropdown>Floor_WoodE_Normal_Evt</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Cecropia>5</WoodLog_Cecropia>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodE_Normal_Evt_Cypress</defName>
+              <label>cypress parquet floor (small)</label>
+              <description>Do you want to draw a chessboard?</description>
+              <burnedDef>BurnedWoodE_Evt</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood5a</texturePath>
+              <color>(239, 217, 184)</color>
+              <designatorDropdown>Floor_WoodE_Normal_Evt</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>2.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Cypress>5</WoodLog_Cypress>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodE_Normal_Evt_Drago</defName>
+              <label>drago parquet floor (small)</label>
+              <description>Do you want to draw a chessboard?</description>
+              <burnedDef>BurnedWoodE_Evt</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood5a</texturePath>
+              <color>(171, 159, 142)</color>
+              <designatorDropdown>Floor_WoodE_Normal_Evt</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>0.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Drago>5</WoodLog_Drago>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodE_Normal_Evt_Maple</defName>
+              <label>maple parquet floor (small)</label>
+              <description>Do you want to draw a chessboard?</description>
+              <burnedDef>BurnedWoodE_Evt</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood5a</texturePath>
+              <color>(236, 201, 163)</color>
+              <designatorDropdown>Floor_WoodE_Normal_Evt</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Maple>5</WoodLog_Maple>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodE_Normal_Evt_Oak</defName>
+              <label>oak parquet floor (small)</label>
+              <description>Do you want to draw a chessboard?</description>
+              <burnedDef>BurnedWoodE_Evt</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood5a</texturePath>
+              <color>(185,142,96)</color>
+              <designatorDropdown>Floor_WoodE_Normal_Evt</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>2.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Oak>5</WoodLog_Oak>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodE_Normal_Evt_Palm</defName>
+              <label>palm parquet floor (small)</label>
+              <description>Do you want to draw a chessboard?</description>
+              <burnedDef>BurnedWoodE_Evt</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood5a</texturePath>
+              <color>(224, 150, 87)</color>
+              <designatorDropdown>Floor_WoodE_Normal_Evt</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Palm>5</WoodLog_Palm>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodE_Normal_Evt_Pine</defName>
+              <label>pine parquet floor (small)</label>
+              <description>Do you want to draw a chessboard?</description>
+              <burnedDef>BurnedWoodE_Evt</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood5a</texturePath>
+              <color>(198,146,68)</color>
+              <designatorDropdown>Floor_WoodE_Normal_Evt</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Pine>5</WoodLog_Pine>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodE_Normal_Evt_Poplar</defName>
+              <label>poplar parquet floor (small)</label>
+              <description>Do you want to draw a chessboard?</description>
+              <burnedDef>BurnedWoodE_Evt</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood5a</texturePath>
+              <color>(184,156,108)</color>
+              <designatorDropdown>Floor_WoodE_Normal_Evt</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Poplar>5</WoodLog_Poplar>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodE_Normal_Evt_Teak</defName>
+              <label>teak parquet floor (small)</label>
+              <description>Do you want to draw a chessboard?</description>
+              <burnedDef>BurnedWoodE_Evt</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood5a</texturePath>
+              <color>(154,102,59)</color>
+              <designatorDropdown>Floor_WoodE_Normal_Evt</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>2.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Teak>5</WoodLog_Teak>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodE_Normal_Evt_Willow</defName>
+              <label>willow parquet floor (small)</label>
+              <description>Do you want to draw a chessboard?</description>
+              <burnedDef>BurnedWoodE_Evt</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood5a</texturePath>
+              <color>(221, 186, 141)</color>
+              <designatorDropdown>Floor_WoodE_Normal_Evt</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>0.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Willow>5</WoodLog_Willow>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <DesignatorDropdownGroupDef>
+              <defName>Floor_WoodE_Normal_Evt_M</defName>
+            </DesignatorDropdownGroupDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/TerrainDef[defName="WoodE_Normal_Evt_M"]</xpath>
+          <value>
+            <designatorDropdown>Floor_WoodE_Normal_Evt_M</designatorDropdown>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodE_Normal_Evt_M_Birch</defName>
+              <label>birch parquet floor (middle)</label>
+              <description>Do you want to draw a chessboard?</description>
+              <burnedDef>BurnedWoodE_Evt_M</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood5b</texturePath>
+              <color>(235,228,216)</color>
+              <designatorDropdown>Floor_WoodE_Normal_Evt_M</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Birch>5</WoodLog_Birch>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodE_Normal_Evt_M_Cecropia</defName>
+              <label>cecropia parquet floor (middle)</label>
+              <description>Do you want to draw a chessboard?</description>
+              <burnedDef>BurnedWoodE_Evt_M</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood5b</texturePath>
+              <color>(126,74,63)</color>
+              <designatorDropdown>Floor_WoodE_Normal_Evt_M</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Cecropia>5</WoodLog_Cecropia>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodE_Normal_Evt_M_Cypress</defName>
+              <label>cypress parquet floor (middle)</label>
+              <description>Do you want to draw a chessboard?</description>
+              <burnedDef>BurnedWoodE_Evt_M</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood5b</texturePath>
+              <color>(239, 217, 184)</color>
+              <designatorDropdown>Floor_WoodE_Normal_Evt_M</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>2.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Cypress>5</WoodLog_Cypress>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodE_Normal_Evt_M_Drago</defName>
+              <label>drago parquet floor (middle)</label>
+              <description>Do you want to draw a chessboard?</description>
+              <burnedDef>BurnedWoodE_Evt_M</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood5b</texturePath>
+              <color>(171, 159, 142)</color>
+              <designatorDropdown>Floor_WoodE_Normal_Evt_M</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>0.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Drago>5</WoodLog_Drago>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodE_Normal_Evt_M_Maple</defName>
+              <label>maple parquet floor (middle)</label>
+              <description>Do you want to draw a chessboard?</description>
+              <burnedDef>BurnedWoodE_Evt_M</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood5b</texturePath>
+              <color>(236, 201, 163)</color>
+              <designatorDropdown>Floor_WoodE_Normal_Evt_M</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Maple>5</WoodLog_Maple>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodE_Normal_Evt_M_Oak</defName>
+              <label>oak parquet floor (middle)</label>
+              <description>Do you want to draw a chessboard?</description>
+              <burnedDef>BurnedWoodE_Evt_M</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood5b</texturePath>
+              <color>(185,142,96)</color>
+              <designatorDropdown>Floor_WoodE_Normal_Evt_M</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>2.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Oak>5</WoodLog_Oak>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodE_Normal_Evt_M_Palm</defName>
+              <label>palm parquet floor (middle)</label>
+              <description>Do you want to draw a chessboard?</description>
+              <burnedDef>BurnedWoodE_Evt_M</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood5b</texturePath>
+              <color>(224, 150, 87)</color>
+              <designatorDropdown>Floor_WoodE_Normal_Evt_M</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Palm>5</WoodLog_Palm>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodE_Normal_Evt_M_Pine</defName>
+              <label>pine parquet floor (middle)</label>
+              <description>Do you want to draw a chessboard?</description>
+              <burnedDef>BurnedWoodE_Evt_M</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood5b</texturePath>
+              <color>(198,146,68)</color>
+              <designatorDropdown>Floor_WoodE_Normal_Evt_M</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Pine>5</WoodLog_Pine>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodE_Normal_Evt_M_Poplar</defName>
+              <label>poplar parquet floor (middle)</label>
+              <description>Do you want to draw a chessboard?</description>
+              <burnedDef>BurnedWoodE_Evt_M</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood5b</texturePath>
+              <color>(184,156,108)</color>
+              <designatorDropdown>Floor_WoodE_Normal_Evt_M</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Poplar>5</WoodLog_Poplar>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodE_Normal_Evt_M_Teak</defName>
+              <label>teak parquet floor (middle)</label>
+              <description>Do you want to draw a chessboard?</description>
+              <burnedDef>BurnedWoodE_Evt_M</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood5b</texturePath>
+              <color>(154,102,59)</color>
+              <designatorDropdown>Floor_WoodE_Normal_Evt_M</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>2.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Teak>5</WoodLog_Teak>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodE_Normal_Evt_M_Willow</defName>
+              <label>willow parquet floor (middle)</label>
+              <description>Do you want to draw a chessboard?</description>
+              <burnedDef>BurnedWoodE_Evt_M</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood5b</texturePath>
+              <color>(221, 186, 141)</color>
+              <designatorDropdown>Floor_WoodE_Normal_Evt_M</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>0.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Willow>5</WoodLog_Willow>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <DesignatorDropdownGroupDef>
+              <defName>Floor_WoodE_Normal_Evt_L</defName>
+            </DesignatorDropdownGroupDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/TerrainDef[defName="WoodE_Normal_Evt_L"]</xpath>
+          <value>
+            <designatorDropdown>Floor_WoodE_Normal_Evt_L</designatorDropdown>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodE_Normal_Evt_L_Birch</defName>
+              <label>birch parquet floor (large)</label>
+              <description>Do you want to draw a chessboard?</description>
+              <burnedDef>BurnedWoodE_Evt_L</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood5c</texturePath>
+              <color>(235,228,216)</color>
+              <designatorDropdown>Floor_WoodE_Normal_Evt_L</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Birch>5</WoodLog_Birch>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodE_Normal_Evt_L_Cecropia</defName>
+              <label>cecropia parquet floor (large)</label>
+              <description>Do you want to draw a chessboard?</description>
+              <burnedDef>BurnedWoodE_Evt_L</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood5c</texturePath>
+              <color>(126,74,63)</color>
+              <designatorDropdown>Floor_WoodE_Normal_Evt_L</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Cecropia>5</WoodLog_Cecropia>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodE_Normal_Evt_L_Cypress</defName>
+              <label>cypress parquet floor (large)</label>
+              <description>Do you want to draw a chessboard?</description>
+              <burnedDef>BurnedWoodE_Evt_L</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood5c</texturePath>
+              <color>(239, 217, 184)</color>
+              <designatorDropdown>Floor_WoodE_Normal_Evt_L</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>2.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Cypress>5</WoodLog_Cypress>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodE_Normal_Evt_L_Drago</defName>
+              <label>drago parquet floor (large)</label>
+              <description>Do you want to draw a chessboard?</description>
+              <burnedDef>BurnedWoodE_Evt_L</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood5c</texturePath>
+              <color>(171, 159, 142)</color>
+              <designatorDropdown>Floor_WoodE_Normal_Evt_L</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>0.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Drago>5</WoodLog_Drago>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodE_Normal_Evt_L_Maple</defName>
+              <label>maple parquet floor (large)</label>
+              <description>Do you want to draw a chessboard?</description>
+              <burnedDef>BurnedWoodE_Evt_L</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood5c</texturePath>
+              <color>(236, 201, 163)</color>
+              <designatorDropdown>Floor_WoodE_Normal_Evt_L</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Maple>5</WoodLog_Maple>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodE_Normal_Evt_L_Oak</defName>
+              <label>oak parquet floor (large)</label>
+              <description>Do you want to draw a chessboard?</description>
+              <burnedDef>BurnedWoodE_Evt_L</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood5c</texturePath>
+              <color>(185,142,96)</color>
+              <designatorDropdown>Floor_WoodE_Normal_Evt_L</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>2.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Oak>5</WoodLog_Oak>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodE_Normal_Evt_L_Palm</defName>
+              <label>palm parquet floor (large)</label>
+              <description>Do you want to draw a chessboard?</description>
+              <burnedDef>BurnedWoodE_Evt_L</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood5c</texturePath>
+              <color>(224, 150, 87)</color>
+              <designatorDropdown>Floor_WoodE_Normal_Evt_L</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Palm>5</WoodLog_Palm>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodE_Normal_Evt_L_Pine</defName>
+              <label>pine parquet floor (large)</label>
+              <description>Do you want to draw a chessboard?</description>
+              <burnedDef>BurnedWoodE_Evt_L</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood5c</texturePath>
+              <color>(198,146,68)</color>
+              <designatorDropdown>Floor_WoodE_Normal_Evt_L</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Pine>5</WoodLog_Pine>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodE_Normal_Evt_L_Poplar</defName>
+              <label>poplar parquet floor (large)</label>
+              <description>Do you want to draw a chessboard?</description>
+              <burnedDef>BurnedWoodE_Evt_L</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood5c</texturePath>
+              <color>(184,156,108)</color>
+              <designatorDropdown>Floor_WoodE_Normal_Evt_L</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Poplar>5</WoodLog_Poplar>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodE_Normal_Evt_L_Teak</defName>
+              <label>teak parquet floor (large)</label>
+              <description>Do you want to draw a chessboard?</description>
+              <burnedDef>BurnedWoodE_Evt_L</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood5c</texturePath>
+              <color>(154,102,59)</color>
+              <designatorDropdown>Floor_WoodE_Normal_Evt_L</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>2.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Teak>5</WoodLog_Teak>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodE_Normal_Evt_L_Willow</defName>
+              <label>willow parquet floor (large)</label>
+              <description>Do you want to draw a chessboard?</description>
+              <burnedDef>BurnedWoodE_Evt_L</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood5c</texturePath>
+              <color>(221, 186, 141)</color>
+              <designatorDropdown>Floor_WoodE_Normal_Evt_L</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>0.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Willow>5</WoodLog_Willow>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <DesignatorDropdownGroupDef>
+              <defName>Floor_WoodF_Normal_Evt</defName>
+            </DesignatorDropdownGroupDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/TerrainDef[defName="WoodF_Normal_Evt"]</xpath>
+          <value>
+            <designatorDropdown>Floor_WoodF_Normal_Evt</designatorDropdown>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodF_Normal_Evt_Birch</defName>
+              <label>birch decorated floral parquet (small)</label>
+              <description>Flowers and circles.</description>
+              <burnedDef>BurnedWoodF_Evt</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood6a</texturePath>
+              <color>(235,228,216)</color>
+              <designatorDropdown>Floor_WoodF_Normal_Evt</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Birch>5</WoodLog_Birch>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodF_Normal_Evt_Cecropia</defName>
+              <label>cecropia decorated floral parquet (small)</label>
+              <description>Flowers and circles.</description>
+              <burnedDef>BurnedWoodF_Evt</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood6a</texturePath>
+              <color>(126,74,63)</color>
+              <designatorDropdown>Floor_WoodF_Normal_Evt</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Cecropia>5</WoodLog_Cecropia>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodF_Normal_Evt_Cypress</defName>
+              <label>cypress decorated floral parquet (small)</label>
+              <description>Flowers and circles.</description>
+              <burnedDef>BurnedWoodF_Evt</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood6a</texturePath>
+              <color>(239, 217, 184)</color>
+              <designatorDropdown>Floor_WoodF_Normal_Evt</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>2.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Cypress>5</WoodLog_Cypress>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodF_Normal_Evt_Drago</defName>
+              <label>drago decorated floral parquet (small)</label>
+              <description>Flowers and circles.</description>
+              <burnedDef>BurnedWoodF_Evt</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood6a</texturePath>
+              <color>(171, 159, 142)</color>
+              <designatorDropdown>Floor_WoodF_Normal_Evt</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>0.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Drago>5</WoodLog_Drago>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodF_Normal_Evt_Maple</defName>
+              <label>maple decorated floral parquet (small)</label>
+              <description>Flowers and circles.</description>
+              <burnedDef>BurnedWoodF_Evt</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood6a</texturePath>
+              <color>(236, 201, 163)</color>
+              <designatorDropdown>Floor_WoodF_Normal_Evt</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Maple>5</WoodLog_Maple>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodF_Normal_Evt_Oak</defName>
+              <label>oak decorated floral parquet (small)</label>
+              <description>Flowers and circles.</description>
+              <burnedDef>BurnedWoodF_Evt</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood6a</texturePath>
+              <color>(185,142,96)</color>
+              <designatorDropdown>Floor_WoodF_Normal_Evt</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>2.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Oak>5</WoodLog_Oak>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodF_Normal_Evt_Palm</defName>
+              <label>palm decorated floral parquet (small)</label>
+              <description>Flowers and circles.</description>
+              <burnedDef>BurnedWoodF_Evt</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood6a</texturePath>
+              <color>(224, 150, 87)</color>
+              <designatorDropdown>Floor_WoodF_Normal_Evt</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Palm>5</WoodLog_Palm>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodF_Normal_Evt_Pine</defName>
+              <label>pine decorated floral parquet (small)</label>
+              <description>Flowers and circles.</description>
+              <burnedDef>BurnedWoodF_Evt</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood6a</texturePath>
+              <color>(198,146,68)</color>
+              <designatorDropdown>Floor_WoodF_Normal_Evt</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Pine>5</WoodLog_Pine>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodF_Normal_Evt_Poplar</defName>
+              <label>poplar decorated floral parquet (small)</label>
+              <description>Flowers and circles.</description>
+              <burnedDef>BurnedWoodF_Evt</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood6a</texturePath>
+              <color>(184,156,108)</color>
+              <designatorDropdown>Floor_WoodF_Normal_Evt</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Poplar>5</WoodLog_Poplar>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodF_Normal_Evt_Teak</defName>
+              <label>teak decorated floral parquet (small)</label>
+              <description>Flowers and circles.</description>
+              <burnedDef>BurnedWoodF_Evt</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood6a</texturePath>
+              <color>(154,102,59)</color>
+              <designatorDropdown>Floor_WoodF_Normal_Evt</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>2.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Teak>5</WoodLog_Teak>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodF_Normal_Evt_Willow</defName>
+              <label>willow decorated floral parquet (small)</label>
+              <description>Flowers and circles.</description>
+              <burnedDef>BurnedWoodF_Evt</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood6a</texturePath>
+              <color>(221, 186, 141)</color>
+              <designatorDropdown>Floor_WoodF_Normal_Evt</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>0.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Willow>5</WoodLog_Willow>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <DesignatorDropdownGroupDef>
+              <defName>Floor_WoodF_Normal_Evt_M</defName>
+            </DesignatorDropdownGroupDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/TerrainDef[defName="WoodF_Normal_Evt_M"]</xpath>
+          <value>
+            <designatorDropdown>Floor_WoodF_Normal_Evt_M</designatorDropdown>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodF_Normal_Evt_M_Birch</defName>
+              <label>birch decorated floral parquet (middle)</label>
+              <description>Flowers and circles.</description>
+              <burnedDef>BurnedWoodF_Evt_M</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood6b</texturePath>
+              <color>(235,228,216)</color>
+              <designatorDropdown>Floor_WoodF_Normal_Evt_M</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Birch>5</WoodLog_Birch>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodF_Normal_Evt_M_Cecropia</defName>
+              <label>cecropia decorated floral parquet (middle)</label>
+              <description>Flowers and circles.</description>
+              <burnedDef>BurnedWoodF_Evt_M</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood6b</texturePath>
+              <color>(126,74,63)</color>
+              <designatorDropdown>Floor_WoodF_Normal_Evt_M</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Cecropia>5</WoodLog_Cecropia>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodF_Normal_Evt_M_Cypress</defName>
+              <label>cypress decorated floral parquet (middle)</label>
+              <description>Flowers and circles.</description>
+              <burnedDef>BurnedWoodF_Evt_M</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood6b</texturePath>
+              <color>(239, 217, 184)</color>
+              <designatorDropdown>Floor_WoodF_Normal_Evt_M</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>2.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Cypress>5</WoodLog_Cypress>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodF_Normal_Evt_M_Drago</defName>
+              <label>drago decorated floral parquet (middle)</label>
+              <description>Flowers and circles.</description>
+              <burnedDef>BurnedWoodF_Evt_M</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood6b</texturePath>
+              <color>(171, 159, 142)</color>
+              <designatorDropdown>Floor_WoodF_Normal_Evt_M</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>0.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Drago>5</WoodLog_Drago>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodF_Normal_Evt_M_Maple</defName>
+              <label>maple decorated floral parquet (middle)</label>
+              <description>Flowers and circles.</description>
+              <burnedDef>BurnedWoodF_Evt_M</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood6b</texturePath>
+              <color>(236, 201, 163)</color>
+              <designatorDropdown>Floor_WoodF_Normal_Evt_M</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Maple>5</WoodLog_Maple>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodF_Normal_Evt_M_Oak</defName>
+              <label>oak decorated floral parquet (middle)</label>
+              <description>Flowers and circles.</description>
+              <burnedDef>BurnedWoodF_Evt_M</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood6b</texturePath>
+              <color>(185,142,96)</color>
+              <designatorDropdown>Floor_WoodF_Normal_Evt_M</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>2.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Oak>5</WoodLog_Oak>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodF_Normal_Evt_M_Palm</defName>
+              <label>palm decorated floral parquet (middle)</label>
+              <description>Flowers and circles.</description>
+              <burnedDef>BurnedWoodF_Evt_M</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood6b</texturePath>
+              <color>(224, 150, 87)</color>
+              <designatorDropdown>Floor_WoodF_Normal_Evt_M</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Palm>5</WoodLog_Palm>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodF_Normal_Evt_M_Pine</defName>
+              <label>pine decorated floral parquet (middle)</label>
+              <description>Flowers and circles.</description>
+              <burnedDef>BurnedWoodF_Evt_M</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood6b</texturePath>
+              <color>(198,146,68)</color>
+              <designatorDropdown>Floor_WoodF_Normal_Evt_M</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Pine>5</WoodLog_Pine>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodF_Normal_Evt_M_Poplar</defName>
+              <label>poplar decorated floral parquet (middle)</label>
+              <description>Flowers and circles.</description>
+              <burnedDef>BurnedWoodF_Evt_M</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood6b</texturePath>
+              <color>(184,156,108)</color>
+              <designatorDropdown>Floor_WoodF_Normal_Evt_M</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Poplar>5</WoodLog_Poplar>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodF_Normal_Evt_M_Teak</defName>
+              <label>teak decorated floral parquet (middle)</label>
+              <description>Flowers and circles.</description>
+              <burnedDef>BurnedWoodF_Evt_M</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood6b</texturePath>
+              <color>(154,102,59)</color>
+              <designatorDropdown>Floor_WoodF_Normal_Evt_M</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>2.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Teak>5</WoodLog_Teak>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodF_Normal_Evt_M_Willow</defName>
+              <label>willow decorated floral parquet (middle)</label>
+              <description>Flowers and circles.</description>
+              <burnedDef>BurnedWoodF_Evt_M</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood6b</texturePath>
+              <color>(221, 186, 141)</color>
+              <designatorDropdown>Floor_WoodF_Normal_Evt_M</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>0.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Willow>5</WoodLog_Willow>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <DesignatorDropdownGroupDef>
+              <defName>Floor_WoodF_Normal_Evt_L</defName>
+            </DesignatorDropdownGroupDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/TerrainDef[defName="WoodF_Normal_Evt_L"]</xpath>
+          <value>
+            <designatorDropdown>Floor_WoodF_Normal_Evt_L</designatorDropdown>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodF_Normal_Evt_L_Birch</defName>
+              <label>birch decorated floral parquet (large)</label>
+              <description>Flowers and circles.</description>
+              <burnedDef>BurnedWoodF_Evt_L</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood6c</texturePath>
+              <color>(235,228,216)</color>
+              <designatorDropdown>Floor_WoodF_Normal_Evt_L</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Birch>5</WoodLog_Birch>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodF_Normal_Evt_L_Cecropia</defName>
+              <label>cecropia decorated floral parquet (large)</label>
+              <description>Flowers and circles.</description>
+              <burnedDef>BurnedWoodF_Evt_L</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood6c</texturePath>
+              <color>(126,74,63)</color>
+              <designatorDropdown>Floor_WoodF_Normal_Evt_L</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Cecropia>5</WoodLog_Cecropia>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodF_Normal_Evt_L_Cypress</defName>
+              <label>cypress decorated floral parquet (large)</label>
+              <description>Flowers and circles.</description>
+              <burnedDef>BurnedWoodF_Evt_L</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood6c</texturePath>
+              <color>(239, 217, 184)</color>
+              <designatorDropdown>Floor_WoodF_Normal_Evt_L</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>2.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Cypress>5</WoodLog_Cypress>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodF_Normal_Evt_L_Drago</defName>
+              <label>drago decorated floral parquet (large)</label>
+              <description>Flowers and circles.</description>
+              <burnedDef>BurnedWoodF_Evt_L</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood6c</texturePath>
+              <color>(171, 159, 142)</color>
+              <designatorDropdown>Floor_WoodF_Normal_Evt_L</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>0.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Drago>5</WoodLog_Drago>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodF_Normal_Evt_L_Maple</defName>
+              <label>maple decorated floral parquet (large)</label>
+              <description>Flowers and circles.</description>
+              <burnedDef>BurnedWoodF_Evt_L</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood6c</texturePath>
+              <color>(236, 201, 163)</color>
+              <designatorDropdown>Floor_WoodF_Normal_Evt_L</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Maple>5</WoodLog_Maple>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodF_Normal_Evt_L_Oak</defName>
+              <label>oak decorated floral parquet (large)</label>
+              <description>Flowers and circles.</description>
+              <burnedDef>BurnedWoodF_Evt_L</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood6c</texturePath>
+              <color>(185,142,96)</color>
+              <designatorDropdown>Floor_WoodF_Normal_Evt_L</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>2.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Oak>5</WoodLog_Oak>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodF_Normal_Evt_L_Palm</defName>
+              <label>palm decorated floral parquet (large)</label>
+              <description>Flowers and circles.</description>
+              <burnedDef>BurnedWoodF_Evt_L</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood6c</texturePath>
+              <color>(224, 150, 87)</color>
+              <designatorDropdown>Floor_WoodF_Normal_Evt_L</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Palm>5</WoodLog_Palm>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodF_Normal_Evt_L_Pine</defName>
+              <label>pine decorated floral parquet (large)</label>
+              <description>Flowers and circles.</description>
+              <burnedDef>BurnedWoodF_Evt_L</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood6c</texturePath>
+              <color>(198,146,68)</color>
+              <designatorDropdown>Floor_WoodF_Normal_Evt_L</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Pine>5</WoodLog_Pine>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodF_Normal_Evt_L_Poplar</defName>
+              <label>poplar decorated floral parquet (large)</label>
+              <description>Flowers and circles.</description>
+              <burnedDef>BurnedWoodF_Evt_L</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood6c</texturePath>
+              <color>(184,156,108)</color>
+              <designatorDropdown>Floor_WoodF_Normal_Evt_L</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>1.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Poplar>5</WoodLog_Poplar>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodF_Normal_Evt_L_Teak</defName>
+              <label>teak decorated floral parquet (large)</label>
+              <description>Flowers and circles.</description>
+              <burnedDef>BurnedWoodF_Evt_L</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood6c</texturePath>
+              <color>(154,102,59)</color>
+              <designatorDropdown>Floor_WoodF_Normal_Evt_L</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>2.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Teak>5</WoodLog_Teak>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBaseEvt">
+              <defName>WoodF_Normal_Evt_L_Willow</defName>
+              <label>willow decorated floral parquet (large)</label>
+              <description>Flowers and circles.</description>
+              <burnedDef>BurnedWoodF_Evt_L</burnedDef>
+              <texturePath>Terrain/Surfaces/Evt/Wood6c</texturePath>
+              <color>(221, 186, 141)</color>
+              <designatorDropdown>Floor_WoodF_Normal_Evt_L</designatorDropdown>
+              <renderPrecedence>214</renderPrecedence>
+              <statBases>
+                <Flammability>0.18</Flammability>
+                <Beauty>0.5</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Willow>5</WoodLog_Willow>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>
