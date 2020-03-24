@@ -67,15 +67,19 @@ task Setup {
                 'Area Rugs'
                 'Camping Stuff'
                 'Children, school and learning'
+                'Coal Expanded'
                 'Expanded Prosthetics and Organ Engineering'
+                'Fertile Fields'
                 'GloomyFurniture'
                 'Lord of the Rims - The Third Age'
                 'Medieval Times'
                 'Misc. Training'
+                'My Little Boat Expansion'
                 "Nature's Pretty Sweet"
                 'Project Fallout'
                 'Rimhammer - The End Times'
                 'RimWriter - Books, Scrolls, Tablets, and Libraries'
+                'Vanilla Furniture Expanded'
                 'VGP Xtra Trees and Flowers'
                 'Westerado'
             )
@@ -219,6 +223,7 @@ task UpdateTerrainDefs {
     $params = @{
         Name    = 'Core\FloorBase'
         SaveAs  = Join-Path $buildInfo.Path.GeneratedVersion 'Defs\TerrainDefs\EW-Base.xml'
+        Version = $buildInfo.RimWorldVersion.ShortVersion
     }
     Copy-RWModDef @params
 
@@ -230,6 +235,7 @@ task UpdateTerrainDefs {
         Name    = 'Core\WoodPlankFloor'
         SaveAs  = $path
         Remove  = 'costList', 'designationHotKey'
+        Version = $buildInfo.RimWorldVersion.ShortVersion
     }
     foreach ($woodType in $buildInfo.Data.WoodStats.Keys) {
         Write-Verbose ('Copying {0} floor' -f $woodType)
@@ -261,6 +267,7 @@ task UpdateTerrainDefs {
         Name    = 'Core\WoodPlankFloor'
         SaveAs  = $path
         Remove  = 'costList', 'designationHotKey'
+        Version = $buildInfo.RimWorldVersion.ShortVersion
     }
     foreach ($colour in $buildInfo.Data.WoodPainted.Keys) {
         Write-Verbose ('Generating {0} painted floor' -f $colour)
@@ -289,6 +296,7 @@ task UpdateThingDefsBuildings {
     $commonParams = @{
         Name    = 'Core\BuildingBase'
         SaveAs  = $path
+        Version = $buildInfo.RimWorldVersion.ShortVersion
     }
     Copy-RWModDef @commonParams
     Copy-RWModDef @commonParams -NewName 'BuildingBaseNoResources' -Remove 'leaveResourcesWhenKilled', 'filthLeaving'
@@ -301,6 +309,7 @@ task UpdateThingDefsBuildings {
             holdsRoof                = 'false'
             blockLight               = 'false'
         }
+        Version = $buildInfo.RimWorldVersion.ShortVersion
     }
     Copy-RWModDef @params
 }
@@ -308,6 +317,7 @@ task UpdateThingDefsBuildings {
 task UpdateThingDefsItems {
     $commonParams = @{
         SaveAs  = Join-Path $buildInfo.Path.GeneratedVersion 'Defs\ThingDefs_Items\EW-Base.xml'
+        Version = $buildInfo.RimWorldVersion.ShortVersion
     }
     Copy-RWModDef @commonParams -Name 'Core\ResourceBase'
 
@@ -327,6 +337,7 @@ task UpdateThingDefsItems {
     $commonParams = @{
         Name    = 'Core\WoodLog'
         SaveAs  = Join-Path $buildInfo.Path.GeneratedVersion 'Defs\ThingDefs_Items\EW-WoodTypes.xml'
+        Version = $buildInfo.RimWorldVersion.ShortVersion
     }
 
     # WoodLog (generic)
@@ -370,6 +381,7 @@ task UpdateThingDefsItems {
     $commonParams = @{
         Name    = 'Core\WoodLog'
         SaveAs  = Join-Path $buildInfo.Path.GeneratedVersion 'Defs\ThingDefs_Items\EW-PaintedWood.xml'
+        Version = $buildInfo.RimWorldVersion.ShortVersion
     }
 
     foreach ($colour in $buildInfo.Data.WoodPainted.Keys) {
@@ -561,6 +573,7 @@ task CreateHarvestedThingDefPatch {
 task CreateWoodLogPatch {
     $commonParams = @{
         Name    = 'Core\WoodLog'
+        Version = $buildInfo.RimWorldVersion.ShortVersion
     }
 
     $templatePath = Join-Path $buildInfo.Path.GeneratedVersion 'Patches\EW-%MOD%-woodLog.xml'
@@ -620,6 +633,7 @@ task CreateWoodFloorPatch {
     $commonParams = @{
         Name    = 'Core\WoodPlankFloor'
         Remove  = 'costList', 'designationHotKey'
+        Version = $buildInfo.RimWorldVersion.ShortVersion
     }
 
     $templatePath = Join-Path $buildInfo.Path.GeneratedVersion 'Patches\EW-%MOD%-woodFloor.xml'
@@ -709,8 +723,8 @@ function CreateFloorPatch {
     $operationsElement = $xDocument.Descendants('operations').ForEach{ $_ }[0]
     $templateElement = $operationsElement.Element('li')
 
-    Get-ChildItem (Join-Path $modInfo.Path 'Defs') -Filter *.xml -Recurse | ForEach-Object {
-        $item = $_
+    $modInfo | Get-RWModDef -Version $buildInfo.RimWorldVersion.ShortVersion | Group-Object Path -NoElement | ForEach-Object {
+        $item = Get-Item $_.Name
 
         $cachedAbstracts = @{}
         $modXDocument = [System.Xml.Linq.XDocument]::Load($item.FullName)
@@ -824,11 +838,13 @@ function CreateFloorPatch {
                             'designatorDropdown'                  = 'Floor_{0}' -f $defName
                         }
                         Remove  = 'costList'
+                        Version = $buildInfo.RimWorldVersion.ShortVersion
                     }
                     $params.Update.description = $params.Update.description -replace '^.', $params.Update.description.Substring(0, 1).ToUpper()
                     if ($mergedDef) {
                         $params.Remove('Name')
                         $params.Remove('DefType')
+                        $params.Remove('Version')
                         $params.Def = $mergedDef
                     }
 
