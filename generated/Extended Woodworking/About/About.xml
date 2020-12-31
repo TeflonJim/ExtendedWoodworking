@@ -1,13 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-    <name>Extended Woodworking</name>
-    <author>TeflonJim</author>
-    <packageId>teflonjim.extendedwoodworking</packageId>
-    <supportedVersions>
-        <li>1.0</li>
-        <li>1.1</li>
-    </supportedVersions>
-    <description>
+  <name>Extended Woodworking</name>
+  <author>TeflonJim</author>
+  <packageId>teflonjim.extendedwoodworking</packageId>
+  <supportedVersions>
+    <li>1.0</li>
+    <li>1.1</li>
+    <li>1.2</li>
+  </supportedVersions>
+  <description>
 This is an update of the Extended Woodworking mod (A13). All credit for the original creative work goes to ItchyFlea. https://ludeon.com/forums/index.php?topic=7893.0
 
 Previous versions of this module can be downloaded from GitHub:
@@ -24,29 +25,17 @@ A Woodworking table is available to paint wood or convert specific types of wood
 
 Support for the Royalty is included and Extended Woodworking provides patches for the following mods:
 
-* [RF] Fishing
-* [RF] Fertile Fields
-* [T] ExpandedCloth
 * [T] MoreFloors
 * A Dog Said... Animal Prosthetics
 * A RimWorld of Magic
 * Area Rugs
-* Camping Stuff
 * Children, school and learning
-* Coal Expanded
 * Expanded Prosthetics and Organ Engineering
 * Fertile Fields
 * GloomyFurniture
-* Lord of the Rims - The Third Age
-* Medieval Times
 * Misc. Training
-* My Little Boat Expansion
-* Nature's Pretty Sweet
-* Project Fallout
-* Rimhammer - The End Times
 * RimWriter - Books, Scrolls, Tablets, and Libraries
 * VGP Xtra Trees and Flowers
-* Westerado
 
 Cost lists, ingredient lists, and fuel lists are updated for each mod.
 
@@ -58,27 +47,20 @@ The following mods contain floors, the defs are duplicated for each available wo
 * GloomyFurniture
 * RIMkea
     </description>
-    <incompatibleWith>
-        <li>Adventurer.ExpandWoodwork</li>
-        <li>owlchemist.simplechains.lumber</li>
-    </incompatibleWith>
-    <loadAfter>
-        <li>ludeon.rimworld</li>
-        <li>ludeon.rimworld.royalty</li>
-        <li>telkir.tmods.expandedcloth</li>
-        <li>telkir.tmods.morefloors</li>
-        <li>spoonshortage.adogsaidanimalprosthetics</li>
-        <li>torann.arimworldofmagic</li>
-        <li>thegoofyone.arearugs</li>
-        <li>dylan.csl</li>
-        <li>neceros.coalexpanded</li>
-        <li>ykara.epoe</li>
-        <li>jamaicancastle.rf.fertilefields</li>
-        <li>solaris.furniturebase</li>
-        <li>haplo.miscellaneous.training</li>
-        <li>meltup.mylittleboat</li>
-        <li>tkkntkkn.nps</li>
-        <li>vanillaexpanded.vfecore</li>
-        <li>dismarzero.vgp.xtratreesandflowers</li>
-    </loadAfter>
+  <incompatibleWith>
+    <li>Adventurer.ExpandWoodwork</li>
+    <li>owlchemist.simplechains.lumber</li>
+  </incompatibleWith>
+  <loadAfter>
+    <li>ludeon.rimworld</li>
+    <li>ludeon.rimworld.royalty</li>
+    <li>telkir.tmods.morefloors</li>
+    <li>spoonshortage.adogsaidanimalprosthetics</li>
+    <li>torann.arimworldofmagic</li>
+    <li>thegoofyone.arearugs</li>
+    <li>ykara.epoe</li>
+    <li>solaris.furniturebase</li>
+    <li>haplo.miscellaneous.training</li>
+    <li>dismarzero.vgp.xtratreesandflowers</li>
+  </loadAfter>
 </ModMetaData>
