@@ -1,0 +1,3963 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_FoodBox"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_FoodBox" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_FoodBox"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_FoodBox"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_FoodBox" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_FoodBox"]</xpath>
+            <value>
+              <costStuffCount>5</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_FoodBox"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_FoodBox"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Hedge"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Hedge" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Hedge"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Hedge"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Hedge" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Hedge"]</xpath>
+            <value>
+              <costStuffCount>5</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Hedge"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Hedge"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenLogs"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenLogs" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenLogs"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenLogs"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenLogs" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenLogs"]</xpath>
+            <value>
+              <costStuffCount>5</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenLogs"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenLogs"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenLogsLarge"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenLogsLarge" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenLogsLarge"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenLogsLarge"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenLogsLarge" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenLogsLarge"]</xpath>
+            <value>
+              <costStuffCount>20</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenLogsLarge"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenLogsLarge"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenWagon"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenWagon" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenWagon"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenWagon"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenWagon" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenWagon"]</xpath>
+            <value>
+              <costStuffCount>30</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenWagon"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenWagon"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenATM"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenATM" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenATM"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenATM"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenATM" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenATM"]</xpath>
+            <value>
+              <costStuffCount>10</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenATM"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenATM"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenBookshelf"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenBookshelf" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenBookshelf"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenBookshelf"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenBookshelf" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenBookshelf"]</xpath>
+            <value>
+              <costStuffCount>10</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenBookshelf"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenBookshelf"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenCupboard"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenCupboard" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenCupboard"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenCupboard"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenCupboard" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenCupboard"]</xpath>
+            <value>
+              <costStuffCount>10</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenCupboard"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenCupboard"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenCupboardDouble"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenCupboardDouble" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenCupboardDouble"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenCupboardDouble"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenCupboardDouble" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenCupboardDouble"]</xpath>
+            <value>
+              <costStuffCount>10</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenCupboardDouble"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenCupboardDouble"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenCupboardPlates"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenCupboardPlates" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenCupboardPlates"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenCupboardPlates"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenCupboardPlates" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenCupboardPlates"]</xpath>
+            <value>
+              <costStuffCount>10</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenCupboardPlates"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenCupboardPlates"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenCupboardNarrow"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenCupboardNarrow" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenCupboardNarrow"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenCupboardNarrow"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenCupboardNarrow" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenCupboardNarrow"]</xpath>
+            <value>
+              <costStuffCount>10</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenCupboardNarrow"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenCupboardNarrow"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenTallCabinet"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenTallCabinet" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenTallCabinet"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenTallCabinet"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenTallCabinet" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenTallCabinet"]</xpath>
+            <value>
+              <costStuffCount>10</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenTallCabinet"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenTallCabinet"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenShortCupboard"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenShortCupboard" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenShortCupboard"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenShortCupboard"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenShortCupboard" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenShortCupboard"]</xpath>
+            <value>
+              <costStuffCount>10</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenShortCupboard"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenShortCupboard"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenShortCupboardPlates"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenShortCupboardPlates" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenShortCupboardPlates"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenShortCupboardPlates"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenShortCupboardPlates" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenShortCupboardPlates"]</xpath>
+            <value>
+              <costStuffCount>10</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenShortCupboardPlates"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenShortCupboardPlates"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenDivider"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenDivider" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenDivider"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenDivider"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenDivider" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenDivider"]</xpath>
+            <value>
+              <costStuffCount>10</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenDivider"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenDivider"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenPlankDivider"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenPlankDivider" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenPlankDivider"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenPlankDivider"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenPlankDivider" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenPlankDivider"]</xpath>
+            <value>
+              <costStuffCount>10</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenPlankDivider"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenPlankDivider"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenMirror"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenMirror" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenMirror"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenMirror"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenMirror" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenMirror"]</xpath>
+            <value>
+              <costStuffCount>10</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenMirror"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenMirror"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenVendingMachine"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenVendingMachine" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenVendingMachine"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenVendingMachine"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenVendingMachine" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenVendingMachine"]</xpath>
+            <value>
+              <costStuffCount>10</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenVendingMachine"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenVendingMachine"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_BoxLarge"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_BoxLarge" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_BoxLarge"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_BoxLarge"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_BoxLarge" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_BoxLarge"]</xpath>
+            <value>
+              <costStuffCount>20</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_BoxLarge"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_BoxLarge"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_BoxSmall"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_BoxSmall" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_BoxSmall"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_BoxSmall"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_BoxSmall" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_BoxSmall"]</xpath>
+            <value>
+              <costStuffCount>10</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_BoxSmall"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_BoxSmall"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_CardboardBoxLarge"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_CardboardBoxLarge" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_CardboardBoxLarge"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_CardboardBoxLarge"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_CardboardBoxLarge" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_CardboardBoxLarge"]</xpath>
+            <value>
+              <costStuffCount>6</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_CardboardBoxLarge"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_CardboardBoxLarge"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_CardboardBoxSmall"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_CardboardBoxSmall" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_CardboardBoxSmall"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_CardboardBoxSmall"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_CardboardBoxSmall" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_CardboardBoxSmall"]</xpath>
+            <value>
+              <costStuffCount>2</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_CardboardBoxSmall"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_CardboardBoxSmall"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_PalletCardboard"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_PalletCardboard" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_PalletCardboard"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_PalletCardboard"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_PalletCardboard" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_PalletCardboard"]</xpath>
+            <value>
+              <costStuffCount>20</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_PalletCardboard"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_PalletCardboard"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_PalletBoxes"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_PalletBoxes" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_PalletBoxes"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_PalletBoxes"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_PalletBoxes" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_PalletBoxes"]</xpath>
+            <value>
+              <costStuffCount>60</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_PalletBoxes"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_PalletBoxes"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Pallet"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Pallet" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Pallet"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Pallet"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Pallet" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Pallet"]</xpath>
+            <value>
+              <costStuffCount>10</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Pallet"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Pallet"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_PalletBarrelGreen"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_PalletBarrelGreen" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_PalletBarrelGreen"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_PalletBarrelGreen"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_PalletBarrelGreen" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_PalletBarrelGreen"]</xpath>
+            <value>
+              <costStuffCount>10</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_PalletBarrelGreen"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_PalletBarrelGreen"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_PalletBarrelGrey"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_PalletBarrelGrey" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_PalletBarrelGrey"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_PalletBarrelGrey"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_PalletBarrelGrey" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_PalletBarrelGrey"]</xpath>
+            <value>
+              <costStuffCount>10</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_PalletBarrelGrey"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_PalletBarrelGrey"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_PalletBarrelRed"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_PalletBarrelRed" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_PalletBarrelRed"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_PalletBarrelRed"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_PalletBarrelRed" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_PalletBarrelRed"]</xpath>
+            <value>
+              <costStuffCount>10</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_PalletBarrelRed"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_PalletBarrelRed"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_PalletBarrelYellow"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_PalletBarrelYellow" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_PalletBarrelYellow"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_PalletBarrelYellow"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_PalletBarrelYellow" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_PalletBarrelYellow"]</xpath>
+            <value>
+              <costStuffCount>10</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_PalletBarrelYellow"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_PalletBarrelYellow"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_PalletBarrelBlue"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_PalletBarrelBlue" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_PalletBarrelBlue"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_PalletBarrelBlue"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_PalletBarrelBlue" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_PalletBarrelBlue"]</xpath>
+            <value>
+              <costStuffCount>10</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_PalletBarrelBlue"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_PalletBarrelBlue"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Planks"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Planks" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Planks"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Planks"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Planks" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Planks"]</xpath>
+            <value>
+              <costStuffCount>5</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Planks"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Planks"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_BrewingBarrel"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_BrewingBarrel" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_BrewingBarrel"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_BrewingBarrel"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_BrewingBarrel" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_BrewingBarrel"]</xpath>
+            <value>
+              <costStuffCount>5</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_BrewingBarrel"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_BrewingBarrel"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WineRack"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WineRack" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WineRack"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WineRack"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WineRack" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WineRack"]</xpath>
+            <value>
+              <costStuffCount>5</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WineRack"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WineRack"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_CuttingBoard"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_CuttingBoard" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_CuttingBoard"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_CuttingBoard"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_CuttingBoard" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_CuttingBoard"]</xpath>
+            <value>
+              <costStuffCount>2</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_CuttingBoard"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_CuttingBoard"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_ArmorStandEmpty"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_ArmorStandEmpty" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_ArmorStandEmpty"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_ArmorStandEmpty"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_ArmorStandEmpty" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_ArmorStandEmpty"]</xpath>
+            <value>
+              <costStuffCount>5</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_ArmorStandEmpty"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_ArmorStandEmpty"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_ArmorStandFull"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_ArmorStandFull" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_ArmorStandFull"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_ArmorStandFull"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_ArmorStandFull" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_ArmorStandFull"]</xpath>
+            <value>
+              <costStuffCount>5</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_ArmorStandFull"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_ArmorStandFull"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_BucketEmpty"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_BucketEmpty" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_BucketEmpty"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_BucketEmpty"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_BucketEmpty" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_BucketEmpty"]</xpath>
+            <value>
+              <costStuffCount>2</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_BucketEmpty"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_BucketEmpty"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_BucketwithWater"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_BucketwithWater" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_BucketwithWater"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_BucketwithWater"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_BucketwithWater" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_BucketwithWater"]</xpath>
+            <value>
+              <costStuffCount>2</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_BucketwithWater"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_BucketwithWater"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenChest"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenChest" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenChest"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenChest"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenChest" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenChest"]</xpath>
+            <value>
+              <costStuffCount>10</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenChest"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenChest"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenChestLarge"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenChestLarge" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenChestLarge"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenChestLarge"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenChestLarge" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenChestLarge"]</xpath>
+            <value>
+              <costStuffCount>20</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenChestLarge"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenChestLarge"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WeaponRackEmpty"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WeaponRackEmpty" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WeaponRackEmpty"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WeaponRackEmpty"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WeaponRackEmpty" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WeaponRackEmpty"]</xpath>
+            <value>
+              <costStuffCount>10</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WeaponRackEmpty"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WeaponRackEmpty"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WeaponRackSwords"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WeaponRackSwords" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WeaponRackSwords"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WeaponRackSwords"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WeaponRackSwords" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WeaponRackSwords"]</xpath>
+            <value>
+              <costStuffCount>10</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WeaponRackSwords"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WeaponRackSwords"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WeaponRackSpears"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WeaponRackSpears" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WeaponRackSpears"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WeaponRackSpears"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WeaponRackSpears" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WeaponRackSpears"]</xpath>
+            <value>
+              <costStuffCount>10</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WeaponRackSpears"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WeaponRackSpears"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenSign"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenSign" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenSign"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenSign"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenSign" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenSign"]</xpath>
+            <value>
+              <costStuffCount>5</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenSign"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenSign"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_TanningRack"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_TanningRack" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_TanningRack"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_TanningRack"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_TanningRack" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_TanningRack"]</xpath>
+            <value>
+              <costStuffCount>10</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_TanningRack"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_TanningRack"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenPlatform"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenPlatform" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenPlatform"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenPlatform"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenPlatform" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenPlatform"]</xpath>
+            <value>
+              <costStuffCount>2</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WoodenPlatform"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WoodenPlatform"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Glowstool"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Glowstool" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Glowstool"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Glowstool"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Glowstool" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Glowstool"]</xpath>
+            <value>
+              <costStuffCount>2</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Glowstool"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Glowstool"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Agarilux"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Agarilux" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Agarilux"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Agarilux"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Agarilux" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Agarilux"]</xpath>
+            <value>
+              <costStuffCount>2</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Agarilux"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Agarilux"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Bryolux"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Bryolux" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Bryolux"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Bryolux"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Bryolux" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Bryolux"]</xpath>
+            <value>
+              <costStuffCount>2</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Bryolux"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Bryolux"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Rose"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Rose" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Rose"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Rose"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Rose" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Rose"]</xpath>
+            <value>
+              <costStuffCount>2</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Rose"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Rose"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Daylily"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Daylily" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Daylily"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Daylily"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Daylily" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Daylily"]</xpath>
+            <value>
+              <costStuffCount>2</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Daylily"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Daylily"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Rice"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Rice" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Rice"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Rice"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Rice" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Rice"]</xpath>
+            <value>
+              <costStuffCount>2</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Rice"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Rice"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Potato"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Potato" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Potato"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Potato"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Potato" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Potato"]</xpath>
+            <value>
+              <costStuffCount>2</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Potato"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Potato"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Corn"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Corn" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Corn"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Corn"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Corn" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Corn"]</xpath>
+            <value>
+              <costStuffCount>2</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Corn"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Corn"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Strawberry"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Strawberry" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Strawberry"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Strawberry"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Strawberry" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Strawberry"]</xpath>
+            <value>
+              <costStuffCount>2</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Strawberry"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Strawberry"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Haygrass"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Haygrass" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Haygrass"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Haygrass"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Haygrass" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Haygrass"]</xpath>
+            <value>
+              <costStuffCount>2</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Haygrass"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Haygrass"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Cotton"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Cotton" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Cotton"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Cotton"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Cotton" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Cotton"]</xpath>
+            <value>
+              <costStuffCount>2</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Cotton"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Cotton"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Devilstrand"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Devilstrand" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Devilstrand"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Devilstrand"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Devilstrand" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Devilstrand"]</xpath>
+            <value>
+              <costStuffCount>2</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Devilstrand"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Devilstrand"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Healroot"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Healroot" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Healroot"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Healroot"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Healroot" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Healroot"]</xpath>
+            <value>
+              <costStuffCount>2</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Healroot"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Healroot"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Hops"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Hops" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Hops"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Hops"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Hops" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Hops"]</xpath>
+            <value>
+              <costStuffCount>2</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Hops"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Hops"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Smokeleaf"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Smokeleaf" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Smokeleaf"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Smokeleaf"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Smokeleaf" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Smokeleaf"]</xpath>
+            <value>
+              <costStuffCount>2</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Smokeleaf"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Smokeleaf"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Psychoid"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Psychoid" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Psychoid"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Psychoid"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Psychoid" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Psychoid"]</xpath>
+            <value>
+              <costStuffCount>2</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Psychoid"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Psychoid"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_BurnedTree"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_BurnedTree" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_BurnedTree"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_BurnedTree"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_BurnedTree" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_BurnedTree"]</xpath>
+            <value>
+              <costStuffCount>5</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_BurnedTree"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_BurnedTree"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WillowTree"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WillowTree" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WillowTree"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WillowTree"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WillowTree" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WillowTree"]</xpath>
+            <value>
+              <costStuffCount>5</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_WillowTree"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_WillowTree"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_CypressTree"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_CypressTree" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_CypressTree"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_CypressTree"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_CypressTree" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_CypressTree"]</xpath>
+            <value>
+              <costStuffCount>5</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_CypressTree"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_CypressTree"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_MapleTree"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_MapleTree" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_MapleTree"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_MapleTree"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_MapleTree" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_MapleTree"]</xpath>
+            <value>
+              <costStuffCount>5</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_MapleTree"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_MapleTree"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Chokevine"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Chokevine" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Chokevine"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Chokevine"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Chokevine" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Chokevine"]</xpath>
+            <value>
+              <costStuffCount>5</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Chokevine"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Chokevine"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_OakTree"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_OakTree" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_OakTree"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_OakTree"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_OakTree" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_OakTree"]</xpath>
+            <value>
+              <costStuffCount>5</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_OakTree"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_OakTree"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_PoplarTree"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_PoplarTree" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_PoplarTree"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_PoplarTree"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_PoplarTree" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_PoplarTree"]</xpath>
+            <value>
+              <costStuffCount>5</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_PoplarTree"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_PoplarTree"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_PineTree"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_PineTree" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_PineTree"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_PineTree"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_PineTree" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_PineTree"]</xpath>
+            <value>
+              <costStuffCount>5</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_PineTree"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_PineTree"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_BirchTree"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_BirchTree" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_BirchTree"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_BirchTree"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_BirchTree" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_BirchTree"]</xpath>
+            <value>
+              <costStuffCount>5</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_BirchTree"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_BirchTree"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_TeakTree"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_TeakTree" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_TeakTree"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_TeakTree"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_TeakTree" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_TeakTree"]</xpath>
+            <value>
+              <costStuffCount>5</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_TeakTree"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_TeakTree"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_CecropiaTree"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_CecropiaTree" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_CecropiaTree"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_CecropiaTree"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_CecropiaTree" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_CecropiaTree"]</xpath>
+            <value>
+              <costStuffCount>5</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_CecropiaTree"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_CecropiaTree"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_PalmTree"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_PalmTree" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_PalmTree"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_PalmTree"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_PalmTree" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_PalmTree"]</xpath>
+            <value>
+              <costStuffCount>5</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_PalmTree"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_PalmTree"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_BambooTree"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_BambooTree" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_BambooTree"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_BambooTree"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_BambooTree" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_BambooTree"]</xpath>
+            <value>
+              <costStuffCount>5</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_BambooTree"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_BambooTree"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_DragoTree"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_DragoTree" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_DragoTree"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_DragoTree"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_DragoTree" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_DragoTree"]</xpath>
+            <value>
+              <costStuffCount>5</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_DragoTree"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_DragoTree"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_SaguaroCactus"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_SaguaroCactus" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_SaguaroCactus"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_SaguaroCactus"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_SaguaroCactus" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_SaguaroCactus"]</xpath>
+            <value>
+              <costStuffCount>5</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_SaguaroCactus"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_SaguaroCactus"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Agave"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Agave" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Agave"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Agave"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Agave" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Agave"]</xpath>
+            <value>
+              <costStuffCount>2</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Agave"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Agave"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_PincushionCactus"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_PincushionCactus" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_PincushionCactus"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_PincushionCactus"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_PincushionCactus" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_PincushionCactus"]</xpath>
+            <value>
+              <costStuffCount>2</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_PincushionCactus"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_PincushionCactus"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_GrassShort"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_GrassShort" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_GrassShort"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_GrassShort"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_GrassShort" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_GrassShort"]</xpath>
+            <value>
+              <costStuffCount>1</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_GrassShort"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_GrassShort"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_GrassLong"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_GrassLong" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_GrassLong"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_GrassLong"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_GrassLong" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_GrassLong"]</xpath>
+            <value>
+              <costStuffCount>1</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_GrassLong"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_GrassLong"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Bush"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Bush" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Bush"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Bush"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Bush" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Bush"]</xpath>
+            <value>
+              <costStuffCount>3</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Bush"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Bush"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Brambles"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Brambles" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Brambles"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Brambles"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Brambles" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Brambles"]</xpath>
+            <value>
+              <costStuffCount>3</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Brambles"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Brambles"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_BerryBush"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_BerryBush" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_BerryBush"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_BerryBush"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_BerryBush" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_BerryBush"]</xpath>
+            <value>
+              <costStuffCount>3</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_BerryBush"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_BerryBush"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Alocasia"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Alocasia" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Alocasia"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Alocasia"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Alocasia" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Alocasia"]</xpath>
+            <value>
+              <costStuffCount>3</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Alocasia"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Alocasia"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Clivia"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Clivia" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Clivia"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Clivia"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Clivia" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Clivia"]</xpath>
+            <value>
+              <costStuffCount>3</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Clivia"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Clivia"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Rafflesia"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Rafflesia" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Rafflesia"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Rafflesia"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Rafflesia" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Rafflesia"]</xpath>
+            <value>
+              <costStuffCount>3</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_Rafflesia"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_Rafflesia"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Furniture Expanded - Props and Decor</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFEPD_PowerPole"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_PowerPole" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_PowerPole"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_PowerPole"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_PowerPole" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFEPD_PowerPole"]</xpath>
+            <value>
+              <costStuffCount>5</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFEPD_PowerPole"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFEPD_PowerPole"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

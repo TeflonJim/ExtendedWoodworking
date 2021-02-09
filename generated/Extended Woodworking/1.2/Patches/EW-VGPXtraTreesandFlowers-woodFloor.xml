@@ -120,10 +120,10 @@
                 <Beauty>1.5</Beauty>
               </statBases>
               <constructEffect>ConstructWood</constructEffect>
+              <designatorDropdown>Floor_WoodPlank</designatorDropdown>
               <costList>
                 <WoodLog_RedMaple>6</WoodLog_RedMaple>
               </costList>
-              <designatorDropdown>Floor_WoodPlank</designatorDropdown>
             </TerrainDef>
           </value>
         </li>

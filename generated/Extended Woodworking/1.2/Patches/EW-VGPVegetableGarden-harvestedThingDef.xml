@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>VGP Vegetable Garden</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Plant_TreeBee"]/plant</xpath>
+          <value>
+            <harvestedThingDef>WoodLog_Bee</harvestedThingDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Plant_TreeBamboo"]/plant</xpath>
+          <value>
+            <harvestedThingDef>WoodLog_Bamboo</harvestedThingDef>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

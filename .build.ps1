@@ -58,16 +58,26 @@ task Setup {
             SupportedMods      = @(
                 'Core'
                 'Royalty'
-                '[SYR] Universal Fermenter'
+                '[T] ExpandedCloth'
                 '[T] MoreFloors'
                 'A Dog Said... Animal Prosthetics'
                 'A RimWorld of Magic'
-                'Area Rugs'
-                'Expanded Prosthetics and Organ Engineering'
-                'Fertile Fields'
+                'Advanced Power Plus'
+                'Area Rugs 2.0'
+                'Ceramics'
+                'Coal Expanded'
+                'Fertile Fields [1.1]'
                 'GloomyFurniture'
-                'Misc. Training'
+                'Medieval Times Unofficial Update'
+                'Project RimFactory Revived'
+                'Reclaim, Reuse, Recycle'
+                'RIMkea'
+                'SRTS Expanded'
+                'Vanilla Factions Expanded - Settlers'
+                'Vanilla Furniture Expanded - Props and Decor'
+                'VGP Vegetable Garden'
                 'VGP Xtra Trees and Flowers'
+                'Westerado (Continued)'
             )
             SupportedFloorMods = @(
                 'Evt Floors'
@@ -94,7 +104,7 @@ task ValidateSupportedMods {
         Where-Object { -not (Get-RWMod -Name $_) }
 
     if ($missingMods) {
-        throw 'Cannot find mod(s) required for patch generation: {0}' -f ($missingMods -join ', ')
+        throw ('Cannot find mod(s) required for patch generation: {0}' -f ($missingMods -join ', '))
     }
 }
 
@@ -394,18 +404,10 @@ task CreateCostListPatch {
         $modInfo = Get-RWMod $mod
         $shortName = $mod -replace '[^A-Za-z0-9]'
 
-        Get-ChildItem (Join-Path $modInfo.Path 'Defs') -Filter *.xml -Recurse | ForEach-Object {
-            $item = $_
-
-            $xDocument = [System.Xml.Linq.XDocument]::Load($item.FullName)
-            [System.Xml.XPath.Extensions]::XPathSelectElements(
-                $xDocument,
-                '/Defs/*[name()!="TerrainDef" and defName and not(stuffCategories) and ./costList/WoodLog]'
-            )
-        } | ForEach-Object {
+        $modInfo | Get-RWModDef -XPathQuery '/Defs/*[name()!="TerrainDef" and defName and not(stuffCategories) and ./costList/WoodLog]' | ForEach-Object {
             [PSCustomObject]@{
                 Mod  = $shortName
-                Node = $_
+                Node = $_.XElement
             }
         } | Group-Object Mod | ForEach-Object {
             $newName = 'Patches/EW-%MOD%-costList.xml' -replace '%MOD%', $_.Name
@@ -420,7 +422,7 @@ task CreateCostListPatch {
 
             $xDocument = [System.Xml.Linq.XDocument]::Load($newPath)
             $xDocument.Descendants('mods') | ForEach-Object {
-                $_.Element('li').Value = (Get-RWMod -Name $mod).RawName
+                $_.Element('li').Value = $modInfo.RawName
             }
 
             $template = $xDocument.Root.Element('Operation')
@@ -447,18 +449,10 @@ task CreateRecipeDefPatch {
         $modInfo = Get-RWMod $mod
         $shortName = $mod -replace '[^A-Za-z0-9]'
 
-        Get-ChildItem (Join-Path $modInfo.Path 'Defs') -Filter *.xml -Recurse | ForEach-Object {
-            $item = $_
-
-            $xDocument = [System.Xml.Linq.XDocument]::Load($item.FullName)
-            [System.Xml.XPath.Extensions]::XPathSelectElements(
-                $xDocument,
-                '/Defs/RecipeDef[(@Abstract="False" or not(@Abstract)) and (ingredients/li/filter/thingDefs/li="WoodLog" or fixedIngredientFilter/thingDefs/li="WoodLog")]'
-            )
-        } | ForEach-Object {
+        $modInfo | Get-RWModDef -XPathQuery '/Defs/RecipeDef[(@Abstract="False" or not(@Abstract)) and (ingredients/li/filter/thingDefs/li="WoodLog" or fixedIngredientFilter/thingDefs/li="WoodLog")]' | ForEach-Object {
             [PSCustomObject]@{
                 Mod  = $shortName
-                Node = $_
+                Node = $_.XElement
             }
         } | Group-Object Mod | ForEach-Object {
             $newName = 'Patches/EW-%MOD%-ingredients.xml' -replace '%MOD%', $_.Name
@@ -510,18 +504,12 @@ task CreateHarvestedThingDefPatch {
         $modInfo = Get-RWMod $mod
         $shortName = $mod -replace '[^A-Za-z0-9]'
 
-        Get-ChildItem (Join-Path $modInfo.Path 'Defs') -Filter *.xml -Recurse | ForEach-Object {
-            $item = $_
-
-            $xDocument = [System.Xml.Linq.XDocument]::Load($item.FullName)
-            $xDocument.Descendants('defName').Where{
-                $_.Value -match 'Plant_Tree' -and
-                $buildInfo.Data.woodStats.Contains($_.Value -replace 'Plant_Tree')
-            }.ForEach{
-                [PSCustomObject]@{
-                    Mod      = $shortName
-                    Name     = $_.Value -replace 'Plant_Tree'
-                }
+        $modInfo | Get-RWModDef -Version $buildInfo.RimWorldVersion.ShortVersion -XPathQuery (
+            '/Defs/ThingDef[contains(defName, "Plant_Tree")]'
+        ) | ForEach-Object {
+            [PSCustomObject]@{
+                Mod  = $shortName
+                Name = $_.DefName -replace 'Plant_Tree'
             }
         } | Group-Object Mod | ForEach-Object {
             $newName = 'Patches/EW-%MOD%-harvestedThingDef.xml' -replace '%MOD%', $_.Name
