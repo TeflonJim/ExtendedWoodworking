@@ -6,6 +6,7 @@
       <li>Advanced Power Plus</li>
     </mods>
     <match Class="PatchOperationSequence">
+      <success>Always</success>
       <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="sd_adv_powergen_WatermillGenerator"]/costList/WoodLog</xpath>

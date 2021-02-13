@@ -6,6 +6,7 @@
       <li>A RimWorld of Magic</li>
     </mods>
     <match Class="PatchOperationSequence">
+      <success>Always</success>
       <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="TM_ElephantSpear"]/costList/WoodLog</xpath>
@@ -42,16 +43,6 @@
             <xpath>/Defs/ThingDef[defName="TM_ElephantSpear"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>A RimWorld of Magic</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="TM_ElephantBow"]/costList/WoodLog</xpath>
         </li>
@@ -87,16 +78,6 @@
             <xpath>/Defs/ThingDef[defName="TM_ElephantBow"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>A RimWorld of Magic</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="TM_ThrumboAxe"]/costList/WoodLog</xpath>
         </li>
@@ -132,16 +113,6 @@
             <xpath>/Defs/ThingDef[defName="TM_ThrumboAxe"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>A RimWorld of Magic</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="TM_ThrumBow"]/costList/WoodLog</xpath>
         </li>
@@ -177,16 +148,6 @@
             <xpath>/Defs/ThingDef[defName="TM_ThrumBow"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>A RimWorld of Magic</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="TM_FireWand"]/costList/WoodLog</xpath>
         </li>
@@ -222,16 +183,6 @@
             <xpath>/Defs/ThingDef[defName="TM_FireWand"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>A RimWorld of Magic</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="TM_IceWand"]/costList/WoodLog</xpath>
         </li>
@@ -267,16 +218,6 @@
             <xpath>/Defs/ThingDef[defName="TM_IceWand"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>A RimWorld of Magic</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="TM_LightningWand"]/costList/WoodLog</xpath>
         </li>
@@ -312,16 +253,6 @@
             <xpath>/Defs/ThingDef[defName="TM_LightningWand"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>A RimWorld of Magic</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="TM_DefenderStaff"]/costList/WoodLog</xpath>
         </li>
@@ -357,16 +288,6 @@
             <xpath>/Defs/ThingDef[defName="TM_DefenderStaff"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>A RimWorld of Magic</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="TM_BlazingPowerStaff"]/costList/WoodLog</xpath>
         </li>

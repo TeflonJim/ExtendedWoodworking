@@ -6,6 +6,7 @@
       <li>SRTS Expanded</li>
     </mods>
     <match Class="PatchOperationSequence">
+      <success>Always</success>
       <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="ShuttleComp_Structural"]/costList/WoodLog</xpath>

@@ -15,7 +15,7 @@ Previous versions of this module can be downloaded from GitHub:
 
 https://github.com/TeflonJim/ExtendedWoodworking/releases
 
-This release supports RimWorld 1.0 and 1.1.
+This release supports RimWorld 1.0, 1.1, and 1.2.
 
 This mod changes trees so that when they are cut down, they produce wood of that tree type. Different wood types have slightly different properties.
 
@@ -25,17 +25,29 @@ A Woodworking table is available to paint wood or convert specific types of wood
 
 Support for the Royalty is included and Extended Woodworking provides patches for the following mods:
 
+* [T] ExpandedCloth
 * [T] MoreFloors
 * A Dog Said... Animal Prosthetics
 * A RimWorld of Magic
-* Area Rugs
-* Children, school and learning
-* Expanded Prosthetics and Organ Engineering
-* Fertile Fields
+* Advanced Power Plus
+* Area Rugs 2.0
+* Caravan Equipment
+* Caravan Gear [1.1]
+* Ceramics
+* Coal Expanded
+* Fertile Fields [1.1]
+* Fortifications - Neolithic
+* Gloomy Deco
 * GloomyFurniture
-* Misc. Training
-* RimWriter - Books, Scrolls, Tablets, and Libraries
+* Medieval Times Unofficial Update
+* Project RimFactory - Materials
+* Reclaim, Reuse, Recycle
+* RIMkea
+* SRTS Expanded
+* Vanilla Factions Expanded - Settlers
+* Vanilla Furniture Expanded - Props and Decor
 * VGP Xtra Trees and Flowers
+* Westerado (Continued)
 
 Cost lists, ingredient lists, and fuel lists are updated for each mod.
 
@@ -54,13 +66,28 @@ The following mods contain floors, the defs are duplicated for each available wo
   <loadAfter>
     <li>ludeon.rimworld</li>
     <li>ludeon.rimworld.royalty</li>
+    <li>telkir.tmods.expandedcloth</li>
     <li>telkir.tmods.morefloors</li>
     <li>spoonshortage.adogsaidanimalprosthetics</li>
     <li>torann.arimworldofmagic</li>
+    <li>sulusdacor.james76543.meltup.advancedpowerplus</li>
     <li>thegoofyone.arearugs</li>
-    <li>ykara.epoe</li>
+    <li>squirtingelephant.caravanequipment</li>
+    <li>jelly.caravangear</li>
+    <li>n7huntsman.ceramics</li>
+    <li>neceros.coalexpanded</li>
+    <li>jamaicancastle.rf.fertilefields</li>
+    <li>aoba.fortress.neolithic</li>
+    <li>dalrae.gloomydeco</li>
     <li>solaris.furniturebase</li>
-    <li>haplo.miscellaneous.training</li>
+    <li>vindar.medievaltimes</li>
+    <li>prf.materials</li>
+    <li>doctorvangogh.reclaimreuserecycle</li>
+    <li>spoonshortage.rimkea</li>
+    <li>smashphil.neceros.srtsexpanded</li>
+    <li>oskarpotocki.vanillafactionsexpanded.settlersmodule</li>
+    <li>vanillaexpanded.vfepropsanddecor</li>
     <li>dismarzero.vgp.xtratreesandflowers</li>
+    <li>mlie.westerado</li>
   </loadAfter>
 </ModMetaData>

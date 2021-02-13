@@ -23,7 +23,7 @@ task Build @(
     'CreateWoodFloorPatch'
     'CreateFloorPatches'
     'CleanPatches'
-    'UpdateVersion'
+    'UpdateMetadata'
     'CreatePackage'
     'UpdateLocal'
 )
@@ -64,18 +64,20 @@ task Setup {
                 'A RimWorld of Magic'
                 'Advanced Power Plus'
                 'Area Rugs 2.0'
+                'Caravan Equipment'
+                'Caravan Gear [1.1]'
                 'Ceramics'
                 'Coal Expanded'
                 'Fertile Fields [1.1]'
+                'Fortifications - Neolithic'
                 'GloomyFurniture'
                 'Medieval Times Unofficial Update'
-                'Project RimFactory Revived'
+                'Project RimFactory - Materials'
                 'Reclaim, Reuse, Recycle'
                 'RIMkea'
                 'SRTS Expanded'
                 'Vanilla Factions Expanded - Settlers'
                 'Vanilla Furniture Expanded - Props and Decor'
-                'VGP Vegetable Garden'
                 'VGP Xtra Trees and Flowers'
                 'Westerado (Continued)'
             )
@@ -425,7 +427,12 @@ task CreateCostListPatch {
                 $_.Element('li').Value = $modInfo.RawName
             }
 
-            $template = $xDocument.Root.Element('Operation')
+            if ($_.Name -eq 'Core') {
+                $parent = $xDocument.Root.Element('Operation').Element('operations')
+            } else {
+                $parent = $xDocument.Root.Element('Operation').Element('match').Element('operations')
+            }
+            $template = [System.Xml.Linq.XElement[]]$parent.Elements()
 
             foreach ($item in $_.Group) {
                 foreach ($templateItem in $template) {
@@ -433,11 +440,14 @@ task CreateCostListPatch {
                     $xmlString = $xmlString -replace '%COST%', $item.Node.Element('costList').Element('WoodLog').Value
 
                     $xElement = [System.Xml.Linq.XElement]::new($xmlString)
-                    $xDocument.Root.Add($xElement)
+
+                    $parent.Add($xElement)
                 }
             }
 
-            $template.ForEach{ $_.Remove() }
+            $template.ForEach{
+                $_.Remove()
+            }
 
             $xDocument.Save($newPath)
         }
@@ -470,7 +480,12 @@ task CreateRecipeDefPatch {
                 $_.Element('li').Value = (Get-RWMod -Name $mod).RawName
             }
 
-            $template = $xDocument.Root.Element('Operation')
+            if ($_.Name -eq 'Core') {
+                $parent = $xDocument.Root.Element('Operation').Element('operations')
+            } else {
+                $parent = $xDocument.Root.Element('Operation').Element('match').Element('operations')
+            }
+            $template = [System.Xml.Linq.XElement[]]$parent.Elements()
 
             foreach ($item in $_.Group) {
                 if ($element = $item.Node.Element('defName')) {
@@ -488,7 +503,8 @@ task CreateRecipeDefPatch {
                     $xmlString = $xmlString -replace '%COUNT%', $count
 
                     $xElement = [System.Xml.Linq.XElement]::new($xmlString)
-                    $xDocument.Root.Add($xElement)
+
+                    $parent.Add($xElement)
                 }
             }
 
@@ -511,7 +527,7 @@ task CreateHarvestedThingDefPatch {
                 Mod  = $shortName
                 Name = $_.DefName -replace 'Plant_Tree'
             }
-        } | Group-Object Mod | ForEach-Object {
+        } | Where-Object { $buildInfo.Data.WoodStats.Contains($_.Name) } | Group-Object Mod | ForEach-Object {
             $newName = 'Patches/EW-%MOD%-harvestedThingDef.xml' -replace '%MOD%', $_.Name
             $newPath = Join-Path $buildInfo.Path.GeneratedVersion $newName
             if ($_.Name -eq 'Core') {
@@ -858,7 +874,7 @@ task CleanPatches {
     Get-Item (Join-Path $buildInfo.Path.GeneratedVersion 'Patches\EW-*%*') | Remove-Item
 }
 
-task UpdateVersion {
+task UpdateMetadata {
     $version = $buildInfo.Version
     $version = switch ($ReleaseType) {
         'Major' { [Version]::new($version.Major + 1, 0, 0) }
@@ -866,17 +882,48 @@ task UpdateVersion {
         'Build' { [Version]::new($version.Major, $version.Minor, $version.Build + 1) }
     }
 
-    $path = Join-Path $psscriptroot 'source\About\Manifest.xml'
+    $metadataPath = Join-Path -Path $buildInfo.Path.Generated -ChildPath 'About'
+
+    # About
+    $path = Join-Path -Path $psscriptroot -ChildPath 'source\About\About.xml'
+    Copy-Item $path -Destination $metadataPath
+    $path = Join-Path -Path $metadataPath -ChildPath 'About.xml'
+
+    $xDocument = [System.Xml.Linq.XDocument]::Load($path)
+    $xElement = $xDocument.Element('ModMetaData').Element('loadAfter')
+    foreach ($mod in $buildInfo.Data.SupportedMods) {
+        $modInfo = Get-RWMod $mod
+        $xElement.Add(
+            [System.Xml.Linq.XElement]::new(
+                [System.Xml.Linq.XName]'li',
+                $modInfo.PackageID
+            )
+        )
+    }
+
+    $xElement = $xDocument.Element('ModMetaData').Element('description')
+    $xElement.Value = $xElement.Value -replace '%SUPPORTED_MODS%', @(
+        ($buildInfo.Data.SupportedMods -notmatch '^(Core|Royalty)$' | ForEach-Object { '* {0}' -f $_ }) -join "`n"
+    )
+    $xElement.Value = $xElement.Value -replace '%SUPPORTED_FLOOR_MODS%', @(
+        ($buildInfo.Data.SupportedFloorMods | ForEach-Object { '* {0}' -f $_ }) -join "`n"
+    )
+
+    $xDocument.Save($path)
+
+    # Manifest
+    $path = Join-Path -Path $psscriptroot -ChildPath 'source\About\Manifest.xml'
     $xDocument = [System.Xml.Linq.XDocument]::Load($path)
     $xDocument.Element('Manifest').Element('version').Value = $version
     $xDocument.Save($path)
-    Join-Path -Path $buildInfo.Path.Generated -ChildPath 'About' | Copy-Item $path -Destination { $_ }
+    Copy-Item $path -Destination $metadataPath
 
-    $path = Join-Path $psscriptroot 'source\About\ModSync.xml'
+    # ModSync
+    $path = Join-Path -Path $psscriptroot -ChildPath 'source\About\ModSync.xml'
     $xDocument = [System.Xml.Linq.XDocument]::Load($path)
     $xDocument.Descendants('Version').ForEach{ $_.Value = $version }
     $xDocument.Save($path)
-    Join-Path -Path $buildInfo.Path.Generated -ChildPath 'About' | Copy-Item $path -Destination { $_ }
+    Copy-Item $path -Destination $metadataPath
 }
 
 task CreatePackage {

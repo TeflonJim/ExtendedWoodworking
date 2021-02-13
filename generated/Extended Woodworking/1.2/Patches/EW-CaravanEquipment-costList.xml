@@ -3,24 +3,24 @@
   <Operation Class="PatchOperationFindMod">
     <success>Always</success>
     <mods>
-      <li>Coal Expanded</li>
+      <li>Caravan Equipment</li>
     </mods>
     <match Class="PatchOperationSequence">
       <success>Always</success>
       <operations>
         <li Class="PatchOperationRemove">
-          <xpath>/Defs/ThingDef[defName="NECActiveCooler"]/costList/WoodLog</xpath>
+          <xpath>/Defs/ThingDef[defName="LightAlloysWorkbench"]/costList/WoodLog</xpath>
         </li>
         <li Class="PatchOperationConditional">
-          <xpath>/Defs/ThingDef[defName="NECActiveCooler" and (stuffCategories)]</xpath>
+          <xpath>/Defs/ThingDef[defName="LightAlloysWorkbench" and (stuffCategories)]</xpath>
           <match Class="PatchOperationAdd">
-            <xpath>/Defs/ThingDef[defName="NECActiveCooler"]/stuffCategories</xpath>
+            <xpath>/Defs/ThingDef[defName="LightAlloysWorkbench"]/stuffCategories</xpath>
             <value>
               <li>Woody</li>
             </value>
           </match>
           <nomatch Class="PatchOperationAdd">
-            <xpath>/Defs/ThingDef[defName="NECActiveCooler"]</xpath>
+            <xpath>/Defs/ThingDef[defName="LightAlloysWorkbench"]</xpath>
             <value>
               <stuffCategories>
                 <li>Woody</li>
@@ -29,18 +29,18 @@
           </nomatch>
         </li>
         <li Class="PatchOperationConditional">
-          <xpath>/Defs/ThingDef[defName="NECActiveCooler" and not(costStuffCount)]</xpath>
+          <xpath>/Defs/ThingDef[defName="LightAlloysWorkbench" and not(costStuffCount)]</xpath>
           <match Class="PatchOperationAdd">
-            <xpath>/Defs/ThingDef[defName="NECActiveCooler"]</xpath>
+            <xpath>/Defs/ThingDef[defName="LightAlloysWorkbench"]</xpath>
             <value>
-              <costStuffCount>50</costStuffCount>
+              <costStuffCount>100</costStuffCount>
             </value>
           </match>
         </li>
         <li Class="PatchOperationConditional">
-          <xpath>/Defs/ThingDef[defName="NECActiveCooler"]/constructEffect</xpath>
+          <xpath>/Defs/ThingDef[defName="LightAlloysWorkbench"]/constructEffect</xpath>
           <match Class="PatchOperationRemove">
-            <xpath>/Defs/ThingDef[defName="NECActiveCooler"]/constructEffect</xpath>
+            <xpath>/Defs/ThingDef[defName="LightAlloysWorkbench"]/constructEffect</xpath>
           </match>
         </li>
       </operations>

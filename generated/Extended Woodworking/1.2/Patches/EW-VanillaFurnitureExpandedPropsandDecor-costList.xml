@@ -6,6 +6,7 @@
       <li>Vanilla Furniture Expanded - Props and Decor</li>
     </mods>
     <match Class="PatchOperationSequence">
+      <success>Always</success>
       <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_FoodBox"]/costList/WoodLog</xpath>
@@ -42,16 +43,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_FoodBox"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_Hedge"]/costList/WoodLog</xpath>
         </li>
@@ -87,16 +78,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_Hedge"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_WoodenLogs"]/costList/WoodLog</xpath>
         </li>
@@ -132,16 +113,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_WoodenLogs"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_WoodenLogsLarge"]/costList/WoodLog</xpath>
         </li>
@@ -177,16 +148,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_WoodenLogsLarge"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_WoodenWagon"]/costList/WoodLog</xpath>
         </li>
@@ -222,16 +183,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_WoodenWagon"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_WoodenATM"]/costList/WoodLog</xpath>
         </li>
@@ -267,16 +218,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_WoodenATM"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_WoodenBookshelf"]/costList/WoodLog</xpath>
         </li>
@@ -312,16 +253,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_WoodenBookshelf"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_WoodenCupboard"]/costList/WoodLog</xpath>
         </li>
@@ -357,16 +288,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_WoodenCupboard"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_WoodenCupboardDouble"]/costList/WoodLog</xpath>
         </li>
@@ -402,16 +323,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_WoodenCupboardDouble"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_WoodenCupboardPlates"]/costList/WoodLog</xpath>
         </li>
@@ -447,16 +358,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_WoodenCupboardPlates"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_WoodenCupboardNarrow"]/costList/WoodLog</xpath>
         </li>
@@ -492,16 +393,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_WoodenCupboardNarrow"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_WoodenTallCabinet"]/costList/WoodLog</xpath>
         </li>
@@ -537,16 +428,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_WoodenTallCabinet"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_WoodenShortCupboard"]/costList/WoodLog</xpath>
         </li>
@@ -582,16 +463,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_WoodenShortCupboard"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_WoodenShortCupboardPlates"]/costList/WoodLog</xpath>
         </li>
@@ -627,16 +498,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_WoodenShortCupboardPlates"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_WoodenDivider"]/costList/WoodLog</xpath>
         </li>
@@ -672,16 +533,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_WoodenDivider"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_WoodenPlankDivider"]/costList/WoodLog</xpath>
         </li>
@@ -717,16 +568,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_WoodenPlankDivider"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_WoodenMirror"]/costList/WoodLog</xpath>
         </li>
@@ -762,16 +603,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_WoodenMirror"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_WoodenVendingMachine"]/costList/WoodLog</xpath>
         </li>
@@ -807,16 +638,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_WoodenVendingMachine"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_BoxLarge"]/costList/WoodLog</xpath>
         </li>
@@ -852,16 +673,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_BoxLarge"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_BoxSmall"]/costList/WoodLog</xpath>
         </li>
@@ -897,16 +708,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_BoxSmall"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_CardboardBoxLarge"]/costList/WoodLog</xpath>
         </li>
@@ -942,16 +743,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_CardboardBoxLarge"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_CardboardBoxSmall"]/costList/WoodLog</xpath>
         </li>
@@ -987,16 +778,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_CardboardBoxSmall"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_PalletCardboard"]/costList/WoodLog</xpath>
         </li>
@@ -1032,16 +813,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_PalletCardboard"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_PalletBoxes"]/costList/WoodLog</xpath>
         </li>
@@ -1077,16 +848,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_PalletBoxes"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_Pallet"]/costList/WoodLog</xpath>
         </li>
@@ -1122,16 +883,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_Pallet"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_PalletBarrelGreen"]/costList/WoodLog</xpath>
         </li>
@@ -1167,16 +918,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_PalletBarrelGreen"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_PalletBarrelGrey"]/costList/WoodLog</xpath>
         </li>
@@ -1212,16 +953,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_PalletBarrelGrey"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_PalletBarrelRed"]/costList/WoodLog</xpath>
         </li>
@@ -1257,16 +988,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_PalletBarrelRed"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_PalletBarrelYellow"]/costList/WoodLog</xpath>
         </li>
@@ -1302,16 +1023,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_PalletBarrelYellow"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_PalletBarrelBlue"]/costList/WoodLog</xpath>
         </li>
@@ -1347,16 +1058,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_PalletBarrelBlue"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_Planks"]/costList/WoodLog</xpath>
         </li>
@@ -1392,16 +1093,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_Planks"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_BrewingBarrel"]/costList/WoodLog</xpath>
         </li>
@@ -1437,16 +1128,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_BrewingBarrel"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_WineRack"]/costList/WoodLog</xpath>
         </li>
@@ -1482,16 +1163,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_WineRack"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_CuttingBoard"]/costList/WoodLog</xpath>
         </li>
@@ -1527,16 +1198,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_CuttingBoard"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_ArmorStandEmpty"]/costList/WoodLog</xpath>
         </li>
@@ -1572,16 +1233,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_ArmorStandEmpty"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_ArmorStandFull"]/costList/WoodLog</xpath>
         </li>
@@ -1617,16 +1268,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_ArmorStandFull"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_BucketEmpty"]/costList/WoodLog</xpath>
         </li>
@@ -1662,16 +1303,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_BucketEmpty"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_BucketwithWater"]/costList/WoodLog</xpath>
         </li>
@@ -1707,16 +1338,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_BucketwithWater"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_WoodenChest"]/costList/WoodLog</xpath>
         </li>
@@ -1752,16 +1373,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_WoodenChest"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_WoodenChestLarge"]/costList/WoodLog</xpath>
         </li>
@@ -1797,16 +1408,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_WoodenChestLarge"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_WeaponRackEmpty"]/costList/WoodLog</xpath>
         </li>
@@ -1842,16 +1443,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_WeaponRackEmpty"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_WeaponRackSwords"]/costList/WoodLog</xpath>
         </li>
@@ -1887,16 +1478,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_WeaponRackSwords"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_WeaponRackSpears"]/costList/WoodLog</xpath>
         </li>
@@ -1932,16 +1513,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_WeaponRackSpears"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_WoodenSign"]/costList/WoodLog</xpath>
         </li>
@@ -1977,16 +1548,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_WoodenSign"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_TanningRack"]/costList/WoodLog</xpath>
         </li>
@@ -2022,16 +1583,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_TanningRack"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_WoodenPlatform"]/costList/WoodLog</xpath>
         </li>
@@ -2067,16 +1618,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_WoodenPlatform"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_Glowstool"]/costList/WoodLog</xpath>
         </li>
@@ -2112,16 +1653,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_Glowstool"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_Agarilux"]/costList/WoodLog</xpath>
         </li>
@@ -2157,16 +1688,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_Agarilux"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_Bryolux"]/costList/WoodLog</xpath>
         </li>
@@ -2202,16 +1723,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_Bryolux"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_Rose"]/costList/WoodLog</xpath>
         </li>
@@ -2247,16 +1758,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_Rose"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_Daylily"]/costList/WoodLog</xpath>
         </li>
@@ -2292,16 +1793,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_Daylily"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_Rice"]/costList/WoodLog</xpath>
         </li>
@@ -2337,16 +1828,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_Rice"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_Potato"]/costList/WoodLog</xpath>
         </li>
@@ -2382,16 +1863,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_Potato"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_Corn"]/costList/WoodLog</xpath>
         </li>
@@ -2427,16 +1898,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_Corn"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_Strawberry"]/costList/WoodLog</xpath>
         </li>
@@ -2472,16 +1933,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_Strawberry"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_Haygrass"]/costList/WoodLog</xpath>
         </li>
@@ -2517,16 +1968,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_Haygrass"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_Cotton"]/costList/WoodLog</xpath>
         </li>
@@ -2562,16 +2003,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_Cotton"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_Devilstrand"]/costList/WoodLog</xpath>
         </li>
@@ -2607,16 +2038,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_Devilstrand"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_Healroot"]/costList/WoodLog</xpath>
         </li>
@@ -2652,16 +2073,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_Healroot"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_Hops"]/costList/WoodLog</xpath>
         </li>
@@ -2697,16 +2108,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_Hops"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_Smokeleaf"]/costList/WoodLog</xpath>
         </li>
@@ -2742,16 +2143,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_Smokeleaf"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_Psychoid"]/costList/WoodLog</xpath>
         </li>
@@ -2787,16 +2178,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_Psychoid"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_BurnedTree"]/costList/WoodLog</xpath>
         </li>
@@ -2832,16 +2213,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_BurnedTree"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_WillowTree"]/costList/WoodLog</xpath>
         </li>
@@ -2877,16 +2248,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_WillowTree"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_CypressTree"]/costList/WoodLog</xpath>
         </li>
@@ -2922,16 +2283,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_CypressTree"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_MapleTree"]/costList/WoodLog</xpath>
         </li>
@@ -2967,16 +2318,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_MapleTree"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_Chokevine"]/costList/WoodLog</xpath>
         </li>
@@ -3012,16 +2353,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_Chokevine"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_OakTree"]/costList/WoodLog</xpath>
         </li>
@@ -3057,16 +2388,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_OakTree"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_PoplarTree"]/costList/WoodLog</xpath>
         </li>
@@ -3102,16 +2423,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_PoplarTree"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_PineTree"]/costList/WoodLog</xpath>
         </li>
@@ -3147,16 +2458,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_PineTree"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_BirchTree"]/costList/WoodLog</xpath>
         </li>
@@ -3192,16 +2493,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_BirchTree"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_TeakTree"]/costList/WoodLog</xpath>
         </li>
@@ -3237,16 +2528,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_TeakTree"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_CecropiaTree"]/costList/WoodLog</xpath>
         </li>
@@ -3282,16 +2563,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_CecropiaTree"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_PalmTree"]/costList/WoodLog</xpath>
         </li>
@@ -3327,16 +2598,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_PalmTree"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_BambooTree"]/costList/WoodLog</xpath>
         </li>
@@ -3372,16 +2633,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_BambooTree"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_DragoTree"]/costList/WoodLog</xpath>
         </li>
@@ -3417,16 +2668,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_DragoTree"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_SaguaroCactus"]/costList/WoodLog</xpath>
         </li>
@@ -3462,16 +2703,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_SaguaroCactus"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_Agave"]/costList/WoodLog</xpath>
         </li>
@@ -3507,16 +2738,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_Agave"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_PincushionCactus"]/costList/WoodLog</xpath>
         </li>
@@ -3552,16 +2773,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_PincushionCactus"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_GrassShort"]/costList/WoodLog</xpath>
         </li>
@@ -3597,16 +2808,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_GrassShort"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_GrassLong"]/costList/WoodLog</xpath>
         </li>
@@ -3642,16 +2843,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_GrassLong"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_Bush"]/costList/WoodLog</xpath>
         </li>
@@ -3687,16 +2878,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_Bush"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_Brambles"]/costList/WoodLog</xpath>
         </li>
@@ -3732,16 +2913,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_Brambles"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_BerryBush"]/costList/WoodLog</xpath>
         </li>
@@ -3777,16 +2948,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_BerryBush"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_Alocasia"]/costList/WoodLog</xpath>
         </li>
@@ -3822,16 +2983,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_Alocasia"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_Clivia"]/costList/WoodLog</xpath>
         </li>
@@ -3867,16 +3018,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_Clivia"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_Rafflesia"]/costList/WoodLog</xpath>
         </li>
@@ -3912,16 +3053,6 @@
             <xpath>/Defs/ThingDef[defName="VFEPD_Rafflesia"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Vanilla Furniture Expanded - Props and Decor</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="VFEPD_PowerPole"]/costList/WoodLog</xpath>
         </li>

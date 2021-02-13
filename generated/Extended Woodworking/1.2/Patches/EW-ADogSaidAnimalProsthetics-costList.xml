@@ -6,6 +6,7 @@
       <li>A Dog Said... Animal Prosthetics</li>
     </mods>
     <match Class="PatchOperationSequence">
+      <success>Always</success>
       <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="TableAnimalProsthetics"]/costList/WoodLog</xpath>

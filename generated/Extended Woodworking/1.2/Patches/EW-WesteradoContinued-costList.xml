@@ -6,6 +6,7 @@
       <li>Westerado (Continued)</li>
     </mods>
     <match Class="PatchOperationSequence">
+      <success>Always</success>
       <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="PanningSpot_Westerado"]/costList/WoodLog</xpath>
@@ -42,16 +43,6 @@
             <xpath>/Defs/ThingDef[defName="PanningSpot_Westerado"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Westerado (Continued)</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="Palisade_Westerado"]/costList/WoodLog</xpath>
         </li>
@@ -87,16 +78,6 @@
             <xpath>/Defs/ThingDef[defName="Palisade_Westerado"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Westerado (Continued)</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="CampfireLarge"]/costList/WoodLog</xpath>
         </li>
@@ -132,16 +113,6 @@
             <xpath>/Defs/ThingDef[defName="CampfireLarge"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Westerado (Continued)</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="Gun_Cattleman_Westerado"]/costList/WoodLog</xpath>
         </li>
@@ -177,16 +148,6 @@
             <xpath>/Defs/ThingDef[defName="Gun_Cattleman_Westerado"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Westerado (Continued)</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="Gun_BreakActionRevolver_Westerado"]/costList/WoodLog</xpath>
         </li>
@@ -222,16 +183,6 @@
             <xpath>/Defs/ThingDef[defName="Gun_BreakActionRevolver_Westerado"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Westerado (Continued)</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="Gun_PercussionRevolver_Westerado"]/costList/WoodLog</xpath>
         </li>
@@ -267,16 +218,6 @@
             <xpath>/Defs/ThingDef[defName="Gun_PercussionRevolver_Westerado"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Westerado (Continued)</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="Gun_NavyRevolver_Westerado"]/costList/WoodLog</xpath>
         </li>
@@ -312,16 +253,6 @@
             <xpath>/Defs/ThingDef[defName="Gun_NavyRevolver_Westerado"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Westerado (Continued)</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="Gun_DoubleActionRevolver_Westerado"]/costList/WoodLog</xpath>
         </li>
@@ -357,16 +288,6 @@
             <xpath>/Defs/ThingDef[defName="Gun_DoubleActionRevolver_Westerado"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Westerado (Continued)</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="Gun_LeverActionPistol_Westerado"]/costList/WoodLog</xpath>
         </li>
@@ -402,16 +323,6 @@
             <xpath>/Defs/ThingDef[defName="Gun_LeverActionPistol_Westerado"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Westerado (Continued)</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="Gun_BroomhandlePistol_Westerado"]/costList/WoodLog</xpath>
         </li>
@@ -447,16 +358,6 @@
             <xpath>/Defs/ThingDef[defName="Gun_BroomhandlePistol_Westerado"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Westerado (Continued)</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="Gun_FlintlockPistol_Westerado"]/costList/WoodLog</xpath>
         </li>
@@ -492,16 +393,6 @@
             <xpath>/Defs/ThingDef[defName="Gun_FlintlockPistol_Westerado"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Westerado (Continued)</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="Gun_PercussionPistol_Westerado"]/costList/WoodLog</xpath>
         </li>
@@ -537,16 +428,6 @@
             <xpath>/Defs/ThingDef[defName="Gun_PercussionPistol_Westerado"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Westerado (Continued)</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="Gun_CoachGun_Westerado"]/costList/WoodLog</xpath>
         </li>
@@ -582,16 +463,6 @@
             <xpath>/Defs/ThingDef[defName="Gun_CoachGun_Westerado"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Westerado (Continued)</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="Gun_BreakActionShotgun_Westerado"]/costList/WoodLog</xpath>
         </li>
@@ -627,16 +498,6 @@
             <xpath>/Defs/ThingDef[defName="Gun_BreakActionShotgun_Westerado"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Westerado (Continued)</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="Gun_TrenchPumpShotgun_Westerado"]/costList/WoodLog</xpath>
         </li>
@@ -672,16 +533,6 @@
             <xpath>/Defs/ThingDef[defName="Gun_TrenchPumpShotgun_Westerado"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Westerado (Continued)</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="Gun_LeverActionShotgun_Westerado"]/costList/WoodLog</xpath>
         </li>
@@ -717,16 +568,6 @@
             <xpath>/Defs/ThingDef[defName="Gun_LeverActionShotgun_Westerado"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Westerado (Continued)</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="Gun_MusketRifle_Westerado"]/costList/WoodLog</xpath>
         </li>
@@ -762,16 +603,6 @@
             <xpath>/Defs/ThingDef[defName="Gun_MusketRifle_Westerado"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Westerado (Continued)</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="Gun_PercussionRifle_Westerado"]/costList/WoodLog</xpath>
         </li>
@@ -807,16 +638,6 @@
             <xpath>/Defs/ThingDef[defName="Gun_PercussionRifle_Westerado"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Westerado (Continued)</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="Gun_BreechblockRifle_Westerado"]/costList/WoodLog</xpath>
         </li>
@@ -852,16 +673,6 @@
             <xpath>/Defs/ThingDef[defName="Gun_BreechblockRifle_Westerado"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Westerado (Continued)</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="Gun_RepeatingRifle_Westerado"]/costList/WoodLog</xpath>
         </li>
@@ -897,16 +708,6 @@
             <xpath>/Defs/ThingDef[defName="Gun_RepeatingRifle_Westerado"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Westerado (Continued)</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="Gun_BreechblockSniperRifle_Westerado"]/costList/WoodLog</xpath>
         </li>

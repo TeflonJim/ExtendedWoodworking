@@ -6,6 +6,7 @@
       <li>Medieval Times Unofficial Update</li>
     </mods>
     <match Class="PatchOperationSequence">
+      <success>Always</success>
       <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="MedTimes_Shrine_RandomNumberGod"]/costList/WoodLog</xpath>
@@ -42,16 +43,6 @@
             <xpath>/Defs/ThingDef[defName="MedTimes_Shrine_RandomNumberGod"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Medieval Times Unofficial Update</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="MedTimes_ButcherBlock"]/costList/WoodLog</xpath>
         </li>
@@ -87,16 +78,6 @@
             <xpath>/Defs/ThingDef[defName="MedTimes_ButcherBlock"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Medieval Times Unofficial Update</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="MedTimes_CorpseBonfire"]/costList/WoodLog</xpath>
         </li>
@@ -132,16 +113,6 @@
             <xpath>/Defs/ThingDef[defName="MedTimes_CorpseBonfire"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Medieval Times Unofficial Update</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="MedTimes_StreetLamp"]/costList/WoodLog</xpath>
         </li>
@@ -177,16 +148,6 @@
             <xpath>/Defs/ThingDef[defName="MedTimes_StreetLamp"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Medieval Times Unofficial Update</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="MedTimes_Desk"]/costList/WoodLog</xpath>
         </li>
@@ -222,16 +183,6 @@
             <xpath>/Defs/ThingDef[defName="MedTimes_Desk"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Medieval Times Unofficial Update</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="MedTimes_IceboxFancy"]/costList/WoodLog</xpath>
         </li>
@@ -267,16 +218,6 @@
             <xpath>/Defs/ThingDef[defName="MedTimes_IceboxFancy"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Medieval Times Unofficial Update</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="MedTimes_Trap_WoodenBarricade"]/costList/WoodLog</xpath>
         </li>
@@ -312,16 +253,6 @@
             <xpath>/Defs/ThingDef[defName="MedTimes_Trap_WoodenBarricade"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Medieval Times Unofficial Update</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="MedTimes_Turret_Ballista"]/costList/WoodLog</xpath>
         </li>
@@ -357,16 +288,6 @@
             <xpath>/Defs/ThingDef[defName="MedTimes_Turret_Ballista"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Medieval Times Unofficial Update</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="MedTimes__Artillery_Catapult"]/costList/WoodLog</xpath>
         </li>
@@ -402,16 +323,6 @@
             <xpath>/Defs/ThingDef[defName="MedTimes__Artillery_Catapult"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Medieval Times Unofficial Update</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="MedTimes_Gate_Wooden"]/costList/WoodLog</xpath>
         </li>
@@ -447,16 +358,6 @@
             <xpath>/Defs/ThingDef[defName="MedTimes_Gate_Wooden"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Medieval Times Unofficial Update</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="MedTimes_Fencing_Wooden"]/costList/WoodLog</xpath>
         </li>
@@ -492,16 +393,6 @@
             <xpath>/Defs/ThingDef[defName="MedTimes_Fencing_Wooden"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Medieval Times Unofficial Update</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="MedTimes_WoodPitchGlue"]/costList/WoodLog</xpath>
         </li>
@@ -537,16 +428,6 @@
             <xpath>/Defs/ThingDef[defName="MedTimes_WoodPitchGlue"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Medieval Times Unofficial Update</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="MedTimes_CraftingTools"]/costList/WoodLog</xpath>
         </li>
@@ -582,16 +463,6 @@
             <xpath>/Defs/ThingDef[defName="MedTimes_CraftingTools"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Medieval Times Unofficial Update</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="MedTimes_Melee_PrimativeSpear"]/costList/WoodLog</xpath>
         </li>
@@ -627,16 +498,6 @@
             <xpath>/Defs/ThingDef[defName="MedTimes_Melee_PrimativeSpear"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Medieval Times Unofficial Update</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="MedTimes_Melee_AxeForester"]/costList/WoodLog</xpath>
         </li>
@@ -672,16 +533,6 @@
             <xpath>/Defs/ThingDef[defName="MedTimes_Melee_AxeForester"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Medieval Times Unofficial Update</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="MedTimes_Melee_BoarSpear"]/costList/WoodLog</xpath>
         </li>
@@ -717,16 +568,6 @@
             <xpath>/Defs/ThingDef[defName="MedTimes_Melee_BoarSpear"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Medieval Times Unofficial Update</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="MedTimes_Melee_Gisarme"]/costList/WoodLog</xpath>
         </li>
@@ -762,16 +603,6 @@
             <xpath>/Defs/ThingDef[defName="MedTimes_Melee_Gisarme"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Medieval Times Unofficial Update</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="MedTimes_Melee_ShortSword"]/costList/WoodLog</xpath>
         </li>
@@ -807,16 +638,6 @@
             <xpath>/Defs/ThingDef[defName="MedTimes_Melee_ShortSword"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Medieval Times Unofficial Update</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="MedTimes_Melee_HammerBandit"]/costList/WoodLog</xpath>
         </li>
@@ -852,16 +673,6 @@
             <xpath>/Defs/ThingDef[defName="MedTimes_Melee_HammerBandit"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Medieval Times Unofficial Update</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="MedTimes_Melee_WarKnife"]/costList/WoodLog</xpath>
         </li>
@@ -897,16 +708,6 @@
             <xpath>/Defs/ThingDef[defName="MedTimes_Melee_WarKnife"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Medieval Times Unofficial Update</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="MedTimes_Melee_DaggerKnight"]/costList/WoodLog</xpath>
         </li>
@@ -942,16 +743,6 @@
             <xpath>/Defs/ThingDef[defName="MedTimes_Melee_DaggerKnight"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Medieval Times Unofficial Update</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="MedTimes_Melee_SwordArming"]/costList/WoodLog</xpath>
         </li>
@@ -987,16 +778,6 @@
             <xpath>/Defs/ThingDef[defName="MedTimes_Melee_SwordArming"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Medieval Times Unofficial Update</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="MedTimes_Melee_SwordLong"]/costList/WoodLog</xpath>
         </li>
@@ -1032,16 +813,6 @@
             <xpath>/Defs/ThingDef[defName="MedTimes_Melee_SwordLong"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Medieval Times Unofficial Update</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="MedTimes_Melee_WarKnifeHiQ"]/costList/WoodLog</xpath>
         </li>
@@ -1077,16 +848,6 @@
             <xpath>/Defs/ThingDef[defName="MedTimes_Melee_WarKnifeHiQ"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Medieval Times Unofficial Update</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="MedTimes_Melee_Halberd"]/costList/WoodLog</xpath>
         </li>
@@ -1122,16 +883,6 @@
             <xpath>/Defs/ThingDef[defName="MedTimes_Melee_Halberd"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Medieval Times Unofficial Update</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="MedTimes_Melee_BattleAxe"]/costList/WoodLog</xpath>
         </li>
@@ -1167,16 +918,6 @@
             <xpath>/Defs/ThingDef[defName="MedTimes_Melee_BattleAxe"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Medieval Times Unofficial Update</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="MedTimes_Melee_AxeBearded"]/costList/WoodLog</xpath>
         </li>
@@ -1212,16 +953,6 @@
             <xpath>/Defs/ThingDef[defName="MedTimes_Melee_AxeBearded"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Medieval Times Unofficial Update</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="MedTimes_Melee_Claymore"]/costList/WoodLog</xpath>
         </li>
@@ -1257,16 +988,6 @@
             <xpath>/Defs/ThingDef[defName="MedTimes_Melee_Claymore"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Medieval Times Unofficial Update</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="MedTimes_Ranged_Composite"]/costList/WoodLog</xpath>
         </li>
@@ -1302,16 +1023,6 @@
             <xpath>/Defs/ThingDef[defName="MedTimes_Ranged_Composite"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Medieval Times Unofficial Update</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="MedTimes_Ranged_Longbow"]/costList/WoodLog</xpath>
         </li>
@@ -1347,16 +1058,6 @@
             <xpath>/Defs/ThingDef[defName="MedTimes_Ranged_Longbow"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Medieval Times Unofficial Update</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="MedTimes_Ranged_Crossbow"]/costList/WoodLog</xpath>
         </li>
@@ -1392,16 +1093,6 @@
             <xpath>/Defs/ThingDef[defName="MedTimes_Ranged_Crossbow"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Medieval Times Unofficial Update</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="MedTimes_Ranged_HandCrossbow"]/costList/WoodLog</xpath>
         </li>
@@ -1437,16 +1128,6 @@
             <xpath>/Defs/ThingDef[defName="MedTimes_Ranged_HandCrossbow"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Medieval Times Unofficial Update</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="MedTimes_Ranged_Arbalest"]/costList/WoodLog</xpath>
         </li>
@@ -1482,16 +1163,6 @@
             <xpath>/Defs/ThingDef[defName="MedTimes_Ranged_Arbalest"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>Medieval Times Unofficial Update</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="MedTimes_Ranged_Musket"]/costList/WoodLog</xpath>
         </li>

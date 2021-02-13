@@ -49,16 +49,6 @@
             </value>
           </nomatch>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>A RimWorld of Magic</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/RecipeDef[defName="ArcaneForge_ThrumboAxe"]/ingredients/li[filter/thingDefs/li="WoodLog"]</xpath>
         </li>
@@ -101,16 +91,6 @@
             </value>
           </nomatch>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>A RimWorld of Magic</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/RecipeDef[defName="ArcaneForge_ElephantBow"]/ingredients/li[filter/thingDefs/li="WoodLog"]</xpath>
         </li>
@@ -153,16 +133,6 @@
             </value>
           </nomatch>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>A RimWorld of Magic</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/RecipeDef[defName="ArcaneForge_ThrumBow"]/ingredients/li[filter/thingDefs/li="WoodLog"]</xpath>
         </li>
