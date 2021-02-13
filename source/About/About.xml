@@ -15,7 +15,7 @@ Previous versions of this module can be downloaded from GitHub:
 
 https://github.com/TeflonJim/ExtendedWoodworking/releases
 
-This release supports RimWorld 1.0 and 1.1.
+This release supports RimWorld 1.0, 1.1, and 1.2.
 
 This mod changes trees so that when they are cut down, they produce wood of that tree type. Different wood types have slightly different properties.
 
@@ -25,42 +25,17 @@ A Woodworking table is available to paint wood or convert specific types of wood
 
 Support for the Royalty is included and Extended Woodworking provides patches for the following mods:
 
-* [T] MoreFloors
-* A Dog Said... Animal Prosthetics
-* A RimWorld of Magic
-* Area Rugs
-* Children, school and learning
-* Expanded Prosthetics and Organ Engineering
-* Fertile Fields
-* GloomyFurniture
-* Misc. Training
-* RimWriter - Books, Scrolls, Tablets, and Libraries
-* VGP Xtra Trees and Flowers
+%SUPPORTED_MODS%
 
 Cost lists, ingredient lists, and fuel lists are updated for each mod.
 
 The following mods contain floors, the defs are duplicated for each available wood type. A drop down list is added to allow material selection:
 
-* Evt Floors
-* [T] MoreFloors
-* [WD] Expanded Floors
-* GloomyFurniture
-* RIMkea
+%SUPPORTED_FLOOR_MODS%
     </description>
   <incompatibleWith>
     <li>Adventurer.ExpandWoodwork</li>
     <li>owlchemist.simplechains.lumber</li>
   </incompatibleWith>
-  <loadAfter>
-    <li>ludeon.rimworld</li>
-    <li>ludeon.rimworld.royalty</li>
-    <li>telkir.tmods.morefloors</li>
-    <li>spoonshortage.adogsaidanimalprosthetics</li>
-    <li>torann.arimworldofmagic</li>
-    <li>thegoofyone.arearugs</li>
-    <li>ykara.epoe</li>
-    <li>solaris.furniturebase</li>
-    <li>haplo.miscellaneous.training</li>
-    <li>dismarzero.vgp.xtratreesandflowers</li>
-  </loadAfter>
+  <loadAfter />
 </ModMetaData>

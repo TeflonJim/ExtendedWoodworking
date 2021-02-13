@@ -28,11 +28,11 @@
                   <Beauty>-0.5</Beauty>
                 </statBases>
                 <constructEffect>ConstructWood</constructEffect>
+                <designatorDropdown>Floor_WDPlywoodFloor</designatorDropdown>
                 <costList>
                   <WoodLog_Acacia>1</WoodLog_Acacia>
                 </costList>
                 <color>(219, 184, 144)</color>
-                <designatorDropdown>Floor_WDPlywoodFloor</designatorDropdown>
               </TerrainDef>
             </value>
           </li>
@@ -52,11 +52,11 @@
                   <Beauty>0</Beauty>
                 </statBases>
                 <constructEffect>ConstructWood</constructEffect>
-                <color>(201, 160, 130)</color>
                 <designatorDropdown>Floor_WDPlywoodFloor</designatorDropdown>
                 <costList>
                   <WoodLog_Camellia>1</WoodLog_Camellia>
                 </costList>
+                <color>(201, 160, 130)</color>
               </TerrainDef>
             </value>
           </li>
@@ -76,11 +76,11 @@
                   <Beauty>-1</Beauty>
                 </statBases>
                 <constructEffect>ConstructWood</constructEffect>
-                <color>(165, 82, 40)</color>
                 <designatorDropdown>Floor_WDPlywoodFloor</designatorDropdown>
                 <costList>
                   <WoodLog_CherryBlossom>1</WoodLog_CherryBlossom>
                 </costList>
+                <color>(165, 82, 40)</color>
               </TerrainDef>
             </value>
           </li>
@@ -100,11 +100,11 @@
                   <Beauty>-0.5</Beauty>
                 </statBases>
                 <constructEffect>ConstructWood</constructEffect>
-                <color>(252, 170, 124)</color>
-                <designatorDropdown>Floor_WDPlywoodFloor</designatorDropdown>
                 <costList>
                   <WoodLog_JapaneseMaple>1</WoodLog_JapaneseMaple>
                 </costList>
+                <designatorDropdown>Floor_WDPlywoodFloor</designatorDropdown>
+                <color>(252, 170, 124)</color>
               </TerrainDef>
             </value>
           </li>
@@ -124,8 +124,8 @@
                   <Beauty>-0.5</Beauty>
                 </statBases>
                 <constructEffect>ConstructWood</constructEffect>
-                <color>(222, 197, 167)</color>
                 <designatorDropdown>Floor_WDPlywoodFloor</designatorDropdown>
+                <color>(222, 197, 167)</color>
                 <costList>
                   <WoodLog_RedMaple>1</WoodLog_RedMaple>
                 </costList>
@@ -148,11 +148,11 @@
                   <Beauty>0.5</Beauty>
                 </statBases>
                 <constructEffect>ConstructWood</constructEffect>
+                <designatorDropdown>Floor_WDWidePlanksFloor</designatorDropdown>
                 <costList>
                   <WoodLog_Acacia>3</WoodLog_Acacia>
                 </costList>
                 <color>(219, 184, 144)</color>
-                <designatorDropdown>Floor_WDWidePlanksFloor</designatorDropdown>
               </TerrainDef>
             </value>
           </li>
@@ -172,11 +172,11 @@
                   <Beauty>1</Beauty>
                 </statBases>
                 <constructEffect>ConstructWood</constructEffect>
-                <color>(201, 160, 130)</color>
                 <designatorDropdown>Floor_WDWidePlanksFloor</designatorDropdown>
                 <costList>
                   <WoodLog_Camellia>3</WoodLog_Camellia>
                 </costList>
+                <color>(201, 160, 130)</color>
               </TerrainDef>
             </value>
           </li>
@@ -196,11 +196,11 @@
                   <Beauty>0</Beauty>
                 </statBases>
                 <constructEffect>ConstructWood</constructEffect>
-                <color>(165, 82, 40)</color>
                 <designatorDropdown>Floor_WDWidePlanksFloor</designatorDropdown>
                 <costList>
                   <WoodLog_CherryBlossom>3</WoodLog_CherryBlossom>
                 </costList>
+                <color>(165, 82, 40)</color>
               </TerrainDef>
             </value>
           </li>
@@ -220,11 +220,11 @@
                   <Beauty>0.5</Beauty>
                 </statBases>
                 <constructEffect>ConstructWood</constructEffect>
-                <color>(252, 170, 124)</color>
-                <designatorDropdown>Floor_WDWidePlanksFloor</designatorDropdown>
                 <costList>
                   <WoodLog_JapaneseMaple>3</WoodLog_JapaneseMaple>
                 </costList>
+                <designatorDropdown>Floor_WDWidePlanksFloor</designatorDropdown>
+                <color>(252, 170, 124)</color>
               </TerrainDef>
             </value>
           </li>
@@ -244,8 +244,8 @@
                   <Beauty>0.5</Beauty>
                 </statBases>
                 <constructEffect>ConstructWood</constructEffect>
-                <color>(222, 197, 167)</color>
                 <designatorDropdown>Floor_WDWidePlanksFloor</designatorDropdown>
+                <color>(222, 197, 167)</color>
                 <costList>
                   <WoodLog_RedMaple>3</WoodLog_RedMaple>
                 </costList>
@@ -272,11 +272,11 @@
                 <tags>
                   <li>FineFloor</li>
                 </tags>
+                <designatorDropdown>Floor_WDCheckWoodenFloor</designatorDropdown>
                 <costList>
                   <WoodLog_Acacia>35</WoodLog_Acacia>
                 </costList>
                 <color>(219, 184, 144)</color>
-                <designatorDropdown>Floor_WDCheckWoodenFloor</designatorDropdown>
               </TerrainDef>
             </value>
           </li>
@@ -300,11 +300,11 @@
                 <tags>
                   <li>FineFloor</li>
                 </tags>
-                <color>(201, 160, 130)</color>
                 <designatorDropdown>Floor_WDCheckWoodenFloor</designatorDropdown>
                 <costList>
                   <WoodLog_Camellia>35</WoodLog_Camellia>
                 </costList>
+                <color>(201, 160, 130)</color>
               </TerrainDef>
             </value>
           </li>
@@ -328,11 +328,11 @@
                 <tags>
                   <li>FineFloor</li>
                 </tags>
-                <color>(165, 82, 40)</color>
                 <designatorDropdown>Floor_WDCheckWoodenFloor</designatorDropdown>
                 <costList>
                   <WoodLog_CherryBlossom>35</WoodLog_CherryBlossom>
                 </costList>
+                <color>(165, 82, 40)</color>
               </TerrainDef>
             </value>
           </li>
@@ -356,11 +356,11 @@
                 <tags>
                   <li>FineFloor</li>
                 </tags>
-                <color>(252, 170, 124)</color>
-                <designatorDropdown>Floor_WDCheckWoodenFloor</designatorDropdown>
                 <costList>
                   <WoodLog_JapaneseMaple>35</WoodLog_JapaneseMaple>
                 </costList>
+                <designatorDropdown>Floor_WDCheckWoodenFloor</designatorDropdown>
+                <color>(252, 170, 124)</color>
               </TerrainDef>
             </value>
           </li>
@@ -384,8 +384,8 @@
                 <tags>
                   <li>FineFloor</li>
                 </tags>
-                <color>(222, 197, 167)</color>
                 <designatorDropdown>Floor_WDCheckWoodenFloor</designatorDropdown>
+                <color>(222, 197, 167)</color>
                 <costList>
                   <WoodLog_RedMaple>35</WoodLog_RedMaple>
                 </costList>
@@ -412,11 +412,11 @@
                 <tags>
                   <li>FineFloor</li>
                 </tags>
+                <designatorDropdown>Floor_WDParquet</designatorDropdown>
                 <costList>
                   <WoodLog_Acacia>35</WoodLog_Acacia>
                 </costList>
                 <color>(219, 184, 144)</color>
-                <designatorDropdown>Floor_WDParquet</designatorDropdown>
               </TerrainDef>
             </value>
           </li>
@@ -440,11 +440,11 @@
                 <tags>
                   <li>FineFloor</li>
                 </tags>
-                <color>(201, 160, 130)</color>
                 <designatorDropdown>Floor_WDParquet</designatorDropdown>
                 <costList>
                   <WoodLog_Camellia>35</WoodLog_Camellia>
                 </costList>
+                <color>(201, 160, 130)</color>
               </TerrainDef>
             </value>
           </li>
@@ -468,11 +468,11 @@
                 <tags>
                   <li>FineFloor</li>
                 </tags>
-                <color>(165, 82, 40)</color>
                 <designatorDropdown>Floor_WDParquet</designatorDropdown>
                 <costList>
                   <WoodLog_CherryBlossom>35</WoodLog_CherryBlossom>
                 </costList>
+                <color>(165, 82, 40)</color>
               </TerrainDef>
             </value>
           </li>
@@ -496,11 +496,11 @@
                 <tags>
                   <li>FineFloor</li>
                 </tags>
-                <color>(252, 170, 124)</color>
-                <designatorDropdown>Floor_WDParquet</designatorDropdown>
                 <costList>
                   <WoodLog_JapaneseMaple>35</WoodLog_JapaneseMaple>
                 </costList>
+                <designatorDropdown>Floor_WDParquet</designatorDropdown>
+                <color>(252, 170, 124)</color>
               </TerrainDef>
             </value>
           </li>
@@ -524,8 +524,8 @@
                 <tags>
                   <li>FineFloor</li>
                 </tags>
-                <color>(222, 197, 167)</color>
                 <designatorDropdown>Floor_WDParquet</designatorDropdown>
+                <color>(222, 197, 167)</color>
                 <costList>
                   <WoodLog_RedMaple>35</WoodLog_RedMaple>
                 </costList>
@@ -552,11 +552,11 @@
                 <tags>
                   <li>FineFloor</li>
                 </tags>
+                <designatorDropdown>Floor_WDMosaicWoodenFloor</designatorDropdown>
                 <costList>
                   <WoodLog_Acacia>35</WoodLog_Acacia>
                 </costList>
                 <color>(219, 184, 144)</color>
-                <designatorDropdown>Floor_WDMosaicWoodenFloor</designatorDropdown>
               </TerrainDef>
             </value>
           </li>
@@ -580,11 +580,11 @@
                 <tags>
                   <li>FineFloor</li>
                 </tags>
-                <color>(201, 160, 130)</color>
                 <designatorDropdown>Floor_WDMosaicWoodenFloor</designatorDropdown>
                 <costList>
                   <WoodLog_Camellia>35</WoodLog_Camellia>
                 </costList>
+                <color>(201, 160, 130)</color>
               </TerrainDef>
             </value>
           </li>
@@ -608,11 +608,11 @@
                 <tags>
                   <li>FineFloor</li>
                 </tags>
-                <color>(165, 82, 40)</color>
                 <designatorDropdown>Floor_WDMosaicWoodenFloor</designatorDropdown>
                 <costList>
                   <WoodLog_CherryBlossom>35</WoodLog_CherryBlossom>
                 </costList>
+                <color>(165, 82, 40)</color>
               </TerrainDef>
             </value>
           </li>
@@ -636,11 +636,11 @@
                 <tags>
                   <li>FineFloor</li>
                 </tags>
-                <color>(252, 170, 124)</color>
-                <designatorDropdown>Floor_WDMosaicWoodenFloor</designatorDropdown>
                 <costList>
                   <WoodLog_JapaneseMaple>35</WoodLog_JapaneseMaple>
                 </costList>
+                <designatorDropdown>Floor_WDMosaicWoodenFloor</designatorDropdown>
+                <color>(252, 170, 124)</color>
               </TerrainDef>
             </value>
           </li>
@@ -664,8 +664,8 @@
                 <tags>
                   <li>FineFloor</li>
                 </tags>
-                <color>(222, 197, 167)</color>
                 <designatorDropdown>Floor_WDMosaicWoodenFloor</designatorDropdown>
+                <color>(222, 197, 167)</color>
                 <costList>
                   <WoodLog_RedMaple>35</WoodLog_RedMaple>
                 </costList>

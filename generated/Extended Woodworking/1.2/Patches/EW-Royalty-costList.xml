@@ -6,6 +6,7 @@
       <li>ModMetaData</li>
     </mods>
     <match Class="PatchOperationSequence">
+      <success>Always</success>
       <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="Harp"]/costList/WoodLog</xpath>
@@ -42,16 +43,6 @@
             <xpath>/Defs/ThingDef[defName="Harp"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>ModMetaData</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="Harpsichord"]/costList/WoodLog</xpath>
         </li>
@@ -87,16 +78,6 @@
             <xpath>/Defs/ThingDef[defName="Harpsichord"]/constructEffect</xpath>
           </match>
         </li>
-      </operations>
-    </match>
-  </Operation>
-  <Operation Class="PatchOperationFindMod">
-    <success>Always</success>
-    <mods>
-      <li>ModMetaData</li>
-    </mods>
-    <match Class="PatchOperationSequence">
-      <operations>
         <li Class="PatchOperationRemove">
           <xpath>/Defs/ThingDef[defName="Piano"]/costList/WoodLog</xpath>
         </li>

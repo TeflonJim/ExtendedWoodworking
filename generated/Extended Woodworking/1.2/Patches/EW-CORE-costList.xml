@@ -40,11 +40,6 @@
           <xpath>/Defs/ThingDef[defName="TorchLamp"]/constructEffect</xpath>
         </match>
       </li>
-    </operations>
-  </Operation>
-  <Operation Class="PatchOperationSequence">
-    <success>Always</success>
-    <operations>
       <li Class="PatchOperationRemove">
         <xpath>/Defs/ThingDef[defName="WatermillGenerator"]/costList/WoodLog</xpath>
       </li>
@@ -82,11 +77,6 @@
           <xpath>/Defs/ThingDef[defName="WatermillGenerator"]/constructEffect</xpath>
         </match>
       </li>
-    </operations>
-  </Operation>
-  <Operation Class="PatchOperationSequence">
-    <success>Always</success>
-    <operations>
       <li Class="PatchOperationRemove">
         <xpath>/Defs/ThingDef[defName="Brewery"]/costList/WoodLog</xpath>
       </li>
@@ -124,11 +114,6 @@
           <xpath>/Defs/ThingDef[defName="Brewery"]/constructEffect</xpath>
         </match>
       </li>
-    </operations>
-  </Operation>
-  <Operation Class="PatchOperationSequence">
-    <success>Always</success>
-    <operations>
       <li Class="PatchOperationRemove">
         <xpath>/Defs/ThingDef[defName="FermentingBarrel"]/costList/WoodLog</xpath>
       </li>
@@ -166,11 +151,6 @@
           <xpath>/Defs/ThingDef[defName="FermentingBarrel"]/constructEffect</xpath>
         </match>
       </li>
-    </operations>
-  </Operation>
-  <Operation Class="PatchOperationSequence">
-    <success>Always</success>
-    <operations>
       <li Class="PatchOperationRemove">
         <xpath>/Defs/ThingDef[defName="Campfire"]/costList/WoodLog</xpath>
       </li>
@@ -208,11 +188,6 @@
           <xpath>/Defs/ThingDef[defName="Campfire"]/constructEffect</xpath>
         </match>
       </li>
-    </operations>
-  </Operation>
-  <Operation Class="PatchOperationSequence">
-    <success>Always</success>
-    <operations>
       <li Class="PatchOperationRemove">
         <xpath>/Defs/ThingDef[defName="PassiveCooler"]/costList/WoodLog</xpath>
       </li>
@@ -250,11 +225,6 @@
           <xpath>/Defs/ThingDef[defName="PassiveCooler"]/constructEffect</xpath>
         </match>
       </li>
-    </operations>
-  </Operation>
-  <Operation Class="PatchOperationSequence">
-    <success>Always</success>
-    <operations>
       <li Class="PatchOperationRemove">
         <xpath>/Defs/ThingDef[defName="Bow_Short"]/costList/WoodLog</xpath>
       </li>
@@ -292,11 +262,6 @@
           <xpath>/Defs/ThingDef[defName="Bow_Short"]/constructEffect</xpath>
         </match>
       </li>
-    </operations>
-  </Operation>
-  <Operation Class="PatchOperationSequence">
-    <success>Always</success>
-    <operations>
       <li Class="PatchOperationRemove">
         <xpath>/Defs/ThingDef[defName="Pila"]/costList/WoodLog</xpath>
       </li>
@@ -334,11 +299,6 @@
           <xpath>/Defs/ThingDef[defName="Pila"]/constructEffect</xpath>
         </match>
       </li>
-    </operations>
-  </Operation>
-  <Operation Class="PatchOperationSequence">
-    <success>Always</success>
-    <operations>
       <li Class="PatchOperationRemove">
         <xpath>/Defs/ThingDef[defName="Bow_Recurve"]/costList/WoodLog</xpath>
       </li>
@@ -376,11 +336,6 @@
           <xpath>/Defs/ThingDef[defName="Bow_Recurve"]/constructEffect</xpath>
         </match>
       </li>
-    </operations>
-  </Operation>
-  <Operation Class="PatchOperationSequence">
-    <success>Always</success>
-    <operations>
       <li Class="PatchOperationRemove">
         <xpath>/Defs/ThingDef[defName="Bow_Great"]/costList/WoodLog</xpath>
       </li>
