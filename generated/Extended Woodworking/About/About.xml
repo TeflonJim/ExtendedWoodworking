@@ -66,6 +66,7 @@ The following mods contain floors, the defs are duplicated for each available wo
   <loadAfter>
     <li>ludeon.rimworld</li>
     <li>ludeon.rimworld.royalty</li>
+    <li>ludeon.rimworld.ideology</li>
     <li>telkir.tmods.expandedcloth</li>
     <li>telkir.tmods.morefloors</li>
     <li>spoonshortage.adogsaidanimalprosthetics</li>
