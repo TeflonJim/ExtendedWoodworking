@@ -16,7 +16,7 @@ Previous versions of this module can be downloaded from GitHub:
 
 https://github.com/TeflonJim/ExtendedWoodworking/releases
 
-This release supports RimWorld 1.0, 1.1, and 1.2.
+This release supports RimWorld 1.0, 1.1, 1.2, and 1.3.
 
 This mod changes trees so that when they are cut down, they produce wood of that tree type. Different wood types have slightly different properties.
 
@@ -24,7 +24,12 @@ Wood may be painted in different colours. The available colours are: Red, Green,
 
 A Woodworking table is available to paint wood or convert specific types of wood to the original wood type (generic wood).
 
-Support for the Royalty is included and Extended Woodworking provides patches for the following mods:
+Supported expansions:
+
+* Royalty
+* Ideology
+
+Supported mods:
 
 * [T] ExpandedCloth
 * [T] MoreFloors
