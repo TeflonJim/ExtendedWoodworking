@@ -65,7 +65,7 @@ task Setup {
                 'Advanced Power Plus'
                 'Area Rugs 2.0'
                 'Caravan Equipment'
-                'Caravan Gear [1.1]'
+                'Caravan Gear'
                 'Ceramics'
                 'Coal Expanded'
                 'Fertile Fields [1.1]'
