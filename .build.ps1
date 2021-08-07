@@ -87,6 +87,7 @@ task Setup {
                 '[WD] Expanded Floors'
                 'GloomyFurniture'
                 'RIMkea'
+                # 'Refined Floors'
             )
             SkipFloorDefs = @(
                 '*Light_Evt*'

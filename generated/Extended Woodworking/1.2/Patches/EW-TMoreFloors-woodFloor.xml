@@ -24,7 +24,7 @@
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
-            <TerrainDef ParentName="FloorBaseWood">
+            <TerrainDef ParentName="TFloorBaseWood">
               <defName>FloorWoodRustic_Birch</defName>
               <label>birch floorboards</label>
               <statBases>
@@ -34,18 +34,18 @@
               <renderPrecedence>250</renderPrecedence>
               <description>Rustic birch floorboards, finely polished and with splinters removed. Nice to look at but somewhat slow to build.</description>
               <texturePath>Terrain/Surfaces/WoodFloor1</texturePath>
+              <color>(235,228,216)</color>
               <costList>
                 <WoodLog_Birch>6</WoodLog_Birch>
               </costList>
               <designatorDropdown>Floor_FloorWoodRustic</designatorDropdown>
-              <color>(235,228,216)</color>
             </TerrainDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
-            <TerrainDef ParentName="FloorBaseWood">
+            <TerrainDef ParentName="TFloorBaseWood">
               <defName>FloorWoodRustic_Cecropia</defName>
               <label>cecropia floorboards</label>
               <statBases>
@@ -55,18 +55,18 @@
               <renderPrecedence>250</renderPrecedence>
               <description>Rustic cecropia floorboards, finely polished and with splinters removed. Nice to look at but somewhat slow to build.</description>
               <texturePath>Terrain/Surfaces/WoodFloor1</texturePath>
+              <color>(126,74,63)</color>
               <designatorDropdown>Floor_FloorWoodRustic</designatorDropdown>
               <costList>
                 <WoodLog_Cecropia>6</WoodLog_Cecropia>
               </costList>
-              <color>(126,74,63)</color>
             </TerrainDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
-            <TerrainDef ParentName="FloorBaseWood">
+            <TerrainDef ParentName="TFloorBaseWood">
               <defName>FloorWoodRustic_Cypress</defName>
               <label>cypress floorboards</label>
               <statBases>
@@ -76,18 +76,18 @@
               <renderPrecedence>250</renderPrecedence>
               <description>Rustic cypress floorboards, finely polished and with splinters removed. Nice to look at but somewhat slow to build.</description>
               <texturePath>Terrain/Surfaces/WoodFloor1</texturePath>
+              <color>(239, 217, 184)</color>
               <costList>
                 <WoodLog_Cypress>6</WoodLog_Cypress>
               </costList>
               <designatorDropdown>Floor_FloorWoodRustic</designatorDropdown>
-              <color>(239, 217, 184)</color>
             </TerrainDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
-            <TerrainDef ParentName="FloorBaseWood">
+            <TerrainDef ParentName="TFloorBaseWood">
               <defName>FloorWoodRustic_Drago</defName>
               <label>drago floorboards</label>
               <statBases>
@@ -97,18 +97,18 @@
               <renderPrecedence>250</renderPrecedence>
               <description>Rustic drago floorboards, finely polished and with splinters removed. Nice to look at but somewhat slow to build.</description>
               <texturePath>Terrain/Surfaces/WoodFloor1</texturePath>
+              <color>(171, 159, 142)</color>
               <costList>
                 <WoodLog_Drago>6</WoodLog_Drago>
               </costList>
               <designatorDropdown>Floor_FloorWoodRustic</designatorDropdown>
-              <color>(171, 159, 142)</color>
             </TerrainDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
-            <TerrainDef ParentName="FloorBaseWood">
+            <TerrainDef ParentName="TFloorBaseWood">
               <defName>FloorWoodRustic_Maple</defName>
               <label>maple floorboards</label>
               <statBases>
@@ -118,18 +118,18 @@
               <renderPrecedence>250</renderPrecedence>
               <description>Rustic maple floorboards, finely polished and with splinters removed. Nice to look at but somewhat slow to build.</description>
               <texturePath>Terrain/Surfaces/WoodFloor1</texturePath>
-              <designatorDropdown>Floor_FloorWoodRustic</designatorDropdown>
+              <color>(236, 201, 163)</color>
               <costList>
                 <WoodLog_Maple>6</WoodLog_Maple>
               </costList>
-              <color>(236, 201, 163)</color>
+              <designatorDropdown>Floor_FloorWoodRustic</designatorDropdown>
             </TerrainDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
-            <TerrainDef ParentName="FloorBaseWood">
+            <TerrainDef ParentName="TFloorBaseWood">
               <defName>FloorWoodRustic_Oak</defName>
               <label>oak floorboards</label>
               <statBases>
@@ -139,18 +139,18 @@
               <renderPrecedence>250</renderPrecedence>
               <description>Rustic oak floorboards, finely polished and with splinters removed. Nice to look at but somewhat slow to build.</description>
               <texturePath>Terrain/Surfaces/WoodFloor1</texturePath>
+              <color>(185,142,96)</color>
               <costList>
                 <WoodLog_Oak>6</WoodLog_Oak>
               </costList>
               <designatorDropdown>Floor_FloorWoodRustic</designatorDropdown>
-              <color>(185,142,96)</color>
             </TerrainDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
-            <TerrainDef ParentName="FloorBaseWood">
+            <TerrainDef ParentName="TFloorBaseWood">
               <defName>FloorWoodRustic_Palm</defName>
               <label>palm floorboards</label>
               <statBases>
@@ -160,18 +160,18 @@
               <renderPrecedence>250</renderPrecedence>
               <description>Rustic palm floorboards, finely polished and with splinters removed. Nice to look at but somewhat slow to build.</description>
               <texturePath>Terrain/Surfaces/WoodFloor1</texturePath>
-              <designatorDropdown>Floor_FloorWoodRustic</designatorDropdown>
+              <color>(224, 150, 87)</color>
               <costList>
                 <WoodLog_Palm>6</WoodLog_Palm>
               </costList>
-              <color>(224, 150, 87)</color>
+              <designatorDropdown>Floor_FloorWoodRustic</designatorDropdown>
             </TerrainDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
-            <TerrainDef ParentName="FloorBaseWood">
+            <TerrainDef ParentName="TFloorBaseWood">
               <defName>FloorWoodRustic_Pine</defName>
               <label>pine floorboards</label>
               <statBases>
@@ -181,18 +181,18 @@
               <renderPrecedence>250</renderPrecedence>
               <description>Rustic pine floorboards, finely polished and with splinters removed. Nice to look at but somewhat slow to build.</description>
               <texturePath>Terrain/Surfaces/WoodFloor1</texturePath>
-              <designatorDropdown>Floor_FloorWoodRustic</designatorDropdown>
               <costList>
                 <WoodLog_Pine>6</WoodLog_Pine>
               </costList>
               <color>(198,146,68)</color>
+              <designatorDropdown>Floor_FloorWoodRustic</designatorDropdown>
             </TerrainDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
-            <TerrainDef ParentName="FloorBaseWood">
+            <TerrainDef ParentName="TFloorBaseWood">
               <defName>FloorWoodRustic_Poplar</defName>
               <label>poplar floorboards</label>
               <statBases>
@@ -202,18 +202,18 @@
               <renderPrecedence>250</renderPrecedence>
               <description>Rustic poplar floorboards, finely polished and with splinters removed. Nice to look at but somewhat slow to build.</description>
               <texturePath>Terrain/Surfaces/WoodFloor1</texturePath>
+              <color>(184,156,108)</color>
               <costList>
                 <WoodLog_Poplar>6</WoodLog_Poplar>
               </costList>
               <designatorDropdown>Floor_FloorWoodRustic</designatorDropdown>
-              <color>(184,156,108)</color>
             </TerrainDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
-            <TerrainDef ParentName="FloorBaseWood">
+            <TerrainDef ParentName="TFloorBaseWood">
               <defName>FloorWoodRustic_Teak</defName>
               <label>teak floorboards</label>
               <statBases>
@@ -223,18 +223,18 @@
               <renderPrecedence>250</renderPrecedence>
               <description>Rustic teak floorboards, finely polished and with splinters removed. Nice to look at but somewhat slow to build.</description>
               <texturePath>Terrain/Surfaces/WoodFloor1</texturePath>
-              <designatorDropdown>Floor_FloorWoodRustic</designatorDropdown>
+              <color>(154,102,59)</color>
               <costList>
                 <WoodLog_Teak>6</WoodLog_Teak>
               </costList>
-              <color>(154,102,59)</color>
+              <designatorDropdown>Floor_FloorWoodRustic</designatorDropdown>
             </TerrainDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
-            <TerrainDef ParentName="FloorBaseWood">
+            <TerrainDef ParentName="TFloorBaseWood">
               <defName>FloorWoodRustic_Willow</defName>
               <label>willow floorboards</label>
               <statBases>
@@ -244,11 +244,11 @@
               <renderPrecedence>250</renderPrecedence>
               <description>Rustic willow floorboards, finely polished and with splinters removed. Nice to look at but somewhat slow to build.</description>
               <texturePath>Terrain/Surfaces/WoodFloor1</texturePath>
-              <designatorDropdown>Floor_FloorWoodRustic</designatorDropdown>
+              <color>(221, 186, 141)</color>
               <costList>
                 <WoodLog_Willow>6</WoodLog_Willow>
               </costList>
-              <color>(221, 186, 141)</color>
+              <designatorDropdown>Floor_FloorWoodRustic</designatorDropdown>
             </TerrainDef>
           </value>
         </li>
@@ -269,7 +269,7 @@
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
-            <TerrainDef ParentName="FloorBaseWood">
+            <TerrainDef ParentName="TFloorBaseWood">
               <defName>FloorWoodWide_Birch</defName>
               <label>wide birch floorboards</label>
               <statBases>
@@ -279,18 +279,18 @@
               <renderPrecedence>249</renderPrecedence>
               <description>Wide, plain-looking floorboards for that minimalistic feel. Easy to build.</description>
               <texturePath>Terrain/Surfaces/WoodFloor2</texturePath>
+              <color>(235,228,216)</color>
               <costList>
                 <WoodLog_Birch>2</WoodLog_Birch>
               </costList>
               <designatorDropdown>Floor_FloorWoodWide</designatorDropdown>
-              <color>(235,228,216)</color>
             </TerrainDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
-            <TerrainDef ParentName="FloorBaseWood">
+            <TerrainDef ParentName="TFloorBaseWood">
               <defName>FloorWoodWide_Cecropia</defName>
               <label>wide cecropia floorboards</label>
               <statBases>
@@ -300,18 +300,18 @@
               <renderPrecedence>249</renderPrecedence>
               <description>Wide, plain-looking floorboards for that minimalistic feel. Easy to build.</description>
               <texturePath>Terrain/Surfaces/WoodFloor2</texturePath>
+              <color>(126,74,63)</color>
               <designatorDropdown>Floor_FloorWoodWide</designatorDropdown>
               <costList>
                 <WoodLog_Cecropia>2</WoodLog_Cecropia>
               </costList>
-              <color>(126,74,63)</color>
             </TerrainDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
-            <TerrainDef ParentName="FloorBaseWood">
+            <TerrainDef ParentName="TFloorBaseWood">
               <defName>FloorWoodWide_Cypress</defName>
               <label>wide cypress floorboards</label>
               <statBases>
@@ -321,18 +321,18 @@
               <renderPrecedence>249</renderPrecedence>
               <description>Wide, plain-looking floorboards for that minimalistic feel. Easy to build.</description>
               <texturePath>Terrain/Surfaces/WoodFloor2</texturePath>
+              <color>(239, 217, 184)</color>
               <costList>
                 <WoodLog_Cypress>2</WoodLog_Cypress>
               </costList>
               <designatorDropdown>Floor_FloorWoodWide</designatorDropdown>
-              <color>(239, 217, 184)</color>
             </TerrainDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
-            <TerrainDef ParentName="FloorBaseWood">
+            <TerrainDef ParentName="TFloorBaseWood">
               <defName>FloorWoodWide_Drago</defName>
               <label>wide drago floorboards</label>
               <statBases>
@@ -342,18 +342,18 @@
               <renderPrecedence>249</renderPrecedence>
               <description>Wide, plain-looking floorboards for that minimalistic feel. Easy to build.</description>
               <texturePath>Terrain/Surfaces/WoodFloor2</texturePath>
+              <color>(171, 159, 142)</color>
               <costList>
                 <WoodLog_Drago>2</WoodLog_Drago>
               </costList>
               <designatorDropdown>Floor_FloorWoodWide</designatorDropdown>
-              <color>(171, 159, 142)</color>
             </TerrainDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
-            <TerrainDef ParentName="FloorBaseWood">
+            <TerrainDef ParentName="TFloorBaseWood">
               <defName>FloorWoodWide_Maple</defName>
               <label>wide maple floorboards</label>
               <statBases>
@@ -363,18 +363,18 @@
               <renderPrecedence>249</renderPrecedence>
               <description>Wide, plain-looking floorboards for that minimalistic feel. Easy to build.</description>
               <texturePath>Terrain/Surfaces/WoodFloor2</texturePath>
-              <designatorDropdown>Floor_FloorWoodWide</designatorDropdown>
+              <color>(236, 201, 163)</color>
               <costList>
                 <WoodLog_Maple>2</WoodLog_Maple>
               </costList>
-              <color>(236, 201, 163)</color>
+              <designatorDropdown>Floor_FloorWoodWide</designatorDropdown>
             </TerrainDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
-            <TerrainDef ParentName="FloorBaseWood">
+            <TerrainDef ParentName="TFloorBaseWood">
               <defName>FloorWoodWide_Oak</defName>
               <label>wide oak floorboards</label>
               <statBases>
@@ -384,18 +384,18 @@
               <renderPrecedence>249</renderPrecedence>
               <description>Wide, plain-looking floorboards for that minimalistic feel. Easy to build.</description>
               <texturePath>Terrain/Surfaces/WoodFloor2</texturePath>
+              <color>(185,142,96)</color>
               <costList>
                 <WoodLog_Oak>2</WoodLog_Oak>
               </costList>
               <designatorDropdown>Floor_FloorWoodWide</designatorDropdown>
-              <color>(185,142,96)</color>
             </TerrainDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
-            <TerrainDef ParentName="FloorBaseWood">
+            <TerrainDef ParentName="TFloorBaseWood">
               <defName>FloorWoodWide_Palm</defName>
               <label>wide palm floorboards</label>
               <statBases>
@@ -405,18 +405,18 @@
               <renderPrecedence>249</renderPrecedence>
               <description>Wide, plain-looking floorboards for that minimalistic feel. Easy to build.</description>
               <texturePath>Terrain/Surfaces/WoodFloor2</texturePath>
-              <designatorDropdown>Floor_FloorWoodWide</designatorDropdown>
+              <color>(224, 150, 87)</color>
               <costList>
                 <WoodLog_Palm>2</WoodLog_Palm>
               </costList>
-              <color>(224, 150, 87)</color>
+              <designatorDropdown>Floor_FloorWoodWide</designatorDropdown>
             </TerrainDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
-            <TerrainDef ParentName="FloorBaseWood">
+            <TerrainDef ParentName="TFloorBaseWood">
               <defName>FloorWoodWide_Pine</defName>
               <label>wide pine floorboards</label>
               <statBases>
@@ -426,18 +426,18 @@
               <renderPrecedence>249</renderPrecedence>
               <description>Wide, plain-looking floorboards for that minimalistic feel. Easy to build.</description>
               <texturePath>Terrain/Surfaces/WoodFloor2</texturePath>
-              <designatorDropdown>Floor_FloorWoodWide</designatorDropdown>
               <costList>
                 <WoodLog_Pine>2</WoodLog_Pine>
               </costList>
               <color>(198,146,68)</color>
+              <designatorDropdown>Floor_FloorWoodWide</designatorDropdown>
             </TerrainDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
-            <TerrainDef ParentName="FloorBaseWood">
+            <TerrainDef ParentName="TFloorBaseWood">
               <defName>FloorWoodWide_Poplar</defName>
               <label>wide poplar floorboards</label>
               <statBases>
@@ -447,18 +447,18 @@
               <renderPrecedence>249</renderPrecedence>
               <description>Wide, plain-looking floorboards for that minimalistic feel. Easy to build.</description>
               <texturePath>Terrain/Surfaces/WoodFloor2</texturePath>
+              <color>(184,156,108)</color>
               <costList>
                 <WoodLog_Poplar>2</WoodLog_Poplar>
               </costList>
               <designatorDropdown>Floor_FloorWoodWide</designatorDropdown>
-              <color>(184,156,108)</color>
             </TerrainDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
-            <TerrainDef ParentName="FloorBaseWood">
+            <TerrainDef ParentName="TFloorBaseWood">
               <defName>FloorWoodWide_Teak</defName>
               <label>wide teak floorboards</label>
               <statBases>
@@ -468,18 +468,18 @@
               <renderPrecedence>249</renderPrecedence>
               <description>Wide, plain-looking floorboards for that minimalistic feel. Easy to build.</description>
               <texturePath>Terrain/Surfaces/WoodFloor2</texturePath>
-              <designatorDropdown>Floor_FloorWoodWide</designatorDropdown>
+              <color>(154,102,59)</color>
               <costList>
                 <WoodLog_Teak>2</WoodLog_Teak>
               </costList>
-              <color>(154,102,59)</color>
+              <designatorDropdown>Floor_FloorWoodWide</designatorDropdown>
             </TerrainDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
-            <TerrainDef ParentName="FloorBaseWood">
+            <TerrainDef ParentName="TFloorBaseWood">
               <defName>FloorWoodWide_Willow</defName>
               <label>wide willow floorboards</label>
               <statBases>
@@ -489,11 +489,11 @@
               <renderPrecedence>249</renderPrecedence>
               <description>Wide, plain-looking floorboards for that minimalistic feel. Easy to build.</description>
               <texturePath>Terrain/Surfaces/WoodFloor2</texturePath>
-              <designatorDropdown>Floor_FloorWoodWide</designatorDropdown>
+              <color>(221, 186, 141)</color>
               <costList>
                 <WoodLog_Willow>2</WoodLog_Willow>
               </costList>
-              <color>(221, 186, 141)</color>
+              <designatorDropdown>Floor_FloorWoodWide</designatorDropdown>
             </TerrainDef>
           </value>
         </li>
@@ -514,7 +514,7 @@
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
-            <TerrainDef ParentName="FloorBaseWood">
+            <TerrainDef ParentName="TFloorBaseWood">
               <defName>FloorWoodLight_Birch</defName>
               <label>light birch floor</label>
               <statBases>
@@ -524,18 +524,18 @@
               <renderPrecedence>248</renderPrecedence>
               <description>Light-coloured polished birch floorboards in a pleasant interlocking pattern.</description>
               <texturePath>Terrain/Surfaces/WoodFloor3</texturePath>
+              <color>(235,228,216)</color>
               <costList>
                 <WoodLog_Birch>5</WoodLog_Birch>
               </costList>
               <designatorDropdown>Floor_FloorWoodLight</designatorDropdown>
-              <color>(235,228,216)</color>
             </TerrainDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
-            <TerrainDef ParentName="FloorBaseWood">
+            <TerrainDef ParentName="TFloorBaseWood">
               <defName>FloorWoodLight_Cecropia</defName>
               <label>light cecropia floor</label>
               <statBases>
@@ -545,18 +545,18 @@
               <renderPrecedence>248</renderPrecedence>
               <description>Light-coloured polished cecropia floorboards in a pleasant interlocking pattern.</description>
               <texturePath>Terrain/Surfaces/WoodFloor3</texturePath>
+              <color>(126,74,63)</color>
               <designatorDropdown>Floor_FloorWoodLight</designatorDropdown>
               <costList>
                 <WoodLog_Cecropia>5</WoodLog_Cecropia>
               </costList>
-              <color>(126,74,63)</color>
             </TerrainDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
-            <TerrainDef ParentName="FloorBaseWood">
+            <TerrainDef ParentName="TFloorBaseWood">
               <defName>FloorWoodLight_Cypress</defName>
               <label>light cypress floor</label>
               <statBases>
@@ -566,18 +566,18 @@
               <renderPrecedence>248</renderPrecedence>
               <description>Light-coloured polished cypress floorboards in a pleasant interlocking pattern.</description>
               <texturePath>Terrain/Surfaces/WoodFloor3</texturePath>
+              <color>(239, 217, 184)</color>
               <costList>
                 <WoodLog_Cypress>5</WoodLog_Cypress>
               </costList>
               <designatorDropdown>Floor_FloorWoodLight</designatorDropdown>
-              <color>(239, 217, 184)</color>
             </TerrainDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
-            <TerrainDef ParentName="FloorBaseWood">
+            <TerrainDef ParentName="TFloorBaseWood">
               <defName>FloorWoodLight_Drago</defName>
               <label>light drago floor</label>
               <statBases>
@@ -587,18 +587,18 @@
               <renderPrecedence>248</renderPrecedence>
               <description>Light-coloured polished drago floorboards in a pleasant interlocking pattern.</description>
               <texturePath>Terrain/Surfaces/WoodFloor3</texturePath>
+              <color>(171, 159, 142)</color>
               <costList>
                 <WoodLog_Drago>5</WoodLog_Drago>
               </costList>
               <designatorDropdown>Floor_FloorWoodLight</designatorDropdown>
-              <color>(171, 159, 142)</color>
             </TerrainDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
-            <TerrainDef ParentName="FloorBaseWood">
+            <TerrainDef ParentName="TFloorBaseWood">
               <defName>FloorWoodLight_Maple</defName>
               <label>light maple floor</label>
               <statBases>
@@ -608,18 +608,18 @@
               <renderPrecedence>248</renderPrecedence>
               <description>Light-coloured polished maple floorboards in a pleasant interlocking pattern.</description>
               <texturePath>Terrain/Surfaces/WoodFloor3</texturePath>
-              <designatorDropdown>Floor_FloorWoodLight</designatorDropdown>
+              <color>(236, 201, 163)</color>
               <costList>
                 <WoodLog_Maple>5</WoodLog_Maple>
               </costList>
-              <color>(236, 201, 163)</color>
+              <designatorDropdown>Floor_FloorWoodLight</designatorDropdown>
             </TerrainDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
-            <TerrainDef ParentName="FloorBaseWood">
+            <TerrainDef ParentName="TFloorBaseWood">
               <defName>FloorWoodLight_Oak</defName>
               <label>light oak floor</label>
               <statBases>
@@ -629,18 +629,18 @@
               <renderPrecedence>248</renderPrecedence>
               <description>Light-coloured polished oak floorboards in a pleasant interlocking pattern.</description>
               <texturePath>Terrain/Surfaces/WoodFloor3</texturePath>
+              <color>(185,142,96)</color>
               <costList>
                 <WoodLog_Oak>5</WoodLog_Oak>
               </costList>
               <designatorDropdown>Floor_FloorWoodLight</designatorDropdown>
-              <color>(185,142,96)</color>
             </TerrainDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
-            <TerrainDef ParentName="FloorBaseWood">
+            <TerrainDef ParentName="TFloorBaseWood">
               <defName>FloorWoodLight_Palm</defName>
               <label>light palm floor</label>
               <statBases>
@@ -650,18 +650,18 @@
               <renderPrecedence>248</renderPrecedence>
               <description>Light-coloured polished palm floorboards in a pleasant interlocking pattern.</description>
               <texturePath>Terrain/Surfaces/WoodFloor3</texturePath>
-              <designatorDropdown>Floor_FloorWoodLight</designatorDropdown>
+              <color>(224, 150, 87)</color>
               <costList>
                 <WoodLog_Palm>5</WoodLog_Palm>
               </costList>
-              <color>(224, 150, 87)</color>
+              <designatorDropdown>Floor_FloorWoodLight</designatorDropdown>
             </TerrainDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
-            <TerrainDef ParentName="FloorBaseWood">
+            <TerrainDef ParentName="TFloorBaseWood">
               <defName>FloorWoodLight_Pine</defName>
               <label>light pine floor</label>
               <statBases>
@@ -671,18 +671,18 @@
               <renderPrecedence>248</renderPrecedence>
               <description>Light-coloured polished pine floorboards in a pleasant interlocking pattern.</description>
               <texturePath>Terrain/Surfaces/WoodFloor3</texturePath>
-              <designatorDropdown>Floor_FloorWoodLight</designatorDropdown>
               <costList>
                 <WoodLog_Pine>5</WoodLog_Pine>
               </costList>
               <color>(198,146,68)</color>
+              <designatorDropdown>Floor_FloorWoodLight</designatorDropdown>
             </TerrainDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
-            <TerrainDef ParentName="FloorBaseWood">
+            <TerrainDef ParentName="TFloorBaseWood">
               <defName>FloorWoodLight_Poplar</defName>
               <label>light poplar floor</label>
               <statBases>
@@ -692,18 +692,18 @@
               <renderPrecedence>248</renderPrecedence>
               <description>Light-coloured polished poplar floorboards in a pleasant interlocking pattern.</description>
               <texturePath>Terrain/Surfaces/WoodFloor3</texturePath>
+              <color>(184,156,108)</color>
               <costList>
                 <WoodLog_Poplar>5</WoodLog_Poplar>
               </costList>
               <designatorDropdown>Floor_FloorWoodLight</designatorDropdown>
-              <color>(184,156,108)</color>
             </TerrainDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
-            <TerrainDef ParentName="FloorBaseWood">
+            <TerrainDef ParentName="TFloorBaseWood">
               <defName>FloorWoodLight_Teak</defName>
               <label>light teak floor</label>
               <statBases>
@@ -713,18 +713,18 @@
               <renderPrecedence>248</renderPrecedence>
               <description>Light-coloured polished teak floorboards in a pleasant interlocking pattern.</description>
               <texturePath>Terrain/Surfaces/WoodFloor3</texturePath>
-              <designatorDropdown>Floor_FloorWoodLight</designatorDropdown>
+              <color>(154,102,59)</color>
               <costList>
                 <WoodLog_Teak>5</WoodLog_Teak>
               </costList>
-              <color>(154,102,59)</color>
+              <designatorDropdown>Floor_FloorWoodLight</designatorDropdown>
             </TerrainDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
-            <TerrainDef ParentName="FloorBaseWood">
+            <TerrainDef ParentName="TFloorBaseWood">
               <defName>FloorWoodLight_Willow</defName>
               <label>light willow floor</label>
               <statBases>
@@ -734,11 +734,11 @@
               <renderPrecedence>248</renderPrecedence>
               <description>Light-coloured polished willow floorboards in a pleasant interlocking pattern.</description>
               <texturePath>Terrain/Surfaces/WoodFloor3</texturePath>
-              <designatorDropdown>Floor_FloorWoodLight</designatorDropdown>
+              <color>(221, 186, 141)</color>
               <costList>
                 <WoodLog_Willow>5</WoodLog_Willow>
               </costList>
-              <color>(221, 186, 141)</color>
+              <designatorDropdown>Floor_FloorWoodLight</designatorDropdown>
             </TerrainDef>
           </value>
         </li>
@@ -759,7 +759,7 @@
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
-            <TerrainDef ParentName="FloorBaseWood">
+            <TerrainDef ParentName="TFloorBaseWood">
               <defName>FloorWoodMosaic_Birch</defName>
               <label>mosaic birch floor</label>
               <statBases>
@@ -769,18 +769,18 @@
               <renderPrecedence>247</renderPrecedence>
               <description>A birch floor with planks laid in a mosaic-like pattern - beautiful, but needs a lot of birch and is time-consuming to build.</description>
               <texturePath>Terrain/Surfaces/WoodFloor4</texturePath>
+              <color>(235,228,216)</color>
               <costList>
                 <WoodLog_Birch>9</WoodLog_Birch>
               </costList>
               <designatorDropdown>Floor_FloorWoodMosaic</designatorDropdown>
-              <color>(235,228,216)</color>
             </TerrainDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
-            <TerrainDef ParentName="FloorBaseWood">
+            <TerrainDef ParentName="TFloorBaseWood">
               <defName>FloorWoodMosaic_Cecropia</defName>
               <label>mosaic cecropia floor</label>
               <statBases>
@@ -790,18 +790,18 @@
               <renderPrecedence>247</renderPrecedence>
               <description>A cecropia floor with planks laid in a mosaic-like pattern - beautiful, but needs a lot of cecropia and is time-consuming to build.</description>
               <texturePath>Terrain/Surfaces/WoodFloor4</texturePath>
+              <color>(126,74,63)</color>
               <designatorDropdown>Floor_FloorWoodMosaic</designatorDropdown>
               <costList>
                 <WoodLog_Cecropia>9</WoodLog_Cecropia>
               </costList>
-              <color>(126,74,63)</color>
             </TerrainDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
-            <TerrainDef ParentName="FloorBaseWood">
+            <TerrainDef ParentName="TFloorBaseWood">
               <defName>FloorWoodMosaic_Cypress</defName>
               <label>mosaic cypress floor</label>
               <statBases>
@@ -811,18 +811,18 @@
               <renderPrecedence>247</renderPrecedence>
               <description>A cypress floor with planks laid in a mosaic-like pattern - beautiful, but needs a lot of cypress and is time-consuming to build.</description>
               <texturePath>Terrain/Surfaces/WoodFloor4</texturePath>
+              <color>(239, 217, 184)</color>
               <costList>
                 <WoodLog_Cypress>9</WoodLog_Cypress>
               </costList>
               <designatorDropdown>Floor_FloorWoodMosaic</designatorDropdown>
-              <color>(239, 217, 184)</color>
             </TerrainDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
-            <TerrainDef ParentName="FloorBaseWood">
+            <TerrainDef ParentName="TFloorBaseWood">
               <defName>FloorWoodMosaic_Drago</defName>
               <label>mosaic drago floor</label>
               <statBases>
@@ -832,18 +832,18 @@
               <renderPrecedence>247</renderPrecedence>
               <description>A drago floor with planks laid in a mosaic-like pattern - beautiful, but needs a lot of drago and is time-consuming to build.</description>
               <texturePath>Terrain/Surfaces/WoodFloor4</texturePath>
+              <color>(171, 159, 142)</color>
               <costList>
                 <WoodLog_Drago>9</WoodLog_Drago>
               </costList>
               <designatorDropdown>Floor_FloorWoodMosaic</designatorDropdown>
-              <color>(171, 159, 142)</color>
             </TerrainDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
-            <TerrainDef ParentName="FloorBaseWood">
+            <TerrainDef ParentName="TFloorBaseWood">
               <defName>FloorWoodMosaic_Maple</defName>
               <label>mosaic maple floor</label>
               <statBases>
@@ -853,18 +853,18 @@
               <renderPrecedence>247</renderPrecedence>
               <description>A maple floor with planks laid in a mosaic-like pattern - beautiful, but needs a lot of maple and is time-consuming to build.</description>
               <texturePath>Terrain/Surfaces/WoodFloor4</texturePath>
-              <designatorDropdown>Floor_FloorWoodMosaic</designatorDropdown>
+              <color>(236, 201, 163)</color>
               <costList>
                 <WoodLog_Maple>9</WoodLog_Maple>
               </costList>
-              <color>(236, 201, 163)</color>
+              <designatorDropdown>Floor_FloorWoodMosaic</designatorDropdown>
             </TerrainDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
-            <TerrainDef ParentName="FloorBaseWood">
+            <TerrainDef ParentName="TFloorBaseWood">
               <defName>FloorWoodMosaic_Oak</defName>
               <label>mosaic oak floor</label>
               <statBases>
@@ -874,18 +874,18 @@
               <renderPrecedence>247</renderPrecedence>
               <description>A oak floor with planks laid in a mosaic-like pattern - beautiful, but needs a lot of oak and is time-consuming to build.</description>
               <texturePath>Terrain/Surfaces/WoodFloor4</texturePath>
+              <color>(185,142,96)</color>
               <costList>
                 <WoodLog_Oak>9</WoodLog_Oak>
               </costList>
               <designatorDropdown>Floor_FloorWoodMosaic</designatorDropdown>
-              <color>(185,142,96)</color>
             </TerrainDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
-            <TerrainDef ParentName="FloorBaseWood">
+            <TerrainDef ParentName="TFloorBaseWood">
               <defName>FloorWoodMosaic_Palm</defName>
               <label>mosaic palm floor</label>
               <statBases>
@@ -895,18 +895,18 @@
               <renderPrecedence>247</renderPrecedence>
               <description>A palm floor with planks laid in a mosaic-like pattern - beautiful, but needs a lot of palm and is time-consuming to build.</description>
               <texturePath>Terrain/Surfaces/WoodFloor4</texturePath>
-              <designatorDropdown>Floor_FloorWoodMosaic</designatorDropdown>
+              <color>(224, 150, 87)</color>
               <costList>
                 <WoodLog_Palm>9</WoodLog_Palm>
               </costList>
-              <color>(224, 150, 87)</color>
+              <designatorDropdown>Floor_FloorWoodMosaic</designatorDropdown>
             </TerrainDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
-            <TerrainDef ParentName="FloorBaseWood">
+            <TerrainDef ParentName="TFloorBaseWood">
               <defName>FloorWoodMosaic_Pine</defName>
               <label>mosaic pine floor</label>
               <statBases>
@@ -916,18 +916,18 @@
               <renderPrecedence>247</renderPrecedence>
               <description>A pine floor with planks laid in a mosaic-like pattern - beautiful, but needs a lot of pine and is time-consuming to build.</description>
               <texturePath>Terrain/Surfaces/WoodFloor4</texturePath>
-              <designatorDropdown>Floor_FloorWoodMosaic</designatorDropdown>
               <costList>
                 <WoodLog_Pine>9</WoodLog_Pine>
               </costList>
               <color>(198,146,68)</color>
+              <designatorDropdown>Floor_FloorWoodMosaic</designatorDropdown>
             </TerrainDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
-            <TerrainDef ParentName="FloorBaseWood">
+            <TerrainDef ParentName="TFloorBaseWood">
               <defName>FloorWoodMosaic_Poplar</defName>
               <label>mosaic poplar floor</label>
               <statBases>
@@ -937,18 +937,18 @@
               <renderPrecedence>247</renderPrecedence>
               <description>A poplar floor with planks laid in a mosaic-like pattern - beautiful, but needs a lot of poplar and is time-consuming to build.</description>
               <texturePath>Terrain/Surfaces/WoodFloor4</texturePath>
+              <color>(184,156,108)</color>
               <costList>
                 <WoodLog_Poplar>9</WoodLog_Poplar>
               </costList>
               <designatorDropdown>Floor_FloorWoodMosaic</designatorDropdown>
-              <color>(184,156,108)</color>
             </TerrainDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
-            <TerrainDef ParentName="FloorBaseWood">
+            <TerrainDef ParentName="TFloorBaseWood">
               <defName>FloorWoodMosaic_Teak</defName>
               <label>mosaic teak floor</label>
               <statBases>
@@ -958,18 +958,18 @@
               <renderPrecedence>247</renderPrecedence>
               <description>A teak floor with planks laid in a mosaic-like pattern - beautiful, but needs a lot of teak and is time-consuming to build.</description>
               <texturePath>Terrain/Surfaces/WoodFloor4</texturePath>
-              <designatorDropdown>Floor_FloorWoodMosaic</designatorDropdown>
+              <color>(154,102,59)</color>
               <costList>
                 <WoodLog_Teak>9</WoodLog_Teak>
               </costList>
-              <color>(154,102,59)</color>
+              <designatorDropdown>Floor_FloorWoodMosaic</designatorDropdown>
             </TerrainDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
-            <TerrainDef ParentName="FloorBaseWood">
+            <TerrainDef ParentName="TFloorBaseWood">
               <defName>FloorWoodMosaic_Willow</defName>
               <label>mosaic willow floor</label>
               <statBases>
@@ -979,11 +979,11 @@
               <renderPrecedence>247</renderPrecedence>
               <description>A willow floor with planks laid in a mosaic-like pattern - beautiful, but needs a lot of willow and is time-consuming to build.</description>
               <texturePath>Terrain/Surfaces/WoodFloor4</texturePath>
-              <designatorDropdown>Floor_FloorWoodMosaic</designatorDropdown>
+              <color>(221, 186, 141)</color>
               <costList>
                 <WoodLog_Willow>9</WoodLog_Willow>
               </costList>
-              <color>(221, 186, 141)</color>
+              <designatorDropdown>Floor_FloorWoodMosaic</designatorDropdown>
             </TerrainDef>
           </value>
         </li>
@@ -1004,7 +1004,7 @@
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
-            <TerrainDef ParentName="FloorBaseWood">
+            <TerrainDef ParentName="TFloorBaseWood">
               <defName>FloorWoodVertical_Birch</defName>
               <label>vertical birch floor</label>
               <statBases>
@@ -1014,18 +1014,18 @@
               <renderPrecedence>246</renderPrecedence>
               <description>Dark birch floorboards.</description>
               <texturePath>Terrain/Surfaces/WoodFloor5</texturePath>
+              <color>(235,228,216)</color>
               <costList>
                 <WoodLog_Birch>3</WoodLog_Birch>
               </costList>
               <designatorDropdown>Floor_FloorWoodVertical</designatorDropdown>
-              <color>(235,228,216)</color>
             </TerrainDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
-            <TerrainDef ParentName="FloorBaseWood">
+            <TerrainDef ParentName="TFloorBaseWood">
               <defName>FloorWoodVertical_Cecropia</defName>
               <label>vertical cecropia floor</label>
               <statBases>
@@ -1035,18 +1035,18 @@
               <renderPrecedence>246</renderPrecedence>
               <description>Dark cecropia floorboards.</description>
               <texturePath>Terrain/Surfaces/WoodFloor5</texturePath>
+              <color>(126,74,63)</color>
               <designatorDropdown>Floor_FloorWoodVertical</designatorDropdown>
               <costList>
                 <WoodLog_Cecropia>3</WoodLog_Cecropia>
               </costList>
-              <color>(126,74,63)</color>
             </TerrainDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
-            <TerrainDef ParentName="FloorBaseWood">
+            <TerrainDef ParentName="TFloorBaseWood">
               <defName>FloorWoodVertical_Cypress</defName>
               <label>vertical cypress floor</label>
               <statBases>
@@ -1056,18 +1056,18 @@
               <renderPrecedence>246</renderPrecedence>
               <description>Dark cypress floorboards.</description>
               <texturePath>Terrain/Surfaces/WoodFloor5</texturePath>
+              <color>(239, 217, 184)</color>
               <costList>
                 <WoodLog_Cypress>3</WoodLog_Cypress>
               </costList>
               <designatorDropdown>Floor_FloorWoodVertical</designatorDropdown>
-              <color>(239, 217, 184)</color>
             </TerrainDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
-            <TerrainDef ParentName="FloorBaseWood">
+            <TerrainDef ParentName="TFloorBaseWood">
               <defName>FloorWoodVertical_Drago</defName>
               <label>vertical drago floor</label>
               <statBases>
@@ -1077,18 +1077,18 @@
               <renderPrecedence>246</renderPrecedence>
               <description>Dark drago floorboards.</description>
               <texturePath>Terrain/Surfaces/WoodFloor5</texturePath>
+              <color>(171, 159, 142)</color>
               <costList>
                 <WoodLog_Drago>3</WoodLog_Drago>
               </costList>
               <designatorDropdown>Floor_FloorWoodVertical</designatorDropdown>
-              <color>(171, 159, 142)</color>
             </TerrainDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
-            <TerrainDef ParentName="FloorBaseWood">
+            <TerrainDef ParentName="TFloorBaseWood">
               <defName>FloorWoodVertical_Maple</defName>
               <label>vertical maple floor</label>
               <statBases>
@@ -1098,18 +1098,18 @@
               <renderPrecedence>246</renderPrecedence>
               <description>Dark maple floorboards.</description>
               <texturePath>Terrain/Surfaces/WoodFloor5</texturePath>
-              <designatorDropdown>Floor_FloorWoodVertical</designatorDropdown>
+              <color>(236, 201, 163)</color>
               <costList>
                 <WoodLog_Maple>3</WoodLog_Maple>
               </costList>
-              <color>(236, 201, 163)</color>
+              <designatorDropdown>Floor_FloorWoodVertical</designatorDropdown>
             </TerrainDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
-            <TerrainDef ParentName="FloorBaseWood">
+            <TerrainDef ParentName="TFloorBaseWood">
               <defName>FloorWoodVertical_Oak</defName>
               <label>vertical oak floor</label>
               <statBases>
@@ -1119,18 +1119,18 @@
               <renderPrecedence>246</renderPrecedence>
               <description>Dark oak floorboards.</description>
               <texturePath>Terrain/Surfaces/WoodFloor5</texturePath>
+              <color>(185,142,96)</color>
               <costList>
                 <WoodLog_Oak>3</WoodLog_Oak>
               </costList>
               <designatorDropdown>Floor_FloorWoodVertical</designatorDropdown>
-              <color>(185,142,96)</color>
             </TerrainDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
-            <TerrainDef ParentName="FloorBaseWood">
+            <TerrainDef ParentName="TFloorBaseWood">
               <defName>FloorWoodVertical_Palm</defName>
               <label>vertical palm floor</label>
               <statBases>
@@ -1140,18 +1140,18 @@
               <renderPrecedence>246</renderPrecedence>
               <description>Dark palm floorboards.</description>
               <texturePath>Terrain/Surfaces/WoodFloor5</texturePath>
-              <designatorDropdown>Floor_FloorWoodVertical</designatorDropdown>
+              <color>(224, 150, 87)</color>
               <costList>
                 <WoodLog_Palm>3</WoodLog_Palm>
               </costList>
-              <color>(224, 150, 87)</color>
+              <designatorDropdown>Floor_FloorWoodVertical</designatorDropdown>
             </TerrainDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
-            <TerrainDef ParentName="FloorBaseWood">
+            <TerrainDef ParentName="TFloorBaseWood">
               <defName>FloorWoodVertical_Pine</defName>
               <label>vertical pine floor</label>
               <statBases>
@@ -1161,18 +1161,18 @@
               <renderPrecedence>246</renderPrecedence>
               <description>Dark pine floorboards.</description>
               <texturePath>Terrain/Surfaces/WoodFloor5</texturePath>
-              <designatorDropdown>Floor_FloorWoodVertical</designatorDropdown>
               <costList>
                 <WoodLog_Pine>3</WoodLog_Pine>
               </costList>
               <color>(198,146,68)</color>
+              <designatorDropdown>Floor_FloorWoodVertical</designatorDropdown>
             </TerrainDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
-            <TerrainDef ParentName="FloorBaseWood">
+            <TerrainDef ParentName="TFloorBaseWood">
               <defName>FloorWoodVertical_Poplar</defName>
               <label>vertical poplar floor</label>
               <statBases>
@@ -1182,18 +1182,18 @@
               <renderPrecedence>246</renderPrecedence>
               <description>Dark poplar floorboards.</description>
               <texturePath>Terrain/Surfaces/WoodFloor5</texturePath>
+              <color>(184,156,108)</color>
               <costList>
                 <WoodLog_Poplar>3</WoodLog_Poplar>
               </costList>
               <designatorDropdown>Floor_FloorWoodVertical</designatorDropdown>
-              <color>(184,156,108)</color>
             </TerrainDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
-            <TerrainDef ParentName="FloorBaseWood">
+            <TerrainDef ParentName="TFloorBaseWood">
               <defName>FloorWoodVertical_Teak</defName>
               <label>vertical teak floor</label>
               <statBases>
@@ -1203,18 +1203,18 @@
               <renderPrecedence>246</renderPrecedence>
               <description>Dark teak floorboards.</description>
               <texturePath>Terrain/Surfaces/WoodFloor5</texturePath>
-              <designatorDropdown>Floor_FloorWoodVertical</designatorDropdown>
+              <color>(154,102,59)</color>
               <costList>
                 <WoodLog_Teak>3</WoodLog_Teak>
               </costList>
-              <color>(154,102,59)</color>
+              <designatorDropdown>Floor_FloorWoodVertical</designatorDropdown>
             </TerrainDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
-            <TerrainDef ParentName="FloorBaseWood">
+            <TerrainDef ParentName="TFloorBaseWood">
               <defName>FloorWoodVertical_Willow</defName>
               <label>vertical willow floor</label>
               <statBases>
@@ -1224,11 +1224,11 @@
               <renderPrecedence>246</renderPrecedence>
               <description>Dark willow floorboards.</description>
               <texturePath>Terrain/Surfaces/WoodFloor5</texturePath>
-              <designatorDropdown>Floor_FloorWoodVertical</designatorDropdown>
+              <color>(221, 186, 141)</color>
               <costList>
                 <WoodLog_Willow>3</WoodLog_Willow>
               </costList>
-              <color>(221, 186, 141)</color>
+              <designatorDropdown>Floor_FloorWoodVertical</designatorDropdown>
             </TerrainDef>
           </value>
         </li>
@@ -1249,7 +1249,7 @@
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
-            <TerrainDef ParentName="FloorBaseWood">
+            <TerrainDef ParentName="TFloorBaseWood">
               <defName>FloorWoodBarn_Birch</defName>
               <label>birch barn board floor</label>
               <statBases>
@@ -1260,18 +1260,18 @@
               <renderPrecedence>245</renderPrecedence>
               <description>Rough barn board flooring. Quick to build.</description>
               <texturePath>Terrain/Surfaces/WoodFloor6</texturePath>
+              <color>(235,228,216)</color>
               <costList>
                 <WoodLog_Birch>2</WoodLog_Birch>
               </costList>
               <designatorDropdown>Floor_FloorWoodBarn</designatorDropdown>
-              <color>(235,228,216)</color>
             </TerrainDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
-            <TerrainDef ParentName="FloorBaseWood">
+            <TerrainDef ParentName="TFloorBaseWood">
               <defName>FloorWoodBarn_Cecropia</defName>
               <label>cecropia barn board floor</label>
               <statBases>
@@ -1282,18 +1282,18 @@
               <renderPrecedence>245</renderPrecedence>
               <description>Rough barn board flooring. Quick to build.</description>
               <texturePath>Terrain/Surfaces/WoodFloor6</texturePath>
+              <color>(126,74,63)</color>
               <designatorDropdown>Floor_FloorWoodBarn</designatorDropdown>
               <costList>
                 <WoodLog_Cecropia>2</WoodLog_Cecropia>
               </costList>
-              <color>(126,74,63)</color>
             </TerrainDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
-            <TerrainDef ParentName="FloorBaseWood">
+            <TerrainDef ParentName="TFloorBaseWood">
               <defName>FloorWoodBarn_Cypress</defName>
               <label>cypress barn board floor</label>
               <statBases>
@@ -1304,18 +1304,18 @@
               <renderPrecedence>245</renderPrecedence>
               <description>Rough barn board flooring. Quick to build.</description>
               <texturePath>Terrain/Surfaces/WoodFloor6</texturePath>
+              <color>(239, 217, 184)</color>
               <costList>
                 <WoodLog_Cypress>2</WoodLog_Cypress>
               </costList>
               <designatorDropdown>Floor_FloorWoodBarn</designatorDropdown>
-              <color>(239, 217, 184)</color>
             </TerrainDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
-            <TerrainDef ParentName="FloorBaseWood">
+            <TerrainDef ParentName="TFloorBaseWood">
               <defName>FloorWoodBarn_Drago</defName>
               <label>drago barn board floor</label>
               <statBases>
@@ -1326,18 +1326,18 @@
               <renderPrecedence>245</renderPrecedence>
               <description>Rough barn board flooring. Quick to build.</description>
               <texturePath>Terrain/Surfaces/WoodFloor6</texturePath>
+              <color>(171, 159, 142)</color>
               <costList>
                 <WoodLog_Drago>2</WoodLog_Drago>
               </costList>
               <designatorDropdown>Floor_FloorWoodBarn</designatorDropdown>
-              <color>(171, 159, 142)</color>
             </TerrainDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
-            <TerrainDef ParentName="FloorBaseWood">
+            <TerrainDef ParentName="TFloorBaseWood">
               <defName>FloorWoodBarn_Maple</defName>
               <label>maple barn board floor</label>
               <statBases>
@@ -1348,18 +1348,18 @@
               <renderPrecedence>245</renderPrecedence>
               <description>Rough barn board flooring. Quick to build.</description>
               <texturePath>Terrain/Surfaces/WoodFloor6</texturePath>
-              <designatorDropdown>Floor_FloorWoodBarn</designatorDropdown>
+              <color>(236, 201, 163)</color>
               <costList>
                 <WoodLog_Maple>2</WoodLog_Maple>
               </costList>
-              <color>(236, 201, 163)</color>
+              <designatorDropdown>Floor_FloorWoodBarn</designatorDropdown>
             </TerrainDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
-            <TerrainDef ParentName="FloorBaseWood">
+            <TerrainDef ParentName="TFloorBaseWood">
               <defName>FloorWoodBarn_Oak</defName>
               <label>oak barn board floor</label>
               <statBases>
@@ -1370,18 +1370,18 @@
               <renderPrecedence>245</renderPrecedence>
               <description>Rough barn board flooring. Quick to build.</description>
               <texturePath>Terrain/Surfaces/WoodFloor6</texturePath>
+              <color>(185,142,96)</color>
               <costList>
                 <WoodLog_Oak>2</WoodLog_Oak>
               </costList>
               <designatorDropdown>Floor_FloorWoodBarn</designatorDropdown>
-              <color>(185,142,96)</color>
             </TerrainDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
-            <TerrainDef ParentName="FloorBaseWood">
+            <TerrainDef ParentName="TFloorBaseWood">
               <defName>FloorWoodBarn_Palm</defName>
               <label>palm barn board floor</label>
               <statBases>
@@ -1392,18 +1392,18 @@
               <renderPrecedence>245</renderPrecedence>
               <description>Rough barn board flooring. Quick to build.</description>
               <texturePath>Terrain/Surfaces/WoodFloor6</texturePath>
-              <designatorDropdown>Floor_FloorWoodBarn</designatorDropdown>
+              <color>(224, 150, 87)</color>
               <costList>
                 <WoodLog_Palm>2</WoodLog_Palm>
               </costList>
-              <color>(224, 150, 87)</color>
+              <designatorDropdown>Floor_FloorWoodBarn</designatorDropdown>
             </TerrainDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
-            <TerrainDef ParentName="FloorBaseWood">
+            <TerrainDef ParentName="TFloorBaseWood">
               <defName>FloorWoodBarn_Pine</defName>
               <label>pine barn board floor</label>
               <statBases>
@@ -1414,18 +1414,18 @@
               <renderPrecedence>245</renderPrecedence>
               <description>Rough barn board flooring. Quick to build.</description>
               <texturePath>Terrain/Surfaces/WoodFloor6</texturePath>
-              <designatorDropdown>Floor_FloorWoodBarn</designatorDropdown>
               <costList>
                 <WoodLog_Pine>2</WoodLog_Pine>
               </costList>
               <color>(198,146,68)</color>
+              <designatorDropdown>Floor_FloorWoodBarn</designatorDropdown>
             </TerrainDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
-            <TerrainDef ParentName="FloorBaseWood">
+            <TerrainDef ParentName="TFloorBaseWood">
               <defName>FloorWoodBarn_Poplar</defName>
               <label>poplar barn board floor</label>
               <statBases>
@@ -1436,18 +1436,18 @@
               <renderPrecedence>245</renderPrecedence>
               <description>Rough barn board flooring. Quick to build.</description>
               <texturePath>Terrain/Surfaces/WoodFloor6</texturePath>
+              <color>(184,156,108)</color>
               <costList>
                 <WoodLog_Poplar>2</WoodLog_Poplar>
               </costList>
               <designatorDropdown>Floor_FloorWoodBarn</designatorDropdown>
-              <color>(184,156,108)</color>
             </TerrainDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
-            <TerrainDef ParentName="FloorBaseWood">
+            <TerrainDef ParentName="TFloorBaseWood">
               <defName>FloorWoodBarn_Teak</defName>
               <label>teak barn board floor</label>
               <statBases>
@@ -1458,18 +1458,18 @@
               <renderPrecedence>245</renderPrecedence>
               <description>Rough barn board flooring. Quick to build.</description>
               <texturePath>Terrain/Surfaces/WoodFloor6</texturePath>
-              <designatorDropdown>Floor_FloorWoodBarn</designatorDropdown>
+              <color>(154,102,59)</color>
               <costList>
                 <WoodLog_Teak>2</WoodLog_Teak>
               </costList>
-              <color>(154,102,59)</color>
+              <designatorDropdown>Floor_FloorWoodBarn</designatorDropdown>
             </TerrainDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>/Defs</xpath>
           <value>
-            <TerrainDef ParentName="FloorBaseWood">
+            <TerrainDef ParentName="TFloorBaseWood">
               <defName>FloorWoodBarn_Willow</defName>
               <label>willow barn board floor</label>
               <statBases>
@@ -1480,11 +1480,11 @@
               <renderPrecedence>245</renderPrecedence>
               <description>Rough barn board flooring. Quick to build.</description>
               <texturePath>Terrain/Surfaces/WoodFloor6</texturePath>
-              <designatorDropdown>Floor_FloorWoodBarn</designatorDropdown>
+              <color>(221, 186, 141)</color>
               <costList>
                 <WoodLog_Willow>2</WoodLog_Willow>
               </costList>
-              <color>(221, 186, 141)</color>
+              <designatorDropdown>Floor_FloorWoodBarn</designatorDropdown>
             </TerrainDef>
           </value>
         </li>

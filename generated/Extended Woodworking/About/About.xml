@@ -37,7 +37,6 @@ Support for the Royalty is included and Extended Woodworking provides patches fo
 * Coal Expanded
 * Fertile Fields [1.1]
 * Fortifications - Neolithic
-* Gloomy Deco
 * GloomyFurniture
 * Medieval Times Unofficial Update
 * Project RimFactory - Materials
@@ -78,7 +77,6 @@ The following mods contain floors, the defs are duplicated for each available wo
     <li>neceros.coalexpanded</li>
     <li>jamaicancastle.rf.fertilefields</li>
     <li>aoba.fortress.neolithic</li>
-    <li>dalrae.gloomydeco</li>
     <li>solaris.furniturebase</li>
     <li>vindar.medievaltimes</li>
     <li>prf.materials</li>
