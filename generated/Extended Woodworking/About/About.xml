@@ -7,6 +7,7 @@
     <li>1.0</li>
     <li>1.1</li>
     <li>1.2</li>
+    <li>1.3</li>
   </supportedVersions>
   <description>
 This is an update of the Extended Woodworking mod (A13). All credit for the original creative work goes to ItchyFlea. https://ludeon.com/forums/index.php?topic=7893.0
@@ -32,12 +33,11 @@ Support for the Royalty is included and Extended Woodworking provides patches fo
 * Advanced Power Plus
 * Area Rugs 2.0
 * Caravan Equipment
-* Caravan Gear [1.1]
+* Caravan Gear
 * Ceramics
 * Coal Expanded
 * Fertile Fields [1.1]
 * Fortifications - Neolithic
-* Gloomy Deco
 * GloomyFurniture
 * Medieval Times Unofficial Update
 * Project RimFactory - Materials
@@ -66,11 +66,12 @@ The following mods contain floors, the defs are duplicated for each available wo
   <loadAfter>
     <li>ludeon.rimworld</li>
     <li>ludeon.rimworld.royalty</li>
+    <li>ludeon.rimworld.ideology</li>
     <li>telkir.tmods.expandedcloth</li>
     <li>telkir.tmods.morefloors</li>
     <li>spoonshortage.adogsaidanimalprosthetics</li>
     <li>torann.arimworldofmagic</li>
-    <li>sulusdacor.james76543.meltup.advancedpowerplus</li>
+    <li>meltup.advancedpowerplus</li>
     <li>thegoofyone.arearugs</li>
     <li>squirtingelephant.caravanequipment</li>
     <li>jelly.caravangear</li>
@@ -78,7 +79,6 @@ The following mods contain floors, the defs are duplicated for each available wo
     <li>neceros.coalexpanded</li>
     <li>jamaicancastle.rf.fertilefields</li>
     <li>aoba.fortress.neolithic</li>
-    <li>dalrae.gloomydeco</li>
     <li>solaris.furniturebase</li>
     <li>vindar.medievaltimes</li>
     <li>prf.materials</li>

@@ -58,6 +58,7 @@ task Setup {
             SupportedMods      = @(
                 'Core'
                 'Royalty'
+                'Ideology'
                 '[T] ExpandedCloth'
                 '[T] MoreFloors'
                 'A Dog Said... Animal Prosthetics'
@@ -65,7 +66,7 @@ task Setup {
                 'Advanced Power Plus'
                 'Area Rugs 2.0'
                 'Caravan Equipment'
-                'Caravan Gear [1.1]'
+                'Caravan Gear'
                 'Ceramics'
                 'Coal Expanded'
                 'Fertile Fields [1.1]'
@@ -87,6 +88,7 @@ task Setup {
                 '[WD] Expanded Floors'
                 'GloomyFurniture'
                 'RIMkea'
+                # 'Refined Floors'
             )
             SkipFloorDefs = @(
                 '*Light_Evt*'
@@ -903,7 +905,7 @@ task UpdateMetadata {
 
     $xElement = $xDocument.Element('ModMetaData').Element('description')
     $xElement.Value = $xElement.Value -replace '%SUPPORTED_MODS%', @(
-        ($buildInfo.Data.SupportedMods -notmatch '^(Core|Royalty)$' | ForEach-Object { '* {0}' -f $_ }) -join "`n"
+        ($buildInfo.Data.SupportedMods -notmatch '^(Core|Royalty|Ideology)$' | ForEach-Object { '* {0}' -f $_ }) -join "`n"
     )
     $xElement.Value = $xElement.Value -replace '%SUPPORTED_FLOOR_MODS%', @(
         ($buildInfo.Data.SupportedFloorMods | ForEach-Object { '* {0}' -f $_ }) -join "`n"
