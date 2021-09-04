@@ -48,7 +48,7 @@ Supported mods:
 * Project RimFactory - Materials
 * Reclaim, Reuse, Recycle
 * RIMkea
-* SRTS Expanded
+* RoughBarricade (Continued)
 * Vanilla Factions Expanded - Settlers
 * Vanilla Furniture Expanded - Props and Decor
 * VGP Xtra Trees and Flowers
@@ -63,6 +63,13 @@ The following mods contain floors, the defs are duplicated for each available wo
 * [WD] Expanded Floors
 * GloomyFurniture
 * RIMkea
+
+Incompatible mods:
+
+* Expanded Woodworking
+* Simple Chains: Lumber
+
+The original version of Extended Woodworking inspired a number of mods including the two listed above. It is not possible to create compatiblity patches for the mods above.
     </description>
   <incompatibleWith>
     <li>Adventurer.ExpandWoodwork</li>
@@ -89,7 +96,7 @@ The following mods contain floors, the defs are duplicated for each available wo
     <li>prf.materials</li>
     <li>doctorvangogh.reclaimreuserecycle</li>
     <li>spoonshortage.rimkea</li>
-    <li>smashphil.neceros.srtsexpanded</li>
+    <li>mlie.roughbarricade</li>
     <li>oskarpotocki.vanillafactionsexpanded.settlersmodule</li>
     <li>vanillaexpanded.vfepropsanddecor</li>
     <li>dismarzero.vgp.xtratreesandflowers</li>

@@ -48,10 +48,10 @@
                 <Beauty>2</Beauty>
               </statBases>
               <constructEffect>ConstructWood</constructEffect>
+              <designatorDropdown>Floor_WoodPlank</designatorDropdown>
               <costList>
                 <WoodLog_Camellia>6</WoodLog_Camellia>
               </costList>
-              <designatorDropdown>Floor_WoodPlank</designatorDropdown>
             </TerrainDef>
           </value>
         </li>
@@ -72,10 +72,10 @@
                 <Beauty>1</Beauty>
               </statBases>
               <constructEffect>ConstructWood</constructEffect>
+              <designatorDropdown>Floor_WoodPlank</designatorDropdown>
               <costList>
                 <WoodLog_CherryBlossom>6</WoodLog_CherryBlossom>
               </costList>
-              <designatorDropdown>Floor_WoodPlank</designatorDropdown>
             </TerrainDef>
           </value>
         </li>
@@ -96,10 +96,10 @@
                 <Beauty>1.5</Beauty>
               </statBases>
               <constructEffect>ConstructWood</constructEffect>
+              <designatorDropdown>Floor_WoodPlank</designatorDropdown>
               <costList>
                 <WoodLog_JapaneseMaple>6</WoodLog_JapaneseMaple>
               </costList>
-              <designatorDropdown>Floor_WoodPlank</designatorDropdown>
             </TerrainDef>
           </value>
         </li>

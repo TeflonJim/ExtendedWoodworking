@@ -76,7 +76,7 @@ task Setup {
                 'Project RimFactory - Materials'
                 'Reclaim, Reuse, Recycle'
                 'RIMkea'
-                'SRTS Expanded'
+                'RoughBarricade (Continued)'
                 'Vanilla Factions Expanded - Settlers'
                 'Vanilla Furniture Expanded - Props and Decor'
                 'VGP Xtra Trees and Flowers'
@@ -408,7 +408,7 @@ task CreateCostListPatch {
         $modInfo = Get-RWMod $mod
         $shortName = $mod -replace '[^A-Za-z0-9]'
 
-        $modInfo | Get-RWModDef -XPathQuery '/Defs/*[name()!="TerrainDef" and defName and not(stuffCategories) and ./costList/WoodLog]' | ForEach-Object {
+        $modInfo | Get-RWModDef -Version $buildInfo.RimWorldVersion.ShortVersion -XPathQuery '/Defs/*[name()!="TerrainDef" and defName and not(stuffCategories) and ./costList/WoodLog]' | ForEach-Object {
             [PSCustomObject]@{
                 Mod  = $shortName
                 Node = $_.XElement
@@ -461,7 +461,7 @@ task CreateRecipeDefPatch {
         $modInfo = Get-RWMod $mod
         $shortName = $mod -replace '[^A-Za-z0-9]'
 
-        $modInfo | Get-RWModDef -XPathQuery '/Defs/RecipeDef[(@Abstract="False" or not(@Abstract)) and (ingredients/li/filter/thingDefs/li="WoodLog" or fixedIngredientFilter/thingDefs/li="WoodLog")]' | ForEach-Object {
+        $modInfo | Get-RWModDef -Version $buildInfo.RimWorldVersion.ShortVersion -XPathQuery '/Defs/RecipeDef[(@Abstract="False" or not(@Abstract)) and (ingredients/li/filter/thingDefs/li="WoodLog" or fixedIngredientFilter/thingDefs/li="WoodLog")]' | ForEach-Object {
             [PSCustomObject]@{
                 Mod  = $shortName
                 Node = $_.XElement

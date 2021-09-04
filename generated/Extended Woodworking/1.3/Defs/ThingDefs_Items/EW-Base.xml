@@ -19,6 +19,7 @@
     <drawGUIOverlay>true</drawGUIOverlay>
     <rotatable>false</rotatable>
     <pathCost>14</pathCost>
+    <allowedArchonexusCount>-1</allowedArchonexusCount>
   </ThingDef>
   <ThingDef Name="ResourceBasePainted" Abstract="True">
     <thingClass>ThingWithComps</thingClass>
@@ -39,6 +40,7 @@
     <drawGUIOverlay>true</drawGUIOverlay>
     <rotatable>false</rotatable>
     <pathCost>14</pathCost>
+    <allowedArchonexusCount>-1</allowedArchonexusCount>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
       <texPath>Logs/WoodLog</texPath>

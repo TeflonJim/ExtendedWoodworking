@@ -46,10 +46,10 @@
                 </statBases>
                 <renderPrecedence>250</renderPrecedence>
                 <texturePath>Floors/darkplanks</texturePath>
+                <designatorDropdown>Floor_Floor_DarkPlanks</designatorDropdown>
                 <costList>
                   <WoodLog_Camellia>4</WoodLog_Camellia>
                 </costList>
-                <designatorDropdown>Floor_Floor_DarkPlanks</designatorDropdown>
                 <color>(201, 160, 130)</color>
               </TerrainDef>
             </value>
@@ -67,10 +67,10 @@
                 </statBases>
                 <renderPrecedence>250</renderPrecedence>
                 <texturePath>Floors/darkplanks</texturePath>
-                <designatorDropdown>Floor_Floor_DarkPlanks</designatorDropdown>
                 <costList>
                   <WoodLog_CherryBlossom>4</WoodLog_CherryBlossom>
                 </costList>
+                <designatorDropdown>Floor_Floor_DarkPlanks</designatorDropdown>
                 <color>(165, 82, 40)</color>
               </TerrainDef>
             </value>
@@ -151,10 +151,10 @@
                 </statBases>
                 <renderPrecedence>250</renderPrecedence>
                 <texturePath>Floors/lightplanks</texturePath>
+                <designatorDropdown>Floor_Floor_LightPlanks</designatorDropdown>
                 <costList>
                   <WoodLog_Camellia>4</WoodLog_Camellia>
                 </costList>
-                <designatorDropdown>Floor_Floor_LightPlanks</designatorDropdown>
                 <color>(201, 160, 130)</color>
               </TerrainDef>
             </value>
@@ -172,10 +172,10 @@
                 </statBases>
                 <renderPrecedence>250</renderPrecedence>
                 <texturePath>Floors/lightplanks</texturePath>
-                <designatorDropdown>Floor_Floor_LightPlanks</designatorDropdown>
                 <costList>
                   <WoodLog_CherryBlossom>4</WoodLog_CherryBlossom>
                 </costList>
+                <designatorDropdown>Floor_Floor_LightPlanks</designatorDropdown>
                 <color>(165, 82, 40)</color>
               </TerrainDef>
             </value>
@@ -256,10 +256,10 @@
                 </statBases>
                 <renderPrecedence>250</renderPrecedence>
                 <texturePath>Floors/smoothwood</texturePath>
+                <designatorDropdown>Floor_Floor_SmoothWood</designatorDropdown>
                 <costList>
                   <WoodLog_Camellia>4</WoodLog_Camellia>
                 </costList>
-                <designatorDropdown>Floor_Floor_SmoothWood</designatorDropdown>
                 <color>(201, 160, 130)</color>
               </TerrainDef>
             </value>
@@ -277,10 +277,10 @@
                 </statBases>
                 <renderPrecedence>250</renderPrecedence>
                 <texturePath>Floors/smoothwood</texturePath>
-                <designatorDropdown>Floor_Floor_SmoothWood</designatorDropdown>
                 <costList>
                   <WoodLog_CherryBlossom>4</WoodLog_CherryBlossom>
                 </costList>
+                <designatorDropdown>Floor_Floor_SmoothWood</designatorDropdown>
                 <color>(165, 82, 40)</color>
               </TerrainDef>
             </value>

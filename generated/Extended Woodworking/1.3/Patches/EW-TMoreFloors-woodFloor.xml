@@ -55,11 +55,11 @@
               <renderPrecedence>250</renderPrecedence>
               <description>Rustic cecropia floorboards, finely polished and with splinters removed. Nice to look at but somewhat slow to build.</description>
               <texturePath>Terrain/Surfaces/WoodFloor1</texturePath>
+              <designatorDropdown>Floor_FloorWoodRustic</designatorDropdown>
+              <color>(126,74,63)</color>
               <costList>
                 <WoodLog_Cecropia>6</WoodLog_Cecropia>
               </costList>
-              <designatorDropdown>Floor_FloorWoodRustic</designatorDropdown>
-              <color>(126,74,63)</color>
             </TerrainDef>
           </value>
         </li>
@@ -139,10 +139,10 @@
               <renderPrecedence>250</renderPrecedence>
               <description>Rustic oak floorboards, finely polished and with splinters removed. Nice to look at but somewhat slow to build.</description>
               <texturePath>Terrain/Surfaces/WoodFloor1</texturePath>
-              <designatorDropdown>Floor_FloorWoodRustic</designatorDropdown>
               <costList>
                 <WoodLog_Oak>6</WoodLog_Oak>
               </costList>
+              <designatorDropdown>Floor_FloorWoodRustic</designatorDropdown>
               <color>(185,142,96)</color>
             </TerrainDef>
           </value>
@@ -181,10 +181,10 @@
               <renderPrecedence>250</renderPrecedence>
               <description>Rustic pine floorboards, finely polished and with splinters removed. Nice to look at but somewhat slow to build.</description>
               <texturePath>Terrain/Surfaces/WoodFloor1</texturePath>
-              <designatorDropdown>Floor_FloorWoodRustic</designatorDropdown>
               <costList>
                 <WoodLog_Pine>6</WoodLog_Pine>
               </costList>
+              <designatorDropdown>Floor_FloorWoodRustic</designatorDropdown>
               <color>(198,146,68)</color>
             </TerrainDef>
           </value>
@@ -223,10 +223,10 @@
               <renderPrecedence>250</renderPrecedence>
               <description>Rustic teak floorboards, finely polished and with splinters removed. Nice to look at but somewhat slow to build.</description>
               <texturePath>Terrain/Surfaces/WoodFloor1</texturePath>
+              <designatorDropdown>Floor_FloorWoodRustic</designatorDropdown>
               <costList>
                 <WoodLog_Teak>6</WoodLog_Teak>
               </costList>
-              <designatorDropdown>Floor_FloorWoodRustic</designatorDropdown>
               <color>(154,102,59)</color>
             </TerrainDef>
           </value>
@@ -300,11 +300,11 @@
               <renderPrecedence>249</renderPrecedence>
               <description>Wide, plain-looking floorboards for that minimalistic feel. Easy to build.</description>
               <texturePath>Terrain/Surfaces/WoodFloor2</texturePath>
+              <designatorDropdown>Floor_FloorWoodWide</designatorDropdown>
+              <color>(126,74,63)</color>
               <costList>
                 <WoodLog_Cecropia>2</WoodLog_Cecropia>
               </costList>
-              <designatorDropdown>Floor_FloorWoodWide</designatorDropdown>
-              <color>(126,74,63)</color>
             </TerrainDef>
           </value>
         </li>
@@ -384,10 +384,10 @@
               <renderPrecedence>249</renderPrecedence>
               <description>Wide, plain-looking floorboards for that minimalistic feel. Easy to build.</description>
               <texturePath>Terrain/Surfaces/WoodFloor2</texturePath>
-              <designatorDropdown>Floor_FloorWoodWide</designatorDropdown>
               <costList>
                 <WoodLog_Oak>2</WoodLog_Oak>
               </costList>
+              <designatorDropdown>Floor_FloorWoodWide</designatorDropdown>
               <color>(185,142,96)</color>
             </TerrainDef>
           </value>
@@ -426,10 +426,10 @@
               <renderPrecedence>249</renderPrecedence>
               <description>Wide, plain-looking floorboards for that minimalistic feel. Easy to build.</description>
               <texturePath>Terrain/Surfaces/WoodFloor2</texturePath>
-              <designatorDropdown>Floor_FloorWoodWide</designatorDropdown>
               <costList>
                 <WoodLog_Pine>2</WoodLog_Pine>
               </costList>
+              <designatorDropdown>Floor_FloorWoodWide</designatorDropdown>
               <color>(198,146,68)</color>
             </TerrainDef>
           </value>
@@ -468,10 +468,10 @@
               <renderPrecedence>249</renderPrecedence>
               <description>Wide, plain-looking floorboards for that minimalistic feel. Easy to build.</description>
               <texturePath>Terrain/Surfaces/WoodFloor2</texturePath>
+              <designatorDropdown>Floor_FloorWoodWide</designatorDropdown>
               <costList>
                 <WoodLog_Teak>2</WoodLog_Teak>
               </costList>
-              <designatorDropdown>Floor_FloorWoodWide</designatorDropdown>
               <color>(154,102,59)</color>
             </TerrainDef>
           </value>
@@ -545,11 +545,11 @@
               <renderPrecedence>248</renderPrecedence>
               <description>Light-coloured polished cecropia floorboards in a pleasant interlocking pattern.</description>
               <texturePath>Terrain/Surfaces/WoodFloor3</texturePath>
+              <designatorDropdown>Floor_FloorWoodLight</designatorDropdown>
+              <color>(126,74,63)</color>
               <costList>
                 <WoodLog_Cecropia>5</WoodLog_Cecropia>
               </costList>
-              <designatorDropdown>Floor_FloorWoodLight</designatorDropdown>
-              <color>(126,74,63)</color>
             </TerrainDef>
           </value>
         </li>
@@ -629,10 +629,10 @@
               <renderPrecedence>248</renderPrecedence>
               <description>Light-coloured polished oak floorboards in a pleasant interlocking pattern.</description>
               <texturePath>Terrain/Surfaces/WoodFloor3</texturePath>
-              <designatorDropdown>Floor_FloorWoodLight</designatorDropdown>
               <costList>
                 <WoodLog_Oak>5</WoodLog_Oak>
               </costList>
+              <designatorDropdown>Floor_FloorWoodLight</designatorDropdown>
               <color>(185,142,96)</color>
             </TerrainDef>
           </value>
@@ -671,10 +671,10 @@
               <renderPrecedence>248</renderPrecedence>
               <description>Light-coloured polished pine floorboards in a pleasant interlocking pattern.</description>
               <texturePath>Terrain/Surfaces/WoodFloor3</texturePath>
-              <designatorDropdown>Floor_FloorWoodLight</designatorDropdown>
               <costList>
                 <WoodLog_Pine>5</WoodLog_Pine>
               </costList>
+              <designatorDropdown>Floor_FloorWoodLight</designatorDropdown>
               <color>(198,146,68)</color>
             </TerrainDef>
           </value>
@@ -713,10 +713,10 @@
               <renderPrecedence>248</renderPrecedence>
               <description>Light-coloured polished teak floorboards in a pleasant interlocking pattern.</description>
               <texturePath>Terrain/Surfaces/WoodFloor3</texturePath>
+              <designatorDropdown>Floor_FloorWoodLight</designatorDropdown>
               <costList>
                 <WoodLog_Teak>5</WoodLog_Teak>
               </costList>
-              <designatorDropdown>Floor_FloorWoodLight</designatorDropdown>
               <color>(154,102,59)</color>
             </TerrainDef>
           </value>
@@ -790,11 +790,11 @@
               <renderPrecedence>247</renderPrecedence>
               <description>A cecropia floor with planks laid in a mosaic-like pattern - beautiful, but needs a lot of cecropia and is time-consuming to build.</description>
               <texturePath>Terrain/Surfaces/WoodFloor4</texturePath>
+              <designatorDropdown>Floor_FloorWoodMosaic</designatorDropdown>
+              <color>(126,74,63)</color>
               <costList>
                 <WoodLog_Cecropia>9</WoodLog_Cecropia>
               </costList>
-              <designatorDropdown>Floor_FloorWoodMosaic</designatorDropdown>
-              <color>(126,74,63)</color>
             </TerrainDef>
           </value>
         </li>
@@ -874,10 +874,10 @@
               <renderPrecedence>247</renderPrecedence>
               <description>A oak floor with planks laid in a mosaic-like pattern - beautiful, but needs a lot of oak and is time-consuming to build.</description>
               <texturePath>Terrain/Surfaces/WoodFloor4</texturePath>
-              <designatorDropdown>Floor_FloorWoodMosaic</designatorDropdown>
               <costList>
                 <WoodLog_Oak>9</WoodLog_Oak>
               </costList>
+              <designatorDropdown>Floor_FloorWoodMosaic</designatorDropdown>
               <color>(185,142,96)</color>
             </TerrainDef>
           </value>
@@ -916,10 +916,10 @@
               <renderPrecedence>247</renderPrecedence>
               <description>A pine floor with planks laid in a mosaic-like pattern - beautiful, but needs a lot of pine and is time-consuming to build.</description>
               <texturePath>Terrain/Surfaces/WoodFloor4</texturePath>
-              <designatorDropdown>Floor_FloorWoodMosaic</designatorDropdown>
               <costList>
                 <WoodLog_Pine>9</WoodLog_Pine>
               </costList>
+              <designatorDropdown>Floor_FloorWoodMosaic</designatorDropdown>
               <color>(198,146,68)</color>
             </TerrainDef>
           </value>
@@ -958,10 +958,10 @@
               <renderPrecedence>247</renderPrecedence>
               <description>A teak floor with planks laid in a mosaic-like pattern - beautiful, but needs a lot of teak and is time-consuming to build.</description>
               <texturePath>Terrain/Surfaces/WoodFloor4</texturePath>
+              <designatorDropdown>Floor_FloorWoodMosaic</designatorDropdown>
               <costList>
                 <WoodLog_Teak>9</WoodLog_Teak>
               </costList>
-              <designatorDropdown>Floor_FloorWoodMosaic</designatorDropdown>
               <color>(154,102,59)</color>
             </TerrainDef>
           </value>
@@ -1035,11 +1035,11 @@
               <renderPrecedence>246</renderPrecedence>
               <description>Dark cecropia floorboards.</description>
               <texturePath>Terrain/Surfaces/WoodFloor5</texturePath>
+              <designatorDropdown>Floor_FloorWoodVertical</designatorDropdown>
+              <color>(126,74,63)</color>
               <costList>
                 <WoodLog_Cecropia>3</WoodLog_Cecropia>
               </costList>
-              <designatorDropdown>Floor_FloorWoodVertical</designatorDropdown>
-              <color>(126,74,63)</color>
             </TerrainDef>
           </value>
         </li>
@@ -1119,10 +1119,10 @@
               <renderPrecedence>246</renderPrecedence>
               <description>Dark oak floorboards.</description>
               <texturePath>Terrain/Surfaces/WoodFloor5</texturePath>
-              <designatorDropdown>Floor_FloorWoodVertical</designatorDropdown>
               <costList>
                 <WoodLog_Oak>3</WoodLog_Oak>
               </costList>
+              <designatorDropdown>Floor_FloorWoodVertical</designatorDropdown>
               <color>(185,142,96)</color>
             </TerrainDef>
           </value>
@@ -1161,10 +1161,10 @@
               <renderPrecedence>246</renderPrecedence>
               <description>Dark pine floorboards.</description>
               <texturePath>Terrain/Surfaces/WoodFloor5</texturePath>
-              <designatorDropdown>Floor_FloorWoodVertical</designatorDropdown>
               <costList>
                 <WoodLog_Pine>3</WoodLog_Pine>
               </costList>
+              <designatorDropdown>Floor_FloorWoodVertical</designatorDropdown>
               <color>(198,146,68)</color>
             </TerrainDef>
           </value>
@@ -1203,10 +1203,10 @@
               <renderPrecedence>246</renderPrecedence>
               <description>Dark teak floorboards.</description>
               <texturePath>Terrain/Surfaces/WoodFloor5</texturePath>
+              <designatorDropdown>Floor_FloorWoodVertical</designatorDropdown>
               <costList>
                 <WoodLog_Teak>3</WoodLog_Teak>
               </costList>
-              <designatorDropdown>Floor_FloorWoodVertical</designatorDropdown>
               <color>(154,102,59)</color>
             </TerrainDef>
           </value>
@@ -1286,11 +1286,11 @@
               <renderPrecedence>245</renderPrecedence>
               <description>Barn board flooring best used in farm buildings where animals are kept. Somewhat ugly to look at but it's cheap and accepts significantly less filth than other cecropia floors.</description>
               <texturePath>Terrain/Surfaces/WoodFloor6</texturePath>
+              <designatorDropdown>Floor_FloorWoodBarn</designatorDropdown>
+              <color>(126,74,63)</color>
               <costList>
                 <WoodLog_Cecropia>2</WoodLog_Cecropia>
               </costList>
-              <designatorDropdown>Floor_FloorWoodBarn</designatorDropdown>
-              <color>(126,74,63)</color>
             </TerrainDef>
           </value>
         </li>
@@ -1382,10 +1382,10 @@
               <renderPrecedence>245</renderPrecedence>
               <description>Barn board flooring best used in farm buildings where animals are kept. Somewhat ugly to look at but it's cheap and accepts significantly less filth than other oak floors.</description>
               <texturePath>Terrain/Surfaces/WoodFloor6</texturePath>
-              <designatorDropdown>Floor_FloorWoodBarn</designatorDropdown>
               <costList>
                 <WoodLog_Oak>2</WoodLog_Oak>
               </costList>
+              <designatorDropdown>Floor_FloorWoodBarn</designatorDropdown>
               <color>(185,142,96)</color>
             </TerrainDef>
           </value>
@@ -1430,10 +1430,10 @@
               <renderPrecedence>245</renderPrecedence>
               <description>Barn board flooring best used in farm buildings where animals are kept. Somewhat ugly to look at but it's cheap and accepts significantly less filth than other pine floors.</description>
               <texturePath>Terrain/Surfaces/WoodFloor6</texturePath>
-              <designatorDropdown>Floor_FloorWoodBarn</designatorDropdown>
               <costList>
                 <WoodLog_Pine>2</WoodLog_Pine>
               </costList>
+              <designatorDropdown>Floor_FloorWoodBarn</designatorDropdown>
               <color>(198,146,68)</color>
             </TerrainDef>
           </value>
@@ -1478,10 +1478,10 @@
               <renderPrecedence>245</renderPrecedence>
               <description>Barn board flooring best used in farm buildings where animals are kept. Somewhat ugly to look at but it's cheap and accepts significantly less filth than other teak floors.</description>
               <texturePath>Terrain/Surfaces/WoodFloor6</texturePath>
+              <designatorDropdown>Floor_FloorWoodBarn</designatorDropdown>
               <costList>
                 <WoodLog_Teak>2</WoodLog_Teak>
               </costList>
-              <designatorDropdown>Floor_FloorWoodBarn</designatorDropdown>
               <color>(154,102,59)</color>
             </TerrainDef>
           </value>
