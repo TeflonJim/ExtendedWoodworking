@@ -38,6 +38,13 @@ Cost lists, ingredient lists, and fuel lists are updated for each mod.
 The following mods contain floors, the defs are duplicated for each available wood type. A drop down list is added to allow material selection:
 
 %SUPPORTED_FLOOR_MODS%
+
+Incompatible mods:
+
+* Expanded Woodworking
+* Simple Chains: Lumber
+
+The original version of Extended Woodworking inspired a number of mods including the two listed above. It is not possible to create compatiblity patches for the mods above.
     </description>
   <incompatibleWith>
     <li>Adventurer.ExpandWoodwork</li>

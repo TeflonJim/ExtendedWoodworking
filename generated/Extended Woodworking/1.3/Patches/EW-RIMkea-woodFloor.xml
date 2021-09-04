@@ -55,11 +55,11 @@
               </statBases>
               <renderPrecedence>250</renderPrecedence>
               <texturePath>Floors/darkplanks</texturePath>
+              <designatorDropdown>Floor_Floor_DarkPlanks</designatorDropdown>
+              <color>(126,74,63)</color>
               <costList>
                 <WoodLog_Cecropia>4</WoodLog_Cecropia>
               </costList>
-              <designatorDropdown>Floor_Floor_DarkPlanks</designatorDropdown>
-              <color>(126,74,63)</color>
             </TerrainDef>
           </value>
         </li>
@@ -139,10 +139,10 @@
               </statBases>
               <renderPrecedence>250</renderPrecedence>
               <texturePath>Floors/darkplanks</texturePath>
-              <designatorDropdown>Floor_Floor_DarkPlanks</designatorDropdown>
               <costList>
                 <WoodLog_Oak>4</WoodLog_Oak>
               </costList>
+              <designatorDropdown>Floor_Floor_DarkPlanks</designatorDropdown>
               <color>(185,142,96)</color>
             </TerrainDef>
           </value>
@@ -181,10 +181,10 @@
               </statBases>
               <renderPrecedence>250</renderPrecedence>
               <texturePath>Floors/darkplanks</texturePath>
-              <designatorDropdown>Floor_Floor_DarkPlanks</designatorDropdown>
               <costList>
                 <WoodLog_Pine>4</WoodLog_Pine>
               </costList>
+              <designatorDropdown>Floor_Floor_DarkPlanks</designatorDropdown>
               <color>(198,146,68)</color>
             </TerrainDef>
           </value>
@@ -223,10 +223,10 @@
               </statBases>
               <renderPrecedence>250</renderPrecedence>
               <texturePath>Floors/darkplanks</texturePath>
+              <designatorDropdown>Floor_Floor_DarkPlanks</designatorDropdown>
               <costList>
                 <WoodLog_Teak>4</WoodLog_Teak>
               </costList>
-              <designatorDropdown>Floor_Floor_DarkPlanks</designatorDropdown>
               <color>(154,102,59)</color>
             </TerrainDef>
           </value>
@@ -300,11 +300,11 @@
               </statBases>
               <renderPrecedence>250</renderPrecedence>
               <texturePath>Floors/lightplanks</texturePath>
+              <designatorDropdown>Floor_Floor_LightPlanks</designatorDropdown>
+              <color>(126,74,63)</color>
               <costList>
                 <WoodLog_Cecropia>4</WoodLog_Cecropia>
               </costList>
-              <designatorDropdown>Floor_Floor_LightPlanks</designatorDropdown>
-              <color>(126,74,63)</color>
             </TerrainDef>
           </value>
         </li>
@@ -384,10 +384,10 @@
               </statBases>
               <renderPrecedence>250</renderPrecedence>
               <texturePath>Floors/lightplanks</texturePath>
-              <designatorDropdown>Floor_Floor_LightPlanks</designatorDropdown>
               <costList>
                 <WoodLog_Oak>4</WoodLog_Oak>
               </costList>
+              <designatorDropdown>Floor_Floor_LightPlanks</designatorDropdown>
               <color>(185,142,96)</color>
             </TerrainDef>
           </value>
@@ -426,10 +426,10 @@
               </statBases>
               <renderPrecedence>250</renderPrecedence>
               <texturePath>Floors/lightplanks</texturePath>
-              <designatorDropdown>Floor_Floor_LightPlanks</designatorDropdown>
               <costList>
                 <WoodLog_Pine>4</WoodLog_Pine>
               </costList>
+              <designatorDropdown>Floor_Floor_LightPlanks</designatorDropdown>
               <color>(198,146,68)</color>
             </TerrainDef>
           </value>
@@ -468,10 +468,10 @@
               </statBases>
               <renderPrecedence>250</renderPrecedence>
               <texturePath>Floors/lightplanks</texturePath>
+              <designatorDropdown>Floor_Floor_LightPlanks</designatorDropdown>
               <costList>
                 <WoodLog_Teak>4</WoodLog_Teak>
               </costList>
-              <designatorDropdown>Floor_Floor_LightPlanks</designatorDropdown>
               <color>(154,102,59)</color>
             </TerrainDef>
           </value>
@@ -545,11 +545,11 @@
               </statBases>
               <renderPrecedence>250</renderPrecedence>
               <texturePath>Floors/smoothwood</texturePath>
+              <designatorDropdown>Floor_Floor_SmoothWood</designatorDropdown>
+              <color>(126,74,63)</color>
               <costList>
                 <WoodLog_Cecropia>4</WoodLog_Cecropia>
               </costList>
-              <designatorDropdown>Floor_Floor_SmoothWood</designatorDropdown>
-              <color>(126,74,63)</color>
             </TerrainDef>
           </value>
         </li>
@@ -629,10 +629,10 @@
               </statBases>
               <renderPrecedence>250</renderPrecedence>
               <texturePath>Floors/smoothwood</texturePath>
-              <designatorDropdown>Floor_Floor_SmoothWood</designatorDropdown>
               <costList>
                 <WoodLog_Oak>4</WoodLog_Oak>
               </costList>
+              <designatorDropdown>Floor_Floor_SmoothWood</designatorDropdown>
               <color>(185,142,96)</color>
             </TerrainDef>
           </value>
@@ -671,10 +671,10 @@
               </statBases>
               <renderPrecedence>250</renderPrecedence>
               <texturePath>Floors/smoothwood</texturePath>
-              <designatorDropdown>Floor_Floor_SmoothWood</designatorDropdown>
               <costList>
                 <WoodLog_Pine>4</WoodLog_Pine>
               </costList>
+              <designatorDropdown>Floor_Floor_SmoothWood</designatorDropdown>
               <color>(198,146,68)</color>
             </TerrainDef>
           </value>
@@ -713,10 +713,10 @@
               </statBases>
               <renderPrecedence>250</renderPrecedence>
               <texturePath>Floors/smoothwood</texturePath>
+              <designatorDropdown>Floor_Floor_SmoothWood</designatorDropdown>
               <costList>
                 <WoodLog_Teak>4</WoodLog_Teak>
               </costList>
-              <designatorDropdown>Floor_Floor_SmoothWood</designatorDropdown>
               <color>(154,102,59)</color>
             </TerrainDef>
           </value>
