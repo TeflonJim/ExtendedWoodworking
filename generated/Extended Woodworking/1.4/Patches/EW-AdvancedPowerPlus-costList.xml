@@ -3,24 +3,24 @@
   <Operation Class="PatchOperationFindMod">
     <success>Always</success>
     <mods>
-      <li>SRTS Expanded</li>
+      <li>Advanced Power Plus</li>
     </mods>
     <match Class="PatchOperationSequence">
       <success>Always</success>
       <operations>
         <li Class="PatchOperationRemove">
-          <xpath>/Defs/ThingDef[defName="ShuttleComp_Structural"]/costList/WoodLog</xpath>
+          <xpath>/Defs/ThingDef[defName="sd_adv_powergen_WatermillGenerator"]/costList/WoodLog</xpath>
         </li>
         <li Class="PatchOperationConditional">
-          <xpath>/Defs/ThingDef[defName="ShuttleComp_Structural" and (stuffCategories)]</xpath>
+          <xpath>/Defs/ThingDef[defName="sd_adv_powergen_WatermillGenerator" and (stuffCategories)]</xpath>
           <match Class="PatchOperationAdd">
-            <xpath>/Defs/ThingDef[defName="ShuttleComp_Structural"]/stuffCategories</xpath>
+            <xpath>/Defs/ThingDef[defName="sd_adv_powergen_WatermillGenerator"]/stuffCategories</xpath>
             <value>
               <li>Woody</li>
             </value>
           </match>
           <nomatch Class="PatchOperationAdd">
-            <xpath>/Defs/ThingDef[defName="ShuttleComp_Structural"]</xpath>
+            <xpath>/Defs/ThingDef[defName="sd_adv_powergen_WatermillGenerator"]</xpath>
             <value>
               <stuffCategories>
                 <li>Woody</li>
@@ -29,18 +29,18 @@
           </nomatch>
         </li>
         <li Class="PatchOperationConditional">
-          <xpath>/Defs/ThingDef[defName="ShuttleComp_Structural" and not(costStuffCount)]</xpath>
+          <xpath>/Defs/ThingDef[defName="sd_adv_powergen_WatermillGenerator" and not(costStuffCount)]</xpath>
           <match Class="PatchOperationAdd">
-            <xpath>/Defs/ThingDef[defName="ShuttleComp_Structural"]</xpath>
+            <xpath>/Defs/ThingDef[defName="sd_adv_powergen_WatermillGenerator"]</xpath>
             <value>
-              <costStuffCount>20</costStuffCount>
+              <costStuffCount>100</costStuffCount>
             </value>
           </match>
         </li>
         <li Class="PatchOperationConditional">
-          <xpath>/Defs/ThingDef[defName="ShuttleComp_Structural"]/constructEffect</xpath>
+          <xpath>/Defs/ThingDef[defName="sd_adv_powergen_WatermillGenerator"]/constructEffect</xpath>
           <match Class="PatchOperationRemove">
-            <xpath>/Defs/ThingDef[defName="ShuttleComp_Structural"]/constructEffect</xpath>
+            <xpath>/Defs/ThingDef[defName="sd_adv_powergen_WatermillGenerator"]/constructEffect</xpath>
           </match>
         </li>
       </operations>

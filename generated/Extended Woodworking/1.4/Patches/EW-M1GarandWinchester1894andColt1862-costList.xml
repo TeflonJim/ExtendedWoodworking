@@ -3,24 +3,24 @@
   <Operation Class="PatchOperationFindMod">
     <success>Always</success>
     <mods>
-      <li>Fertile Fields [1.1]</li>
+      <li>M1 Garand, Winchester 1894 and Colt 1862</li>
     </mods>
     <match Class="PatchOperationSequence">
       <success>Always</success>
       <operations>
         <li Class="PatchOperationRemove">
-          <xpath>/Defs/ThingDef[defName="CompostBin"]/costList/WoodLog</xpath>
+          <xpath>/Defs/ThingDef[defName="HRK_1894Winchester"]/costList/WoodLog</xpath>
         </li>
         <li Class="PatchOperationConditional">
-          <xpath>/Defs/ThingDef[defName="CompostBin" and (stuffCategories)]</xpath>
+          <xpath>/Defs/ThingDef[defName="HRK_1894Winchester" and (stuffCategories)]</xpath>
           <match Class="PatchOperationAdd">
-            <xpath>/Defs/ThingDef[defName="CompostBin"]/stuffCategories</xpath>
+            <xpath>/Defs/ThingDef[defName="HRK_1894Winchester"]/stuffCategories</xpath>
             <value>
               <li>Woody</li>
             </value>
           </match>
           <nomatch Class="PatchOperationAdd">
-            <xpath>/Defs/ThingDef[defName="CompostBin"]</xpath>
+            <xpath>/Defs/ThingDef[defName="HRK_1894Winchester"]</xpath>
             <value>
               <stuffCategories>
                 <li>Woody</li>
@@ -29,53 +29,53 @@
           </nomatch>
         </li>
         <li Class="PatchOperationConditional">
-          <xpath>/Defs/ThingDef[defName="CompostBin" and not(costStuffCount)]</xpath>
+          <xpath>/Defs/ThingDef[defName="HRK_1894Winchester" and not(costStuffCount)]</xpath>
           <match Class="PatchOperationAdd">
-            <xpath>/Defs/ThingDef[defName="CompostBin"]</xpath>
-            <value>
-              <costStuffCount>2</costStuffCount>
-            </value>
-          </match>
-        </li>
-        <li Class="PatchOperationConditional">
-          <xpath>/Defs/ThingDef[defName="CompostBin"]/constructEffect</xpath>
-          <match Class="PatchOperationRemove">
-            <xpath>/Defs/ThingDef[defName="CompostBin"]/constructEffect</xpath>
-          </match>
-        </li>
-        <li Class="PatchOperationRemove">
-          <xpath>/Defs/ThingDef[defName="CompostBarrel"]/costList/WoodLog</xpath>
-        </li>
-        <li Class="PatchOperationConditional">
-          <xpath>/Defs/ThingDef[defName="CompostBarrel" and (stuffCategories)]</xpath>
-          <match Class="PatchOperationAdd">
-            <xpath>/Defs/ThingDef[defName="CompostBarrel"]/stuffCategories</xpath>
-            <value>
-              <li>Woody</li>
-            </value>
-          </match>
-          <nomatch Class="PatchOperationAdd">
-            <xpath>/Defs/ThingDef[defName="CompostBarrel"]</xpath>
-            <value>
-              <stuffCategories>
-                <li>Woody</li>
-              </stuffCategories>
-            </value>
-          </nomatch>
-        </li>
-        <li Class="PatchOperationConditional">
-          <xpath>/Defs/ThingDef[defName="CompostBarrel" and not(costStuffCount)]</xpath>
-          <match Class="PatchOperationAdd">
-            <xpath>/Defs/ThingDef[defName="CompostBarrel"]</xpath>
+            <xpath>/Defs/ThingDef[defName="HRK_1894Winchester"]</xpath>
             <value>
               <costStuffCount>10</costStuffCount>
             </value>
           </match>
         </li>
         <li Class="PatchOperationConditional">
-          <xpath>/Defs/ThingDef[defName="CompostBarrel"]/constructEffect</xpath>
+          <xpath>/Defs/ThingDef[defName="HRK_1894Winchester"]/constructEffect</xpath>
           <match Class="PatchOperationRemove">
-            <xpath>/Defs/ThingDef[defName="CompostBarrel"]/constructEffect</xpath>
+            <xpath>/Defs/ThingDef[defName="HRK_1894Winchester"]/constructEffect</xpath>
+          </match>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="HRK_1862Colt"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="HRK_1862Colt" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="HRK_1862Colt"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="HRK_1862Colt"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="HRK_1862Colt" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="HRK_1862Colt"]</xpath>
+            <value>
+              <costStuffCount>5</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="HRK_1862Colt"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="HRK_1862Colt"]/constructEffect</xpath>
           </match>
         </li>
       </operations>

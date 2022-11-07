@@ -64,10 +64,10 @@
     </statBases>
     <constructEffect>ConstructWood</constructEffect>
     <uiOrder>2000</uiOrder>
-    <designatorDropdown>Floor_WoodPlank</designatorDropdown>
     <costList>
       <WoodLog_Cypress>6</WoodLog_Cypress>
     </costList>
+    <designatorDropdown>Floor_WoodPlank</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>WoodPlankFloor_Drago</defName>
@@ -87,10 +87,10 @@
     </statBases>
     <constructEffect>ConstructWood</constructEffect>
     <uiOrder>2000</uiOrder>
-    <designatorDropdown>Floor_WoodPlank</designatorDropdown>
     <costList>
       <WoodLog_Drago>6</WoodLog_Drago>
     </costList>
+    <designatorDropdown>Floor_WoodPlank</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>WoodPlankFloor_Maple</defName>
@@ -133,10 +133,10 @@
     </statBases>
     <constructEffect>ConstructWood</constructEffect>
     <uiOrder>2000</uiOrder>
-    <designatorDropdown>Floor_WoodPlank</designatorDropdown>
     <costList>
       <WoodLog_Oak>6</WoodLog_Oak>
     </costList>
+    <designatorDropdown>Floor_WoodPlank</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>WoodPlankFloor_Palm</defName>
@@ -225,10 +225,10 @@
     </statBases>
     <constructEffect>ConstructWood</constructEffect>
     <uiOrder>2000</uiOrder>
-    <designatorDropdown>Floor_WoodPlank</designatorDropdown>
     <costList>
       <WoodLog_Teak>6</WoodLog_Teak>
     </costList>
+    <designatorDropdown>Floor_WoodPlank</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>WoodPlankFloor_Willow</defName>
@@ -248,10 +248,10 @@
     </statBases>
     <constructEffect>ConstructWood</constructEffect>
     <uiOrder>2000</uiOrder>
-    <designatorDropdown>Floor_WoodPlank</designatorDropdown>
     <costList>
       <WoodLog_Willow>6</WoodLog_Willow>
     </costList>
+    <designatorDropdown>Floor_WoodPlank</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>WoodPlankFloor_Red</defName>

@@ -34,33 +34,40 @@ Supported expansions:
 Supported mods:
 
 * [HRK] Gun Nut - Community Pack
-* [HRK] Gun Nut - Ruger Mini
 * [HRK] Gun Nut - Soviet SMGs
 * [HRK] Gun Nut - Winchester M97 "Trench Gun"
 * [LTS]Furnishing
 * [T] ExpandedCloth
-* [T] MoreFloors
 * A Dog Said... Animal Prosthetics
+* A RimWorld of Magic
+* Advanced Power Plus
 * Alpha Memes
 * Area Rugs 2.0
 * Camping Tent
+* Caravan Adventures
 * Caravan Equipment
 * Caravan Gear
 * Ceramics VEF
 * Coal Expanded
 * Erin's Japanese Furniture
-* Fertile Fields [1.1]
+* Fortifications - Industrial
 * Fortifications - Neolithic
+* French WW1 weapon pack
+* GloomyFurniture
+* M1 Garand, Winchester 1894 and Colt 1862
 * Musical Instruments (Continued)
 * Pen's Decor
 * Project RimFactory - Materials
 * Project RimFactory Revived
 * Reclaim, Reuse, Recycle (Continued)
+* RimWriter - Books, Scrolls, Tablets, and Libraries (Continued)
 * RoughBarricade (Continued)
+* Ruger Mini
 * Signs and Comments
 * Simple Learning
-* SRTS Expanded
 * Tabletop Trove - Additional Joy Objects and Decor
+* Vanilla Animals Expanded
+* Vanilla Animals Expanded — Royal Animals
 * Vanilla Apparel Expanded — Accessories
 * Vanilla Books Expanded
 * Vanilla Brewing Expanded
@@ -85,7 +92,7 @@ Cost lists, ingredient lists, and fuel lists are updated for each mod.
 The following mods contain floors, the defs are duplicated for each available wood type. A drop down list is added to allow material selection:
 
 * Evt Floors
-* [T] MoreFloors
+* [T] MoreFloors 1.4
 * [WD] Expanded Floors
 * GloomyFurniture
 * RIMkea
@@ -102,54 +109,61 @@ The original version of Extended Woodworking inspired a number of mods including
     <li>owlchemist.simplechains.lumber</li>
   </incompatibleWith>
   <loadAfter>
-    <li>prf.materials</li>
     <li>oskarpotocki.vanillafactionsexpanded.settlersmodule</li>
-    <li>spdskatr.projectrimfactory</li>
-    <li>aoba.fortress.neolithic</li>
-    <li>mlie.musicalinstruments</li>
-    <li>vanillaexpanded.vpsycastse</li>
-    <li>dismarzero.vgp.vgpvegetablegarden</li>
+    <li>dark.signs</li>
+    <li>vanillaexpanded.vmemese</li>
+    <li>harkon.other.frenchww1pack</li>
+    <li>soulfulpumpkin.tabletoptrove</li>
+    <li>vanillaexpanded.vfepropsanddecor</li>
+    <li>limetreesnake.furnishing</li>
+    <li>mlie.rimwriter</li>
+    <li>ludeon.rimworld.royalty</li>
+    <li>neceros.coalexpanded</li>
+    <li>telkir.tmods.expandedcloth</li>
+    <li>harkon.gunnut.community</li>
+    <li>n7huntsman.ceramics.vef</li>
+    <li>mlie.reclaimreuserecycle</li>
+    <li>fox.simplelearning</li>
+    <li>mlie.roughbarricade</li>
+    <li>jelly.caravangear</li>
+    <li>vanillaexpanded.vwetb</li>
+    <li>aoba.tent</li>
+    <li>squirtingelephant.caravanequipment</li>
+    <li>pensdecor.theholyepicpenguin</li>
     <li>harkon.gunnut.sovietsmgs</li>
-    <li>vanillaexpanded.vbrewe</li>
+    <li>solaris.furniturebase</li>
+    <li>erin.japanesefurniture</li>
+    <li>oskarpotocki.vfe.classical</li>
+    <li>oskarpotocki.vfe.vikings</li>
+    <li>mlie.musicalinstruments</li>
+    <li>aoba.fortress.industrial</li>
+    <li>harkon.gunnut.m97trenchgun</li>
+    <li>ludeon.rimworld</li>
+    <li>vanillaexpanded.vpsycastse</li>
+    <li>torann.arimworldofmagic</li>
+    <li>dismarzero.vgp.vgpvegetablegarden</li>
+    <li>spdskatr.projectrimfactory</li>
+    <li>vanillaexpanded.vcookestews</li>
+    <li>spoonshortage.adogsaidanimalprosthetics</li>
+    <li>vanillaexpanded.vanillaanimalsexpanded</li>
     <li>vanillaexpanded.vfearchitect</li>
     <li>vanillaexpanded.vwe</li>
-    <li>oskarpotocki.vfe.classical</li>
-    <li>limetreesnake.furnishing</li>
-    <li>erin.japanesefurniture</li>
-    <li>harkon.gunnut.community</li>
-    <li>vanillaexpanded.vbookse</li>
-    <li>ludeon.rimworld</li>
-    <li>n7huntsman.ceramics.vef</li>
+    <li>vanillaexpanded.vaeroy</li>
     <li>oskarpotocki.vanillafactionsexpanded.medievalmodule</li>
-    <li>dark.signs</li>
-    <li>smashphil.neceros.srtsexpanded</li>
-    <li>sarg.alphamemes</li>
-    <li>thegoofyone.arearugs</li>
-    <li>vanillaexpanded.vfepropsanddecor</li>
-    <li>mlie.roughbarricade</li>
-    <li>squirtingelephant.caravanequipment</li>
     <li>dismarzero.vgp.vgpgardentools</li>
-    <li>harkon.gunnut.m97trenchgun</li>
-    <li>telkir.tmods.expandedcloth</li>
-    <li>pensdecor.theholyepicpenguin</li>
-    <li>fox.simplelearning</li>
-    <li>vanillaexpanded.vcookestews</li>
-    <li>oskarpotocki.vfe.vikings</li>
-    <li>ludeon.rimworld.royalty</li>
-    <li>aoba.tent</li>
-    <li>vanillaexpanded.vmemese</li>
-    <li>vanillaexpanded.vaeaccessories</li>
-    <li>ludeon.rimworld.ideology</li>
-    <li>vanillaexpanded.vcooke</li>
-    <li>telkir.tmods.morefloors</li>
-    <li>neceros.coalexpanded</li>
-    <li>mlie.reclaimreuserecycle</li>
-    <li>harkon.gunnut.rugermini</li>
-    <li>spoonshortage.adogsaidanimalprosthetics</li>
     <li>vanillaexpanded.vfesecurity</li>
-    <li>soulfulpumpkin.tabletoptrove</li>
-    <li>jamaicancastle.rf.fertilefields</li>
-    <li>vanillaexpanded.vwetb</li>
-    <li>jelly.caravangear</li>
+    <li>harkon.other.garandwinchestercolt</li>
+    <li>vanillaexpanded.vbrewe</li>
+    <li>prf.materials</li>
+    <li>vanillaexpanded.vbookse</li>
+    <li>vanillaexpanded.vaeaccessories</li>
+    <li>iforgotmysocks.caravanadventures</li>
+    <li>vanillaexpanded.vcooke</li>
+    <li>thegoofyone.arearugs</li>
+    <li>meltup.advancedpowerplus</li>
+    <li>aoba.fortress.neolithic</li>
+    <li>sarg.alphamemes</li>
+    <li>harkon.other.rugermini</li>
+    <li>ludeon.rimworld.ideology</li>
   </loadAfter>
 </ModMetaData>

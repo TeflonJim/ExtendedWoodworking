@@ -3,24 +3,24 @@
   <Operation Class="PatchOperationFindMod">
     <success>Always</success>
     <mods>
-      <li>[T] MoreFloors</li>
+      <li>Vanilla Animals Expanded — Royal Animals</li>
     </mods>
     <match Class="PatchOperationSequence">
       <success>Always</success>
       <operations>
         <li Class="PatchOperationRemove">
-          <xpath>/Defs/ThingDef[defName="BenchWoolLoom"]/costList/WoodLog</xpath>
+          <xpath>/Defs/ThingDef[defName="VAERoy_SwanNest"]/costList/WoodLog</xpath>
         </li>
         <li Class="PatchOperationConditional">
-          <xpath>/Defs/ThingDef[defName="BenchWoolLoom" and (stuffCategories)]</xpath>
+          <xpath>/Defs/ThingDef[defName="VAERoy_SwanNest" and (stuffCategories)]</xpath>
           <match Class="PatchOperationAdd">
-            <xpath>/Defs/ThingDef[defName="BenchWoolLoom"]/stuffCategories</xpath>
+            <xpath>/Defs/ThingDef[defName="VAERoy_SwanNest"]/stuffCategories</xpath>
             <value>
               <li>Woody</li>
             </value>
           </match>
           <nomatch Class="PatchOperationAdd">
-            <xpath>/Defs/ThingDef[defName="BenchWoolLoom"]</xpath>
+            <xpath>/Defs/ThingDef[defName="VAERoy_SwanNest"]</xpath>
             <value>
               <stuffCategories>
                 <li>Woody</li>
@@ -29,18 +29,18 @@
           </nomatch>
         </li>
         <li Class="PatchOperationConditional">
-          <xpath>/Defs/ThingDef[defName="BenchWoolLoom" and not(costStuffCount)]</xpath>
+          <xpath>/Defs/ThingDef[defName="VAERoy_SwanNest" and not(costStuffCount)]</xpath>
           <match Class="PatchOperationAdd">
-            <xpath>/Defs/ThingDef[defName="BenchWoolLoom"]</xpath>
+            <xpath>/Defs/ThingDef[defName="VAERoy_SwanNest"]</xpath>
             <value>
-              <costStuffCount>40</costStuffCount>
+              <costStuffCount>1</costStuffCount>
             </value>
           </match>
         </li>
         <li Class="PatchOperationConditional">
-          <xpath>/Defs/ThingDef[defName="BenchWoolLoom"]/constructEffect</xpath>
+          <xpath>/Defs/ThingDef[defName="VAERoy_SwanNest"]/constructEffect</xpath>
           <match Class="PatchOperationRemove">
-            <xpath>/Defs/ThingDef[defName="BenchWoolLoom"]/constructEffect</xpath>
+            <xpath>/Defs/ThingDef[defName="VAERoy_SwanNest"]/constructEffect</xpath>
           </match>
         </li>
       </operations>

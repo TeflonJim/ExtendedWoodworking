@@ -3,24 +3,24 @@
   <Operation Class="PatchOperationFindMod">
     <success>Always</success>
     <mods>
-      <li>[HRK] Gun Nut - Ruger Mini</li>
+      <li>Caravan Adventures</li>
     </mods>
     <match Class="PatchOperationSequence">
       <success>Always</success>
       <operations>
         <li Class="PatchOperationRemove">
-          <xpath>/Defs/ThingDef[defName="HRK_Ruger_14Mini"]/costList/WoodLog</xpath>
+          <xpath>/Defs/ThingDef[defName="CAFencePost"]/costList/WoodLog</xpath>
         </li>
         <li Class="PatchOperationConditional">
-          <xpath>/Defs/ThingDef[defName="HRK_Ruger_14Mini" and (stuffCategories)]</xpath>
+          <xpath>/Defs/ThingDef[defName="CAFencePost" and (stuffCategories)]</xpath>
           <match Class="PatchOperationAdd">
-            <xpath>/Defs/ThingDef[defName="HRK_Ruger_14Mini"]/stuffCategories</xpath>
+            <xpath>/Defs/ThingDef[defName="CAFencePost"]/stuffCategories</xpath>
             <value>
               <li>Woody</li>
             </value>
           </match>
           <nomatch Class="PatchOperationAdd">
-            <xpath>/Defs/ThingDef[defName="HRK_Ruger_14Mini"]</xpath>
+            <xpath>/Defs/ThingDef[defName="CAFencePost"]</xpath>
             <value>
               <stuffCategories>
                 <li>Woody</li>
@@ -29,18 +29,18 @@
           </nomatch>
         </li>
         <li Class="PatchOperationConditional">
-          <xpath>/Defs/ThingDef[defName="HRK_Ruger_14Mini" and not(costStuffCount)]</xpath>
+          <xpath>/Defs/ThingDef[defName="CAFencePost" and not(costStuffCount)]</xpath>
           <match Class="PatchOperationAdd">
-            <xpath>/Defs/ThingDef[defName="HRK_Ruger_14Mini"]</xpath>
+            <xpath>/Defs/ThingDef[defName="CAFencePost"]</xpath>
             <value>
-              <costStuffCount>10</costStuffCount>
+              <costStuffCount>5</costStuffCount>
             </value>
           </match>
         </li>
         <li Class="PatchOperationConditional">
-          <xpath>/Defs/ThingDef[defName="HRK_Ruger_14Mini"]/constructEffect</xpath>
+          <xpath>/Defs/ThingDef[defName="CAFencePost"]/constructEffect</xpath>
           <match Class="PatchOperationRemove">
-            <xpath>/Defs/ThingDef[defName="HRK_Ruger_14Mini"]/constructEffect</xpath>
+            <xpath>/Defs/ThingDef[defName="CAFencePost"]/constructEffect</xpath>
           </match>
         </li>
       </operations>

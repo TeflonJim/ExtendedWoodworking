@@ -3,7 +3,7 @@
   <Operation Class="PatchOperationFindMod">
     <success>Always</success>
     <mods>
-      <li>[T] MoreFloors</li>
+      <li>[T] MoreFloors 1.4</li>
     </mods>
     <match Class="PatchOperationFindMod">
       <success>Always</success>
@@ -25,11 +25,11 @@
                 <renderPrecedence>250</renderPrecedence>
                 <description>Rustic acacia floorboards, finely polished and with splinters removed. Nice to look at but somewhat slow to build.</description>
                 <texturePath>Terrain/Surfaces/WoodFloor1</texturePath>
+                <color>(219, 184, 144)</color>
+                <designatorDropdown>Floor_FloorWoodRustic</designatorDropdown>
                 <costList>
                   <WoodLog_Acacia>6</WoodLog_Acacia>
                 </costList>
-                <color>(219, 184, 144)</color>
-                <designatorDropdown>Floor_FloorWoodRustic</designatorDropdown>
               </TerrainDef>
             </value>
           </li>
@@ -67,11 +67,11 @@
                 <renderPrecedence>250</renderPrecedence>
                 <description>Rustic cherry blossom floorboards, finely polished and with splinters removed. Nice to look at but somewhat slow to build.</description>
                 <texturePath>Terrain/Surfaces/WoodFloor1</texturePath>
-                <color>(165, 82, 40)</color>
-                <designatorDropdown>Floor_FloorWoodRustic</designatorDropdown>
                 <costList>
                   <WoodLog_CherryBlossom>6</WoodLog_CherryBlossom>
                 </costList>
+                <color>(165, 82, 40)</color>
+                <designatorDropdown>Floor_FloorWoodRustic</designatorDropdown>
               </TerrainDef>
             </value>
           </li>
@@ -88,11 +88,11 @@
                 <renderPrecedence>250</renderPrecedence>
                 <description>Rustic japanese maple floorboards, finely polished and with splinters removed. Nice to look at but somewhat slow to build.</description>
                 <texturePath>Terrain/Surfaces/WoodFloor1</texturePath>
-                <color>(252, 170, 124)</color>
-                <designatorDropdown>Floor_FloorWoodRustic</designatorDropdown>
                 <costList>
                   <WoodLog_JapaneseMaple>6</WoodLog_JapaneseMaple>
                 </costList>
+                <color>(252, 170, 124)</color>
+                <designatorDropdown>Floor_FloorWoodRustic</designatorDropdown>
               </TerrainDef>
             </value>
           </li>
@@ -130,11 +130,11 @@
                 <renderPrecedence>249</renderPrecedence>
                 <description>Wide, plain-looking floorboards for that minimalistic feel. Easy to build.</description>
                 <texturePath>Terrain/Surfaces/WoodFloor2</texturePath>
+                <color>(219, 184, 144)</color>
+                <designatorDropdown>Floor_FloorWoodWide</designatorDropdown>
                 <costList>
                   <WoodLog_Acacia>2</WoodLog_Acacia>
                 </costList>
-                <color>(219, 184, 144)</color>
-                <designatorDropdown>Floor_FloorWoodWide</designatorDropdown>
               </TerrainDef>
             </value>
           </li>
@@ -172,11 +172,11 @@
                 <renderPrecedence>249</renderPrecedence>
                 <description>Wide, plain-looking floorboards for that minimalistic feel. Easy to build.</description>
                 <texturePath>Terrain/Surfaces/WoodFloor2</texturePath>
-                <color>(165, 82, 40)</color>
-                <designatorDropdown>Floor_FloorWoodWide</designatorDropdown>
                 <costList>
                   <WoodLog_CherryBlossom>2</WoodLog_CherryBlossom>
                 </costList>
+                <color>(165, 82, 40)</color>
+                <designatorDropdown>Floor_FloorWoodWide</designatorDropdown>
               </TerrainDef>
             </value>
           </li>
@@ -193,11 +193,11 @@
                 <renderPrecedence>249</renderPrecedence>
                 <description>Wide, plain-looking floorboards for that minimalistic feel. Easy to build.</description>
                 <texturePath>Terrain/Surfaces/WoodFloor2</texturePath>
-                <color>(252, 170, 124)</color>
-                <designatorDropdown>Floor_FloorWoodWide</designatorDropdown>
                 <costList>
                   <WoodLog_JapaneseMaple>2</WoodLog_JapaneseMaple>
                 </costList>
+                <color>(252, 170, 124)</color>
+                <designatorDropdown>Floor_FloorWoodWide</designatorDropdown>
               </TerrainDef>
             </value>
           </li>
@@ -235,11 +235,11 @@
                 <renderPrecedence>248</renderPrecedence>
                 <description>Light-coloured polished acacia floorboards in a pleasant interlocking pattern.</description>
                 <texturePath>Terrain/Surfaces/WoodFloor3</texturePath>
+                <color>(219, 184, 144)</color>
+                <designatorDropdown>Floor_FloorWoodLight</designatorDropdown>
                 <costList>
                   <WoodLog_Acacia>5</WoodLog_Acacia>
                 </costList>
-                <color>(219, 184, 144)</color>
-                <designatorDropdown>Floor_FloorWoodLight</designatorDropdown>
               </TerrainDef>
             </value>
           </li>
@@ -277,11 +277,11 @@
                 <renderPrecedence>248</renderPrecedence>
                 <description>Light-coloured polished cherry blossom floorboards in a pleasant interlocking pattern.</description>
                 <texturePath>Terrain/Surfaces/WoodFloor3</texturePath>
-                <color>(165, 82, 40)</color>
-                <designatorDropdown>Floor_FloorWoodLight</designatorDropdown>
                 <costList>
                   <WoodLog_CherryBlossom>5</WoodLog_CherryBlossom>
                 </costList>
+                <color>(165, 82, 40)</color>
+                <designatorDropdown>Floor_FloorWoodLight</designatorDropdown>
               </TerrainDef>
             </value>
           </li>
@@ -298,11 +298,11 @@
                 <renderPrecedence>248</renderPrecedence>
                 <description>Light-coloured polished japanese maple floorboards in a pleasant interlocking pattern.</description>
                 <texturePath>Terrain/Surfaces/WoodFloor3</texturePath>
-                <color>(252, 170, 124)</color>
-                <designatorDropdown>Floor_FloorWoodLight</designatorDropdown>
                 <costList>
                   <WoodLog_JapaneseMaple>5</WoodLog_JapaneseMaple>
                 </costList>
+                <color>(252, 170, 124)</color>
+                <designatorDropdown>Floor_FloorWoodLight</designatorDropdown>
               </TerrainDef>
             </value>
           </li>
@@ -340,11 +340,11 @@
                 <renderPrecedence>247</renderPrecedence>
                 <description>A acacia floor with planks laid in a mosaic-like pattern - beautiful, but needs a lot of acacia and is time-consuming to build.</description>
                 <texturePath>Terrain/Surfaces/WoodFloor4</texturePath>
+                <color>(219, 184, 144)</color>
+                <designatorDropdown>Floor_FloorWoodMosaic</designatorDropdown>
                 <costList>
                   <WoodLog_Acacia>9</WoodLog_Acacia>
                 </costList>
-                <color>(219, 184, 144)</color>
-                <designatorDropdown>Floor_FloorWoodMosaic</designatorDropdown>
               </TerrainDef>
             </value>
           </li>
@@ -382,11 +382,11 @@
                 <renderPrecedence>247</renderPrecedence>
                 <description>A cherry blossom floor with planks laid in a mosaic-like pattern - beautiful, but needs a lot of cherry blossom and is time-consuming to build.</description>
                 <texturePath>Terrain/Surfaces/WoodFloor4</texturePath>
-                <color>(165, 82, 40)</color>
-                <designatorDropdown>Floor_FloorWoodMosaic</designatorDropdown>
                 <costList>
                   <WoodLog_CherryBlossom>9</WoodLog_CherryBlossom>
                 </costList>
+                <color>(165, 82, 40)</color>
+                <designatorDropdown>Floor_FloorWoodMosaic</designatorDropdown>
               </TerrainDef>
             </value>
           </li>
@@ -403,11 +403,11 @@
                 <renderPrecedence>247</renderPrecedence>
                 <description>A japanese maple floor with planks laid in a mosaic-like pattern - beautiful, but needs a lot of japanese maple and is time-consuming to build.</description>
                 <texturePath>Terrain/Surfaces/WoodFloor4</texturePath>
-                <color>(252, 170, 124)</color>
-                <designatorDropdown>Floor_FloorWoodMosaic</designatorDropdown>
                 <costList>
                   <WoodLog_JapaneseMaple>9</WoodLog_JapaneseMaple>
                 </costList>
+                <color>(252, 170, 124)</color>
+                <designatorDropdown>Floor_FloorWoodMosaic</designatorDropdown>
               </TerrainDef>
             </value>
           </li>
@@ -445,11 +445,11 @@
                 <renderPrecedence>246</renderPrecedence>
                 <description>Dark acacia floorboards.</description>
                 <texturePath>Terrain/Surfaces/WoodFloor5</texturePath>
+                <color>(219, 184, 144)</color>
+                <designatorDropdown>Floor_FloorWoodVertical</designatorDropdown>
                 <costList>
                   <WoodLog_Acacia>3</WoodLog_Acacia>
                 </costList>
-                <color>(219, 184, 144)</color>
-                <designatorDropdown>Floor_FloorWoodVertical</designatorDropdown>
               </TerrainDef>
             </value>
           </li>
@@ -487,11 +487,11 @@
                 <renderPrecedence>246</renderPrecedence>
                 <description>Dark cherry blossom floorboards.</description>
                 <texturePath>Terrain/Surfaces/WoodFloor5</texturePath>
-                <color>(165, 82, 40)</color>
-                <designatorDropdown>Floor_FloorWoodVertical</designatorDropdown>
                 <costList>
                   <WoodLog_CherryBlossom>3</WoodLog_CherryBlossom>
                 </costList>
+                <color>(165, 82, 40)</color>
+                <designatorDropdown>Floor_FloorWoodVertical</designatorDropdown>
               </TerrainDef>
             </value>
           </li>
@@ -508,11 +508,11 @@
                 <renderPrecedence>246</renderPrecedence>
                 <description>Dark japanese maple floorboards.</description>
                 <texturePath>Terrain/Surfaces/WoodFloor5</texturePath>
-                <color>(252, 170, 124)</color>
-                <designatorDropdown>Floor_FloorWoodVertical</designatorDropdown>
                 <costList>
                   <WoodLog_JapaneseMaple>3</WoodLog_JapaneseMaple>
                 </costList>
+                <color>(252, 170, 124)</color>
+                <designatorDropdown>Floor_FloorWoodVertical</designatorDropdown>
               </TerrainDef>
             </value>
           </li>
@@ -544,18 +544,20 @@
                 <defName>FloorWoodBarn_Acacia</defName>
                 <label>acacia barn board floor</label>
                 <statBases>
+                  <Beauty>-0.5</Beauty>
+                  <Cleanliness>-0.1</Cleanliness>
                   <WorkToBuild>50</WorkToBuild>
-                  <Beauty>1.5</Beauty>
+                  <FilthMultiplier>0.10</FilthMultiplier>
                 </statBases>
                 <edgeType>FadeRough</edgeType>
                 <renderPrecedence>245</renderPrecedence>
-                <description>Rough barn board flooring. Quick to build.</description>
+                <description>Barn board flooring best used in farm buildings where animals are kept. Somewhat ugly to look at but it's cheap and accepts significantly less filth than other acacia floors.</description>
                 <texturePath>Terrain/Surfaces/WoodFloor6</texturePath>
+                <color>(219, 184, 144)</color>
+                <designatorDropdown>Floor_FloorWoodBarn</designatorDropdown>
                 <costList>
                   <WoodLog_Acacia>2</WoodLog_Acacia>
                 </costList>
-                <color>(219, 184, 144)</color>
-                <designatorDropdown>Floor_FloorWoodBarn</designatorDropdown>
               </TerrainDef>
             </value>
           </li>
@@ -566,12 +568,14 @@
                 <defName>FloorWoodBarn_Camellia</defName>
                 <label>camellia barn board floor</label>
                 <statBases>
+                  <Beauty>0</Beauty>
+                  <Cleanliness>-0.1</Cleanliness>
                   <WorkToBuild>50</WorkToBuild>
-                  <Beauty>2</Beauty>
+                  <FilthMultiplier>0.10</FilthMultiplier>
                 </statBases>
                 <edgeType>FadeRough</edgeType>
                 <renderPrecedence>245</renderPrecedence>
-                <description>Rough barn board flooring. Quick to build.</description>
+                <description>Barn board flooring best used in farm buildings where animals are kept. Somewhat ugly to look at but it's cheap and accepts significantly less filth than other camellia floors.</description>
                 <texturePath>Terrain/Surfaces/WoodFloor6</texturePath>
                 <color>(201, 160, 130)</color>
                 <designatorDropdown>Floor_FloorWoodBarn</designatorDropdown>
@@ -588,18 +592,20 @@
                 <defName>FloorWoodBarn_CherryBlossom</defName>
                 <label>cherryblossom barn board floor</label>
                 <statBases>
+                  <Beauty>-1</Beauty>
+                  <Cleanliness>-0.1</Cleanliness>
                   <WorkToBuild>50</WorkToBuild>
-                  <Beauty>1</Beauty>
+                  <FilthMultiplier>0.10</FilthMultiplier>
                 </statBases>
                 <edgeType>FadeRough</edgeType>
                 <renderPrecedence>245</renderPrecedence>
-                <description>Rough barn board flooring. Quick to build.</description>
+                <description>Barn board flooring best used in farm buildings where animals are kept. Somewhat ugly to look at but it's cheap and accepts significantly less filth than other cherry blossom floors.</description>
                 <texturePath>Terrain/Surfaces/WoodFloor6</texturePath>
-                <color>(165, 82, 40)</color>
-                <designatorDropdown>Floor_FloorWoodBarn</designatorDropdown>
                 <costList>
                   <WoodLog_CherryBlossom>2</WoodLog_CherryBlossom>
                 </costList>
+                <color>(165, 82, 40)</color>
+                <designatorDropdown>Floor_FloorWoodBarn</designatorDropdown>
               </TerrainDef>
             </value>
           </li>
@@ -610,18 +616,20 @@
                 <defName>FloorWoodBarn_JapaneseMaple</defName>
                 <label>japanesemaple barn board floor</label>
                 <statBases>
+                  <Beauty>-0.5</Beauty>
+                  <Cleanliness>-0.1</Cleanliness>
                   <WorkToBuild>50</WorkToBuild>
-                  <Beauty>1.5</Beauty>
+                  <FilthMultiplier>0.10</FilthMultiplier>
                 </statBases>
                 <edgeType>FadeRough</edgeType>
                 <renderPrecedence>245</renderPrecedence>
-                <description>Rough barn board flooring. Quick to build.</description>
+                <description>Barn board flooring best used in farm buildings where animals are kept. Somewhat ugly to look at but it's cheap and accepts significantly less filth than other japanese maple floors.</description>
                 <texturePath>Terrain/Surfaces/WoodFloor6</texturePath>
-                <color>(252, 170, 124)</color>
-                <designatorDropdown>Floor_FloorWoodBarn</designatorDropdown>
                 <costList>
                   <WoodLog_JapaneseMaple>2</WoodLog_JapaneseMaple>
                 </costList>
+                <color>(252, 170, 124)</color>
+                <designatorDropdown>Floor_FloorWoodBarn</designatorDropdown>
               </TerrainDef>
             </value>
           </li>
@@ -632,12 +640,14 @@
                 <defName>FloorWoodBarn_RedMaple</defName>
                 <label>redmaple barn board floor</label>
                 <statBases>
+                  <Beauty>-0.5</Beauty>
+                  <Cleanliness>-0.1</Cleanliness>
                   <WorkToBuild>50</WorkToBuild>
-                  <Beauty>1.5</Beauty>
+                  <FilthMultiplier>0.10</FilthMultiplier>
                 </statBases>
                 <edgeType>FadeRough</edgeType>
                 <renderPrecedence>245</renderPrecedence>
-                <description>Rough barn board flooring. Quick to build.</description>
+                <description>Barn board flooring best used in farm buildings where animals are kept. Somewhat ugly to look at but it's cheap and accepts significantly less filth than other red maple floors.</description>
                 <texturePath>Terrain/Surfaces/WoodFloor6</texturePath>
                 <costList>
                   <WoodLog_RedMaple>2</WoodLog_RedMaple>
