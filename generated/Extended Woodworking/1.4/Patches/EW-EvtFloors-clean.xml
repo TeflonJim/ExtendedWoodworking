@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <success>Always</success>
+        <mods>
+            <li>Evt Floors</li>
+        </mods>
+        <match Class="PatchOperationRemove">
+            <xpath>/Defs/TerrainDef[contains(defName, '_Light_Evt') or contains(defName, '_Dark_Evt')]</xpath>
+        </match>
+    </Operation>
+</Patch>

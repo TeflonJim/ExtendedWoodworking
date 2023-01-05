@@ -3,7 +3,7 @@
     <Operation Class="PatchOperationFindMod">
         <success>Always</success>
         <mods>
-            <li>[T] MoreFloors</li>
+            <li>[T] MoreFloors 1.4</li>
         </mods>
         <match Class="PatchOperationSequence">
             <operations>

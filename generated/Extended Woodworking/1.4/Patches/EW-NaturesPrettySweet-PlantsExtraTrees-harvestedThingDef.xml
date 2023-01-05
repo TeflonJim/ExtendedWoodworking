@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Nature's Pretty Sweet</li>
+    </mods>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs/ThingDef[defName="TKKN_OldGrowth_PlantTreeOak"]/plant</xpath>
+      <value>
+        <harvestedThingDef>WoodLog_Oak</harvestedThingDef>
+      </value>
+    </match>
+  </Operation>
+</Patch>

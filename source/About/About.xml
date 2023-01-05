@@ -8,6 +8,7 @@
     <li>1.1</li>
     <li>1.2</li>
     <li>1.3</li>
+    <li>1.4</li>
   </supportedVersions>
   <description>
 This is an update of the Extended Woodworking mod (A13). All credit for the original creative work goes to ItchyFlea. https://ludeon.com/forums/index.php?topic=7893.0
@@ -16,7 +17,7 @@ Previous versions of this module can be downloaded from GitHub:
 
 https://github.com/TeflonJim/ExtendedWoodworking/releases
 
-This release supports RimWorld 1.0, 1.1, 1.2, and 1.3.
+This release supports RimWorld 1.0, 1.1, 1.2, 1.3, and 1.4.
 
 This mod changes trees so that when they are cut down, they produce wood of that tree type. Different wood types have slightly different properties.
 
@@ -28,6 +29,7 @@ Supported expansions:
 
 * Royalty
 * Ideology
+* Biotech
 
 Supported mods:
 
