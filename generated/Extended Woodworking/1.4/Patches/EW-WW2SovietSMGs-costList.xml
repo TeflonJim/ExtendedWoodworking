@@ -3,7 +3,7 @@
   <Operation Class="PatchOperationFindMod">
     <success>Always</success>
     <mods>
-      <li>[HRK] Gun Nut - Soviet SMGs</li>
+      <li>WW2 Soviet SMGs</li>
     </mods>
     <match Class="PatchOperationSequence">
       <success>Always</success>

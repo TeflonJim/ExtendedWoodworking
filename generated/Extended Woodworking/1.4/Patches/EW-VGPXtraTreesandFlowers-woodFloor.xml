@@ -28,10 +28,10 @@
               </statBases>
               <constructEffect>ConstructWood</constructEffect>
               <uiOrder>2000</uiOrder>
-              <designatorDropdown>Floor_WoodPlank</designatorDropdown>
               <costList>
                 <WoodLog_Acacia>6</WoodLog_Acacia>
               </costList>
+              <designatorDropdown>Floor_WoodPlank</designatorDropdown>
             </TerrainDef>
           </value>
         </li>
@@ -56,10 +56,10 @@
               </statBases>
               <constructEffect>ConstructWood</constructEffect>
               <uiOrder>2000</uiOrder>
-              <designatorDropdown>Floor_WoodPlank</designatorDropdown>
               <costList>
                 <WoodLog_Camellia>6</WoodLog_Camellia>
               </costList>
+              <designatorDropdown>Floor_WoodPlank</designatorDropdown>
             </TerrainDef>
           </value>
         </li>
@@ -112,10 +112,10 @@
               </statBases>
               <constructEffect>ConstructWood</constructEffect>
               <uiOrder>2000</uiOrder>
-              <designatorDropdown>Floor_WoodPlank</designatorDropdown>
               <costList>
                 <WoodLog_JapaneseMaple>6</WoodLog_JapaneseMaple>
               </costList>
+              <designatorDropdown>Floor_WoodPlank</designatorDropdown>
             </TerrainDef>
           </value>
         </li>

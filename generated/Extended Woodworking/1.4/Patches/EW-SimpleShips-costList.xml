@@ -3,24 +3,24 @@
   <Operation Class="PatchOperationFindMod">
     <success>Always</success>
     <mods>
-      <li>VGP Vegetable Garden</li>
+      <li>Simple Ships</li>
     </mods>
     <match Class="PatchOperationSequence">
       <success>Always</success>
       <operations>
         <li Class="PatchOperationRemove">
-          <xpath>/Defs/ThingDef[defName="VG_JellyFarm"]/costList/WoodLog</xpath>
+          <xpath>/Defs/ThingDef[defName="PLA_BuildingBoat1A"]/costList/WoodLog</xpath>
         </li>
         <li Class="PatchOperationConditional">
-          <xpath>/Defs/ThingDef[defName="VG_JellyFarm" and (stuffCategories)]</xpath>
+          <xpath>/Defs/ThingDef[defName="PLA_BuildingBoat1A" and (stuffCategories)]</xpath>
           <match Class="PatchOperationAdd">
-            <xpath>/Defs/ThingDef[defName="VG_JellyFarm"]/stuffCategories</xpath>
+            <xpath>/Defs/ThingDef[defName="PLA_BuildingBoat1A"]/stuffCategories</xpath>
             <value>
               <li>Woody</li>
             </value>
           </match>
           <nomatch Class="PatchOperationAdd">
-            <xpath>/Defs/ThingDef[defName="VG_JellyFarm"]</xpath>
+            <xpath>/Defs/ThingDef[defName="PLA_BuildingBoat1A"]</xpath>
             <value>
               <stuffCategories>
                 <li>Woody</li>
@@ -29,33 +29,33 @@
           </nomatch>
         </li>
         <li Class="PatchOperationConditional">
-          <xpath>/Defs/ThingDef[defName="VG_JellyFarm" and not(costStuffCount)]</xpath>
+          <xpath>/Defs/ThingDef[defName="PLA_BuildingBoat1A" and not(costStuffCount)]</xpath>
           <match Class="PatchOperationAdd">
-            <xpath>/Defs/ThingDef[defName="VG_JellyFarm"]</xpath>
+            <xpath>/Defs/ThingDef[defName="PLA_BuildingBoat1A"]</xpath>
             <value>
-              <costStuffCount>25</costStuffCount>
+              <costStuffCount>1200</costStuffCount>
             </value>
           </match>
         </li>
         <li Class="PatchOperationConditional">
-          <xpath>/Defs/ThingDef[defName="VG_JellyFarm"]/constructEffect</xpath>
+          <xpath>/Defs/ThingDef[defName="PLA_BuildingBoat1A"]/constructEffect</xpath>
           <match Class="PatchOperationRemove">
-            <xpath>/Defs/ThingDef[defName="VG_JellyFarm"]/constructEffect</xpath>
+            <xpath>/Defs/ThingDef[defName="PLA_BuildingBoat1A"]/constructEffect</xpath>
           </match>
         </li>
         <li Class="PatchOperationRemove">
-          <xpath>/Defs/ThingDef[defName="VG_FishTrap"]/costList/WoodLog</xpath>
+          <xpath>/Defs/ThingDef[defName="PLA_BuildingBoat3A"]/costList/WoodLog</xpath>
         </li>
         <li Class="PatchOperationConditional">
-          <xpath>/Defs/ThingDef[defName="VG_FishTrap" and (stuffCategories)]</xpath>
+          <xpath>/Defs/ThingDef[defName="PLA_BuildingBoat3A" and (stuffCategories)]</xpath>
           <match Class="PatchOperationAdd">
-            <xpath>/Defs/ThingDef[defName="VG_FishTrap"]/stuffCategories</xpath>
+            <xpath>/Defs/ThingDef[defName="PLA_BuildingBoat3A"]/stuffCategories</xpath>
             <value>
               <li>Woody</li>
             </value>
           </match>
           <nomatch Class="PatchOperationAdd">
-            <xpath>/Defs/ThingDef[defName="VG_FishTrap"]</xpath>
+            <xpath>/Defs/ThingDef[defName="PLA_BuildingBoat3A"]</xpath>
             <value>
               <stuffCategories>
                 <li>Woody</li>
@@ -64,18 +64,18 @@
           </nomatch>
         </li>
         <li Class="PatchOperationConditional">
-          <xpath>/Defs/ThingDef[defName="VG_FishTrap" and not(costStuffCount)]</xpath>
+          <xpath>/Defs/ThingDef[defName="PLA_BuildingBoat3A" and not(costStuffCount)]</xpath>
           <match Class="PatchOperationAdd">
-            <xpath>/Defs/ThingDef[defName="VG_FishTrap"]</xpath>
+            <xpath>/Defs/ThingDef[defName="PLA_BuildingBoat3A"]</xpath>
             <value>
-              <costStuffCount>20</costStuffCount>
+              <costStuffCount>2400</costStuffCount>
             </value>
           </match>
         </li>
         <li Class="PatchOperationConditional">
-          <xpath>/Defs/ThingDef[defName="VG_FishTrap"]/constructEffect</xpath>
+          <xpath>/Defs/ThingDef[defName="PLA_BuildingBoat3A"]/constructEffect</xpath>
           <match Class="PatchOperationRemove">
-            <xpath>/Defs/ThingDef[defName="VG_FishTrap"]/constructEffect</xpath>
+            <xpath>/Defs/ThingDef[defName="PLA_BuildingBoat3A"]/constructEffect</xpath>
           </match>
         </li>
       </operations>

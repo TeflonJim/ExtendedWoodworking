@@ -3,24 +3,24 @@
   <Operation Class="PatchOperationFindMod">
     <success>Always</success>
     <mods>
-      <li>M1 Garand, Winchester 1894 and Colt 1862</li>
+      <li>Winchester M97 "Trench Gun"</li>
     </mods>
     <match Class="PatchOperationSequence">
       <success>Always</success>
       <operations>
         <li Class="PatchOperationRemove">
-          <xpath>/Defs/ThingDef[defName="HRK_1894Winchester"]/costList/WoodLog</xpath>
+          <xpath>/Defs/ThingDef[defName="HRK_TrenchShotgun"]/costList/WoodLog</xpath>
         </li>
         <li Class="PatchOperationConditional">
-          <xpath>/Defs/ThingDef[defName="HRK_1894Winchester" and (stuffCategories)]</xpath>
+          <xpath>/Defs/ThingDef[defName="HRK_TrenchShotgun" and (stuffCategories)]</xpath>
           <match Class="PatchOperationAdd">
-            <xpath>/Defs/ThingDef[defName="HRK_1894Winchester"]/stuffCategories</xpath>
+            <xpath>/Defs/ThingDef[defName="HRK_TrenchShotgun"]/stuffCategories</xpath>
             <value>
               <li>Woody</li>
             </value>
           </match>
           <nomatch Class="PatchOperationAdd">
-            <xpath>/Defs/ThingDef[defName="HRK_1894Winchester"]</xpath>
+            <xpath>/Defs/ThingDef[defName="HRK_TrenchShotgun"]</xpath>
             <value>
               <stuffCategories>
                 <li>Woody</li>
@@ -29,33 +29,33 @@
           </nomatch>
         </li>
         <li Class="PatchOperationConditional">
-          <xpath>/Defs/ThingDef[defName="HRK_1894Winchester" and not(costStuffCount)]</xpath>
+          <xpath>/Defs/ThingDef[defName="HRK_TrenchShotgun" and not(costStuffCount)]</xpath>
           <match Class="PatchOperationAdd">
-            <xpath>/Defs/ThingDef[defName="HRK_1894Winchester"]</xpath>
+            <xpath>/Defs/ThingDef[defName="HRK_TrenchShotgun"]</xpath>
             <value>
-              <costStuffCount>10</costStuffCount>
+              <costStuffCount>20</costStuffCount>
             </value>
           </match>
         </li>
         <li Class="PatchOperationConditional">
-          <xpath>/Defs/ThingDef[defName="HRK_1894Winchester"]/constructEffect</xpath>
+          <xpath>/Defs/ThingDef[defName="HRK_TrenchShotgun"]/constructEffect</xpath>
           <match Class="PatchOperationRemove">
-            <xpath>/Defs/ThingDef[defName="HRK_1894Winchester"]/constructEffect</xpath>
+            <xpath>/Defs/ThingDef[defName="HRK_TrenchShotgun"]/constructEffect</xpath>
           </match>
         </li>
         <li Class="PatchOperationRemove">
-          <xpath>/Defs/ThingDef[defName="HRK_1862Colt"]/costList/WoodLog</xpath>
+          <xpath>/Defs/ThingDef[defName="HRK_TrenchShotgun_B"]/costList/WoodLog</xpath>
         </li>
         <li Class="PatchOperationConditional">
-          <xpath>/Defs/ThingDef[defName="HRK_1862Colt" and (stuffCategories)]</xpath>
+          <xpath>/Defs/ThingDef[defName="HRK_TrenchShotgun_B" and (stuffCategories)]</xpath>
           <match Class="PatchOperationAdd">
-            <xpath>/Defs/ThingDef[defName="HRK_1862Colt"]/stuffCategories</xpath>
+            <xpath>/Defs/ThingDef[defName="HRK_TrenchShotgun_B"]/stuffCategories</xpath>
             <value>
               <li>Woody</li>
             </value>
           </match>
           <nomatch Class="PatchOperationAdd">
-            <xpath>/Defs/ThingDef[defName="HRK_1862Colt"]</xpath>
+            <xpath>/Defs/ThingDef[defName="HRK_TrenchShotgun_B"]</xpath>
             <value>
               <stuffCategories>
                 <li>Woody</li>
@@ -64,18 +64,18 @@
           </nomatch>
         </li>
         <li Class="PatchOperationConditional">
-          <xpath>/Defs/ThingDef[defName="HRK_1862Colt" and not(costStuffCount)]</xpath>
+          <xpath>/Defs/ThingDef[defName="HRK_TrenchShotgun_B" and not(costStuffCount)]</xpath>
           <match Class="PatchOperationAdd">
-            <xpath>/Defs/ThingDef[defName="HRK_1862Colt"]</xpath>
+            <xpath>/Defs/ThingDef[defName="HRK_TrenchShotgun_B"]</xpath>
             <value>
-              <costStuffCount>5</costStuffCount>
+              <costStuffCount>20</costStuffCount>
             </value>
           </match>
         </li>
         <li Class="PatchOperationConditional">
-          <xpath>/Defs/ThingDef[defName="HRK_1862Colt"]/constructEffect</xpath>
+          <xpath>/Defs/ThingDef[defName="HRK_TrenchShotgun_B"]/constructEffect</xpath>
           <match Class="PatchOperationRemove">
-            <xpath>/Defs/ThingDef[defName="HRK_1862Colt"]/constructEffect</xpath>
+            <xpath>/Defs/ThingDef[defName="HRK_TrenchShotgun_B"]/constructEffect</xpath>
           </match>
         </li>
       </operations>

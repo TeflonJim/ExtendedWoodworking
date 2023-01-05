@@ -654,9 +654,9 @@ function CreateWoodFloorPatch {
 
 function CreateFloorPatch {
     param (
-        [String]$FromMod,
+        [string]$FromMod,
 
-        [String]$TreeMod
+        [string]$TreeMod
     )
 
     $modInfo = Get-RWMod $FromMod
