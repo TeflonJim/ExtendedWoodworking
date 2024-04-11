@@ -884,7 +884,7 @@ function UpdateMetadata {
 
     $xElement = $xDocument.Element('ModMetaData').Element('description')
     $xElement.Value = $xElement.Value -replace '%SUPPORTED_MODS%', @(
-        ($buildInfo.Data.SupportedMods.Values.Name -notmatch '^(Core|Royalty|Ideology|Biotech)$' | Sort-Object | ForEach-Object { '* {0}' -f $_ }) -join "`n"
+        ($buildInfo.Data.SupportedMods.Values.Name -notmatch '^(Core|Royalty|Ideology|Biotech|Anomaly)$' | Sort-Object | ForEach-Object { '* {0}' -f $_ }) -join "`n"
     )
     $xElement.Value = $xElement.Value -replace '%SUPPORTED_FLOOR_MODS%', @(
         ($buildInfo.Data.SupportedFloorMods | ForEach-Object { '* {0}' -f $_ }) -join "`n"
@@ -916,7 +916,7 @@ function CreatePackage {
 }
 
 function UpdateLocal {
-    $path = (Get-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 294100' -Name 'InstallLocation').InstallLocation
+    $path = Get-RWGamePath
     $modPath = [System.IO.Path]::Combine($path, 'Mods', $buildInfo.Name)
 
     if (Test-Path $modPath) {

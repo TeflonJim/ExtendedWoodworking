@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Vanilla Factions Expanded - Tribals</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFET_LargeFire"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFET_LargeFire" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFET_LargeFire"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFET_LargeFire"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFET_LargeFire" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFET_LargeFire"]</xpath>
+            <value>
+              <costStuffCount>150</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFET_LargeFire"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFET_LargeFire"]/constructEffect</xpath>
+          </match>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFET_Stake"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFET_Stake" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFET_Stake"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFET_Stake"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFET_Stake" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFET_Stake"]</xpath>
+            <value>
+              <costStuffCount>5</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFET_Stake"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFET_Stake"]/constructEffect</xpath>
+          </match>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="VFET_Throwspikes"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFET_Throwspikes" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFET_Throwspikes"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFET_Throwspikes"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFET_Throwspikes" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="VFET_Throwspikes"]</xpath>
+            <value>
+              <costStuffCount>15</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/ThingDef[defName="VFET_Throwspikes"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>/Defs/ThingDef[defName="VFET_Throwspikes"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>
