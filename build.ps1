@@ -916,7 +916,7 @@ function CreatePackage {
 }
 
 function UpdateLocal {
-    $path = (Get-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Steam App 294100' -Name 'InstallLocation').InstallLocation
+    $path = Get-RWGamePath
     $modPath = [System.IO.Path]::Combine($path, 'Mods', $buildInfo.Name)
 
     if (Test-Path $modPath) {
