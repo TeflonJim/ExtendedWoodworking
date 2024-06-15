@@ -110,10 +110,10 @@
     </statBases>
     <constructEffect>ConstructWood</constructEffect>
     <uiOrder>2000</uiOrder>
+    <designatorDropdown>Floor_WoodPlank</designatorDropdown>
     <costList>
       <WoodLog_Maple>6</WoodLog_Maple>
     </costList>
-    <designatorDropdown>Floor_WoodPlank</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>WoodPlankFloor_Oak</defName>
@@ -156,10 +156,10 @@
     </statBases>
     <constructEffect>ConstructWood</constructEffect>
     <uiOrder>2000</uiOrder>
-    <designatorDropdown>Floor_WoodPlank</designatorDropdown>
     <costList>
       <WoodLog_Palm>6</WoodLog_Palm>
     </costList>
+    <designatorDropdown>Floor_WoodPlank</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>WoodPlankFloor_Pine</defName>
@@ -179,10 +179,10 @@
     </statBases>
     <constructEffect>ConstructWood</constructEffect>
     <uiOrder>2000</uiOrder>
+    <designatorDropdown>Floor_WoodPlank</designatorDropdown>
     <costList>
       <WoodLog_Pine>6</WoodLog_Pine>
     </costList>
-    <designatorDropdown>Floor_WoodPlank</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>WoodPlankFloor_Poplar</defName>
@@ -225,10 +225,10 @@
     </statBases>
     <constructEffect>ConstructWood</constructEffect>
     <uiOrder>2000</uiOrder>
+    <designatorDropdown>Floor_WoodPlank</designatorDropdown>
     <costList>
       <WoodLog_Teak>6</WoodLog_Teak>
     </costList>
-    <designatorDropdown>Floor_WoodPlank</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>WoodPlankFloor_Willow</defName>
@@ -248,10 +248,10 @@
     </statBases>
     <constructEffect>ConstructWood</constructEffect>
     <uiOrder>2000</uiOrder>
+    <designatorDropdown>Floor_WoodPlank</designatorDropdown>
     <costList>
       <WoodLog_Willow>6</WoodLog_Willow>
     </costList>
-    <designatorDropdown>Floor_WoodPlank</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>WoodPlankFloor_Red</defName>
@@ -294,10 +294,10 @@
     </statBases>
     <constructEffect>ConstructWood</constructEffect>
     <uiOrder>2000</uiOrder>
+    <designatorDropdown>Floor_WoodPlank</designatorDropdown>
     <costList>
       <WoodLog_Green>6</WoodLog_Green>
     </costList>
-    <designatorDropdown>Floor_WoodPlank</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>WoodPlankFloor_Blue</defName>
@@ -317,10 +317,10 @@
     </statBases>
     <constructEffect>ConstructWood</constructEffect>
     <uiOrder>2000</uiOrder>
+    <designatorDropdown>Floor_WoodPlank</designatorDropdown>
     <costList>
       <WoodLog_Blue>6</WoodLog_Blue>
     </costList>
-    <designatorDropdown>Floor_WoodPlank</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>WoodPlankFloor_Yellow</defName>
@@ -340,10 +340,10 @@
     </statBases>
     <constructEffect>ConstructWood</constructEffect>
     <uiOrder>2000</uiOrder>
+    <designatorDropdown>Floor_WoodPlank</designatorDropdown>
     <costList>
       <WoodLog_Yellow>6</WoodLog_Yellow>
     </costList>
-    <designatorDropdown>Floor_WoodPlank</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>WoodPlankFloor_White</defName>
@@ -363,10 +363,10 @@
     </statBases>
     <constructEffect>ConstructWood</constructEffect>
     <uiOrder>2000</uiOrder>
+    <designatorDropdown>Floor_WoodPlank</designatorDropdown>
     <costList>
       <WoodLog_White>6</WoodLog_White>
     </costList>
-    <designatorDropdown>Floor_WoodPlank</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>WoodPlankFloor_Black</defName>
@@ -386,9 +386,9 @@
     </statBases>
     <constructEffect>ConstructWood</constructEffect>
     <uiOrder>2000</uiOrder>
+    <designatorDropdown>Floor_WoodPlank</designatorDropdown>
     <costList>
       <WoodLog_Black>6</WoodLog_Black>
     </costList>
-    <designatorDropdown>Floor_WoodPlank</designatorDropdown>
   </TerrainDef>
 </Defs>

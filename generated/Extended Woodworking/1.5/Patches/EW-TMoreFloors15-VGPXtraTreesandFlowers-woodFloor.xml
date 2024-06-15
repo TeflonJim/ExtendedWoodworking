@@ -3,7 +3,7 @@
   <Operation Class="PatchOperationFindMod">
     <success>Always</success>
     <mods>
-      <li>[T] MoreFloors 1.4</li>
+      <li>[T] MoreFloors 1.5</li>
     </mods>
     <match Class="PatchOperationFindMod">
       <success>Always</success>
@@ -25,11 +25,11 @@
                 <renderPrecedence>250</renderPrecedence>
                 <description>Rustic acacia floorboards, finely polished and with splinters removed. Nice to look at but somewhat slow to build.</description>
                 <texturePath>Terrain/Surfaces/WoodFloor1</texturePath>
-                <color>(219, 184, 144)</color>
                 <costList>
                   <WoodLog_Acacia>6</WoodLog_Acacia>
                 </costList>
                 <designatorDropdown>Floor_FloorWoodRustic</designatorDropdown>
+                <color>(219, 184, 144)</color>
               </TerrainDef>
             </value>
           </li>
@@ -46,10 +46,10 @@
                 <renderPrecedence>250</renderPrecedence>
                 <description>Rustic camellia floorboards, finely polished and with splinters removed. Nice to look at but somewhat slow to build.</description>
                 <texturePath>Terrain/Surfaces/WoodFloor1</texturePath>
-                <color>(201, 160, 130)</color>
                 <costList>
                   <WoodLog_Camellia>6</WoodLog_Camellia>
                 </costList>
+                <color>(201, 160, 130)</color>
                 <designatorDropdown>Floor_FloorWoodRustic</designatorDropdown>
               </TerrainDef>
             </value>
@@ -88,11 +88,11 @@
                 <renderPrecedence>250</renderPrecedence>
                 <description>Rustic japanese maple floorboards, finely polished and with splinters removed. Nice to look at but somewhat slow to build.</description>
                 <texturePath>Terrain/Surfaces/WoodFloor1</texturePath>
+                <color>(252, 170, 124)</color>
+                <designatorDropdown>Floor_FloorWoodRustic</designatorDropdown>
                 <costList>
                   <WoodLog_JapaneseMaple>6</WoodLog_JapaneseMaple>
                 </costList>
-                <color>(252, 170, 124)</color>
-                <designatorDropdown>Floor_FloorWoodRustic</designatorDropdown>
               </TerrainDef>
             </value>
           </li>
@@ -130,11 +130,11 @@
                 <renderPrecedence>249</renderPrecedence>
                 <description>Wide, plain-looking floorboards for that minimalistic feel. Easy to build.</description>
                 <texturePath>Terrain/Surfaces/WoodFloor2</texturePath>
-                <color>(219, 184, 144)</color>
                 <costList>
                   <WoodLog_Acacia>2</WoodLog_Acacia>
                 </costList>
                 <designatorDropdown>Floor_FloorWoodWide</designatorDropdown>
+                <color>(219, 184, 144)</color>
               </TerrainDef>
             </value>
           </li>
@@ -151,10 +151,10 @@
                 <renderPrecedence>249</renderPrecedence>
                 <description>Wide, plain-looking floorboards for that minimalistic feel. Easy to build.</description>
                 <texturePath>Terrain/Surfaces/WoodFloor2</texturePath>
-                <color>(201, 160, 130)</color>
                 <costList>
                   <WoodLog_Camellia>2</WoodLog_Camellia>
                 </costList>
+                <color>(201, 160, 130)</color>
                 <designatorDropdown>Floor_FloorWoodWide</designatorDropdown>
               </TerrainDef>
             </value>
@@ -193,11 +193,11 @@
                 <renderPrecedence>249</renderPrecedence>
                 <description>Wide, plain-looking floorboards for that minimalistic feel. Easy to build.</description>
                 <texturePath>Terrain/Surfaces/WoodFloor2</texturePath>
+                <color>(252, 170, 124)</color>
+                <designatorDropdown>Floor_FloorWoodWide</designatorDropdown>
                 <costList>
                   <WoodLog_JapaneseMaple>2</WoodLog_JapaneseMaple>
                 </costList>
-                <color>(252, 170, 124)</color>
-                <designatorDropdown>Floor_FloorWoodWide</designatorDropdown>
               </TerrainDef>
             </value>
           </li>
@@ -235,11 +235,11 @@
                 <renderPrecedence>248</renderPrecedence>
                 <description>Light-coloured polished acacia floorboards in a pleasant interlocking pattern.</description>
                 <texturePath>Terrain/Surfaces/WoodFloor3</texturePath>
-                <color>(219, 184, 144)</color>
                 <costList>
                   <WoodLog_Acacia>5</WoodLog_Acacia>
                 </costList>
                 <designatorDropdown>Floor_FloorWoodLight</designatorDropdown>
+                <color>(219, 184, 144)</color>
               </TerrainDef>
             </value>
           </li>
@@ -256,10 +256,10 @@
                 <renderPrecedence>248</renderPrecedence>
                 <description>Light-coloured polished camellia floorboards in a pleasant interlocking pattern.</description>
                 <texturePath>Terrain/Surfaces/WoodFloor3</texturePath>
-                <color>(201, 160, 130)</color>
                 <costList>
                   <WoodLog_Camellia>5</WoodLog_Camellia>
                 </costList>
+                <color>(201, 160, 130)</color>
                 <designatorDropdown>Floor_FloorWoodLight</designatorDropdown>
               </TerrainDef>
             </value>
@@ -298,11 +298,11 @@
                 <renderPrecedence>248</renderPrecedence>
                 <description>Light-coloured polished japanese maple floorboards in a pleasant interlocking pattern.</description>
                 <texturePath>Terrain/Surfaces/WoodFloor3</texturePath>
+                <color>(252, 170, 124)</color>
+                <designatorDropdown>Floor_FloorWoodLight</designatorDropdown>
                 <costList>
                   <WoodLog_JapaneseMaple>5</WoodLog_JapaneseMaple>
                 </costList>
-                <color>(252, 170, 124)</color>
-                <designatorDropdown>Floor_FloorWoodLight</designatorDropdown>
               </TerrainDef>
             </value>
           </li>
@@ -340,11 +340,11 @@
                 <renderPrecedence>247</renderPrecedence>
                 <description>A acacia floor with planks laid in a mosaic-like pattern - beautiful, but needs a lot of acacia and is time-consuming to build.</description>
                 <texturePath>Terrain/Surfaces/WoodFloor4</texturePath>
-                <color>(219, 184, 144)</color>
                 <costList>
                   <WoodLog_Acacia>9</WoodLog_Acacia>
                 </costList>
                 <designatorDropdown>Floor_FloorWoodMosaic</designatorDropdown>
+                <color>(219, 184, 144)</color>
               </TerrainDef>
             </value>
           </li>
@@ -361,10 +361,10 @@
                 <renderPrecedence>247</renderPrecedence>
                 <description>A camellia floor with planks laid in a mosaic-like pattern - beautiful, but needs a lot of camellia and is time-consuming to build.</description>
                 <texturePath>Terrain/Surfaces/WoodFloor4</texturePath>
-                <color>(201, 160, 130)</color>
                 <costList>
                   <WoodLog_Camellia>9</WoodLog_Camellia>
                 </costList>
+                <color>(201, 160, 130)</color>
                 <designatorDropdown>Floor_FloorWoodMosaic</designatorDropdown>
               </TerrainDef>
             </value>
@@ -403,11 +403,11 @@
                 <renderPrecedence>247</renderPrecedence>
                 <description>A japanese maple floor with planks laid in a mosaic-like pattern - beautiful, but needs a lot of japanese maple and is time-consuming to build.</description>
                 <texturePath>Terrain/Surfaces/WoodFloor4</texturePath>
+                <color>(252, 170, 124)</color>
+                <designatorDropdown>Floor_FloorWoodMosaic</designatorDropdown>
                 <costList>
                   <WoodLog_JapaneseMaple>9</WoodLog_JapaneseMaple>
                 </costList>
-                <color>(252, 170, 124)</color>
-                <designatorDropdown>Floor_FloorWoodMosaic</designatorDropdown>
               </TerrainDef>
             </value>
           </li>
@@ -445,11 +445,11 @@
                 <renderPrecedence>246</renderPrecedence>
                 <description>Dark acacia floorboards.</description>
                 <texturePath>Terrain/Surfaces/WoodFloor5</texturePath>
-                <color>(219, 184, 144)</color>
                 <costList>
                   <WoodLog_Acacia>3</WoodLog_Acacia>
                 </costList>
                 <designatorDropdown>Floor_FloorWoodVertical</designatorDropdown>
+                <color>(219, 184, 144)</color>
               </TerrainDef>
             </value>
           </li>
@@ -466,10 +466,10 @@
                 <renderPrecedence>246</renderPrecedence>
                 <description>Dark camellia floorboards.</description>
                 <texturePath>Terrain/Surfaces/WoodFloor5</texturePath>
-                <color>(201, 160, 130)</color>
                 <costList>
                   <WoodLog_Camellia>3</WoodLog_Camellia>
                 </costList>
+                <color>(201, 160, 130)</color>
                 <designatorDropdown>Floor_FloorWoodVertical</designatorDropdown>
               </TerrainDef>
             </value>
@@ -508,11 +508,11 @@
                 <renderPrecedence>246</renderPrecedence>
                 <description>Dark japanese maple floorboards.</description>
                 <texturePath>Terrain/Surfaces/WoodFloor5</texturePath>
+                <color>(252, 170, 124)</color>
+                <designatorDropdown>Floor_FloorWoodVertical</designatorDropdown>
                 <costList>
                   <WoodLog_JapaneseMaple>3</WoodLog_JapaneseMaple>
                 </costList>
-                <color>(252, 170, 124)</color>
-                <designatorDropdown>Floor_FloorWoodVertical</designatorDropdown>
               </TerrainDef>
             </value>
           </li>
@@ -551,11 +551,11 @@
                 <renderPrecedence>245</renderPrecedence>
                 <description>Rough barn board flooring. Quick to build.</description>
                 <texturePath>Terrain/Surfaces/WoodFloor6</texturePath>
-                <color>(219, 184, 144)</color>
                 <costList>
                   <WoodLog_Acacia>2</WoodLog_Acacia>
                 </costList>
                 <designatorDropdown>Floor_FloorWoodBarn</designatorDropdown>
+                <color>(219, 184, 144)</color>
               </TerrainDef>
             </value>
           </li>
@@ -573,10 +573,10 @@
                 <renderPrecedence>245</renderPrecedence>
                 <description>Rough barn board flooring. Quick to build.</description>
                 <texturePath>Terrain/Surfaces/WoodFloor6</texturePath>
-                <color>(201, 160, 130)</color>
                 <costList>
                   <WoodLog_Camellia>2</WoodLog_Camellia>
                 </costList>
+                <color>(201, 160, 130)</color>
                 <designatorDropdown>Floor_FloorWoodBarn</designatorDropdown>
               </TerrainDef>
             </value>
@@ -617,11 +617,11 @@
                 <renderPrecedence>245</renderPrecedence>
                 <description>Rough barn board flooring. Quick to build.</description>
                 <texturePath>Terrain/Surfaces/WoodFloor6</texturePath>
+                <color>(252, 170, 124)</color>
+                <designatorDropdown>Floor_FloorWoodBarn</designatorDropdown>
                 <costList>
                   <WoodLog_JapaneseMaple>2</WoodLog_JapaneseMaple>
                 </costList>
-                <color>(252, 170, 124)</color>
-                <designatorDropdown>Floor_FloorWoodBarn</designatorDropdown>
               </TerrainDef>
             </value>
           </li>

@@ -57,7 +57,7 @@ function Setup {
             WoodStats          = Get-Content (Join-Path -Path $psscriptroot -ChildPath 'woodStats.json') | ConvertFrom-Json | ConvertTo-OrderedDictionary
             SupportedFloorMods = @(
                 'Evt Floors'
-                '[T] MoreFloors 1.4'
+                '[T] MoreFloors 1.5'
                 '[WD] Expanded Floors'
                 'GloomyFurniture'
                 'RIMkea'

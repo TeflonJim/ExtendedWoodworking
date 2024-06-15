@@ -126,10 +126,10 @@
               </statBases>
               <constructEffect>ConstructWood</constructEffect>
               <uiOrder>1999</uiOrder>
-              <designatorDropdown>Floor_WDPlywoodFloor</designatorDropdown>
               <costList>
                 <WoodLog_Drago>1</WoodLog_Drago>
               </costList>
+              <designatorDropdown>Floor_WDPlywoodFloor</designatorDropdown>
             </TerrainDef>
           </value>
         </li>
@@ -154,10 +154,10 @@
               </statBases>
               <constructEffect>ConstructWood</constructEffect>
               <uiOrder>1999</uiOrder>
+              <designatorDropdown>Floor_WDPlywoodFloor</designatorDropdown>
               <costList>
                 <WoodLog_Maple>1</WoodLog_Maple>
               </costList>
-              <designatorDropdown>Floor_WDPlywoodFloor</designatorDropdown>
             </TerrainDef>
           </value>
         </li>
@@ -238,10 +238,10 @@
               </statBases>
               <constructEffect>ConstructWood</constructEffect>
               <uiOrder>1999</uiOrder>
+              <designatorDropdown>Floor_WDPlywoodFloor</designatorDropdown>
               <costList>
                 <WoodLog_Pine>1</WoodLog_Pine>
               </costList>
-              <designatorDropdown>Floor_WDPlywoodFloor</designatorDropdown>
             </TerrainDef>
           </value>
         </li>
@@ -266,10 +266,10 @@
               </statBases>
               <constructEffect>ConstructWood</constructEffect>
               <uiOrder>1999</uiOrder>
+              <designatorDropdown>Floor_WDPlywoodFloor</designatorDropdown>
               <costList>
                 <WoodLog_Poplar>1</WoodLog_Poplar>
               </costList>
-              <designatorDropdown>Floor_WDPlywoodFloor</designatorDropdown>
             </TerrainDef>
           </value>
         </li>
@@ -448,10 +448,10 @@
               </statBases>
               <constructEffect>ConstructWood</constructEffect>
               <uiOrder>2002</uiOrder>
-              <designatorDropdown>Floor_WDWidePlanksFloor</designatorDropdown>
               <costList>
                 <WoodLog_Drago>3</WoodLog_Drago>
               </costList>
+              <designatorDropdown>Floor_WDWidePlanksFloor</designatorDropdown>
             </TerrainDef>
           </value>
         </li>
@@ -476,10 +476,10 @@
               </statBases>
               <constructEffect>ConstructWood</constructEffect>
               <uiOrder>2002</uiOrder>
+              <designatorDropdown>Floor_WDWidePlanksFloor</designatorDropdown>
               <costList>
                 <WoodLog_Maple>3</WoodLog_Maple>
               </costList>
-              <designatorDropdown>Floor_WDWidePlanksFloor</designatorDropdown>
             </TerrainDef>
           </value>
         </li>
@@ -560,10 +560,10 @@
               </statBases>
               <constructEffect>ConstructWood</constructEffect>
               <uiOrder>2002</uiOrder>
+              <designatorDropdown>Floor_WDWidePlanksFloor</designatorDropdown>
               <costList>
                 <WoodLog_Pine>3</WoodLog_Pine>
               </costList>
-              <designatorDropdown>Floor_WDWidePlanksFloor</designatorDropdown>
             </TerrainDef>
           </value>
         </li>
@@ -588,10 +588,10 @@
               </statBases>
               <constructEffect>ConstructWood</constructEffect>
               <uiOrder>2002</uiOrder>
+              <designatorDropdown>Floor_WDWidePlanksFloor</designatorDropdown>
               <costList>
                 <WoodLog_Poplar>3</WoodLog_Poplar>
               </costList>
-              <designatorDropdown>Floor_WDWidePlanksFloor</designatorDropdown>
             </TerrainDef>
           </value>
         </li>
@@ -786,10 +786,10 @@
                 <li>FineFloor</li>
               </tags>
               <uiOrder>2003</uiOrder>
-              <designatorDropdown>Floor_WDCheckWoodenFloor</designatorDropdown>
               <costList>
                 <WoodLog_Drago>20</WoodLog_Drago>
               </costList>
+              <designatorDropdown>Floor_WDCheckWoodenFloor</designatorDropdown>
             </TerrainDef>
           </value>
         </li>
@@ -818,10 +818,10 @@
                 <li>FineFloor</li>
               </tags>
               <uiOrder>2003</uiOrder>
+              <designatorDropdown>Floor_WDCheckWoodenFloor</designatorDropdown>
               <costList>
                 <WoodLog_Maple>20</WoodLog_Maple>
               </costList>
-              <designatorDropdown>Floor_WDCheckWoodenFloor</designatorDropdown>
             </TerrainDef>
           </value>
         </li>
@@ -914,10 +914,10 @@
                 <li>FineFloor</li>
               </tags>
               <uiOrder>2003</uiOrder>
+              <designatorDropdown>Floor_WDCheckWoodenFloor</designatorDropdown>
               <costList>
                 <WoodLog_Pine>20</WoodLog_Pine>
               </costList>
-              <designatorDropdown>Floor_WDCheckWoodenFloor</designatorDropdown>
             </TerrainDef>
           </value>
         </li>
@@ -946,10 +946,10 @@
                 <li>FineFloor</li>
               </tags>
               <uiOrder>2003</uiOrder>
+              <designatorDropdown>Floor_WDCheckWoodenFloor</designatorDropdown>
               <costList>
                 <WoodLog_Poplar>20</WoodLog_Poplar>
               </costList>
-              <designatorDropdown>Floor_WDCheckWoodenFloor</designatorDropdown>
             </TerrainDef>
           </value>
         </li>
@@ -1152,10 +1152,10 @@
                 <li>FineFloor</li>
               </tags>
               <uiOrder>2005</uiOrder>
-              <designatorDropdown>Floor_WDParquet</designatorDropdown>
               <costList>
                 <WoodLog_Drago>20</WoodLog_Drago>
               </costList>
+              <designatorDropdown>Floor_WDParquet</designatorDropdown>
             </TerrainDef>
           </value>
         </li>
@@ -1184,10 +1184,10 @@
                 <li>FineFloor</li>
               </tags>
               <uiOrder>2005</uiOrder>
+              <designatorDropdown>Floor_WDParquet</designatorDropdown>
               <costList>
                 <WoodLog_Maple>20</WoodLog_Maple>
               </costList>
-              <designatorDropdown>Floor_WDParquet</designatorDropdown>
             </TerrainDef>
           </value>
         </li>
@@ -1280,10 +1280,10 @@
                 <li>FineFloor</li>
               </tags>
               <uiOrder>2005</uiOrder>
+              <designatorDropdown>Floor_WDParquet</designatorDropdown>
               <costList>
                 <WoodLog_Pine>20</WoodLog_Pine>
               </costList>
-              <designatorDropdown>Floor_WDParquet</designatorDropdown>
             </TerrainDef>
           </value>
         </li>
@@ -1312,10 +1312,10 @@
                 <li>FineFloor</li>
               </tags>
               <uiOrder>2005</uiOrder>
+              <designatorDropdown>Floor_WDParquet</designatorDropdown>
               <costList>
                 <WoodLog_Poplar>20</WoodLog_Poplar>
               </costList>
-              <designatorDropdown>Floor_WDParquet</designatorDropdown>
             </TerrainDef>
           </value>
         </li>
@@ -1518,10 +1518,10 @@
                 <li>FineFloor</li>
               </tags>
               <uiOrder>2006</uiOrder>
-              <designatorDropdown>Floor_WDMosaicWoodenFloor</designatorDropdown>
               <costList>
                 <WoodLog_Drago>20</WoodLog_Drago>
               </costList>
+              <designatorDropdown>Floor_WDMosaicWoodenFloor</designatorDropdown>
             </TerrainDef>
           </value>
         </li>
@@ -1550,10 +1550,10 @@
                 <li>FineFloor</li>
               </tags>
               <uiOrder>2006</uiOrder>
+              <designatorDropdown>Floor_WDMosaicWoodenFloor</designatorDropdown>
               <costList>
                 <WoodLog_Maple>20</WoodLog_Maple>
               </costList>
-              <designatorDropdown>Floor_WDMosaicWoodenFloor</designatorDropdown>
             </TerrainDef>
           </value>
         </li>
@@ -1646,10 +1646,10 @@
                 <li>FineFloor</li>
               </tags>
               <uiOrder>2006</uiOrder>
+              <designatorDropdown>Floor_WDMosaicWoodenFloor</designatorDropdown>
               <costList>
                 <WoodLog_Pine>20</WoodLog_Pine>
               </costList>
-              <designatorDropdown>Floor_WDMosaicWoodenFloor</designatorDropdown>
             </TerrainDef>
           </value>
         </li>
@@ -1678,10 +1678,10 @@
                 <li>FineFloor</li>
               </tags>
               <uiOrder>2006</uiOrder>
+              <designatorDropdown>Floor_WDMosaicWoodenFloor</designatorDropdown>
               <costList>
                 <WoodLog_Poplar>20</WoodLog_Poplar>
               </costList>
-              <designatorDropdown>Floor_WDMosaicWoodenFloor</designatorDropdown>
             </TerrainDef>
           </value>
         </li>
