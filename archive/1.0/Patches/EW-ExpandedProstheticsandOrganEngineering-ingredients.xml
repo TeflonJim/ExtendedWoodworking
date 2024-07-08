@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Expanded Prosthetics and Organ Engineering</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/RecipeDef[defName="CreatePegLeg"]/ingredients/li[filter/thingDefs/li="WoodLog"]</xpath>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="CreatePegLeg"]/ingredients</xpath>
+          <value>
+            <li>
+              <filter>
+                <categories>
+                  <li>WoodTypes</li>
+                </categories>
+              </filter>
+              <count>50</count>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/RecipeDef[defName="CreatePegLeg"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/RecipeDef[defName="CreatePegLeg"]/fixedIngredientFilter/thingDefs/li/*</xpath>
+          <nomatch Class="PatchOperationRemove">
+            <xpath>/Defs/RecipeDef[defName="CreatePegLeg"]/fixedIngredientFilter/thingDefs</xpath>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/RecipeDef[defName="CreatePegLeg"]/fixedIngredientFilter/categories</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/RecipeDef[defName="CreatePegLeg"]/fixedIngredientFilter/categories</xpath>
+            <value>
+              <li>WoodTypes</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/RecipeDef[defName="CreatePegLeg"]/fixedIngredientFilter</xpath>
+            <value>
+              <categories>
+                <li>WoodTypes</li>
+              </categories>
+            </value>
+          </nomatch>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Expanded Prosthetics and Organ Engineering</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/RecipeDef[defName="CreateDenture"]/ingredients/li[filter/thingDefs/li="WoodLog"]</xpath>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="CreateDenture"]/ingredients</xpath>
+          <value>
+            <li>
+              <filter>
+                <categories>
+                  <li>WoodTypes</li>
+                </categories>
+              </filter>
+              <count>20</count>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/RecipeDef[defName="CreateDenture"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/RecipeDef[defName="CreateDenture"]/fixedIngredientFilter/thingDefs/li/*</xpath>
+          <nomatch Class="PatchOperationRemove">
+            <xpath>/Defs/RecipeDef[defName="CreateDenture"]/fixedIngredientFilter/thingDefs</xpath>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/RecipeDef[defName="CreateDenture"]/fixedIngredientFilter/categories</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/RecipeDef[defName="CreateDenture"]/fixedIngredientFilter/categories</xpath>
+            <value>
+              <li>WoodTypes</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/RecipeDef[defName="CreateDenture"]/fixedIngredientFilter</xpath>
+            <value>
+              <categories>
+                <li>WoodTypes</li>
+              </categories>
+            </value>
+          </nomatch>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>Expanded Prosthetics and Organ Engineering</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/RecipeDef[defName="CreateWoodenFoot"]/ingredients/li[filter/thingDefs/li="WoodLog"]</xpath>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="CreateWoodenFoot"]/ingredients</xpath>
+          <value>
+            <li>
+              <filter>
+                <categories>
+                  <li>WoodTypes</li>
+                </categories>
+              </filter>
+              <count>15</count>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationRemove">
+          <xpath>/Defs/RecipeDef[defName="CreateWoodenFoot"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/RecipeDef[defName="CreateWoodenFoot"]/fixedIngredientFilter/thingDefs/li/*</xpath>
+          <nomatch Class="PatchOperationRemove">
+            <xpath>/Defs/RecipeDef[defName="CreateWoodenFoot"]/fixedIngredientFilter/thingDefs</xpath>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>/Defs/RecipeDef[defName="CreateWoodenFoot"]/fixedIngredientFilter/categories</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>/Defs/RecipeDef[defName="CreateWoodenFoot"]/fixedIngredientFilter/categories</xpath>
+            <value>
+              <li>WoodTypes</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>/Defs/RecipeDef[defName="CreateWoodenFoot"]/fixedIngredientFilter</xpath>
+            <value>
+              <categories>
+                <li>WoodTypes</li>
+              </categories>
+            </value>
+          </nomatch>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

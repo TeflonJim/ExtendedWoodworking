@@ -1,0 +1,639 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>[WD] Expanded Floors</li>
+    </mods>
+    <match Class="PatchOperationFindMod">
+      <success>Always</success>
+      <mods>
+        <li>VGP Xtra Trees and Flowers</li>
+      </mods>
+      <match Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+            <value>
+              <TerrainDef ParentName="FloorBase">
+                <defName>WDPlywoodFloor_Acacia</defName>
+                <label>plyacacia floor</label>
+                <renderPrecedence>250</renderPrecedence>
+                <description>Plyacacia floor. Doesn't look great, but cheap. Perfect to cover big areas fast.</description>
+                <texturePath>Terrain/Surfaces/Wooden/Plywood</texturePath>
+                <burnedDef>WDBurnedPlywoodFloor</burnedDef>
+                <statBases>
+                  <WorkToBuild>120</WorkToBuild>
+                  <Flammability>0.22</Flammability>
+                  <Beauty>1.5</Beauty>
+                </statBases>
+                <constructEffect>ConstructWood</constructEffect>
+                <color>(219, 184, 144)</color>
+                <designatorDropdown>Floor_WDPlywoodFloor</designatorDropdown>
+                <costList>
+                  <WoodLog_Acacia>1</WoodLog_Acacia>
+                </costList>
+              </TerrainDef>
+            </value>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+            <value>
+              <TerrainDef ParentName="FloorBase">
+                <defName>WDPlywoodFloor_Camellia</defName>
+                <label>plycamellia floor</label>
+                <renderPrecedence>250</renderPrecedence>
+                <description>Plycamellia floor. Doesn't look great, but cheap. Perfect to cover big areas fast.</description>
+                <texturePath>Terrain/Surfaces/Wooden/Plywood</texturePath>
+                <burnedDef>WDBurnedPlywoodFloor</burnedDef>
+                <statBases>
+                  <WorkToBuild>120</WorkToBuild>
+                  <Flammability>0.22</Flammability>
+                  <Beauty>2</Beauty>
+                </statBases>
+                <constructEffect>ConstructWood</constructEffect>
+                <color>(201, 160, 130)</color>
+                <designatorDropdown>Floor_WDPlywoodFloor</designatorDropdown>
+                <costList>
+                  <WoodLog_Camellia>1</WoodLog_Camellia>
+                </costList>
+              </TerrainDef>
+            </value>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+            <value>
+              <TerrainDef ParentName="FloorBase">
+                <defName>WDPlywoodFloor_CherryBlossom</defName>
+                <label>plycherryblossom floor</label>
+                <renderPrecedence>250</renderPrecedence>
+                <description>Plycherry blossom floor. Doesn't look great, but cheap. Perfect to cover big areas fast.</description>
+                <texturePath>Terrain/Surfaces/Wooden/Plywood</texturePath>
+                <burnedDef>WDBurnedPlywoodFloor</burnedDef>
+                <statBases>
+                  <WorkToBuild>120</WorkToBuild>
+                  <Flammability>0.22</Flammability>
+                  <Beauty>1</Beauty>
+                </statBases>
+                <constructEffect>ConstructWood</constructEffect>
+                <color>(165, 82, 40)</color>
+                <costList>
+                  <WoodLog_CherryBlossom>1</WoodLog_CherryBlossom>
+                </costList>
+                <designatorDropdown>Floor_WDPlywoodFloor</designatorDropdown>
+              </TerrainDef>
+            </value>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+            <value>
+              <TerrainDef ParentName="FloorBase">
+                <defName>WDPlywoodFloor_JapaneseMaple</defName>
+                <label>plyjapanesemaple floor</label>
+                <renderPrecedence>250</renderPrecedence>
+                <description>Plyjapanese maple floor. Doesn't look great, but cheap. Perfect to cover big areas fast.</description>
+                <texturePath>Terrain/Surfaces/Wooden/Plywood</texturePath>
+                <burnedDef>WDBurnedPlywoodFloor</burnedDef>
+                <statBases>
+                  <WorkToBuild>120</WorkToBuild>
+                  <Flammability>0.22</Flammability>
+                  <Beauty>1.5</Beauty>
+                </statBases>
+                <constructEffect>ConstructWood</constructEffect>
+                <color>(252, 170, 124)</color>
+                <designatorDropdown>Floor_WDPlywoodFloor</designatorDropdown>
+                <costList>
+                  <WoodLog_JapaneseMaple>1</WoodLog_JapaneseMaple>
+                </costList>
+              </TerrainDef>
+            </value>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+            <value>
+              <TerrainDef ParentName="FloorBase">
+                <defName>WDPlywoodFloor_RedMaple</defName>
+                <label>plyredmaple floor</label>
+                <renderPrecedence>250</renderPrecedence>
+                <description>Plyred maple floor. Doesn't look great, but cheap. Perfect to cover big areas fast.</description>
+                <texturePath>Terrain/Surfaces/Wooden/Plywood</texturePath>
+                <burnedDef>WDBurnedPlywoodFloor</burnedDef>
+                <statBases>
+                  <WorkToBuild>120</WorkToBuild>
+                  <Flammability>0.22</Flammability>
+                  <Beauty>1.5</Beauty>
+                </statBases>
+                <constructEffect>ConstructWood</constructEffect>
+                <color>(222, 197, 167)</color>
+                <designatorDropdown>Floor_WDPlywoodFloor</designatorDropdown>
+                <costList>
+                  <WoodLog_RedMaple>1</WoodLog_RedMaple>
+                </costList>
+              </TerrainDef>
+            </value>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+            <value>
+              <TerrainDef ParentName="FloorBase">
+                <defName>WDWidePlanksFloor_Acacia</defName>
+                <label>acacia wide planks</label>
+                <renderPrecedence>250</renderPrecedence>
+                <description>Floor made of smooth wide acacia planks. Simple and nice.</description>
+                <texturePath>Terrain/Surfaces/Wooden/WidePlanksFloor</texturePath>
+                <burnedDef>WDBurnedWidePlanks</burnedDef>
+                <statBases>
+                  <WorkToBuild>420</WorkToBuild>
+                  <Flammability>0.22</Flammability>
+                  <Beauty>1.5</Beauty>
+                </statBases>
+                <constructEffect>ConstructWood</constructEffect>
+                <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+                <color>(219, 184, 144)</color>
+                <designatorDropdown>Floor_WDWidePlanksFloor</designatorDropdown>
+                <costList>
+                  <WoodLog_Acacia>4</WoodLog_Acacia>
+                </costList>
+              </TerrainDef>
+            </value>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+            <value>
+              <TerrainDef ParentName="FloorBase">
+                <defName>WDWidePlanksFloor_Camellia</defName>
+                <label>camellia wide planks</label>
+                <renderPrecedence>250</renderPrecedence>
+                <description>Floor made of smooth wide camellia planks. Simple and nice.</description>
+                <texturePath>Terrain/Surfaces/Wooden/WidePlanksFloor</texturePath>
+                <burnedDef>WDBurnedWidePlanks</burnedDef>
+                <statBases>
+                  <WorkToBuild>420</WorkToBuild>
+                  <Flammability>0.22</Flammability>
+                  <Beauty>2</Beauty>
+                </statBases>
+                <constructEffect>ConstructWood</constructEffect>
+                <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+                <color>(201, 160, 130)</color>
+                <designatorDropdown>Floor_WDWidePlanksFloor</designatorDropdown>
+                <costList>
+                  <WoodLog_Camellia>4</WoodLog_Camellia>
+                </costList>
+              </TerrainDef>
+            </value>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+            <value>
+              <TerrainDef ParentName="FloorBase">
+                <defName>WDWidePlanksFloor_CherryBlossom</defName>
+                <label>cherryblossom wide planks</label>
+                <renderPrecedence>250</renderPrecedence>
+                <description>Floor made of smooth wide cherry blossom planks. Simple and nice.</description>
+                <texturePath>Terrain/Surfaces/Wooden/WidePlanksFloor</texturePath>
+                <burnedDef>WDBurnedWidePlanks</burnedDef>
+                <statBases>
+                  <WorkToBuild>420</WorkToBuild>
+                  <Flammability>0.22</Flammability>
+                  <Beauty>1</Beauty>
+                </statBases>
+                <constructEffect>ConstructWood</constructEffect>
+                <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+                <color>(165, 82, 40)</color>
+                <costList>
+                  <WoodLog_CherryBlossom>4</WoodLog_CherryBlossom>
+                </costList>
+                <designatorDropdown>Floor_WDWidePlanksFloor</designatorDropdown>
+              </TerrainDef>
+            </value>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+            <value>
+              <TerrainDef ParentName="FloorBase">
+                <defName>WDWidePlanksFloor_JapaneseMaple</defName>
+                <label>japanesemaple wide planks</label>
+                <renderPrecedence>250</renderPrecedence>
+                <description>Floor made of smooth wide japanese maple planks. Simple and nice.</description>
+                <texturePath>Terrain/Surfaces/Wooden/WidePlanksFloor</texturePath>
+                <burnedDef>WDBurnedWidePlanks</burnedDef>
+                <statBases>
+                  <WorkToBuild>420</WorkToBuild>
+                  <Flammability>0.22</Flammability>
+                  <Beauty>1.5</Beauty>
+                </statBases>
+                <constructEffect>ConstructWood</constructEffect>
+                <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+                <color>(252, 170, 124)</color>
+                <designatorDropdown>Floor_WDWidePlanksFloor</designatorDropdown>
+                <costList>
+                  <WoodLog_JapaneseMaple>4</WoodLog_JapaneseMaple>
+                </costList>
+              </TerrainDef>
+            </value>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+            <value>
+              <TerrainDef ParentName="FloorBase">
+                <defName>WDWidePlanksFloor_RedMaple</defName>
+                <label>redmaple wide planks</label>
+                <renderPrecedence>250</renderPrecedence>
+                <description>Floor made of smooth wide red maple planks. Simple and nice.</description>
+                <texturePath>Terrain/Surfaces/Wooden/WidePlanksFloor</texturePath>
+                <burnedDef>WDBurnedWidePlanks</burnedDef>
+                <statBases>
+                  <WorkToBuild>420</WorkToBuild>
+                  <Flammability>0.22</Flammability>
+                  <Beauty>1.5</Beauty>
+                </statBases>
+                <constructEffect>ConstructWood</constructEffect>
+                <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+                <color>(222, 197, 167)</color>
+                <designatorDropdown>Floor_WDWidePlanksFloor</designatorDropdown>
+                <costList>
+                  <WoodLog_RedMaple>4</WoodLog_RedMaple>
+                </costList>
+              </TerrainDef>
+            </value>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+            <value>
+              <TerrainDef ParentName="FloorBase">
+                <defName>WDCheckWoodenFloor_Acacia</defName>
+                <label>checkered acacia floor</label>
+                <renderPrecedence>250</renderPrecedence>
+                <description>Nice looking checkered floor made of small acacia planks.</description>
+                <texturePath>Terrain/Surfaces/Wooden/CheckWoodenFloor</texturePath>
+                <burnedDef>WDBurnedCheckWoodenFloor</burnedDef>
+                <statBases>
+                  <WorkToBuild>720</WorkToBuild>
+                  <Flammability>0.22</Flammability>
+                  <Beauty>2.5</Beauty>
+                </statBases>
+                <constructEffect>ConstructWood</constructEffect>
+                <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+                <color>(219, 184, 144)</color>
+                <designatorDropdown>Floor_WDCheckWoodenFloor</designatorDropdown>
+                <costList>
+                  <WoodLog_Acacia>6</WoodLog_Acacia>
+                </costList>
+              </TerrainDef>
+            </value>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+            <value>
+              <TerrainDef ParentName="FloorBase">
+                <defName>WDCheckWoodenFloor_Camellia</defName>
+                <label>checkered camellia floor</label>
+                <renderPrecedence>250</renderPrecedence>
+                <description>Nice looking checkered floor made of small camellia planks.</description>
+                <texturePath>Terrain/Surfaces/Wooden/CheckWoodenFloor</texturePath>
+                <burnedDef>WDBurnedCheckWoodenFloor</burnedDef>
+                <statBases>
+                  <WorkToBuild>720</WorkToBuild>
+                  <Flammability>0.22</Flammability>
+                  <Beauty>3</Beauty>
+                </statBases>
+                <constructEffect>ConstructWood</constructEffect>
+                <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+                <color>(201, 160, 130)</color>
+                <designatorDropdown>Floor_WDCheckWoodenFloor</designatorDropdown>
+                <costList>
+                  <WoodLog_Camellia>6</WoodLog_Camellia>
+                </costList>
+              </TerrainDef>
+            </value>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+            <value>
+              <TerrainDef ParentName="FloorBase">
+                <defName>WDCheckWoodenFloor_CherryBlossom</defName>
+                <label>checkered cherryblossom floor</label>
+                <renderPrecedence>250</renderPrecedence>
+                <description>Nice looking checkered floor made of small cherry blossom planks.</description>
+                <texturePath>Terrain/Surfaces/Wooden/CheckWoodenFloor</texturePath>
+                <burnedDef>WDBurnedCheckWoodenFloor</burnedDef>
+                <statBases>
+                  <WorkToBuild>720</WorkToBuild>
+                  <Flammability>0.22</Flammability>
+                  <Beauty>2</Beauty>
+                </statBases>
+                <constructEffect>ConstructWood</constructEffect>
+                <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+                <color>(165, 82, 40)</color>
+                <costList>
+                  <WoodLog_CherryBlossom>6</WoodLog_CherryBlossom>
+                </costList>
+                <designatorDropdown>Floor_WDCheckWoodenFloor</designatorDropdown>
+              </TerrainDef>
+            </value>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+            <value>
+              <TerrainDef ParentName="FloorBase">
+                <defName>WDCheckWoodenFloor_JapaneseMaple</defName>
+                <label>checkered japanesemaple floor</label>
+                <renderPrecedence>250</renderPrecedence>
+                <description>Nice looking checkered floor made of small japanese maple planks.</description>
+                <texturePath>Terrain/Surfaces/Wooden/CheckWoodenFloor</texturePath>
+                <burnedDef>WDBurnedCheckWoodenFloor</burnedDef>
+                <statBases>
+                  <WorkToBuild>720</WorkToBuild>
+                  <Flammability>0.22</Flammability>
+                  <Beauty>2.5</Beauty>
+                </statBases>
+                <constructEffect>ConstructWood</constructEffect>
+                <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+                <color>(252, 170, 124)</color>
+                <designatorDropdown>Floor_WDCheckWoodenFloor</designatorDropdown>
+                <costList>
+                  <WoodLog_JapaneseMaple>6</WoodLog_JapaneseMaple>
+                </costList>
+              </TerrainDef>
+            </value>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+            <value>
+              <TerrainDef ParentName="FloorBase">
+                <defName>WDCheckWoodenFloor_RedMaple</defName>
+                <label>checkered redmaple floor</label>
+                <renderPrecedence>250</renderPrecedence>
+                <description>Nice looking checkered floor made of small red maple planks.</description>
+                <texturePath>Terrain/Surfaces/Wooden/CheckWoodenFloor</texturePath>
+                <burnedDef>WDBurnedCheckWoodenFloor</burnedDef>
+                <statBases>
+                  <WorkToBuild>720</WorkToBuild>
+                  <Flammability>0.22</Flammability>
+                  <Beauty>2.5</Beauty>
+                </statBases>
+                <constructEffect>ConstructWood</constructEffect>
+                <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+                <color>(222, 197, 167)</color>
+                <designatorDropdown>Floor_WDCheckWoodenFloor</designatorDropdown>
+                <costList>
+                  <WoodLog_RedMaple>6</WoodLog_RedMaple>
+                </costList>
+              </TerrainDef>
+            </value>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+            <value>
+              <TerrainDef ParentName="FloorBase">
+                <defName>WDParquet_Acacia</defName>
+                <label>acacia parquet</label>
+                <renderPrecedence>250</renderPrecedence>
+                <description>Floor made of fine smooth acacia planks. Makes any room better, but expensive and hard to build.</description>
+                <texturePath>Terrain/Surfaces/Wooden/Parquet</texturePath>
+                <burnedDef>WDBurnedParquet</burnedDef>
+                <statBases>
+                  <WorkToBuild>900</WorkToBuild>
+                  <Flammability>0.22</Flammability>
+                  <Beauty>3.5</Beauty>
+                </statBases>
+                <constructEffect>ConstructWood</constructEffect>
+                <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+                <color>(219, 184, 144)</color>
+                <designatorDropdown>Floor_WDParquet</designatorDropdown>
+                <costList>
+                  <WoodLog_Acacia>8</WoodLog_Acacia>
+                </costList>
+              </TerrainDef>
+            </value>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+            <value>
+              <TerrainDef ParentName="FloorBase">
+                <defName>WDParquet_Camellia</defName>
+                <label>camellia parquet</label>
+                <renderPrecedence>250</renderPrecedence>
+                <description>Floor made of fine smooth camellia planks. Makes any room better, but expensive and hard to build.</description>
+                <texturePath>Terrain/Surfaces/Wooden/Parquet</texturePath>
+                <burnedDef>WDBurnedParquet</burnedDef>
+                <statBases>
+                  <WorkToBuild>900</WorkToBuild>
+                  <Flammability>0.22</Flammability>
+                  <Beauty>4</Beauty>
+                </statBases>
+                <constructEffect>ConstructWood</constructEffect>
+                <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+                <color>(201, 160, 130)</color>
+                <designatorDropdown>Floor_WDParquet</designatorDropdown>
+                <costList>
+                  <WoodLog_Camellia>8</WoodLog_Camellia>
+                </costList>
+              </TerrainDef>
+            </value>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+            <value>
+              <TerrainDef ParentName="FloorBase">
+                <defName>WDParquet_CherryBlossom</defName>
+                <label>cherryblossom parquet</label>
+                <renderPrecedence>250</renderPrecedence>
+                <description>Floor made of fine smooth cherry blossom planks. Makes any room better, but expensive and hard to build.</description>
+                <texturePath>Terrain/Surfaces/Wooden/Parquet</texturePath>
+                <burnedDef>WDBurnedParquet</burnedDef>
+                <statBases>
+                  <WorkToBuild>900</WorkToBuild>
+                  <Flammability>0.22</Flammability>
+                  <Beauty>3</Beauty>
+                </statBases>
+                <constructEffect>ConstructWood</constructEffect>
+                <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+                <color>(165, 82, 40)</color>
+                <costList>
+                  <WoodLog_CherryBlossom>8</WoodLog_CherryBlossom>
+                </costList>
+                <designatorDropdown>Floor_WDParquet</designatorDropdown>
+              </TerrainDef>
+            </value>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+            <value>
+              <TerrainDef ParentName="FloorBase">
+                <defName>WDParquet_JapaneseMaple</defName>
+                <label>japanesemaple parquet</label>
+                <renderPrecedence>250</renderPrecedence>
+                <description>Floor made of fine smooth japanese maple planks. Makes any room better, but expensive and hard to build.</description>
+                <texturePath>Terrain/Surfaces/Wooden/Parquet</texturePath>
+                <burnedDef>WDBurnedParquet</burnedDef>
+                <statBases>
+                  <WorkToBuild>900</WorkToBuild>
+                  <Flammability>0.22</Flammability>
+                  <Beauty>3.5</Beauty>
+                </statBases>
+                <constructEffect>ConstructWood</constructEffect>
+                <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+                <color>(252, 170, 124)</color>
+                <designatorDropdown>Floor_WDParquet</designatorDropdown>
+                <costList>
+                  <WoodLog_JapaneseMaple>8</WoodLog_JapaneseMaple>
+                </costList>
+              </TerrainDef>
+            </value>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+            <value>
+              <TerrainDef ParentName="FloorBase">
+                <defName>WDParquet_RedMaple</defName>
+                <label>redmaple parquet</label>
+                <renderPrecedence>250</renderPrecedence>
+                <description>Floor made of fine smooth red maple planks. Makes any room better, but expensive and hard to build.</description>
+                <texturePath>Terrain/Surfaces/Wooden/Parquet</texturePath>
+                <burnedDef>WDBurnedParquet</burnedDef>
+                <statBases>
+                  <WorkToBuild>900</WorkToBuild>
+                  <Flammability>0.22</Flammability>
+                  <Beauty>3.5</Beauty>
+                </statBases>
+                <constructEffect>ConstructWood</constructEffect>
+                <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+                <color>(222, 197, 167)</color>
+                <designatorDropdown>Floor_WDParquet</designatorDropdown>
+                <costList>
+                  <WoodLog_RedMaple>8</WoodLog_RedMaple>
+                </costList>
+              </TerrainDef>
+            </value>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+            <value>
+              <TerrainDef ParentName="FloorBase">
+                <defName>WDMosaicWoodenFloor_Acacia</defName>
+                <label>mosaic acacia floor</label>
+                <renderPrecedence>250</renderPrecedence>
+                <description>Polished acacia floor made of small planks fitted to each other. Looks fine but very expensive and hard to build.</description>
+                <texturePath>Terrain/Surfaces/Wooden/MosaicWoodenFloor</texturePath>
+                <burnedDef>WDBurnedMosaicWoodenFloor</burnedDef>
+                <statBases>
+                  <WorkToBuild>1200</WorkToBuild>
+                  <Flammability>0.22</Flammability>
+                  <Beauty>4.5</Beauty>
+                </statBases>
+                <constructEffect>ConstructWood</constructEffect>
+                <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+                <color>(219, 184, 144)</color>
+                <designatorDropdown>Floor_WDMosaicWoodenFloor</designatorDropdown>
+                <costList>
+                  <WoodLog_Acacia>10</WoodLog_Acacia>
+                </costList>
+              </TerrainDef>
+            </value>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+            <value>
+              <TerrainDef ParentName="FloorBase">
+                <defName>WDMosaicWoodenFloor_Camellia</defName>
+                <label>mosaic camellia floor</label>
+                <renderPrecedence>250</renderPrecedence>
+                <description>Polished camellia floor made of small planks fitted to each other. Looks fine but very expensive and hard to build.</description>
+                <texturePath>Terrain/Surfaces/Wooden/MosaicWoodenFloor</texturePath>
+                <burnedDef>WDBurnedMosaicWoodenFloor</burnedDef>
+                <statBases>
+                  <WorkToBuild>1200</WorkToBuild>
+                  <Flammability>0.22</Flammability>
+                  <Beauty>5</Beauty>
+                </statBases>
+                <constructEffect>ConstructWood</constructEffect>
+                <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+                <color>(201, 160, 130)</color>
+                <designatorDropdown>Floor_WDMosaicWoodenFloor</designatorDropdown>
+                <costList>
+                  <WoodLog_Camellia>10</WoodLog_Camellia>
+                </costList>
+              </TerrainDef>
+            </value>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+            <value>
+              <TerrainDef ParentName="FloorBase">
+                <defName>WDMosaicWoodenFloor_CherryBlossom</defName>
+                <label>mosaic cherryblossom floor</label>
+                <renderPrecedence>250</renderPrecedence>
+                <description>Polished cherry blossom floor made of small planks fitted to each other. Looks fine but very expensive and hard to build.</description>
+                <texturePath>Terrain/Surfaces/Wooden/MosaicWoodenFloor</texturePath>
+                <burnedDef>WDBurnedMosaicWoodenFloor</burnedDef>
+                <statBases>
+                  <WorkToBuild>1200</WorkToBuild>
+                  <Flammability>0.22</Flammability>
+                  <Beauty>4</Beauty>
+                </statBases>
+                <constructEffect>ConstructWood</constructEffect>
+                <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+                <color>(165, 82, 40)</color>
+                <costList>
+                  <WoodLog_CherryBlossom>10</WoodLog_CherryBlossom>
+                </costList>
+                <designatorDropdown>Floor_WDMosaicWoodenFloor</designatorDropdown>
+              </TerrainDef>
+            </value>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+            <value>
+              <TerrainDef ParentName="FloorBase">
+                <defName>WDMosaicWoodenFloor_JapaneseMaple</defName>
+                <label>mosaic japanesemaple floor</label>
+                <renderPrecedence>250</renderPrecedence>
+                <description>Polished japanese maple floor made of small planks fitted to each other. Looks fine but very expensive and hard to build.</description>
+                <texturePath>Terrain/Surfaces/Wooden/MosaicWoodenFloor</texturePath>
+                <burnedDef>WDBurnedMosaicWoodenFloor</burnedDef>
+                <statBases>
+                  <WorkToBuild>1200</WorkToBuild>
+                  <Flammability>0.22</Flammability>
+                  <Beauty>4.5</Beauty>
+                </statBases>
+                <constructEffect>ConstructWood</constructEffect>
+                <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+                <color>(252, 170, 124)</color>
+                <designatorDropdown>Floor_WDMosaicWoodenFloor</designatorDropdown>
+                <costList>
+                  <WoodLog_JapaneseMaple>10</WoodLog_JapaneseMaple>
+                </costList>
+              </TerrainDef>
+            </value>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+            <value>
+              <TerrainDef ParentName="FloorBase">
+                <defName>WDMosaicWoodenFloor_RedMaple</defName>
+                <label>mosaic redmaple floor</label>
+                <renderPrecedence>250</renderPrecedence>
+                <description>Polished red maple floor made of small planks fitted to each other. Looks fine but very expensive and hard to build.</description>
+                <texturePath>Terrain/Surfaces/Wooden/MosaicWoodenFloor</texturePath>
+                <burnedDef>WDBurnedMosaicWoodenFloor</burnedDef>
+                <statBases>
+                  <WorkToBuild>1200</WorkToBuild>
+                  <Flammability>0.22</Flammability>
+                  <Beauty>4.5</Beauty>
+                </statBases>
+                <constructEffect>ConstructWood</constructEffect>
+                <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+                <color>(222, 197, 167)</color>
+                <designatorDropdown>Floor_WDMosaicWoodenFloor</designatorDropdown>
+                <costList>
+                  <WoodLog_RedMaple>10</WoodLog_RedMaple>
+                </costList>
+              </TerrainDef>
+            </value>
+          </li>
+        </operations>
+      </match>
+    </match>
+  </Operation>
+</Patch>

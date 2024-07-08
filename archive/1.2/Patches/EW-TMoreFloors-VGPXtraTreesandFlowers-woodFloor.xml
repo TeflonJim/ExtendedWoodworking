@@ -1,0 +1,654 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <success>Always</success>
+    <mods>
+      <li>[T] MoreFloors</li>
+    </mods>
+    <match Class="PatchOperationFindMod">
+      <success>Always</success>
+      <mods>
+        <li>VGP Xtra Trees and Flowers</li>
+      </mods>
+      <match Class="PatchOperationSequence">
+        <operations>
+          <li Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+            <value>
+              <TerrainDef ParentName="TFloorBaseWood">
+                <defName>FloorWoodRustic_Acacia</defName>
+                <label>acacia floorboards</label>
+                <statBases>
+                  <WorkToBuild>140</WorkToBuild>
+                  <Beauty>1.5</Beauty>
+                </statBases>
+                <renderPrecedence>250</renderPrecedence>
+                <description>Rustic acacia floorboards, finely polished and with splinters removed. Nice to look at but somewhat slow to build.</description>
+                <texturePath>Terrain/Surfaces/WoodFloor1</texturePath>
+                <color>(219, 184, 144)</color>
+                <costList>
+                  <WoodLog_Acacia>6</WoodLog_Acacia>
+                </costList>
+                <designatorDropdown>Floor_FloorWoodRustic</designatorDropdown>
+              </TerrainDef>
+            </value>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+            <value>
+              <TerrainDef ParentName="TFloorBaseWood">
+                <defName>FloorWoodRustic_Camellia</defName>
+                <label>camellia floorboards</label>
+                <statBases>
+                  <WorkToBuild>140</WorkToBuild>
+                  <Beauty>2</Beauty>
+                </statBases>
+                <renderPrecedence>250</renderPrecedence>
+                <description>Rustic camellia floorboards, finely polished and with splinters removed. Nice to look at but somewhat slow to build.</description>
+                <texturePath>Terrain/Surfaces/WoodFloor1</texturePath>
+                <color>(201, 160, 130)</color>
+                <costList>
+                  <WoodLog_Camellia>6</WoodLog_Camellia>
+                </costList>
+                <designatorDropdown>Floor_FloorWoodRustic</designatorDropdown>
+              </TerrainDef>
+            </value>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+            <value>
+              <TerrainDef ParentName="TFloorBaseWood">
+                <defName>FloorWoodRustic_CherryBlossom</defName>
+                <label>cherryblossom floorboards</label>
+                <statBases>
+                  <WorkToBuild>140</WorkToBuild>
+                  <Beauty>1</Beauty>
+                </statBases>
+                <renderPrecedence>250</renderPrecedence>
+                <description>Rustic cherry blossom floorboards, finely polished and with splinters removed. Nice to look at but somewhat slow to build.</description>
+                <texturePath>Terrain/Surfaces/WoodFloor1</texturePath>
+                <color>(165, 82, 40)</color>
+                <costList>
+                  <WoodLog_CherryBlossom>6</WoodLog_CherryBlossom>
+                </costList>
+                <designatorDropdown>Floor_FloorWoodRustic</designatorDropdown>
+              </TerrainDef>
+            </value>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+            <value>
+              <TerrainDef ParentName="TFloorBaseWood">
+                <defName>FloorWoodRustic_JapaneseMaple</defName>
+                <label>japanesemaple floorboards</label>
+                <statBases>
+                  <WorkToBuild>140</WorkToBuild>
+                  <Beauty>1.5</Beauty>
+                </statBases>
+                <renderPrecedence>250</renderPrecedence>
+                <description>Rustic japanese maple floorboards, finely polished and with splinters removed. Nice to look at but somewhat slow to build.</description>
+                <texturePath>Terrain/Surfaces/WoodFloor1</texturePath>
+                <color>(252, 170, 124)</color>
+                <designatorDropdown>Floor_FloorWoodRustic</designatorDropdown>
+                <costList>
+                  <WoodLog_JapaneseMaple>6</WoodLog_JapaneseMaple>
+                </costList>
+              </TerrainDef>
+            </value>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+            <value>
+              <TerrainDef ParentName="TFloorBaseWood">
+                <defName>FloorWoodRustic_RedMaple</defName>
+                <label>redmaple floorboards</label>
+                <statBases>
+                  <WorkToBuild>140</WorkToBuild>
+                  <Beauty>1.5</Beauty>
+                </statBases>
+                <renderPrecedence>250</renderPrecedence>
+                <description>Rustic red maple floorboards, finely polished and with splinters removed. Nice to look at but somewhat slow to build.</description>
+                <texturePath>Terrain/Surfaces/WoodFloor1</texturePath>
+                <color>(222, 197, 167)</color>
+                <costList>
+                  <WoodLog_RedMaple>6</WoodLog_RedMaple>
+                </costList>
+                <designatorDropdown>Floor_FloorWoodRustic</designatorDropdown>
+              </TerrainDef>
+            </value>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+            <value>
+              <TerrainDef ParentName="TFloorBaseWood">
+                <defName>FloorWoodWide_Acacia</defName>
+                <label>wide acacia floorboards</label>
+                <statBases>
+                  <WorkToBuild>60</WorkToBuild>
+                  <Beauty>1.5</Beauty>
+                </statBases>
+                <renderPrecedence>249</renderPrecedence>
+                <description>Wide, plain-looking floorboards for that minimalistic feel. Easy to build.</description>
+                <texturePath>Terrain/Surfaces/WoodFloor2</texturePath>
+                <color>(219, 184, 144)</color>
+                <costList>
+                  <WoodLog_Acacia>2</WoodLog_Acacia>
+                </costList>
+                <designatorDropdown>Floor_FloorWoodWide</designatorDropdown>
+              </TerrainDef>
+            </value>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+            <value>
+              <TerrainDef ParentName="TFloorBaseWood">
+                <defName>FloorWoodWide_Camellia</defName>
+                <label>wide camellia floorboards</label>
+                <statBases>
+                  <WorkToBuild>60</WorkToBuild>
+                  <Beauty>2</Beauty>
+                </statBases>
+                <renderPrecedence>249</renderPrecedence>
+                <description>Wide, plain-looking floorboards for that minimalistic feel. Easy to build.</description>
+                <texturePath>Terrain/Surfaces/WoodFloor2</texturePath>
+                <color>(201, 160, 130)</color>
+                <costList>
+                  <WoodLog_Camellia>2</WoodLog_Camellia>
+                </costList>
+                <designatorDropdown>Floor_FloorWoodWide</designatorDropdown>
+              </TerrainDef>
+            </value>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+            <value>
+              <TerrainDef ParentName="TFloorBaseWood">
+                <defName>FloorWoodWide_CherryBlossom</defName>
+                <label>wide cherryblossom floorboards</label>
+                <statBases>
+                  <WorkToBuild>60</WorkToBuild>
+                  <Beauty>1</Beauty>
+                </statBases>
+                <renderPrecedence>249</renderPrecedence>
+                <description>Wide, plain-looking floorboards for that minimalistic feel. Easy to build.</description>
+                <texturePath>Terrain/Surfaces/WoodFloor2</texturePath>
+                <color>(165, 82, 40)</color>
+                <costList>
+                  <WoodLog_CherryBlossom>2</WoodLog_CherryBlossom>
+                </costList>
+                <designatorDropdown>Floor_FloorWoodWide</designatorDropdown>
+              </TerrainDef>
+            </value>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+            <value>
+              <TerrainDef ParentName="TFloorBaseWood">
+                <defName>FloorWoodWide_JapaneseMaple</defName>
+                <label>wide japanesemaple floorboards</label>
+                <statBases>
+                  <WorkToBuild>60</WorkToBuild>
+                  <Beauty>1.5</Beauty>
+                </statBases>
+                <renderPrecedence>249</renderPrecedence>
+                <description>Wide, plain-looking floorboards for that minimalistic feel. Easy to build.</description>
+                <texturePath>Terrain/Surfaces/WoodFloor2</texturePath>
+                <color>(252, 170, 124)</color>
+                <designatorDropdown>Floor_FloorWoodWide</designatorDropdown>
+                <costList>
+                  <WoodLog_JapaneseMaple>2</WoodLog_JapaneseMaple>
+                </costList>
+              </TerrainDef>
+            </value>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+            <value>
+              <TerrainDef ParentName="TFloorBaseWood">
+                <defName>FloorWoodWide_RedMaple</defName>
+                <label>wide redmaple floorboards</label>
+                <statBases>
+                  <WorkToBuild>60</WorkToBuild>
+                  <Beauty>1.5</Beauty>
+                </statBases>
+                <renderPrecedence>249</renderPrecedence>
+                <description>Wide, plain-looking floorboards for that minimalistic feel. Easy to build.</description>
+                <texturePath>Terrain/Surfaces/WoodFloor2</texturePath>
+                <color>(222, 197, 167)</color>
+                <costList>
+                  <WoodLog_RedMaple>2</WoodLog_RedMaple>
+                </costList>
+                <designatorDropdown>Floor_FloorWoodWide</designatorDropdown>
+              </TerrainDef>
+            </value>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+            <value>
+              <TerrainDef ParentName="TFloorBaseWood">
+                <defName>FloorWoodLight_Acacia</defName>
+                <label>light acacia floor</label>
+                <statBases>
+                  <WorkToBuild>120</WorkToBuild>
+                  <Beauty>1.5</Beauty>
+                </statBases>
+                <renderPrecedence>248</renderPrecedence>
+                <description>Light-coloured polished acacia floorboards in a pleasant interlocking pattern.</description>
+                <texturePath>Terrain/Surfaces/WoodFloor3</texturePath>
+                <color>(219, 184, 144)</color>
+                <costList>
+                  <WoodLog_Acacia>5</WoodLog_Acacia>
+                </costList>
+                <designatorDropdown>Floor_FloorWoodLight</designatorDropdown>
+              </TerrainDef>
+            </value>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+            <value>
+              <TerrainDef ParentName="TFloorBaseWood">
+                <defName>FloorWoodLight_Camellia</defName>
+                <label>light camellia floor</label>
+                <statBases>
+                  <WorkToBuild>120</WorkToBuild>
+                  <Beauty>2</Beauty>
+                </statBases>
+                <renderPrecedence>248</renderPrecedence>
+                <description>Light-coloured polished camellia floorboards in a pleasant interlocking pattern.</description>
+                <texturePath>Terrain/Surfaces/WoodFloor3</texturePath>
+                <color>(201, 160, 130)</color>
+                <costList>
+                  <WoodLog_Camellia>5</WoodLog_Camellia>
+                </costList>
+                <designatorDropdown>Floor_FloorWoodLight</designatorDropdown>
+              </TerrainDef>
+            </value>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+            <value>
+              <TerrainDef ParentName="TFloorBaseWood">
+                <defName>FloorWoodLight_CherryBlossom</defName>
+                <label>light cherryblossom floor</label>
+                <statBases>
+                  <WorkToBuild>120</WorkToBuild>
+                  <Beauty>1</Beauty>
+                </statBases>
+                <renderPrecedence>248</renderPrecedence>
+                <description>Light-coloured polished cherry blossom floorboards in a pleasant interlocking pattern.</description>
+                <texturePath>Terrain/Surfaces/WoodFloor3</texturePath>
+                <color>(165, 82, 40)</color>
+                <costList>
+                  <WoodLog_CherryBlossom>5</WoodLog_CherryBlossom>
+                </costList>
+                <designatorDropdown>Floor_FloorWoodLight</designatorDropdown>
+              </TerrainDef>
+            </value>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+            <value>
+              <TerrainDef ParentName="TFloorBaseWood">
+                <defName>FloorWoodLight_JapaneseMaple</defName>
+                <label>light japanesemaple floor</label>
+                <statBases>
+                  <WorkToBuild>120</WorkToBuild>
+                  <Beauty>1.5</Beauty>
+                </statBases>
+                <renderPrecedence>248</renderPrecedence>
+                <description>Light-coloured polished japanese maple floorboards in a pleasant interlocking pattern.</description>
+                <texturePath>Terrain/Surfaces/WoodFloor3</texturePath>
+                <color>(252, 170, 124)</color>
+                <designatorDropdown>Floor_FloorWoodLight</designatorDropdown>
+                <costList>
+                  <WoodLog_JapaneseMaple>5</WoodLog_JapaneseMaple>
+                </costList>
+              </TerrainDef>
+            </value>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+            <value>
+              <TerrainDef ParentName="TFloorBaseWood">
+                <defName>FloorWoodLight_RedMaple</defName>
+                <label>light redmaple floor</label>
+                <statBases>
+                  <WorkToBuild>120</WorkToBuild>
+                  <Beauty>1.5</Beauty>
+                </statBases>
+                <renderPrecedence>248</renderPrecedence>
+                <description>Light-coloured polished red maple floorboards in a pleasant interlocking pattern.</description>
+                <texturePath>Terrain/Surfaces/WoodFloor3</texturePath>
+                <color>(222, 197, 167)</color>
+                <costList>
+                  <WoodLog_RedMaple>5</WoodLog_RedMaple>
+                </costList>
+                <designatorDropdown>Floor_FloorWoodLight</designatorDropdown>
+              </TerrainDef>
+            </value>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+            <value>
+              <TerrainDef ParentName="TFloorBaseWood">
+                <defName>FloorWoodMosaic_Acacia</defName>
+                <label>mosaic acacia floor</label>
+                <statBases>
+                  <WorkToBuild>200</WorkToBuild>
+                  <Beauty>2.5</Beauty>
+                </statBases>
+                <renderPrecedence>247</renderPrecedence>
+                <description>A acacia floor with planks laid in a mosaic-like pattern - beautiful, but needs a lot of acacia and is time-consuming to build.</description>
+                <texturePath>Terrain/Surfaces/WoodFloor4</texturePath>
+                <color>(219, 184, 144)</color>
+                <costList>
+                  <WoodLog_Acacia>9</WoodLog_Acacia>
+                </costList>
+                <designatorDropdown>Floor_FloorWoodMosaic</designatorDropdown>
+              </TerrainDef>
+            </value>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+            <value>
+              <TerrainDef ParentName="TFloorBaseWood">
+                <defName>FloorWoodMosaic_Camellia</defName>
+                <label>mosaic camellia floor</label>
+                <statBases>
+                  <WorkToBuild>200</WorkToBuild>
+                  <Beauty>3</Beauty>
+                </statBases>
+                <renderPrecedence>247</renderPrecedence>
+                <description>A camellia floor with planks laid in a mosaic-like pattern - beautiful, but needs a lot of camellia and is time-consuming to build.</description>
+                <texturePath>Terrain/Surfaces/WoodFloor4</texturePath>
+                <color>(201, 160, 130)</color>
+                <costList>
+                  <WoodLog_Camellia>9</WoodLog_Camellia>
+                </costList>
+                <designatorDropdown>Floor_FloorWoodMosaic</designatorDropdown>
+              </TerrainDef>
+            </value>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+            <value>
+              <TerrainDef ParentName="TFloorBaseWood">
+                <defName>FloorWoodMosaic_CherryBlossom</defName>
+                <label>mosaic cherryblossom floor</label>
+                <statBases>
+                  <WorkToBuild>200</WorkToBuild>
+                  <Beauty>2</Beauty>
+                </statBases>
+                <renderPrecedence>247</renderPrecedence>
+                <description>A cherry blossom floor with planks laid in a mosaic-like pattern - beautiful, but needs a lot of cherry blossom and is time-consuming to build.</description>
+                <texturePath>Terrain/Surfaces/WoodFloor4</texturePath>
+                <color>(165, 82, 40)</color>
+                <costList>
+                  <WoodLog_CherryBlossom>9</WoodLog_CherryBlossom>
+                </costList>
+                <designatorDropdown>Floor_FloorWoodMosaic</designatorDropdown>
+              </TerrainDef>
+            </value>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+            <value>
+              <TerrainDef ParentName="TFloorBaseWood">
+                <defName>FloorWoodMosaic_JapaneseMaple</defName>
+                <label>mosaic japanesemaple floor</label>
+                <statBases>
+                  <WorkToBuild>200</WorkToBuild>
+                  <Beauty>2.5</Beauty>
+                </statBases>
+                <renderPrecedence>247</renderPrecedence>
+                <description>A japanese maple floor with planks laid in a mosaic-like pattern - beautiful, but needs a lot of japanese maple and is time-consuming to build.</description>
+                <texturePath>Terrain/Surfaces/WoodFloor4</texturePath>
+                <color>(252, 170, 124)</color>
+                <designatorDropdown>Floor_FloorWoodMosaic</designatorDropdown>
+                <costList>
+                  <WoodLog_JapaneseMaple>9</WoodLog_JapaneseMaple>
+                </costList>
+              </TerrainDef>
+            </value>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+            <value>
+              <TerrainDef ParentName="TFloorBaseWood">
+                <defName>FloorWoodMosaic_RedMaple</defName>
+                <label>mosaic redmaple floor</label>
+                <statBases>
+                  <WorkToBuild>200</WorkToBuild>
+                  <Beauty>2.5</Beauty>
+                </statBases>
+                <renderPrecedence>247</renderPrecedence>
+                <description>A red maple floor with planks laid in a mosaic-like pattern - beautiful, but needs a lot of red maple and is time-consuming to build.</description>
+                <texturePath>Terrain/Surfaces/WoodFloor4</texturePath>
+                <color>(222, 197, 167)</color>
+                <costList>
+                  <WoodLog_RedMaple>9</WoodLog_RedMaple>
+                </costList>
+                <designatorDropdown>Floor_FloorWoodMosaic</designatorDropdown>
+              </TerrainDef>
+            </value>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+            <value>
+              <TerrainDef ParentName="TFloorBaseWood">
+                <defName>FloorWoodVertical_Acacia</defName>
+                <label>vertical acacia floor</label>
+                <statBases>
+                  <WorkToBuild>85</WorkToBuild>
+                  <Beauty>1.5</Beauty>
+                </statBases>
+                <renderPrecedence>246</renderPrecedence>
+                <description>Dark acacia floorboards.</description>
+                <texturePath>Terrain/Surfaces/WoodFloor5</texturePath>
+                <color>(219, 184, 144)</color>
+                <costList>
+                  <WoodLog_Acacia>3</WoodLog_Acacia>
+                </costList>
+                <designatorDropdown>Floor_FloorWoodVertical</designatorDropdown>
+              </TerrainDef>
+            </value>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+            <value>
+              <TerrainDef ParentName="TFloorBaseWood">
+                <defName>FloorWoodVertical_Camellia</defName>
+                <label>vertical camellia floor</label>
+                <statBases>
+                  <WorkToBuild>85</WorkToBuild>
+                  <Beauty>2</Beauty>
+                </statBases>
+                <renderPrecedence>246</renderPrecedence>
+                <description>Dark camellia floorboards.</description>
+                <texturePath>Terrain/Surfaces/WoodFloor5</texturePath>
+                <color>(201, 160, 130)</color>
+                <costList>
+                  <WoodLog_Camellia>3</WoodLog_Camellia>
+                </costList>
+                <designatorDropdown>Floor_FloorWoodVertical</designatorDropdown>
+              </TerrainDef>
+            </value>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+            <value>
+              <TerrainDef ParentName="TFloorBaseWood">
+                <defName>FloorWoodVertical_CherryBlossom</defName>
+                <label>vertical cherryblossom floor</label>
+                <statBases>
+                  <WorkToBuild>85</WorkToBuild>
+                  <Beauty>1</Beauty>
+                </statBases>
+                <renderPrecedence>246</renderPrecedence>
+                <description>Dark cherry blossom floorboards.</description>
+                <texturePath>Terrain/Surfaces/WoodFloor5</texturePath>
+                <color>(165, 82, 40)</color>
+                <costList>
+                  <WoodLog_CherryBlossom>3</WoodLog_CherryBlossom>
+                </costList>
+                <designatorDropdown>Floor_FloorWoodVertical</designatorDropdown>
+              </TerrainDef>
+            </value>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+            <value>
+              <TerrainDef ParentName="TFloorBaseWood">
+                <defName>FloorWoodVertical_JapaneseMaple</defName>
+                <label>vertical japanesemaple floor</label>
+                <statBases>
+                  <WorkToBuild>85</WorkToBuild>
+                  <Beauty>1.5</Beauty>
+                </statBases>
+                <renderPrecedence>246</renderPrecedence>
+                <description>Dark japanese maple floorboards.</description>
+                <texturePath>Terrain/Surfaces/WoodFloor5</texturePath>
+                <color>(252, 170, 124)</color>
+                <designatorDropdown>Floor_FloorWoodVertical</designatorDropdown>
+                <costList>
+                  <WoodLog_JapaneseMaple>3</WoodLog_JapaneseMaple>
+                </costList>
+              </TerrainDef>
+            </value>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+            <value>
+              <TerrainDef ParentName="TFloorBaseWood">
+                <defName>FloorWoodVertical_RedMaple</defName>
+                <label>vertical redmaple floor</label>
+                <statBases>
+                  <WorkToBuild>85</WorkToBuild>
+                  <Beauty>1.5</Beauty>
+                </statBases>
+                <renderPrecedence>246</renderPrecedence>
+                <description>Dark red maple floorboards.</description>
+                <texturePath>Terrain/Surfaces/WoodFloor5</texturePath>
+                <color>(222, 197, 167)</color>
+                <costList>
+                  <WoodLog_RedMaple>3</WoodLog_RedMaple>
+                </costList>
+                <designatorDropdown>Floor_FloorWoodVertical</designatorDropdown>
+              </TerrainDef>
+            </value>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+            <value>
+              <TerrainDef ParentName="TFloorBaseWood">
+                <defName>FloorWoodBarn_Acacia</defName>
+                <label>acacia barn board floor</label>
+                <statBases>
+                  <WorkToBuild>50</WorkToBuild>
+                  <Beauty>1.5</Beauty>
+                </statBases>
+                <edgeType>FadeRough</edgeType>
+                <renderPrecedence>245</renderPrecedence>
+                <description>Rough barn board flooring. Quick to build.</description>
+                <texturePath>Terrain/Surfaces/WoodFloor6</texturePath>
+                <color>(219, 184, 144)</color>
+                <costList>
+                  <WoodLog_Acacia>2</WoodLog_Acacia>
+                </costList>
+                <designatorDropdown>Floor_FloorWoodBarn</designatorDropdown>
+              </TerrainDef>
+            </value>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+            <value>
+              <TerrainDef ParentName="TFloorBaseWood">
+                <defName>FloorWoodBarn_Camellia</defName>
+                <label>camellia barn board floor</label>
+                <statBases>
+                  <WorkToBuild>50</WorkToBuild>
+                  <Beauty>2</Beauty>
+                </statBases>
+                <edgeType>FadeRough</edgeType>
+                <renderPrecedence>245</renderPrecedence>
+                <description>Rough barn board flooring. Quick to build.</description>
+                <texturePath>Terrain/Surfaces/WoodFloor6</texturePath>
+                <color>(201, 160, 130)</color>
+                <costList>
+                  <WoodLog_Camellia>2</WoodLog_Camellia>
+                </costList>
+                <designatorDropdown>Floor_FloorWoodBarn</designatorDropdown>
+              </TerrainDef>
+            </value>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+            <value>
+              <TerrainDef ParentName="TFloorBaseWood">
+                <defName>FloorWoodBarn_CherryBlossom</defName>
+                <label>cherryblossom barn board floor</label>
+                <statBases>
+                  <WorkToBuild>50</WorkToBuild>
+                  <Beauty>1</Beauty>
+                </statBases>
+                <edgeType>FadeRough</edgeType>
+                <renderPrecedence>245</renderPrecedence>
+                <description>Rough barn board flooring. Quick to build.</description>
+                <texturePath>Terrain/Surfaces/WoodFloor6</texturePath>
+                <color>(165, 82, 40)</color>
+                <costList>
+                  <WoodLog_CherryBlossom>2</WoodLog_CherryBlossom>
+                </costList>
+                <designatorDropdown>Floor_FloorWoodBarn</designatorDropdown>
+              </TerrainDef>
+            </value>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+            <value>
+              <TerrainDef ParentName="TFloorBaseWood">
+                <defName>FloorWoodBarn_JapaneseMaple</defName>
+                <label>japanesemaple barn board floor</label>
+                <statBases>
+                  <WorkToBuild>50</WorkToBuild>
+                  <Beauty>1.5</Beauty>
+                </statBases>
+                <edgeType>FadeRough</edgeType>
+                <renderPrecedence>245</renderPrecedence>
+                <description>Rough barn board flooring. Quick to build.</description>
+                <texturePath>Terrain/Surfaces/WoodFloor6</texturePath>
+                <color>(252, 170, 124)</color>
+                <designatorDropdown>Floor_FloorWoodBarn</designatorDropdown>
+                <costList>
+                  <WoodLog_JapaneseMaple>2</WoodLog_JapaneseMaple>
+                </costList>
+              </TerrainDef>
+            </value>
+          </li>
+          <li Class="PatchOperationAdd">
+            <xpath>/Defs</xpath>
+            <value>
+              <TerrainDef ParentName="TFloorBaseWood">
+                <defName>FloorWoodBarn_RedMaple</defName>
+                <label>redmaple barn board floor</label>
+                <statBases>
+                  <WorkToBuild>50</WorkToBuild>
+                  <Beauty>1.5</Beauty>
+                </statBases>
+                <edgeType>FadeRough</edgeType>
+                <renderPrecedence>245</renderPrecedence>
+                <description>Rough barn board flooring. Quick to build.</description>
+                <texturePath>Terrain/Surfaces/WoodFloor6</texturePath>
+                <color>(222, 197, 167)</color>
+                <costList>
+                  <WoodLog_RedMaple>2</WoodLog_RedMaple>
+                </costList>
+                <designatorDropdown>Floor_FloorWoodBarn</designatorDropdown>
+              </TerrainDef>
+            </value>
+          </li>
+        </operations>
+      </match>
+    </match>
+  </Operation>
+</Patch>

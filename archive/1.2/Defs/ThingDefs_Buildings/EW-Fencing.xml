@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="BuildingBaseNoResources" Name="Wall">
+        <defName>Fence</defName>
+        <label>fence</label>
+        <thingClass>Building</thingClass>
+        <category>Building</category>
+        <description>A good old fashioned fence.</description>
+        <graphicData>
+            <texPath>Fence/FenceAtlas</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <linkType>Basic</linkType>
+            <linkFlags>
+                <li>Custom2</li>
+            </linkFlags>
+        </graphicData>	
+        <uiIconPath>Fence/Fence_Menu_Icon</uiIconPath>
+        <costStuffCount>8</costStuffCount>
+        <statBases>
+            <MaxHitPoints>225</MaxHitPoints>
+            <WorkToMake>200</WorkToMake>
+            <Flammability>1</Flammability>
+        </statBases>
+        <stuffCategories>
+            <li>Woody</li>
+        </stuffCategories>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>Impassable</passability>
+        <castEdgeShadows>true</castEdgeShadows>
+        <fillPercent>0.3</fillPercent>
+        <coversFloor>false</coversFloor>
+        <placingDraggableDimensions>1</placingDraggableDimensions>
+        <tickerType>Never</tickerType>
+        <rotatable>false</rotatable>
+        <selectable>true</selectable>
+        <neverMultiSelect>true</neverMultiSelect>
+        <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+        <holdsRoof>false</holdsRoof>
+        <designationCategory>Structure</designationCategory>
+        <staticSunShadowHeight>1.0</staticSunShadowHeight>
+        <blockLight>false</blockLight>
+        <building>
+            <isInert>true</isInert>
+            <blueprintGraphicData>
+                <texPath>Fence/Fence_Blueprint_Atlas</texPath>
+            </blueprintGraphicData>            
+        </building>
+        <damageMultipliers>
+            <li>
+                <damageDef>Bomb</damageDef>
+                <multiplier>3</multiplier>
+            </li>
+        </damageMultipliers>
+    </ThingDef>
+    <ThingDef ParentName="DoorBase">
+        <defName>FenceGate</defName>
+        <label>fence gate</label>
+        <description>A good old fashioned fence gate.</description>
+        <statBases>
+            <WorkToMake>200</WorkToMake>
+        </statBases>
+        <holdsRoof>false</holdsRoof>
+        <graphicData>
+            <texPath>Fence/FenceGate</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>		
+        <uiIconPath>Fence/FenceGateMenu</uiIconPath>
+        <building>
+            <blueprintGraphicData>
+                <texPath>Fence/FenceGateBlueprint</texPath>
+            </blueprintGraphicData>
+        </building>
+        <costStuffCount>25</costStuffCount>
+    </ThingDef>
+
+</Defs>
