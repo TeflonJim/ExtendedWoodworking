@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<loadFolders>
+  <v1.0>
+    <li>/</li>
+    <li>1.0</li>
+  </v1.0>
+  <v1.1>
+    <li>/</li>
+    <li>1.1</li>
+  </v1.1>
+  <v1.2>
+    <li>/</li>
+    <li>1.2</li>
+  </v1.2>
+  <v1.3>
+    <li>/</li>
+    <li>1.3</li>
+  </v1.3>
+  <v1.4>
+    <li>/</li>
+    <li>1.4</li>
+  </v1.4>
+  <v1.5>
+    <li>/</li>
+    <li>1.5</li>
+    <li>Conditional/1.5/_EW-Painted</li>
+    <li IfModActive="dismarzero.vgp.xtratreesandflowers,mlie.naturesprettysweet,zvq.realisticplanetscontinued">Conditional/1.5/_EW-WoodLog_Acacia</li>
+    <li IfModActive="regrowth.botr.aspenforest">Conditional/1.5/_EW-WoodLog_Aspen</li>
+    <li IfModActive="dismarzero.vgp.xtratreesandflowers">Conditional/1.5/_EW-WoodLog_Camellia</li>
+    <li IfModActive="dismarzero.vgp.xtratreesandflowers">Conditional/1.5/_EW-WoodLog_CherryBlossom</li>
+    <li IfModActive="dismarzero.vgp.xtratreesandflowers">Conditional/1.5/_EW-WoodLog_JapaneseMaple</li>
+    <li IfModActive="dismarzero.vgp.xtratreesandflowers">Conditional/1.5/_EW-WoodLog_RedMaple</li>
+    <li IfModActive="aoba.fortress.industrial.citadel">Conditional/1.5/aoba.fortress.industrial.citadel</li>
+    <li IfModActive="aoba.fortress.medieval">Conditional/1.5/aoba.fortress.medieval</li>
+    <li IfModActive="aoba.fortress.neolithic">Conditional/1.5/aoba.fortress.neolithic</li>
+    <li IfModActive="aoba.tent">Conditional/1.5/aoba.tent</li>
+    <li IfModActive="argon.vmeu">Conditional/1.5/argon.vmeu</li>
+    <li IfModActive="cp.rimmunation.2.weapons">Conditional/1.5/cp.rimmunation.2.weapons</li>
+    <li IfModActive="dismarzero.vgp.vgpgardentools">Conditional/1.5/dismarzero.vgp.vgpgardentools</li>
+    <li IfModActive="dismarzero.vgp.vgpvegetablegarden">Conditional/1.5/dismarzero.vgp.vgpvegetablegarden</li>
+    <li IfModActive="dismarzero.vgp.xtratreesandflowers">Conditional/1.5/dismarzero.vgp.xtratreesandflowers</li>
+    <li IfModActive="dubwise.rimefeller">Conditional/1.5/dubwise.rimefeller</li>
+    <li IfModActive="erin.cottagecollection">Conditional/1.5/erin.cottagecollection</li>
+    <li IfModActive="erin.japanesefurniture">Conditional/1.5/erin.japanesefurniture</li>
+    <li IfModActive="fox.simplelearning">Conditional/1.5/fox.simplelearning</li>
+    <li IfModActive="greysuki.rf.fertilefields">Conditional/1.5/greysuki.rf.fertilefields</li>
+    <li IfModActive="harkon.other.garandwinchestercolt">Conditional/1.5/harkon.other.garandwinchestercolt</li>
+    <li IfModActive="harkon.other.rugermini">Conditional/1.5/harkon.other.rugermini</li>
+    <li IfModActive="harkon.rimatwar.ww1m97trenchgun">Conditional/1.5/harkon.rimatwar.ww1m97trenchgun</li>
+    <li IfModActive="harkon.rimatwar.ww1ww2frenchweapons">Conditional/1.5/harkon.rimatwar.ww1ww2frenchweapons</li>
+    <li IfModActive="harkon.rimatwar.ww2sovietsmgs">Conditional/1.5/harkon.rimatwar.ww2sovietsmgs</li>
+    <li IfModActive="iforgotmysocks.caravanadventures">Conditional/1.5/iforgotmysocks.caravanadventures</li>
+    <li IfModActive="jelly.caravangear">Conditional/1.5/jelly.caravangear</li>
+    <li IfModActive="limetreesnake.furnishing">Conditional/1.5/limetreesnake.furnishing</li>
+    <li IfModActive="ludeon.rimworld.ideology">Conditional/1.5/ludeon.rimworld.ideology</li>
+    <li IfModActive="ludeon.rimworld.royalty">Conditional/1.5/ludeon.rimworld.royalty</li>
+    <li IfModActive="mlie.caravanequipment">Conditional/1.5/mlie.caravanequipment</li>
+    <li IfModActive="mlie.coalexpanded">Conditional/1.5/mlie.coalexpanded</li>
+    <li IfModActive="mlie.musicalinstruments">Conditional/1.5/mlie.musicalinstruments</li>
+    <li IfModActive="mlie.naturesprettysweet">Conditional/1.5/mlie.naturesprettysweet</li>
+    <li IfModActive="mlie.rimwriter">Conditional/1.5/mlie.rimwriter</li>
+    <li IfModActive="mlie.roughbarricade">Conditional/1.5/mlie.roughbarricade</li>
+    <li IfModActive="mlie.westerado">Conditional/1.5/mlie.westerado</li>
+    <li IfModActive="n7huntsman.ceramics.vef">Conditional/1.5/n7huntsman.ceramics.vef</li>
+    <li IfModActive="neronix17.clutterstructures">Conditional/1.5/neronix17.clutterstructures</li>
+    <li IfModActive="neronix17.outland.furnitureanddecor">Conditional/1.5/neronix17.outland.furnitureanddecor</li>
+    <li IfModActive="oskarpotocki.vanillafactionsexpanded.settlersmodule">Conditional/1.5/oskarpotocki.vanillafactionsexpanded.settlersmodule</li>
+    <li IfModActive="oskarpotocki.vanillavehiclesexpanded">Conditional/1.5/oskarpotocki.vanillavehiclesexpanded</li>
+    <li IfModActive="oskarpotocki.vfe.classical">Conditional/1.5/oskarpotocki.vfe.classical</li>
+    <li IfModActive="oskarpotocki.vfe.empire">Conditional/1.5/oskarpotocki.vfe.empire</li>
+    <li IfModActive="oskarpotocki.vfe.tribals">Conditional/1.5/oskarpotocki.vfe.tribals</li>
+    <li IfModActive="pensdecor.theholyepicpenguin">Conditional/1.5/pensdecor.theholyepicpenguin</li>
+    <li IfModActive="prf.materials">Conditional/1.5/prf.materials</li>
+    <li IfModActive="rebuild.cotr.doorsandcorners">Conditional/1.5/rebuild.cotr.doorsandcorners</li>
+    <li IfModActive="regrowth.botr.aspenforest">Conditional/1.5/regrowth.botr.aspenforest</li>
+    <li IfModActive="regrowth.botr.boilingforest">Conditional/1.5/regrowth.botr.boilingforest</li>
+    <li IfModActive="regrowth.botr.borealforestexpansion">Conditional/1.5/regrowth.botr.borealforestexpansion</li>
+    <li IfModActive="regrowth.botr.swampexpansion">Conditional/1.5/regrowth.botr.swampexpansion</li>
+    <li IfModActive="regrowth.botr.temperateforestexpansion">Conditional/1.5/regrowth.botr.temperateforestexpansion</li>
+    <li IfModActive="regrowth.botr.tropicalexpansion">Conditional/1.5/regrowth.botr.tropicalexpansion</li>
+    <li IfModActive="regrowth.botr.tundraexpansion">Conditional/1.5/regrowth.botr.tundraexpansion</li>
+    <li IfModActive="ricktmc.tmcweaponpack">Conditional/1.5/ricktmc.tmcweaponpack</li>
+    <li IfModActive="rimsenal.evp">Conditional/1.5/rimsenal.evp</li>
+    <li IfModActive="rudinov.commissionpla">Conditional/1.5/rudinov.commissionpla</li>
+    <li IfModActive="sarg.alphamemes">Conditional/1.5/sarg.alphamemes</li>
+    <li IfModActive="solaris.furniturebase">Conditional/1.5/solaris.furniturebase</li>
+    <li IfModActive="soulfulpumpkin.tabletoptrove">Conditional/1.5/soulfulpumpkin.tabletoptrove</li>
+    <li IfModActive="spdskatr.projectrimfactory">Conditional/1.5/spdskatr.projectrimfactory</li>
+    <li IfModActive="spoonshortage.adogsaidanimalprosthetics">Conditional/1.5/spoonshortage.adogsaidanimalprosthetics</li>
+    <li IfModActive="spoonshortage.rimkea">Conditional/1.5/spoonshortage.rimkea</li>
+    <li IfModActive="telkir.tmods.morefloors">Conditional/1.5/telkir.tmods.morefloors</li>
+    <li IfModActive="thegoofyone.arearugs">Conditional/1.5/thegoofyone.arearugs</li>
+    <li IfModActive="torann.arimworldofmagic">Conditional/1.5/torann.arimworldofmagic</li>
+    <li IfModActive="ucp.tabletopdecorations">Conditional/1.5/ucp.tabletopdecorations</li>
+    <li IfModActive="vanillaexpanded.vaeaccessories">Conditional/1.5/vanillaexpanded.vaeaccessories</li>
+    <li IfModActive="vanillaexpanded.vaeroy">Conditional/1.5/vanillaexpanded.vaeroy</li>
+    <li IfModActive="vanillaexpanded.vanillaanimalsexpanded">Conditional/1.5/vanillaexpanded.vanillaanimalsexpanded</li>
+    <li IfModActive="vanillaexpanded.vbookse">Conditional/1.5/vanillaexpanded.vbookse</li>
+    <li IfModActive="vanillaexpanded.vbrewe">Conditional/1.5/vanillaexpanded.vbrewe</li>
+    <li IfModActive="vanillaexpanded.vcooke">Conditional/1.5/vanillaexpanded.vcooke</li>
+    <li IfModActive="vanillaexpanded.vcookestews">Conditional/1.5/vanillaexpanded.vcookestews</li>
+    <li IfModActive="vanillaexpanded.vfearchitect">Conditional/1.5/vanillaexpanded.vfearchitect</li>
+    <li IfModActive="vanillaexpanded.vfesecurity">Conditional/1.5/vanillaexpanded.vfesecurity</li>
+    <li IfModActive="vanillaexpanded.vmemese">Conditional/1.5/vanillaexpanded.vmemese</li>
+    <li IfModActive="vanillaexpanded.vpsycastse">Conditional/1.5/vanillaexpanded.vpsycastse</li>
+    <li IfModActive="vanillaexpanded.vwe">Conditional/1.5/vanillaexpanded.vwe</li>
+    <li IfModActive="vanillaexpanded.vwetb">Conditional/1.5/vanillaexpanded.vwetb</li>
+    <li IfModActive="wemd.expandedfloors">Conditional/1.5/wemd.expandedfloors</li>
+    <li IfModActive="zal.fishprops">Conditional/1.5/zal.fishprops</li>
+    <li IfModActive="zvq.realisticplanetscontinued">Conditional/1.5/zvq.realisticplanetscontinued</li>
+  </v1.5>
+</loadFolders>

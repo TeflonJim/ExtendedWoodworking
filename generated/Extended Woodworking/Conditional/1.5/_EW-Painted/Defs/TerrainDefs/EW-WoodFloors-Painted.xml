@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <TerrainDef ParentName="FloorBase">
+    <defName>WoodPlankFloor_Black</defName>
+    <label>black painted wood floor</label>
+    <renderPrecedence>250</renderPrecedence>
+    <description>Black wood plank flooring. For that warm, homey feeling.</description>
+    <texturePath>Floor/WoodFloorBase</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(10,10,10)</color>
+    <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
+    <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
+    <isPaintable>true</isPaintable>
+    <statBases>
+      <WorkToBuild>85</WorkToBuild>
+      <Flammability>0.22</Flammability>
+      <Beauty>2</Beauty>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <uiOrder>2000</uiOrder>
+    <costList>
+      <WoodLog_Black>6</WoodLog_Black>
+    </costList>
+    <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>WoodPlankFloor_Blue</defName>
+    <label>blue painted wood floor</label>
+    <renderPrecedence>250</renderPrecedence>
+    <description>Blue wood plank flooring. For that warm, homey feeling.</description>
+    <texturePath>Floor/WoodFloorBase</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(25,132,255)</color>
+    <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
+    <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
+    <isPaintable>true</isPaintable>
+    <statBases>
+      <WorkToBuild>85</WorkToBuild>
+      <Flammability>0.22</Flammability>
+      <Beauty>2</Beauty>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <uiOrder>2000</uiOrder>
+    <costList>
+      <WoodLog_Blue>6</WoodLog_Blue>
+    </costList>
+    <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>WoodPlankFloor_Green</defName>
+    <label>green painted wood floor</label>
+    <renderPrecedence>250</renderPrecedence>
+    <description>Green wood plank flooring. For that warm, homey feeling.</description>
+    <texturePath>Floor/WoodFloorBase</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(31,71,35)</color>
+    <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
+    <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
+    <isPaintable>true</isPaintable>
+    <statBases>
+      <WorkToBuild>85</WorkToBuild>
+      <Flammability>0.22</Flammability>
+      <Beauty>2</Beauty>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <uiOrder>2000</uiOrder>
+    <costList>
+      <WoodLog_Green>6</WoodLog_Green>
+    </costList>
+    <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>WoodPlankFloor_Red</defName>
+    <label>red painted wood floor</label>
+    <renderPrecedence>250</renderPrecedence>
+    <description>Red wood plank flooring. For that warm, homey feeling.</description>
+    <texturePath>Floor/WoodFloorBase</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(159,23,18)</color>
+    <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
+    <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
+    <isPaintable>true</isPaintable>
+    <statBases>
+      <WorkToBuild>85</WorkToBuild>
+      <Flammability>0.22</Flammability>
+      <Beauty>2</Beauty>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <uiOrder>2000</uiOrder>
+    <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
+    <costList>
+      <WoodLog_Red>6</WoodLog_Red>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>WoodPlankFloor_White</defName>
+    <label>white painted wood floor</label>
+    <renderPrecedence>250</renderPrecedence>
+    <description>White wood plank flooring. For that warm, homey feeling.</description>
+    <texturePath>Floor/WoodFloorBase</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(225,232,237)</color>
+    <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
+    <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
+    <isPaintable>true</isPaintable>
+    <statBases>
+      <WorkToBuild>85</WorkToBuild>
+      <Flammability>0.22</Flammability>
+      <Beauty>2</Beauty>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <uiOrder>2000</uiOrder>
+    <costList>
+      <WoodLog_White>6</WoodLog_White>
+    </costList>
+    <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>WoodPlankFloor_Yellow</defName>
+    <label>yellow painted wood floor</label>
+    <renderPrecedence>250</renderPrecedence>
+    <description>Yellow wood plank flooring. For that warm, homey feeling.</description>
+    <texturePath>Floor/WoodFloorBase</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(232,215,137)</color>
+    <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
+    <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
+    <isPaintable>true</isPaintable>
+    <statBases>
+      <WorkToBuild>85</WorkToBuild>
+      <Flammability>0.22</Flammability>
+      <Beauty>2</Beauty>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <uiOrder>2000</uiOrder>
+    <costList>
+      <WoodLog_Yellow>6</WoodLog_Yellow>
+    </costList>
+    <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
+  </TerrainDef>
+</Defs>

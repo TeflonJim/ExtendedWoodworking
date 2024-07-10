@@ -29,7 +29,7 @@
         <useHitPoints>True</useHitPoints>
         <size>(3,1)</size>
         <designationCategory>Production</designationCategory>
-        <passability>Impassable</passability>
+        <passability>PassThroughOnly</passability>
         <hasInteractionCell>True</hasInteractionCell>
         <interactionCellOffset>(0,0,-1)</interactionCellOffset>
         <surfaceType>Item</surfaceType>

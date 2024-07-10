@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/TerrainDef[defName="RB_FinePlankWood"]</xpath>
+        <value>
+          <designatorDropdown>EW_Designator_RB_FinePlankWood</designatorDropdown>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+</Patch>

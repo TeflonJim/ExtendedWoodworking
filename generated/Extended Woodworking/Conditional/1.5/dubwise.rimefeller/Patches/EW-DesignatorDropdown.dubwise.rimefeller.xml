@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/TerrainDef[defName="Wood_ParquetHerring"]</xpath>
+        <value>
+          <designatorDropdown>EW_Designator_Wood_ParquetHerring</designatorDropdown>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/TerrainDef[defName="Wood_ParquetVersailles"]</xpath>
+        <value>
+          <designatorDropdown>EW_Designator_Wood_ParquetVersailles</designatorDropdown>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+</Patch>

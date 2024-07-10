@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="WoodLog_Acacia"]</xpath>
+        <match Class="PatchOperationSequence">
+          <operations>
+            <li Class="PatchOperationAdd">
+              <xpath>/Defs</xpath>
+              <value>
+                <TerrainDef ParentName="FloorBase">
+                  <defName>Boards_Totemic_Acacia</defName>
+                  <label>totemic boards</label>
+                  <description>Fine acacia boards decorated in a totemic style.</description>
+                  <texturePath>Terrain/Surfaces/TotemicBoards</texturePath>
+                  <renderPrecedence>250</renderPrecedence>
+                  <canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+                  <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+                  <dominantStyleCategory>Totemic</dominantStyleCategory>
+                  <color>(219, 184, 144)</color>
+                  <isPaintable>true</isPaintable>
+                  <statBases>
+                    <WorkToBuild>5000</WorkToBuild>
+                    <Beauty>3</Beauty>
+                    <StyleDominance>1</StyleDominance>
+                    <Flammability>0.22</Flammability>
+                  </statBases>
+                  <tags>
+                    <li>FineFloor</li>
+                  </tags>
+                  <designatorDropdown>EW_Designator_Boards_Totemic</designatorDropdown>
+                  <costList>
+                    <WoodLog_Acacia>20</WoodLog_Acacia>
+                  </costList>
+                </TerrainDef>
+              </value>
+            </li>
+          </operations>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="WoodLog_Aspen"]</xpath>
+        <match Class="PatchOperationSequence">
+          <operations>
+            <li Class="PatchOperationAdd">
+              <xpath>/Defs</xpath>
+              <value>
+                <TerrainDef ParentName="FloorBase">
+                  <defName>Boards_Totemic_Aspen</defName>
+                  <label>totemic boards</label>
+                  <description>Fine acacia boards decorated in a totemic style.</description>
+                  <texturePath>Terrain/Surfaces/TotemicBoards</texturePath>
+                  <renderPrecedence>250</renderPrecedence>
+                  <canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+                  <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+                  <dominantStyleCategory>Totemic</dominantStyleCategory>
+                  <color>(228, 204, 171)</color>
+                  <isPaintable>true</isPaintable>
+                  <statBases>
+                    <WorkToBuild>5000</WorkToBuild>
+                    <Beauty>3</Beauty>
+                    <StyleDominance>1</StyleDominance>
+                    <Flammability>0.22</Flammability>
+                  </statBases>
+                  <tags>
+                    <li>FineFloor</li>
+                  </tags>
+                  <designatorDropdown>EW_Designator_Boards_Totemic</designatorDropdown>
+                  <costList>
+                    <WoodLog_Aspen>20</WoodLog_Aspen>
+                  </costList>
+                </TerrainDef>
+              </value>
+            </li>
+          </operations>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="WoodLog_Camellia"]</xpath>
+        <match Class="PatchOperationSequence">
+          <operations>
+            <li Class="PatchOperationAdd">
+              <xpath>/Defs</xpath>
+              <value>
+                <TerrainDef ParentName="FloorBase">
+                  <defName>Boards_Totemic_Camellia</defName>
+                  <label>totemic boards</label>
+                  <description>Fine camellia boards decorated in a totemic style.</description>
+                  <texturePath>Terrain/Surfaces/TotemicBoards</texturePath>
+                  <renderPrecedence>250</renderPrecedence>
+                  <canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+                  <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+                  <dominantStyleCategory>Totemic</dominantStyleCategory>
+                  <color>(201, 160, 130)</color>
+                  <isPaintable>true</isPaintable>
+                  <statBases>
+                    <WorkToBuild>5000</WorkToBuild>
+                    <Beauty>3</Beauty>
+                    <StyleDominance>1</StyleDominance>
+                    <Flammability>0.22</Flammability>
+                  </statBases>
+                  <tags>
+                    <li>FineFloor</li>
+                  </tags>
+                  <costList>
+                    <WoodLog_Camellia>20</WoodLog_Camellia>
+                  </costList>
+                  <designatorDropdown>EW_Designator_Boards_Totemic</designatorDropdown>
+                </TerrainDef>
+              </value>
+            </li>
+          </operations>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="WoodLog_CherryBlossom"]</xpath>
+        <match Class="PatchOperationSequence">
+          <operations>
+            <li Class="PatchOperationAdd">
+              <xpath>/Defs</xpath>
+              <value>
+                <TerrainDef ParentName="FloorBase">
+                  <defName>Boards_Totemic_CherryBlossom</defName>
+                  <label>totemic boards</label>
+                  <description>Fine cherry blossom boards decorated in a totemic style.</description>
+                  <texturePath>Terrain/Surfaces/TotemicBoards</texturePath>
+                  <renderPrecedence>250</renderPrecedence>
+                  <canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+                  <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+                  <dominantStyleCategory>Totemic</dominantStyleCategory>
+                  <color>(165, 82, 40)</color>
+                  <isPaintable>true</isPaintable>
+                  <statBases>
+                    <WorkToBuild>5000</WorkToBuild>
+                    <Beauty>3</Beauty>
+                    <StyleDominance>1</StyleDominance>
+                    <Flammability>0.22</Flammability>
+                  </statBases>
+                  <tags>
+                    <li>FineFloor</li>
+                  </tags>
+                  <designatorDropdown>EW_Designator_Boards_Totemic</designatorDropdown>
+                  <costList>
+                    <WoodLog_CherryBlossom>20</WoodLog_CherryBlossom>
+                  </costList>
+                </TerrainDef>
+              </value>
+            </li>
+          </operations>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="WoodLog_JapaneseMaple"]</xpath>
+        <match Class="PatchOperationSequence">
+          <operations>
+            <li Class="PatchOperationAdd">
+              <xpath>/Defs</xpath>
+              <value>
+                <TerrainDef ParentName="FloorBase">
+                  <defName>Boards_Totemic_JapaneseMaple</defName>
+                  <label>totemic boards</label>
+                  <description>Fine japanese maple boards decorated in a totemic style.</description>
+                  <texturePath>Terrain/Surfaces/TotemicBoards</texturePath>
+                  <renderPrecedence>250</renderPrecedence>
+                  <canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+                  <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+                  <dominantStyleCategory>Totemic</dominantStyleCategory>
+                  <color>(252, 170, 124)</color>
+                  <isPaintable>true</isPaintable>
+                  <statBases>
+                    <WorkToBuild>5000</WorkToBuild>
+                    <Beauty>3</Beauty>
+                    <StyleDominance>1</StyleDominance>
+                    <Flammability>0.22</Flammability>
+                  </statBases>
+                  <tags>
+                    <li>FineFloor</li>
+                  </tags>
+                  <designatorDropdown>EW_Designator_Boards_Totemic</designatorDropdown>
+                  <costList>
+                    <WoodLog_JapaneseMaple>20</WoodLog_JapaneseMaple>
+                  </costList>
+                </TerrainDef>
+              </value>
+            </li>
+          </operations>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="WoodLog_RedMaple"]</xpath>
+        <match Class="PatchOperationSequence">
+          <operations>
+            <li Class="PatchOperationAdd">
+              <xpath>/Defs</xpath>
+              <value>
+                <TerrainDef ParentName="FloorBase">
+                  <defName>Boards_Totemic_RedMaple</defName>
+                  <label>totemic boards</label>
+                  <description>Fine red maple boards decorated in a totemic style.</description>
+                  <texturePath>Terrain/Surfaces/TotemicBoards</texturePath>
+                  <renderPrecedence>250</renderPrecedence>
+                  <canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+                  <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+                  <dominantStyleCategory>Totemic</dominantStyleCategory>
+                  <color>(222, 197, 167)</color>
+                  <isPaintable>true</isPaintable>
+                  <statBases>
+                    <WorkToBuild>5000</WorkToBuild>
+                    <Beauty>3</Beauty>
+                    <StyleDominance>1</StyleDominance>
+                    <Flammability>0.22</Flammability>
+                  </statBases>
+                  <tags>
+                    <li>FineFloor</li>
+                  </tags>
+                  <costList>
+                    <WoodLog_RedMaple>20</WoodLog_RedMaple>
+                  </costList>
+                  <designatorDropdown>EW_Designator_Boards_Totemic</designatorDropdown>
+                </TerrainDef>
+              </value>
+            </li>
+          </operations>
+        </match>
+      </li>
+    </operations>
+  </Operation>
+</Patch>

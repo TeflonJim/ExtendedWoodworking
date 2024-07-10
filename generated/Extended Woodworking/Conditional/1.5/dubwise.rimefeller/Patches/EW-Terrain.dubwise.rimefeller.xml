@@ -1,0 +1,331 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="WoodLog_Acacia"]</xpath>
+        <match Class="PatchOperationSequence">
+          <operations>
+            <li Class="PatchOperationAdd">
+              <xpath>/Defs</xpath>
+              <value>
+                <TerrainDef ParentName="FloorBase">
+                  <defName>Wood_ParquetHerring_Acacia</defName>
+                  <label>Parquet Herringbone</label>
+                  <renderPrecedence>250</renderPrecedence>
+                  <texturePath>Rimefeller/Terrain/Wood_ParquetHerring</texturePath>
+                  <burnedDef>BurnedWoodPlankFloor</burnedDef>
+                  <color>(219, 184, 144)</color>
+                  <statBases>
+                    <WorkToBuild>85</WorkToBuild>
+                    <Flammability>0.22</Flammability>
+                  </statBases>
+                  <constructEffect>ConstructWood</constructEffect>
+                  <description></description>
+                  <designatorDropdown>EW_Designator_Wood_ParquetHerring</designatorDropdown>
+                  <costList>
+                    <WoodLog_Acacia>3</WoodLog_Acacia>
+                  </costList>
+                </TerrainDef>
+              </value>
+            </li>
+            <li Class="PatchOperationAdd">
+              <xpath>/Defs</xpath>
+              <value>
+                <TerrainDef ParentName="FloorBase">
+                  <defName>Wood_ParquetVersailles_Acacia</defName>
+                  <label>Parquet Versailles</label>
+                  <renderPrecedence>250</renderPrecedence>
+                  <texturePath>Rimefeller/Terrain/Wood_ParquetVersailles</texturePath>
+                  <burnedDef>BurnedWoodPlankFloor</burnedDef>
+                  <color>(219, 184, 144)</color>
+                  <statBases>
+                    <WorkToBuild>85</WorkToBuild>
+                    <Flammability>0.22</Flammability>
+                  </statBases>
+                  <constructEffect>ConstructWood</constructEffect>
+                  <description></description>
+                  <designatorDropdown>EW_Designator_Wood_ParquetVersailles</designatorDropdown>
+                  <costList>
+                    <WoodLog_Acacia>3</WoodLog_Acacia>
+                  </costList>
+                </TerrainDef>
+              </value>
+            </li>
+          </operations>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="WoodLog_Aspen"]</xpath>
+        <match Class="PatchOperationSequence">
+          <operations>
+            <li Class="PatchOperationAdd">
+              <xpath>/Defs</xpath>
+              <value>
+                <TerrainDef ParentName="FloorBase">
+                  <defName>Wood_ParquetHerring_Aspen</defName>
+                  <label>Parquet Herringbone</label>
+                  <renderPrecedence>250</renderPrecedence>
+                  <texturePath>Rimefeller/Terrain/Wood_ParquetHerring</texturePath>
+                  <burnedDef>BurnedWoodPlankFloor</burnedDef>
+                  <color>(228, 204, 171)</color>
+                  <statBases>
+                    <WorkToBuild>85</WorkToBuild>
+                    <Flammability>0.22</Flammability>
+                  </statBases>
+                  <constructEffect>ConstructWood</constructEffect>
+                  <designatorDropdown>EW_Designator_Wood_ParquetHerring</designatorDropdown>
+                  <description></description>
+                  <costList>
+                    <WoodLog_Aspen>3</WoodLog_Aspen>
+                  </costList>
+                </TerrainDef>
+              </value>
+            </li>
+            <li Class="PatchOperationAdd">
+              <xpath>/Defs</xpath>
+              <value>
+                <TerrainDef ParentName="FloorBase">
+                  <defName>Wood_ParquetVersailles_Aspen</defName>
+                  <label>Parquet Versailles</label>
+                  <renderPrecedence>250</renderPrecedence>
+                  <texturePath>Rimefeller/Terrain/Wood_ParquetVersailles</texturePath>
+                  <burnedDef>BurnedWoodPlankFloor</burnedDef>
+                  <color>(228, 204, 171)</color>
+                  <statBases>
+                    <WorkToBuild>85</WorkToBuild>
+                    <Flammability>0.22</Flammability>
+                  </statBases>
+                  <constructEffect>ConstructWood</constructEffect>
+                  <designatorDropdown>EW_Designator_Wood_ParquetVersailles</designatorDropdown>
+                  <description></description>
+                  <costList>
+                    <WoodLog_Aspen>3</WoodLog_Aspen>
+                  </costList>
+                </TerrainDef>
+              </value>
+            </li>
+          </operations>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="WoodLog_Camellia"]</xpath>
+        <match Class="PatchOperationSequence">
+          <operations>
+            <li Class="PatchOperationAdd">
+              <xpath>/Defs</xpath>
+              <value>
+                <TerrainDef ParentName="FloorBase">
+                  <defName>Wood_ParquetHerring_Camellia</defName>
+                  <label>Parquet Herringbone</label>
+                  <renderPrecedence>250</renderPrecedence>
+                  <texturePath>Rimefeller/Terrain/Wood_ParquetHerring</texturePath>
+                  <burnedDef>BurnedWoodPlankFloor</burnedDef>
+                  <color>(201, 160, 130)</color>
+                  <statBases>
+                    <WorkToBuild>85</WorkToBuild>
+                    <Flammability>0.22</Flammability>
+                  </statBases>
+                  <constructEffect>ConstructWood</constructEffect>
+                  <costList>
+                    <WoodLog_Camellia>3</WoodLog_Camellia>
+                  </costList>
+                  <description></description>
+                  <designatorDropdown>EW_Designator_Wood_ParquetHerring</designatorDropdown>
+                </TerrainDef>
+              </value>
+            </li>
+            <li Class="PatchOperationAdd">
+              <xpath>/Defs</xpath>
+              <value>
+                <TerrainDef ParentName="FloorBase">
+                  <defName>Wood_ParquetVersailles_Camellia</defName>
+                  <label>Parquet Versailles</label>
+                  <renderPrecedence>250</renderPrecedence>
+                  <texturePath>Rimefeller/Terrain/Wood_ParquetVersailles</texturePath>
+                  <burnedDef>BurnedWoodPlankFloor</burnedDef>
+                  <color>(201, 160, 130)</color>
+                  <statBases>
+                    <WorkToBuild>85</WorkToBuild>
+                    <Flammability>0.22</Flammability>
+                  </statBases>
+                  <constructEffect>ConstructWood</constructEffect>
+                  <costList>
+                    <WoodLog_Camellia>3</WoodLog_Camellia>
+                  </costList>
+                  <description></description>
+                  <designatorDropdown>EW_Designator_Wood_ParquetVersailles</designatorDropdown>
+                </TerrainDef>
+              </value>
+            </li>
+          </operations>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="WoodLog_CherryBlossom"]</xpath>
+        <match Class="PatchOperationSequence">
+          <operations>
+            <li Class="PatchOperationAdd">
+              <xpath>/Defs</xpath>
+              <value>
+                <TerrainDef ParentName="FloorBase">
+                  <defName>Wood_ParquetHerring_CherryBlossom</defName>
+                  <label>Parquet Herringbone</label>
+                  <renderPrecedence>250</renderPrecedence>
+                  <texturePath>Rimefeller/Terrain/Wood_ParquetHerring</texturePath>
+                  <burnedDef>BurnedWoodPlankFloor</burnedDef>
+                  <color>(165, 82, 40)</color>
+                  <statBases>
+                    <WorkToBuild>85</WorkToBuild>
+                    <Flammability>0.22</Flammability>
+                  </statBases>
+                  <constructEffect>ConstructWood</constructEffect>
+                  <designatorDropdown>EW_Designator_Wood_ParquetHerring</designatorDropdown>
+                  <description></description>
+                  <costList>
+                    <WoodLog_CherryBlossom>3</WoodLog_CherryBlossom>
+                  </costList>
+                </TerrainDef>
+              </value>
+            </li>
+            <li Class="PatchOperationAdd">
+              <xpath>/Defs</xpath>
+              <value>
+                <TerrainDef ParentName="FloorBase">
+                  <defName>Wood_ParquetVersailles_CherryBlossom</defName>
+                  <label>Parquet Versailles</label>
+                  <renderPrecedence>250</renderPrecedence>
+                  <texturePath>Rimefeller/Terrain/Wood_ParquetVersailles</texturePath>
+                  <burnedDef>BurnedWoodPlankFloor</burnedDef>
+                  <color>(165, 82, 40)</color>
+                  <statBases>
+                    <WorkToBuild>85</WorkToBuild>
+                    <Flammability>0.22</Flammability>
+                  </statBases>
+                  <constructEffect>ConstructWood</constructEffect>
+                  <designatorDropdown>EW_Designator_Wood_ParquetVersailles</designatorDropdown>
+                  <description></description>
+                  <costList>
+                    <WoodLog_CherryBlossom>3</WoodLog_CherryBlossom>
+                  </costList>
+                </TerrainDef>
+              </value>
+            </li>
+          </operations>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="WoodLog_JapaneseMaple"]</xpath>
+        <match Class="PatchOperationSequence">
+          <operations>
+            <li Class="PatchOperationAdd">
+              <xpath>/Defs</xpath>
+              <value>
+                <TerrainDef ParentName="FloorBase">
+                  <defName>Wood_ParquetHerring_JapaneseMaple</defName>
+                  <label>Parquet Herringbone</label>
+                  <renderPrecedence>250</renderPrecedence>
+                  <texturePath>Rimefeller/Terrain/Wood_ParquetHerring</texturePath>
+                  <burnedDef>BurnedWoodPlankFloor</burnedDef>
+                  <color>(252, 170, 124)</color>
+                  <statBases>
+                    <WorkToBuild>85</WorkToBuild>
+                    <Flammability>0.22</Flammability>
+                  </statBases>
+                  <constructEffect>ConstructWood</constructEffect>
+                  <description></description>
+                  <designatorDropdown>EW_Designator_Wood_ParquetHerring</designatorDropdown>
+                  <costList>
+                    <WoodLog_JapaneseMaple>3</WoodLog_JapaneseMaple>
+                  </costList>
+                </TerrainDef>
+              </value>
+            </li>
+            <li Class="PatchOperationAdd">
+              <xpath>/Defs</xpath>
+              <value>
+                <TerrainDef ParentName="FloorBase">
+                  <defName>Wood_ParquetVersailles_JapaneseMaple</defName>
+                  <label>Parquet Versailles</label>
+                  <renderPrecedence>250</renderPrecedence>
+                  <texturePath>Rimefeller/Terrain/Wood_ParquetVersailles</texturePath>
+                  <burnedDef>BurnedWoodPlankFloor</burnedDef>
+                  <color>(252, 170, 124)</color>
+                  <statBases>
+                    <WorkToBuild>85</WorkToBuild>
+                    <Flammability>0.22</Flammability>
+                  </statBases>
+                  <constructEffect>ConstructWood</constructEffect>
+                  <description></description>
+                  <designatorDropdown>EW_Designator_Wood_ParquetVersailles</designatorDropdown>
+                  <costList>
+                    <WoodLog_JapaneseMaple>3</WoodLog_JapaneseMaple>
+                  </costList>
+                </TerrainDef>
+              </value>
+            </li>
+          </operations>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="WoodLog_RedMaple"]</xpath>
+        <match Class="PatchOperationSequence">
+          <operations>
+            <li Class="PatchOperationAdd">
+              <xpath>/Defs</xpath>
+              <value>
+                <TerrainDef ParentName="FloorBase">
+                  <defName>Wood_ParquetHerring_RedMaple</defName>
+                  <label>Parquet Herringbone</label>
+                  <renderPrecedence>250</renderPrecedence>
+                  <texturePath>Rimefeller/Terrain/Wood_ParquetHerring</texturePath>
+                  <burnedDef>BurnedWoodPlankFloor</burnedDef>
+                  <color>(222, 197, 167)</color>
+                  <statBases>
+                    <WorkToBuild>85</WorkToBuild>
+                    <Flammability>0.22</Flammability>
+                  </statBases>
+                  <constructEffect>ConstructWood</constructEffect>
+                  <costList>
+                    <WoodLog_RedMaple>3</WoodLog_RedMaple>
+                  </costList>
+                  <description></description>
+                  <designatorDropdown>EW_Designator_Wood_ParquetHerring</designatorDropdown>
+                </TerrainDef>
+              </value>
+            </li>
+            <li Class="PatchOperationAdd">
+              <xpath>/Defs</xpath>
+              <value>
+                <TerrainDef ParentName="FloorBase">
+                  <defName>Wood_ParquetVersailles_RedMaple</defName>
+                  <label>Parquet Versailles</label>
+                  <renderPrecedence>250</renderPrecedence>
+                  <texturePath>Rimefeller/Terrain/Wood_ParquetVersailles</texturePath>
+                  <burnedDef>BurnedWoodPlankFloor</burnedDef>
+                  <color>(222, 197, 167)</color>
+                  <statBases>
+                    <WorkToBuild>85</WorkToBuild>
+                    <Flammability>0.22</Flammability>
+                  </statBases>
+                  <constructEffect>ConstructWood</constructEffect>
+                  <costList>
+                    <WoodLog_RedMaple>3</WoodLog_RedMaple>
+                  </costList>
+                  <description></description>
+                  <designatorDropdown>EW_Designator_Wood_ParquetVersailles</designatorDropdown>
+                </TerrainDef>
+              </value>
+            </li>
+          </operations>
+        </match>
+      </li>
+    </operations>
+  </Operation>
+</Patch>

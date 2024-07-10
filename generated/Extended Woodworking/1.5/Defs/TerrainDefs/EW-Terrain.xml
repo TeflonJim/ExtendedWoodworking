@@ -1,0 +1,652 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <TerrainDef ParentName="FloorBase">
+    <defName>WoodPlankFloor_Birch</defName>
+    <label>birch wood floor</label>
+    <renderPrecedence>250</renderPrecedence>
+    <description>Birch plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
+    <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(235,228,216)</color>
+    <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
+    <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
+    <isPaintable>true</isPaintable>
+    <statBases>
+      <WorkToBuild>85</WorkToBuild>
+      <Flammability>0.22</Flammability>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <designationHotKey>Misc9</designationHotKey>
+    <uiOrder>2000</uiOrder>
+    <costList>
+      <WoodLog_Birch>3</WoodLog_Birch>
+    </costList>
+    <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>WoodPlankFloor_Cecropia</defName>
+    <label>cecropia wood floor</label>
+    <renderPrecedence>250</renderPrecedence>
+    <description>Cecropia plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
+    <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(126,74,63)</color>
+    <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
+    <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
+    <isPaintable>true</isPaintable>
+    <statBases>
+      <WorkToBuild>85</WorkToBuild>
+      <Flammability>0.22</Flammability>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <designationHotKey>Misc9</designationHotKey>
+    <uiOrder>2000</uiOrder>
+    <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
+    <costList>
+      <WoodLog_Cecropia>3</WoodLog_Cecropia>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>WoodPlankFloor_Cypress</defName>
+    <label>cypress wood floor</label>
+    <renderPrecedence>250</renderPrecedence>
+    <description>Cypress plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
+    <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(239, 217, 184)</color>
+    <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
+    <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
+    <isPaintable>true</isPaintable>
+    <statBases>
+      <WorkToBuild>85</WorkToBuild>
+      <Flammability>0.22</Flammability>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <designationHotKey>Misc9</designationHotKey>
+    <uiOrder>2000</uiOrder>
+    <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
+    <costList>
+      <WoodLog_Cypress>3</WoodLog_Cypress>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>WoodPlankFloor_Drago</defName>
+    <label>drago wood floor</label>
+    <renderPrecedence>250</renderPrecedence>
+    <description>Drago plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
+    <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(171, 159, 142)</color>
+    <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
+    <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
+    <isPaintable>true</isPaintable>
+    <statBases>
+      <WorkToBuild>85</WorkToBuild>
+      <Flammability>0.22</Flammability>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <designationHotKey>Misc9</designationHotKey>
+    <uiOrder>2000</uiOrder>
+    <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
+    <costList>
+      <WoodLog_Drago>3</WoodLog_Drago>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>WoodPlankFloor_Maple</defName>
+    <label>maple wood floor</label>
+    <renderPrecedence>250</renderPrecedence>
+    <description>Maple plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
+    <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(236, 201, 163)</color>
+    <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
+    <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
+    <isPaintable>true</isPaintable>
+    <statBases>
+      <WorkToBuild>85</WorkToBuild>
+      <Flammability>0.22</Flammability>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <designationHotKey>Misc9</designationHotKey>
+    <uiOrder>2000</uiOrder>
+    <costList>
+      <WoodLog_Maple>3</WoodLog_Maple>
+    </costList>
+    <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>WoodPlankFloor_Oak</defName>
+    <label>oak wood floor</label>
+    <renderPrecedence>250</renderPrecedence>
+    <description>Oak plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
+    <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(185,142,96)</color>
+    <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
+    <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
+    <isPaintable>true</isPaintable>
+    <statBases>
+      <WorkToBuild>85</WorkToBuild>
+      <Flammability>0.22</Flammability>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <designationHotKey>Misc9</designationHotKey>
+    <uiOrder>2000</uiOrder>
+    <costList>
+      <WoodLog_Oak>3</WoodLog_Oak>
+    </costList>
+    <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>WoodPlankFloor_Palm</defName>
+    <label>palm wood floor</label>
+    <renderPrecedence>250</renderPrecedence>
+    <description>Palm plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
+    <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(224, 150, 87)</color>
+    <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
+    <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
+    <isPaintable>true</isPaintable>
+    <statBases>
+      <WorkToBuild>85</WorkToBuild>
+      <Flammability>0.22</Flammability>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <designationHotKey>Misc9</designationHotKey>
+    <uiOrder>2000</uiOrder>
+    <costList>
+      <WoodLog_Palm>3</WoodLog_Palm>
+    </costList>
+    <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>WoodPlankFloor_Pine</defName>
+    <label>pine wood floor</label>
+    <renderPrecedence>250</renderPrecedence>
+    <description>Pine plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
+    <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(198,146,68)</color>
+    <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
+    <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
+    <isPaintable>true</isPaintable>
+    <statBases>
+      <WorkToBuild>85</WorkToBuild>
+      <Flammability>0.22</Flammability>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <designationHotKey>Misc9</designationHotKey>
+    <uiOrder>2000</uiOrder>
+    <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
+    <costList>
+      <WoodLog_Pine>3</WoodLog_Pine>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>WoodPlankFloor_Poplar</defName>
+    <label>poplar wood floor</label>
+    <renderPrecedence>250</renderPrecedence>
+    <description>Poplar plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
+    <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(184,156,108)</color>
+    <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
+    <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
+    <isPaintable>true</isPaintable>
+    <statBases>
+      <WorkToBuild>85</WorkToBuild>
+      <Flammability>0.22</Flammability>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <designationHotKey>Misc9</designationHotKey>
+    <uiOrder>2000</uiOrder>
+    <costList>
+      <WoodLog_Poplar>3</WoodLog_Poplar>
+    </costList>
+    <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>WoodPlankFloor_Teak</defName>
+    <label>teak wood floor</label>
+    <renderPrecedence>250</renderPrecedence>
+    <description>Teak plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
+    <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(154,102,59)</color>
+    <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
+    <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
+    <isPaintable>true</isPaintable>
+    <statBases>
+      <WorkToBuild>85</WorkToBuild>
+      <Flammability>0.22</Flammability>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <designationHotKey>Misc9</designationHotKey>
+    <uiOrder>2000</uiOrder>
+    <costList>
+      <WoodLog_Teak>3</WoodLog_Teak>
+    </costList>
+    <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>WoodPlankFloor_Willow</defName>
+    <label>willow wood floor</label>
+    <renderPrecedence>250</renderPrecedence>
+    <description>Willow plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
+    <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(221, 186, 141)</color>
+    <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
+    <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
+    <isPaintable>true</isPaintable>
+    <statBases>
+      <WorkToBuild>85</WorkToBuild>
+      <Flammability>0.22</Flammability>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <designationHotKey>Misc9</designationHotKey>
+    <uiOrder>2000</uiOrder>
+    <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
+    <costList>
+      <WoodLog_Willow>3</WoodLog_Willow>
+    </costList>
+  </TerrainDef>
+  <TerrainDef>
+    <defName>Bridge_Birch</defName>
+    <label>bridge</label>
+    <description>A flat birch surface on supportive beams which can be built over water. You can build light structures on bridges, but be careful - bridges are fragile. If a bridge falls, buildings on top of it fall as well.</description>
+    <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
+    <color>(235,228,216)</color>
+    <uiIconPath>Terrain/Surfaces/Bridge_MenuIcon</uiIconPath>
+    <layerable>true</layerable>
+    <bridge>true</bridge>
+    <affordances>
+      <li>Light</li>
+    </affordances>
+    <designationCategory>Structure</designationCategory>
+    <fertility>0</fertility>
+    <constructEffect>ConstructWood</constructEffect>
+    <terrainAffordanceNeeded>Bridgeable</terrainAffordanceNeeded>
+    <edgeType>Hard</edgeType>
+    <renderPrecedence>400</renderPrecedence>
+    <autoRebuildable>true</autoRebuildable>
+    <statBases>
+      <WorkToBuild>1500</WorkToBuild>
+      <Flammability>0.8</Flammability>
+    </statBases>
+    <tags>
+      <li>Floor</li>
+    </tags>
+    <designationHotKey>Misc4</designationHotKey>
+    <destroyOnBombDamageThreshold>35</destroyOnBombDamageThreshold>
+    <destroyBuildingsOnDestroyed>true</destroyBuildingsOnDestroyed>
+    <destroyEffect>Bridge_Collapse</destroyEffect>
+    <destroyEffectWater>Bridge_CollapseWater</destroyEffectWater>
+    <costList>
+      <WoodLog_Birch>12</WoodLog_Birch>
+    </costList>
+    <designatorDropdown>EW_Designator_Bridge</designatorDropdown>
+  </TerrainDef>
+  <TerrainDef>
+    <defName>Bridge_Cecropia</defName>
+    <label>bridge</label>
+    <description>A flat cecropia surface on supportive beams which can be built over water. You can build light structures on bridges, but be careful - bridges are fragile. If a bridge falls, buildings on top of it fall as well.</description>
+    <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
+    <color>(126,74,63)</color>
+    <uiIconPath>Terrain/Surfaces/Bridge_MenuIcon</uiIconPath>
+    <layerable>true</layerable>
+    <bridge>true</bridge>
+    <affordances>
+      <li>Light</li>
+    </affordances>
+    <designationCategory>Structure</designationCategory>
+    <fertility>0</fertility>
+    <constructEffect>ConstructWood</constructEffect>
+    <terrainAffordanceNeeded>Bridgeable</terrainAffordanceNeeded>
+    <edgeType>Hard</edgeType>
+    <renderPrecedence>400</renderPrecedence>
+    <autoRebuildable>true</autoRebuildable>
+    <statBases>
+      <WorkToBuild>1500</WorkToBuild>
+      <Flammability>0.8</Flammability>
+    </statBases>
+    <tags>
+      <li>Floor</li>
+    </tags>
+    <designationHotKey>Misc4</designationHotKey>
+    <destroyOnBombDamageThreshold>35</destroyOnBombDamageThreshold>
+    <destroyBuildingsOnDestroyed>true</destroyBuildingsOnDestroyed>
+    <destroyEffect>Bridge_Collapse</destroyEffect>
+    <destroyEffectWater>Bridge_CollapseWater</destroyEffectWater>
+    <designatorDropdown>EW_Designator_Bridge</designatorDropdown>
+    <costList>
+      <WoodLog_Cecropia>12</WoodLog_Cecropia>
+    </costList>
+  </TerrainDef>
+  <TerrainDef>
+    <defName>Bridge_Cypress</defName>
+    <label>bridge</label>
+    <description>A flat cypress surface on supportive beams which can be built over water. You can build light structures on bridges, but be careful - bridges are fragile. If a bridge falls, buildings on top of it fall as well.</description>
+    <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
+    <color>(239, 217, 184)</color>
+    <uiIconPath>Terrain/Surfaces/Bridge_MenuIcon</uiIconPath>
+    <layerable>true</layerable>
+    <bridge>true</bridge>
+    <affordances>
+      <li>Light</li>
+    </affordances>
+    <designationCategory>Structure</designationCategory>
+    <fertility>0</fertility>
+    <constructEffect>ConstructWood</constructEffect>
+    <terrainAffordanceNeeded>Bridgeable</terrainAffordanceNeeded>
+    <edgeType>Hard</edgeType>
+    <renderPrecedence>400</renderPrecedence>
+    <autoRebuildable>true</autoRebuildable>
+    <statBases>
+      <WorkToBuild>1500</WorkToBuild>
+      <Flammability>0.8</Flammability>
+    </statBases>
+    <tags>
+      <li>Floor</li>
+    </tags>
+    <designationHotKey>Misc4</designationHotKey>
+    <destroyOnBombDamageThreshold>35</destroyOnBombDamageThreshold>
+    <destroyBuildingsOnDestroyed>true</destroyBuildingsOnDestroyed>
+    <destroyEffect>Bridge_Collapse</destroyEffect>
+    <destroyEffectWater>Bridge_CollapseWater</destroyEffectWater>
+    <designatorDropdown>EW_Designator_Bridge</designatorDropdown>
+    <costList>
+      <WoodLog_Cypress>12</WoodLog_Cypress>
+    </costList>
+  </TerrainDef>
+  <TerrainDef>
+    <defName>Bridge_Drago</defName>
+    <label>bridge</label>
+    <description>A flat drago surface on supportive beams which can be built over water. You can build light structures on bridges, but be careful - bridges are fragile. If a bridge falls, buildings on top of it fall as well.</description>
+    <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
+    <color>(171, 159, 142)</color>
+    <uiIconPath>Terrain/Surfaces/Bridge_MenuIcon</uiIconPath>
+    <layerable>true</layerable>
+    <bridge>true</bridge>
+    <affordances>
+      <li>Light</li>
+    </affordances>
+    <designationCategory>Structure</designationCategory>
+    <fertility>0</fertility>
+    <constructEffect>ConstructWood</constructEffect>
+    <terrainAffordanceNeeded>Bridgeable</terrainAffordanceNeeded>
+    <edgeType>Hard</edgeType>
+    <renderPrecedence>400</renderPrecedence>
+    <autoRebuildable>true</autoRebuildable>
+    <statBases>
+      <WorkToBuild>1500</WorkToBuild>
+      <Flammability>0.8</Flammability>
+    </statBases>
+    <tags>
+      <li>Floor</li>
+    </tags>
+    <designationHotKey>Misc4</designationHotKey>
+    <destroyOnBombDamageThreshold>35</destroyOnBombDamageThreshold>
+    <destroyBuildingsOnDestroyed>true</destroyBuildingsOnDestroyed>
+    <destroyEffect>Bridge_Collapse</destroyEffect>
+    <destroyEffectWater>Bridge_CollapseWater</destroyEffectWater>
+    <designatorDropdown>EW_Designator_Bridge</designatorDropdown>
+    <costList>
+      <WoodLog_Drago>12</WoodLog_Drago>
+    </costList>
+  </TerrainDef>
+  <TerrainDef>
+    <defName>Bridge_Maple</defName>
+    <label>bridge</label>
+    <description>A flat maple surface on supportive beams which can be built over water. You can build light structures on bridges, but be careful - bridges are fragile. If a bridge falls, buildings on top of it fall as well.</description>
+    <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
+    <color>(236, 201, 163)</color>
+    <uiIconPath>Terrain/Surfaces/Bridge_MenuIcon</uiIconPath>
+    <layerable>true</layerable>
+    <bridge>true</bridge>
+    <affordances>
+      <li>Light</li>
+    </affordances>
+    <designationCategory>Structure</designationCategory>
+    <fertility>0</fertility>
+    <constructEffect>ConstructWood</constructEffect>
+    <terrainAffordanceNeeded>Bridgeable</terrainAffordanceNeeded>
+    <edgeType>Hard</edgeType>
+    <renderPrecedence>400</renderPrecedence>
+    <autoRebuildable>true</autoRebuildable>
+    <statBases>
+      <WorkToBuild>1500</WorkToBuild>
+      <Flammability>0.8</Flammability>
+    </statBases>
+    <tags>
+      <li>Floor</li>
+    </tags>
+    <designationHotKey>Misc4</designationHotKey>
+    <destroyOnBombDamageThreshold>35</destroyOnBombDamageThreshold>
+    <destroyBuildingsOnDestroyed>true</destroyBuildingsOnDestroyed>
+    <destroyEffect>Bridge_Collapse</destroyEffect>
+    <destroyEffectWater>Bridge_CollapseWater</destroyEffectWater>
+    <costList>
+      <WoodLog_Maple>12</WoodLog_Maple>
+    </costList>
+    <designatorDropdown>EW_Designator_Bridge</designatorDropdown>
+  </TerrainDef>
+  <TerrainDef>
+    <defName>Bridge_Oak</defName>
+    <label>bridge</label>
+    <description>A flat oak surface on supportive beams which can be built over water. You can build light structures on bridges, but be careful - bridges are fragile. If a bridge falls, buildings on top of it fall as well.</description>
+    <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
+    <color>(185,142,96)</color>
+    <uiIconPath>Terrain/Surfaces/Bridge_MenuIcon</uiIconPath>
+    <layerable>true</layerable>
+    <bridge>true</bridge>
+    <affordances>
+      <li>Light</li>
+    </affordances>
+    <designationCategory>Structure</designationCategory>
+    <fertility>0</fertility>
+    <constructEffect>ConstructWood</constructEffect>
+    <terrainAffordanceNeeded>Bridgeable</terrainAffordanceNeeded>
+    <edgeType>Hard</edgeType>
+    <renderPrecedence>400</renderPrecedence>
+    <autoRebuildable>true</autoRebuildable>
+    <statBases>
+      <WorkToBuild>1500</WorkToBuild>
+      <Flammability>0.8</Flammability>
+    </statBases>
+    <tags>
+      <li>Floor</li>
+    </tags>
+    <designationHotKey>Misc4</designationHotKey>
+    <destroyOnBombDamageThreshold>35</destroyOnBombDamageThreshold>
+    <destroyBuildingsOnDestroyed>true</destroyBuildingsOnDestroyed>
+    <destroyEffect>Bridge_Collapse</destroyEffect>
+    <destroyEffectWater>Bridge_CollapseWater</destroyEffectWater>
+    <costList>
+      <WoodLog_Oak>12</WoodLog_Oak>
+    </costList>
+    <designatorDropdown>EW_Designator_Bridge</designatorDropdown>
+  </TerrainDef>
+  <TerrainDef>
+    <defName>Bridge_Palm</defName>
+    <label>bridge</label>
+    <description>A flat palm surface on supportive beams which can be built over water. You can build light structures on bridges, but be careful - bridges are fragile. If a bridge falls, buildings on top of it fall as well.</description>
+    <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
+    <color>(224, 150, 87)</color>
+    <uiIconPath>Terrain/Surfaces/Bridge_MenuIcon</uiIconPath>
+    <layerable>true</layerable>
+    <bridge>true</bridge>
+    <affordances>
+      <li>Light</li>
+    </affordances>
+    <designationCategory>Structure</designationCategory>
+    <fertility>0</fertility>
+    <constructEffect>ConstructWood</constructEffect>
+    <terrainAffordanceNeeded>Bridgeable</terrainAffordanceNeeded>
+    <edgeType>Hard</edgeType>
+    <renderPrecedence>400</renderPrecedence>
+    <autoRebuildable>true</autoRebuildable>
+    <statBases>
+      <WorkToBuild>1500</WorkToBuild>
+      <Flammability>0.8</Flammability>
+    </statBases>
+    <tags>
+      <li>Floor</li>
+    </tags>
+    <designationHotKey>Misc4</designationHotKey>
+    <destroyOnBombDamageThreshold>35</destroyOnBombDamageThreshold>
+    <destroyBuildingsOnDestroyed>true</destroyBuildingsOnDestroyed>
+    <destroyEffect>Bridge_Collapse</destroyEffect>
+    <destroyEffectWater>Bridge_CollapseWater</destroyEffectWater>
+    <costList>
+      <WoodLog_Palm>12</WoodLog_Palm>
+    </costList>
+    <designatorDropdown>EW_Designator_Bridge</designatorDropdown>
+  </TerrainDef>
+  <TerrainDef>
+    <defName>Bridge_Pine</defName>
+    <label>bridge</label>
+    <description>A flat pine surface on supportive beams which can be built over water. You can build light structures on bridges, but be careful - bridges are fragile. If a bridge falls, buildings on top of it fall as well.</description>
+    <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
+    <color>(198,146,68)</color>
+    <uiIconPath>Terrain/Surfaces/Bridge_MenuIcon</uiIconPath>
+    <layerable>true</layerable>
+    <bridge>true</bridge>
+    <affordances>
+      <li>Light</li>
+    </affordances>
+    <designationCategory>Structure</designationCategory>
+    <fertility>0</fertility>
+    <constructEffect>ConstructWood</constructEffect>
+    <terrainAffordanceNeeded>Bridgeable</terrainAffordanceNeeded>
+    <edgeType>Hard</edgeType>
+    <renderPrecedence>400</renderPrecedence>
+    <autoRebuildable>true</autoRebuildable>
+    <statBases>
+      <WorkToBuild>1500</WorkToBuild>
+      <Flammability>0.8</Flammability>
+    </statBases>
+    <tags>
+      <li>Floor</li>
+    </tags>
+    <designationHotKey>Misc4</designationHotKey>
+    <destroyOnBombDamageThreshold>35</destroyOnBombDamageThreshold>
+    <destroyBuildingsOnDestroyed>true</destroyBuildingsOnDestroyed>
+    <destroyEffect>Bridge_Collapse</destroyEffect>
+    <destroyEffectWater>Bridge_CollapseWater</destroyEffectWater>
+    <designatorDropdown>EW_Designator_Bridge</designatorDropdown>
+    <costList>
+      <WoodLog_Pine>12</WoodLog_Pine>
+    </costList>
+  </TerrainDef>
+  <TerrainDef>
+    <defName>Bridge_Poplar</defName>
+    <label>bridge</label>
+    <description>A flat poplar surface on supportive beams which can be built over water. You can build light structures on bridges, but be careful - bridges are fragile. If a bridge falls, buildings on top of it fall as well.</description>
+    <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
+    <color>(184,156,108)</color>
+    <uiIconPath>Terrain/Surfaces/Bridge_MenuIcon</uiIconPath>
+    <layerable>true</layerable>
+    <bridge>true</bridge>
+    <affordances>
+      <li>Light</li>
+    </affordances>
+    <designationCategory>Structure</designationCategory>
+    <fertility>0</fertility>
+    <constructEffect>ConstructWood</constructEffect>
+    <terrainAffordanceNeeded>Bridgeable</terrainAffordanceNeeded>
+    <edgeType>Hard</edgeType>
+    <renderPrecedence>400</renderPrecedence>
+    <autoRebuildable>true</autoRebuildable>
+    <statBases>
+      <WorkToBuild>1500</WorkToBuild>
+      <Flammability>0.8</Flammability>
+    </statBases>
+    <tags>
+      <li>Floor</li>
+    </tags>
+    <designationHotKey>Misc4</designationHotKey>
+    <destroyOnBombDamageThreshold>35</destroyOnBombDamageThreshold>
+    <destroyBuildingsOnDestroyed>true</destroyBuildingsOnDestroyed>
+    <destroyEffect>Bridge_Collapse</destroyEffect>
+    <destroyEffectWater>Bridge_CollapseWater</destroyEffectWater>
+    <costList>
+      <WoodLog_Poplar>12</WoodLog_Poplar>
+    </costList>
+    <designatorDropdown>EW_Designator_Bridge</designatorDropdown>
+  </TerrainDef>
+  <TerrainDef>
+    <defName>Bridge_Teak</defName>
+    <label>bridge</label>
+    <description>A flat teak surface on supportive beams which can be built over water. You can build light structures on bridges, but be careful - bridges are fragile. If a bridge falls, buildings on top of it fall as well.</description>
+    <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
+    <color>(154,102,59)</color>
+    <uiIconPath>Terrain/Surfaces/Bridge_MenuIcon</uiIconPath>
+    <layerable>true</layerable>
+    <bridge>true</bridge>
+    <affordances>
+      <li>Light</li>
+    </affordances>
+    <designationCategory>Structure</designationCategory>
+    <fertility>0</fertility>
+    <constructEffect>ConstructWood</constructEffect>
+    <terrainAffordanceNeeded>Bridgeable</terrainAffordanceNeeded>
+    <edgeType>Hard</edgeType>
+    <renderPrecedence>400</renderPrecedence>
+    <autoRebuildable>true</autoRebuildable>
+    <statBases>
+      <WorkToBuild>1500</WorkToBuild>
+      <Flammability>0.8</Flammability>
+    </statBases>
+    <tags>
+      <li>Floor</li>
+    </tags>
+    <designationHotKey>Misc4</designationHotKey>
+    <destroyOnBombDamageThreshold>35</destroyOnBombDamageThreshold>
+    <destroyBuildingsOnDestroyed>true</destroyBuildingsOnDestroyed>
+    <destroyEffect>Bridge_Collapse</destroyEffect>
+    <destroyEffectWater>Bridge_CollapseWater</destroyEffectWater>
+    <costList>
+      <WoodLog_Teak>12</WoodLog_Teak>
+    </costList>
+    <designatorDropdown>EW_Designator_Bridge</designatorDropdown>
+  </TerrainDef>
+  <TerrainDef>
+    <defName>Bridge_Willow</defName>
+    <label>bridge</label>
+    <description>A flat willow surface on supportive beams which can be built over water. You can build light structures on bridges, but be careful - bridges are fragile. If a bridge falls, buildings on top of it fall as well.</description>
+    <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
+    <color>(221, 186, 141)</color>
+    <uiIconPath>Terrain/Surfaces/Bridge_MenuIcon</uiIconPath>
+    <layerable>true</layerable>
+    <bridge>true</bridge>
+    <affordances>
+      <li>Light</li>
+    </affordances>
+    <designationCategory>Structure</designationCategory>
+    <fertility>0</fertility>
+    <constructEffect>ConstructWood</constructEffect>
+    <terrainAffordanceNeeded>Bridgeable</terrainAffordanceNeeded>
+    <edgeType>Hard</edgeType>
+    <renderPrecedence>400</renderPrecedence>
+    <autoRebuildable>true</autoRebuildable>
+    <statBases>
+      <WorkToBuild>1500</WorkToBuild>
+      <Flammability>0.8</Flammability>
+    </statBases>
+    <tags>
+      <li>Floor</li>
+    </tags>
+    <designationHotKey>Misc4</designationHotKey>
+    <destroyOnBombDamageThreshold>35</destroyOnBombDamageThreshold>
+    <destroyBuildingsOnDestroyed>true</destroyBuildingsOnDestroyed>
+    <destroyEffect>Bridge_Collapse</destroyEffect>
+    <destroyEffectWater>Bridge_CollapseWater</destroyEffectWater>
+    <designatorDropdown>EW_Designator_Bridge</designatorDropdown>
+    <costList>
+      <WoodLog_Willow>12</WoodLog_Willow>
+    </costList>
+  </TerrainDef>
+</Defs>

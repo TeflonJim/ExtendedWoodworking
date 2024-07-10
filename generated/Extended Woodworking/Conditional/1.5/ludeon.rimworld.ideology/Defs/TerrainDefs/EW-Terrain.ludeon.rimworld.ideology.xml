@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <TerrainDef ParentName="FloorBase">
+    <defName>Boards_Totemic_Birch</defName>
+    <label>totemic boards</label>
+    <description>Fine birch boards decorated in a totemic style.</description>
+    <texturePath>Terrain/Surfaces/TotemicBoards</texturePath>
+    <renderPrecedence>250</renderPrecedence>
+    <canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <dominantStyleCategory>Totemic</dominantStyleCategory>
+    <color>(235,228,216)</color>
+    <isPaintable>true</isPaintable>
+    <statBases>
+      <WorkToBuild>5000</WorkToBuild>
+      <Beauty>3</Beauty>
+      <StyleDominance>1</StyleDominance>
+      <Flammability>0.22</Flammability>
+    </statBases>
+    <tags>
+      <li>FineFloor</li>
+    </tags>
+    <costList>
+      <WoodLog_Birch>20</WoodLog_Birch>
+    </costList>
+    <designatorDropdown>EW_Designator_Boards_Totemic</designatorDropdown>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>Boards_Totemic_Cecropia</defName>
+    <label>totemic boards</label>
+    <description>Fine cecropia boards decorated in a totemic style.</description>
+    <texturePath>Terrain/Surfaces/TotemicBoards</texturePath>
+    <renderPrecedence>250</renderPrecedence>
+    <canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <dominantStyleCategory>Totemic</dominantStyleCategory>
+    <color>(126,74,63)</color>
+    <isPaintable>true</isPaintable>
+    <statBases>
+      <WorkToBuild>5000</WorkToBuild>
+      <Beauty>3</Beauty>
+      <StyleDominance>1</StyleDominance>
+      <Flammability>0.22</Flammability>
+    </statBases>
+    <tags>
+      <li>FineFloor</li>
+    </tags>
+    <designatorDropdown>EW_Designator_Boards_Totemic</designatorDropdown>
+    <costList>
+      <WoodLog_Cecropia>20</WoodLog_Cecropia>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>Boards_Totemic_Cypress</defName>
+    <label>totemic boards</label>
+    <description>Fine cypress boards decorated in a totemic style.</description>
+    <texturePath>Terrain/Surfaces/TotemicBoards</texturePath>
+    <renderPrecedence>250</renderPrecedence>
+    <canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <dominantStyleCategory>Totemic</dominantStyleCategory>
+    <color>(239, 217, 184)</color>
+    <isPaintable>true</isPaintable>
+    <statBases>
+      <WorkToBuild>5000</WorkToBuild>
+      <Beauty>3</Beauty>
+      <StyleDominance>1</StyleDominance>
+      <Flammability>0.22</Flammability>
+    </statBases>
+    <tags>
+      <li>FineFloor</li>
+    </tags>
+    <designatorDropdown>EW_Designator_Boards_Totemic</designatorDropdown>
+    <costList>
+      <WoodLog_Cypress>20</WoodLog_Cypress>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>Boards_Totemic_Drago</defName>
+    <label>totemic boards</label>
+    <description>Fine drago boards decorated in a totemic style.</description>
+    <texturePath>Terrain/Surfaces/TotemicBoards</texturePath>
+    <renderPrecedence>250</renderPrecedence>
+    <canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <dominantStyleCategory>Totemic</dominantStyleCategory>
+    <color>(171, 159, 142)</color>
+    <isPaintable>true</isPaintable>
+    <statBases>
+      <WorkToBuild>5000</WorkToBuild>
+      <Beauty>3</Beauty>
+      <StyleDominance>1</StyleDominance>
+      <Flammability>0.22</Flammability>
+    </statBases>
+    <tags>
+      <li>FineFloor</li>
+    </tags>
+    <designatorDropdown>EW_Designator_Boards_Totemic</designatorDropdown>
+    <costList>
+      <WoodLog_Drago>20</WoodLog_Drago>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>Boards_Totemic_Maple</defName>
+    <label>totemic boards</label>
+    <description>Fine maple boards decorated in a totemic style.</description>
+    <texturePath>Terrain/Surfaces/TotemicBoards</texturePath>
+    <renderPrecedence>250</renderPrecedence>
+    <canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <dominantStyleCategory>Totemic</dominantStyleCategory>
+    <color>(236, 201, 163)</color>
+    <isPaintable>true</isPaintable>
+    <statBases>
+      <WorkToBuild>5000</WorkToBuild>
+      <Beauty>3</Beauty>
+      <StyleDominance>1</StyleDominance>
+      <Flammability>0.22</Flammability>
+    </statBases>
+    <tags>
+      <li>FineFloor</li>
+    </tags>
+    <costList>
+      <WoodLog_Maple>20</WoodLog_Maple>
+    </costList>
+    <designatorDropdown>EW_Designator_Boards_Totemic</designatorDropdown>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>Boards_Totemic_Oak</defName>
+    <label>totemic boards</label>
+    <description>Fine oak boards decorated in a totemic style.</description>
+    <texturePath>Terrain/Surfaces/TotemicBoards</texturePath>
+    <renderPrecedence>250</renderPrecedence>
+    <canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <dominantStyleCategory>Totemic</dominantStyleCategory>
+    <color>(185,142,96)</color>
+    <isPaintable>true</isPaintable>
+    <statBases>
+      <WorkToBuild>5000</WorkToBuild>
+      <Beauty>3</Beauty>
+      <StyleDominance>1</StyleDominance>
+      <Flammability>0.22</Flammability>
+    </statBases>
+    <tags>
+      <li>FineFloor</li>
+    </tags>
+    <costList>
+      <WoodLog_Oak>20</WoodLog_Oak>
+    </costList>
+    <designatorDropdown>EW_Designator_Boards_Totemic</designatorDropdown>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>Boards_Totemic_Palm</defName>
+    <label>totemic boards</label>
+    <description>Fine palm boards decorated in a totemic style.</description>
+    <texturePath>Terrain/Surfaces/TotemicBoards</texturePath>
+    <renderPrecedence>250</renderPrecedence>
+    <canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <dominantStyleCategory>Totemic</dominantStyleCategory>
+    <color>(224, 150, 87)</color>
+    <isPaintable>true</isPaintable>
+    <statBases>
+      <WorkToBuild>5000</WorkToBuild>
+      <Beauty>3</Beauty>
+      <StyleDominance>1</StyleDominance>
+      <Flammability>0.22</Flammability>
+    </statBases>
+    <tags>
+      <li>FineFloor</li>
+    </tags>
+    <costList>
+      <WoodLog_Palm>20</WoodLog_Palm>
+    </costList>
+    <designatorDropdown>EW_Designator_Boards_Totemic</designatorDropdown>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>Boards_Totemic_Pine</defName>
+    <label>totemic boards</label>
+    <description>Fine pine boards decorated in a totemic style.</description>
+    <texturePath>Terrain/Surfaces/TotemicBoards</texturePath>
+    <renderPrecedence>250</renderPrecedence>
+    <canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <dominantStyleCategory>Totemic</dominantStyleCategory>
+    <color>(198,146,68)</color>
+    <isPaintable>true</isPaintable>
+    <statBases>
+      <WorkToBuild>5000</WorkToBuild>
+      <Beauty>3</Beauty>
+      <StyleDominance>1</StyleDominance>
+      <Flammability>0.22</Flammability>
+    </statBases>
+    <tags>
+      <li>FineFloor</li>
+    </tags>
+    <designatorDropdown>EW_Designator_Boards_Totemic</designatorDropdown>
+    <costList>
+      <WoodLog_Pine>20</WoodLog_Pine>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>Boards_Totemic_Poplar</defName>
+    <label>totemic boards</label>
+    <description>Fine poplar boards decorated in a totemic style.</description>
+    <texturePath>Terrain/Surfaces/TotemicBoards</texturePath>
+    <renderPrecedence>250</renderPrecedence>
+    <canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <dominantStyleCategory>Totemic</dominantStyleCategory>
+    <color>(184,156,108)</color>
+    <isPaintable>true</isPaintable>
+    <statBases>
+      <WorkToBuild>5000</WorkToBuild>
+      <Beauty>3</Beauty>
+      <StyleDominance>1</StyleDominance>
+      <Flammability>0.22</Flammability>
+    </statBases>
+    <tags>
+      <li>FineFloor</li>
+    </tags>
+    <costList>
+      <WoodLog_Poplar>20</WoodLog_Poplar>
+    </costList>
+    <designatorDropdown>EW_Designator_Boards_Totemic</designatorDropdown>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>Boards_Totemic_Teak</defName>
+    <label>totemic boards</label>
+    <description>Fine teak boards decorated in a totemic style.</description>
+    <texturePath>Terrain/Surfaces/TotemicBoards</texturePath>
+    <renderPrecedence>250</renderPrecedence>
+    <canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <dominantStyleCategory>Totemic</dominantStyleCategory>
+    <color>(154,102,59)</color>
+    <isPaintable>true</isPaintable>
+    <statBases>
+      <WorkToBuild>5000</WorkToBuild>
+      <Beauty>3</Beauty>
+      <StyleDominance>1</StyleDominance>
+      <Flammability>0.22</Flammability>
+    </statBases>
+    <tags>
+      <li>FineFloor</li>
+    </tags>
+    <costList>
+      <WoodLog_Teak>20</WoodLog_Teak>
+    </costList>
+    <designatorDropdown>EW_Designator_Boards_Totemic</designatorDropdown>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>Boards_Totemic_Willow</defName>
+    <label>totemic boards</label>
+    <description>Fine willow boards decorated in a totemic style.</description>
+    <texturePath>Terrain/Surfaces/TotemicBoards</texturePath>
+    <renderPrecedence>250</renderPrecedence>
+    <canGenerateDefaultDesignator>false</canGenerateDefaultDesignator>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <dominantStyleCategory>Totemic</dominantStyleCategory>
+    <color>(221, 186, 141)</color>
+    <isPaintable>true</isPaintable>
+    <statBases>
+      <WorkToBuild>5000</WorkToBuild>
+      <Beauty>3</Beauty>
+      <StyleDominance>1</StyleDominance>
+      <Flammability>0.22</Flammability>
+    </statBases>
+    <tags>
+      <li>FineFloor</li>
+    </tags>
+    <designatorDropdown>EW_Designator_Boards_Totemic</designatorDropdown>
+    <costList>
+      <WoodLog_Willow>20</WoodLog_Willow>
+    </costList>
+  </TerrainDef>
+</Defs>

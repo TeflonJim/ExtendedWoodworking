@@ -1,0 +1,399 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <TerrainDef ParentName="FloorBase">
+    <defName>Wood_ParquetHerring_Birch</defName>
+    <label>Parquet Herringbone</label>
+    <renderPrecedence>250</renderPrecedence>
+    <texturePath>Rimefeller/Terrain/Wood_ParquetHerring</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(235,228,216)</color>
+    <statBases>
+      <WorkToBuild>85</WorkToBuild>
+      <Flammability>0.22</Flammability>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <costList>
+      <WoodLog_Birch>3</WoodLog_Birch>
+    </costList>
+    <description></description>
+    <designatorDropdown>EW_Designator_Wood_ParquetHerring</designatorDropdown>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>Wood_ParquetHerring_Cecropia</defName>
+    <label>Parquet Herringbone</label>
+    <renderPrecedence>250</renderPrecedence>
+    <texturePath>Rimefeller/Terrain/Wood_ParquetHerring</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(126,74,63)</color>
+    <statBases>
+      <WorkToBuild>85</WorkToBuild>
+      <Flammability>0.22</Flammability>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <description></description>
+    <designatorDropdown>EW_Designator_Wood_ParquetHerring</designatorDropdown>
+    <costList>
+      <WoodLog_Cecropia>3</WoodLog_Cecropia>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>Wood_ParquetHerring_Cypress</defName>
+    <label>Parquet Herringbone</label>
+    <renderPrecedence>250</renderPrecedence>
+    <texturePath>Rimefeller/Terrain/Wood_ParquetHerring</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(239, 217, 184)</color>
+    <statBases>
+      <WorkToBuild>85</WorkToBuild>
+      <Flammability>0.22</Flammability>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <designatorDropdown>EW_Designator_Wood_ParquetHerring</designatorDropdown>
+    <description></description>
+    <costList>
+      <WoodLog_Cypress>3</WoodLog_Cypress>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>Wood_ParquetHerring_Drago</defName>
+    <label>Parquet Herringbone</label>
+    <renderPrecedence>250</renderPrecedence>
+    <texturePath>Rimefeller/Terrain/Wood_ParquetHerring</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(171, 159, 142)</color>
+    <statBases>
+      <WorkToBuild>85</WorkToBuild>
+      <Flammability>0.22</Flammability>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <designatorDropdown>EW_Designator_Wood_ParquetHerring</designatorDropdown>
+    <description></description>
+    <costList>
+      <WoodLog_Drago>3</WoodLog_Drago>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>Wood_ParquetHerring_Maple</defName>
+    <label>Parquet Herringbone</label>
+    <renderPrecedence>250</renderPrecedence>
+    <texturePath>Rimefeller/Terrain/Wood_ParquetHerring</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(236, 201, 163)</color>
+    <statBases>
+      <WorkToBuild>85</WorkToBuild>
+      <Flammability>0.22</Flammability>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <costList>
+      <WoodLog_Maple>3</WoodLog_Maple>
+    </costList>
+    <description></description>
+    <designatorDropdown>EW_Designator_Wood_ParquetHerring</designatorDropdown>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>Wood_ParquetHerring_Oak</defName>
+    <label>Parquet Herringbone</label>
+    <renderPrecedence>250</renderPrecedence>
+    <texturePath>Rimefeller/Terrain/Wood_ParquetHerring</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(185,142,96)</color>
+    <statBases>
+      <WorkToBuild>85</WorkToBuild>
+      <Flammability>0.22</Flammability>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <costList>
+      <WoodLog_Oak>3</WoodLog_Oak>
+    </costList>
+    <description></description>
+    <designatorDropdown>EW_Designator_Wood_ParquetHerring</designatorDropdown>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>Wood_ParquetHerring_Palm</defName>
+    <label>Parquet Herringbone</label>
+    <renderPrecedence>250</renderPrecedence>
+    <texturePath>Rimefeller/Terrain/Wood_ParquetHerring</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(224, 150, 87)</color>
+    <statBases>
+      <WorkToBuild>85</WorkToBuild>
+      <Flammability>0.22</Flammability>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <costList>
+      <WoodLog_Palm>3</WoodLog_Palm>
+    </costList>
+    <description></description>
+    <designatorDropdown>EW_Designator_Wood_ParquetHerring</designatorDropdown>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>Wood_ParquetHerring_Pine</defName>
+    <label>Parquet Herringbone</label>
+    <renderPrecedence>250</renderPrecedence>
+    <texturePath>Rimefeller/Terrain/Wood_ParquetHerring</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(198,146,68)</color>
+    <statBases>
+      <WorkToBuild>85</WorkToBuild>
+      <Flammability>0.22</Flammability>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <description></description>
+    <designatorDropdown>EW_Designator_Wood_ParquetHerring</designatorDropdown>
+    <costList>
+      <WoodLog_Pine>3</WoodLog_Pine>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>Wood_ParquetHerring_Poplar</defName>
+    <label>Parquet Herringbone</label>
+    <renderPrecedence>250</renderPrecedence>
+    <texturePath>Rimefeller/Terrain/Wood_ParquetHerring</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(184,156,108)</color>
+    <statBases>
+      <WorkToBuild>85</WorkToBuild>
+      <Flammability>0.22</Flammability>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <costList>
+      <WoodLog_Poplar>3</WoodLog_Poplar>
+    </costList>
+    <description></description>
+    <designatorDropdown>EW_Designator_Wood_ParquetHerring</designatorDropdown>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>Wood_ParquetHerring_Teak</defName>
+    <label>Parquet Herringbone</label>
+    <renderPrecedence>250</renderPrecedence>
+    <texturePath>Rimefeller/Terrain/Wood_ParquetHerring</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(154,102,59)</color>
+    <statBases>
+      <WorkToBuild>85</WorkToBuild>
+      <Flammability>0.22</Flammability>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <costList>
+      <WoodLog_Teak>3</WoodLog_Teak>
+    </costList>
+    <description></description>
+    <designatorDropdown>EW_Designator_Wood_ParquetHerring</designatorDropdown>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>Wood_ParquetHerring_Willow</defName>
+    <label>Parquet Herringbone</label>
+    <renderPrecedence>250</renderPrecedence>
+    <texturePath>Rimefeller/Terrain/Wood_ParquetHerring</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(221, 186, 141)</color>
+    <statBases>
+      <WorkToBuild>85</WorkToBuild>
+      <Flammability>0.22</Flammability>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <description></description>
+    <designatorDropdown>EW_Designator_Wood_ParquetHerring</designatorDropdown>
+    <costList>
+      <WoodLog_Willow>3</WoodLog_Willow>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>Wood_ParquetVersailles_Birch</defName>
+    <label>Parquet Versailles</label>
+    <renderPrecedence>250</renderPrecedence>
+    <texturePath>Rimefeller/Terrain/Wood_ParquetVersailles</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(235,228,216)</color>
+    <statBases>
+      <WorkToBuild>85</WorkToBuild>
+      <Flammability>0.22</Flammability>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <costList>
+      <WoodLog_Birch>3</WoodLog_Birch>
+    </costList>
+    <description></description>
+    <designatorDropdown>EW_Designator_Wood_ParquetVersailles</designatorDropdown>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>Wood_ParquetVersailles_Cecropia</defName>
+    <label>Parquet Versailles</label>
+    <renderPrecedence>250</renderPrecedence>
+    <texturePath>Rimefeller/Terrain/Wood_ParquetVersailles</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(126,74,63)</color>
+    <statBases>
+      <WorkToBuild>85</WorkToBuild>
+      <Flammability>0.22</Flammability>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <description></description>
+    <designatorDropdown>EW_Designator_Wood_ParquetVersailles</designatorDropdown>
+    <costList>
+      <WoodLog_Cecropia>3</WoodLog_Cecropia>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>Wood_ParquetVersailles_Cypress</defName>
+    <label>Parquet Versailles</label>
+    <renderPrecedence>250</renderPrecedence>
+    <texturePath>Rimefeller/Terrain/Wood_ParquetVersailles</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(239, 217, 184)</color>
+    <statBases>
+      <WorkToBuild>85</WorkToBuild>
+      <Flammability>0.22</Flammability>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <designatorDropdown>EW_Designator_Wood_ParquetVersailles</designatorDropdown>
+    <description></description>
+    <costList>
+      <WoodLog_Cypress>3</WoodLog_Cypress>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>Wood_ParquetVersailles_Drago</defName>
+    <label>Parquet Versailles</label>
+    <renderPrecedence>250</renderPrecedence>
+    <texturePath>Rimefeller/Terrain/Wood_ParquetVersailles</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(171, 159, 142)</color>
+    <statBases>
+      <WorkToBuild>85</WorkToBuild>
+      <Flammability>0.22</Flammability>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <designatorDropdown>EW_Designator_Wood_ParquetVersailles</designatorDropdown>
+    <description></description>
+    <costList>
+      <WoodLog_Drago>3</WoodLog_Drago>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>Wood_ParquetVersailles_Maple</defName>
+    <label>Parquet Versailles</label>
+    <renderPrecedence>250</renderPrecedence>
+    <texturePath>Rimefeller/Terrain/Wood_ParquetVersailles</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(236, 201, 163)</color>
+    <statBases>
+      <WorkToBuild>85</WorkToBuild>
+      <Flammability>0.22</Flammability>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <costList>
+      <WoodLog_Maple>3</WoodLog_Maple>
+    </costList>
+    <description></description>
+    <designatorDropdown>EW_Designator_Wood_ParquetVersailles</designatorDropdown>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>Wood_ParquetVersailles_Oak</defName>
+    <label>Parquet Versailles</label>
+    <renderPrecedence>250</renderPrecedence>
+    <texturePath>Rimefeller/Terrain/Wood_ParquetVersailles</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(185,142,96)</color>
+    <statBases>
+      <WorkToBuild>85</WorkToBuild>
+      <Flammability>0.22</Flammability>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <costList>
+      <WoodLog_Oak>3</WoodLog_Oak>
+    </costList>
+    <description></description>
+    <designatorDropdown>EW_Designator_Wood_ParquetVersailles</designatorDropdown>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>Wood_ParquetVersailles_Palm</defName>
+    <label>Parquet Versailles</label>
+    <renderPrecedence>250</renderPrecedence>
+    <texturePath>Rimefeller/Terrain/Wood_ParquetVersailles</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(224, 150, 87)</color>
+    <statBases>
+      <WorkToBuild>85</WorkToBuild>
+      <Flammability>0.22</Flammability>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <costList>
+      <WoodLog_Palm>3</WoodLog_Palm>
+    </costList>
+    <description></description>
+    <designatorDropdown>EW_Designator_Wood_ParquetVersailles</designatorDropdown>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>Wood_ParquetVersailles_Pine</defName>
+    <label>Parquet Versailles</label>
+    <renderPrecedence>250</renderPrecedence>
+    <texturePath>Rimefeller/Terrain/Wood_ParquetVersailles</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(198,146,68)</color>
+    <statBases>
+      <WorkToBuild>85</WorkToBuild>
+      <Flammability>0.22</Flammability>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <description></description>
+    <designatorDropdown>EW_Designator_Wood_ParquetVersailles</designatorDropdown>
+    <costList>
+      <WoodLog_Pine>3</WoodLog_Pine>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>Wood_ParquetVersailles_Poplar</defName>
+    <label>Parquet Versailles</label>
+    <renderPrecedence>250</renderPrecedence>
+    <texturePath>Rimefeller/Terrain/Wood_ParquetVersailles</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(184,156,108)</color>
+    <statBases>
+      <WorkToBuild>85</WorkToBuild>
+      <Flammability>0.22</Flammability>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <costList>
+      <WoodLog_Poplar>3</WoodLog_Poplar>
+    </costList>
+    <description></description>
+    <designatorDropdown>EW_Designator_Wood_ParquetVersailles</designatorDropdown>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>Wood_ParquetVersailles_Teak</defName>
+    <label>Parquet Versailles</label>
+    <renderPrecedence>250</renderPrecedence>
+    <texturePath>Rimefeller/Terrain/Wood_ParquetVersailles</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(154,102,59)</color>
+    <statBases>
+      <WorkToBuild>85</WorkToBuild>
+      <Flammability>0.22</Flammability>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <costList>
+      <WoodLog_Teak>3</WoodLog_Teak>
+    </costList>
+    <description></description>
+    <designatorDropdown>EW_Designator_Wood_ParquetVersailles</designatorDropdown>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>Wood_ParquetVersailles_Willow</defName>
+    <label>Parquet Versailles</label>
+    <renderPrecedence>250</renderPrecedence>
+    <texturePath>Rimefeller/Terrain/Wood_ParquetVersailles</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(221, 186, 141)</color>
+    <statBases>
+      <WorkToBuild>85</WorkToBuild>
+      <Flammability>0.22</Flammability>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <description></description>
+    <designatorDropdown>EW_Designator_Wood_ParquetVersailles</designatorDropdown>
+    <costList>
+      <WoodLog_Willow>3</WoodLog_Willow>
+    </costList>
+  </TerrainDef>
+</Defs>

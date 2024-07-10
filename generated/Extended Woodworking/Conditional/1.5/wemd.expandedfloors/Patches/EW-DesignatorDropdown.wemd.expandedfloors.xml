@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/TerrainDef[defName="WDPlywoodFloor"]</xpath>
+        <value>
+          <designatorDropdown>EW_Designator_WDPlywoodFloor</designatorDropdown>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/TerrainDef[defName="WDWidePlanksFloor"]</xpath>
+        <value>
+          <designatorDropdown>EW_Designator_WDWidePlanksFloor</designatorDropdown>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/TerrainDef[defName="WDCheckWoodenFloor"]</xpath>
+        <value>
+          <designatorDropdown>EW_Designator_WDCheckWoodenFloor</designatorDropdown>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/TerrainDef[defName="WDParquet"]</xpath>
+        <value>
+          <designatorDropdown>EW_Designator_WDParquet</designatorDropdown>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/TerrainDef[defName="WDMosaicWoodenFloor"]</xpath>
+        <value>
+          <designatorDropdown>EW_Designator_WDMosaicWoodenFloor</designatorDropdown>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+</Patch>

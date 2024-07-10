@@ -37,7 +37,6 @@ function ConvertTo-OrderedDictionary {
         $dictionary
     }
 }
-
 function Setup {
     $Global:buildInfo = [PSCustomObject]@{
         Name            = 'Extended Woodworking'
@@ -121,11 +120,13 @@ function Clean {
 
 function Discovery {
     foreach ($modInfo in Get-RWMod) {
+        $verbose = @('{0} (1}:' -f $modInfo.Name, $modInfo.PackageID)
+
         # CostList
         $discoveredDefs = $modInfo | Get-RWModDef -Version $buildInfo.RimWorldVersion.ShortVersion -XPathQuery '/Defs/*[name()!="TerrainDef" and defName and not(stuffCategories) and ./costList/WoodLog]'
 
         if ($discoveredDefs) {
-            Write-Verbose ('CostList: Patching {0} defs in {1}' -f $discoveredDefs.Count, $modInfo.Name) -Verbose
+            $verbose += 'CostList: Patching {0} defs' -f $discoveredDefs.Count
 
             $buildInfo.Data.PatchedDefs['CostList'][$modInfo.Name] = $discoveredDefs
             $buildInfo.Data.SupportedMods[$modInfo.Name] = $modInfo
@@ -135,7 +136,7 @@ function Discovery {
         $discoveredDefs = $modInfo | Get-RWModDef -Version $buildInfo.RimWorldVersion.ShortVersion -XPathQuery '/Defs/RecipeDef[(@Abstract="False" or not(@Abstract)) and (ingredients/li/filter/thingDefs/li="WoodLog" or fixedIngredientFilter/thingDefs/li="WoodLog")]'
 
         if ($discoveredDefs) {
-            Write-Verbose ('Recipe: Patching {0} defs in {1}' -f $discoveredDefs.Count, $modInfo.Name) -Verbose
+            $verbose += 'Recipe: Patching {0} defs' -f $discoveredDefs.Count
 
             $buildInfo.Data.PatchedDefs['Recipe'][$modInfo.Name] = $discoveredDefs
             $buildInfo.Data.SupportedMods[$modInfo.Name] = $modInfo
@@ -152,7 +153,7 @@ function Discovery {
         } | Where-Object { $buildInfo.Data.WoodStats.Contains($_.Name) }
 
         if ($discoveredDefs) {
-            Write-Verbose ('HarvestedThing: Patching {0} defs in {1}' -f $discoveredDefs.Count, $modInfo.Name) -Verbose
+            $verbose += 'HarvestedThing: Patching {0} defs' -f $discoveredDefs.Count
 
             $buildInfo.Data.PatchedDefs['HarvestedThing'][$modInfo.Name] = $discoveredDefs
             $buildInfo.Data.SupportedMods[$modInfo.Name] = $modInfo

@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <TerrainDef ParentName="ClutterFloorBase">
+    <defName>ClutterWoodTileA_Birch</defName>
+    <label>birch wood Panels</label>
+    <renderPrecedence>245</renderPrecedence>
+    <description>Miracles of modern science, birch panels made of birch</description>
+    <texturePath>Clutter/Floor/FloorA</texturePath>
+    <uiIconPath>Clutter/Floor/FloorAI</uiIconPath>
+    <statBases>
+      <Beauty>1</Beauty>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <researchPrerequisites>
+      <li>UtilityStructures</li>
+    </researchPrerequisites>
+    <costList>
+      <WoodLog_Birch>5</WoodLog_Birch>
+    </costList>
+    <color>(235,228,216)</color>
+    <designatorDropdown>EW_Designator_ClutterWoodTileA</designatorDropdown>
+  </TerrainDef>
+  <TerrainDef ParentName="ClutterFloorBase">
+    <defName>ClutterWoodTileA_Cecropia</defName>
+    <label>cecropia wood Panels</label>
+    <renderPrecedence>245</renderPrecedence>
+    <description>Miracles of modern science, cecropia panels made of cecropia</description>
+    <texturePath>Clutter/Floor/FloorA</texturePath>
+    <uiIconPath>Clutter/Floor/FloorAI</uiIconPath>
+    <statBases>
+      <Beauty>1</Beauty>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <researchPrerequisites>
+      <li>UtilityStructures</li>
+    </researchPrerequisites>
+    <color>(126,74,63)</color>
+    <designatorDropdown>EW_Designator_ClutterWoodTileA</designatorDropdown>
+    <costList>
+      <WoodLog_Cecropia>5</WoodLog_Cecropia>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="ClutterFloorBase">
+    <defName>ClutterWoodTileA_Cypress</defName>
+    <label>cypress wood Panels</label>
+    <renderPrecedence>245</renderPrecedence>
+    <description>Miracles of modern science, cypress panels made of cypress</description>
+    <texturePath>Clutter/Floor/FloorA</texturePath>
+    <uiIconPath>Clutter/Floor/FloorAI</uiIconPath>
+    <statBases>
+      <Beauty>1</Beauty>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <researchPrerequisites>
+      <li>UtilityStructures</li>
+    </researchPrerequisites>
+    <designatorDropdown>EW_Designator_ClutterWoodTileA</designatorDropdown>
+    <color>(239, 217, 184)</color>
+    <costList>
+      <WoodLog_Cypress>5</WoodLog_Cypress>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="ClutterFloorBase">
+    <defName>ClutterWoodTileA_Drago</defName>
+    <label>drago wood Panels</label>
+    <renderPrecedence>245</renderPrecedence>
+    <description>Miracles of modern science, drago panels made of drago</description>
+    <texturePath>Clutter/Floor/FloorA</texturePath>
+    <uiIconPath>Clutter/Floor/FloorAI</uiIconPath>
+    <statBases>
+      <Beauty>1</Beauty>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <researchPrerequisites>
+      <li>UtilityStructures</li>
+    </researchPrerequisites>
+    <designatorDropdown>EW_Designator_ClutterWoodTileA</designatorDropdown>
+    <color>(171, 159, 142)</color>
+    <costList>
+      <WoodLog_Drago>5</WoodLog_Drago>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="ClutterFloorBase">
+    <defName>ClutterWoodTileA_Maple</defName>
+    <label>maple wood Panels</label>
+    <renderPrecedence>245</renderPrecedence>
+    <description>Miracles of modern science, maple panels made of maple</description>
+    <texturePath>Clutter/Floor/FloorA</texturePath>
+    <uiIconPath>Clutter/Floor/FloorAI</uiIconPath>
+    <statBases>
+      <Beauty>1</Beauty>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <researchPrerequisites>
+      <li>UtilityStructures</li>
+    </researchPrerequisites>
+    <costList>
+      <WoodLog_Maple>5</WoodLog_Maple>
+    </costList>
+    <color>(236, 201, 163)</color>
+    <designatorDropdown>EW_Designator_ClutterWoodTileA</designatorDropdown>
+  </TerrainDef>
+  <TerrainDef ParentName="ClutterFloorBase">
+    <defName>ClutterWoodTileA_Oak</defName>
+    <label>oak wood Panels</label>
+    <renderPrecedence>245</renderPrecedence>
+    <description>Miracles of modern science, oak panels made of oak</description>
+    <texturePath>Clutter/Floor/FloorA</texturePath>
+    <uiIconPath>Clutter/Floor/FloorAI</uiIconPath>
+    <statBases>
+      <Beauty>1</Beauty>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <researchPrerequisites>
+      <li>UtilityStructures</li>
+    </researchPrerequisites>
+    <costList>
+      <WoodLog_Oak>5</WoodLog_Oak>
+    </costList>
+    <color>(185,142,96)</color>
+    <designatorDropdown>EW_Designator_ClutterWoodTileA</designatorDropdown>
+  </TerrainDef>
+  <TerrainDef ParentName="ClutterFloorBase">
+    <defName>ClutterWoodTileA_Palm</defName>
+    <label>palm wood Panels</label>
+    <renderPrecedence>245</renderPrecedence>
+    <description>Miracles of modern science, palm panels made of palm</description>
+    <texturePath>Clutter/Floor/FloorA</texturePath>
+    <uiIconPath>Clutter/Floor/FloorAI</uiIconPath>
+    <statBases>
+      <Beauty>1</Beauty>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <researchPrerequisites>
+      <li>UtilityStructures</li>
+    </researchPrerequisites>
+    <costList>
+      <WoodLog_Palm>5</WoodLog_Palm>
+    </costList>
+    <color>(224, 150, 87)</color>
+    <designatorDropdown>EW_Designator_ClutterWoodTileA</designatorDropdown>
+  </TerrainDef>
+  <TerrainDef ParentName="ClutterFloorBase">
+    <defName>ClutterWoodTileA_Pine</defName>
+    <label>pine wood Panels</label>
+    <renderPrecedence>245</renderPrecedence>
+    <description>Miracles of modern science, pine panels made of pine</description>
+    <texturePath>Clutter/Floor/FloorA</texturePath>
+    <uiIconPath>Clutter/Floor/FloorAI</uiIconPath>
+    <statBases>
+      <Beauty>1</Beauty>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <researchPrerequisites>
+      <li>UtilityStructures</li>
+    </researchPrerequisites>
+    <color>(198,146,68)</color>
+    <designatorDropdown>EW_Designator_ClutterWoodTileA</designatorDropdown>
+    <costList>
+      <WoodLog_Pine>5</WoodLog_Pine>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="ClutterFloorBase">
+    <defName>ClutterWoodTileA_Poplar</defName>
+    <label>poplar wood Panels</label>
+    <renderPrecedence>245</renderPrecedence>
+    <description>Miracles of modern science, poplar panels made of poplar</description>
+    <texturePath>Clutter/Floor/FloorA</texturePath>
+    <uiIconPath>Clutter/Floor/FloorAI</uiIconPath>
+    <statBases>
+      <Beauty>1</Beauty>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <researchPrerequisites>
+      <li>UtilityStructures</li>
+    </researchPrerequisites>
+    <costList>
+      <WoodLog_Poplar>5</WoodLog_Poplar>
+    </costList>
+    <color>(184,156,108)</color>
+    <designatorDropdown>EW_Designator_ClutterWoodTileA</designatorDropdown>
+  </TerrainDef>
+  <TerrainDef ParentName="ClutterFloorBase">
+    <defName>ClutterWoodTileA_Teak</defName>
+    <label>teak wood Panels</label>
+    <renderPrecedence>245</renderPrecedence>
+    <description>Miracles of modern science, teak panels made of teak</description>
+    <texturePath>Clutter/Floor/FloorA</texturePath>
+    <uiIconPath>Clutter/Floor/FloorAI</uiIconPath>
+    <statBases>
+      <Beauty>1</Beauty>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <researchPrerequisites>
+      <li>UtilityStructures</li>
+    </researchPrerequisites>
+    <costList>
+      <WoodLog_Teak>5</WoodLog_Teak>
+    </costList>
+    <color>(154,102,59)</color>
+    <designatorDropdown>EW_Designator_ClutterWoodTileA</designatorDropdown>
+  </TerrainDef>
+  <TerrainDef ParentName="ClutterFloorBase">
+    <defName>ClutterWoodTileA_Willow</defName>
+    <label>willow wood Panels</label>
+    <renderPrecedence>245</renderPrecedence>
+    <description>Miracles of modern science, willow panels made of willow</description>
+    <texturePath>Clutter/Floor/FloorA</texturePath>
+    <uiIconPath>Clutter/Floor/FloorAI</uiIconPath>
+    <statBases>
+      <Beauty>1</Beauty>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <researchPrerequisites>
+      <li>UtilityStructures</li>
+    </researchPrerequisites>
+    <color>(221, 186, 141)</color>
+    <designatorDropdown>EW_Designator_ClutterWoodTileA</designatorDropdown>
+    <costList>
+      <WoodLog_Willow>5</WoodLog_Willow>
+    </costList>
+  </TerrainDef>
+</Defs>

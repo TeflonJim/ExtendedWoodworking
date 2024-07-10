@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="WoodLog_Acacia"]</xpath>
+        <match Class="PatchOperationSequence">
+          <operations>
+            <li Class="PatchOperationAdd">
+              <xpath>/Defs</xpath>
+              <value>
+                <TerrainDef ParentName="RB_FinePlankWoodBase">
+                  <defName>RB_FinePlankWood_Acacia</defName>
+                  <label>fine acacia wood floor</label>
+                  <color>(219, 184, 144)</color>
+                  <description></description>
+                  <designatorDropdown>EW_Designator_RB_FinePlankWood</designatorDropdown>
+                  <costList>
+                    <WoodLog_Acacia>15</WoodLog_Acacia>
+                  </costList>
+                </TerrainDef>
+              </value>
+            </li>
+          </operations>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="WoodLog_Aspen"]</xpath>
+        <match Class="PatchOperationSequence">
+          <operations>
+            <li Class="PatchOperationAdd">
+              <xpath>/Defs</xpath>
+              <value>
+                <TerrainDef ParentName="RB_FinePlankWoodBase">
+                  <defName>RB_FinePlankWood_Aspen</defName>
+                  <label>fine aspen wood floor</label>
+                  <color>(228, 204, 171)</color>
+                  <designatorDropdown>EW_Designator_RB_FinePlankWood</designatorDropdown>
+                  <description></description>
+                  <costList>
+                    <WoodLog_Aspen>15</WoodLog_Aspen>
+                  </costList>
+                </TerrainDef>
+              </value>
+            </li>
+          </operations>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="WoodLog_Camellia"]</xpath>
+        <match Class="PatchOperationSequence">
+          <operations>
+            <li Class="PatchOperationAdd">
+              <xpath>/Defs</xpath>
+              <value>
+                <TerrainDef ParentName="RB_FinePlankWoodBase">
+                  <defName>RB_FinePlankWood_Camellia</defName>
+                  <label>fine camellia wood floor</label>
+                  <color>(201, 160, 130)</color>
+                  <costList>
+                    <WoodLog_Camellia>15</WoodLog_Camellia>
+                  </costList>
+                  <description></description>
+                  <designatorDropdown>EW_Designator_RB_FinePlankWood</designatorDropdown>
+                </TerrainDef>
+              </value>
+            </li>
+          </operations>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="WoodLog_CherryBlossom"]</xpath>
+        <match Class="PatchOperationSequence">
+          <operations>
+            <li Class="PatchOperationAdd">
+              <xpath>/Defs</xpath>
+              <value>
+                <TerrainDef ParentName="RB_FinePlankWoodBase">
+                  <defName>RB_FinePlankWood_CherryBlossom</defName>
+                  <label>fine cherryblossom wood floor</label>
+                  <color>(165, 82, 40)</color>
+                  <designatorDropdown>EW_Designator_RB_FinePlankWood</designatorDropdown>
+                  <description></description>
+                  <costList>
+                    <WoodLog_CherryBlossom>15</WoodLog_CherryBlossom>
+                  </costList>
+                </TerrainDef>
+              </value>
+            </li>
+          </operations>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="WoodLog_JapaneseMaple"]</xpath>
+        <match Class="PatchOperationSequence">
+          <operations>
+            <li Class="PatchOperationAdd">
+              <xpath>/Defs</xpath>
+              <value>
+                <TerrainDef ParentName="RB_FinePlankWoodBase">
+                  <defName>RB_FinePlankWood_JapaneseMaple</defName>
+                  <label>fine japanesemaple wood floor</label>
+                  <color>(252, 170, 124)</color>
+                  <description></description>
+                  <designatorDropdown>EW_Designator_RB_FinePlankWood</designatorDropdown>
+                  <costList>
+                    <WoodLog_JapaneseMaple>15</WoodLog_JapaneseMaple>
+                  </costList>
+                </TerrainDef>
+              </value>
+            </li>
+          </operations>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="WoodLog_RedMaple"]</xpath>
+        <match Class="PatchOperationSequence">
+          <operations>
+            <li Class="PatchOperationAdd">
+              <xpath>/Defs</xpath>
+              <value>
+                <TerrainDef ParentName="RB_FinePlankWoodBase">
+                  <defName>RB_FinePlankWood_RedMaple</defName>
+                  <label>fine redmaple wood floor</label>
+                  <color>(222, 197, 167)</color>
+                  <costList>
+                    <WoodLog_RedMaple>15</WoodLog_RedMaple>
+                  </costList>
+                  <description></description>
+                  <designatorDropdown>EW_Designator_RB_FinePlankWood</designatorDropdown>
+                </TerrainDef>
+              </value>
+            </li>
+          </operations>
+        </match>
+      </li>
+    </operations>
+  </Operation>
+</Patch>

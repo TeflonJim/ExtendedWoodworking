@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/TerrainDef[defName="FloorWoodRustic"]</xpath>
+        <value>
+          <designatorDropdown>EW_Designator_FloorWoodRustic</designatorDropdown>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/TerrainDef[defName="FloorWoodWide"]</xpath>
+        <value>
+          <designatorDropdown>EW_Designator_FloorWoodWide</designatorDropdown>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/TerrainDef[defName="FloorWoodLight"]</xpath>
+        <value>
+          <designatorDropdown>EW_Designator_FloorWoodLight</designatorDropdown>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/TerrainDef[defName="FloorWoodMosaic"]</xpath>
+        <value>
+          <designatorDropdown>EW_Designator_FloorWoodMosaic</designatorDropdown>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/TerrainDef[defName="FloorWoodVertical"]</xpath>
+        <value>
+          <designatorDropdown>EW_Designator_FloorWoodVertical</designatorDropdown>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/TerrainDef[defName="FloorWoodBarn"]</xpath>
+        <value>
+          <designatorDropdown>EW_Designator_FloorWoodBarn</designatorDropdown>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+</Patch>

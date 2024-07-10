@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/TerrainDef[defName="Floor_DarkPlanks"]</xpath>
+        <value>
+          <designatorDropdown>EW_Designator_Floor_DarkPlanks</designatorDropdown>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/TerrainDef[defName="Floor_LightPlanks"]</xpath>
+        <value>
+          <designatorDropdown>EW_Designator_Floor_LightPlanks</designatorDropdown>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/TerrainDef[defName="Floor_SmoothWood"]</xpath>
+        <value>
+          <designatorDropdown>EW_Designator_Floor_SmoothWood</designatorDropdown>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+</Patch>

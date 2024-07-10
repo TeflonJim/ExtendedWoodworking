@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <TerrainDef ParentName="FloorBase">
+    <defName>CCot_RusticPlankFloor_Birch</defName>
+    <label>rustic plank floor</label>
+    <renderPrecedence>250</renderPrecedence>
+    <description>Rustic plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
+    <texturePath>Terrain/Surfaces/RusticPlanks</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(235,228,216)</color>
+    <statBases>
+      <WorkToBuild>85</WorkToBuild>
+      <Flammability>0.22</Flammability>
+      <Beauty>1</Beauty>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <costList>
+      <WoodLog_Birch>6</WoodLog_Birch>
+    </costList>
+    <designatorDropdown>EW_Designator_CCot_RusticPlankFloor</designatorDropdown>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>CCot_RusticPlankFloor_Cecropia</defName>
+    <label>rustic plank floor</label>
+    <renderPrecedence>250</renderPrecedence>
+    <description>Rustic plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
+    <texturePath>Terrain/Surfaces/RusticPlanks</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(126,74,63)</color>
+    <statBases>
+      <WorkToBuild>85</WorkToBuild>
+      <Flammability>0.22</Flammability>
+      <Beauty>1</Beauty>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <designatorDropdown>EW_Designator_CCot_RusticPlankFloor</designatorDropdown>
+    <costList>
+      <WoodLog_Cecropia>6</WoodLog_Cecropia>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>CCot_RusticPlankFloor_Cypress</defName>
+    <label>rustic plank floor</label>
+    <renderPrecedence>250</renderPrecedence>
+    <description>Rustic plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
+    <texturePath>Terrain/Surfaces/RusticPlanks</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(239, 217, 184)</color>
+    <statBases>
+      <WorkToBuild>85</WorkToBuild>
+      <Flammability>0.22</Flammability>
+      <Beauty>1</Beauty>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <designatorDropdown>EW_Designator_CCot_RusticPlankFloor</designatorDropdown>
+    <costList>
+      <WoodLog_Cypress>6</WoodLog_Cypress>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>CCot_RusticPlankFloor_Drago</defName>
+    <label>rustic plank floor</label>
+    <renderPrecedence>250</renderPrecedence>
+    <description>Rustic plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
+    <texturePath>Terrain/Surfaces/RusticPlanks</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(171, 159, 142)</color>
+    <statBases>
+      <WorkToBuild>85</WorkToBuild>
+      <Flammability>0.22</Flammability>
+      <Beauty>1</Beauty>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <designatorDropdown>EW_Designator_CCot_RusticPlankFloor</designatorDropdown>
+    <costList>
+      <WoodLog_Drago>6</WoodLog_Drago>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>CCot_RusticPlankFloor_Maple</defName>
+    <label>rustic plank floor</label>
+    <renderPrecedence>250</renderPrecedence>
+    <description>Rustic plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
+    <texturePath>Terrain/Surfaces/RusticPlanks</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(236, 201, 163)</color>
+    <statBases>
+      <WorkToBuild>85</WorkToBuild>
+      <Flammability>0.22</Flammability>
+      <Beauty>1</Beauty>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <costList>
+      <WoodLog_Maple>6</WoodLog_Maple>
+    </costList>
+    <designatorDropdown>EW_Designator_CCot_RusticPlankFloor</designatorDropdown>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>CCot_RusticPlankFloor_Oak</defName>
+    <label>rustic plank floor</label>
+    <renderPrecedence>250</renderPrecedence>
+    <description>Rustic plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
+    <texturePath>Terrain/Surfaces/RusticPlanks</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(185,142,96)</color>
+    <statBases>
+      <WorkToBuild>85</WorkToBuild>
+      <Flammability>0.22</Flammability>
+      <Beauty>1</Beauty>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <costList>
+      <WoodLog_Oak>6</WoodLog_Oak>
+    </costList>
+    <designatorDropdown>EW_Designator_CCot_RusticPlankFloor</designatorDropdown>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>CCot_RusticPlankFloor_Palm</defName>
+    <label>rustic plank floor</label>
+    <renderPrecedence>250</renderPrecedence>
+    <description>Rustic plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
+    <texturePath>Terrain/Surfaces/RusticPlanks</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(224, 150, 87)</color>
+    <statBases>
+      <WorkToBuild>85</WorkToBuild>
+      <Flammability>0.22</Flammability>
+      <Beauty>1</Beauty>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <costList>
+      <WoodLog_Palm>6</WoodLog_Palm>
+    </costList>
+    <designatorDropdown>EW_Designator_CCot_RusticPlankFloor</designatorDropdown>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>CCot_RusticPlankFloor_Pine</defName>
+    <label>rustic plank floor</label>
+    <renderPrecedence>250</renderPrecedence>
+    <description>Rustic plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
+    <texturePath>Terrain/Surfaces/RusticPlanks</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(198,146,68)</color>
+    <statBases>
+      <WorkToBuild>85</WorkToBuild>
+      <Flammability>0.22</Flammability>
+      <Beauty>1</Beauty>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <designatorDropdown>EW_Designator_CCot_RusticPlankFloor</designatorDropdown>
+    <costList>
+      <WoodLog_Pine>6</WoodLog_Pine>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>CCot_RusticPlankFloor_Poplar</defName>
+    <label>rustic plank floor</label>
+    <renderPrecedence>250</renderPrecedence>
+    <description>Rustic plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
+    <texturePath>Terrain/Surfaces/RusticPlanks</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(184,156,108)</color>
+    <statBases>
+      <WorkToBuild>85</WorkToBuild>
+      <Flammability>0.22</Flammability>
+      <Beauty>1</Beauty>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <costList>
+      <WoodLog_Poplar>6</WoodLog_Poplar>
+    </costList>
+    <designatorDropdown>EW_Designator_CCot_RusticPlankFloor</designatorDropdown>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>CCot_RusticPlankFloor_Teak</defName>
+    <label>rustic plank floor</label>
+    <renderPrecedence>250</renderPrecedence>
+    <description>Rustic plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
+    <texturePath>Terrain/Surfaces/RusticPlanks</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(154,102,59)</color>
+    <statBases>
+      <WorkToBuild>85</WorkToBuild>
+      <Flammability>0.22</Flammability>
+      <Beauty>1</Beauty>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <costList>
+      <WoodLog_Teak>6</WoodLog_Teak>
+    </costList>
+    <designatorDropdown>EW_Designator_CCot_RusticPlankFloor</designatorDropdown>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>CCot_RusticPlankFloor_Willow</defName>
+    <label>rustic plank floor</label>
+    <renderPrecedence>250</renderPrecedence>
+    <description>Rustic plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
+    <texturePath>Terrain/Surfaces/RusticPlanks</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(221, 186, 141)</color>
+    <statBases>
+      <WorkToBuild>85</WorkToBuild>
+      <Flammability>0.22</Flammability>
+      <Beauty>1</Beauty>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <designatorDropdown>EW_Designator_CCot_RusticPlankFloor</designatorDropdown>
+    <costList>
+      <WoodLog_Willow>6</WoodLog_Willow>
+    </costList>
+  </TerrainDef>
+</Defs>

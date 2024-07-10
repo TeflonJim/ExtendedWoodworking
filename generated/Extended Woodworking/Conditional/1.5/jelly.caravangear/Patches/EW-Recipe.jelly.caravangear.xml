@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/RecipeDef[defName="Make_ChemfuelFromWood_CaravanBiofuelRefinery_TWB"]/ingredients/li[filter/thingDefs/li="WoodLog"]</xpath>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/RecipeDef[defName="Make_ChemfuelFromWood_CaravanBiofuelRefinery_TWB"]/ingredients</xpath>
+        <value>
+          <li>
+            <filter>
+              <categories>
+                <li>WoodTypes</li>
+              </categories>
+            </filter>
+            <count>2</count>
+          </li>
+        </value>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/RecipeDef[defName="Make_ChemfuelFromWood_CaravanBiofuelRefinery_TWB"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/RecipeDef[defName="Make_ChemfuelFromWood_CaravanBiofuelRefinery_TWB"]/fixedIngredientFilter/thingDefs/li/*</xpath>
+        <nomatch Class="PatchOperationRemove">
+          <xpath>/Defs/RecipeDef[defName="Make_ChemfuelFromWood_CaravanBiofuelRefinery_TWB"]/fixedIngredientFilter/thingDefs</xpath>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/RecipeDef[defName="Make_ChemfuelFromWood_CaravanBiofuelRefinery_TWB"]/fixedIngredientFilter/categories</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="Make_ChemfuelFromWood_CaravanBiofuelRefinery_TWB"]/fixedIngredientFilter/categories</xpath>
+          <value>
+            <li>WoodTypes</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="Make_ChemfuelFromWood_CaravanBiofuelRefinery_TWB"]/fixedIngredientFilter</xpath>
+          <value>
+            <categories>
+              <li>WoodTypes</li>
+            </categories>
+          </value>
+        </nomatch>
+      </li>
+    </operations>
+  </Operation>
+</Patch>
