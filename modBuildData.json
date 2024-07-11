@@ -181,8 +181,11 @@
             "Colour": "(221, 186, 141)"
         }
     ],
+    "IgnoreMods": [
+        "spdskatr.projectrimfactory"
+    ],
     "ExcludedDefs": [
-        "TorchWallLamp",  // ConstructEffect patching is not working.
-        "WDPlywoodFloor"  // Label / description replacement is an aesthetic mess.
+        "TorchWallLamp", // ConstructEffect declared on an inherited abstract.
+        "WDPlywoodFloor" // Label / description replacement is an aesthetic mess.
     ]
 }

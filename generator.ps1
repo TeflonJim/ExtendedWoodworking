@@ -104,6 +104,14 @@ class ModBuildData {
     [WoodStat[]] $WoodStats
 
     <#
+        Mods which will be ignored when discovering defs requiring explicit targetted patching.
+
+        Does not affect fuel patching so it does not represent an incompatibility, only an inability to meaningfully
+        perform specific patching.
+    #>
+    [string[]] $IgnoreMods
+
+    <#
         Discovered patch definitions.
     #>
     [PatchGeneratorInfo] $DiscoveredDefs = [PatchGeneratorInfo]::new()
@@ -362,6 +370,10 @@ function Clean {
 
 function Discovery {
     foreach ($modInfo in Get-RWMod) {
+        if ($modInfo.PackageID -in $buildInfo.Data.IgnoreMods) {
+            continue
+        }
+
         $verbose = @('{0} ({1}):' -f $modInfo.Name.Trim(), $modInfo.PackageID)
 
         # CostList
