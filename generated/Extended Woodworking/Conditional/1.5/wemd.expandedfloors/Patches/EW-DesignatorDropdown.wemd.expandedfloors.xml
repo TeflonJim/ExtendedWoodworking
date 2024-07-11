@@ -3,21 +3,6 @@
   <Operation Class="PatchOperationSequence">
     <operations>
       <li Class="PatchOperationConditional">
-        <xpath>/Defs/TerrainDef[defName="WDPlywoodFloor"]/designatorDropdown</xpath>
-        <match Class="PatchOperationReplace">
-          <xpath>/Defs/TerrainDef[defName="WDPlywoodFloor"]/designatorDropdown</xpath>
-          <value>
-            <designatorDropdown>EW_Designator_WDPlywoodFloor</designatorDropdown>
-          </value>
-        </match>
-        <nomatch Class="PatchOperationAdd">
-          <xpath>/Defs/TerrainDef[defName="WDPlywoodFloor"]</xpath>
-          <value>
-            <designatorDropdown>EW_Designator_WDPlywoodFloor</designatorDropdown>
-          </value>
-        </nomatch>
-      </li>
-      <li Class="PatchOperationConditional">
         <xpath>/Defs/TerrainDef[defName="WDWidePlanksFloor"]/designatorDropdown</xpath>
         <match Class="PatchOperationReplace">
           <xpath>/Defs/TerrainDef[defName="WDWidePlanksFloor"]/designatorDropdown</xpath>

@@ -1,259 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <TerrainDef ParentName="FloorBase">
-    <defName>WDPlywoodFloor_Birch</defName>
-    <label>plybirch wood floor</label>
-    <renderPrecedence>249</renderPrecedence>
-    <description>Plybirch floor. Looks pretty bad, but cheap and fast to build. Perfect to cover big areas fast, but flammable.</description>
-    <texturePath>Terrain/Surfaces/Wooden/WDPlywoodFloor</texturePath>
-    <color>(235,228,216)</color>
-    <burnedDef>WDBurnedPlywoodFloor</burnedDef>
-    <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
-    <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
-    <isPaintable>true</isPaintable>
-    <statBases>
-      <WorkToBuild>85</WorkToBuild>
-      <Flammability>0.22</Flammability>
-      <Beauty>-1</Beauty>
-    </statBases>
-    <constructEffect>ConstructWood</constructEffect>
-    <uiOrder>1999</uiOrder>
-    <designatorDropdown>EW_Designator_WDPlywoodFloor</designatorDropdown>
-    <costList>
-      <WoodLog_Birch>1</WoodLog_Birch>
-    </costList>
-  </TerrainDef>
-  <TerrainDef ParentName="FloorBase">
-    <defName>WDPlywoodFloor_Cecropia</defName>
-    <label>plycecropia wood floor</label>
-    <renderPrecedence>249</renderPrecedence>
-    <description>Plycecropia floor. Looks pretty bad, but cheap and fast to build. Perfect to cover big areas fast, but flammable.</description>
-    <texturePath>Terrain/Surfaces/Wooden/WDPlywoodFloor</texturePath>
-    <color>(126,74,63)</color>
-    <burnedDef>WDBurnedPlywoodFloor</burnedDef>
-    <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
-    <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
-    <isPaintable>true</isPaintable>
-    <statBases>
-      <WorkToBuild>85</WorkToBuild>
-      <Flammability>0.22</Flammability>
-      <Beauty>-1</Beauty>
-    </statBases>
-    <constructEffect>ConstructWood</constructEffect>
-    <uiOrder>1999</uiOrder>
-    <costList>
-      <WoodLog_Cecropia>1</WoodLog_Cecropia>
-    </costList>
-    <designatorDropdown>EW_Designator_WDPlywoodFloor</designatorDropdown>
-  </TerrainDef>
-  <TerrainDef ParentName="FloorBase">
-    <defName>WDPlywoodFloor_Cypress</defName>
-    <label>plycypress wood floor</label>
-    <renderPrecedence>249</renderPrecedence>
-    <description>Plycypress floor. Looks pretty bad, but cheap and fast to build. Perfect to cover big areas fast, but flammable.</description>
-    <texturePath>Terrain/Surfaces/Wooden/WDPlywoodFloor</texturePath>
-    <color>(239, 217, 184)</color>
-    <burnedDef>WDBurnedPlywoodFloor</burnedDef>
-    <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
-    <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
-    <isPaintable>true</isPaintable>
-    <statBases>
-      <WorkToBuild>85</WorkToBuild>
-      <Flammability>0.22</Flammability>
-      <Beauty>-1</Beauty>
-    </statBases>
-    <constructEffect>ConstructWood</constructEffect>
-    <uiOrder>1999</uiOrder>
-    <designatorDropdown>EW_Designator_WDPlywoodFloor</designatorDropdown>
-    <costList>
-      <WoodLog_Cypress>1</WoodLog_Cypress>
-    </costList>
-  </TerrainDef>
-  <TerrainDef ParentName="FloorBase">
-    <defName>WDPlywoodFloor_Drago</defName>
-    <label>plydrago wood floor</label>
-    <renderPrecedence>249</renderPrecedence>
-    <description>Plydrago floor. Looks pretty bad, but cheap and fast to build. Perfect to cover big areas fast, but flammable.</description>
-    <texturePath>Terrain/Surfaces/Wooden/WDPlywoodFloor</texturePath>
-    <color>(171, 159, 142)</color>
-    <burnedDef>WDBurnedPlywoodFloor</burnedDef>
-    <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
-    <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
-    <isPaintable>true</isPaintable>
-    <statBases>
-      <WorkToBuild>85</WorkToBuild>
-      <Flammability>0.22</Flammability>
-      <Beauty>-1</Beauty>
-    </statBases>
-    <constructEffect>ConstructWood</constructEffect>
-    <uiOrder>1999</uiOrder>
-    <costList>
-      <WoodLog_Drago>1</WoodLog_Drago>
-    </costList>
-    <designatorDropdown>EW_Designator_WDPlywoodFloor</designatorDropdown>
-  </TerrainDef>
-  <TerrainDef ParentName="FloorBase">
-    <defName>WDPlywoodFloor_Maple</defName>
-    <label>plymaple wood floor</label>
-    <renderPrecedence>249</renderPrecedence>
-    <description>Plymaple floor. Looks pretty bad, but cheap and fast to build. Perfect to cover big areas fast, but flammable.</description>
-    <texturePath>Terrain/Surfaces/Wooden/WDPlywoodFloor</texturePath>
-    <color>(236, 201, 163)</color>
-    <burnedDef>WDBurnedPlywoodFloor</burnedDef>
-    <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
-    <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
-    <isPaintable>true</isPaintable>
-    <statBases>
-      <WorkToBuild>85</WorkToBuild>
-      <Flammability>0.22</Flammability>
-      <Beauty>-1</Beauty>
-    </statBases>
-    <constructEffect>ConstructWood</constructEffect>
-    <uiOrder>1999</uiOrder>
-    <designatorDropdown>EW_Designator_WDPlywoodFloor</designatorDropdown>
-    <costList>
-      <WoodLog_Maple>1</WoodLog_Maple>
-    </costList>
-  </TerrainDef>
-  <TerrainDef ParentName="FloorBase">
-    <defName>WDPlywoodFloor_Oak</defName>
-    <label>plyoak wood floor</label>
-    <renderPrecedence>249</renderPrecedence>
-    <description>Plyoak floor. Looks pretty bad, but cheap and fast to build. Perfect to cover big areas fast, but flammable.</description>
-    <texturePath>Terrain/Surfaces/Wooden/WDPlywoodFloor</texturePath>
-    <color>(185,142,96)</color>
-    <burnedDef>WDBurnedPlywoodFloor</burnedDef>
-    <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
-    <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
-    <isPaintable>true</isPaintable>
-    <statBases>
-      <WorkToBuild>85</WorkToBuild>
-      <Flammability>0.22</Flammability>
-      <Beauty>-1</Beauty>
-    </statBases>
-    <constructEffect>ConstructWood</constructEffect>
-    <uiOrder>1999</uiOrder>
-    <designatorDropdown>EW_Designator_WDPlywoodFloor</designatorDropdown>
-    <costList>
-      <WoodLog_Oak>1</WoodLog_Oak>
-    </costList>
-  </TerrainDef>
-  <TerrainDef ParentName="FloorBase">
-    <defName>WDPlywoodFloor_Palm</defName>
-    <label>plypalm wood floor</label>
-    <renderPrecedence>249</renderPrecedence>
-    <description>Plypalm floor. Looks pretty bad, but cheap and fast to build. Perfect to cover big areas fast, but flammable.</description>
-    <texturePath>Terrain/Surfaces/Wooden/WDPlywoodFloor</texturePath>
-    <color>(224, 150, 87)</color>
-    <burnedDef>WDBurnedPlywoodFloor</burnedDef>
-    <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
-    <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
-    <isPaintable>true</isPaintable>
-    <statBases>
-      <WorkToBuild>85</WorkToBuild>
-      <Flammability>0.22</Flammability>
-      <Beauty>-1</Beauty>
-    </statBases>
-    <constructEffect>ConstructWood</constructEffect>
-    <uiOrder>1999</uiOrder>
-    <costList>
-      <WoodLog_Palm>1</WoodLog_Palm>
-    </costList>
-    <designatorDropdown>EW_Designator_WDPlywoodFloor</designatorDropdown>
-  </TerrainDef>
-  <TerrainDef ParentName="FloorBase">
-    <defName>WDPlywoodFloor_Pine</defName>
-    <label>plypine wood floor</label>
-    <renderPrecedence>249</renderPrecedence>
-    <description>Plypine floor. Looks pretty bad, but cheap and fast to build. Perfect to cover big areas fast, but flammable.</description>
-    <texturePath>Terrain/Surfaces/Wooden/WDPlywoodFloor</texturePath>
-    <color>(198,146,68)</color>
-    <burnedDef>WDBurnedPlywoodFloor</burnedDef>
-    <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
-    <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
-    <isPaintable>true</isPaintable>
-    <statBases>
-      <WorkToBuild>85</WorkToBuild>
-      <Flammability>0.22</Flammability>
-      <Beauty>-1</Beauty>
-    </statBases>
-    <constructEffect>ConstructWood</constructEffect>
-    <uiOrder>1999</uiOrder>
-    <designatorDropdown>EW_Designator_WDPlywoodFloor</designatorDropdown>
-    <costList>
-      <WoodLog_Pine>1</WoodLog_Pine>
-    </costList>
-  </TerrainDef>
-  <TerrainDef ParentName="FloorBase">
-    <defName>WDPlywoodFloor_Poplar</defName>
-    <label>plypoplar wood floor</label>
-    <renderPrecedence>249</renderPrecedence>
-    <description>Plypoplar floor. Looks pretty bad, but cheap and fast to build. Perfect to cover big areas fast, but flammable.</description>
-    <texturePath>Terrain/Surfaces/Wooden/WDPlywoodFloor</texturePath>
-    <color>(184,156,108)</color>
-    <burnedDef>WDBurnedPlywoodFloor</burnedDef>
-    <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
-    <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
-    <isPaintable>true</isPaintable>
-    <statBases>
-      <WorkToBuild>85</WorkToBuild>
-      <Flammability>0.22</Flammability>
-      <Beauty>-1</Beauty>
-    </statBases>
-    <constructEffect>ConstructWood</constructEffect>
-    <uiOrder>1999</uiOrder>
-    <designatorDropdown>EW_Designator_WDPlywoodFloor</designatorDropdown>
-    <costList>
-      <WoodLog_Poplar>1</WoodLog_Poplar>
-    </costList>
-  </TerrainDef>
-  <TerrainDef ParentName="FloorBase">
-    <defName>WDPlywoodFloor_Teak</defName>
-    <label>plyteak wood floor</label>
-    <renderPrecedence>249</renderPrecedence>
-    <description>Plyteak floor. Looks pretty bad, but cheap and fast to build. Perfect to cover big areas fast, but flammable.</description>
-    <texturePath>Terrain/Surfaces/Wooden/WDPlywoodFloor</texturePath>
-    <color>(154,102,59)</color>
-    <burnedDef>WDBurnedPlywoodFloor</burnedDef>
-    <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
-    <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
-    <isPaintable>true</isPaintable>
-    <statBases>
-      <WorkToBuild>85</WorkToBuild>
-      <Flammability>0.22</Flammability>
-      <Beauty>-1</Beauty>
-    </statBases>
-    <constructEffect>ConstructWood</constructEffect>
-    <uiOrder>1999</uiOrder>
-    <designatorDropdown>EW_Designator_WDPlywoodFloor</designatorDropdown>
-    <costList>
-      <WoodLog_Teak>1</WoodLog_Teak>
-    </costList>
-  </TerrainDef>
-  <TerrainDef ParentName="FloorBase">
-    <defName>WDPlywoodFloor_Willow</defName>
-    <label>plywillow wood floor</label>
-    <renderPrecedence>249</renderPrecedence>
-    <description>Plywillow floor. Looks pretty bad, but cheap and fast to build. Perfect to cover big areas fast, but flammable.</description>
-    <texturePath>Terrain/Surfaces/Wooden/WDPlywoodFloor</texturePath>
-    <color>(221, 186, 141)</color>
-    <burnedDef>WDBurnedPlywoodFloor</burnedDef>
-    <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
-    <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
-    <isPaintable>true</isPaintable>
-    <statBases>
-      <WorkToBuild>85</WorkToBuild>
-      <Flammability>0.22</Flammability>
-      <Beauty>-1</Beauty>
-    </statBases>
-    <constructEffect>ConstructWood</constructEffect>
-    <uiOrder>1999</uiOrder>
-    <costList>
-      <WoodLog_Willow>1</WoodLog_Willow>
-    </costList>
-    <designatorDropdown>EW_Designator_WDPlywoodFloor</designatorDropdown>
-  </TerrainDef>
-  <TerrainDef ParentName="FloorBase">
     <defName>WDWidePlanksFloor_Birch</defName>
     <label>birch wood plank floor</label>
     <renderPrecedence>248</renderPrecedence>
@@ -805,7 +552,7 @@
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>WDParquet_Birch</defName>
-    <label>parquet</label>
+    <label>birch parquet</label>
     <renderPrecedence>246</renderPrecedence>
     <description>Floor made of fine smooth birch planks. Makes any room better, but expensive and hard to build.</description>
     <texturePath>Terrain/Surfaces/Wooden/WDParquet</texturePath>
@@ -832,7 +579,7 @@
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>WDParquet_Cecropia</defName>
-    <label>parquet</label>
+    <label>cecropia parquet</label>
     <renderPrecedence>246</renderPrecedence>
     <description>Floor made of fine smooth cecropia planks. Makes any room better, but expensive and hard to build.</description>
     <texturePath>Terrain/Surfaces/Wooden/WDParquet</texturePath>
@@ -859,7 +606,7 @@
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>WDParquet_Cypress</defName>
-    <label>parquet</label>
+    <label>cypress parquet</label>
     <renderPrecedence>246</renderPrecedence>
     <description>Floor made of fine smooth cypress planks. Makes any room better, but expensive and hard to build.</description>
     <texturePath>Terrain/Surfaces/Wooden/WDParquet</texturePath>
@@ -886,7 +633,7 @@
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>WDParquet_Drago</defName>
-    <label>parquet</label>
+    <label>drago parquet</label>
     <renderPrecedence>246</renderPrecedence>
     <description>Floor made of fine smooth drago planks. Makes any room better, but expensive and hard to build.</description>
     <texturePath>Terrain/Surfaces/Wooden/WDParquet</texturePath>
@@ -913,7 +660,7 @@
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>WDParquet_Maple</defName>
-    <label>parquet</label>
+    <label>maple parquet</label>
     <renderPrecedence>246</renderPrecedence>
     <description>Floor made of fine smooth maple planks. Makes any room better, but expensive and hard to build.</description>
     <texturePath>Terrain/Surfaces/Wooden/WDParquet</texturePath>
@@ -940,7 +687,7 @@
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>WDParquet_Oak</defName>
-    <label>parquet</label>
+    <label>oak parquet</label>
     <renderPrecedence>246</renderPrecedence>
     <description>Floor made of fine smooth oak planks. Makes any room better, but expensive and hard to build.</description>
     <texturePath>Terrain/Surfaces/Wooden/WDParquet</texturePath>
@@ -967,7 +714,7 @@
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>WDParquet_Palm</defName>
-    <label>parquet</label>
+    <label>palm parquet</label>
     <renderPrecedence>246</renderPrecedence>
     <description>Floor made of fine smooth palm planks. Makes any room better, but expensive and hard to build.</description>
     <texturePath>Terrain/Surfaces/Wooden/WDParquet</texturePath>
@@ -994,7 +741,7 @@
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>WDParquet_Pine</defName>
-    <label>parquet</label>
+    <label>pine parquet</label>
     <renderPrecedence>246</renderPrecedence>
     <description>Floor made of fine smooth pine planks. Makes any room better, but expensive and hard to build.</description>
     <texturePath>Terrain/Surfaces/Wooden/WDParquet</texturePath>
@@ -1021,7 +768,7 @@
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>WDParquet_Poplar</defName>
-    <label>parquet</label>
+    <label>poplar parquet</label>
     <renderPrecedence>246</renderPrecedence>
     <description>Floor made of fine smooth poplar planks. Makes any room better, but expensive and hard to build.</description>
     <texturePath>Terrain/Surfaces/Wooden/WDParquet</texturePath>
@@ -1048,7 +795,7 @@
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>WDParquet_Teak</defName>
-    <label>parquet</label>
+    <label>teak parquet</label>
     <renderPrecedence>246</renderPrecedence>
     <description>Floor made of fine smooth teak planks. Makes any room better, but expensive and hard to build.</description>
     <texturePath>Terrain/Surfaces/Wooden/WDParquet</texturePath>
@@ -1075,7 +822,7 @@
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>WDParquet_Willow</defName>
-    <label>parquet</label>
+    <label>willow parquet</label>
     <renderPrecedence>246</renderPrecedence>
     <description>Floor made of fine smooth willow planks. Makes any room better, but expensive and hard to build.</description>
     <texturePath>Terrain/Surfaces/Wooden/WDParquet</texturePath>

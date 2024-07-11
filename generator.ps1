@@ -1,4 +1,4 @@
-#Requires -Module Indented.RimWorld
+#Requires -Module Indented.RimWorld -PSEdition Core
 
 using namespace System.Collections.Generic
 using namespace System.Diagnostics
@@ -379,7 +379,7 @@ function Discovery {
         # Recipe
         $discoveredDefs = $modInfo | Get-RWModDef -Version $buildInfo.RimWorldVersion.ShortVersion -XPathQuery (
             '/Defs/RecipeDef[(@Abstract="False" or not(@Abstract)) and (ingredients/li/filter/thingDefs/li="WoodLog" or fixedIngredientFilter/thingDefs/li="WoodLog")]'
-        )
+        ) | Where-Object DefName -notmatch $buildInfo.Data.ExcludedDefsPattern
 
         if ($discoveredDefs) {
             $verbose += '    Recipe: Patching {0} defs' -f $discoveredDefs.Count
@@ -391,7 +391,7 @@ function Discovery {
         # HarvestedThing
         $discoveredDefs = $modInfo | Get-RWModDef -Version $buildInfo.RimWorldVersion.ShortVersion -XPathQuery (
             '/Defs/ThingDef[(@Abstract="False" or not(@Abstract)) and contains(@ParentName, "TreeBase") and not(plant/harvestedThingDef)]'
-        ) | ForEach-Object {
+        )  | Where-Object DefName -notmatch $buildInfo.Data.ExcludedDefsPattern | ForEach-Object {
             [PSCustomObject]@{
                 DefName  = $_.DefName
                 WoodType = [WoodStat]::GetWoodType($_.DefName, $modInfo.PackageID)
@@ -408,7 +408,7 @@ function Discovery {
         # Wood floor
         $discoveredDefs = $modInfo | Get-RWModDef -Version $buildInfo.RimWorldVersion.ShortVersion -XPathQuery (
             '/Defs/TerrainDef[costList/WoodLog and description and not(designatorDropdown)]'
-        )
+        ) | Where-Object DefName -notmatch $buildInfo.Data.ExcludedDefsPattern
         if ($discoveredDefs) {
             $verbose += '    Terrain: Patching {0} defs' -f $discoveredDefs.Count
 
@@ -836,29 +836,7 @@ function CreateTerrainDef {
             $buildInfo.Data.AddLoadFoldersEntry($packageID, $packageID)
         }
 
-        # Find all relevant abstracts
-
-        $defs = $buildInfo.Data.DiscoveredDefs.Terrain[$packageID]
-        # $unique = [HashSet[string]]::new()
-        # foreach ($def in $defs) {
-        #     $parentName = $def.XElement.Attribute('ParentName').Value
-        #     if (-not $parentName -or -not $unique.Add($parentName)) {
-        #         continue
-        #     }
-
-        #     try {
-        #         $params = @{
-        #             Name        = '{0}\{1}' -f $modName, $parentName
-        #             DefType     = 'TerrainDef'
-        #             ErrorAction = 'Stop'
-        #         }
-        #         Copy-RWModDef @commonParams @params
-        #     } catch {
-        #         # Ignore
-        #     }
-        # }
-
-        foreach ($def in $defs) {
+        foreach ($def in $buildInfo.Data.DiscoveredDefs.Terrain[$packageID]) {
             $designatorName = 'EW_Designator_{0}' -f $def.DefName
 
             foreach ($wood in $buildInfo.Data.WoodStats) {
@@ -867,7 +845,7 @@ function CreateTerrainDef {
                 }
 
                 $label = $def.XElement.Element('label').Value -replace 'wood(en)?', ('{0} wood' -f $wood.Name.ToLower())
-                if ($label -notmatch $woodType) {
+                if ($label -notmatch $wood.Name) {
                     $label = '{0} {1}' -f $wood.Name.ToLower(), $label
                 }
 

@@ -182,6 +182,7 @@
         }
     ],
     "ExcludedDefs": [
-        "TorchWallLamp"
+        "TorchWallLamp",  // ConstructEffect patching is not working.
+        "WDPlywoodFloor"  // Label / description replacement is an aesthetic mess.
     ]
 }

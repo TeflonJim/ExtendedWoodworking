@@ -2,7 +2,7 @@
 <Defs>
   <TerrainDef ParentName="FloorBase">
     <defName>Boards_Totemic_Birch</defName>
-    <label>totemic boards</label>
+    <label>birch totemic boards</label>
     <description>Fine birch boards decorated in a totemic style.</description>
     <texturePath>Terrain/Surfaces/TotemicBoards</texturePath>
     <renderPrecedence>250</renderPrecedence>
@@ -27,7 +27,7 @@
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>Boards_Totemic_Cecropia</defName>
-    <label>totemic boards</label>
+    <label>cecropia totemic boards</label>
     <description>Fine cecropia boards decorated in a totemic style.</description>
     <texturePath>Terrain/Surfaces/TotemicBoards</texturePath>
     <renderPrecedence>250</renderPrecedence>
@@ -52,7 +52,7 @@
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>Boards_Totemic_Cypress</defName>
-    <label>totemic boards</label>
+    <label>cypress totemic boards</label>
     <description>Fine cypress boards decorated in a totemic style.</description>
     <texturePath>Terrain/Surfaces/TotemicBoards</texturePath>
     <renderPrecedence>250</renderPrecedence>
@@ -77,7 +77,7 @@
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>Boards_Totemic_Drago</defName>
-    <label>totemic boards</label>
+    <label>drago totemic boards</label>
     <description>Fine drago boards decorated in a totemic style.</description>
     <texturePath>Terrain/Surfaces/TotemicBoards</texturePath>
     <renderPrecedence>250</renderPrecedence>
@@ -102,7 +102,7 @@
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>Boards_Totemic_Maple</defName>
-    <label>totemic boards</label>
+    <label>maple totemic boards</label>
     <description>Fine maple boards decorated in a totemic style.</description>
     <texturePath>Terrain/Surfaces/TotemicBoards</texturePath>
     <renderPrecedence>250</renderPrecedence>
@@ -127,7 +127,7 @@
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>Boards_Totemic_Oak</defName>
-    <label>totemic boards</label>
+    <label>oak totemic boards</label>
     <description>Fine oak boards decorated in a totemic style.</description>
     <texturePath>Terrain/Surfaces/TotemicBoards</texturePath>
     <renderPrecedence>250</renderPrecedence>
@@ -152,7 +152,7 @@
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>Boards_Totemic_Palm</defName>
-    <label>totemic boards</label>
+    <label>palm totemic boards</label>
     <description>Fine palm boards decorated in a totemic style.</description>
     <texturePath>Terrain/Surfaces/TotemicBoards</texturePath>
     <renderPrecedence>250</renderPrecedence>
@@ -177,7 +177,7 @@
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>Boards_Totemic_Pine</defName>
-    <label>totemic boards</label>
+    <label>pine totemic boards</label>
     <description>Fine pine boards decorated in a totemic style.</description>
     <texturePath>Terrain/Surfaces/TotemicBoards</texturePath>
     <renderPrecedence>250</renderPrecedence>
@@ -202,7 +202,7 @@
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>Boards_Totemic_Poplar</defName>
-    <label>totemic boards</label>
+    <label>poplar totemic boards</label>
     <description>Fine poplar boards decorated in a totemic style.</description>
     <texturePath>Terrain/Surfaces/TotemicBoards</texturePath>
     <renderPrecedence>250</renderPrecedence>
@@ -227,7 +227,7 @@
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>Boards_Totemic_Teak</defName>
-    <label>totemic boards</label>
+    <label>teak totemic boards</label>
     <description>Fine teak boards decorated in a totemic style.</description>
     <texturePath>Terrain/Surfaces/TotemicBoards</texturePath>
     <renderPrecedence>250</renderPrecedence>
@@ -252,7 +252,7 @@
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>Boards_Totemic_Willow</defName>
-    <label>totemic boards</label>
+    <label>willow totemic boards</label>
     <description>Fine willow boards decorated in a totemic style.</description>
     <texturePath>Terrain/Surfaces/TotemicBoards</texturePath>
     <renderPrecedence>250</renderPrecedence>

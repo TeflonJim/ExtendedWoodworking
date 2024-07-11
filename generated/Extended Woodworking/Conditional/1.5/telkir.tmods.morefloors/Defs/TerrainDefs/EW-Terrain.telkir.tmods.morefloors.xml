@@ -860,7 +860,7 @@
   </TerrainDef>
   <TerrainDef ParentName="TFloorBaseWood">
     <defName>FloorWoodBarn_Birch</defName>
-    <label>barn board floor</label>
+    <label>birch barn board floor</label>
     <statBases>
       <WorkToBuild>50</WorkToBuild>
     </statBases>
@@ -876,7 +876,7 @@
   </TerrainDef>
   <TerrainDef ParentName="TFloorBaseWood">
     <defName>FloorWoodBarn_Cecropia</defName>
-    <label>barn board floor</label>
+    <label>cecropia barn board floor</label>
     <statBases>
       <WorkToBuild>50</WorkToBuild>
     </statBases>
@@ -892,7 +892,7 @@
   </TerrainDef>
   <TerrainDef ParentName="TFloorBaseWood">
     <defName>FloorWoodBarn_Cypress</defName>
-    <label>barn board floor</label>
+    <label>cypress barn board floor</label>
     <statBases>
       <WorkToBuild>50</WorkToBuild>
     </statBases>
@@ -908,7 +908,7 @@
   </TerrainDef>
   <TerrainDef ParentName="TFloorBaseWood">
     <defName>FloorWoodBarn_Drago</defName>
-    <label>barn board floor</label>
+    <label>drago barn board floor</label>
     <statBases>
       <WorkToBuild>50</WorkToBuild>
     </statBases>
@@ -924,7 +924,7 @@
   </TerrainDef>
   <TerrainDef ParentName="TFloorBaseWood">
     <defName>FloorWoodBarn_Maple</defName>
-    <label>barn board floor</label>
+    <label>maple barn board floor</label>
     <statBases>
       <WorkToBuild>50</WorkToBuild>
     </statBases>
@@ -940,7 +940,7 @@
   </TerrainDef>
   <TerrainDef ParentName="TFloorBaseWood">
     <defName>FloorWoodBarn_Oak</defName>
-    <label>barn board floor</label>
+    <label>oak barn board floor</label>
     <statBases>
       <WorkToBuild>50</WorkToBuild>
     </statBases>
@@ -956,7 +956,7 @@
   </TerrainDef>
   <TerrainDef ParentName="TFloorBaseWood">
     <defName>FloorWoodBarn_Palm</defName>
-    <label>barn board floor</label>
+    <label>palm barn board floor</label>
     <statBases>
       <WorkToBuild>50</WorkToBuild>
     </statBases>
@@ -972,7 +972,7 @@
   </TerrainDef>
   <TerrainDef ParentName="TFloorBaseWood">
     <defName>FloorWoodBarn_Pine</defName>
-    <label>barn board floor</label>
+    <label>pine barn board floor</label>
     <statBases>
       <WorkToBuild>50</WorkToBuild>
     </statBases>
@@ -988,7 +988,7 @@
   </TerrainDef>
   <TerrainDef ParentName="TFloorBaseWood">
     <defName>FloorWoodBarn_Poplar</defName>
-    <label>barn board floor</label>
+    <label>poplar barn board floor</label>
     <statBases>
       <WorkToBuild>50</WorkToBuild>
     </statBases>
@@ -1004,7 +1004,7 @@
   </TerrainDef>
   <TerrainDef ParentName="TFloorBaseWood">
     <defName>FloorWoodBarn_Teak</defName>
-    <label>barn board floor</label>
+    <label>teak barn board floor</label>
     <statBases>
       <WorkToBuild>50</WorkToBuild>
     </statBases>
@@ -1020,7 +1020,7 @@
   </TerrainDef>
   <TerrainDef ParentName="TFloorBaseWood">
     <defName>FloorWoodBarn_Willow</defName>
-    <label>barn board floor</label>
+    <label>willow barn board floor</label>
     <statBases>
       <WorkToBuild>50</WorkToBuild>
     </statBases>

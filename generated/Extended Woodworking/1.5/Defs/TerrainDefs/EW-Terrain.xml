@@ -255,7 +255,7 @@
   </TerrainDef>
   <TerrainDef>
     <defName>Bridge_Birch</defName>
-    <label>bridge</label>
+    <label>birch bridge</label>
     <description>A flat birch surface on supportive beams which can be built over water. You can build light structures on bridges, but be careful - bridges are fragile. If a bridge falls, buildings on top of it fall as well.</description>
     <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
     <color>(235,228,216)</color>
@@ -291,7 +291,7 @@
   </TerrainDef>
   <TerrainDef>
     <defName>Bridge_Cecropia</defName>
-    <label>bridge</label>
+    <label>cecropia bridge</label>
     <description>A flat cecropia surface on supportive beams which can be built over water. You can build light structures on bridges, but be careful - bridges are fragile. If a bridge falls, buildings on top of it fall as well.</description>
     <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
     <color>(126,74,63)</color>
@@ -327,7 +327,7 @@
   </TerrainDef>
   <TerrainDef>
     <defName>Bridge_Cypress</defName>
-    <label>bridge</label>
+    <label>cypress bridge</label>
     <description>A flat cypress surface on supportive beams which can be built over water. You can build light structures on bridges, but be careful - bridges are fragile. If a bridge falls, buildings on top of it fall as well.</description>
     <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
     <color>(239, 217, 184)</color>
@@ -363,7 +363,7 @@
   </TerrainDef>
   <TerrainDef>
     <defName>Bridge_Drago</defName>
-    <label>bridge</label>
+    <label>drago bridge</label>
     <description>A flat drago surface on supportive beams which can be built over water. You can build light structures on bridges, but be careful - bridges are fragile. If a bridge falls, buildings on top of it fall as well.</description>
     <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
     <color>(171, 159, 142)</color>
@@ -399,7 +399,7 @@
   </TerrainDef>
   <TerrainDef>
     <defName>Bridge_Maple</defName>
-    <label>bridge</label>
+    <label>maple bridge</label>
     <description>A flat maple surface on supportive beams which can be built over water. You can build light structures on bridges, but be careful - bridges are fragile. If a bridge falls, buildings on top of it fall as well.</description>
     <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
     <color>(236, 201, 163)</color>
@@ -435,7 +435,7 @@
   </TerrainDef>
   <TerrainDef>
     <defName>Bridge_Oak</defName>
-    <label>bridge</label>
+    <label>oak bridge</label>
     <description>A flat oak surface on supportive beams which can be built over water. You can build light structures on bridges, but be careful - bridges are fragile. If a bridge falls, buildings on top of it fall as well.</description>
     <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
     <color>(185,142,96)</color>
@@ -471,7 +471,7 @@
   </TerrainDef>
   <TerrainDef>
     <defName>Bridge_Palm</defName>
-    <label>bridge</label>
+    <label>palm bridge</label>
     <description>A flat palm surface on supportive beams which can be built over water. You can build light structures on bridges, but be careful - bridges are fragile. If a bridge falls, buildings on top of it fall as well.</description>
     <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
     <color>(224, 150, 87)</color>
@@ -507,7 +507,7 @@
   </TerrainDef>
   <TerrainDef>
     <defName>Bridge_Pine</defName>
-    <label>bridge</label>
+    <label>pine bridge</label>
     <description>A flat pine surface on supportive beams which can be built over water. You can build light structures on bridges, but be careful - bridges are fragile. If a bridge falls, buildings on top of it fall as well.</description>
     <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
     <color>(198,146,68)</color>
@@ -543,7 +543,7 @@
   </TerrainDef>
   <TerrainDef>
     <defName>Bridge_Poplar</defName>
-    <label>bridge</label>
+    <label>poplar bridge</label>
     <description>A flat poplar surface on supportive beams which can be built over water. You can build light structures on bridges, but be careful - bridges are fragile. If a bridge falls, buildings on top of it fall as well.</description>
     <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
     <color>(184,156,108)</color>
@@ -579,7 +579,7 @@
   </TerrainDef>
   <TerrainDef>
     <defName>Bridge_Teak</defName>
-    <label>bridge</label>
+    <label>teak bridge</label>
     <description>A flat teak surface on supportive beams which can be built over water. You can build light structures on bridges, but be careful - bridges are fragile. If a bridge falls, buildings on top of it fall as well.</description>
     <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
     <color>(154,102,59)</color>
@@ -615,7 +615,7 @@
   </TerrainDef>
   <TerrainDef>
     <defName>Bridge_Willow</defName>
-    <label>bridge</label>
+    <label>willow bridge</label>
     <description>A flat willow surface on supportive beams which can be built over water. You can build light structures on bridges, but be careful - bridges are fragile. If a bridge falls, buildings on top of it fall as well.</description>
     <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
     <color>(221, 186, 141)</color>

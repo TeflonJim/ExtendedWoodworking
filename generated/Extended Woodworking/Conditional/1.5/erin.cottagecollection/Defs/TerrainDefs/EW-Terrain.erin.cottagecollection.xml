@@ -2,7 +2,7 @@
 <Defs>
   <TerrainDef ParentName="FloorBase">
     <defName>CCot_RusticPlankFloor_Birch</defName>
-    <label>rustic plank floor</label>
+    <label>birch rustic plank floor</label>
     <renderPrecedence>250</renderPrecedence>
     <description>Rustic plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
     <texturePath>Terrain/Surfaces/RusticPlanks</texturePath>
@@ -21,7 +21,7 @@
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>CCot_RusticPlankFloor_Cecropia</defName>
-    <label>rustic plank floor</label>
+    <label>cecropia rustic plank floor</label>
     <renderPrecedence>250</renderPrecedence>
     <description>Rustic plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
     <texturePath>Terrain/Surfaces/RusticPlanks</texturePath>
@@ -40,7 +40,7 @@
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>CCot_RusticPlankFloor_Cypress</defName>
-    <label>rustic plank floor</label>
+    <label>cypress rustic plank floor</label>
     <renderPrecedence>250</renderPrecedence>
     <description>Rustic plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
     <texturePath>Terrain/Surfaces/RusticPlanks</texturePath>
@@ -59,7 +59,7 @@
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>CCot_RusticPlankFloor_Drago</defName>
-    <label>rustic plank floor</label>
+    <label>drago rustic plank floor</label>
     <renderPrecedence>250</renderPrecedence>
     <description>Rustic plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
     <texturePath>Terrain/Surfaces/RusticPlanks</texturePath>
@@ -78,7 +78,7 @@
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>CCot_RusticPlankFloor_Maple</defName>
-    <label>rustic plank floor</label>
+    <label>maple rustic plank floor</label>
     <renderPrecedence>250</renderPrecedence>
     <description>Rustic plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
     <texturePath>Terrain/Surfaces/RusticPlanks</texturePath>
@@ -97,7 +97,7 @@
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>CCot_RusticPlankFloor_Oak</defName>
-    <label>rustic plank floor</label>
+    <label>oak rustic plank floor</label>
     <renderPrecedence>250</renderPrecedence>
     <description>Rustic plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
     <texturePath>Terrain/Surfaces/RusticPlanks</texturePath>
@@ -116,7 +116,7 @@
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>CCot_RusticPlankFloor_Palm</defName>
-    <label>rustic plank floor</label>
+    <label>palm rustic plank floor</label>
     <renderPrecedence>250</renderPrecedence>
     <description>Rustic plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
     <texturePath>Terrain/Surfaces/RusticPlanks</texturePath>
@@ -135,7 +135,7 @@
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>CCot_RusticPlankFloor_Pine</defName>
-    <label>rustic plank floor</label>
+    <label>pine rustic plank floor</label>
     <renderPrecedence>250</renderPrecedence>
     <description>Rustic plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
     <texturePath>Terrain/Surfaces/RusticPlanks</texturePath>
@@ -154,7 +154,7 @@
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>CCot_RusticPlankFloor_Poplar</defName>
-    <label>rustic plank floor</label>
+    <label>poplar rustic plank floor</label>
     <renderPrecedence>250</renderPrecedence>
     <description>Rustic plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
     <texturePath>Terrain/Surfaces/RusticPlanks</texturePath>
@@ -173,7 +173,7 @@
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>CCot_RusticPlankFloor_Teak</defName>
-    <label>rustic plank floor</label>
+    <label>teak rustic plank floor</label>
     <renderPrecedence>250</renderPrecedence>
     <description>Rustic plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
     <texturePath>Terrain/Surfaces/RusticPlanks</texturePath>
@@ -192,7 +192,7 @@
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>CCot_RusticPlankFloor_Willow</defName>
-    <label>rustic plank floor</label>
+    <label>willow rustic plank floor</label>
     <renderPrecedence>250</renderPrecedence>
     <description>Rustic plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
     <texturePath>Terrain/Surfaces/RusticPlanks</texturePath>

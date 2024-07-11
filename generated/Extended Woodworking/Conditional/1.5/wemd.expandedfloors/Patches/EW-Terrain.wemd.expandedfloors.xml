@@ -11,34 +11,6 @@
               <xpath>/Defs</xpath>
               <value>
                 <TerrainDef ParentName="FloorBase">
-                  <defName>WDPlywoodFloor_Acacia</defName>
-                  <label>plyacacia wood floor</label>
-                  <renderPrecedence>249</renderPrecedence>
-                  <description>Plyacacia floor. Looks pretty bad, but cheap and fast to build. Perfect to cover big areas fast, but flammable.</description>
-                  <texturePath>Terrain/Surfaces/Wooden/WDPlywoodFloor</texturePath>
-                  <color>(219, 184, 144)</color>
-                  <burnedDef>WDBurnedPlywoodFloor</burnedDef>
-                  <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
-                  <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
-                  <isPaintable>true</isPaintable>
-                  <statBases>
-                    <WorkToBuild>85</WorkToBuild>
-                    <Flammability>0.22</Flammability>
-                    <Beauty>-1</Beauty>
-                  </statBases>
-                  <constructEffect>ConstructWood</constructEffect>
-                  <uiOrder>1999</uiOrder>
-                  <designatorDropdown>EW_Designator_WDPlywoodFloor</designatorDropdown>
-                  <costList>
-                    <WoodLog_Acacia>1</WoodLog_Acacia>
-                  </costList>
-                </TerrainDef>
-              </value>
-            </li>
-            <li Class="PatchOperationAdd">
-              <xpath>/Defs</xpath>
-              <value>
-                <TerrainDef ParentName="FloorBase">
                   <defName>WDWidePlanksFloor_Acacia</defName>
                   <label>acacia wood plank floor</label>
                   <renderPrecedence>248</renderPrecedence>
@@ -167,34 +139,6 @@
         <xpath>/Defs/ThingDef[defName="WoodLog_Aspen"]</xpath>
         <match Class="PatchOperationSequence">
           <operations>
-            <li Class="PatchOperationAdd">
-              <xpath>/Defs</xpath>
-              <value>
-                <TerrainDef ParentName="FloorBase">
-                  <defName>WDPlywoodFloor_Aspen</defName>
-                  <label>plyaspen wood floor</label>
-                  <renderPrecedence>249</renderPrecedence>
-                  <description>Plyacacia floor. Looks pretty bad, but cheap and fast to build. Perfect to cover big areas fast, but flammable.</description>
-                  <texturePath>Terrain/Surfaces/Wooden/WDPlywoodFloor</texturePath>
-                  <color>(228, 204, 171)</color>
-                  <burnedDef>WDBurnedPlywoodFloor</burnedDef>
-                  <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
-                  <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
-                  <isPaintable>true</isPaintable>
-                  <statBases>
-                    <WorkToBuild>85</WorkToBuild>
-                    <Flammability>0.22</Flammability>
-                    <Beauty>-1</Beauty>
-                  </statBases>
-                  <constructEffect>ConstructWood</constructEffect>
-                  <uiOrder>1999</uiOrder>
-                  <designatorDropdown>EW_Designator_WDPlywoodFloor</designatorDropdown>
-                  <costList>
-                    <WoodLog_Aspen>1</WoodLog_Aspen>
-                  </costList>
-                </TerrainDef>
-              </value>
-            </li>
             <li Class="PatchOperationAdd">
               <xpath>/Defs</xpath>
               <value>
@@ -331,34 +275,6 @@
               <xpath>/Defs</xpath>
               <value>
                 <TerrainDef ParentName="FloorBase">
-                  <defName>WDPlywoodFloor_Camellia</defName>
-                  <label>plycamellia wood floor</label>
-                  <renderPrecedence>249</renderPrecedence>
-                  <description>Plycamellia floor. Looks pretty bad, but cheap and fast to build. Perfect to cover big areas fast, but flammable.</description>
-                  <texturePath>Terrain/Surfaces/Wooden/WDPlywoodFloor</texturePath>
-                  <color>(201, 160, 130)</color>
-                  <burnedDef>WDBurnedPlywoodFloor</burnedDef>
-                  <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
-                  <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
-                  <isPaintable>true</isPaintable>
-                  <statBases>
-                    <WorkToBuild>85</WorkToBuild>
-                    <Flammability>0.22</Flammability>
-                    <Beauty>-1</Beauty>
-                  </statBases>
-                  <constructEffect>ConstructWood</constructEffect>
-                  <uiOrder>1999</uiOrder>
-                  <costList>
-                    <WoodLog_Camellia>1</WoodLog_Camellia>
-                  </costList>
-                  <designatorDropdown>EW_Designator_WDPlywoodFloor</designatorDropdown>
-                </TerrainDef>
-              </value>
-            </li>
-            <li Class="PatchOperationAdd">
-              <xpath>/Defs</xpath>
-              <value>
-                <TerrainDef ParentName="FloorBase">
                   <defName>WDWidePlanksFloor_Camellia</defName>
                   <label>camellia wood plank floor</label>
                   <renderPrecedence>248</renderPrecedence>
@@ -487,34 +403,6 @@
         <xpath>/Defs/ThingDef[defName="WoodLog_CherryBlossom"]</xpath>
         <match Class="PatchOperationSequence">
           <operations>
-            <li Class="PatchOperationAdd">
-              <xpath>/Defs</xpath>
-              <value>
-                <TerrainDef ParentName="FloorBase">
-                  <defName>WDPlywoodFloor_CherryBlossom</defName>
-                  <label>plycherryblossom wood floor</label>
-                  <renderPrecedence>249</renderPrecedence>
-                  <description>Plycherry blossom floor. Looks pretty bad, but cheap and fast to build. Perfect to cover big areas fast, but flammable.</description>
-                  <texturePath>Terrain/Surfaces/Wooden/WDPlywoodFloor</texturePath>
-                  <color>(165, 82, 40)</color>
-                  <burnedDef>WDBurnedPlywoodFloor</burnedDef>
-                  <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
-                  <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
-                  <isPaintable>true</isPaintable>
-                  <statBases>
-                    <WorkToBuild>85</WorkToBuild>
-                    <Flammability>0.22</Flammability>
-                    <Beauty>-1</Beauty>
-                  </statBases>
-                  <constructEffect>ConstructWood</constructEffect>
-                  <uiOrder>1999</uiOrder>
-                  <designatorDropdown>EW_Designator_WDPlywoodFloor</designatorDropdown>
-                  <costList>
-                    <WoodLog_CherryBlossom>1</WoodLog_CherryBlossom>
-                  </costList>
-                </TerrainDef>
-              </value>
-            </li>
             <li Class="PatchOperationAdd">
               <xpath>/Defs</xpath>
               <value>
@@ -651,34 +539,6 @@
               <xpath>/Defs</xpath>
               <value>
                 <TerrainDef ParentName="FloorBase">
-                  <defName>WDPlywoodFloor_JapaneseMaple</defName>
-                  <label>plyjapanesemaple wood floor</label>
-                  <renderPrecedence>249</renderPrecedence>
-                  <description>Plyjapanese maple floor. Looks pretty bad, but cheap and fast to build. Perfect to cover big areas fast, but flammable.</description>
-                  <texturePath>Terrain/Surfaces/Wooden/WDPlywoodFloor</texturePath>
-                  <color>(252, 170, 124)</color>
-                  <burnedDef>WDBurnedPlywoodFloor</burnedDef>
-                  <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
-                  <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
-                  <isPaintable>true</isPaintable>
-                  <statBases>
-                    <WorkToBuild>85</WorkToBuild>
-                    <Flammability>0.22</Flammability>
-                    <Beauty>-1</Beauty>
-                  </statBases>
-                  <constructEffect>ConstructWood</constructEffect>
-                  <uiOrder>1999</uiOrder>
-                  <designatorDropdown>EW_Designator_WDPlywoodFloor</designatorDropdown>
-                  <costList>
-                    <WoodLog_JapaneseMaple>1</WoodLog_JapaneseMaple>
-                  </costList>
-                </TerrainDef>
-              </value>
-            </li>
-            <li Class="PatchOperationAdd">
-              <xpath>/Defs</xpath>
-              <value>
-                <TerrainDef ParentName="FloorBase">
                   <defName>WDWidePlanksFloor_JapaneseMaple</defName>
                   <label>japanesemaple wood plank floor</label>
                   <renderPrecedence>248</renderPrecedence>
@@ -807,34 +667,6 @@
         <xpath>/Defs/ThingDef[defName="WoodLog_RedMaple"]</xpath>
         <match Class="PatchOperationSequence">
           <operations>
-            <li Class="PatchOperationAdd">
-              <xpath>/Defs</xpath>
-              <value>
-                <TerrainDef ParentName="FloorBase">
-                  <defName>WDPlywoodFloor_RedMaple</defName>
-                  <label>plyredmaple wood floor</label>
-                  <renderPrecedence>249</renderPrecedence>
-                  <description>Plyred maple floor. Looks pretty bad, but cheap and fast to build. Perfect to cover big areas fast, but flammable.</description>
-                  <texturePath>Terrain/Surfaces/Wooden/WDPlywoodFloor</texturePath>
-                  <color>(222, 197, 167)</color>
-                  <burnedDef>WDBurnedPlywoodFloor</burnedDef>
-                  <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
-                  <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
-                  <isPaintable>true</isPaintable>
-                  <statBases>
-                    <WorkToBuild>85</WorkToBuild>
-                    <Flammability>0.22</Flammability>
-                    <Beauty>-1</Beauty>
-                  </statBases>
-                  <constructEffect>ConstructWood</constructEffect>
-                  <uiOrder>1999</uiOrder>
-                  <costList>
-                    <WoodLog_RedMaple>1</WoodLog_RedMaple>
-                  </costList>
-                  <designatorDropdown>EW_Designator_WDPlywoodFloor</designatorDropdown>
-                </TerrainDef>
-              </value>
-            </li>
             <li Class="PatchOperationAdd">
               <xpath>/Defs</xpath>
               <value>
