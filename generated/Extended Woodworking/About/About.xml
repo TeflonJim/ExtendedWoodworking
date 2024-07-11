@@ -45,6 +45,7 @@ Supported mods:
 * A RimWorld of Magic
 * Alpha Memes
 * Area Rugs 2.0
+* Books From Paper
 * Camping Tent
 * Caravan Adventures
 * Caravan Equipment (Continued)
@@ -60,6 +61,7 @@ Supported mods:
 * Fortifications - Medieval
 * Fortifications - Neolithic
 * GloomyFurniture
+* Local's CE Antiques set
 * M1 Garand, Winchester 1894 &amp; Colt 1862
 * Musical Instruments (Continued)
 * Nature's Pretty Sweet (Continued)
@@ -79,6 +81,7 @@ Supported mods:
 * RimWriter - Books, Scrolls, Tablets, and Libraries (Continued)
 * RoughBarricade (Continued)
 * Ruger Mini
+* Signs and Comments
 * Simple Learning
 * Simple Ships
 * Tabletop Decorations
@@ -106,6 +109,7 @@ Supported mods:
 * VGP Vegetable Garden
 * VGP Xtra Trees and Flowers
 * Westerado (Continued)
+* Wild West Firearms (Non CE Version)
 
 Cost lists, ingredient lists, and fuel lists are updated for each mod.
 
@@ -135,7 +139,9 @@ The original version of Extended Woodworking inspired a number of mods including
     <li>aoba.fortress.neolithic</li>
     <li>aoba.tent</li>
     <li>argon.vmeu</li>
+    <li>augdog777.wildwestfirearmsnonce</li>
     <li>cp.rimmunation.2.weapons</li>
+    <li>dark.signs</li>
     <li>dismarzero.vgp.vgpgardentools</li>
     <li>dismarzero.vgp.vgpvegetablegarden</li>
     <li>dismarzero.vgp.xtratreesandflowers</li>
@@ -151,7 +157,9 @@ The original version of Extended Woodworking inspired a number of mods including
     <li>harkon.rimatwar.ww2sovietsmgs</li>
     <li>iforgotmysocks.caravanadventures</li>
     <li>jelly.caravangear</li>
+    <li>klvlt.booksfrompaper</li>
     <li>limetreesnake.furnishing</li>
+    <li>locals.antiques</li>
     <li>ludeon.rimworld</li>
     <li>ludeon.rimworld</li>
     <li>ludeon.rimworld.ideology</li>

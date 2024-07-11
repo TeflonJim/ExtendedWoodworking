@@ -18,13 +18,27 @@
           </li>
         </value>
       </li>
-      <li Class="PatchOperationRemove">
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
         <xpath>/Defs/RecipeDef[defName="MakeCompostStarter"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/RecipeDef[defName="MakeCompostStarter"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+        </match>
       </li>
       <li Class="PatchOperationConditional">
+        <success>Always</success>
         <xpath>/Defs/RecipeDef[defName="MakeCompostStarter"]/fixedIngredientFilter/thingDefs/li/*</xpath>
         <nomatch Class="PatchOperationRemove">
           <xpath>/Defs/RecipeDef[defName="MakeCompostStarter"]/fixedIngredientFilter/thingDefs</xpath>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/RecipeDef[defName="MakeCompostStarter"]/fixedIngredientFilter</xpath>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="MakeCompostStarter"]</xpath>
+          <value>
+            <fixedIngredientFilter />
+          </value>
         </nomatch>
       </li>
       <li Class="PatchOperationConditional">
@@ -60,13 +74,27 @@
           </li>
         </value>
       </li>
-      <li Class="PatchOperationRemove">
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
         <xpath>/Defs/RecipeDef[defName="MakeBulkCompostStarter"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/RecipeDef[defName="MakeBulkCompostStarter"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+        </match>
       </li>
       <li Class="PatchOperationConditional">
+        <success>Always</success>
         <xpath>/Defs/RecipeDef[defName="MakeBulkCompostStarter"]/fixedIngredientFilter/thingDefs/li/*</xpath>
         <nomatch Class="PatchOperationRemove">
           <xpath>/Defs/RecipeDef[defName="MakeBulkCompostStarter"]/fixedIngredientFilter/thingDefs</xpath>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/RecipeDef[defName="MakeBulkCompostStarter"]/fixedIngredientFilter</xpath>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="MakeBulkCompostStarter"]</xpath>
+          <value>
+            <fixedIngredientFilter />
+          </value>
         </nomatch>
       </li>
       <li Class="PatchOperationConditional">

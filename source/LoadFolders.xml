@@ -35,7 +35,9 @@
     <li IfModActive="aoba.fortress.neolithic">Conditional/1.5/aoba.fortress.neolithic</li>
     <li IfModActive="aoba.tent">Conditional/1.5/aoba.tent</li>
     <li IfModActive="argon.vmeu">Conditional/1.5/argon.vmeu</li>
+    <li IfModActive="augdog777.wildwestfirearmsnonce">Conditional/1.5/augdog777.wildwestfirearmsnonce</li>
     <li IfModActive="cp.rimmunation.2.weapons">Conditional/1.5/cp.rimmunation.2.weapons</li>
+    <li IfModActive="dark.signs">Conditional/1.5/dark.signs</li>
     <li IfModActive="dismarzero.vgp.vgpgardentools">Conditional/1.5/dismarzero.vgp.vgpgardentools</li>
     <li IfModActive="dismarzero.vgp.vgpvegetablegarden">Conditional/1.5/dismarzero.vgp.vgpvegetablegarden</li>
     <li IfModActive="dismarzero.vgp.xtratreesandflowers">Conditional/1.5/dismarzero.vgp.xtratreesandflowers</li>
@@ -50,7 +52,9 @@
     <li IfModActive="harkon.rimatwar.ww2sovietsmgs">Conditional/1.5/harkon.rimatwar.ww2sovietsmgs</li>
     <li IfModActive="iforgotmysocks.caravanadventures">Conditional/1.5/iforgotmysocks.caravanadventures</li>
     <li IfModActive="jelly.caravangear">Conditional/1.5/jelly.caravangear</li>
+    <li IfModActive="klvlt.booksfrompaper">Conditional/1.5/klvlt.booksfrompaper</li>
     <li IfModActive="limetreesnake.furnishing">Conditional/1.5/limetreesnake.furnishing</li>
+    <li IfModActive="locals.antiques">Conditional/1.5/locals.antiques</li>
     <li IfModActive="ludeon.rimworld.ideology">Conditional/1.5/ludeon.rimworld.ideology</li>
     <li IfModActive="ludeon.rimworld.royalty">Conditional/1.5/ludeon.rimworld.royalty</li>
     <li IfModActive="mlie.caravanequipment">Conditional/1.5/mlie.caravanequipment</li>

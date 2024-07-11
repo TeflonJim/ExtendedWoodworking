@@ -1,0 +1,1377 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/ThingDef[defName="Gun_1860_henry"]/costList/WoodLog</xpath>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="Gun_1860_henry" and (stuffCategories)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_1860_henry"]/stuffCategories</xpath>
+          <value>
+            <li>Woody</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_1860_henry"]</xpath>
+          <value>
+            <stuffCategories>
+              <li>Woody</li>
+            </stuffCategories>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_1860_henry" and not(costStuffCount)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_1860_henry" and not(costStuffCount)]</xpath>
+          <value>
+            <costStuffCount>10</costStuffCount>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_1860_henry"]/constructEffect</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="Gun_1860_henry"]/constructEffect</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/ThingDef[defName="Gun_1860_spencer"]/costList/WoodLog</xpath>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="Gun_1860_spencer" and (stuffCategories)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_1860_spencer"]/stuffCategories</xpath>
+          <value>
+            <li>Woody</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_1860_spencer"]</xpath>
+          <value>
+            <stuffCategories>
+              <li>Woody</li>
+            </stuffCategories>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_1860_spencer" and not(costStuffCount)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_1860_spencer" and not(costStuffCount)]</xpath>
+          <value>
+            <costStuffCount>10</costStuffCount>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_1860_spencer"]/constructEffect</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="Gun_1860_spencer"]/constructEffect</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/ThingDef[defName="Gun_1863_springfield"]/costList/WoodLog</xpath>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="Gun_1863_springfield" and (stuffCategories)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_1863_springfield"]/stuffCategories</xpath>
+          <value>
+            <li>Woody</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_1863_springfield"]</xpath>
+          <value>
+            <stuffCategories>
+              <li>Woody</li>
+            </stuffCategories>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_1863_springfield" and not(costStuffCount)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_1863_springfield" and not(costStuffCount)]</xpath>
+          <value>
+            <costStuffCount>20</costStuffCount>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_1863_springfield"]/constructEffect</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="Gun_1863_springfield"]/constructEffect</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/ThingDef[defName="Gun_1866_winchester"]/costList/WoodLog</xpath>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="Gun_1866_winchester" and (stuffCategories)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_1866_winchester"]/stuffCategories</xpath>
+          <value>
+            <li>Woody</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_1866_winchester"]</xpath>
+          <value>
+            <stuffCategories>
+              <li>Woody</li>
+            </stuffCategories>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_1866_winchester" and not(costStuffCount)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_1866_winchester" and not(costStuffCount)]</xpath>
+          <value>
+            <costStuffCount>10</costStuffCount>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_1866_winchester"]/constructEffect</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="Gun_1866_winchester"]/constructEffect</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/ThingDef[defName="Gun_1873_springfield"]/costList/WoodLog</xpath>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="Gun_1873_springfield" and (stuffCategories)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_1873_springfield"]/stuffCategories</xpath>
+          <value>
+            <li>Woody</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_1873_springfield"]</xpath>
+          <value>
+            <stuffCategories>
+              <li>Woody</li>
+            </stuffCategories>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_1873_springfield" and not(costStuffCount)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_1873_springfield" and not(costStuffCount)]</xpath>
+          <value>
+            <costStuffCount>25</costStuffCount>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_1873_springfield"]/constructEffect</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="Gun_1873_springfield"]/constructEffect</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/ThingDef[defName="Gun_1873_winchester"]/costList/WoodLog</xpath>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="Gun_1873_winchester" and (stuffCategories)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_1873_winchester"]/stuffCategories</xpath>
+          <value>
+            <li>Woody</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_1873_winchester"]</xpath>
+          <value>
+            <stuffCategories>
+              <li>Woody</li>
+            </stuffCategories>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_1873_winchester" and not(costStuffCount)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_1873_winchester" and not(costStuffCount)]</xpath>
+          <value>
+            <costStuffCount>10</costStuffCount>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_1873_winchester"]/constructEffect</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="Gun_1873_winchester"]/constructEffect</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/ThingDef[defName="Gun_1874_sharps_sniper"]/costList/WoodLog</xpath>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="Gun_1874_sharps_sniper" and (stuffCategories)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_1874_sharps_sniper"]/stuffCategories</xpath>
+          <value>
+            <li>Woody</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_1874_sharps_sniper"]</xpath>
+          <value>
+            <stuffCategories>
+              <li>Woody</li>
+            </stuffCategories>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_1874_sharps_sniper" and not(costStuffCount)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_1874_sharps_sniper" and not(costStuffCount)]</xpath>
+          <value>
+            <costStuffCount>15</costStuffCount>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_1874_sharps_sniper"]/constructEffect</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="Gun_1874_sharps_sniper"]/constructEffect</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/ThingDef[defName="Gun_1874_sharps"]/costList/WoodLog</xpath>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="Gun_1874_sharps" and (stuffCategories)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_1874_sharps"]/stuffCategories</xpath>
+          <value>
+            <li>Woody</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_1874_sharps"]</xpath>
+          <value>
+            <stuffCategories>
+              <li>Woody</li>
+            </stuffCategories>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_1874_sharps" and not(costStuffCount)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_1874_sharps" and not(costStuffCount)]</xpath>
+          <value>
+            <costStuffCount>15</costStuffCount>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_1874_sharps"]/constructEffect</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="Gun_1874_sharps"]/constructEffect</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/ThingDef[defName="Gun_1876_winchester"]/costList/WoodLog</xpath>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="Gun_1876_winchester" and (stuffCategories)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_1876_winchester"]/stuffCategories</xpath>
+          <value>
+            <li>Woody</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_1876_winchester"]</xpath>
+          <value>
+            <stuffCategories>
+              <li>Woody</li>
+            </stuffCategories>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_1876_winchester" and not(costStuffCount)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_1876_winchester" and not(costStuffCount)]</xpath>
+          <value>
+            <costStuffCount>10</costStuffCount>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_1876_winchester"]/constructEffect</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="Gun_1876_winchester"]/constructEffect</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/ThingDef[defName="Gun_1877_colt"]/costList/WoodLog</xpath>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="Gun_1877_colt" and (stuffCategories)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_1877_colt"]/stuffCategories</xpath>
+          <value>
+            <li>Woody</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_1877_colt"]</xpath>
+          <value>
+            <stuffCategories>
+              <li>Woody</li>
+            </stuffCategories>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_1877_colt" and not(costStuffCount)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_1877_colt" and not(costStuffCount)]</xpath>
+          <value>
+            <costStuffCount>5</costStuffCount>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_1877_colt"]/constructEffect</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="Gun_1877_colt"]/constructEffect</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/ThingDef[defName="Gun_1882_spencer"]/costList/WoodLog</xpath>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="Gun_1882_spencer" and (stuffCategories)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_1882_spencer"]/stuffCategories</xpath>
+          <value>
+            <li>Woody</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_1882_spencer"]</xpath>
+          <value>
+            <stuffCategories>
+              <li>Woody</li>
+            </stuffCategories>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_1882_spencer" and not(costStuffCount)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_1882_spencer" and not(costStuffCount)]</xpath>
+          <value>
+            <costStuffCount>10</costStuffCount>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_1882_spencer"]/constructEffect</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="Gun_1882_spencer"]/constructEffect</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/ThingDef[defName="Gun_1884_colt"]/costList/WoodLog</xpath>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="Gun_1884_colt" and (stuffCategories)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_1884_colt"]/stuffCategories</xpath>
+          <value>
+            <li>Woody</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_1884_colt"]</xpath>
+          <value>
+            <stuffCategories>
+              <li>Woody</li>
+            </stuffCategories>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_1884_colt" and not(costStuffCount)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_1884_colt" and not(costStuffCount)]</xpath>
+          <value>
+            <costStuffCount>10</costStuffCount>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_1884_colt"]/constructEffect</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="Gun_1884_colt"]/constructEffect</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/ThingDef[defName="Gun_1886_winchester"]/costList/WoodLog</xpath>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="Gun_1886_winchester" and (stuffCategories)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_1886_winchester"]/stuffCategories</xpath>
+          <value>
+            <li>Woody</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_1886_winchester"]</xpath>
+          <value>
+            <stuffCategories>
+              <li>Woody</li>
+            </stuffCategories>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_1886_winchester" and not(costStuffCount)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_1886_winchester" and not(costStuffCount)]</xpath>
+          <value>
+            <costStuffCount>10</costStuffCount>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_1886_winchester"]/constructEffect</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="Gun_1886_winchester"]/constructEffect</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/ThingDef[defName="Gun_1892_colt"]/costList/WoodLog</xpath>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="Gun_1892_colt" and (stuffCategories)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_1892_colt"]/stuffCategories</xpath>
+          <value>
+            <li>Woody</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_1892_colt"]</xpath>
+          <value>
+            <stuffCategories>
+              <li>Woody</li>
+            </stuffCategories>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_1892_colt" and not(costStuffCount)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_1892_colt" and not(costStuffCount)]</xpath>
+          <value>
+            <costStuffCount>5</costStuffCount>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_1892_colt"]/constructEffect</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="Gun_1892_colt"]/constructEffect</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/ThingDef[defName="Gun_1892_winchester"]/costList/WoodLog</xpath>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="Gun_1892_winchester" and (stuffCategories)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_1892_winchester"]/stuffCategories</xpath>
+          <value>
+            <li>Woody</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_1892_winchester"]</xpath>
+          <value>
+            <stuffCategories>
+              <li>Woody</li>
+            </stuffCategories>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_1892_winchester" and not(costStuffCount)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_1892_winchester" and not(costStuffCount)]</xpath>
+          <value>
+            <costStuffCount>10</costStuffCount>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_1892_winchester"]/constructEffect</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="Gun_1892_winchester"]/constructEffect</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/ThingDef[defName="Gun_1894_marlin"]/costList/WoodLog</xpath>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="Gun_1894_marlin" and (stuffCategories)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_1894_marlin"]/stuffCategories</xpath>
+          <value>
+            <li>Woody</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_1894_marlin"]</xpath>
+          <value>
+            <stuffCategories>
+              <li>Woody</li>
+            </stuffCategories>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_1894_marlin" and not(costStuffCount)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_1894_marlin" and not(costStuffCount)]</xpath>
+          <value>
+            <costStuffCount>10</costStuffCount>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_1894_marlin"]/constructEffect</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="Gun_1894_marlin"]/constructEffect</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/ThingDef[defName="Gun_1894_winchester"]/costList/WoodLog</xpath>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="Gun_1894_winchester" and (stuffCategories)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_1894_winchester"]/stuffCategories</xpath>
+          <value>
+            <li>Woody</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_1894_winchester"]</xpath>
+          <value>
+            <stuffCategories>
+              <li>Woody</li>
+            </stuffCategories>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_1894_winchester" and not(costStuffCount)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_1894_winchester" and not(costStuffCount)]</xpath>
+          <value>
+            <costStuffCount>10</costStuffCount>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_1894_winchester"]/constructEffect</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="Gun_1894_winchester"]/constructEffect</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/ThingDef[defName="Gun_1895_savage"]/costList/WoodLog</xpath>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="Gun_1895_savage" and (stuffCategories)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_1895_savage"]/stuffCategories</xpath>
+          <value>
+            <li>Woody</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_1895_savage"]</xpath>
+          <value>
+            <stuffCategories>
+              <li>Woody</li>
+            </stuffCategories>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_1895_savage" and not(costStuffCount)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_1895_savage" and not(costStuffCount)]</xpath>
+          <value>
+            <costStuffCount>10</costStuffCount>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_1895_savage"]/constructEffect</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="Gun_1895_savage"]/constructEffect</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/ThingDef[defName="Gun_browning_auto"]/costList/WoodLog</xpath>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="Gun_browning_auto" and (stuffCategories)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_browning_auto"]/stuffCategories</xpath>
+          <value>
+            <li>Woody</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_browning_auto"]</xpath>
+          <value>
+            <stuffCategories>
+              <li>Woody</li>
+            </stuffCategories>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_browning_auto" and not(costStuffCount)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_browning_auto" and not(costStuffCount)]</xpath>
+          <value>
+            <costStuffCount>10</costStuffCount>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_browning_auto"]/constructEffect</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="Gun_browning_auto"]/constructEffect</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/ThingDef[defName="Gun_coach_gun"]/costList/WoodLog</xpath>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="Gun_coach_gun" and (stuffCategories)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_coach_gun"]/stuffCategories</xpath>
+          <value>
+            <li>Woody</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_coach_gun"]</xpath>
+          <value>
+            <stuffCategories>
+              <li>Woody</li>
+            </stuffCategories>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_coach_gun" and not(costStuffCount)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_coach_gun" and not(costStuffCount)]</xpath>
+          <value>
+            <costStuffCount>10</costStuffCount>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_coach_gun"]/constructEffect</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="Gun_coach_gun"]/constructEffect</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/ThingDef[defName="Gun_colt_revolving_rifle"]/costList/WoodLog</xpath>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="Gun_colt_revolving_rifle" and (stuffCategories)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_colt_revolving_rifle"]/stuffCategories</xpath>
+          <value>
+            <li>Woody</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_colt_revolving_rifle"]</xpath>
+          <value>
+            <stuffCategories>
+              <li>Woody</li>
+            </stuffCategories>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_colt_revolving_rifle" and not(costStuffCount)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_colt_revolving_rifle" and not(costStuffCount)]</xpath>
+          <value>
+            <costStuffCount>10</costStuffCount>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_colt_revolving_rifle"]/constructEffect</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="Gun_colt_revolving_rifle"]/constructEffect</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/ThingDef[defName="Gun_doublebarrel_rifle"]/costList/WoodLog</xpath>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="Gun_doublebarrel_rifle" and (stuffCategories)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_doublebarrel_rifle"]/stuffCategories</xpath>
+          <value>
+            <li>Woody</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_doublebarrel_rifle"]</xpath>
+          <value>
+            <stuffCategories>
+              <li>Woody</li>
+            </stuffCategories>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_doublebarrel_rifle" and not(costStuffCount)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_doublebarrel_rifle" and not(costStuffCount)]</xpath>
+          <value>
+            <costStuffCount>15</costStuffCount>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_doublebarrel_rifle"]/constructEffect</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="Gun_doublebarrel_rifle"]/constructEffect</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/ThingDef[defName="Gun_doublebarrel_gun"]/costList/WoodLog</xpath>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="Gun_doublebarrel_gun" and (stuffCategories)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_doublebarrel_gun"]/stuffCategories</xpath>
+          <value>
+            <li>Woody</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_doublebarrel_gun"]</xpath>
+          <value>
+            <stuffCategories>
+              <li>Woody</li>
+            </stuffCategories>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_doublebarrel_gun" and not(costStuffCount)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_doublebarrel_gun" and not(costStuffCount)]</xpath>
+          <value>
+            <costStuffCount>10</costStuffCount>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_doublebarrel_gun"]/constructEffect</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="Gun_doublebarrel_gun"]/constructEffect</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/ThingDef[defName="Gun_kragjorgensen_sniper"]/costList/WoodLog</xpath>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="Gun_kragjorgensen_sniper" and (stuffCategories)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_kragjorgensen_sniper"]/stuffCategories</xpath>
+          <value>
+            <li>Woody</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_kragjorgensen_sniper"]</xpath>
+          <value>
+            <stuffCategories>
+              <li>Woody</li>
+            </stuffCategories>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_kragjorgensen_sniper" and not(costStuffCount)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_kragjorgensen_sniper" and not(costStuffCount)]</xpath>
+          <value>
+            <costStuffCount>10</costStuffCount>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_kragjorgensen_sniper"]/constructEffect</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="Gun_kragjorgensen_sniper"]/constructEffect</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/ThingDef[defName="Gun_kragjorgensen"]/costList/WoodLog</xpath>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="Gun_kragjorgensen" and (stuffCategories)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_kragjorgensen"]/stuffCategories</xpath>
+          <value>
+            <li>Woody</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_kragjorgensen"]</xpath>
+          <value>
+            <stuffCategories>
+              <li>Woody</li>
+            </stuffCategories>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_kragjorgensen" and not(costStuffCount)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_kragjorgensen" and not(costStuffCount)]</xpath>
+          <value>
+            <costStuffCount>10</costStuffCount>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_kragjorgensen"]/constructEffect</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="Gun_kragjorgensen"]/constructEffect</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/ThingDef[defName="Gun_1842_Aston"]/costList/WoodLog</xpath>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="Gun_1842_Aston" and (stuffCategories)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_1842_Aston"]/stuffCategories</xpath>
+          <value>
+            <li>Woody</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_1842_Aston"]</xpath>
+          <value>
+            <stuffCategories>
+              <li>Woody</li>
+            </stuffCategories>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_1842_Aston" and not(costStuffCount)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_1842_Aston" and not(costStuffCount)]</xpath>
+          <value>
+            <costStuffCount>10</costStuffCount>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_1842_Aston"]/constructEffect</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="Gun_1842_Aston"]/constructEffect</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/ThingDef[defName="Gun_1871_remington"]/costList/WoodLog</xpath>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="Gun_1871_remington" and (stuffCategories)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_1871_remington"]/stuffCategories</xpath>
+          <value>
+            <li>Woody</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_1871_remington"]</xpath>
+          <value>
+            <stuffCategories>
+              <li>Woody</li>
+            </stuffCategories>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_1871_remington" and not(costStuffCount)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_1871_remington" and not(costStuffCount)]</xpath>
+          <value>
+            <costStuffCount>15</costStuffCount>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_1871_remington"]/constructEffect</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="Gun_1871_remington"]/constructEffect</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/ThingDef[defName="Gun_remington_rolling_block_sniper"]/costList/WoodLog</xpath>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="Gun_remington_rolling_block_sniper" and (stuffCategories)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_remington_rolling_block_sniper"]/stuffCategories</xpath>
+          <value>
+            <li>Woody</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_remington_rolling_block_sniper"]</xpath>
+          <value>
+            <stuffCategories>
+              <li>Woody</li>
+            </stuffCategories>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_remington_rolling_block_sniper" and not(costStuffCount)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_remington_rolling_block_sniper" and not(costStuffCount)]</xpath>
+          <value>
+            <costStuffCount>15</costStuffCount>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_remington_rolling_block_sniper"]/constructEffect</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="Gun_remington_rolling_block_sniper"]/constructEffect</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/ThingDef[defName="Gun_remington_rolling_block"]/costList/WoodLog</xpath>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="Gun_remington_rolling_block" and (stuffCategories)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_remington_rolling_block"]/stuffCategories</xpath>
+          <value>
+            <li>Woody</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_remington_rolling_block"]</xpath>
+          <value>
+            <stuffCategories>
+              <li>Woody</li>
+            </stuffCategories>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_remington_rolling_block" and not(costStuffCount)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_remington_rolling_block" and not(costStuffCount)]</xpath>
+          <value>
+            <costStuffCount>25</costStuffCount>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_remington_rolling_block"]/constructEffect</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="Gun_remington_rolling_block"]/constructEffect</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/ThingDef[defName="Gun_1861_Savage"]/costList/WoodLog</xpath>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="Gun_1861_Savage" and (stuffCategories)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_1861_Savage"]/stuffCategories</xpath>
+          <value>
+            <li>Woody</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_1861_Savage"]</xpath>
+          <value>
+            <stuffCategories>
+              <li>Woody</li>
+            </stuffCategories>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_1861_Savage" and not(costStuffCount)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_1861_Savage" and not(costStuffCount)]</xpath>
+          <value>
+            <costStuffCount>5</costStuffCount>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_1861_Savage"]/constructEffect</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="Gun_1861_Savage"]/constructEffect</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/ThingDef[defName="Gun_single_shot_shotgun"]/costList/WoodLog</xpath>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="Gun_single_shot_shotgun" and (stuffCategories)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_single_shot_shotgun"]/stuffCategories</xpath>
+          <value>
+            <li>Woody</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_single_shot_shotgun"]</xpath>
+          <value>
+            <stuffCategories>
+              <li>Woody</li>
+            </stuffCategories>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_single_shot_shotgun" and not(costStuffCount)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_single_shot_shotgun" and not(costStuffCount)]</xpath>
+          <value>
+            <costStuffCount>10</costStuffCount>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_single_shot_shotgun"]/constructEffect</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="Gun_single_shot_shotgun"]/constructEffect</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/ThingDef[defName="Gun_winchester_highwall_sniper"]/costList/WoodLog</xpath>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="Gun_winchester_highwall_sniper" and (stuffCategories)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_winchester_highwall_sniper"]/stuffCategories</xpath>
+          <value>
+            <li>Woody</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_winchester_highwall_sniper"]</xpath>
+          <value>
+            <stuffCategories>
+              <li>Woody</li>
+            </stuffCategories>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_winchester_highwall_sniper" and not(costStuffCount)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_winchester_highwall_sniper" and not(costStuffCount)]</xpath>
+          <value>
+            <costStuffCount>15</costStuffCount>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_winchester_highwall_sniper"]/constructEffect</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="Gun_winchester_highwall_sniper"]/constructEffect</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/ThingDef[defName="Gun_winchester_highwall"]/costList/WoodLog</xpath>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="Gun_winchester_highwall" and (stuffCategories)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_winchester_highwall"]/stuffCategories</xpath>
+          <value>
+            <li>Woody</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_winchester_highwall"]</xpath>
+          <value>
+            <stuffCategories>
+              <li>Woody</li>
+            </stuffCategories>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_winchester_highwall" and not(costStuffCount)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_winchester_highwall" and not(costStuffCount)]</xpath>
+          <value>
+            <costStuffCount>15</costStuffCount>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_winchester_highwall"]/constructEffect</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="Gun_winchester_highwall"]/constructEffect</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/ThingDef[defName="Gun_winchester_lever_action_shotgun"]/costList/WoodLog</xpath>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="Gun_winchester_lever_action_shotgun" and (stuffCategories)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_winchester_lever_action_shotgun"]/stuffCategories</xpath>
+          <value>
+            <li>Woody</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_winchester_lever_action_shotgun"]</xpath>
+          <value>
+            <stuffCategories>
+              <li>Woody</li>
+            </stuffCategories>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_winchester_lever_action_shotgun" and not(costStuffCount)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_winchester_lever_action_shotgun" and not(costStuffCount)]</xpath>
+          <value>
+            <costStuffCount>10</costStuffCount>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_winchester_lever_action_shotgun"]/constructEffect</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="Gun_winchester_lever_action_shotgun"]/constructEffect</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/ThingDef[defName="Gun_winchester_pump_action"]/costList/WoodLog</xpath>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="Gun_winchester_pump_action" and (stuffCategories)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_winchester_pump_action"]/stuffCategories</xpath>
+          <value>
+            <li>Woody</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_winchester_pump_action"]</xpath>
+          <value>
+            <stuffCategories>
+              <li>Woody</li>
+            </stuffCategories>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_winchester_pump_action" and not(costStuffCount)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_winchester_pump_action" and not(costStuffCount)]</xpath>
+          <value>
+            <costStuffCount>10</costStuffCount>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_winchester_pump_action"]/constructEffect</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="Gun_winchester_pump_action"]/constructEffect</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/ThingDef[defName="Gun_winchester_russian"]/costList/WoodLog</xpath>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="Gun_winchester_russian" and (stuffCategories)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_winchester_russian"]/stuffCategories</xpath>
+          <value>
+            <li>Woody</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_winchester_russian"]</xpath>
+          <value>
+            <stuffCategories>
+              <li>Woody</li>
+            </stuffCategories>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_winchester_russian" and not(costStuffCount)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_winchester_russian" and not(costStuffCount)]</xpath>
+          <value>
+            <costStuffCount>10</costStuffCount>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_winchester_russian"]/constructEffect</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="Gun_winchester_russian"]/constructEffect</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/ThingDef[defName="Gun_winchester_varmint"]/costList/WoodLog</xpath>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="Gun_winchester_varmint" and (stuffCategories)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_winchester_varmint"]/stuffCategories</xpath>
+          <value>
+            <li>Woody</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_winchester_varmint"]</xpath>
+          <value>
+            <stuffCategories>
+              <li>Woody</li>
+            </stuffCategories>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_winchester_varmint" and not(costStuffCount)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Gun_winchester_varmint" and not(costStuffCount)]</xpath>
+          <value>
+            <costStuffCount>10</costStuffCount>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Gun_winchester_varmint"]/constructEffect</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="Gun_winchester_varmint"]/constructEffect</xpath>
+        </match>
+      </li>
+    </operations>
+  </Operation>
+</Patch>

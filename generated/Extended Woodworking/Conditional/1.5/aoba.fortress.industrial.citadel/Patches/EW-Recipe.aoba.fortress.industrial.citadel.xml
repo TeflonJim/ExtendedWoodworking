@@ -18,13 +18,27 @@
           </li>
         </value>
       </li>
-      <li Class="PatchOperationRemove">
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
         <xpath>/Defs/RecipeDef[defName="FT_ExtractChemFuelByJunks"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/RecipeDef[defName="FT_ExtractChemFuelByJunks"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+        </match>
       </li>
       <li Class="PatchOperationConditional">
+        <success>Always</success>
         <xpath>/Defs/RecipeDef[defName="FT_ExtractChemFuelByJunks"]/fixedIngredientFilter/thingDefs/li/*</xpath>
         <nomatch Class="PatchOperationRemove">
           <xpath>/Defs/RecipeDef[defName="FT_ExtractChemFuelByJunks"]/fixedIngredientFilter/thingDefs</xpath>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/RecipeDef[defName="FT_ExtractChemFuelByJunks"]/fixedIngredientFilter</xpath>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="FT_ExtractChemFuelByJunks"]</xpath>
+          <value>
+            <fixedIngredientFilter />
+          </value>
         </nomatch>
       </li>
       <li Class="PatchOperationConditional">
@@ -60,13 +74,27 @@
           </li>
         </value>
       </li>
-      <li Class="PatchOperationRemove">
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
         <xpath>/Defs/RecipeDef[defName="FT_ExtractChemFuelByJunksPlus"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/RecipeDef[defName="FT_ExtractChemFuelByJunksPlus"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+        </match>
       </li>
       <li Class="PatchOperationConditional">
+        <success>Always</success>
         <xpath>/Defs/RecipeDef[defName="FT_ExtractChemFuelByJunksPlus"]/fixedIngredientFilter/thingDefs/li/*</xpath>
         <nomatch Class="PatchOperationRemove">
           <xpath>/Defs/RecipeDef[defName="FT_ExtractChemFuelByJunksPlus"]/fixedIngredientFilter/thingDefs</xpath>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/RecipeDef[defName="FT_ExtractChemFuelByJunksPlus"]/fixedIngredientFilter</xpath>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="FT_ExtractChemFuelByJunksPlus"]</xpath>
+          <value>
+            <fixedIngredientFilter />
+          </value>
         </nomatch>
       </li>
       <li Class="PatchOperationConditional">
