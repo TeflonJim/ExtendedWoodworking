@@ -41,10 +41,10 @@
     </statBases>
     <constructEffect>ConstructWood</constructEffect>
     <uiOrder>2000</uiOrder>
+    <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
     <costList>
       <WoodLog_Blue>6</WoodLog_Blue>
     </costList>
-    <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>WoodPlankFloor_Green</defName>
@@ -64,10 +64,10 @@
     </statBases>
     <constructEffect>ConstructWood</constructEffect>
     <uiOrder>2000</uiOrder>
+    <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
     <costList>
       <WoodLog_Green>6</WoodLog_Green>
     </costList>
-    <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>WoodPlankFloor_Red</defName>
@@ -133,9 +133,9 @@
     </statBases>
     <constructEffect>ConstructWood</constructEffect>
     <uiOrder>2000</uiOrder>
+    <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
     <costList>
       <WoodLog_Yellow>6</WoodLog_Yellow>
     </costList>
-    <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
   </TerrainDef>
 </Defs>

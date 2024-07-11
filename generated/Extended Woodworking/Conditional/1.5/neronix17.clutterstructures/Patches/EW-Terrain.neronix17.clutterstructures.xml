@@ -24,11 +24,11 @@
                   <researchPrerequisites>
                     <li>UtilityStructures</li>
                   </researchPrerequisites>
-                  <color>(219, 184, 144)</color>
                   <designatorDropdown>EW_Designator_ClutterWoodTileA</designatorDropdown>
                   <costList>
                     <WoodLog_Acacia>5</WoodLog_Acacia>
                   </costList>
+                  <color>(219, 184, 144)</color>
                 </TerrainDef>
               </value>
             </li>
@@ -58,10 +58,10 @@
                     <li>UtilityStructures</li>
                   </researchPrerequisites>
                   <designatorDropdown>EW_Designator_ClutterWoodTileA</designatorDropdown>
-                  <color>(228, 204, 171)</color>
                   <costList>
                     <WoodLog_Aspen>5</WoodLog_Aspen>
                   </costList>
+                  <color>(228, 204, 171)</color>
                 </TerrainDef>
               </value>
             </li>
@@ -93,8 +93,8 @@
                   <costList>
                     <WoodLog_Camellia>5</WoodLog_Camellia>
                   </costList>
-                  <color>(201, 160, 130)</color>
                   <designatorDropdown>EW_Designator_ClutterWoodTileA</designatorDropdown>
+                  <color>(201, 160, 130)</color>
                 </TerrainDef>
               </value>
             </li>
@@ -124,10 +124,10 @@
                     <li>UtilityStructures</li>
                   </researchPrerequisites>
                   <designatorDropdown>EW_Designator_ClutterWoodTileA</designatorDropdown>
-                  <color>(165, 82, 40)</color>
                   <costList>
                     <WoodLog_CherryBlossom>5</WoodLog_CherryBlossom>
                   </costList>
+                  <color>(165, 82, 40)</color>
                 </TerrainDef>
               </value>
             </li>
@@ -156,11 +156,11 @@
                   <researchPrerequisites>
                     <li>UtilityStructures</li>
                   </researchPrerequisites>
-                  <color>(252, 170, 124)</color>
                   <designatorDropdown>EW_Designator_ClutterWoodTileA</designatorDropdown>
                   <costList>
                     <WoodLog_JapaneseMaple>5</WoodLog_JapaneseMaple>
                   </costList>
+                  <color>(252, 170, 124)</color>
                 </TerrainDef>
               </value>
             </li>
@@ -192,8 +192,8 @@
                   <costList>
                     <WoodLog_RedMaple>5</WoodLog_RedMaple>
                   </costList>
-                  <color>(222, 197, 167)</color>
                   <designatorDropdown>EW_Designator_ClutterWoodTileA</designatorDropdown>
+                  <color>(222, 197, 167)</color>
                 </TerrainDef>
               </value>
             </li>

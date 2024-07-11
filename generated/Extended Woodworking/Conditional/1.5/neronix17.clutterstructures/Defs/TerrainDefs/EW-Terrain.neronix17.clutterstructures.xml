@@ -14,11 +14,11 @@
     <researchPrerequisites>
       <li>UtilityStructures</li>
     </researchPrerequisites>
+    <designatorDropdown>EW_Designator_ClutterWoodTileA</designatorDropdown>
     <costList>
       <WoodLog_Birch>5</WoodLog_Birch>
     </costList>
     <color>(235,228,216)</color>
-    <designatorDropdown>EW_Designator_ClutterWoodTileA</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="ClutterFloorBase">
     <defName>ClutterWoodTileA_Cecropia</defName>
@@ -34,11 +34,11 @@
     <researchPrerequisites>
       <li>UtilityStructures</li>
     </researchPrerequisites>
-    <color>(126,74,63)</color>
-    <designatorDropdown>EW_Designator_ClutterWoodTileA</designatorDropdown>
     <costList>
       <WoodLog_Cecropia>5</WoodLog_Cecropia>
     </costList>
+    <designatorDropdown>EW_Designator_ClutterWoodTileA</designatorDropdown>
+    <color>(126,74,63)</color>
   </TerrainDef>
   <TerrainDef ParentName="ClutterFloorBase">
     <defName>ClutterWoodTileA_Cypress</defName>
@@ -55,10 +55,10 @@
       <li>UtilityStructures</li>
     </researchPrerequisites>
     <designatorDropdown>EW_Designator_ClutterWoodTileA</designatorDropdown>
-    <color>(239, 217, 184)</color>
     <costList>
       <WoodLog_Cypress>5</WoodLog_Cypress>
     </costList>
+    <color>(239, 217, 184)</color>
   </TerrainDef>
   <TerrainDef ParentName="ClutterFloorBase">
     <defName>ClutterWoodTileA_Drago</defName>
@@ -74,11 +74,11 @@
     <researchPrerequisites>
       <li>UtilityStructures</li>
     </researchPrerequisites>
-    <designatorDropdown>EW_Designator_ClutterWoodTileA</designatorDropdown>
-    <color>(171, 159, 142)</color>
     <costList>
       <WoodLog_Drago>5</WoodLog_Drago>
     </costList>
+    <designatorDropdown>EW_Designator_ClutterWoodTileA</designatorDropdown>
+    <color>(171, 159, 142)</color>
   </TerrainDef>
   <TerrainDef ParentName="ClutterFloorBase">
     <defName>ClutterWoodTileA_Maple</defName>
@@ -94,11 +94,11 @@
     <researchPrerequisites>
       <li>UtilityStructures</li>
     </researchPrerequisites>
+    <designatorDropdown>EW_Designator_ClutterWoodTileA</designatorDropdown>
     <costList>
       <WoodLog_Maple>5</WoodLog_Maple>
     </costList>
     <color>(236, 201, 163)</color>
-    <designatorDropdown>EW_Designator_ClutterWoodTileA</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="ClutterFloorBase">
     <defName>ClutterWoodTileA_Oak</defName>
@@ -114,11 +114,11 @@
     <researchPrerequisites>
       <li>UtilityStructures</li>
     </researchPrerequisites>
+    <designatorDropdown>EW_Designator_ClutterWoodTileA</designatorDropdown>
     <costList>
       <WoodLog_Oak>5</WoodLog_Oak>
     </costList>
     <color>(185,142,96)</color>
-    <designatorDropdown>EW_Designator_ClutterWoodTileA</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="ClutterFloorBase">
     <defName>ClutterWoodTileA_Palm</defName>
@@ -137,8 +137,8 @@
     <costList>
       <WoodLog_Palm>5</WoodLog_Palm>
     </costList>
-    <color>(224, 150, 87)</color>
     <designatorDropdown>EW_Designator_ClutterWoodTileA</designatorDropdown>
+    <color>(224, 150, 87)</color>
   </TerrainDef>
   <TerrainDef ParentName="ClutterFloorBase">
     <defName>ClutterWoodTileA_Pine</defName>
@@ -154,11 +154,11 @@
     <researchPrerequisites>
       <li>UtilityStructures</li>
     </researchPrerequisites>
-    <color>(198,146,68)</color>
     <designatorDropdown>EW_Designator_ClutterWoodTileA</designatorDropdown>
     <costList>
       <WoodLog_Pine>5</WoodLog_Pine>
     </costList>
+    <color>(198,146,68)</color>
   </TerrainDef>
   <TerrainDef ParentName="ClutterFloorBase">
     <defName>ClutterWoodTileA_Poplar</defName>
@@ -174,11 +174,11 @@
     <researchPrerequisites>
       <li>UtilityStructures</li>
     </researchPrerequisites>
+    <designatorDropdown>EW_Designator_ClutterWoodTileA</designatorDropdown>
     <costList>
       <WoodLog_Poplar>5</WoodLog_Poplar>
     </costList>
     <color>(184,156,108)</color>
-    <designatorDropdown>EW_Designator_ClutterWoodTileA</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="ClutterFloorBase">
     <defName>ClutterWoodTileA_Teak</defName>
@@ -194,11 +194,11 @@
     <researchPrerequisites>
       <li>UtilityStructures</li>
     </researchPrerequisites>
+    <designatorDropdown>EW_Designator_ClutterWoodTileA</designatorDropdown>
     <costList>
       <WoodLog_Teak>5</WoodLog_Teak>
     </costList>
     <color>(154,102,59)</color>
-    <designatorDropdown>EW_Designator_ClutterWoodTileA</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="ClutterFloorBase">
     <defName>ClutterWoodTileA_Willow</defName>
@@ -214,10 +214,10 @@
     <researchPrerequisites>
       <li>UtilityStructures</li>
     </researchPrerequisites>
-    <color>(221, 186, 141)</color>
-    <designatorDropdown>EW_Designator_ClutterWoodTileA</designatorDropdown>
     <costList>
       <WoodLog_Willow>5</WoodLog_Willow>
     </costList>
+    <designatorDropdown>EW_Designator_ClutterWoodTileA</designatorDropdown>
+    <color>(221, 186, 141)</color>
   </TerrainDef>
 </Defs>

@@ -25,7 +25,6 @@ param (
         'CreatePaintedWoodLogDef'
         'CreateModFuelPatch'
         'CreatePaintedWoodRecipeDef'
-        # 'CreateBuildingDef'
         'CreateCostListPatch'
         'CreateRecipePatch'
         'CreateHarvestedThingPatch'
@@ -60,6 +59,7 @@ class BuildInfo {
             ConvertFrom-Json
 
         $this.Data._version = $this.RimWorldVersion.ShortVersion
+        $this.Data.Init()
     }
 }
 
@@ -104,24 +104,29 @@ class ModBuildData {
     [WoodStat[]] $WoodStats
 
     <#
-        The floor mods which are explicitly supported. No searches for TerrainDef outside of these.
-    #>
-    [string[]] $SupportedFloorMods
-
-    <#
-        Wildcard patterns which should be skipped when generating patches for floors.
-    #>
-    [string[]] $SkipFloorDefs
-
-    <#
         Discovered patch definitions.
     #>
     [PatchGeneratorInfo] $DiscoveredDefs = [PatchGeneratorInfo]::new()
 
     <#
+        Defs which should be excluded because they are not compatible, or something goes wrong attempting to patch.
+    #>
+    [string[]] $ExcludedDefs
+
+    <#
+        A regex generated from ExcludedDefs.
+    #>
+    [string] $ExcludedDefsPattern
+
+    <#
         Mods that are explicitly supported because patches have been generated.
     #>
     [Dictionary[string,object]] $SupportedMods = [Dictionary[string,object]]::new()
+
+    <#
+        Mods that implement floors.
+    #>
+    [List[object]] $SupportedFloorMods = [List[object]]::new()
 
     <#
         Load folders entries.
@@ -136,11 +141,18 @@ class ModBuildData {
     }
 
     [void] AddLoadFoldersEntry([string] $path, [string[]] $ifModActive) {
-        $entry =[LoadFoldersEntry]@{
+        $entry = [LoadFoldersEntry]@{
             Path        = 'Conditional/{0}/{1}' -f $this._version, $path
             IfModActive = $ifModActive
         }
         $this.LoadFolders.Add($entry)
+    }
+
+    [void] Init() {
+        $this.ExcludedDefsPattern = '^({0})$' -f ($this.ExcludedDefs -join '|')
+
+        $this.InitCache()
+        $this.InitLoadFolders()
     }
 
     [void] InitCache() {
@@ -298,8 +310,6 @@ function Confirm-ParentDirectory {
 
 function Setup {
     $Script:buildInfo = [BuildInfo]::new($PSScriptRoot)
-    $Script:buildInfo.Data.InitCache()
-    $Script:buildInfo.Data.InitLoadFolders()
 }
 
 function UpdateLastVersion {
@@ -357,7 +367,7 @@ function Discovery {
         # CostList
         $discoveredDefs = $modInfo | Get-RWModDef -Version $buildInfo.RimWorldVersion.ShortVersion -XPathQuery (
             '/Defs/*[name()!="TerrainDef" and defName and not(stuffCategories) and ./costList/WoodLog]'
-        )
+        ) | Where-Object DefName -notmatch $buildInfo.Data.ExcludedDefsPattern
 
         if ($discoveredDefs) {
             $verbose += '    CostList: Patching {0} defs' -f $discoveredDefs.Count
@@ -397,13 +407,13 @@ function Discovery {
 
         # Wood floor
         $discoveredDefs = $modInfo | Get-RWModDef -Version $buildInfo.RimWorldVersion.ShortVersion -XPathQuery (
-            '/Defs/TerrainDef[costList/WoodLog and not(designatorDropdown)]'
+            '/Defs/TerrainDef[costList/WoodLog and description and not(designatorDropdown)]'
         )
         if ($discoveredDefs) {
             $verbose += '    Terrain: Patching {0} defs' -f $discoveredDefs.Count
 
             $buildInfo.Data.DiscoveredDefs.Terrain[$modInfo.PackageID] = $discoveredDefs
-            $buildInfo.Data.SupportedMods[$modInfo.Name] = $modInfo
+            $buildInfo.Data.SupportedFloorMods.Add($modInfo)
         }
 
         if ($verbose.Count -gt 1) {
@@ -578,32 +588,6 @@ function CreatePaintedWoodRecipeDef {
     # Remove the template
     $template.Remove()
     $xDocument.Save($path)
-}
-
-function CreateBuildingDef {
-    $path = Join-Path $buildInfo.Path.GeneratedVersioned 'Defs\ThingDefs_Buildings\EW-Base.xml'
-
-    Confirm-ParentDirectory $path
-
-    $commonParams = @{
-        Name    = 'Core\BuildingBase'
-        SaveAs  = $path
-        Version = $buildInfo.RimWorldVersion.ShortVersion
-    }
-    Copy-RWModDef @commonParams
-    Copy-RWModDef @commonParams -NewName 'BuildingBaseNoResources' -Remove 'leaveResourcesWhenKilled', 'filthLeaving'
-
-    $params = @{
-        Name    = 'Core\DoorBase'
-        SaveAs  = $path
-        Update  = @{
-            'statBases.MaxHitPoints' = 150
-            holdsRoof                = 'false'
-            blockLight               = 'false'
-        }
-        Version = $buildInfo.RimWorldVersion.ShortVersion
-    }
-    Copy-RWModDef @params
 }
 
 function CreateCostListPatch {
@@ -1054,19 +1038,20 @@ function UpdateMetadata {
     Copy-Item $path -Destination $metadataPath
     $path = Join-Path -Path $metadataPath -ChildPath 'About.xml'
 
-    $xDocument = [System.Xml.Linq.XDocument]::Load($path)
+    $xDocument = [XDocument]::Load($path)
     $xElement = $xDocument.Element('ModMetaData').Element('loadAfter')
-    foreach ($modInfo in @($buildInfo.Data.SupportedMods.Values; $buildInfo.Data.SupportedFloorMods)) {
-        if ($modInfo -is [string]) {
-            $modInfo = Get-RWMod -Name $mod
-        }
+    $allMods = @(
+        $buildInfo.Data.SupportedMods.Values
+        $buildInfo.Data.SupportedFloorMods
+    ) | Sort-Object PackageId
+    foreach ($modInfo in $allMods) {
         if (-not $modInfo.PackageId) {
             continue
         }
 
         $xElement.Add(
-            [System.Xml.Linq.XElement]::new(
-                [System.Xml.Linq.XName]'li',
+            [XElement]::new(
+                [XName]'li',
                 $modInfo.PackageId
             )
         )
@@ -1074,10 +1059,14 @@ function UpdateMetadata {
 
     $xElement = $xDocument.Element('ModMetaData').Element('description')
     $xElement.Value = $xElement.Value -replace '%SUPPORTED_MODS%', @(
-        ($buildInfo.Data.SupportedMods.Values.Name -notmatch '^(Core|Royalty|Ideology|Biotech|Anomaly)$' | Sort-Object | ForEach-Object { '* {0}' -f $_ }) -join "`n"
+        ($buildInfo.Data.SupportedMods.Values.Name -notmatch '^(Core|Royalty|Ideology|Biotech|Anomaly)$' |
+            Sort-Object |
+            ForEach-Object { '* {0}' -f $_ }) -join "`n"
     )
     $xElement.Value = $xElement.Value -replace '%SUPPORTED_FLOOR_MODS%', @(
-        ($buildInfo.Data.SupportedFloorMods | ForEach-Object { '* {0}' -f $_ }) -join "`n"
+        ($buildInfo.Data.SupportedFloorMods.Name -notmatch '^(Core|Royalty|Ideology|Biotech|Anomaly)$' |
+            Sort-Object |
+            ForEach-Object { '* {0}' -f $_ }) -join "`n"
     )
 
     $xDocument.Save($path)

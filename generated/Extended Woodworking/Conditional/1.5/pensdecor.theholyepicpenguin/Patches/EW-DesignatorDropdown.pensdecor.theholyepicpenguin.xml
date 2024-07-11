@@ -2,11 +2,20 @@
 <Patch>
   <Operation Class="PatchOperationSequence">
     <operations>
-      <li Class="PatchOperationAdd">
-        <xpath>/Defs/TerrainDef[defName="PenWoodFloor"]</xpath>
-        <value>
-          <designatorDropdown>EW_Designator_PenWoodFloor</designatorDropdown>
-        </value>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/TerrainDef[defName="PenWoodFloor"]/designatorDropdown</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/TerrainDef[defName="PenWoodFloor"]/designatorDropdown</xpath>
+          <value>
+            <designatorDropdown>EW_Designator_PenWoodFloor</designatorDropdown>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/TerrainDef[defName="PenWoodFloor"]</xpath>
+          <value>
+            <designatorDropdown>EW_Designator_PenWoodFloor</designatorDropdown>
+          </value>
+        </nomatch>
       </li>
     </operations>
   </Operation>

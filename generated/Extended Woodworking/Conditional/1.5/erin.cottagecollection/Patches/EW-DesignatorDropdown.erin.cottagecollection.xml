@@ -2,11 +2,20 @@
 <Patch>
   <Operation Class="PatchOperationSequence">
     <operations>
-      <li Class="PatchOperationAdd">
-        <xpath>/Defs/TerrainDef[defName="CCot_RusticPlankFloor"]</xpath>
-        <value>
-          <designatorDropdown>EW_Designator_CCot_RusticPlankFloor</designatorDropdown>
-        </value>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/TerrainDef[defName="CCot_RusticPlankFloor"]/designatorDropdown</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/TerrainDef[defName="CCot_RusticPlankFloor"]/designatorDropdown</xpath>
+          <value>
+            <designatorDropdown>EW_Designator_CCot_RusticPlankFloor</designatorDropdown>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/TerrainDef[defName="CCot_RusticPlankFloor"]</xpath>
+          <value>
+            <designatorDropdown>EW_Designator_CCot_RusticPlankFloor</designatorDropdown>
+          </value>
+        </nomatch>
       </li>
     </operations>
   </Operation>

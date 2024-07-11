@@ -2,11 +2,20 @@
 <Patch>
   <Operation Class="PatchOperationSequence">
     <operations>
-      <li Class="PatchOperationAdd">
-        <xpath>/Defs/TerrainDef[defName="ClutterWoodTileA"]</xpath>
-        <value>
-          <designatorDropdown>EW_Designator_ClutterWoodTileA</designatorDropdown>
-        </value>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/TerrainDef[defName="ClutterWoodTileA"]/designatorDropdown</xpath>
+        <match Class="PatchOperationReplace">
+          <xpath>/Defs/TerrainDef[defName="ClutterWoodTileA"]/designatorDropdown</xpath>
+          <value>
+            <designatorDropdown>EW_Designator_ClutterWoodTileA</designatorDropdown>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/TerrainDef[defName="ClutterWoodTileA"]</xpath>
+          <value>
+            <designatorDropdown>EW_Designator_ClutterWoodTileA</designatorDropdown>
+          </value>
+        </nomatch>
       </li>
     </operations>
   </Operation>

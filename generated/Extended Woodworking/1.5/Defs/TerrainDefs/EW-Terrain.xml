@@ -18,10 +18,10 @@
     <constructEffect>ConstructWood</constructEffect>
     <designationHotKey>Misc9</designationHotKey>
     <uiOrder>2000</uiOrder>
+    <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
     <costList>
       <WoodLog_Birch>3</WoodLog_Birch>
     </costList>
-    <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>WoodPlankFloor_Cecropia</defName>
@@ -41,10 +41,10 @@
     <constructEffect>ConstructWood</constructEffect>
     <designationHotKey>Misc9</designationHotKey>
     <uiOrder>2000</uiOrder>
-    <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
     <costList>
       <WoodLog_Cecropia>3</WoodLog_Cecropia>
     </costList>
+    <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>WoodPlankFloor_Cypress</defName>
@@ -87,10 +87,10 @@
     <constructEffect>ConstructWood</constructEffect>
     <designationHotKey>Misc9</designationHotKey>
     <uiOrder>2000</uiOrder>
-    <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
     <costList>
       <WoodLog_Drago>3</WoodLog_Drago>
     </costList>
+    <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>WoodPlankFloor_Maple</defName>
@@ -110,10 +110,10 @@
     <constructEffect>ConstructWood</constructEffect>
     <designationHotKey>Misc9</designationHotKey>
     <uiOrder>2000</uiOrder>
+    <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
     <costList>
       <WoodLog_Maple>3</WoodLog_Maple>
     </costList>
-    <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>WoodPlankFloor_Oak</defName>
@@ -133,10 +133,10 @@
     <constructEffect>ConstructWood</constructEffect>
     <designationHotKey>Misc9</designationHotKey>
     <uiOrder>2000</uiOrder>
+    <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
     <costList>
       <WoodLog_Oak>3</WoodLog_Oak>
     </costList>
-    <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>WoodPlankFloor_Palm</defName>
@@ -202,10 +202,10 @@
     <constructEffect>ConstructWood</constructEffect>
     <designationHotKey>Misc9</designationHotKey>
     <uiOrder>2000</uiOrder>
+    <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
     <costList>
       <WoodLog_Poplar>3</WoodLog_Poplar>
     </costList>
-    <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>WoodPlankFloor_Teak</defName>
@@ -225,10 +225,10 @@
     <constructEffect>ConstructWood</constructEffect>
     <designationHotKey>Misc9</designationHotKey>
     <uiOrder>2000</uiOrder>
+    <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
     <costList>
       <WoodLog_Teak>3</WoodLog_Teak>
     </costList>
-    <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>WoodPlankFloor_Willow</defName>
@@ -248,10 +248,10 @@
     <constructEffect>ConstructWood</constructEffect>
     <designationHotKey>Misc9</designationHotKey>
     <uiOrder>2000</uiOrder>
-    <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
     <costList>
       <WoodLog_Willow>3</WoodLog_Willow>
     </costList>
+    <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
   </TerrainDef>
   <TerrainDef>
     <defName>Bridge_Birch</defName>
@@ -284,10 +284,10 @@
     <destroyBuildingsOnDestroyed>true</destroyBuildingsOnDestroyed>
     <destroyEffect>Bridge_Collapse</destroyEffect>
     <destroyEffectWater>Bridge_CollapseWater</destroyEffectWater>
+    <designatorDropdown>EW_Designator_Bridge</designatorDropdown>
     <costList>
       <WoodLog_Birch>12</WoodLog_Birch>
     </costList>
-    <designatorDropdown>EW_Designator_Bridge</designatorDropdown>
   </TerrainDef>
   <TerrainDef>
     <defName>Bridge_Cecropia</defName>
@@ -320,10 +320,10 @@
     <destroyBuildingsOnDestroyed>true</destroyBuildingsOnDestroyed>
     <destroyEffect>Bridge_Collapse</destroyEffect>
     <destroyEffectWater>Bridge_CollapseWater</destroyEffectWater>
-    <designatorDropdown>EW_Designator_Bridge</designatorDropdown>
     <costList>
       <WoodLog_Cecropia>12</WoodLog_Cecropia>
     </costList>
+    <designatorDropdown>EW_Designator_Bridge</designatorDropdown>
   </TerrainDef>
   <TerrainDef>
     <defName>Bridge_Cypress</defName>
@@ -392,10 +392,10 @@
     <destroyBuildingsOnDestroyed>true</destroyBuildingsOnDestroyed>
     <destroyEffect>Bridge_Collapse</destroyEffect>
     <destroyEffectWater>Bridge_CollapseWater</destroyEffectWater>
-    <designatorDropdown>EW_Designator_Bridge</designatorDropdown>
     <costList>
       <WoodLog_Drago>12</WoodLog_Drago>
     </costList>
+    <designatorDropdown>EW_Designator_Bridge</designatorDropdown>
   </TerrainDef>
   <TerrainDef>
     <defName>Bridge_Maple</defName>
@@ -428,10 +428,10 @@
     <destroyBuildingsOnDestroyed>true</destroyBuildingsOnDestroyed>
     <destroyEffect>Bridge_Collapse</destroyEffect>
     <destroyEffectWater>Bridge_CollapseWater</destroyEffectWater>
+    <designatorDropdown>EW_Designator_Bridge</designatorDropdown>
     <costList>
       <WoodLog_Maple>12</WoodLog_Maple>
     </costList>
-    <designatorDropdown>EW_Designator_Bridge</designatorDropdown>
   </TerrainDef>
   <TerrainDef>
     <defName>Bridge_Oak</defName>
@@ -464,10 +464,10 @@
     <destroyBuildingsOnDestroyed>true</destroyBuildingsOnDestroyed>
     <destroyEffect>Bridge_Collapse</destroyEffect>
     <destroyEffectWater>Bridge_CollapseWater</destroyEffectWater>
+    <designatorDropdown>EW_Designator_Bridge</designatorDropdown>
     <costList>
       <WoodLog_Oak>12</WoodLog_Oak>
     </costList>
-    <designatorDropdown>EW_Designator_Bridge</designatorDropdown>
   </TerrainDef>
   <TerrainDef>
     <defName>Bridge_Palm</defName>
@@ -572,10 +572,10 @@
     <destroyBuildingsOnDestroyed>true</destroyBuildingsOnDestroyed>
     <destroyEffect>Bridge_Collapse</destroyEffect>
     <destroyEffectWater>Bridge_CollapseWater</destroyEffectWater>
+    <designatorDropdown>EW_Designator_Bridge</designatorDropdown>
     <costList>
       <WoodLog_Poplar>12</WoodLog_Poplar>
     </costList>
-    <designatorDropdown>EW_Designator_Bridge</designatorDropdown>
   </TerrainDef>
   <TerrainDef>
     <defName>Bridge_Teak</defName>
@@ -608,10 +608,10 @@
     <destroyBuildingsOnDestroyed>true</destroyBuildingsOnDestroyed>
     <destroyEffect>Bridge_Collapse</destroyEffect>
     <destroyEffectWater>Bridge_CollapseWater</destroyEffectWater>
+    <designatorDropdown>EW_Designator_Bridge</designatorDropdown>
     <costList>
       <WoodLog_Teak>12</WoodLog_Teak>
     </costList>
-    <designatorDropdown>EW_Designator_Bridge</designatorDropdown>
   </TerrainDef>
   <TerrainDef>
     <defName>Bridge_Willow</defName>
@@ -644,9 +644,9 @@
     <destroyBuildingsOnDestroyed>true</destroyBuildingsOnDestroyed>
     <destroyEffect>Bridge_Collapse</destroyEffect>
     <destroyEffectWater>Bridge_CollapseWater</destroyEffectWater>
-    <designatorDropdown>EW_Designator_Bridge</designatorDropdown>
     <costList>
       <WoodLog_Willow>12</WoodLog_Willow>
     </costList>
+    <designatorDropdown>EW_Designator_Bridge</designatorDropdown>
   </TerrainDef>
 </Defs>

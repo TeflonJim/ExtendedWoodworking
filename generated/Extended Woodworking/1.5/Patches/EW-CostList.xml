@@ -4,43 +4,6 @@
     <success>Always</success>
     <operations>
       <li Class="PatchOperationRemove">
-        <xpath>/Defs/ThingDef[defName="TorchWallLamp"]/costList/WoodLog</xpath>
-      </li>
-      <li Class="PatchOperationConditional">
-        <xpath>/Defs/ThingDef[defName="TorchWallLamp" and (stuffCategories)]</xpath>
-        <match Class="PatchOperationAdd">
-          <xpath>/Defs/ThingDef[defName="TorchWallLamp"]/stuffCategories</xpath>
-          <value>
-            <li>Woody</li>
-          </value>
-        </match>
-        <nomatch Class="PatchOperationAdd">
-          <xpath>/Defs/ThingDef[defName="TorchWallLamp"]</xpath>
-          <value>
-            <stuffCategories>
-              <li>Woody</li>
-            </stuffCategories>
-          </value>
-        </nomatch>
-      </li>
-      <li Class="PatchOperationConditional">
-        <success>Always</success>
-        <xpath>/Defs/ThingDef[defName="TorchWallLamp" and not(costStuffCount)]</xpath>
-        <match Class="PatchOperationAdd">
-          <xpath>/Defs/ThingDef[defName="TorchWallLamp" and not(costStuffCount)]</xpath>
-          <value>
-            <costStuffCount>15</costStuffCount>
-          </value>
-        </match>
-      </li>
-      <li Class="PatchOperationConditional">
-        <success>Always</success>
-        <xpath>/Defs/ThingDef[defName="TorchWallLamp"]/constructEffect</xpath>
-        <match Class="PatchOperationRemove">
-          <xpath>/Defs/ThingDef[defName="TorchWallLamp"]/constructEffect</xpath>
-        </match>
-      </li>
-      <li Class="PatchOperationRemove">
         <xpath>/Defs/ThingDef[defName="WatermillGenerator"]/costList/WoodLog</xpath>
       </li>
       <li Class="PatchOperationConditional">

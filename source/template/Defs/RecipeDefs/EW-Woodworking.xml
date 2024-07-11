@@ -1,42 +1,42 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-    <RecipeDef>
-        <defName>ChangeDiffWoodToNormalWood</defName>
-        <label>convert to normal wood</label>
-        <description>Converts various wood types into normal wood</description>
-        <jobString>Woodworking.</jobString>
-        <workAmount>1</workAmount>
-        <effectWorking>CutStone</effectWorking>
-        <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
-        <ingredients>
-            <li>
-                <filter>
-                    <categories>
-                        <li>WoodTypes</li>
-                    </categories>
-                </filter>
-                <count>25</count>
-            </li>
-        </ingredients>
-        <products>
-            <WoodLog>25</WoodLog>
-        </products>
-        <fixedIngredientFilter>
-            <categories>
-                <li>WoodTypes</li>
-            </categories>
-        </fixedIngredientFilter>
-        <defaultIngredientFilter>
-            <categories>
-                <li>WoodTypes</li>
-            </categories>
-            <disallowedThingDefs>
-                <li>WoodLog</li>
-            </disallowedThingDefs>
-        </defaultIngredientFilter>
-        <recipeUsers>
-            <li>TableWoodworking</li>
-        </recipeUsers>
-    </RecipeDef>
+  <RecipeDef>
+    <defName>ChangeDiffWoodToNormalWood</defName>
+    <label>convert to normal wood</label>
+    <description>Converts various wood types into normal wood</description>
+    <jobString>Woodworking.</jobString>
+    <workAmount>1</workAmount>
+    <effectWorking>CutStone</effectWorking>
+    <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>WoodTypes</li>
+          </categories>
+        </filter>
+        <count>25</count>
+      </li>
+    </ingredients>
+    <products>
+      <WoodLog>25</WoodLog>
+    </products>
+    <fixedIngredientFilter>
+      <categories>
+        <li>WoodTypes</li>
+      </categories>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>WoodTypes</li>
+      </categories>
+      <disallowedThingDefs>
+        <li>WoodLog</li>
+      </disallowedThingDefs>
+    </defaultIngredientFilter>
+    <recipeUsers>
+      <li>TableWoodworking</li>
+    </recipeUsers>
+  </RecipeDef>
 
 </Defs>

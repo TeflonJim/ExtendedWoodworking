@@ -181,15 +181,7 @@
             "Colour": "(221, 186, 141)"
         }
     ],
-    "SupportedFloorMods": [
-        "Evt Floors",
-        "[T] MoreFloors*",
-        "[WD] Expanded Floors",
-        "GloomyFurniture",
-        "RIMkea"
-    ],
-    "SkipFloorDefs": [
-        "*Light_Evt*",
-        "*Dark_Evt*"
+    "ExcludedDefs": [
+        "TorchWallLamp"
     ]
 }

@@ -39,7 +39,6 @@
     <li IfModActive="dismarzero.vgp.vgpgardentools">Conditional/1.5/dismarzero.vgp.vgpgardentools</li>
     <li IfModActive="dismarzero.vgp.vgpvegetablegarden">Conditional/1.5/dismarzero.vgp.vgpvegetablegarden</li>
     <li IfModActive="dismarzero.vgp.xtratreesandflowers">Conditional/1.5/dismarzero.vgp.xtratreesandflowers</li>
-    <li IfModActive="dubwise.rimefeller">Conditional/1.5/dubwise.rimefeller</li>
     <li IfModActive="erin.cottagecollection">Conditional/1.5/erin.cottagecollection</li>
     <li IfModActive="erin.japanesefurniture">Conditional/1.5/erin.japanesefurniture</li>
     <li IfModActive="fox.simplelearning">Conditional/1.5/fox.simplelearning</li>
@@ -71,7 +70,6 @@
     <li IfModActive="oskarpotocki.vfe.tribals">Conditional/1.5/oskarpotocki.vfe.tribals</li>
     <li IfModActive="pensdecor.theholyepicpenguin">Conditional/1.5/pensdecor.theholyepicpenguin</li>
     <li IfModActive="prf.materials">Conditional/1.5/prf.materials</li>
-    <li IfModActive="rebuild.cotr.doorsandcorners">Conditional/1.5/rebuild.cotr.doorsandcorners</li>
     <li IfModActive="regrowth.botr.aspenforest">Conditional/1.5/regrowth.botr.aspenforest</li>
     <li IfModActive="regrowth.botr.boilingforest">Conditional/1.5/regrowth.botr.boilingforest</li>
     <li IfModActive="regrowth.botr.borealforestexpansion">Conditional/1.5/regrowth.botr.borealforestexpansion</li>
