@@ -44,13 +44,11 @@ Supported mods:
 * A Dog Said... Animal Prosthetics
 * A RimWorld of Magic
 * Alpha Memes
-* Area Rugs 2.0
 * Books From Paper
 * Camping Tent
 * Caravan Adventures
 * Caravan Equipment (Continued)
 * Caravan Gear
-* Ceramics VEF
 * Coal Expanded (Continued)
 * Erin's Cottage Collection
 * Erin's Japanese Furniture
@@ -116,7 +114,6 @@ The following mods contain floors, the defs are duplicated for each available wo
 
 * [T] MoreFloors 1.5
 * [WD] Expanded Floors
-* Clutter Structures
 * Erin's Cottage Collection
 * Pen's Decor
 * RIMkea
@@ -171,8 +168,6 @@ The original version of Extended Woodworking inspired a number of mods including
     <li>mlie.rimwriter</li>
     <li>mlie.roughbarricade</li>
     <li>mlie.westerado</li>
-    <li>n7huntsman.ceramics.vef</li>
-    <li>neronix17.clutterstructures</li>
     <li>neronix17.outland.furnitureanddecor</li>
     <li>oskarpotocki.vanillafactionsexpanded.settlersmodule</li>
     <li>oskarpotocki.vanillavehiclesexpanded</li>
@@ -182,6 +177,7 @@ The original version of Extended Woodworking inspired a number of mods including
     <li>pensdecor.theholyepicpenguin</li>
     <li>pensdecor.theholyepicpenguin</li>
     <li>prf.materials</li>
+    <li>reel.expanded.storage</li>
     <li>regrowth.botr.aspenforest</li>
     <li>regrowth.botr.boilingforest</li>
     <li>regrowth.botr.borealforestexpansion</li>
@@ -199,7 +195,6 @@ The original version of Extended Woodworking inspired a number of mods including
     <li>spoonshortage.rimkea</li>
     <li>telkir.tmods.morefloors</li>
     <li>telkir.tmods.morefloors</li>
-    <li>thegoofyone.arearugs</li>
     <li>torann.arimworldofmagic</li>
     <li>ucp.tabletopdecorations</li>
     <li>vanillaexpanded.vaeaccessories</li>

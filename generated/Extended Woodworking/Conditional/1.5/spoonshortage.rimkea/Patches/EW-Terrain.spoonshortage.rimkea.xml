@@ -20,10 +20,10 @@
                   </statBases>
                   <renderPrecedence>250</renderPrecedence>
                   <texturePath>Floors/darkplanks</texturePath>
-                  <designatorDropdown>EW_Designator_Floor_DarkPlanks</designatorDropdown>
                   <costList>
                     <WoodLog_Acacia>4</WoodLog_Acacia>
                   </costList>
+                  <designatorDropdown>EW_Designator_Floor_DarkPlanks</designatorDropdown>
                   <color>(219, 184, 144)</color>
                 </TerrainDef>
               </value>
@@ -41,10 +41,10 @@
                   </statBases>
                   <renderPrecedence>250</renderPrecedence>
                   <texturePath>Floors/lightplanks</texturePath>
-                  <designatorDropdown>EW_Designator_Floor_LightPlanks</designatorDropdown>
                   <costList>
                     <WoodLog_Acacia>4</WoodLog_Acacia>
                   </costList>
+                  <designatorDropdown>EW_Designator_Floor_LightPlanks</designatorDropdown>
                   <color>(219, 184, 144)</color>
                 </TerrainDef>
               </value>
@@ -62,10 +62,10 @@
                   </statBases>
                   <renderPrecedence>250</renderPrecedence>
                   <texturePath>Floors/smoothwood</texturePath>
-                  <designatorDropdown>EW_Designator_Floor_SmoothWood</designatorDropdown>
                   <costList>
                     <WoodLog_Acacia>4</WoodLog_Acacia>
                   </costList>
+                  <designatorDropdown>EW_Designator_Floor_SmoothWood</designatorDropdown>
                   <color>(219, 184, 144)</color>
                 </TerrainDef>
               </value>
@@ -91,10 +91,10 @@
                   </statBases>
                   <renderPrecedence>250</renderPrecedence>
                   <texturePath>Floors/darkplanks</texturePath>
-                  <designatorDropdown>EW_Designator_Floor_DarkPlanks</designatorDropdown>
                   <costList>
                     <WoodLog_Aspen>4</WoodLog_Aspen>
                   </costList>
+                  <designatorDropdown>EW_Designator_Floor_DarkPlanks</designatorDropdown>
                   <color>(228, 204, 171)</color>
                 </TerrainDef>
               </value>
@@ -112,10 +112,10 @@
                   </statBases>
                   <renderPrecedence>250</renderPrecedence>
                   <texturePath>Floors/lightplanks</texturePath>
-                  <designatorDropdown>EW_Designator_Floor_LightPlanks</designatorDropdown>
                   <costList>
                     <WoodLog_Aspen>4</WoodLog_Aspen>
                   </costList>
+                  <designatorDropdown>EW_Designator_Floor_LightPlanks</designatorDropdown>
                   <color>(228, 204, 171)</color>
                 </TerrainDef>
               </value>
@@ -133,10 +133,10 @@
                   </statBases>
                   <renderPrecedence>250</renderPrecedence>
                   <texturePath>Floors/smoothwood</texturePath>
-                  <designatorDropdown>EW_Designator_Floor_SmoothWood</designatorDropdown>
                   <costList>
                     <WoodLog_Aspen>4</WoodLog_Aspen>
                   </costList>
+                  <designatorDropdown>EW_Designator_Floor_SmoothWood</designatorDropdown>
                   <color>(228, 204, 171)</color>
                 </TerrainDef>
               </value>
@@ -233,10 +233,10 @@
                   </statBases>
                   <renderPrecedence>250</renderPrecedence>
                   <texturePath>Floors/darkplanks</texturePath>
-                  <designatorDropdown>EW_Designator_Floor_DarkPlanks</designatorDropdown>
                   <costList>
                     <WoodLog_CherryBlossom>4</WoodLog_CherryBlossom>
                   </costList>
+                  <designatorDropdown>EW_Designator_Floor_DarkPlanks</designatorDropdown>
                   <color>(165, 82, 40)</color>
                 </TerrainDef>
               </value>
@@ -254,10 +254,10 @@
                   </statBases>
                   <renderPrecedence>250</renderPrecedence>
                   <texturePath>Floors/lightplanks</texturePath>
-                  <designatorDropdown>EW_Designator_Floor_LightPlanks</designatorDropdown>
                   <costList>
                     <WoodLog_CherryBlossom>4</WoodLog_CherryBlossom>
                   </costList>
+                  <designatorDropdown>EW_Designator_Floor_LightPlanks</designatorDropdown>
                   <color>(165, 82, 40)</color>
                 </TerrainDef>
               </value>
@@ -275,10 +275,10 @@
                   </statBases>
                   <renderPrecedence>250</renderPrecedence>
                   <texturePath>Floors/smoothwood</texturePath>
-                  <designatorDropdown>EW_Designator_Floor_SmoothWood</designatorDropdown>
                   <costList>
                     <WoodLog_CherryBlossom>4</WoodLog_CherryBlossom>
                   </costList>
+                  <designatorDropdown>EW_Designator_Floor_SmoothWood</designatorDropdown>
                   <color>(165, 82, 40)</color>
                 </TerrainDef>
               </value>
@@ -304,10 +304,10 @@
                   </statBases>
                   <renderPrecedence>250</renderPrecedence>
                   <texturePath>Floors/darkplanks</texturePath>
-                  <designatorDropdown>EW_Designator_Floor_DarkPlanks</designatorDropdown>
                   <costList>
                     <WoodLog_JapaneseMaple>4</WoodLog_JapaneseMaple>
                   </costList>
+                  <designatorDropdown>EW_Designator_Floor_DarkPlanks</designatorDropdown>
                   <color>(252, 170, 124)</color>
                 </TerrainDef>
               </value>
@@ -325,10 +325,10 @@
                   </statBases>
                   <renderPrecedence>250</renderPrecedence>
                   <texturePath>Floors/lightplanks</texturePath>
-                  <designatorDropdown>EW_Designator_Floor_LightPlanks</designatorDropdown>
                   <costList>
                     <WoodLog_JapaneseMaple>4</WoodLog_JapaneseMaple>
                   </costList>
+                  <designatorDropdown>EW_Designator_Floor_LightPlanks</designatorDropdown>
                   <color>(252, 170, 124)</color>
                 </TerrainDef>
               </value>
@@ -346,10 +346,10 @@
                   </statBases>
                   <renderPrecedence>250</renderPrecedence>
                   <texturePath>Floors/smoothwood</texturePath>
-                  <designatorDropdown>EW_Designator_Floor_SmoothWood</designatorDropdown>
                   <costList>
                     <WoodLog_JapaneseMaple>4</WoodLog_JapaneseMaple>
                   </costList>
+                  <designatorDropdown>EW_Designator_Floor_SmoothWood</designatorDropdown>
                   <color>(252, 170, 124)</color>
                 </TerrainDef>
               </value>

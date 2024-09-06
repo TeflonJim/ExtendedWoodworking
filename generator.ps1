@@ -33,6 +33,7 @@ param (
         'CreateTerrainDef'
         'CreateTerrainPatch'
         'CreatePaintedTerrainDef'
+        'UpdateCherryPicker'
         'UpdateLoadFolders'
         'UpdateMetadata'
         'CreatePackage'
@@ -125,6 +126,11 @@ class ModBuildData {
         A regex generated from ExcludedDefs.
     #>
     [string] $ExcludedDefsPattern
+
+    <#
+        Additional mods to add to the LoadAfter list where content is not automatically discovered.
+    #>
+    [string[]] $LoadAfter
 
     <#
         Mods that are explicitly supported because patches have been generated.
@@ -994,6 +1000,38 @@ function CreatePaintedTerrainDef {
     }
 }
 
+function UpdateCherryPicker {
+    $path = [Path]::Combine($buildInfo.Path.GeneratedVersioned, 'Defs/CherryPicker.xml')
+
+    $xDocument = [XDocument]::Load($path)
+    $xElement = $xDocument.Element('Defs').
+        Element('CherryPicker.DefList').
+        Element('defs')
+
+    foreach ($wood in $buildInfo.Data.WoodPainted) {
+        $xElement.Add(
+            [XElement]::new(
+                [XName]'li',
+                'ThingDef/WoodLog_{0}' -f $wood.Name
+            )
+        )
+        $xElement.Add(
+            [XElement]::new(
+                [XName]'li',
+                'RecipeDef/PaintWoodLog_{0}' -f $wood.Name
+            )
+        )
+        $xElement.Add(
+            [XElement]::new(
+                [XName]'li',
+                'TerrainDef/WoodPlankFloor_{0}' -f $wood.Name
+            )
+        )
+    }
+
+    $xDocument.Save($path)
+}
+
 function UpdateLoadFolders {
     $version = $buildInfo.RimWorldVersion.ShortVersion
     $element = [XElement]::new(
@@ -1031,6 +1069,9 @@ function UpdateMetadata {
     $xDocument = [XDocument]::Load($path)
     $xElement = $xDocument.Element('ModMetaData').Element('loadAfter')
     $allMods = @(
+        foreach ($item in $buildInfo.Data.LoadAfter) {
+            Get-RWMod -PackageID $item
+        }
         $buildInfo.Data.SupportedMods.Values
         $buildInfo.Data.SupportedFloorMods
     ) | Sort-Object PackageId

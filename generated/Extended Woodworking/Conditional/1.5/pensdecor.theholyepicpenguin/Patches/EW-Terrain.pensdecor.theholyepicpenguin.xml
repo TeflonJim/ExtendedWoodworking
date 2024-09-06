@@ -24,10 +24,10 @@
                     <Flammability>0.22</Flammability>
                   </statBases>
                   <constructEffect>ConstructWood</constructEffect>
-                  <designatorDropdown>EW_Designator_PenWoodFloor</designatorDropdown>
                   <costList>
                     <WoodLog_Acacia>3</WoodLog_Acacia>
                   </costList>
+                  <designatorDropdown>EW_Designator_PenWoodFloor</designatorDropdown>
                 </TerrainDef>
               </value>
             </li>
@@ -56,10 +56,10 @@
                     <Flammability>0.22</Flammability>
                   </statBases>
                   <constructEffect>ConstructWood</constructEffect>
-                  <designatorDropdown>EW_Designator_PenWoodFloor</designatorDropdown>
                   <costList>
                     <WoodLog_Aspen>3</WoodLog_Aspen>
                   </costList>
+                  <designatorDropdown>EW_Designator_PenWoodFloor</designatorDropdown>
                 </TerrainDef>
               </value>
             </li>
@@ -120,10 +120,10 @@
                     <Flammability>0.22</Flammability>
                   </statBases>
                   <constructEffect>ConstructWood</constructEffect>
-                  <designatorDropdown>EW_Designator_PenWoodFloor</designatorDropdown>
                   <costList>
                     <WoodLog_CherryBlossom>3</WoodLog_CherryBlossom>
                   </costList>
+                  <designatorDropdown>EW_Designator_PenWoodFloor</designatorDropdown>
                 </TerrainDef>
               </value>
             </li>
@@ -152,10 +152,10 @@
                     <Flammability>0.22</Flammability>
                   </statBases>
                   <constructEffect>ConstructWood</constructEffect>
-                  <designatorDropdown>EW_Designator_PenWoodFloor</designatorDropdown>
                   <costList>
                     <WoodLog_JapaneseMaple>3</WoodLog_JapaneseMaple>
                   </costList>
+                  <designatorDropdown>EW_Designator_PenWoodFloor</designatorDropdown>
                 </TerrainDef>
               </value>
             </li>

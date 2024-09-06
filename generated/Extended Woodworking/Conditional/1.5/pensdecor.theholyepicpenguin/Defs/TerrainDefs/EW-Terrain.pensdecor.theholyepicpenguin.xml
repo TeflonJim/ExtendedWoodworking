@@ -14,10 +14,10 @@
       <Flammability>0.22</Flammability>
     </statBases>
     <constructEffect>ConstructWood</constructEffect>
-    <designatorDropdown>EW_Designator_PenWoodFloor</designatorDropdown>
     <costList>
       <WoodLog_Birch>3</WoodLog_Birch>
     </costList>
+    <designatorDropdown>EW_Designator_PenWoodFloor</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>PenWoodFloor_Cecropia</defName>
@@ -52,10 +52,10 @@
       <Flammability>0.22</Flammability>
     </statBases>
     <constructEffect>ConstructWood</constructEffect>
-    <designatorDropdown>EW_Designator_PenWoodFloor</designatorDropdown>
     <costList>
       <WoodLog_Cypress>3</WoodLog_Cypress>
     </costList>
+    <designatorDropdown>EW_Designator_PenWoodFloor</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>PenWoodFloor_Drago</defName>
@@ -90,10 +90,10 @@
       <Flammability>0.22</Flammability>
     </statBases>
     <constructEffect>ConstructWood</constructEffect>
-    <designatorDropdown>EW_Designator_PenWoodFloor</designatorDropdown>
     <costList>
       <WoodLog_Maple>3</WoodLog_Maple>
     </costList>
+    <designatorDropdown>EW_Designator_PenWoodFloor</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>PenWoodFloor_Oak</defName>
@@ -109,10 +109,10 @@
       <Flammability>0.22</Flammability>
     </statBases>
     <constructEffect>ConstructWood</constructEffect>
-    <designatorDropdown>EW_Designator_PenWoodFloor</designatorDropdown>
     <costList>
       <WoodLog_Oak>3</WoodLog_Oak>
     </costList>
+    <designatorDropdown>EW_Designator_PenWoodFloor</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>PenWoodFloor_Palm</defName>
@@ -147,10 +147,10 @@
       <Flammability>0.22</Flammability>
     </statBases>
     <constructEffect>ConstructWood</constructEffect>
-    <designatorDropdown>EW_Designator_PenWoodFloor</designatorDropdown>
     <costList>
       <WoodLog_Pine>3</WoodLog_Pine>
     </costList>
+    <designatorDropdown>EW_Designator_PenWoodFloor</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>PenWoodFloor_Poplar</defName>
@@ -185,10 +185,10 @@
       <Flammability>0.22</Flammability>
     </statBases>
     <constructEffect>ConstructWood</constructEffect>
-    <designatorDropdown>EW_Designator_PenWoodFloor</designatorDropdown>
     <costList>
       <WoodLog_Teak>3</WoodLog_Teak>
     </costList>
+    <designatorDropdown>EW_Designator_PenWoodFloor</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>PenWoodFloor_Willow</defName>

@@ -20,10 +20,10 @@
                   <renderPrecedence>250</renderPrecedence>
                   <description>Rustic acacia floorboards, finely polished and with splinters removed. Nice to look at but somewhat slow to build.</description>
                   <texturePath>Terrain/Surfaces/WoodFloor1</texturePath>
-                  <designatorDropdown>EW_Designator_FloorWoodRustic</designatorDropdown>
                   <costList>
                     <WoodLog_Acacia>6</WoodLog_Acacia>
                   </costList>
+                  <designatorDropdown>EW_Designator_FloorWoodRustic</designatorDropdown>
                   <color>(219, 184, 144)</color>
                 </TerrainDef>
               </value>
@@ -40,10 +40,10 @@
                   <renderPrecedence>249</renderPrecedence>
                   <description>Wide, plain-looking floorboards for that minimalistic feel. Easy to build.</description>
                   <texturePath>Terrain/Surfaces/WoodFloor2</texturePath>
-                  <designatorDropdown>EW_Designator_FloorWoodWide</designatorDropdown>
                   <costList>
                     <WoodLog_Acacia>2</WoodLog_Acacia>
                   </costList>
+                  <designatorDropdown>EW_Designator_FloorWoodWide</designatorDropdown>
                   <color>(219, 184, 144)</color>
                 </TerrainDef>
               </value>
@@ -61,10 +61,10 @@
                   <renderPrecedence>248</renderPrecedence>
                   <description>Light-coloured polished acacia floorboards in a pleasant interlocking pattern.</description>
                   <texturePath>Terrain/Surfaces/WoodFloor3</texturePath>
-                  <designatorDropdown>EW_Designator_FloorWoodLight</designatorDropdown>
                   <costList>
                     <WoodLog_Acacia>5</WoodLog_Acacia>
                   </costList>
+                  <designatorDropdown>EW_Designator_FloorWoodLight</designatorDropdown>
                   <color>(219, 184, 144)</color>
                 </TerrainDef>
               </value>
@@ -82,10 +82,10 @@
                   <renderPrecedence>247</renderPrecedence>
                   <description>A acacia floor with planks laid in a mosaic-like pattern - beautiful, but needs a lot of acacia and is time-consuming to build.</description>
                   <texturePath>Terrain/Surfaces/WoodFloor4</texturePath>
-                  <designatorDropdown>EW_Designator_FloorWoodMosaic</designatorDropdown>
                   <costList>
                     <WoodLog_Acacia>9</WoodLog_Acacia>
                   </costList>
+                  <designatorDropdown>EW_Designator_FloorWoodMosaic</designatorDropdown>
                   <color>(219, 184, 144)</color>
                 </TerrainDef>
               </value>
@@ -102,10 +102,10 @@
                   <renderPrecedence>246</renderPrecedence>
                   <description>Dark acacia floorboards.</description>
                   <texturePath>Terrain/Surfaces/WoodFloor5</texturePath>
-                  <designatorDropdown>EW_Designator_FloorWoodVertical</designatorDropdown>
                   <costList>
                     <WoodLog_Acacia>3</WoodLog_Acacia>
                   </costList>
+                  <designatorDropdown>EW_Designator_FloorWoodVertical</designatorDropdown>
                   <color>(219, 184, 144)</color>
                 </TerrainDef>
               </value>
@@ -123,10 +123,10 @@
                   <renderPrecedence>245</renderPrecedence>
                   <description>Rough barn board flooring. Quick to build.</description>
                   <texturePath>Terrain/Surfaces/WoodFloor6</texturePath>
-                  <designatorDropdown>EW_Designator_FloorWoodBarn</designatorDropdown>
                   <costList>
                     <WoodLog_Acacia>2</WoodLog_Acacia>
                   </costList>
+                  <designatorDropdown>EW_Designator_FloorWoodBarn</designatorDropdown>
                   <color>(219, 184, 144)</color>
                 </TerrainDef>
               </value>
@@ -152,10 +152,10 @@
                   <renderPrecedence>250</renderPrecedence>
                   <description>Rustic acacia floorboards, finely polished and with splinters removed. Nice to look at but somewhat slow to build.</description>
                   <texturePath>Terrain/Surfaces/WoodFloor1</texturePath>
-                  <designatorDropdown>EW_Designator_FloorWoodRustic</designatorDropdown>
                   <costList>
                     <WoodLog_Aspen>6</WoodLog_Aspen>
                   </costList>
+                  <designatorDropdown>EW_Designator_FloorWoodRustic</designatorDropdown>
                   <color>(228, 204, 171)</color>
                 </TerrainDef>
               </value>
@@ -172,10 +172,10 @@
                   <renderPrecedence>249</renderPrecedence>
                   <description>Wide, plain-looking floorboards for that minimalistic feel. Easy to build.</description>
                   <texturePath>Terrain/Surfaces/WoodFloor2</texturePath>
-                  <designatorDropdown>EW_Designator_FloorWoodWide</designatorDropdown>
                   <costList>
                     <WoodLog_Aspen>2</WoodLog_Aspen>
                   </costList>
+                  <designatorDropdown>EW_Designator_FloorWoodWide</designatorDropdown>
                   <color>(228, 204, 171)</color>
                 </TerrainDef>
               </value>
@@ -193,10 +193,10 @@
                   <renderPrecedence>248</renderPrecedence>
                   <description>Light-coloured polished acacia floorboards in a pleasant interlocking pattern.</description>
                   <texturePath>Terrain/Surfaces/WoodFloor3</texturePath>
-                  <designatorDropdown>EW_Designator_FloorWoodLight</designatorDropdown>
                   <costList>
                     <WoodLog_Aspen>5</WoodLog_Aspen>
                   </costList>
+                  <designatorDropdown>EW_Designator_FloorWoodLight</designatorDropdown>
                   <color>(228, 204, 171)</color>
                 </TerrainDef>
               </value>
@@ -214,10 +214,10 @@
                   <renderPrecedence>247</renderPrecedence>
                   <description>A acacia floor with planks laid in a mosaic-like pattern - beautiful, but needs a lot of acacia and is time-consuming to build.</description>
                   <texturePath>Terrain/Surfaces/WoodFloor4</texturePath>
-                  <designatorDropdown>EW_Designator_FloorWoodMosaic</designatorDropdown>
                   <costList>
                     <WoodLog_Aspen>9</WoodLog_Aspen>
                   </costList>
+                  <designatorDropdown>EW_Designator_FloorWoodMosaic</designatorDropdown>
                   <color>(228, 204, 171)</color>
                 </TerrainDef>
               </value>
@@ -234,10 +234,10 @@
                   <renderPrecedence>246</renderPrecedence>
                   <description>Dark acacia floorboards.</description>
                   <texturePath>Terrain/Surfaces/WoodFloor5</texturePath>
-                  <designatorDropdown>EW_Designator_FloorWoodVertical</designatorDropdown>
                   <costList>
                     <WoodLog_Aspen>3</WoodLog_Aspen>
                   </costList>
+                  <designatorDropdown>EW_Designator_FloorWoodVertical</designatorDropdown>
                   <color>(228, 204, 171)</color>
                 </TerrainDef>
               </value>
@@ -255,10 +255,10 @@
                   <renderPrecedence>245</renderPrecedence>
                   <description>Rough barn board flooring. Quick to build.</description>
                   <texturePath>Terrain/Surfaces/WoodFloor6</texturePath>
-                  <designatorDropdown>EW_Designator_FloorWoodBarn</designatorDropdown>
                   <costList>
                     <WoodLog_Aspen>2</WoodLog_Aspen>
                   </costList>
+                  <designatorDropdown>EW_Designator_FloorWoodBarn</designatorDropdown>
                   <color>(228, 204, 171)</color>
                 </TerrainDef>
               </value>
@@ -416,10 +416,10 @@
                   <renderPrecedence>250</renderPrecedence>
                   <description>Rustic cherry blossom floorboards, finely polished and with splinters removed. Nice to look at but somewhat slow to build.</description>
                   <texturePath>Terrain/Surfaces/WoodFloor1</texturePath>
-                  <designatorDropdown>EW_Designator_FloorWoodRustic</designatorDropdown>
                   <costList>
                     <WoodLog_CherryBlossom>6</WoodLog_CherryBlossom>
                   </costList>
+                  <designatorDropdown>EW_Designator_FloorWoodRustic</designatorDropdown>
                   <color>(165, 82, 40)</color>
                 </TerrainDef>
               </value>
@@ -436,10 +436,10 @@
                   <renderPrecedence>249</renderPrecedence>
                   <description>Wide, plain-looking floorboards for that minimalistic feel. Easy to build.</description>
                   <texturePath>Terrain/Surfaces/WoodFloor2</texturePath>
-                  <designatorDropdown>EW_Designator_FloorWoodWide</designatorDropdown>
                   <costList>
                     <WoodLog_CherryBlossom>2</WoodLog_CherryBlossom>
                   </costList>
+                  <designatorDropdown>EW_Designator_FloorWoodWide</designatorDropdown>
                   <color>(165, 82, 40)</color>
                 </TerrainDef>
               </value>
@@ -457,10 +457,10 @@
                   <renderPrecedence>248</renderPrecedence>
                   <description>Light-coloured polished cherry blossom floorboards in a pleasant interlocking pattern.</description>
                   <texturePath>Terrain/Surfaces/WoodFloor3</texturePath>
-                  <designatorDropdown>EW_Designator_FloorWoodLight</designatorDropdown>
                   <costList>
                     <WoodLog_CherryBlossom>5</WoodLog_CherryBlossom>
                   </costList>
+                  <designatorDropdown>EW_Designator_FloorWoodLight</designatorDropdown>
                   <color>(165, 82, 40)</color>
                 </TerrainDef>
               </value>
@@ -478,10 +478,10 @@
                   <renderPrecedence>247</renderPrecedence>
                   <description>A cherry blossom floor with planks laid in a mosaic-like pattern - beautiful, but needs a lot of cherry blossom and is time-consuming to build.</description>
                   <texturePath>Terrain/Surfaces/WoodFloor4</texturePath>
-                  <designatorDropdown>EW_Designator_FloorWoodMosaic</designatorDropdown>
                   <costList>
                     <WoodLog_CherryBlossom>9</WoodLog_CherryBlossom>
                   </costList>
+                  <designatorDropdown>EW_Designator_FloorWoodMosaic</designatorDropdown>
                   <color>(165, 82, 40)</color>
                 </TerrainDef>
               </value>
@@ -498,10 +498,10 @@
                   <renderPrecedence>246</renderPrecedence>
                   <description>Dark cherry blossom floorboards.</description>
                   <texturePath>Terrain/Surfaces/WoodFloor5</texturePath>
-                  <designatorDropdown>EW_Designator_FloorWoodVertical</designatorDropdown>
                   <costList>
                     <WoodLog_CherryBlossom>3</WoodLog_CherryBlossom>
                   </costList>
+                  <designatorDropdown>EW_Designator_FloorWoodVertical</designatorDropdown>
                   <color>(165, 82, 40)</color>
                 </TerrainDef>
               </value>
@@ -519,10 +519,10 @@
                   <renderPrecedence>245</renderPrecedence>
                   <description>Rough barn board flooring. Quick to build.</description>
                   <texturePath>Terrain/Surfaces/WoodFloor6</texturePath>
-                  <designatorDropdown>EW_Designator_FloorWoodBarn</designatorDropdown>
                   <costList>
                     <WoodLog_CherryBlossom>2</WoodLog_CherryBlossom>
                   </costList>
+                  <designatorDropdown>EW_Designator_FloorWoodBarn</designatorDropdown>
                   <color>(165, 82, 40)</color>
                 </TerrainDef>
               </value>
@@ -548,10 +548,10 @@
                   <renderPrecedence>250</renderPrecedence>
                   <description>Rustic japanese maple floorboards, finely polished and with splinters removed. Nice to look at but somewhat slow to build.</description>
                   <texturePath>Terrain/Surfaces/WoodFloor1</texturePath>
-                  <designatorDropdown>EW_Designator_FloorWoodRustic</designatorDropdown>
                   <costList>
                     <WoodLog_JapaneseMaple>6</WoodLog_JapaneseMaple>
                   </costList>
+                  <designatorDropdown>EW_Designator_FloorWoodRustic</designatorDropdown>
                   <color>(252, 170, 124)</color>
                 </TerrainDef>
               </value>
@@ -568,10 +568,10 @@
                   <renderPrecedence>249</renderPrecedence>
                   <description>Wide, plain-looking floorboards for that minimalistic feel. Easy to build.</description>
                   <texturePath>Terrain/Surfaces/WoodFloor2</texturePath>
-                  <designatorDropdown>EW_Designator_FloorWoodWide</designatorDropdown>
                   <costList>
                     <WoodLog_JapaneseMaple>2</WoodLog_JapaneseMaple>
                   </costList>
+                  <designatorDropdown>EW_Designator_FloorWoodWide</designatorDropdown>
                   <color>(252, 170, 124)</color>
                 </TerrainDef>
               </value>
@@ -589,10 +589,10 @@
                   <renderPrecedence>248</renderPrecedence>
                   <description>Light-coloured polished japanese maple floorboards in a pleasant interlocking pattern.</description>
                   <texturePath>Terrain/Surfaces/WoodFloor3</texturePath>
-                  <designatorDropdown>EW_Designator_FloorWoodLight</designatorDropdown>
                   <costList>
                     <WoodLog_JapaneseMaple>5</WoodLog_JapaneseMaple>
                   </costList>
+                  <designatorDropdown>EW_Designator_FloorWoodLight</designatorDropdown>
                   <color>(252, 170, 124)</color>
                 </TerrainDef>
               </value>
@@ -610,10 +610,10 @@
                   <renderPrecedence>247</renderPrecedence>
                   <description>A japanese maple floor with planks laid in a mosaic-like pattern - beautiful, but needs a lot of japanese maple and is time-consuming to build.</description>
                   <texturePath>Terrain/Surfaces/WoodFloor4</texturePath>
-                  <designatorDropdown>EW_Designator_FloorWoodMosaic</designatorDropdown>
                   <costList>
                     <WoodLog_JapaneseMaple>9</WoodLog_JapaneseMaple>
                   </costList>
+                  <designatorDropdown>EW_Designator_FloorWoodMosaic</designatorDropdown>
                   <color>(252, 170, 124)</color>
                 </TerrainDef>
               </value>
@@ -630,10 +630,10 @@
                   <renderPrecedence>246</renderPrecedence>
                   <description>Dark japanese maple floorboards.</description>
                   <texturePath>Terrain/Surfaces/WoodFloor5</texturePath>
-                  <designatorDropdown>EW_Designator_FloorWoodVertical</designatorDropdown>
                   <costList>
                     <WoodLog_JapaneseMaple>3</WoodLog_JapaneseMaple>
                   </costList>
+                  <designatorDropdown>EW_Designator_FloorWoodVertical</designatorDropdown>
                   <color>(252, 170, 124)</color>
                 </TerrainDef>
               </value>
@@ -651,10 +651,10 @@
                   <renderPrecedence>245</renderPrecedence>
                   <description>Rough barn board flooring. Quick to build.</description>
                   <texturePath>Terrain/Surfaces/WoodFloor6</texturePath>
-                  <designatorDropdown>EW_Designator_FloorWoodBarn</designatorDropdown>
                   <costList>
                     <WoodLog_JapaneseMaple>2</WoodLog_JapaneseMaple>
                   </costList>
+                  <designatorDropdown>EW_Designator_FloorWoodBarn</designatorDropdown>
                   <color>(252, 170, 124)</color>
                 </TerrainDef>
               </value>

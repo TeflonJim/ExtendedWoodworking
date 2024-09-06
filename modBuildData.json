@@ -187,5 +187,8 @@
     "ExcludedDefs": [
         "TorchWallLamp", // ConstructEffect declared on an inherited abstract.
         "WDPlywoodFloor" // Label / description replacement is an aesthetic mess.
+    ],
+    "LoadAfter": [
+        "reel.expanded.storage"
     ]
 }

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<CherryPicker.DefList MayRequire="Owlchemist.CherryPicker.tmpfix">
+		<defName>PaintedWood</defName>
+		<label>extended woodworking: enable painted wood</label>
+		<defs />
+	</CherryPicker.DefList>
+</Defs>

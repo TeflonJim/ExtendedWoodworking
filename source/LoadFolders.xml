@@ -64,8 +64,6 @@
     <li IfModActive="mlie.rimwriter">Conditional/1.5/mlie.rimwriter</li>
     <li IfModActive="mlie.roughbarricade">Conditional/1.5/mlie.roughbarricade</li>
     <li IfModActive="mlie.westerado">Conditional/1.5/mlie.westerado</li>
-    <li IfModActive="n7huntsman.ceramics.vef">Conditional/1.5/n7huntsman.ceramics.vef</li>
-    <li IfModActive="neronix17.clutterstructures">Conditional/1.5/neronix17.clutterstructures</li>
     <li IfModActive="neronix17.outland.furnitureanddecor">Conditional/1.5/neronix17.outland.furnitureanddecor</li>
     <li IfModActive="oskarpotocki.vanillafactionsexpanded.settlersmodule">Conditional/1.5/oskarpotocki.vanillafactionsexpanded.settlersmodule</li>
     <li IfModActive="oskarpotocki.vanillavehiclesexpanded">Conditional/1.5/oskarpotocki.vanillavehiclesexpanded</li>
@@ -90,7 +88,6 @@
     <li IfModActive="spoonshortage.adogsaidanimalprosthetics">Conditional/1.5/spoonshortage.adogsaidanimalprosthetics</li>
     <li IfModActive="spoonshortage.rimkea">Conditional/1.5/spoonshortage.rimkea</li>
     <li IfModActive="telkir.tmods.morefloors">Conditional/1.5/telkir.tmods.morefloors</li>
-    <li IfModActive="thegoofyone.arearugs">Conditional/1.5/thegoofyone.arearugs</li>
     <li IfModActive="torann.arimworldofmagic">Conditional/1.5/torann.arimworldofmagic</li>
     <li IfModActive="ucp.tabletopdecorations">Conditional/1.5/ucp.tabletopdecorations</li>
     <li IfModActive="vanillaexpanded.vaeaccessories">Conditional/1.5/vanillaexpanded.vaeaccessories</li>
