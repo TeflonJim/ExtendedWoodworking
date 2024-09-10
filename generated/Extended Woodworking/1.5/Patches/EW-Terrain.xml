@@ -182,10 +182,10 @@
                   <constructEffect>ConstructWood</constructEffect>
                   <designationHotKey>Misc9</designationHotKey>
                   <uiOrder>2000</uiOrder>
+                  <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
                   <costList>
                     <WoodLog_Camellia>3</WoodLog_Camellia>
                   </costList>
-                  <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
                 </TerrainDef>
               </value>
             </li>
@@ -223,10 +223,10 @@
                   <destroyBuildingsOnDestroyed>true</destroyBuildingsOnDestroyed>
                   <destroyEffect>Bridge_Collapse</destroyEffect>
                   <destroyEffectWater>Bridge_CollapseWater</destroyEffectWater>
+                  <designatorDropdown>EW_Designator_Bridge</designatorDropdown>
                   <costList>
                     <WoodLog_Camellia>12</WoodLog_Camellia>
                   </costList>
-                  <designatorDropdown>EW_Designator_Bridge</designatorDropdown>
                 </TerrainDef>
               </value>
             </li>
@@ -259,10 +259,10 @@
                   <constructEffect>ConstructWood</constructEffect>
                   <designationHotKey>Misc9</designationHotKey>
                   <uiOrder>2000</uiOrder>
+                  <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
                   <costList>
                     <WoodLog_CherryBlossom>3</WoodLog_CherryBlossom>
                   </costList>
-                  <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
                 </TerrainDef>
               </value>
             </li>
@@ -300,10 +300,10 @@
                   <destroyBuildingsOnDestroyed>true</destroyBuildingsOnDestroyed>
                   <destroyEffect>Bridge_Collapse</destroyEffect>
                   <destroyEffectWater>Bridge_CollapseWater</destroyEffectWater>
+                  <designatorDropdown>EW_Designator_Bridge</designatorDropdown>
                   <costList>
                     <WoodLog_CherryBlossom>12</WoodLog_CherryBlossom>
                   </costList>
-                  <designatorDropdown>EW_Designator_Bridge</designatorDropdown>
                 </TerrainDef>
               </value>
             </li>

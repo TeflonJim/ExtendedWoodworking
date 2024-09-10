@@ -18,7 +18,7 @@ Previous versions of this module can be downloaded from GitHub:
 
 https://github.com/TeflonJim/ExtendedWoodworking/releases
 
-This release supports RimWorld 1.0, 1.1, 1.2, 1.3, 1.4, and 1.5.
+This release supports RimWorld 1.0 to 1.5.
 
 This mod changes trees so that when they are cut down, they produce wood of that tree type. Different wood types have slightly different properties.
 
@@ -26,29 +26,37 @@ Wood may be painted in different colours. The available colours are: Red, Green,
 
 A Woodworking table is available to paint wood or convert specific types of wood to the original wood type (generic wood).
 
-Supported expansions:
+Compatibility
+
+Expansions
 
 * Royalty
 * Ideology
 * Biotech
 * Anomaly
 
-Supported mods:
+Mods
 
 %SUPPORTED_MODS%
-
-Cost lists, ingredient lists, and fuel lists are updated for each mod.
 
 The following mods contain floors, the defs are duplicated for each available wood type. A drop down list is added to allow material selection:
 
 %SUPPORTED_FLOOR_MODS%
 
-Incompatible mods:
+Incompatible mods
 
 * Expanded Woodworking
 * Simple Chains: Lumber
 
-The original version of Extended Woodworking inspired a number of mods including the two listed above. It is not possible to create compatiblity patches for the mods above.
+Options
+
+This mod does not include an options menu. Painted wood may be disabled using the Cherry Picker mod:
+
+https://steamcommunity.com/sharedfiles/filedetails/?id=3230046902
+
+A predefined list is available for painted woods "Extended Woodworking: Enable painted wood".
+
+Alternatively, mod content is expressed using LoadFolders.xml in the mod folder. The first line "&lt;li&gt;Conditional/1.5/_EW-Painted&lt;/li&gt;" can be deleted to disable painted woods and associated recipes.
     </description>
   <incompatibleWith>
     <li>Adventurer.ExpandWoodwork</li>

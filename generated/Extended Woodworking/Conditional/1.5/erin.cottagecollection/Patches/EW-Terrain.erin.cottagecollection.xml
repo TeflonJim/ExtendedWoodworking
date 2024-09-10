@@ -88,10 +88,10 @@
                     <Beauty>1</Beauty>
                   </statBases>
                   <constructEffect>ConstructWood</constructEffect>
+                  <designatorDropdown>EW_Designator_CCot_RusticPlankFloor</designatorDropdown>
                   <costList>
                     <WoodLog_Camellia>6</WoodLog_Camellia>
                   </costList>
-                  <designatorDropdown>EW_Designator_CCot_RusticPlankFloor</designatorDropdown>
                 </TerrainDef>
               </value>
             </li>
@@ -120,10 +120,10 @@
                     <Beauty>1</Beauty>
                   </statBases>
                   <constructEffect>ConstructWood</constructEffect>
+                  <designatorDropdown>EW_Designator_CCot_RusticPlankFloor</designatorDropdown>
                   <costList>
                     <WoodLog_CherryBlossom>6</WoodLog_CherryBlossom>
                   </costList>
-                  <designatorDropdown>EW_Designator_CCot_RusticPlankFloor</designatorDropdown>
                 </TerrainDef>
               </value>
             </li>

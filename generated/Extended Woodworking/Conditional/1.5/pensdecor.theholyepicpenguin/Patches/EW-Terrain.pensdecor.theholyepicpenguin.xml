@@ -88,10 +88,10 @@
                     <Flammability>0.22</Flammability>
                   </statBases>
                   <constructEffect>ConstructWood</constructEffect>
+                  <designatorDropdown>EW_Designator_PenWoodFloor</designatorDropdown>
                   <costList>
                     <WoodLog_Camellia>3</WoodLog_Camellia>
                   </costList>
-                  <designatorDropdown>EW_Designator_PenWoodFloor</designatorDropdown>
                 </TerrainDef>
               </value>
             </li>
@@ -120,10 +120,10 @@
                     <Flammability>0.22</Flammability>
                   </statBases>
                   <constructEffect>ConstructWood</constructEffect>
+                  <designatorDropdown>EW_Designator_PenWoodFloor</designatorDropdown>
                   <costList>
                     <WoodLog_CherryBlossom>3</WoodLog_CherryBlossom>
                   </costList>
-                  <designatorDropdown>EW_Designator_PenWoodFloor</designatorDropdown>
                 </TerrainDef>
               </value>
             </li>
