@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="PlantTreeJapaneseMaple"]/plant</xpath>
+        <value>
+          <harvestedThingDef>WoodLog_JapaneseMaple</harvestedThingDef>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="PlantTreeCherryBlossom"]/plant</xpath>
+        <value>
+          <harvestedThingDef>WoodLog_CherryBlossom</harvestedThingDef>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="PlantTreeCamellia"]/plant</xpath>
+        <value>
+          <harvestedThingDef>WoodLog_Camellia</harvestedThingDef>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="PlantTreeAcacia"]/plant</xpath>
+        <value>
+          <harvestedThingDef>WoodLog_Acacia</harvestedThingDef>
+        </value>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="PlantTreeRedMaple"]/plant</xpath>
+        <value>
+          <harvestedThingDef>WoodLog_RedMaple</harvestedThingDef>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+</Patch>

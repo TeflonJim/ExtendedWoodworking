@@ -1,0 +1,791 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/RecipeDef[defName="TM_Mecha-Golem_Axe"]/ingredients/li[filter/thingDefs/li="WoodLog"]</xpath>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/RecipeDef[defName="TM_Mecha-Golem_Axe"]/ingredients</xpath>
+        <value>
+          <li>
+            <filter>
+              <categories>
+                <li>WoodTypes</li>
+              </categories>
+            </filter>
+            <count>40</count>
+          </li>
+        </value>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/RecipeDef[defName="TM_Mecha-Golem_Axe"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/RecipeDef[defName="TM_Mecha-Golem_Axe"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/RecipeDef[defName="TM_Mecha-Golem_Axe"]/fixedIngredientFilter/thingDefs/li/*</xpath>
+        <nomatch Class="PatchOperationRemove">
+          <xpath>/Defs/RecipeDef[defName="TM_Mecha-Golem_Axe"]/fixedIngredientFilter/thingDefs</xpath>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/RecipeDef[defName="TM_Mecha-Golem_Axe"]/fixedIngredientFilter</xpath>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="TM_Mecha-Golem_Axe"]</xpath>
+          <value>
+            <fixedIngredientFilter />
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/RecipeDef[defName="TM_Mecha-Golem_Axe"]/fixedIngredientFilter/categories</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="TM_Mecha-Golem_Axe"]/fixedIngredientFilter/categories</xpath>
+          <value>
+            <li>WoodTypes</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="TM_Mecha-Golem_Axe"]/fixedIngredientFilter</xpath>
+          <value>
+            <categories>
+              <li>WoodTypes</li>
+            </categories>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/RecipeDef[defName="TM_Mecha-Golem_Hammer"]/ingredients/li[filter/thingDefs/li="WoodLog"]</xpath>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/RecipeDef[defName="TM_Mecha-Golem_Hammer"]/ingredients</xpath>
+        <value>
+          <li>
+            <filter>
+              <categories>
+                <li>WoodTypes</li>
+              </categories>
+            </filter>
+            <count>20</count>
+          </li>
+        </value>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/RecipeDef[defName="TM_Mecha-Golem_Hammer"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/RecipeDef[defName="TM_Mecha-Golem_Hammer"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/RecipeDef[defName="TM_Mecha-Golem_Hammer"]/fixedIngredientFilter/thingDefs/li/*</xpath>
+        <nomatch Class="PatchOperationRemove">
+          <xpath>/Defs/RecipeDef[defName="TM_Mecha-Golem_Hammer"]/fixedIngredientFilter/thingDefs</xpath>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/RecipeDef[defName="TM_Mecha-Golem_Hammer"]/fixedIngredientFilter</xpath>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="TM_Mecha-Golem_Hammer"]</xpath>
+          <value>
+            <fixedIngredientFilter />
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/RecipeDef[defName="TM_Mecha-Golem_Hammer"]/fixedIngredientFilter/categories</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="TM_Mecha-Golem_Hammer"]/fixedIngredientFilter/categories</xpath>
+          <value>
+            <li>WoodTypes</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="TM_Mecha-Golem_Hammer"]/fixedIngredientFilter</xpath>
+          <value>
+            <categories>
+              <li>WoodTypes</li>
+            </categories>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/RecipeDef[defName="TM_Mecha-Golem_EarthShard"]/ingredients/li[filter/thingDefs/li="WoodLog"]</xpath>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/RecipeDef[defName="TM_Mecha-Golem_EarthShard"]/ingredients</xpath>
+        <value>
+          <li>
+            <filter>
+              <categories>
+                <li>WoodTypes</li>
+              </categories>
+            </filter>
+            <count>250</count>
+          </li>
+        </value>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/RecipeDef[defName="TM_Mecha-Golem_EarthShard"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/RecipeDef[defName="TM_Mecha-Golem_EarthShard"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/RecipeDef[defName="TM_Mecha-Golem_EarthShard"]/fixedIngredientFilter/thingDefs/li/*</xpath>
+        <nomatch Class="PatchOperationRemove">
+          <xpath>/Defs/RecipeDef[defName="TM_Mecha-Golem_EarthShard"]/fixedIngredientFilter/thingDefs</xpath>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/RecipeDef[defName="TM_Mecha-Golem_EarthShard"]/fixedIngredientFilter</xpath>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="TM_Mecha-Golem_EarthShard"]</xpath>
+          <value>
+            <fixedIngredientFilter />
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/RecipeDef[defName="TM_Mecha-Golem_EarthShard"]/fixedIngredientFilter/categories</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="TM_Mecha-Golem_EarthShard"]/fixedIngredientFilter/categories</xpath>
+          <value>
+            <li>WoodTypes</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="TM_Mecha-Golem_EarthShard"]/fixedIngredientFilter</xpath>
+          <value>
+            <categories>
+              <li>WoodTypes</li>
+            </categories>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/RecipeDef[defName="TM_StrawGolem_EnergyMax"]/ingredients/li[filter/thingDefs/li="WoodLog"]</xpath>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/RecipeDef[defName="TM_StrawGolem_EnergyMax"]/ingredients</xpath>
+        <value>
+          <li>
+            <filter>
+              <categories>
+                <li>WoodTypes</li>
+              </categories>
+            </filter>
+            <count>10</count>
+          </li>
+        </value>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/RecipeDef[defName="TM_StrawGolem_EnergyMax"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/RecipeDef[defName="TM_StrawGolem_EnergyMax"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/RecipeDef[defName="TM_StrawGolem_EnergyMax"]/fixedIngredientFilter/thingDefs/li/*</xpath>
+        <nomatch Class="PatchOperationRemove">
+          <xpath>/Defs/RecipeDef[defName="TM_StrawGolem_EnergyMax"]/fixedIngredientFilter/thingDefs</xpath>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/RecipeDef[defName="TM_StrawGolem_EnergyMax"]/fixedIngredientFilter</xpath>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="TM_StrawGolem_EnergyMax"]</xpath>
+          <value>
+            <fixedIngredientFilter />
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/RecipeDef[defName="TM_StrawGolem_EnergyMax"]/fixedIngredientFilter/categories</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="TM_StrawGolem_EnergyMax"]/fixedIngredientFilter/categories</xpath>
+          <value>
+            <li>WoodTypes</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="TM_StrawGolem_EnergyMax"]/fixedIngredientFilter</xpath>
+          <value>
+            <categories>
+              <li>WoodTypes</li>
+            </categories>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/RecipeDef[defName="TM_StrawGolem_EnergyConverter"]/ingredients/li[filter/thingDefs/li="WoodLog"]</xpath>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/RecipeDef[defName="TM_StrawGolem_EnergyConverter"]/ingredients</xpath>
+        <value>
+          <li>
+            <filter>
+              <categories>
+                <li>WoodTypes</li>
+              </categories>
+            </filter>
+            <count>10</count>
+          </li>
+        </value>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/RecipeDef[defName="TM_StrawGolem_EnergyConverter"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/RecipeDef[defName="TM_StrawGolem_EnergyConverter"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/RecipeDef[defName="TM_StrawGolem_EnergyConverter"]/fixedIngredientFilter/thingDefs/li/*</xpath>
+        <nomatch Class="PatchOperationRemove">
+          <xpath>/Defs/RecipeDef[defName="TM_StrawGolem_EnergyConverter"]/fixedIngredientFilter/thingDefs</xpath>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/RecipeDef[defName="TM_StrawGolem_EnergyConverter"]/fixedIngredientFilter</xpath>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="TM_StrawGolem_EnergyConverter"]</xpath>
+          <value>
+            <fixedIngredientFilter />
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/RecipeDef[defName="TM_StrawGolem_EnergyConverter"]/fixedIngredientFilter/categories</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="TM_StrawGolem_EnergyConverter"]/fixedIngredientFilter/categories</xpath>
+          <value>
+            <li>WoodTypes</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="TM_StrawGolem_EnergyConverter"]/fixedIngredientFilter</xpath>
+          <value>
+            <categories>
+              <li>WoodTypes</li>
+            </categories>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/RecipeDef[defName="TM_StrawGolem_Seed"]/ingredients/li[filter/thingDefs/li="WoodLog"]</xpath>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/RecipeDef[defName="TM_StrawGolem_Seed"]/ingredients</xpath>
+        <value>
+          <li>
+            <filter>
+              <categories>
+                <li>WoodTypes</li>
+              </categories>
+            </filter>
+            <count>20</count>
+          </li>
+        </value>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/RecipeDef[defName="TM_StrawGolem_Seed"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/RecipeDef[defName="TM_StrawGolem_Seed"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/RecipeDef[defName="TM_StrawGolem_Seed"]/fixedIngredientFilter/thingDefs/li/*</xpath>
+        <nomatch Class="PatchOperationRemove">
+          <xpath>/Defs/RecipeDef[defName="TM_StrawGolem_Seed"]/fixedIngredientFilter/thingDefs</xpath>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/RecipeDef[defName="TM_StrawGolem_Seed"]/fixedIngredientFilter</xpath>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="TM_StrawGolem_Seed"]</xpath>
+          <value>
+            <fixedIngredientFilter />
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/RecipeDef[defName="TM_StrawGolem_Seed"]/fixedIngredientFilter/categories</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="TM_StrawGolem_Seed"]/fixedIngredientFilter/categories</xpath>
+          <value>
+            <li>WoodTypes</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="TM_StrawGolem_Seed"]/fixedIngredientFilter</xpath>
+          <value>
+            <categories>
+              <li>WoodTypes</li>
+            </categories>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/RecipeDef[defName="TM_WoodGolem_RepairBlock"]/ingredients/li[filter/thingDefs/li="WoodLog"]</xpath>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/RecipeDef[defName="TM_WoodGolem_RepairBlock"]/ingredients</xpath>
+        <value>
+          <li>
+            <filter>
+              <categories>
+                <li>WoodTypes</li>
+              </categories>
+            </filter>
+            <count>50</count>
+          </li>
+        </value>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/RecipeDef[defName="TM_WoodGolem_RepairBlock"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/RecipeDef[defName="TM_WoodGolem_RepairBlock"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/RecipeDef[defName="TM_WoodGolem_RepairBlock"]/fixedIngredientFilter/thingDefs/li/*</xpath>
+        <nomatch Class="PatchOperationRemove">
+          <xpath>/Defs/RecipeDef[defName="TM_WoodGolem_RepairBlock"]/fixedIngredientFilter/thingDefs</xpath>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/RecipeDef[defName="TM_WoodGolem_RepairBlock"]/fixedIngredientFilter</xpath>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="TM_WoodGolem_RepairBlock"]</xpath>
+          <value>
+            <fixedIngredientFilter />
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/RecipeDef[defName="TM_WoodGolem_RepairBlock"]/fixedIngredientFilter/categories</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="TM_WoodGolem_RepairBlock"]/fixedIngredientFilter/categories</xpath>
+          <value>
+            <li>WoodTypes</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="TM_WoodGolem_RepairBlock"]/fixedIngredientFilter</xpath>
+          <value>
+            <categories>
+              <li>WoodTypes</li>
+            </categories>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/RecipeDef[defName="TM_WoodGolem_EnergyRegen"]/ingredients/li[filter/thingDefs/li="WoodLog"]</xpath>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/RecipeDef[defName="TM_WoodGolem_EnergyRegen"]/ingredients</xpath>
+        <value>
+          <li>
+            <filter>
+              <categories>
+                <li>WoodTypes</li>
+              </categories>
+            </filter>
+            <count>40</count>
+          </li>
+        </value>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/RecipeDef[defName="TM_WoodGolem_EnergyRegen"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/RecipeDef[defName="TM_WoodGolem_EnergyRegen"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/RecipeDef[defName="TM_WoodGolem_EnergyRegen"]/fixedIngredientFilter/thingDefs/li/*</xpath>
+        <nomatch Class="PatchOperationRemove">
+          <xpath>/Defs/RecipeDef[defName="TM_WoodGolem_EnergyRegen"]/fixedIngredientFilter/thingDefs</xpath>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/RecipeDef[defName="TM_WoodGolem_EnergyRegen"]/fixedIngredientFilter</xpath>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="TM_WoodGolem_EnergyRegen"]</xpath>
+          <value>
+            <fixedIngredientFilter />
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/RecipeDef[defName="TM_WoodGolem_EnergyRegen"]/fixedIngredientFilter/categories</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="TM_WoodGolem_EnergyRegen"]/fixedIngredientFilter/categories</xpath>
+          <value>
+            <li>WoodTypes</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="TM_WoodGolem_EnergyRegen"]/fixedIngredientFilter</xpath>
+          <value>
+            <categories>
+              <li>WoodTypes</li>
+            </categories>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/RecipeDef[defName="TM_WoodGolem_LifeStage"]/ingredients/li[filter/thingDefs/li="WoodLog"]</xpath>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/RecipeDef[defName="TM_WoodGolem_LifeStage"]/ingredients</xpath>
+        <value>
+          <li>
+            <filter>
+              <categories>
+                <li>WoodTypes</li>
+              </categories>
+            </filter>
+            <count>100</count>
+          </li>
+        </value>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/RecipeDef[defName="TM_WoodGolem_LifeStage"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/RecipeDef[defName="TM_WoodGolem_LifeStage"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/RecipeDef[defName="TM_WoodGolem_LifeStage"]/fixedIngredientFilter/thingDefs/li/*</xpath>
+        <nomatch Class="PatchOperationRemove">
+          <xpath>/Defs/RecipeDef[defName="TM_WoodGolem_LifeStage"]/fixedIngredientFilter/thingDefs</xpath>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/RecipeDef[defName="TM_WoodGolem_LifeStage"]/fixedIngredientFilter</xpath>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="TM_WoodGolem_LifeStage"]</xpath>
+          <value>
+            <fixedIngredientFilter />
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/RecipeDef[defName="TM_WoodGolem_LifeStage"]/fixedIngredientFilter/categories</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="TM_WoodGolem_LifeStage"]/fixedIngredientFilter/categories</xpath>
+          <value>
+            <li>WoodTypes</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="TM_WoodGolem_LifeStage"]/fixedIngredientFilter</xpath>
+          <value>
+            <categories>
+              <li>WoodTypes</li>
+            </categories>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/RecipeDef[defName="TM_WoodGolem_Skills"]/ingredients/li[filter/thingDefs/li="WoodLog"]</xpath>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/RecipeDef[defName="TM_WoodGolem_Skills"]/ingredients</xpath>
+        <value>
+          <li>
+            <filter>
+              <categories>
+                <li>WoodTypes</li>
+              </categories>
+            </filter>
+            <count>50</count>
+          </li>
+        </value>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/RecipeDef[defName="TM_WoodGolem_Skills"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/RecipeDef[defName="TM_WoodGolem_Skills"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/RecipeDef[defName="TM_WoodGolem_Skills"]/fixedIngredientFilter/thingDefs/li/*</xpath>
+        <nomatch Class="PatchOperationRemove">
+          <xpath>/Defs/RecipeDef[defName="TM_WoodGolem_Skills"]/fixedIngredientFilter/thingDefs</xpath>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/RecipeDef[defName="TM_WoodGolem_Skills"]/fixedIngredientFilter</xpath>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="TM_WoodGolem_Skills"]</xpath>
+          <value>
+            <fixedIngredientFilter />
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/RecipeDef[defName="TM_WoodGolem_Skills"]/fixedIngredientFilter/categories</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="TM_WoodGolem_Skills"]/fixedIngredientFilter/categories</xpath>
+          <value>
+            <li>WoodTypes</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="TM_WoodGolem_Skills"]/fixedIngredientFilter</xpath>
+          <value>
+            <categories>
+              <li>WoodTypes</li>
+            </categories>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/RecipeDef[defName="ArcaneForge_ElephantSpear"]/ingredients/li[filter/thingDefs/li="WoodLog"]</xpath>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/RecipeDef[defName="ArcaneForge_ElephantSpear"]/ingredients</xpath>
+        <value>
+          <li>
+            <filter>
+              <categories>
+                <li>WoodTypes</li>
+              </categories>
+            </filter>
+            <count>60</count>
+          </li>
+        </value>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/RecipeDef[defName="ArcaneForge_ElephantSpear"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/RecipeDef[defName="ArcaneForge_ElephantSpear"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/RecipeDef[defName="ArcaneForge_ElephantSpear"]/fixedIngredientFilter/thingDefs/li/*</xpath>
+        <nomatch Class="PatchOperationRemove">
+          <xpath>/Defs/RecipeDef[defName="ArcaneForge_ElephantSpear"]/fixedIngredientFilter/thingDefs</xpath>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/RecipeDef[defName="ArcaneForge_ElephantSpear"]/fixedIngredientFilter</xpath>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="ArcaneForge_ElephantSpear"]</xpath>
+          <value>
+            <fixedIngredientFilter />
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/RecipeDef[defName="ArcaneForge_ElephantSpear"]/fixedIngredientFilter/categories</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="ArcaneForge_ElephantSpear"]/fixedIngredientFilter/categories</xpath>
+          <value>
+            <li>WoodTypes</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="ArcaneForge_ElephantSpear"]/fixedIngredientFilter</xpath>
+          <value>
+            <categories>
+              <li>WoodTypes</li>
+            </categories>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/RecipeDef[defName="ArcaneForge_ThrumboAxe"]/ingredients/li[filter/thingDefs/li="WoodLog"]</xpath>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/RecipeDef[defName="ArcaneForge_ThrumboAxe"]/ingredients</xpath>
+        <value>
+          <li>
+            <filter>
+              <categories>
+                <li>WoodTypes</li>
+              </categories>
+            </filter>
+            <count>50</count>
+          </li>
+        </value>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/RecipeDef[defName="ArcaneForge_ThrumboAxe"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/RecipeDef[defName="ArcaneForge_ThrumboAxe"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/RecipeDef[defName="ArcaneForge_ThrumboAxe"]/fixedIngredientFilter/thingDefs/li/*</xpath>
+        <nomatch Class="PatchOperationRemove">
+          <xpath>/Defs/RecipeDef[defName="ArcaneForge_ThrumboAxe"]/fixedIngredientFilter/thingDefs</xpath>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/RecipeDef[defName="ArcaneForge_ThrumboAxe"]/fixedIngredientFilter</xpath>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="ArcaneForge_ThrumboAxe"]</xpath>
+          <value>
+            <fixedIngredientFilter />
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/RecipeDef[defName="ArcaneForge_ThrumboAxe"]/fixedIngredientFilter/categories</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="ArcaneForge_ThrumboAxe"]/fixedIngredientFilter/categories</xpath>
+          <value>
+            <li>WoodTypes</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="ArcaneForge_ThrumboAxe"]/fixedIngredientFilter</xpath>
+          <value>
+            <categories>
+              <li>WoodTypes</li>
+            </categories>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/RecipeDef[defName="ArcaneForge_ElephantBow"]/ingredients/li[filter/thingDefs/li="WoodLog"]</xpath>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/RecipeDef[defName="ArcaneForge_ElephantBow"]/ingredients</xpath>
+        <value>
+          <li>
+            <filter>
+              <categories>
+                <li>WoodTypes</li>
+              </categories>
+            </filter>
+            <count>100</count>
+          </li>
+        </value>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/RecipeDef[defName="ArcaneForge_ElephantBow"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/RecipeDef[defName="ArcaneForge_ElephantBow"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/RecipeDef[defName="ArcaneForge_ElephantBow"]/fixedIngredientFilter/thingDefs/li/*</xpath>
+        <nomatch Class="PatchOperationRemove">
+          <xpath>/Defs/RecipeDef[defName="ArcaneForge_ElephantBow"]/fixedIngredientFilter/thingDefs</xpath>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/RecipeDef[defName="ArcaneForge_ElephantBow"]/fixedIngredientFilter</xpath>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="ArcaneForge_ElephantBow"]</xpath>
+          <value>
+            <fixedIngredientFilter />
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/RecipeDef[defName="ArcaneForge_ElephantBow"]/fixedIngredientFilter/categories</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="ArcaneForge_ElephantBow"]/fixedIngredientFilter/categories</xpath>
+          <value>
+            <li>WoodTypes</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="ArcaneForge_ElephantBow"]/fixedIngredientFilter</xpath>
+          <value>
+            <categories>
+              <li>WoodTypes</li>
+            </categories>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/RecipeDef[defName="ArcaneForge_ThrumBow"]/ingredients/li[filter/thingDefs/li="WoodLog"]</xpath>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/RecipeDef[defName="ArcaneForge_ThrumBow"]/ingredients</xpath>
+        <value>
+          <li>
+            <filter>
+              <categories>
+                <li>WoodTypes</li>
+              </categories>
+            </filter>
+            <count>250</count>
+          </li>
+        </value>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/RecipeDef[defName="ArcaneForge_ThrumBow"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/RecipeDef[defName="ArcaneForge_ThrumBow"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/RecipeDef[defName="ArcaneForge_ThrumBow"]/fixedIngredientFilter/thingDefs/li/*</xpath>
+        <nomatch Class="PatchOperationRemove">
+          <xpath>/Defs/RecipeDef[defName="ArcaneForge_ThrumBow"]/fixedIngredientFilter/thingDefs</xpath>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/RecipeDef[defName="ArcaneForge_ThrumBow"]/fixedIngredientFilter</xpath>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="ArcaneForge_ThrumBow"]</xpath>
+          <value>
+            <fixedIngredientFilter />
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/RecipeDef[defName="ArcaneForge_ThrumBow"]/fixedIngredientFilter/categories</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="ArcaneForge_ThrumBow"]/fixedIngredientFilter/categories</xpath>
+          <value>
+            <li>WoodTypes</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="ArcaneForge_ThrumBow"]/fixedIngredientFilter</xpath>
+          <value>
+            <categories>
+              <li>WoodTypes</li>
+            </categories>
+          </value>
+        </nomatch>
+      </li>
+    </operations>
+  </Operation>
+</Patch>

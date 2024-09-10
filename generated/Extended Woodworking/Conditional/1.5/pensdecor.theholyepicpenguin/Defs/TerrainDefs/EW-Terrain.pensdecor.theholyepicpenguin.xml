@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <TerrainDef ParentName="FloorBase">
+    <defName>PenWoodFloor_Birch</defName>
+    <label>homely birch wood floor</label>
+    <renderPrecedence>250</renderPrecedence>
+    <description>A colorful birch plank floor. Pleasing to look at and quick to build, but it is also very flammable.</description>
+    <texturePath>Terrain/Surfaces/penwoodfloor</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(235,228,216)</color>
+    <statBases>
+      <Beauty>1</Beauty>
+      <WorkToBuild>240</WorkToBuild>
+      <Flammability>0.22</Flammability>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <designatorDropdown>EW_Designator_PenWoodFloor</designatorDropdown>
+    <costList>
+      <WoodLog_Birch>3</WoodLog_Birch>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>PenWoodFloor_Cecropia</defName>
+    <label>homely cecropia wood floor</label>
+    <renderPrecedence>250</renderPrecedence>
+    <description>A colorful cecropia plank floor. Pleasing to look at and quick to build, but it is also very flammable.</description>
+    <texturePath>Terrain/Surfaces/penwoodfloor</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(126,74,63)</color>
+    <statBases>
+      <Beauty>1</Beauty>
+      <WorkToBuild>240</WorkToBuild>
+      <Flammability>0.22</Flammability>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <designatorDropdown>EW_Designator_PenWoodFloor</designatorDropdown>
+    <costList>
+      <WoodLog_Cecropia>3</WoodLog_Cecropia>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>PenWoodFloor_Cypress</defName>
+    <label>homely cypress wood floor</label>
+    <renderPrecedence>250</renderPrecedence>
+    <description>A colorful cypress plank floor. Pleasing to look at and quick to build, but it is also very flammable.</description>
+    <texturePath>Terrain/Surfaces/penwoodfloor</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(239, 217, 184)</color>
+    <statBases>
+      <Beauty>1</Beauty>
+      <WorkToBuild>240</WorkToBuild>
+      <Flammability>0.22</Flammability>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <costList>
+      <WoodLog_Cypress>3</WoodLog_Cypress>
+    </costList>
+    <designatorDropdown>EW_Designator_PenWoodFloor</designatorDropdown>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>PenWoodFloor_Drago</defName>
+    <label>homely drago wood floor</label>
+    <renderPrecedence>250</renderPrecedence>
+    <description>A colorful drago plank floor. Pleasing to look at and quick to build, but it is also very flammable.</description>
+    <texturePath>Terrain/Surfaces/penwoodfloor</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(171, 159, 142)</color>
+    <statBases>
+      <Beauty>1</Beauty>
+      <WorkToBuild>240</WorkToBuild>
+      <Flammability>0.22</Flammability>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <costList>
+      <WoodLog_Drago>3</WoodLog_Drago>
+    </costList>
+    <designatorDropdown>EW_Designator_PenWoodFloor</designatorDropdown>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>PenWoodFloor_Maple</defName>
+    <label>homely maple wood floor</label>
+    <renderPrecedence>250</renderPrecedence>
+    <description>A colorful maple plank floor. Pleasing to look at and quick to build, but it is also very flammable.</description>
+    <texturePath>Terrain/Surfaces/penwoodfloor</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(236, 201, 163)</color>
+    <statBases>
+      <Beauty>1</Beauty>
+      <WorkToBuild>240</WorkToBuild>
+      <Flammability>0.22</Flammability>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <costList>
+      <WoodLog_Maple>3</WoodLog_Maple>
+    </costList>
+    <designatorDropdown>EW_Designator_PenWoodFloor</designatorDropdown>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>PenWoodFloor_Oak</defName>
+    <label>homely oak wood floor</label>
+    <renderPrecedence>250</renderPrecedence>
+    <description>A colorful oak plank floor. Pleasing to look at and quick to build, but it is also very flammable.</description>
+    <texturePath>Terrain/Surfaces/penwoodfloor</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(185,142,96)</color>
+    <statBases>
+      <Beauty>1</Beauty>
+      <WorkToBuild>240</WorkToBuild>
+      <Flammability>0.22</Flammability>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <costList>
+      <WoodLog_Oak>3</WoodLog_Oak>
+    </costList>
+    <designatorDropdown>EW_Designator_PenWoodFloor</designatorDropdown>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>PenWoodFloor_Palm</defName>
+    <label>homely palm wood floor</label>
+    <renderPrecedence>250</renderPrecedence>
+    <description>A colorful palm plank floor. Pleasing to look at and quick to build, but it is also very flammable.</description>
+    <texturePath>Terrain/Surfaces/penwoodfloor</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(224, 150, 87)</color>
+    <statBases>
+      <Beauty>1</Beauty>
+      <WorkToBuild>240</WorkToBuild>
+      <Flammability>0.22</Flammability>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <designatorDropdown>EW_Designator_PenWoodFloor</designatorDropdown>
+    <costList>
+      <WoodLog_Palm>3</WoodLog_Palm>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>PenWoodFloor_Pine</defName>
+    <label>homely pine wood floor</label>
+    <renderPrecedence>250</renderPrecedence>
+    <description>A colorful pine plank floor. Pleasing to look at and quick to build, but it is also very flammable.</description>
+    <texturePath>Terrain/Surfaces/penwoodfloor</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(198,146,68)</color>
+    <statBases>
+      <Beauty>1</Beauty>
+      <WorkToBuild>240</WorkToBuild>
+      <Flammability>0.22</Flammability>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <designatorDropdown>EW_Designator_PenWoodFloor</designatorDropdown>
+    <costList>
+      <WoodLog_Pine>3</WoodLog_Pine>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>PenWoodFloor_Poplar</defName>
+    <label>homely poplar wood floor</label>
+    <renderPrecedence>250</renderPrecedence>
+    <description>A colorful poplar plank floor. Pleasing to look at and quick to build, but it is also very flammable.</description>
+    <texturePath>Terrain/Surfaces/penwoodfloor</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(184,156,108)</color>
+    <statBases>
+      <Beauty>1</Beauty>
+      <WorkToBuild>240</WorkToBuild>
+      <Flammability>0.22</Flammability>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <costList>
+      <WoodLog_Poplar>3</WoodLog_Poplar>
+    </costList>
+    <designatorDropdown>EW_Designator_PenWoodFloor</designatorDropdown>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>PenWoodFloor_Teak</defName>
+    <label>homely teak wood floor</label>
+    <renderPrecedence>250</renderPrecedence>
+    <description>A colorful teak plank floor. Pleasing to look at and quick to build, but it is also very flammable.</description>
+    <texturePath>Terrain/Surfaces/penwoodfloor</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(154,102,59)</color>
+    <statBases>
+      <Beauty>1</Beauty>
+      <WorkToBuild>240</WorkToBuild>
+      <Flammability>0.22</Flammability>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <costList>
+      <WoodLog_Teak>3</WoodLog_Teak>
+    </costList>
+    <designatorDropdown>EW_Designator_PenWoodFloor</designatorDropdown>
+  </TerrainDef>
+  <TerrainDef ParentName="FloorBase">
+    <defName>PenWoodFloor_Willow</defName>
+    <label>homely willow wood floor</label>
+    <renderPrecedence>250</renderPrecedence>
+    <description>A colorful willow plank floor. Pleasing to look at and quick to build, but it is also very flammable.</description>
+    <texturePath>Terrain/Surfaces/penwoodfloor</texturePath>
+    <burnedDef>BurnedWoodPlankFloor</burnedDef>
+    <color>(221, 186, 141)</color>
+    <statBases>
+      <Beauty>1</Beauty>
+      <WorkToBuild>240</WorkToBuild>
+      <Flammability>0.22</Flammability>
+    </statBases>
+    <constructEffect>ConstructWood</constructEffect>
+    <designatorDropdown>EW_Designator_PenWoodFloor</designatorDropdown>
+    <costList>
+      <WoodLog_Willow>3</WoodLog_Willow>
+    </costList>
+  </TerrainDef>
+</Defs>

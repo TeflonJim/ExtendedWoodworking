@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <success>Always</success>
+    <operations>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/ThingDef[defName="Outland_StoneOilLantern"]/costList/WoodLog</xpath>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="Outland_StoneOilLantern" and (stuffCategories)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Outland_StoneOilLantern"]/stuffCategories</xpath>
+          <value>
+            <li>Woody</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Outland_StoneOilLantern"]</xpath>
+          <value>
+            <stuffCategories>
+              <li>Woody</li>
+            </stuffCategories>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Outland_StoneOilLantern" and not(costStuffCount)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Outland_StoneOilLantern" and not(costStuffCount)]</xpath>
+          <value>
+            <costStuffCount>5</costStuffCount>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Outland_StoneOilLantern"]/constructEffect</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="Outland_StoneOilLantern"]/constructEffect</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/ThingDef[defName="Outland_StoneOilStreetLamp"]/costList/WoodLog</xpath>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="Outland_StoneOilStreetLamp" and (stuffCategories)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Outland_StoneOilStreetLamp"]/stuffCategories</xpath>
+          <value>
+            <li>Woody</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Outland_StoneOilStreetLamp"]</xpath>
+          <value>
+            <stuffCategories>
+              <li>Woody</li>
+            </stuffCategories>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Outland_StoneOilStreetLamp" and not(costStuffCount)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Outland_StoneOilStreetLamp" and not(costStuffCount)]</xpath>
+          <value>
+            <costStuffCount>2</costStuffCount>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Outland_StoneOilStreetLamp"]/constructEffect</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="Outland_StoneOilStreetLamp"]/constructEffect</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/ThingDef[defName="Outland_OilLantern"]/costList/WoodLog</xpath>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="Outland_OilLantern" and (stuffCategories)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Outland_OilLantern"]/stuffCategories</xpath>
+          <value>
+            <li>Woody</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Outland_OilLantern"]</xpath>
+          <value>
+            <stuffCategories>
+              <li>Woody</li>
+            </stuffCategories>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Outland_OilLantern" and not(costStuffCount)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Outland_OilLantern" and not(costStuffCount)]</xpath>
+          <value>
+            <costStuffCount>5</costStuffCount>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Outland_OilLantern"]/constructEffect</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="Outland_OilLantern"]/constructEffect</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/ThingDef[defName="Outland_OilStreetLamp"]/costList/WoodLog</xpath>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/ThingDef[defName="Outland_OilStreetLamp" and (stuffCategories)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Outland_OilStreetLamp"]/stuffCategories</xpath>
+          <value>
+            <li>Woody</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Outland_OilStreetLamp"]</xpath>
+          <value>
+            <stuffCategories>
+              <li>Woody</li>
+            </stuffCategories>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Outland_OilStreetLamp" and not(costStuffCount)]</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/ThingDef[defName="Outland_OilStreetLamp" and not(costStuffCount)]</xpath>
+          <value>
+            <costStuffCount>2</costStuffCount>
+          </value>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="Outland_OilStreetLamp"]/constructEffect</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/ThingDef[defName="Outland_OilStreetLamp"]/constructEffect</xpath>
+        </match>
+      </li>
+    </operations>
+  </Operation>
+</Patch>

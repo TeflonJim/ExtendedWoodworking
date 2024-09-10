@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/ThingDef[defName="%NAME%"]</xpath>
+        <match Class="PatchOperationSequence">
+          <operations />
+        </match>
+      </li>
+    </operations>
+  </Operation>
+</Patch>

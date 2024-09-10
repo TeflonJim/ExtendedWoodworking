@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <RecipeDef>
+    <defName>PaintWoodLogTemplate</defName>
+    <label />
+    <description />
+    <jobString>Painting.</jobString>
+    <workAmount>300</workAmount>
+    <effectWorking>CutStone</effectWorking>
+    <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>WoodTypes</li>
+          </categories>
+        </filter>
+        <count>25</count>
+      </li>
+    </ingredients>
+    <products />
+    <fixedIngredientFilter>
+      <categories>
+        <li>WoodTypes</li>
+      </categories>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>WoodTypes</li>
+      </categories>
+      <disallowedThingDefs />
+    </defaultIngredientFilter>
+    <recipeUsers>
+      <li>TableWoodworking</li>
+    </recipeUsers>
+  </RecipeDef>
+</Defs>

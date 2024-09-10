@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/RecipeDef[defName="FT_ExtractChemFuelByJunks"]/ingredients/li[filter/thingDefs/li="WoodLog"]</xpath>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/RecipeDef[defName="FT_ExtractChemFuelByJunks"]/ingredients</xpath>
+        <value>
+          <li>
+            <filter>
+              <categories>
+                <li>WoodTypes</li>
+              </categories>
+            </filter>
+            <count>4</count>
+          </li>
+        </value>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/RecipeDef[defName="FT_ExtractChemFuelByJunks"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/RecipeDef[defName="FT_ExtractChemFuelByJunks"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/RecipeDef[defName="FT_ExtractChemFuelByJunks"]/fixedIngredientFilter/thingDefs/li/*</xpath>
+        <nomatch Class="PatchOperationRemove">
+          <xpath>/Defs/RecipeDef[defName="FT_ExtractChemFuelByJunks"]/fixedIngredientFilter/thingDefs</xpath>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/RecipeDef[defName="FT_ExtractChemFuelByJunks"]/fixedIngredientFilter</xpath>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="FT_ExtractChemFuelByJunks"]</xpath>
+          <value>
+            <fixedIngredientFilter />
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/RecipeDef[defName="FT_ExtractChemFuelByJunks"]/fixedIngredientFilter/categories</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="FT_ExtractChemFuelByJunks"]/fixedIngredientFilter/categories</xpath>
+          <value>
+            <li>WoodTypes</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="FT_ExtractChemFuelByJunks"]/fixedIngredientFilter</xpath>
+          <value>
+            <categories>
+              <li>WoodTypes</li>
+            </categories>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/RecipeDef[defName="FT_ExtractChemFuelByJunksPlus"]/ingredients/li[filter/thingDefs/li="WoodLog"]</xpath>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/RecipeDef[defName="FT_ExtractChemFuelByJunksPlus"]/ingredients</xpath>
+        <value>
+          <li>
+            <filter>
+              <categories>
+                <li>WoodTypes</li>
+              </categories>
+            </filter>
+            <count>28</count>
+          </li>
+        </value>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/RecipeDef[defName="FT_ExtractChemFuelByJunksPlus"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/RecipeDef[defName="FT_ExtractChemFuelByJunksPlus"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/RecipeDef[defName="FT_ExtractChemFuelByJunksPlus"]/fixedIngredientFilter/thingDefs/li/*</xpath>
+        <nomatch Class="PatchOperationRemove">
+          <xpath>/Defs/RecipeDef[defName="FT_ExtractChemFuelByJunksPlus"]/fixedIngredientFilter/thingDefs</xpath>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/RecipeDef[defName="FT_ExtractChemFuelByJunksPlus"]/fixedIngredientFilter</xpath>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="FT_ExtractChemFuelByJunksPlus"]</xpath>
+          <value>
+            <fixedIngredientFilter />
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/RecipeDef[defName="FT_ExtractChemFuelByJunksPlus"]/fixedIngredientFilter/categories</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="FT_ExtractChemFuelByJunksPlus"]/fixedIngredientFilter/categories</xpath>
+          <value>
+            <li>WoodTypes</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="FT_ExtractChemFuelByJunksPlus"]/fixedIngredientFilter</xpath>
+          <value>
+            <categories>
+              <li>WoodTypes</li>
+            </categories>
+          </value>
+        </nomatch>
+      </li>
+    </operations>
+  </Operation>
+</Patch>

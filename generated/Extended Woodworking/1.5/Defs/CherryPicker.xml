@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <CherryPicker.DefList MayRequire="Owlchemist.CherryPicker.tmpfix">
+    <defName>PaintedWood</defName>
+    <label>extended woodworking: enable painted wood</label>
+    <defs>
+      <li>ThingDef/WoodLog_Black</li>
+      <li>RecipeDef/PaintWoodLog_Black</li>
+      <li>TerrainDef/WoodPlankFloor_Black</li>
+      <li>ThingDef/WoodLog_Blue</li>
+      <li>RecipeDef/PaintWoodLog_Blue</li>
+      <li>TerrainDef/WoodPlankFloor_Blue</li>
+      <li>ThingDef/WoodLog_Green</li>
+      <li>RecipeDef/PaintWoodLog_Green</li>
+      <li>TerrainDef/WoodPlankFloor_Green</li>
+      <li>ThingDef/WoodLog_Red</li>
+      <li>RecipeDef/PaintWoodLog_Red</li>
+      <li>TerrainDef/WoodPlankFloor_Red</li>
+      <li>ThingDef/WoodLog_White</li>
+      <li>RecipeDef/PaintWoodLog_White</li>
+      <li>TerrainDef/WoodPlankFloor_White</li>
+      <li>ThingDef/WoodLog_Yellow</li>
+      <li>RecipeDef/PaintWoodLog_Yellow</li>
+      <li>TerrainDef/WoodPlankFloor_Yellow</li>
+    </defs>
+  </CherryPicker.DefList>
+</Defs>

@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/RecipeDef[defName="RimWriter_MakePage"]/ingredients/li[filter/thingDefs/li="WoodLog"]</xpath>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/RecipeDef[defName="RimWriter_MakePage"]/ingredients</xpath>
+        <value>
+          <li>
+            <filter>
+              <categories>
+                <li>WoodTypes</li>
+              </categories>
+            </filter>
+            <count>15</count>
+          </li>
+        </value>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/RecipeDef[defName="RimWriter_MakePage"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/RecipeDef[defName="RimWriter_MakePage"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/RecipeDef[defName="RimWriter_MakePage"]/fixedIngredientFilter/thingDefs/li/*</xpath>
+        <nomatch Class="PatchOperationRemove">
+          <xpath>/Defs/RecipeDef[defName="RimWriter_MakePage"]/fixedIngredientFilter/thingDefs</xpath>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/RecipeDef[defName="RimWriter_MakePage"]/fixedIngredientFilter</xpath>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="RimWriter_MakePage"]</xpath>
+          <value>
+            <fixedIngredientFilter />
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/RecipeDef[defName="RimWriter_MakePage"]/fixedIngredientFilter/categories</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="RimWriter_MakePage"]/fixedIngredientFilter/categories</xpath>
+          <value>
+            <li>WoodTypes</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="RimWriter_MakePage"]/fixedIngredientFilter</xpath>
+          <value>
+            <categories>
+              <li>WoodTypes</li>
+            </categories>
+          </value>
+        </nomatch>
+      </li>
+    </operations>
+  </Operation>
+</Patch>
