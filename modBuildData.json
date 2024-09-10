@@ -185,6 +185,7 @@
         "spdskatr.projectrimfactory"
     ],
     "ExcludedDefs": [
+        "CompostBin",    // Attempt to patch causes an exception at runtime and does not seem to work anyway.
         "TorchWallLamp", // ConstructEffect declared on an inherited abstract.
         "WDPlywoodFloor" // Label / description replacement is an aesthetic mess.
     ],
