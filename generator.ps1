@@ -1092,12 +1092,12 @@ function UpdateMetadata {
     $xElement.Value = $xElement.Value -replace '%SUPPORTED_MODS%', @(
         ($buildInfo.Data.SupportedMods.Values.Name -notmatch '^(Core|Royalty|Ideology|Biotech|Anomaly)$' |
             Sort-Object |
-            ForEach-Object { '* {0}' -f $_ }) -join "`n"
+            ForEach-Object { '  [*]{0}' -f $_ }) -join "`n"
     )
     $xElement.Value = $xElement.Value -replace '%SUPPORTED_FLOOR_MODS%', @(
         ($buildInfo.Data.SupportedFloorMods.Name -notmatch '^(Core|Royalty|Ideology|Biotech|Anomaly)$' |
             Sort-Object |
-            ForEach-Object { '* {0}' -f $_ }) -join "`n"
+            ForEach-Object { '  [*]{0}' -f $_ }) -join "`n"
     )
 
     $xDocument.Save($path)

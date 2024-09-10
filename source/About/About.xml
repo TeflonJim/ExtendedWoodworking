@@ -12,6 +12,8 @@
     <li>1.5</li>
   </supportedVersions>
   <description>
+[h1]Extended Woodworking[/h1]
+
 This is an update of the Extended Woodworking mod (A13). All credit for the original creative work goes to ItchyFlea. https://ludeon.com/forums/index.php?topic=7893.0
 
 Previous versions of this module can be downloaded from GitHub:
@@ -26,37 +28,42 @@ Wood may be painted in different colours. The available colours are: Red, Green,
 
 A Woodworking table is available to paint wood or convert specific types of wood to the original wood type (generic wood).
 
-Compatibility
+[h2]Compatibility[/h2]
 
-Expansions
+[h3]Expansions[/h3]
 
-* Royalty
-* Ideology
-* Biotech
-* Anomaly
+[list]
+  [*]Royalty
+  [*]Ideology
+  [*]Biotech
+  [*]Anomaly
+[/list]
 
-Mods
+[h3]Mods[/h3]
 
+[list]
 %SUPPORTED_MODS%
+[/list]
 
 The following mods contain floors, the defs are duplicated for each available wood type. A drop down list is added to allow material selection:
 
+[list]
 %SUPPORTED_FLOOR_MODS%
+[/list]
 
-Incompatible mods
+[h3]Incompatible mods[/h3]
 
-* Expanded Woodworking
-* Simple Chains: Lumber
+[list]
+  [*]Expanded Woodworking
+  [*]Simple Chains: Lumber
+[/list]
 
-Options
+[h2]Options[/h2]
 
-This mod does not include an options menu. Painted wood may be disabled using the Cherry Picker mod:
+This mod does not include an options menu. Painted wood may be disabled using the [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3230046902]Cherry Picker[/url] mod. A predefined list is available for painted woods "Extended Woodworking: Enable painted wood".
 
-https://steamcommunity.com/sharedfiles/filedetails/?id=3230046902
-
-A predefined list is available for painted woods "Extended Woodworking: Enable painted wood".
-
-Alternatively, mod content is expressed using LoadFolders.xml in the mod folder. The first line "&lt;li&gt;Conditional/1.5/_EW-Painted&lt;/li&gt;" can be deleted to disable painted woods and associated recipes.
+Alternatively, mod content is expressed using LoadFolders.xml in the mod folder. The first line can be deleted to disable painted woods and associated recipes:
+[code]&lt;li&gt;Conditional/1.5/_EW-Painted&lt;/li&gt;[/code]
     </description>
   <incompatibleWith>
     <li>Adventurer.ExpandWoodwork</li>
