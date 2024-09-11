@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <Manifest>
   <identifier>Extended Woodworking</identifier>
-  <version>9.13.0</version>
+  <version>9.16.0</version>
   <manifestUri>https://raw.githubusercontent.com/TeflonJim/ExtendedWoodworking/master/source/About/Manifest.xml</manifestUri>
   <downloadUri>https://github.com/TeflonJim/ExtendedWoodworking/releases/latest</downloadUri>
 </Manifest>

@@ -556,10 +556,10 @@
                   </statBases>
                   <constructEffect>ConstructWood</constructEffect>
                   <uiOrder>2002</uiOrder>
+                  <designatorDropdown>EW_Designator_WDWidePlanksFloor</designatorDropdown>
                   <costList>
                     <WoodLog_JapaneseMaple>3</WoodLog_JapaneseMaple>
                   </costList>
-                  <designatorDropdown>EW_Designator_WDWidePlanksFloor</designatorDropdown>
                 </TerrainDef>
               </value>
             </li>
@@ -588,10 +588,10 @@
                     <li>FineFloor</li>
                   </tags>
                   <uiOrder>2003</uiOrder>
+                  <designatorDropdown>EW_Designator_WDCheckWoodenFloor</designatorDropdown>
                   <costList>
                     <WoodLog_JapaneseMaple>20</WoodLog_JapaneseMaple>
                   </costList>
-                  <designatorDropdown>EW_Designator_WDCheckWoodenFloor</designatorDropdown>
                 </TerrainDef>
               </value>
             </li>
@@ -620,10 +620,10 @@
                     <li>FineFloor</li>
                   </tags>
                   <uiOrder>2005</uiOrder>
+                  <designatorDropdown>EW_Designator_WDParquet</designatorDropdown>
                   <costList>
                     <WoodLog_JapaneseMaple>20</WoodLog_JapaneseMaple>
                   </costList>
-                  <designatorDropdown>EW_Designator_WDParquet</designatorDropdown>
                 </TerrainDef>
               </value>
             </li>
@@ -652,10 +652,10 @@
                     <li>FineFloor</li>
                   </tags>
                   <uiOrder>2006</uiOrder>
+                  <designatorDropdown>EW_Designator_WDMosaicWoodenFloor</designatorDropdown>
                   <costList>
                     <WoodLog_JapaneseMaple>20</WoodLog_JapaneseMaple>
                   </costList>
-                  <designatorDropdown>EW_Designator_WDMosaicWoodenFloor</designatorDropdown>
                 </TerrainDef>
               </value>
             </li>

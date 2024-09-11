@@ -182,10 +182,10 @@
                   <tags>
                     <li>FineFloor</li>
                   </tags>
+                  <designatorDropdown>EW_Designator_Boards_Totemic</designatorDropdown>
                   <costList>
                     <WoodLog_JapaneseMaple>20</WoodLog_JapaneseMaple>
                   </costList>
-                  <designatorDropdown>EW_Designator_Boards_Totemic</designatorDropdown>
                 </TerrainDef>
               </value>
             </li>

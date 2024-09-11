@@ -1,8 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Patch>
   <Operation Class="PatchOperationAdd">
-    <xpath>/Defs/ThingDef[category="Building" or contains(thingClass,
-      "Building")]/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="WoodLog"]</xpath>
+    <xpath>/Defs/ThingDef/comps/li[@Class="CompProperties_Refuelable"]/fuelFilter/thingDefs[li="WoodLog"]</xpath>
     <value>
       <li>WoodLog_JapaneseMaple</li>
     </value>
