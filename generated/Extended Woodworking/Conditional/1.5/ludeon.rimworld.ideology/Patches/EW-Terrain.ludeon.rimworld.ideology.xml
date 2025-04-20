@@ -106,10 +106,10 @@
                   <tags>
                     <li>FineFloor</li>
                   </tags>
-                  <designatorDropdown>EW_Designator_Boards_Totemic</designatorDropdown>
                   <costList>
                     <WoodLog_Camellia>20</WoodLog_Camellia>
                   </costList>
+                  <designatorDropdown>EW_Designator_Boards_Totemic</designatorDropdown>
                 </TerrainDef>
               </value>
             </li>
@@ -220,10 +220,10 @@
                   <tags>
                     <li>FineFloor</li>
                   </tags>
+                  <designatorDropdown>EW_Designator_Boards_Totemic</designatorDropdown>
                   <costList>
                     <WoodLog_RedMaple>20</WoodLog_RedMaple>
                   </costList>
-                  <designatorDropdown>EW_Designator_Boards_Totemic</designatorDropdown>
                 </TerrainDef>
               </value>
             </li>

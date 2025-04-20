@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/RecipeDef[defName="EM_AlloyTemperedSteel_Wood"]/ingredients/li[filter/thingDefs/li="WoodLog"]</xpath>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/RecipeDef[defName="EM_AlloyTemperedSteel_Wood"]/ingredients</xpath>
+        <value>
+          <li>
+            <filter>
+              <categories>
+                <li>WoodTypes</li>
+              </categories>
+            </filter>
+            <count>30</count>
+          </li>
+        </value>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/RecipeDef[defName="EM_AlloyTemperedSteel_Wood"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/RecipeDef[defName="EM_AlloyTemperedSteel_Wood"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/RecipeDef[defName="EM_AlloyTemperedSteel_Wood"]/fixedIngredientFilter/thingDefs/li/*</xpath>
+        <nomatch Class="PatchOperationRemove">
+          <xpath>/Defs/RecipeDef[defName="EM_AlloyTemperedSteel_Wood"]/fixedIngredientFilter/thingDefs</xpath>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/RecipeDef[defName="EM_AlloyTemperedSteel_Wood"]/fixedIngredientFilter</xpath>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="EM_AlloyTemperedSteel_Wood"]</xpath>
+          <value>
+            <fixedIngredientFilter />
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/RecipeDef[defName="EM_AlloyTemperedSteel_Wood"]/fixedIngredientFilter/categories</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="EM_AlloyTemperedSteel_Wood"]/fixedIngredientFilter/categories</xpath>
+          <value>
+            <li>WoodTypes</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="EM_AlloyTemperedSteel_Wood"]/fixedIngredientFilter</xpath>
+          <value>
+            <categories>
+              <li>WoodTypes</li>
+            </categories>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/RecipeDef[defName="EM_AlloyTemperedSteel_Wood_Bulk"]/ingredients/li[filter/thingDefs/li="WoodLog"]</xpath>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/RecipeDef[defName="EM_AlloyTemperedSteel_Wood_Bulk"]/ingredients</xpath>
+        <value>
+          <li>
+            <filter>
+              <categories>
+                <li>WoodTypes</li>
+              </categories>
+            </filter>
+            <count>100</count>
+          </li>
+        </value>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/RecipeDef[defName="EM_AlloyTemperedSteel_Wood_Bulk"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/RecipeDef[defName="EM_AlloyTemperedSteel_Wood_Bulk"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/RecipeDef[defName="EM_AlloyTemperedSteel_Wood_Bulk"]/fixedIngredientFilter/thingDefs/li/*</xpath>
+        <nomatch Class="PatchOperationRemove">
+          <xpath>/Defs/RecipeDef[defName="EM_AlloyTemperedSteel_Wood_Bulk"]/fixedIngredientFilter/thingDefs</xpath>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/RecipeDef[defName="EM_AlloyTemperedSteel_Wood_Bulk"]/fixedIngredientFilter</xpath>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="EM_AlloyTemperedSteel_Wood_Bulk"]</xpath>
+          <value>
+            <fixedIngredientFilter />
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/RecipeDef[defName="EM_AlloyTemperedSteel_Wood_Bulk"]/fixedIngredientFilter/categories</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="EM_AlloyTemperedSteel_Wood_Bulk"]/fixedIngredientFilter/categories</xpath>
+          <value>
+            <li>WoodTypes</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="EM_AlloyTemperedSteel_Wood_Bulk"]/fixedIngredientFilter</xpath>
+          <value>
+            <categories>
+              <li>WoodTypes</li>
+            </categories>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/RecipeDef[defName="EM_Make_Charcoal"]/ingredients/li[filter/thingDefs/li="WoodLog"]</xpath>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/RecipeDef[defName="EM_Make_Charcoal"]/ingredients</xpath>
+        <value>
+          <li>
+            <filter>
+              <categories>
+                <li>WoodTypes</li>
+              </categories>
+            </filter>
+            <count>35</count>
+          </li>
+        </value>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/RecipeDef[defName="EM_Make_Charcoal"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/RecipeDef[defName="EM_Make_Charcoal"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/RecipeDef[defName="EM_Make_Charcoal"]/fixedIngredientFilter/thingDefs/li/*</xpath>
+        <nomatch Class="PatchOperationRemove">
+          <xpath>/Defs/RecipeDef[defName="EM_Make_Charcoal"]/fixedIngredientFilter/thingDefs</xpath>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/RecipeDef[defName="EM_Make_Charcoal"]/fixedIngredientFilter</xpath>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="EM_Make_Charcoal"]</xpath>
+          <value>
+            <fixedIngredientFilter />
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/RecipeDef[defName="EM_Make_Charcoal"]/fixedIngredientFilter/categories</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="EM_Make_Charcoal"]/fixedIngredientFilter/categories</xpath>
+          <value>
+            <li>WoodTypes</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="EM_Make_Charcoal"]/fixedIngredientFilter</xpath>
+          <value>
+            <categories>
+              <li>WoodTypes</li>
+            </categories>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/RecipeDef[defName="EM_Make_Charcoal_Bulk"]/ingredients/li[filter/thingDefs/li="WoodLog"]</xpath>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/RecipeDef[defName="EM_Make_Charcoal_Bulk"]/ingredients</xpath>
+        <value>
+          <li>
+            <filter>
+              <categories>
+                <li>WoodTypes</li>
+              </categories>
+            </filter>
+            <count>140</count>
+          </li>
+        </value>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/RecipeDef[defName="EM_Make_Charcoal_Bulk"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/RecipeDef[defName="EM_Make_Charcoal_Bulk"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/RecipeDef[defName="EM_Make_Charcoal_Bulk"]/fixedIngredientFilter/thingDefs/li/*</xpath>
+        <nomatch Class="PatchOperationRemove">
+          <xpath>/Defs/RecipeDef[defName="EM_Make_Charcoal_Bulk"]/fixedIngredientFilter/thingDefs</xpath>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/RecipeDef[defName="EM_Make_Charcoal_Bulk"]/fixedIngredientFilter</xpath>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="EM_Make_Charcoal_Bulk"]</xpath>
+          <value>
+            <fixedIngredientFilter />
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/RecipeDef[defName="EM_Make_Charcoal_Bulk"]/fixedIngredientFilter/categories</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="EM_Make_Charcoal_Bulk"]/fixedIngredientFilter/categories</xpath>
+          <value>
+            <li>WoodTypes</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="EM_Make_Charcoal_Bulk"]/fixedIngredientFilter</xpath>
+          <value>
+            <categories>
+              <li>WoodTypes</li>
+            </categories>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationRemove">
+        <xpath>/Defs/RecipeDef[defName="EM_Make_ChemfuelFromWood_Lead"]/ingredients/li[filter/thingDefs/li="WoodLog"]</xpath>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>/Defs/RecipeDef[defName="EM_Make_ChemfuelFromWood_Lead"]/ingredients</xpath>
+        <value>
+          <li>
+            <filter>
+              <categories>
+                <li>WoodTypes</li>
+              </categories>
+            </filter>
+            <count>45</count>
+          </li>
+        </value>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/RecipeDef[defName="EM_Make_ChemfuelFromWood_Lead"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+        <match Class="PatchOperationRemove">
+          <xpath>/Defs/RecipeDef[defName="EM_Make_ChemfuelFromWood_Lead"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+        </match>
+      </li>
+      <li Class="PatchOperationConditional">
+        <success>Always</success>
+        <xpath>/Defs/RecipeDef[defName="EM_Make_ChemfuelFromWood_Lead"]/fixedIngredientFilter/thingDefs/li/*</xpath>
+        <nomatch Class="PatchOperationRemove">
+          <xpath>/Defs/RecipeDef[defName="EM_Make_ChemfuelFromWood_Lead"]/fixedIngredientFilter/thingDefs</xpath>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/RecipeDef[defName="EM_Make_ChemfuelFromWood_Lead"]/fixedIngredientFilter</xpath>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="EM_Make_ChemfuelFromWood_Lead"]</xpath>
+          <value>
+            <fixedIngredientFilter />
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationConditional">
+        <xpath>/Defs/RecipeDef[defName="EM_Make_ChemfuelFromWood_Lead"]/fixedIngredientFilter/categories</xpath>
+        <match Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="EM_Make_ChemfuelFromWood_Lead"]/fixedIngredientFilter/categories</xpath>
+          <value>
+            <li>WoodTypes</li>
+          </value>
+        </match>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>/Defs/RecipeDef[defName="EM_Make_ChemfuelFromWood_Lead"]/fixedIngredientFilter</xpath>
+          <value>
+            <categories>
+              <li>WoodTypes</li>
+            </categories>
+          </value>
+        </nomatch>
+      </li>
+    </operations>
+  </Operation>
+</Patch>

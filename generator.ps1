@@ -335,7 +335,7 @@ function UpdateLastVersion {
     $version = $buildInfo.RimWorldVersion.ShortVersion
     if ($version -notin $supportedVersions) {
         $lastVersion = $supportedVersions[-1]
-        
+
         $path = [Path]::Combine($buildInfo.Path.Archive, $lastVersion)
 
         if (-not (Test-Path $path)) {
@@ -380,7 +380,7 @@ function Discovery {
             continue
         }
 
-        $verbose = @('{0} ({1}):' -f $modInfo.Name.Trim(), $modInfo.PackageID)
+        $verbose = @('{0} ({1}):' -f $modInfo.Name.ToString().Trim(), $modInfo.PackageID)
 
         # CostList
         $discoveredDefs = $modInfo | Get-RWModDef -Version $buildInfo.RimWorldVersion.ShortVersion -XPathQuery (
@@ -517,7 +517,7 @@ function CreatePaintedWoodLogDef {
         )
         Version = $buildInfo.RimWorldVersion.ShortVersion
     }
-    
+
     Confirm-ParentDirectory $commonParams['SaveAs']
 
     $params = @{
@@ -567,7 +567,7 @@ function CreateModFuelPatch {
         Confirm-ParentDirectory $path
 
         Copy-Item -Path $templatePath -Destination $path
-    
+
         $xDocument = [XDocument]::Load($path)
         $filterValue = $xDocument.Root.Element('Operation').Element('value')
         $filterValue.ReplaceAll([XElement]::new([XName]'li', 'WoodLog_{0}' -f $wood.Name))
@@ -775,7 +775,7 @@ function CreateDesignatorGroupDef {
         $xDocument = [XDocument]::Load($path)
         foreach ($def in $buildInfo.Data.DiscoveredDefs.Terrain[$packageID]) {
             $designatorName = 'EW_Designator_{0}' -f $def.DefName
-           
+
             $xDocument.Root.Add(
                 [XElement]::new(
                     [XName]'DesignatorDropdownGroupDef',
@@ -947,7 +947,7 @@ function CreateTerrainPatch {
                     Remove  = 'costList'
                 }
                 $newDef = Copy-RWModDef @params
-                
+
                 $operations.Add(
                     [XElement]::new(
                         [XName]'li',
@@ -1047,7 +1047,7 @@ function UpdateLoadFolders {
     }
 
     $loadFoldersXml.Save($buildInfo.Path.LoadFolders)
-    
+
     Copy-Item $buildInfo.Path.LoadFolders -Destination $buildInfo.Path.Generated
 }
 
