@@ -334,33 +334,36 @@ function UpdateLastVersion {
     $supportedVersions = $supportedVersionsNode.Elements('li').Value -as [Version[]] | Sort-Object
 
     $version = $buildInfo.RimWorldVersion.ShortVersion
-    if ($version -notin $supportedVersions) {
-        $lastVersion = $supportedVersions[-1]
 
-        $path = [Path]::Combine($buildInfo.Path.Archive, $lastVersion)
-
-        if (-not (Test-Path $path)) {
-            $contentToArchive = [Path]::Combine($buildInfo.Path.Generated, $lastVersion)
-
-            if (Test-Path $contentToArchive) {
-                Copy-Item -Path $contentToArchive -Destination $buildInfo.Path.Archive -Recurse -Force
-            }
-        }
-
-        $path = [Path]::Combine($buildInfo.Path.Archive, 'Conditional', $lastVersion)
-
-        if (-not (Test-Path $path)) {
-            $contentToArchive = [Path]::Combine($buildInfo.Path.Generated, 'Conditional', $lastVersion)
-
-            if (Test-Path $contentToArchive) {
-                Copy-Item -Path $contentToArchive -Destination ([Path]::Combine($buildInfo.Path.Archive, 'Conditional')) -Recurse -Force
-            }
-        }
-
-        $supportedVersionsNode.Add([XElement]::new([XName]'li', $version))
-
-        $aboutXml.Save($buildInfo.Path.About)
+    if ($version -in $supportedVersions) {
+        return
     }
+
+    $lastVersion = $supportedVersions[-1]
+
+    $path = [Path]::Combine($buildInfo.Path.Archive, $lastVersion)
+
+    if (-not (Test-Path $path)) {
+        $contentToArchive = [Path]::Combine($buildInfo.Path.Generated, $lastVersion)
+
+        if (Test-Path $contentToArchive) {
+            Copy-Item -Path $contentToArchive -Destination $buildInfo.Path.Archive -Recurse -Force
+        }
+    }
+
+    $path = [Path]::Combine($buildInfo.Path.Archive, 'Conditional', $lastVersion)
+
+    if (-not (Test-Path $path)) {
+        $contentToArchive = [Path]::Combine($buildInfo.Path.Generated, 'Conditional', $lastVersion)
+
+        if (Test-Path $contentToArchive) {
+            Copy-Item -Path $contentToArchive -Destination ([Path]::Combine($buildInfo.Path.Archive, 'Conditional', $lastVersion)) -Recurse -Force
+        }
+    }
+
+    $supportedVersionsNode.Add([XElement]::new([XName]'li', $version))
+
+    $aboutXml.Save($buildInfo.Path.About)
 }
 
 function Clean {
@@ -442,11 +445,16 @@ function Discovery {
 }
 
 function CopyFramework {
-    Get-ChildItem -Path $buildInfo.Path.Archive | Copy-Item -Destination $buildInfo.Path.Generated -Recurse
-    Get-ChildItem -Path $buildInfo.Path.Source -Exclude template, conditional_* | Copy-Item -Destination $buildInfo.Path.Generated -Recurse
-    [Path]::Combine($buildInfo.Path.Source, 'template\*') | Copy-Item -Destination $buildInfo.Path.GeneratedVersioned -Recurse
-    [Path]::Combine($buildInfo.Path.Source, 'conditional_manual\*') | Copy-Item -Destination $buildInfo.Path.GeneratedConditionalVersioned -Recurse
-    [Path]::Combine($buildInfo.Path.Source, 'conditional_template\*') | Copy-Item -Destination $buildInfo.Path.GeneratedConditionalVersioned -Recurse
+    $commonParams = @{
+        Recurse = $true
+        Force   = $true
+    }
+
+    Get-ChildItem -Path $buildInfo.Path.Archive | Copy-Item -Destination $buildInfo.Path.Generated @commonParams
+    Get-ChildItem -Path $buildInfo.Path.Source -Exclude template, conditional_* | Copy-Item -Destination $buildInfo.Path.Generated @commonParams
+    [Path]::Combine($buildInfo.Path.Source, 'template\*') | Copy-Item -Destination $buildInfo.Path.GeneratedVersioned @commonParams
+    [Path]::Combine($buildInfo.Path.Source, 'conditional_manual\*') | Copy-Item -Destination $buildInfo.Path.GeneratedConditionalVersioned @commonParams
+    [Path]::Combine($buildInfo.Path.Source, 'conditional_template\*') | Copy-Item -Destination $buildInfo.Path.GeneratedConditionalVersioned @commonParams
 }
 
 function SetPublishedItemID {
@@ -470,6 +478,10 @@ function CreateWoodLogDef {
     }
 
     foreach ($wood in $buildInfo.Data.WoodStats) {
+        if (-not $wood.ImplementingMod) {
+            continue
+        }
+
         if ($wood.ImplementingMod -contains 'ludeon.rimworld') {
             $commonParams['SaveAs'] = [Path]::Combine(
                 $buildInfo.Path.GeneratedVersioned,

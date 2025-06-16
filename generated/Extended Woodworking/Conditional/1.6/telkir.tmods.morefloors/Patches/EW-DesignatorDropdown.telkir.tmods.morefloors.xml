@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/TerrainDef[defName="FloorWoodRustic"]/designatorDropdown</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/TerrainDef[defName="FloorWoodRustic"]/designatorDropdown</xpath>
+      <value>
+        <designatorDropdown>EW_Designator_FloorWoodRustic</designatorDropdown>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/TerrainDef[defName="FloorWoodRustic"]</xpath>
+      <value>
+        <designatorDropdown>EW_Designator_FloorWoodRustic</designatorDropdown>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/TerrainDef[defName="FloorWoodWide"]/designatorDropdown</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/TerrainDef[defName="FloorWoodWide"]/designatorDropdown</xpath>
+      <value>
+        <designatorDropdown>EW_Designator_FloorWoodWide</designatorDropdown>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/TerrainDef[defName="FloorWoodWide"]</xpath>
+      <value>
+        <designatorDropdown>EW_Designator_FloorWoodWide</designatorDropdown>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/TerrainDef[defName="FloorWoodLight"]/designatorDropdown</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/TerrainDef[defName="FloorWoodLight"]/designatorDropdown</xpath>
+      <value>
+        <designatorDropdown>EW_Designator_FloorWoodLight</designatorDropdown>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/TerrainDef[defName="FloorWoodLight"]</xpath>
+      <value>
+        <designatorDropdown>EW_Designator_FloorWoodLight</designatorDropdown>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/TerrainDef[defName="FloorWoodMosaic"]/designatorDropdown</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/TerrainDef[defName="FloorWoodMosaic"]/designatorDropdown</xpath>
+      <value>
+        <designatorDropdown>EW_Designator_FloorWoodMosaic</designatorDropdown>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/TerrainDef[defName="FloorWoodMosaic"]</xpath>
+      <value>
+        <designatorDropdown>EW_Designator_FloorWoodMosaic</designatorDropdown>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/TerrainDef[defName="FloorWoodVertical"]/designatorDropdown</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/TerrainDef[defName="FloorWoodVertical"]/designatorDropdown</xpath>
+      <value>
+        <designatorDropdown>EW_Designator_FloorWoodVertical</designatorDropdown>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/TerrainDef[defName="FloorWoodVertical"]</xpath>
+      <value>
+        <designatorDropdown>EW_Designator_FloorWoodVertical</designatorDropdown>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/TerrainDef[defName="FloorWoodBarn"]/designatorDropdown</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/TerrainDef[defName="FloorWoodBarn"]/designatorDropdown</xpath>
+      <value>
+        <designatorDropdown>EW_Designator_FloorWoodBarn</designatorDropdown>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/TerrainDef[defName="FloorWoodBarn"]</xpath>
+      <value>
+        <designatorDropdown>EW_Designator_FloorWoodBarn</designatorDropdown>
+      </value>
+    </nomatch>
+  </Operation>
+</Patch>

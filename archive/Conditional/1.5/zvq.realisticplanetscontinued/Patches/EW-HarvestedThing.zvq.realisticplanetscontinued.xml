@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="RRP_TreeAcacia"]/plant</xpath>
+    <value>
+      <harvestedThingDef>WoodLog_Acacia</harvestedThingDef>
+    </value>
+  </Operation>
+</Patch>

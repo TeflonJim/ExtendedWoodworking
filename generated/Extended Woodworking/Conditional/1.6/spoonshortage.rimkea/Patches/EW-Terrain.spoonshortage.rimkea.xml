@@ -1,0 +1,423 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="WoodLog_Acacia"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <TerrainDef ParentName="RIKWoodFloorBase">
+              <defName>Floor_DarkPlanks_Acacia</defName>
+              <label>dark acacia wood planks</label>
+              <description>Dark rough acacia planks.</description>
+              <statBases>
+                <WorkToBuild>100</WorkToBuild>
+                <Beauty>1</Beauty>
+              </statBases>
+              <renderPrecedence>250</renderPrecedence>
+              <texturePath>Floors/darkplanks</texturePath>
+              <costList>
+                <WoodLog_Acacia>4</WoodLog_Acacia>
+              </costList>
+              <designatorDropdown>EW_Designator_Floor_DarkPlanks</designatorDropdown>
+              <color>(219, 184, 144)</color>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <TerrainDef ParentName="RIKWoodFloorBase">
+              <defName>Floor_LightPlanks_Acacia</defName>
+              <label>light acacia wood planks</label>
+              <description>Light rough acacia planks.</description>
+              <statBases>
+                <WorkToBuild>100</WorkToBuild>
+                <Beauty>1</Beauty>
+              </statBases>
+              <renderPrecedence>250</renderPrecedence>
+              <texturePath>Floors/lightplanks</texturePath>
+              <costList>
+                <WoodLog_Acacia>4</WoodLog_Acacia>
+              </costList>
+              <designatorDropdown>EW_Designator_Floor_LightPlanks</designatorDropdown>
+              <color>(219, 184, 144)</color>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <TerrainDef ParentName="RIKWoodFloorBase">
+              <defName>Floor_SmoothWood_Acacia</defName>
+              <label>smooth acacia wood floor</label>
+              <description>Smooth acacia floor.</description>
+              <statBases>
+                <WorkToBuild>100</WorkToBuild>
+                <Beauty>1</Beauty>
+              </statBases>
+              <renderPrecedence>250</renderPrecedence>
+              <texturePath>Floors/smoothwood</texturePath>
+              <costList>
+                <WoodLog_Acacia>4</WoodLog_Acacia>
+              </costList>
+              <designatorDropdown>EW_Designator_Floor_SmoothWood</designatorDropdown>
+              <color>(219, 184, 144)</color>
+            </TerrainDef>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="WoodLog_Aspen"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <TerrainDef ParentName="RIKWoodFloorBase">
+              <defName>Floor_DarkPlanks_Aspen</defName>
+              <label>dark aspen wood planks</label>
+              <description>Dark rough acacia planks.</description>
+              <statBases>
+                <WorkToBuild>100</WorkToBuild>
+                <Beauty>1</Beauty>
+              </statBases>
+              <renderPrecedence>250</renderPrecedence>
+              <texturePath>Floors/darkplanks</texturePath>
+              <designatorDropdown>EW_Designator_Floor_DarkPlanks</designatorDropdown>
+              <costList>
+                <WoodLog_Aspen>4</WoodLog_Aspen>
+              </costList>
+              <color>(228, 204, 171)</color>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <TerrainDef ParentName="RIKWoodFloorBase">
+              <defName>Floor_LightPlanks_Aspen</defName>
+              <label>light aspen wood planks</label>
+              <description>Light rough acacia planks.</description>
+              <statBases>
+                <WorkToBuild>100</WorkToBuild>
+                <Beauty>1</Beauty>
+              </statBases>
+              <renderPrecedence>250</renderPrecedence>
+              <texturePath>Floors/lightplanks</texturePath>
+              <designatorDropdown>EW_Designator_Floor_LightPlanks</designatorDropdown>
+              <costList>
+                <WoodLog_Aspen>4</WoodLog_Aspen>
+              </costList>
+              <color>(228, 204, 171)</color>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <TerrainDef ParentName="RIKWoodFloorBase">
+              <defName>Floor_SmoothWood_Aspen</defName>
+              <label>smooth aspen wood floor</label>
+              <description>Smooth acacia floor.</description>
+              <statBases>
+                <WorkToBuild>100</WorkToBuild>
+                <Beauty>1</Beauty>
+              </statBases>
+              <renderPrecedence>250</renderPrecedence>
+              <texturePath>Floors/smoothwood</texturePath>
+              <designatorDropdown>EW_Designator_Floor_SmoothWood</designatorDropdown>
+              <costList>
+                <WoodLog_Aspen>4</WoodLog_Aspen>
+              </costList>
+              <color>(228, 204, 171)</color>
+            </TerrainDef>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="WoodLog_Camellia"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <TerrainDef ParentName="RIKWoodFloorBase">
+              <defName>Floor_DarkPlanks_Camellia</defName>
+              <label>dark camellia wood planks</label>
+              <description>Dark rough camellia planks.</description>
+              <statBases>
+                <WorkToBuild>100</WorkToBuild>
+                <Beauty>1</Beauty>
+              </statBases>
+              <renderPrecedence>250</renderPrecedence>
+              <texturePath>Floors/darkplanks</texturePath>
+              <designatorDropdown>EW_Designator_Floor_DarkPlanks</designatorDropdown>
+              <costList>
+                <WoodLog_Camellia>4</WoodLog_Camellia>
+              </costList>
+              <color>(201, 160, 130)</color>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <TerrainDef ParentName="RIKWoodFloorBase">
+              <defName>Floor_LightPlanks_Camellia</defName>
+              <label>light camellia wood planks</label>
+              <description>Light rough camellia planks.</description>
+              <statBases>
+                <WorkToBuild>100</WorkToBuild>
+                <Beauty>1</Beauty>
+              </statBases>
+              <renderPrecedence>250</renderPrecedence>
+              <texturePath>Floors/lightplanks</texturePath>
+              <designatorDropdown>EW_Designator_Floor_LightPlanks</designatorDropdown>
+              <costList>
+                <WoodLog_Camellia>4</WoodLog_Camellia>
+              </costList>
+              <color>(201, 160, 130)</color>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <TerrainDef ParentName="RIKWoodFloorBase">
+              <defName>Floor_SmoothWood_Camellia</defName>
+              <label>smooth camellia wood floor</label>
+              <description>Smooth camellia floor.</description>
+              <statBases>
+                <WorkToBuild>100</WorkToBuild>
+                <Beauty>1</Beauty>
+              </statBases>
+              <renderPrecedence>250</renderPrecedence>
+              <texturePath>Floors/smoothwood</texturePath>
+              <designatorDropdown>EW_Designator_Floor_SmoothWood</designatorDropdown>
+              <costList>
+                <WoodLog_Camellia>4</WoodLog_Camellia>
+              </costList>
+              <color>(201, 160, 130)</color>
+            </TerrainDef>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="WoodLog_CherryBlossom"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <TerrainDef ParentName="RIKWoodFloorBase">
+              <defName>Floor_DarkPlanks_CherryBlossom</defName>
+              <label>dark cherryblossom wood planks</label>
+              <description>Dark rough cherry blossom planks.</description>
+              <statBases>
+                <WorkToBuild>100</WorkToBuild>
+                <Beauty>1</Beauty>
+              </statBases>
+              <renderPrecedence>250</renderPrecedence>
+              <texturePath>Floors/darkplanks</texturePath>
+              <designatorDropdown>EW_Designator_Floor_DarkPlanks</designatorDropdown>
+              <color>(165, 82, 40)</color>
+              <costList>
+                <WoodLog_CherryBlossom>4</WoodLog_CherryBlossom>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <TerrainDef ParentName="RIKWoodFloorBase">
+              <defName>Floor_LightPlanks_CherryBlossom</defName>
+              <label>light cherryblossom wood planks</label>
+              <description>Light rough cherry blossom planks.</description>
+              <statBases>
+                <WorkToBuild>100</WorkToBuild>
+                <Beauty>1</Beauty>
+              </statBases>
+              <renderPrecedence>250</renderPrecedence>
+              <texturePath>Floors/lightplanks</texturePath>
+              <designatorDropdown>EW_Designator_Floor_LightPlanks</designatorDropdown>
+              <color>(165, 82, 40)</color>
+              <costList>
+                <WoodLog_CherryBlossom>4</WoodLog_CherryBlossom>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <TerrainDef ParentName="RIKWoodFloorBase">
+              <defName>Floor_SmoothWood_CherryBlossom</defName>
+              <label>smooth cherryblossom wood floor</label>
+              <description>Smooth cherry blossom floor.</description>
+              <statBases>
+                <WorkToBuild>100</WorkToBuild>
+                <Beauty>1</Beauty>
+              </statBases>
+              <renderPrecedence>250</renderPrecedence>
+              <texturePath>Floors/smoothwood</texturePath>
+              <designatorDropdown>EW_Designator_Floor_SmoothWood</designatorDropdown>
+              <color>(165, 82, 40)</color>
+              <costList>
+                <WoodLog_CherryBlossom>4</WoodLog_CherryBlossom>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="WoodLog_JapaneseMaple"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <TerrainDef ParentName="RIKWoodFloorBase">
+              <defName>Floor_DarkPlanks_JapaneseMaple</defName>
+              <label>dark japanesemaple wood planks</label>
+              <description>Dark rough japanese maple planks.</description>
+              <statBases>
+                <WorkToBuild>100</WorkToBuild>
+                <Beauty>1</Beauty>
+              </statBases>
+              <renderPrecedence>250</renderPrecedence>
+              <texturePath>Floors/darkplanks</texturePath>
+              <costList>
+                <WoodLog_JapaneseMaple>4</WoodLog_JapaneseMaple>
+              </costList>
+              <designatorDropdown>EW_Designator_Floor_DarkPlanks</designatorDropdown>
+              <color>(252, 170, 124)</color>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <TerrainDef ParentName="RIKWoodFloorBase">
+              <defName>Floor_LightPlanks_JapaneseMaple</defName>
+              <label>light japanesemaple wood planks</label>
+              <description>Light rough japanese maple planks.</description>
+              <statBases>
+                <WorkToBuild>100</WorkToBuild>
+                <Beauty>1</Beauty>
+              </statBases>
+              <renderPrecedence>250</renderPrecedence>
+              <texturePath>Floors/lightplanks</texturePath>
+              <costList>
+                <WoodLog_JapaneseMaple>4</WoodLog_JapaneseMaple>
+              </costList>
+              <designatorDropdown>EW_Designator_Floor_LightPlanks</designatorDropdown>
+              <color>(252, 170, 124)</color>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <TerrainDef ParentName="RIKWoodFloorBase">
+              <defName>Floor_SmoothWood_JapaneseMaple</defName>
+              <label>smooth japanesemaple wood floor</label>
+              <description>Smooth japanese maple floor.</description>
+              <statBases>
+                <WorkToBuild>100</WorkToBuild>
+                <Beauty>1</Beauty>
+              </statBases>
+              <renderPrecedence>250</renderPrecedence>
+              <texturePath>Floors/smoothwood</texturePath>
+              <costList>
+                <WoodLog_JapaneseMaple>4</WoodLog_JapaneseMaple>
+              </costList>
+              <designatorDropdown>EW_Designator_Floor_SmoothWood</designatorDropdown>
+              <color>(252, 170, 124)</color>
+            </TerrainDef>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="WoodLog_RedMaple"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <TerrainDef ParentName="RIKWoodFloorBase">
+              <defName>Floor_DarkPlanks_RedMaple</defName>
+              <label>dark redmaple wood planks</label>
+              <description>Dark rough red maple planks.</description>
+              <statBases>
+                <WorkToBuild>100</WorkToBuild>
+                <Beauty>1</Beauty>
+              </statBases>
+              <renderPrecedence>250</renderPrecedence>
+              <texturePath>Floors/darkplanks</texturePath>
+              <costList>
+                <WoodLog_RedMaple>4</WoodLog_RedMaple>
+              </costList>
+              <designatorDropdown>EW_Designator_Floor_DarkPlanks</designatorDropdown>
+              <color>(222, 197, 167)</color>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <TerrainDef ParentName="RIKWoodFloorBase">
+              <defName>Floor_LightPlanks_RedMaple</defName>
+              <label>light redmaple wood planks</label>
+              <description>Light rough red maple planks.</description>
+              <statBases>
+                <WorkToBuild>100</WorkToBuild>
+                <Beauty>1</Beauty>
+              </statBases>
+              <renderPrecedence>250</renderPrecedence>
+              <texturePath>Floors/lightplanks</texturePath>
+              <costList>
+                <WoodLog_RedMaple>4</WoodLog_RedMaple>
+              </costList>
+              <designatorDropdown>EW_Designator_Floor_LightPlanks</designatorDropdown>
+              <color>(222, 197, 167)</color>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <TerrainDef ParentName="RIKWoodFloorBase">
+              <defName>Floor_SmoothWood_RedMaple</defName>
+              <label>smooth redmaple wood floor</label>
+              <description>Smooth red maple floor.</description>
+              <statBases>
+                <WorkToBuild>100</WorkToBuild>
+                <Beauty>1</Beauty>
+              </statBases>
+              <renderPrecedence>250</renderPrecedence>
+              <texturePath>Floors/smoothwood</texturePath>
+              <costList>
+                <WoodLog_RedMaple>4</WoodLog_RedMaple>
+              </costList>
+              <designatorDropdown>EW_Designator_Floor_SmoothWood</designatorDropdown>
+              <color>(222, 197, 167)</color>
+            </TerrainDef>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="WoodenCanopy"]/costList/WoodLog</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/ThingDef[defName="WoodenCanopy"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="WoodenCanopy" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="WoodenCanopy"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="WoodenCanopy"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="WoodenCanopy" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="WoodenCanopy" and not(costStuffCount)]</xpath>
+            <value>
+              <costStuffCount>50</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="WoodenCanopy"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>Defs/ThingDef[defName="WoodenCanopy"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="WoodPile"]/costList/WoodLog</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/ThingDef[defName="WoodPile"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="WoodPile" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="WoodPile"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="WoodPile"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="WoodPile" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="WoodPile" and not(costStuffCount)]</xpath>
+            <value>
+              <costStuffCount>100</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="WoodPile"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>Defs/ThingDef[defName="WoodPile"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef Name="BuildingBaseB" Abstract="True">
+    <category>Building</category>
+    <selectable>true</selectable>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+  </ThingDef>
+  <ThingDef ParentName="BuildingBaseB">
+    <defName>TableWoodworking</defName>
+    <label>woodworking table</label>
+    <thingClass>Building_WorkTable_HeatPush</thingClass>
+    <description>A small woodworking table.</description>
+    <graphicData>
+      <texPath>sawmill</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(3,1)</drawSize>
+    </graphicData>
+    <costList>
+      <Steel>30</Steel>
+    </costList>
+    <altitudeLayer>Building</altitudeLayer>
+    <statBases>
+      <MaxHitPoints>180</MaxHitPoints>
+      <WorkToMake>850</WorkToMake>
+      <Flammability>0</Flammability>
+    </statBases>
+    <useHitPoints>True</useHitPoints>
+    <size>(3,1)</size>
+    <designationCategory>Production</designationCategory>
+    <passability>PassThroughOnly</passability>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+  </ThingDef>
+</Defs>
