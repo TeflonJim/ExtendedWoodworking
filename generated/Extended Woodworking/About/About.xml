@@ -51,12 +51,14 @@ A Woodworking table is available to paint wood or convert specific types of wood
   [*]A Dog Said... Animal Prosthetics
   [*]A RimWorld of Magic
   [*]Alpha Memes
+  [*]Ancient urban ruins
   [*]Books From Paper
   [*]Camping Tent
   [*]Caravan Adventures
   [*]Caravan Equipment (Continued)
   [*]Caravan Gear
   [*]Coal Expanded (Continued)
+  [*]Cosmere - Metals
   [*]Erin's Cottage Collection
   [*]Erin's Japanese Furniture
   [*]Expanded Materials - Metals
@@ -153,6 +155,7 @@ Alternatively, mod content is expressed using LoadFolders.xml in the mod folder.
     <li>argon.expandedmaterials.metals</li>
     <li>augdog777.wildwestfirearmsnonce</li>
     <li>cp.rimmunation.2.weapons</li>
+    <li>cryptiklemur.cosmere.metals</li>
     <li>dankpyon.medieval.overhaul</li>
     <li>dark.signs</li>
     <li>dismarzero.vgp.vgpgardentools</li>
@@ -228,6 +231,7 @@ Alternatively, mod content is expressed using LoadFolders.xml in the mod folder.
     <li>vanillaexpanded.vwe</li>
     <li>vanillaexpanded.vwetb</li>
     <li>wemd.expandedfloors</li>
+    <li>xmb.ancienturbanruins.mo</li>
     <li>zal.fishprops</li>
     <li>zvq.realisticplanetscontinued</li>
   </loadAfter>

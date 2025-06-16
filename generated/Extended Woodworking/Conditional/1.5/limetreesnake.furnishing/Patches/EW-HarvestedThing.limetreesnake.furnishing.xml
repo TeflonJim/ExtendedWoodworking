@@ -1,13 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Patch>
-  <Operation Class="PatchOperationSequence">
-    <operations>
-      <li Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="LTS_DecorativePine"]/plant</xpath>
-        <value>
-          <harvestedThingDef>WoodLog_Pine</harvestedThingDef>
-        </value>
-      </li>
-    </operations>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="LTS_DecorativePine"]/plant</xpath>
+    <value>
+      <harvestedThingDef>WoodLog_Pine</harvestedThingDef>
+    </value>
   </Operation>
 </Patch>

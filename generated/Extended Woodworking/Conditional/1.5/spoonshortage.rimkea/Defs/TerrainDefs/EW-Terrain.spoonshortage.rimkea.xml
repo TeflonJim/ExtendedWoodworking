@@ -10,11 +10,11 @@
     </statBases>
     <renderPrecedence>250</renderPrecedence>
     <texturePath>Floors/darkplanks</texturePath>
-    <designatorDropdown>EW_Designator_Floor_DarkPlanks</designatorDropdown>
     <color>(235,228,216)</color>
     <costList>
       <WoodLog_Birch>4</WoodLog_Birch>
     </costList>
+    <designatorDropdown>EW_Designator_Floor_DarkPlanks</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="RIKWoodFloorBase">
     <defName>Floor_DarkPlanks_Cecropia</defName>
@@ -58,10 +58,10 @@
     </statBases>
     <renderPrecedence>250</renderPrecedence>
     <texturePath>Floors/darkplanks</texturePath>
+    <color>(171, 159, 142)</color>
     <costList>
       <WoodLog_Drago>4</WoodLog_Drago>
     </costList>
-    <color>(171, 159, 142)</color>
     <designatorDropdown>EW_Designator_Floor_DarkPlanks</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="RIKWoodFloorBase">
@@ -90,10 +90,10 @@
     </statBases>
     <renderPrecedence>250</renderPrecedence>
     <texturePath>Floors/darkplanks</texturePath>
+    <color>(185,142,96)</color>
     <costList>
       <WoodLog_Oak>4</WoodLog_Oak>
     </costList>
-    <color>(185,142,96)</color>
     <designatorDropdown>EW_Designator_Floor_DarkPlanks</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="RIKWoodFloorBase">
@@ -106,11 +106,11 @@
     </statBases>
     <renderPrecedence>250</renderPrecedence>
     <texturePath>Floors/darkplanks</texturePath>
-    <designatorDropdown>EW_Designator_Floor_DarkPlanks</designatorDropdown>
     <color>(224, 150, 87)</color>
     <costList>
       <WoodLog_Palm>4</WoodLog_Palm>
     </costList>
+    <designatorDropdown>EW_Designator_Floor_DarkPlanks</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="RIKWoodFloorBase">
     <defName>Floor_DarkPlanks_Pine</defName>
@@ -122,11 +122,11 @@
     </statBases>
     <renderPrecedence>250</renderPrecedence>
     <texturePath>Floors/darkplanks</texturePath>
-    <designatorDropdown>EW_Designator_Floor_DarkPlanks</designatorDropdown>
     <color>(198,146,68)</color>
     <costList>
       <WoodLog_Pine>4</WoodLog_Pine>
     </costList>
+    <designatorDropdown>EW_Designator_Floor_DarkPlanks</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="RIKWoodFloorBase">
     <defName>Floor_DarkPlanks_Poplar</defName>
@@ -138,10 +138,10 @@
     </statBases>
     <renderPrecedence>250</renderPrecedence>
     <texturePath>Floors/darkplanks</texturePath>
+    <color>(184,156,108)</color>
     <costList>
       <WoodLog_Poplar>4</WoodLog_Poplar>
     </costList>
-    <color>(184,156,108)</color>
     <designatorDropdown>EW_Designator_Floor_DarkPlanks</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="RIKWoodFloorBase">
@@ -154,11 +154,11 @@
     </statBases>
     <renderPrecedence>250</renderPrecedence>
     <texturePath>Floors/darkplanks</texturePath>
-    <designatorDropdown>EW_Designator_Floor_DarkPlanks</designatorDropdown>
     <color>(154,102,59)</color>
     <costList>
       <WoodLog_Teak>4</WoodLog_Teak>
     </costList>
+    <designatorDropdown>EW_Designator_Floor_DarkPlanks</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="RIKWoodFloorBase">
     <defName>Floor_DarkPlanks_Willow</defName>
@@ -170,10 +170,10 @@
     </statBases>
     <renderPrecedence>250</renderPrecedence>
     <texturePath>Floors/darkplanks</texturePath>
+    <color>(221, 186, 141)</color>
     <costList>
       <WoodLog_Willow>4</WoodLog_Willow>
     </costList>
-    <color>(221, 186, 141)</color>
     <designatorDropdown>EW_Designator_Floor_DarkPlanks</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="RIKWoodFloorBase">
@@ -186,11 +186,11 @@
     </statBases>
     <renderPrecedence>250</renderPrecedence>
     <texturePath>Floors/lightplanks</texturePath>
-    <designatorDropdown>EW_Designator_Floor_LightPlanks</designatorDropdown>
     <color>(235,228,216)</color>
     <costList>
       <WoodLog_Birch>4</WoodLog_Birch>
     </costList>
+    <designatorDropdown>EW_Designator_Floor_LightPlanks</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="RIKWoodFloorBase">
     <defName>Floor_LightPlanks_Cecropia</defName>
@@ -234,10 +234,10 @@
     </statBases>
     <renderPrecedence>250</renderPrecedence>
     <texturePath>Floors/lightplanks</texturePath>
+    <color>(171, 159, 142)</color>
     <costList>
       <WoodLog_Drago>4</WoodLog_Drago>
     </costList>
-    <color>(171, 159, 142)</color>
     <designatorDropdown>EW_Designator_Floor_LightPlanks</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="RIKWoodFloorBase">
@@ -266,10 +266,10 @@
     </statBases>
     <renderPrecedence>250</renderPrecedence>
     <texturePath>Floors/lightplanks</texturePath>
+    <color>(185,142,96)</color>
     <costList>
       <WoodLog_Oak>4</WoodLog_Oak>
     </costList>
-    <color>(185,142,96)</color>
     <designatorDropdown>EW_Designator_Floor_LightPlanks</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="RIKWoodFloorBase">
@@ -282,11 +282,11 @@
     </statBases>
     <renderPrecedence>250</renderPrecedence>
     <texturePath>Floors/lightplanks</texturePath>
-    <designatorDropdown>EW_Designator_Floor_LightPlanks</designatorDropdown>
     <color>(224, 150, 87)</color>
     <costList>
       <WoodLog_Palm>4</WoodLog_Palm>
     </costList>
+    <designatorDropdown>EW_Designator_Floor_LightPlanks</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="RIKWoodFloorBase">
     <defName>Floor_LightPlanks_Pine</defName>
@@ -298,11 +298,11 @@
     </statBases>
     <renderPrecedence>250</renderPrecedence>
     <texturePath>Floors/lightplanks</texturePath>
-    <designatorDropdown>EW_Designator_Floor_LightPlanks</designatorDropdown>
     <color>(198,146,68)</color>
     <costList>
       <WoodLog_Pine>4</WoodLog_Pine>
     </costList>
+    <designatorDropdown>EW_Designator_Floor_LightPlanks</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="RIKWoodFloorBase">
     <defName>Floor_LightPlanks_Poplar</defName>
@@ -314,10 +314,10 @@
     </statBases>
     <renderPrecedence>250</renderPrecedence>
     <texturePath>Floors/lightplanks</texturePath>
+    <color>(184,156,108)</color>
     <costList>
       <WoodLog_Poplar>4</WoodLog_Poplar>
     </costList>
-    <color>(184,156,108)</color>
     <designatorDropdown>EW_Designator_Floor_LightPlanks</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="RIKWoodFloorBase">
@@ -330,11 +330,11 @@
     </statBases>
     <renderPrecedence>250</renderPrecedence>
     <texturePath>Floors/lightplanks</texturePath>
-    <designatorDropdown>EW_Designator_Floor_LightPlanks</designatorDropdown>
     <color>(154,102,59)</color>
     <costList>
       <WoodLog_Teak>4</WoodLog_Teak>
     </costList>
+    <designatorDropdown>EW_Designator_Floor_LightPlanks</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="RIKWoodFloorBase">
     <defName>Floor_LightPlanks_Willow</defName>
@@ -346,10 +346,10 @@
     </statBases>
     <renderPrecedence>250</renderPrecedence>
     <texturePath>Floors/lightplanks</texturePath>
+    <color>(221, 186, 141)</color>
     <costList>
       <WoodLog_Willow>4</WoodLog_Willow>
     </costList>
-    <color>(221, 186, 141)</color>
     <designatorDropdown>EW_Designator_Floor_LightPlanks</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="RIKWoodFloorBase">
@@ -362,11 +362,11 @@
     </statBases>
     <renderPrecedence>250</renderPrecedence>
     <texturePath>Floors/smoothwood</texturePath>
-    <designatorDropdown>EW_Designator_Floor_SmoothWood</designatorDropdown>
     <color>(235,228,216)</color>
     <costList>
       <WoodLog_Birch>4</WoodLog_Birch>
     </costList>
+    <designatorDropdown>EW_Designator_Floor_SmoothWood</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="RIKWoodFloorBase">
     <defName>Floor_SmoothWood_Cecropia</defName>
@@ -410,10 +410,10 @@
     </statBases>
     <renderPrecedence>250</renderPrecedence>
     <texturePath>Floors/smoothwood</texturePath>
+    <color>(171, 159, 142)</color>
     <costList>
       <WoodLog_Drago>4</WoodLog_Drago>
     </costList>
-    <color>(171, 159, 142)</color>
     <designatorDropdown>EW_Designator_Floor_SmoothWood</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="RIKWoodFloorBase">
@@ -442,10 +442,10 @@
     </statBases>
     <renderPrecedence>250</renderPrecedence>
     <texturePath>Floors/smoothwood</texturePath>
+    <color>(185,142,96)</color>
     <costList>
       <WoodLog_Oak>4</WoodLog_Oak>
     </costList>
-    <color>(185,142,96)</color>
     <designatorDropdown>EW_Designator_Floor_SmoothWood</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="RIKWoodFloorBase">
@@ -458,11 +458,11 @@
     </statBases>
     <renderPrecedence>250</renderPrecedence>
     <texturePath>Floors/smoothwood</texturePath>
-    <designatorDropdown>EW_Designator_Floor_SmoothWood</designatorDropdown>
     <color>(224, 150, 87)</color>
     <costList>
       <WoodLog_Palm>4</WoodLog_Palm>
     </costList>
+    <designatorDropdown>EW_Designator_Floor_SmoothWood</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="RIKWoodFloorBase">
     <defName>Floor_SmoothWood_Pine</defName>
@@ -474,11 +474,11 @@
     </statBases>
     <renderPrecedence>250</renderPrecedence>
     <texturePath>Floors/smoothwood</texturePath>
-    <designatorDropdown>EW_Designator_Floor_SmoothWood</designatorDropdown>
     <color>(198,146,68)</color>
     <costList>
       <WoodLog_Pine>4</WoodLog_Pine>
     </costList>
+    <designatorDropdown>EW_Designator_Floor_SmoothWood</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="RIKWoodFloorBase">
     <defName>Floor_SmoothWood_Poplar</defName>
@@ -490,10 +490,10 @@
     </statBases>
     <renderPrecedence>250</renderPrecedence>
     <texturePath>Floors/smoothwood</texturePath>
+    <color>(184,156,108)</color>
     <costList>
       <WoodLog_Poplar>4</WoodLog_Poplar>
     </costList>
-    <color>(184,156,108)</color>
     <designatorDropdown>EW_Designator_Floor_SmoothWood</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="RIKWoodFloorBase">
@@ -506,11 +506,11 @@
     </statBases>
     <renderPrecedence>250</renderPrecedence>
     <texturePath>Floors/smoothwood</texturePath>
-    <designatorDropdown>EW_Designator_Floor_SmoothWood</designatorDropdown>
     <color>(154,102,59)</color>
     <costList>
       <WoodLog_Teak>4</WoodLog_Teak>
     </costList>
+    <designatorDropdown>EW_Designator_Floor_SmoothWood</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="RIKWoodFloorBase">
     <defName>Floor_SmoothWood_Willow</defName>
@@ -522,10 +522,10 @@
     </statBases>
     <renderPrecedence>250</renderPrecedence>
     <texturePath>Floors/smoothwood</texturePath>
+    <color>(221, 186, 141)</color>
     <costList>
       <WoodLog_Willow>4</WoodLog_Willow>
     </costList>
-    <color>(221, 186, 141)</color>
     <designatorDropdown>EW_Designator_Floor_SmoothWood</designatorDropdown>
   </TerrainDef>
 </Defs>

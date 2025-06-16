@@ -18,10 +18,10 @@
     </statBases>
     <constructEffect>ConstructWood</constructEffect>
     <uiOrder>2002</uiOrder>
-    <designatorDropdown>EW_Designator_WDWidePlanksFloor</designatorDropdown>
     <costList>
       <WoodLog_Birch>3</WoodLog_Birch>
     </costList>
+    <designatorDropdown>EW_Designator_WDWidePlanksFloor</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>WDWidePlanksFloor_Cecropia</defName>
@@ -156,10 +156,10 @@
     </statBases>
     <constructEffect>ConstructWood</constructEffect>
     <uiOrder>2002</uiOrder>
-    <designatorDropdown>EW_Designator_WDWidePlanksFloor</designatorDropdown>
     <costList>
       <WoodLog_Palm>3</WoodLog_Palm>
     </costList>
+    <designatorDropdown>EW_Designator_WDWidePlanksFloor</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>WDWidePlanksFloor_Pine</defName>
@@ -179,10 +179,10 @@
     </statBases>
     <constructEffect>ConstructWood</constructEffect>
     <uiOrder>2002</uiOrder>
-    <designatorDropdown>EW_Designator_WDWidePlanksFloor</designatorDropdown>
     <costList>
       <WoodLog_Pine>3</WoodLog_Pine>
     </costList>
+    <designatorDropdown>EW_Designator_WDWidePlanksFloor</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>WDWidePlanksFloor_Poplar</defName>
@@ -225,10 +225,10 @@
     </statBases>
     <constructEffect>ConstructWood</constructEffect>
     <uiOrder>2002</uiOrder>
-    <designatorDropdown>EW_Designator_WDWidePlanksFloor</designatorDropdown>
     <costList>
       <WoodLog_Teak>3</WoodLog_Teak>
     </costList>
+    <designatorDropdown>EW_Designator_WDWidePlanksFloor</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>WDWidePlanksFloor_Willow</defName>
@@ -275,10 +275,10 @@
       <li>FineFloor</li>
     </tags>
     <uiOrder>2003</uiOrder>
-    <designatorDropdown>EW_Designator_WDCheckWoodenFloor</designatorDropdown>
     <costList>
       <WoodLog_Birch>20</WoodLog_Birch>
     </costList>
+    <designatorDropdown>EW_Designator_WDCheckWoodenFloor</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>WDCheckWoodenFloor_Cecropia</defName>
@@ -437,10 +437,10 @@
       <li>FineFloor</li>
     </tags>
     <uiOrder>2003</uiOrder>
-    <designatorDropdown>EW_Designator_WDCheckWoodenFloor</designatorDropdown>
     <costList>
       <WoodLog_Palm>20</WoodLog_Palm>
     </costList>
+    <designatorDropdown>EW_Designator_WDCheckWoodenFloor</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>WDCheckWoodenFloor_Pine</defName>
@@ -464,10 +464,10 @@
       <li>FineFloor</li>
     </tags>
     <uiOrder>2003</uiOrder>
-    <designatorDropdown>EW_Designator_WDCheckWoodenFloor</designatorDropdown>
     <costList>
       <WoodLog_Pine>20</WoodLog_Pine>
     </costList>
+    <designatorDropdown>EW_Designator_WDCheckWoodenFloor</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>WDCheckWoodenFloor_Poplar</defName>
@@ -518,10 +518,10 @@
       <li>FineFloor</li>
     </tags>
     <uiOrder>2003</uiOrder>
-    <designatorDropdown>EW_Designator_WDCheckWoodenFloor</designatorDropdown>
     <costList>
       <WoodLog_Teak>20</WoodLog_Teak>
     </costList>
+    <designatorDropdown>EW_Designator_WDCheckWoodenFloor</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>WDCheckWoodenFloor_Willow</defName>
@@ -572,10 +572,10 @@
       <li>FineFloor</li>
     </tags>
     <uiOrder>2005</uiOrder>
-    <designatorDropdown>EW_Designator_WDParquet</designatorDropdown>
     <costList>
       <WoodLog_Birch>20</WoodLog_Birch>
     </costList>
+    <designatorDropdown>EW_Designator_WDParquet</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>WDParquet_Cecropia</defName>
@@ -734,10 +734,10 @@
       <li>FineFloor</li>
     </tags>
     <uiOrder>2005</uiOrder>
-    <designatorDropdown>EW_Designator_WDParquet</designatorDropdown>
     <costList>
       <WoodLog_Palm>20</WoodLog_Palm>
     </costList>
+    <designatorDropdown>EW_Designator_WDParquet</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>WDParquet_Pine</defName>
@@ -761,10 +761,10 @@
       <li>FineFloor</li>
     </tags>
     <uiOrder>2005</uiOrder>
-    <designatorDropdown>EW_Designator_WDParquet</designatorDropdown>
     <costList>
       <WoodLog_Pine>20</WoodLog_Pine>
     </costList>
+    <designatorDropdown>EW_Designator_WDParquet</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>WDParquet_Poplar</defName>
@@ -815,10 +815,10 @@
       <li>FineFloor</li>
     </tags>
     <uiOrder>2005</uiOrder>
-    <designatorDropdown>EW_Designator_WDParquet</designatorDropdown>
     <costList>
       <WoodLog_Teak>20</WoodLog_Teak>
     </costList>
+    <designatorDropdown>EW_Designator_WDParquet</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>WDParquet_Willow</defName>
@@ -869,10 +869,10 @@
       <li>FineFloor</li>
     </tags>
     <uiOrder>2006</uiOrder>
-    <designatorDropdown>EW_Designator_WDMosaicWoodenFloor</designatorDropdown>
     <costList>
       <WoodLog_Birch>20</WoodLog_Birch>
     </costList>
+    <designatorDropdown>EW_Designator_WDMosaicWoodenFloor</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>WDMosaicWoodenFloor_Cecropia</defName>
@@ -1031,10 +1031,10 @@
       <li>FineFloor</li>
     </tags>
     <uiOrder>2006</uiOrder>
-    <designatorDropdown>EW_Designator_WDMosaicWoodenFloor</designatorDropdown>
     <costList>
       <WoodLog_Palm>20</WoodLog_Palm>
     </costList>
+    <designatorDropdown>EW_Designator_WDMosaicWoodenFloor</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>WDMosaicWoodenFloor_Pine</defName>
@@ -1058,10 +1058,10 @@
       <li>FineFloor</li>
     </tags>
     <uiOrder>2006</uiOrder>
-    <designatorDropdown>EW_Designator_WDMosaicWoodenFloor</designatorDropdown>
     <costList>
       <WoodLog_Pine>20</WoodLog_Pine>
     </costList>
+    <designatorDropdown>EW_Designator_WDMosaicWoodenFloor</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>WDMosaicWoodenFloor_Poplar</defName>
@@ -1112,10 +1112,10 @@
       <li>FineFloor</li>
     </tags>
     <uiOrder>2006</uiOrder>
-    <designatorDropdown>EW_Designator_WDMosaicWoodenFloor</designatorDropdown>
     <costList>
       <WoodLog_Teak>20</WoodLog_Teak>
     </costList>
+    <designatorDropdown>EW_Designator_WDMosaicWoodenFloor</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>WDMosaicWoodenFloor_Willow</defName>

@@ -37,11 +37,13 @@
     <li IfModActive="argon.expandedmaterials.metals">Conditional/1.5/argon.expandedmaterials.metals</li>
     <li IfModActive="augdog777.wildwestfirearmsnonce">Conditional/1.5/augdog777.wildwestfirearmsnonce</li>
     <li IfModActive="cp.rimmunation.2.weapons">Conditional/1.5/cp.rimmunation.2.weapons</li>
+    <li IfModActive="cryptiklemur.cosmere.metals">Conditional/1.5/cryptiklemur.cosmere.metals</li>
     <li IfModActive="dankpyon.medieval.overhaul">Conditional/1.5/dankpyon.medieval.overhaul</li>
     <li IfModActive="dark.signs">Conditional/1.5/dark.signs</li>
     <li IfModActive="dismarzero.vgp.vgpgardentools">Conditional/1.5/dismarzero.vgp.vgpgardentools</li>
     <li IfModActive="dismarzero.vgp.vgpvegetablegarden">Conditional/1.5/dismarzero.vgp.vgpvegetablegarden</li>
     <li IfModActive="dismarzero.vgp.xtratreesandflowers">Conditional/1.5/dismarzero.vgp.xtratreesandflowers</li>
+    <li IfModActive="dubwise.dubsbadhygiene">Conditional/1.5/dubwise.dubsbadhygiene</li>
     <li IfModActive="erin.cottagecollection">Conditional/1.5/erin.cottagecollection</li>
     <li IfModActive="erin.japanesefurniture">Conditional/1.5/erin.japanesefurniture</li>
     <li IfModActive="fox.simplelearning">Conditional/1.5/fox.simplelearning</li>
@@ -105,6 +107,7 @@
     <li IfModActive="vanillaexpanded.vwe">Conditional/1.5/vanillaexpanded.vwe</li>
     <li IfModActive="vanillaexpanded.vwetb">Conditional/1.5/vanillaexpanded.vwetb</li>
     <li IfModActive="wemd.expandedfloors">Conditional/1.5/wemd.expandedfloors</li>
+    <li IfModActive="xmb.ancienturbanruins.mo">Conditional/1.5/xmb.ancienturbanruins.mo</li>
     <li IfModActive="zal.fishprops">Conditional/1.5/zal.fishprops</li>
     <li IfModActive="zvq.realisticplanetscontinued">Conditional/1.5/zvq.realisticplanetscontinued</li>
   </v1.5>

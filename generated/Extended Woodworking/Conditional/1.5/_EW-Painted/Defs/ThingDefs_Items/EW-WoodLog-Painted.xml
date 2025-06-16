@@ -21,8 +21,7 @@
     <pathCost>14</pathCost>
     <allowedArchonexusCount>-1</allowedArchonexusCount>
     <graphicData>
-      <texPath>Logs/WoodLog</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Logs/Stack/WoodLog</texPath>
     </graphicData>
   </ThingDef>
   <ThingDef ParentName="ResourceBasePainted">

@@ -1,82 +1,87 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Patch>
-  <Operation Class="PatchOperationSequence">
-    <success>Always</success>
-    <operations>
-      <li Class="PatchOperationRemove">
-        <xpath>/Defs/ThingDef[defName="PLA_BuildingBoat1A"]/costList/WoodLog</xpath>
-      </li>
-      <li Class="PatchOperationConditional">
-        <xpath>/Defs/ThingDef[defName="PLA_BuildingBoat1A" and (stuffCategories)]</xpath>
-        <match Class="PatchOperationAdd">
-          <xpath>/Defs/ThingDef[defName="PLA_BuildingBoat1A"]/stuffCategories</xpath>
-          <value>
-            <li>Woody</li>
-          </value>
-        </match>
-        <nomatch Class="PatchOperationAdd">
-          <xpath>/Defs/ThingDef[defName="PLA_BuildingBoat1A"]</xpath>
-          <value>
-            <stuffCategories>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="PLA_BuildingBoat1A"]/costList/WoodLog</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/ThingDef[defName="PLA_BuildingBoat1A"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="PLA_BuildingBoat1A" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="PLA_BuildingBoat1A"]/stuffCategories</xpath>
+            <value>
               <li>Woody</li>
-            </stuffCategories>
-          </value>
-        </nomatch>
-      </li>
-      <li Class="PatchOperationConditional">
-        <success>Always</success>
-        <xpath>/Defs/ThingDef[defName="PLA_BuildingBoat1A" and not(costStuffCount)]</xpath>
-        <match Class="PatchOperationAdd">
-          <xpath>/Defs/ThingDef[defName="PLA_BuildingBoat1A" and not(costStuffCount)]</xpath>
-          <value>
-            <costStuffCount>1200</costStuffCount>
-          </value>
-        </match>
-      </li>
-      <li Class="PatchOperationConditional">
-        <success>Always</success>
-        <xpath>/Defs/ThingDef[defName="PLA_BuildingBoat1A"]/constructEffect</xpath>
-        <match Class="PatchOperationRemove">
-          <xpath>/Defs/ThingDef[defName="PLA_BuildingBoat1A"]/constructEffect</xpath>
-        </match>
-      </li>
-      <li Class="PatchOperationRemove">
-        <xpath>/Defs/ThingDef[defName="PLA_BuildingBoat3A"]/costList/WoodLog</xpath>
-      </li>
-      <li Class="PatchOperationConditional">
-        <xpath>/Defs/ThingDef[defName="PLA_BuildingBoat3A" and (stuffCategories)]</xpath>
-        <match Class="PatchOperationAdd">
-          <xpath>/Defs/ThingDef[defName="PLA_BuildingBoat3A"]/stuffCategories</xpath>
-          <value>
-            <li>Woody</li>
-          </value>
-        </match>
-        <nomatch Class="PatchOperationAdd">
-          <xpath>/Defs/ThingDef[defName="PLA_BuildingBoat3A"]</xpath>
-          <value>
-            <stuffCategories>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="PLA_BuildingBoat1A"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="PLA_BuildingBoat1A" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="PLA_BuildingBoat1A" and not(costStuffCount)]</xpath>
+            <value>
+              <costStuffCount>1200</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="PLA_BuildingBoat1A"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>Defs/ThingDef[defName="PLA_BuildingBoat1A"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="PLA_BuildingBoat3A"]/costList/WoodLog</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/ThingDef[defName="PLA_BuildingBoat3A"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="PLA_BuildingBoat3A" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="PLA_BuildingBoat3A"]/stuffCategories</xpath>
+            <value>
               <li>Woody</li>
-            </stuffCategories>
-          </value>
-        </nomatch>
-      </li>
-      <li Class="PatchOperationConditional">
-        <success>Always</success>
-        <xpath>/Defs/ThingDef[defName="PLA_BuildingBoat3A" and not(costStuffCount)]</xpath>
-        <match Class="PatchOperationAdd">
-          <xpath>/Defs/ThingDef[defName="PLA_BuildingBoat3A" and not(costStuffCount)]</xpath>
-          <value>
-            <costStuffCount>2400</costStuffCount>
-          </value>
-        </match>
-      </li>
-      <li Class="PatchOperationConditional">
-        <success>Always</success>
-        <xpath>/Defs/ThingDef[defName="PLA_BuildingBoat3A"]/constructEffect</xpath>
-        <match Class="PatchOperationRemove">
-          <xpath>/Defs/ThingDef[defName="PLA_BuildingBoat3A"]/constructEffect</xpath>
-        </match>
-      </li>
-    </operations>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="PLA_BuildingBoat3A"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="PLA_BuildingBoat3A" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="PLA_BuildingBoat3A" and not(costStuffCount)]</xpath>
+            <value>
+              <costStuffCount>2400</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="PLA_BuildingBoat3A"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>Defs/ThingDef[defName="PLA_BuildingBoat3A"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
   </Operation>
 </Patch>

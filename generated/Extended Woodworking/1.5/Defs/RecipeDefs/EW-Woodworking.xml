@@ -38,5 +38,42 @@
       <li>TableWoodworking</li>
     </recipeUsers>
   </RecipeDef>
-
+  <RecipeDef>
+    <defName>ChangeDiffWoodToNormalWoodBulk</defName>
+    <label>bulk convert to normal wood</label>
+    <description>Converts various wood types into normal wood</description>
+    <jobString>Woodworking.</jobString>
+    <workAmount>1</workAmount>
+    <effectWorking>CutStone</effectWorking>
+    <soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>WoodTypes</li>
+          </categories>
+        </filter>
+        <count>75</count>
+      </li>
+    </ingredients>
+    <products>
+      <WoodLog>75</WoodLog>
+    </products>
+    <fixedIngredientFilter>
+      <categories>
+        <li>WoodTypes</li>
+      </categories>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>WoodTypes</li>
+      </categories>
+      <disallowedThingDefs>
+        <li>WoodLog</li>
+      </disallowedThingDefs>
+    </defaultIngredientFilter>
+    <recipeUsers>
+      <li>TableWoodworking</li>
+    </recipeUsers>
+  </RecipeDef>
 </Defs>

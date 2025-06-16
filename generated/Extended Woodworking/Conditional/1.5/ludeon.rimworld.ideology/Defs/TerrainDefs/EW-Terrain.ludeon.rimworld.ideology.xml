@@ -20,10 +20,10 @@
     <tags>
       <li>FineFloor</li>
     </tags>
-    <designatorDropdown>EW_Designator_Boards_Totemic</designatorDropdown>
     <costList>
       <WoodLog_Birch>20</WoodLog_Birch>
     </costList>
+    <designatorDropdown>EW_Designator_Boards_Totemic</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>Boards_Totemic_Cecropia</defName>
@@ -170,10 +170,10 @@
     <tags>
       <li>FineFloor</li>
     </tags>
-    <designatorDropdown>EW_Designator_Boards_Totemic</designatorDropdown>
     <costList>
       <WoodLog_Palm>20</WoodLog_Palm>
     </costList>
+    <designatorDropdown>EW_Designator_Boards_Totemic</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>Boards_Totemic_Pine</defName>
@@ -195,10 +195,10 @@
     <tags>
       <li>FineFloor</li>
     </tags>
-    <designatorDropdown>EW_Designator_Boards_Totemic</designatorDropdown>
     <costList>
       <WoodLog_Pine>20</WoodLog_Pine>
     </costList>
+    <designatorDropdown>EW_Designator_Boards_Totemic</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>Boards_Totemic_Poplar</defName>
@@ -245,10 +245,10 @@
     <tags>
       <li>FineFloor</li>
     </tags>
-    <designatorDropdown>EW_Designator_Boards_Totemic</designatorDropdown>
     <costList>
       <WoodLog_Teak>20</WoodLog_Teak>
     </costList>
+    <designatorDropdown>EW_Designator_Boards_Totemic</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>Boards_Totemic_Willow</defName>

@@ -1,341 +1,381 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Patch>
-  <Operation Class="PatchOperationSequence">
-    <success>Always</success>
-    <operations>
-      <li Class="PatchOperationRemove">
-        <xpath>/Defs/ThingDef[defName="WatermillGenerator"]/costList/WoodLog</xpath>
-      </li>
-      <li Class="PatchOperationConditional">
-        <xpath>/Defs/ThingDef[defName="WatermillGenerator" and (stuffCategories)]</xpath>
-        <match Class="PatchOperationAdd">
-          <xpath>/Defs/ThingDef[defName="WatermillGenerator"]/stuffCategories</xpath>
-          <value>
-            <li>Woody</li>
-          </value>
-        </match>
-        <nomatch Class="PatchOperationAdd">
-          <xpath>/Defs/ThingDef[defName="WatermillGenerator"]</xpath>
-          <value>
-            <stuffCategories>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="WatermillGenerator"]/costList/WoodLog</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/ThingDef[defName="WatermillGenerator"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="WatermillGenerator" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="WatermillGenerator"]/stuffCategories</xpath>
+            <value>
               <li>Woody</li>
-            </stuffCategories>
-          </value>
-        </nomatch>
-      </li>
-      <li Class="PatchOperationConditional">
-        <success>Always</success>
-        <xpath>/Defs/ThingDef[defName="WatermillGenerator" and not(costStuffCount)]</xpath>
-        <match Class="PatchOperationAdd">
-          <xpath>/Defs/ThingDef[defName="WatermillGenerator" and not(costStuffCount)]</xpath>
-          <value>
-            <costStuffCount>280</costStuffCount>
-          </value>
-        </match>
-      </li>
-      <li Class="PatchOperationConditional">
-        <success>Always</success>
-        <xpath>/Defs/ThingDef[defName="WatermillGenerator"]/constructEffect</xpath>
-        <match Class="PatchOperationRemove">
-          <xpath>/Defs/ThingDef[defName="WatermillGenerator"]/constructEffect</xpath>
-        </match>
-      </li>
-      <li Class="PatchOperationRemove">
-        <xpath>/Defs/ThingDef[defName="Brewery"]/costList/WoodLog</xpath>
-      </li>
-      <li Class="PatchOperationConditional">
-        <xpath>/Defs/ThingDef[defName="Brewery" and (stuffCategories)]</xpath>
-        <match Class="PatchOperationAdd">
-          <xpath>/Defs/ThingDef[defName="Brewery"]/stuffCategories</xpath>
-          <value>
-            <li>Woody</li>
-          </value>
-        </match>
-        <nomatch Class="PatchOperationAdd">
-          <xpath>/Defs/ThingDef[defName="Brewery"]</xpath>
-          <value>
-            <stuffCategories>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="WatermillGenerator"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="WatermillGenerator" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="WatermillGenerator" and not(costStuffCount)]</xpath>
+            <value>
+              <costStuffCount>280</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="WatermillGenerator"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>Defs/ThingDef[defName="WatermillGenerator"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="Brewery"]/costList/WoodLog</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/ThingDef[defName="Brewery"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="Brewery" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="Brewery"]/stuffCategories</xpath>
+            <value>
               <li>Woody</li>
-            </stuffCategories>
-          </value>
-        </nomatch>
-      </li>
-      <li Class="PatchOperationConditional">
-        <success>Always</success>
-        <xpath>/Defs/ThingDef[defName="Brewery" and not(costStuffCount)]</xpath>
-        <match Class="PatchOperationAdd">
-          <xpath>/Defs/ThingDef[defName="Brewery" and not(costStuffCount)]</xpath>
-          <value>
-            <costStuffCount>120</costStuffCount>
-          </value>
-        </match>
-      </li>
-      <li Class="PatchOperationConditional">
-        <success>Always</success>
-        <xpath>/Defs/ThingDef[defName="Brewery"]/constructEffect</xpath>
-        <match Class="PatchOperationRemove">
-          <xpath>/Defs/ThingDef[defName="Brewery"]/constructEffect</xpath>
-        </match>
-      </li>
-      <li Class="PatchOperationRemove">
-        <xpath>/Defs/ThingDef[defName="FermentingBarrel"]/costList/WoodLog</xpath>
-      </li>
-      <li Class="PatchOperationConditional">
-        <xpath>/Defs/ThingDef[defName="FermentingBarrel" and (stuffCategories)]</xpath>
-        <match Class="PatchOperationAdd">
-          <xpath>/Defs/ThingDef[defName="FermentingBarrel"]/stuffCategories</xpath>
-          <value>
-            <li>Woody</li>
-          </value>
-        </match>
-        <nomatch Class="PatchOperationAdd">
-          <xpath>/Defs/ThingDef[defName="FermentingBarrel"]</xpath>
-          <value>
-            <stuffCategories>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="Brewery"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="Brewery" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="Brewery" and not(costStuffCount)]</xpath>
+            <value>
+              <costStuffCount>120</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="Brewery"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>Defs/ThingDef[defName="Brewery"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="FermentingBarrel"]/costList/WoodLog</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/ThingDef[defName="FermentingBarrel"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="FermentingBarrel" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="FermentingBarrel"]/stuffCategories</xpath>
+            <value>
               <li>Woody</li>
-            </stuffCategories>
-          </value>
-        </nomatch>
-      </li>
-      <li Class="PatchOperationConditional">
-        <success>Always</success>
-        <xpath>/Defs/ThingDef[defName="FermentingBarrel" and not(costStuffCount)]</xpath>
-        <match Class="PatchOperationAdd">
-          <xpath>/Defs/ThingDef[defName="FermentingBarrel" and not(costStuffCount)]</xpath>
-          <value>
-            <costStuffCount>30</costStuffCount>
-          </value>
-        </match>
-      </li>
-      <li Class="PatchOperationConditional">
-        <success>Always</success>
-        <xpath>/Defs/ThingDef[defName="FermentingBarrel"]/constructEffect</xpath>
-        <match Class="PatchOperationRemove">
-          <xpath>/Defs/ThingDef[defName="FermentingBarrel"]/constructEffect</xpath>
-        </match>
-      </li>
-      <li Class="PatchOperationRemove">
-        <xpath>/Defs/ThingDef[defName="Campfire"]/costList/WoodLog</xpath>
-      </li>
-      <li Class="PatchOperationConditional">
-        <xpath>/Defs/ThingDef[defName="Campfire" and (stuffCategories)]</xpath>
-        <match Class="PatchOperationAdd">
-          <xpath>/Defs/ThingDef[defName="Campfire"]/stuffCategories</xpath>
-          <value>
-            <li>Woody</li>
-          </value>
-        </match>
-        <nomatch Class="PatchOperationAdd">
-          <xpath>/Defs/ThingDef[defName="Campfire"]</xpath>
-          <value>
-            <stuffCategories>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="FermentingBarrel"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="FermentingBarrel" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="FermentingBarrel" and not(costStuffCount)]</xpath>
+            <value>
+              <costStuffCount>30</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="FermentingBarrel"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>Defs/ThingDef[defName="FermentingBarrel"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="Campfire"]/costList/WoodLog</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/ThingDef[defName="Campfire"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="Campfire" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="Campfire"]/stuffCategories</xpath>
+            <value>
               <li>Woody</li>
-            </stuffCategories>
-          </value>
-        </nomatch>
-      </li>
-      <li Class="PatchOperationConditional">
-        <success>Always</success>
-        <xpath>/Defs/ThingDef[defName="Campfire" and not(costStuffCount)]</xpath>
-        <match Class="PatchOperationAdd">
-          <xpath>/Defs/ThingDef[defName="Campfire" and not(costStuffCount)]</xpath>
-          <value>
-            <costStuffCount>20</costStuffCount>
-          </value>
-        </match>
-      </li>
-      <li Class="PatchOperationConditional">
-        <success>Always</success>
-        <xpath>/Defs/ThingDef[defName="Campfire"]/constructEffect</xpath>
-        <match Class="PatchOperationRemove">
-          <xpath>/Defs/ThingDef[defName="Campfire"]/constructEffect</xpath>
-        </match>
-      </li>
-      <li Class="PatchOperationRemove">
-        <xpath>/Defs/ThingDef[defName="PassiveCooler"]/costList/WoodLog</xpath>
-      </li>
-      <li Class="PatchOperationConditional">
-        <xpath>/Defs/ThingDef[defName="PassiveCooler" and (stuffCategories)]</xpath>
-        <match Class="PatchOperationAdd">
-          <xpath>/Defs/ThingDef[defName="PassiveCooler"]/stuffCategories</xpath>
-          <value>
-            <li>Woody</li>
-          </value>
-        </match>
-        <nomatch Class="PatchOperationAdd">
-          <xpath>/Defs/ThingDef[defName="PassiveCooler"]</xpath>
-          <value>
-            <stuffCategories>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="Campfire"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="Campfire" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="Campfire" and not(costStuffCount)]</xpath>
+            <value>
+              <costStuffCount>20</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="Campfire"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>Defs/ThingDef[defName="Campfire"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="PassiveCooler"]/costList/WoodLog</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/ThingDef[defName="PassiveCooler"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="PassiveCooler" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="PassiveCooler"]/stuffCategories</xpath>
+            <value>
               <li>Woody</li>
-            </stuffCategories>
-          </value>
-        </nomatch>
-      </li>
-      <li Class="PatchOperationConditional">
-        <success>Always</success>
-        <xpath>/Defs/ThingDef[defName="PassiveCooler" and not(costStuffCount)]</xpath>
-        <match Class="PatchOperationAdd">
-          <xpath>/Defs/ThingDef[defName="PassiveCooler" and not(costStuffCount)]</xpath>
-          <value>
-            <costStuffCount>50</costStuffCount>
-          </value>
-        </match>
-      </li>
-      <li Class="PatchOperationConditional">
-        <success>Always</success>
-        <xpath>/Defs/ThingDef[defName="PassiveCooler"]/constructEffect</xpath>
-        <match Class="PatchOperationRemove">
-          <xpath>/Defs/ThingDef[defName="PassiveCooler"]/constructEffect</xpath>
-        </match>
-      </li>
-      <li Class="PatchOperationRemove">
-        <xpath>/Defs/ThingDef[defName="Bow_Short"]/costList/WoodLog</xpath>
-      </li>
-      <li Class="PatchOperationConditional">
-        <xpath>/Defs/ThingDef[defName="Bow_Short" and (stuffCategories)]</xpath>
-        <match Class="PatchOperationAdd">
-          <xpath>/Defs/ThingDef[defName="Bow_Short"]/stuffCategories</xpath>
-          <value>
-            <li>Woody</li>
-          </value>
-        </match>
-        <nomatch Class="PatchOperationAdd">
-          <xpath>/Defs/ThingDef[defName="Bow_Short"]</xpath>
-          <value>
-            <stuffCategories>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="PassiveCooler"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="PassiveCooler" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="PassiveCooler" and not(costStuffCount)]</xpath>
+            <value>
+              <costStuffCount>50</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="PassiveCooler"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>Defs/ThingDef[defName="PassiveCooler"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="Bow_Short"]/costList/WoodLog</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/ThingDef[defName="Bow_Short"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="Bow_Short" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="Bow_Short"]/stuffCategories</xpath>
+            <value>
               <li>Woody</li>
-            </stuffCategories>
-          </value>
-        </nomatch>
-      </li>
-      <li Class="PatchOperationConditional">
-        <success>Always</success>
-        <xpath>/Defs/ThingDef[defName="Bow_Short" and not(costStuffCount)]</xpath>
-        <match Class="PatchOperationAdd">
-          <xpath>/Defs/ThingDef[defName="Bow_Short" and not(costStuffCount)]</xpath>
-          <value>
-            <costStuffCount>30</costStuffCount>
-          </value>
-        </match>
-      </li>
-      <li Class="PatchOperationConditional">
-        <success>Always</success>
-        <xpath>/Defs/ThingDef[defName="Bow_Short"]/constructEffect</xpath>
-        <match Class="PatchOperationRemove">
-          <xpath>/Defs/ThingDef[defName="Bow_Short"]/constructEffect</xpath>
-        </match>
-      </li>
-      <li Class="PatchOperationRemove">
-        <xpath>/Defs/ThingDef[defName="Pila"]/costList/WoodLog</xpath>
-      </li>
-      <li Class="PatchOperationConditional">
-        <xpath>/Defs/ThingDef[defName="Pila" and (stuffCategories)]</xpath>
-        <match Class="PatchOperationAdd">
-          <xpath>/Defs/ThingDef[defName="Pila"]/stuffCategories</xpath>
-          <value>
-            <li>Woody</li>
-          </value>
-        </match>
-        <nomatch Class="PatchOperationAdd">
-          <xpath>/Defs/ThingDef[defName="Pila"]</xpath>
-          <value>
-            <stuffCategories>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="Bow_Short"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="Bow_Short" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="Bow_Short" and not(costStuffCount)]</xpath>
+            <value>
+              <costStuffCount>30</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="Bow_Short"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>Defs/ThingDef[defName="Bow_Short"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="Pila"]/costList/WoodLog</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/ThingDef[defName="Pila"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="Pila" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="Pila"]/stuffCategories</xpath>
+            <value>
               <li>Woody</li>
-            </stuffCategories>
-          </value>
-        </nomatch>
-      </li>
-      <li Class="PatchOperationConditional">
-        <success>Always</success>
-        <xpath>/Defs/ThingDef[defName="Pila" and not(costStuffCount)]</xpath>
-        <match Class="PatchOperationAdd">
-          <xpath>/Defs/ThingDef[defName="Pila" and not(costStuffCount)]</xpath>
-          <value>
-            <costStuffCount>70</costStuffCount>
-          </value>
-        </match>
-      </li>
-      <li Class="PatchOperationConditional">
-        <success>Always</success>
-        <xpath>/Defs/ThingDef[defName="Pila"]/constructEffect</xpath>
-        <match Class="PatchOperationRemove">
-          <xpath>/Defs/ThingDef[defName="Pila"]/constructEffect</xpath>
-        </match>
-      </li>
-      <li Class="PatchOperationRemove">
-        <xpath>/Defs/ThingDef[defName="Bow_Recurve"]/costList/WoodLog</xpath>
-      </li>
-      <li Class="PatchOperationConditional">
-        <xpath>/Defs/ThingDef[defName="Bow_Recurve" and (stuffCategories)]</xpath>
-        <match Class="PatchOperationAdd">
-          <xpath>/Defs/ThingDef[defName="Bow_Recurve"]/stuffCategories</xpath>
-          <value>
-            <li>Woody</li>
-          </value>
-        </match>
-        <nomatch Class="PatchOperationAdd">
-          <xpath>/Defs/ThingDef[defName="Bow_Recurve"]</xpath>
-          <value>
-            <stuffCategories>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="Pila"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="Pila" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="Pila" and not(costStuffCount)]</xpath>
+            <value>
+              <costStuffCount>70</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="Pila"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>Defs/ThingDef[defName="Pila"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="Bow_Recurve"]/costList/WoodLog</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/ThingDef[defName="Bow_Recurve"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="Bow_Recurve" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="Bow_Recurve"]/stuffCategories</xpath>
+            <value>
               <li>Woody</li>
-            </stuffCategories>
-          </value>
-        </nomatch>
-      </li>
-      <li Class="PatchOperationConditional">
-        <success>Always</success>
-        <xpath>/Defs/ThingDef[defName="Bow_Recurve" and not(costStuffCount)]</xpath>
-        <match Class="PatchOperationAdd">
-          <xpath>/Defs/ThingDef[defName="Bow_Recurve" and not(costStuffCount)]</xpath>
-          <value>
-            <costStuffCount>40</costStuffCount>
-          </value>
-        </match>
-      </li>
-      <li Class="PatchOperationConditional">
-        <success>Always</success>
-        <xpath>/Defs/ThingDef[defName="Bow_Recurve"]/constructEffect</xpath>
-        <match Class="PatchOperationRemove">
-          <xpath>/Defs/ThingDef[defName="Bow_Recurve"]/constructEffect</xpath>
-        </match>
-      </li>
-      <li Class="PatchOperationRemove">
-        <xpath>/Defs/ThingDef[defName="Bow_Great"]/costList/WoodLog</xpath>
-      </li>
-      <li Class="PatchOperationConditional">
-        <xpath>/Defs/ThingDef[defName="Bow_Great" and (stuffCategories)]</xpath>
-        <match Class="PatchOperationAdd">
-          <xpath>/Defs/ThingDef[defName="Bow_Great"]/stuffCategories</xpath>
-          <value>
-            <li>Woody</li>
-          </value>
-        </match>
-        <nomatch Class="PatchOperationAdd">
-          <xpath>/Defs/ThingDef[defName="Bow_Great"]</xpath>
-          <value>
-            <stuffCategories>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="Bow_Recurve"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="Bow_Recurve" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="Bow_Recurve" and not(costStuffCount)]</xpath>
+            <value>
+              <costStuffCount>40</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="Bow_Recurve"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>Defs/ThingDef[defName="Bow_Recurve"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="Bow_Great"]/costList/WoodLog</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/ThingDef[defName="Bow_Great"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="Bow_Great" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="Bow_Great"]/stuffCategories</xpath>
+            <value>
               <li>Woody</li>
-            </stuffCategories>
-          </value>
-        </nomatch>
-      </li>
-      <li Class="PatchOperationConditional">
-        <success>Always</success>
-        <xpath>/Defs/ThingDef[defName="Bow_Great" and not(costStuffCount)]</xpath>
-        <match Class="PatchOperationAdd">
-          <xpath>/Defs/ThingDef[defName="Bow_Great" and not(costStuffCount)]</xpath>
-          <value>
-            <costStuffCount>60</costStuffCount>
-          </value>
-        </match>
-      </li>
-      <li Class="PatchOperationConditional">
-        <success>Always</success>
-        <xpath>/Defs/ThingDef[defName="Bow_Great"]/constructEffect</xpath>
-        <match Class="PatchOperationRemove">
-          <xpath>/Defs/ThingDef[defName="Bow_Great"]/constructEffect</xpath>
-        </match>
-      </li>
-    </operations>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="Bow_Great"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="Bow_Great" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="Bow_Great" and not(costStuffCount)]</xpath>
+            <value>
+              <costStuffCount>60</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="Bow_Great"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>Defs/ThingDef[defName="Bow_Great"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
   </Operation>
 </Patch>
