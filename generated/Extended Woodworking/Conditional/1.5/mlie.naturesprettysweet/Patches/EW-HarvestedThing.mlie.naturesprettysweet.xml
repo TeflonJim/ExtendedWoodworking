@@ -1,19 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Patch>
-  <Operation Class="PatchOperationSequence">
-    <operations>
-      <li Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="TKKN_PlantTreeAcacia"]/plant</xpath>
-        <value>
-          <harvestedThingDef>WoodLog_Acacia</harvestedThingDef>
-        </value>
-      </li>
-      <li Class="PatchOperationAdd">
-        <xpath>/Defs/ThingDef[defName="TKKN_OldGrowth_PlantTreeOak"]/plant</xpath>
-        <value>
-          <harvestedThingDef>WoodLog_Oak</harvestedThingDef>
-        </value>
-      </li>
-    </operations>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="TKKN_PlantTreeAcacia"]/plant</xpath>
+    <value>
+      <harvestedThingDef>WoodLog_Acacia</harvestedThingDef>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="TKKN_OldGrowth_PlantTreeOak"]/plant</xpath>
+    <value>
+      <harvestedThingDef>WoodLog_Oak</harvestedThingDef>
+    </value>
   </Operation>
 </Patch>

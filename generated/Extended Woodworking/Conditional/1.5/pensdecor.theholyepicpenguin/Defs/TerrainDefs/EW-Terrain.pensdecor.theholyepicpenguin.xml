@@ -14,10 +14,10 @@
       <Flammability>0.22</Flammability>
     </statBases>
     <constructEffect>ConstructWood</constructEffect>
-    <designatorDropdown>EW_Designator_PenWoodFloor</designatorDropdown>
     <costList>
       <WoodLog_Birch>3</WoodLog_Birch>
     </costList>
+    <designatorDropdown>EW_Designator_PenWoodFloor</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>PenWoodFloor_Cecropia</defName>
@@ -33,10 +33,10 @@
       <Flammability>0.22</Flammability>
     </statBases>
     <constructEffect>ConstructWood</constructEffect>
-    <designatorDropdown>EW_Designator_PenWoodFloor</designatorDropdown>
     <costList>
       <WoodLog_Cecropia>3</WoodLog_Cecropia>
     </costList>
+    <designatorDropdown>EW_Designator_PenWoodFloor</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>PenWoodFloor_Cypress</defName>
@@ -128,10 +128,10 @@
       <Flammability>0.22</Flammability>
     </statBases>
     <constructEffect>ConstructWood</constructEffect>
-    <designatorDropdown>EW_Designator_PenWoodFloor</designatorDropdown>
     <costList>
       <WoodLog_Palm>3</WoodLog_Palm>
     </costList>
+    <designatorDropdown>EW_Designator_PenWoodFloor</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>PenWoodFloor_Pine</defName>
@@ -147,10 +147,10 @@
       <Flammability>0.22</Flammability>
     </statBases>
     <constructEffect>ConstructWood</constructEffect>
-    <designatorDropdown>EW_Designator_PenWoodFloor</designatorDropdown>
     <costList>
       <WoodLog_Pine>3</WoodLog_Pine>
     </costList>
+    <designatorDropdown>EW_Designator_PenWoodFloor</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>PenWoodFloor_Poplar</defName>
@@ -204,9 +204,9 @@
       <Flammability>0.22</Flammability>
     </statBases>
     <constructEffect>ConstructWood</constructEffect>
-    <designatorDropdown>EW_Designator_PenWoodFloor</designatorDropdown>
     <costList>
       <WoodLog_Willow>3</WoodLog_Willow>
     </costList>
+    <designatorDropdown>EW_Designator_PenWoodFloor</designatorDropdown>
   </TerrainDef>
 </Defs>

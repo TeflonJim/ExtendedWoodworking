@@ -1,199 +1,189 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Patch>
-  <Operation Class="PatchOperationSequence">
-    <operations>
-      <li Class="PatchOperationConditional">
-        <success>Always</success>
-        <xpath>/Defs/ThingDef[defName="WoodLog_Acacia"]</xpath>
-        <match Class="PatchOperationSequence">
-          <operations>
-            <li Class="PatchOperationAdd">
-              <xpath>/Defs</xpath>
-              <value>
-                <TerrainDef ParentName="FloorBase">
-                  <defName>CCot_RusticPlankFloor_Acacia</defName>
-                  <label>rustic plank floor</label>
-                  <renderPrecedence>250</renderPrecedence>
-                  <description>Rustic plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
-                  <texturePath>Terrain/Surfaces/RusticPlanks</texturePath>
-                  <burnedDef>BurnedWoodPlankFloor</burnedDef>
-                  <color>(219, 184, 144)</color>
-                  <statBases>
-                    <WorkToBuild>85</WorkToBuild>
-                    <Flammability>0.22</Flammability>
-                    <Beauty>1</Beauty>
-                  </statBases>
-                  <constructEffect>ConstructWood</constructEffect>
-                  <costList>
-                    <WoodLog_Acacia>6</WoodLog_Acacia>
-                  </costList>
-                  <designatorDropdown>EW_Designator_CCot_RusticPlankFloor</designatorDropdown>
-                </TerrainDef>
-              </value>
-            </li>
-          </operations>
-        </match>
-      </li>
-      <li Class="PatchOperationConditional">
-        <success>Always</success>
-        <xpath>/Defs/ThingDef[defName="WoodLog_Aspen"]</xpath>
-        <match Class="PatchOperationSequence">
-          <operations>
-            <li Class="PatchOperationAdd">
-              <xpath>/Defs</xpath>
-              <value>
-                <TerrainDef ParentName="FloorBase">
-                  <defName>CCot_RusticPlankFloor_Aspen</defName>
-                  <label>rustic plank floor</label>
-                  <renderPrecedence>250</renderPrecedence>
-                  <description>Rustic plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
-                  <texturePath>Terrain/Surfaces/RusticPlanks</texturePath>
-                  <burnedDef>BurnedWoodPlankFloor</burnedDef>
-                  <color>(228, 204, 171)</color>
-                  <statBases>
-                    <WorkToBuild>85</WorkToBuild>
-                    <Flammability>0.22</Flammability>
-                    <Beauty>1</Beauty>
-                  </statBases>
-                  <constructEffect>ConstructWood</constructEffect>
-                  <costList>
-                    <WoodLog_Aspen>6</WoodLog_Aspen>
-                  </costList>
-                  <designatorDropdown>EW_Designator_CCot_RusticPlankFloor</designatorDropdown>
-                </TerrainDef>
-              </value>
-            </li>
-          </operations>
-        </match>
-      </li>
-      <li Class="PatchOperationConditional">
-        <success>Always</success>
-        <xpath>/Defs/ThingDef[defName="WoodLog_Camellia"]</xpath>
-        <match Class="PatchOperationSequence">
-          <operations>
-            <li Class="PatchOperationAdd">
-              <xpath>/Defs</xpath>
-              <value>
-                <TerrainDef ParentName="FloorBase">
-                  <defName>CCot_RusticPlankFloor_Camellia</defName>
-                  <label>rustic plank floor</label>
-                  <renderPrecedence>250</renderPrecedence>
-                  <description>Rustic plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
-                  <texturePath>Terrain/Surfaces/RusticPlanks</texturePath>
-                  <burnedDef>BurnedWoodPlankFloor</burnedDef>
-                  <color>(201, 160, 130)</color>
-                  <statBases>
-                    <WorkToBuild>85</WorkToBuild>
-                    <Flammability>0.22</Flammability>
-                    <Beauty>1</Beauty>
-                  </statBases>
-                  <constructEffect>ConstructWood</constructEffect>
-                  <designatorDropdown>EW_Designator_CCot_RusticPlankFloor</designatorDropdown>
-                  <costList>
-                    <WoodLog_Camellia>6</WoodLog_Camellia>
-                  </costList>
-                </TerrainDef>
-              </value>
-            </li>
-          </operations>
-        </match>
-      </li>
-      <li Class="PatchOperationConditional">
-        <success>Always</success>
-        <xpath>/Defs/ThingDef[defName="WoodLog_CherryBlossom"]</xpath>
-        <match Class="PatchOperationSequence">
-          <operations>
-            <li Class="PatchOperationAdd">
-              <xpath>/Defs</xpath>
-              <value>
-                <TerrainDef ParentName="FloorBase">
-                  <defName>CCot_RusticPlankFloor_CherryBlossom</defName>
-                  <label>rustic plank floor</label>
-                  <renderPrecedence>250</renderPrecedence>
-                  <description>Rustic plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
-                  <texturePath>Terrain/Surfaces/RusticPlanks</texturePath>
-                  <burnedDef>BurnedWoodPlankFloor</burnedDef>
-                  <color>(165, 82, 40)</color>
-                  <statBases>
-                    <WorkToBuild>85</WorkToBuild>
-                    <Flammability>0.22</Flammability>
-                    <Beauty>1</Beauty>
-                  </statBases>
-                  <constructEffect>ConstructWood</constructEffect>
-                  <designatorDropdown>EW_Designator_CCot_RusticPlankFloor</designatorDropdown>
-                  <costList>
-                    <WoodLog_CherryBlossom>6</WoodLog_CherryBlossom>
-                  </costList>
-                </TerrainDef>
-              </value>
-            </li>
-          </operations>
-        </match>
-      </li>
-      <li Class="PatchOperationConditional">
-        <success>Always</success>
-        <xpath>/Defs/ThingDef[defName="WoodLog_JapaneseMaple"]</xpath>
-        <match Class="PatchOperationSequence">
-          <operations>
-            <li Class="PatchOperationAdd">
-              <xpath>/Defs</xpath>
-              <value>
-                <TerrainDef ParentName="FloorBase">
-                  <defName>CCot_RusticPlankFloor_JapaneseMaple</defName>
-                  <label>rustic plank floor</label>
-                  <renderPrecedence>250</renderPrecedence>
-                  <description>Rustic plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
-                  <texturePath>Terrain/Surfaces/RusticPlanks</texturePath>
-                  <burnedDef>BurnedWoodPlankFloor</burnedDef>
-                  <color>(252, 170, 124)</color>
-                  <statBases>
-                    <WorkToBuild>85</WorkToBuild>
-                    <Flammability>0.22</Flammability>
-                    <Beauty>1</Beauty>
-                  </statBases>
-                  <constructEffect>ConstructWood</constructEffect>
-                  <costList>
-                    <WoodLog_JapaneseMaple>6</WoodLog_JapaneseMaple>
-                  </costList>
-                  <designatorDropdown>EW_Designator_CCot_RusticPlankFloor</designatorDropdown>
-                </TerrainDef>
-              </value>
-            </li>
-          </operations>
-        </match>
-      </li>
-      <li Class="PatchOperationConditional">
-        <success>Always</success>
-        <xpath>/Defs/ThingDef[defName="WoodLog_RedMaple"]</xpath>
-        <match Class="PatchOperationSequence">
-          <operations>
-            <li Class="PatchOperationAdd">
-              <xpath>/Defs</xpath>
-              <value>
-                <TerrainDef ParentName="FloorBase">
-                  <defName>CCot_RusticPlankFloor_RedMaple</defName>
-                  <label>rustic plank floor</label>
-                  <renderPrecedence>250</renderPrecedence>
-                  <description>Rustic plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
-                  <texturePath>Terrain/Surfaces/RusticPlanks</texturePath>
-                  <burnedDef>BurnedWoodPlankFloor</burnedDef>
-                  <color>(222, 197, 167)</color>
-                  <statBases>
-                    <WorkToBuild>85</WorkToBuild>
-                    <Flammability>0.22</Flammability>
-                    <Beauty>1</Beauty>
-                  </statBases>
-                  <constructEffect>ConstructWood</constructEffect>
-                  <costList>
-                    <WoodLog_RedMaple>6</WoodLog_RedMaple>
-                  </costList>
-                  <designatorDropdown>EW_Designator_CCot_RusticPlankFloor</designatorDropdown>
-                </TerrainDef>
-              </value>
-            </li>
-          </operations>
-        </match>
-      </li>
-    </operations>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="WoodLog_Acacia"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBase">
+              <defName>CCot_RusticPlankFloor_Acacia</defName>
+              <label>rustic plank floor</label>
+              <renderPrecedence>250</renderPrecedence>
+              <description>Rustic plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
+              <texturePath>Terrain/Surfaces/RusticPlanks</texturePath>
+              <burnedDef>BurnedWoodPlankFloor</burnedDef>
+              <color>(219, 184, 144)</color>
+              <statBases>
+                <WorkToBuild>85</WorkToBuild>
+                <Flammability>0.22</Flammability>
+                <Beauty>1</Beauty>
+              </statBases>
+              <constructEffect>ConstructWood</constructEffect>
+              <costList>
+                <WoodLog_Acacia>6</WoodLog_Acacia>
+              </costList>
+              <designatorDropdown>EW_Designator_CCot_RusticPlankFloor</designatorDropdown>
+            </TerrainDef>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="WoodLog_Aspen"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBase">
+              <defName>CCot_RusticPlankFloor_Aspen</defName>
+              <label>rustic plank floor</label>
+              <renderPrecedence>250</renderPrecedence>
+              <description>Rustic plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
+              <texturePath>Terrain/Surfaces/RusticPlanks</texturePath>
+              <burnedDef>BurnedWoodPlankFloor</burnedDef>
+              <color>(228, 204, 171)</color>
+              <statBases>
+                <WorkToBuild>85</WorkToBuild>
+                <Flammability>0.22</Flammability>
+                <Beauty>1</Beauty>
+              </statBases>
+              <constructEffect>ConstructWood</constructEffect>
+              <costList>
+                <WoodLog_Aspen>6</WoodLog_Aspen>
+              </costList>
+              <designatorDropdown>EW_Designator_CCot_RusticPlankFloor</designatorDropdown>
+            </TerrainDef>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="WoodLog_Camellia"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBase">
+              <defName>CCot_RusticPlankFloor_Camellia</defName>
+              <label>rustic plank floor</label>
+              <renderPrecedence>250</renderPrecedence>
+              <description>Rustic plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
+              <texturePath>Terrain/Surfaces/RusticPlanks</texturePath>
+              <burnedDef>BurnedWoodPlankFloor</burnedDef>
+              <color>(201, 160, 130)</color>
+              <statBases>
+                <WorkToBuild>85</WorkToBuild>
+                <Flammability>0.22</Flammability>
+                <Beauty>1</Beauty>
+              </statBases>
+              <constructEffect>ConstructWood</constructEffect>
+              <costList>
+                <WoodLog_Camellia>6</WoodLog_Camellia>
+              </costList>
+              <designatorDropdown>EW_Designator_CCot_RusticPlankFloor</designatorDropdown>
+            </TerrainDef>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="WoodLog_CherryBlossom"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBase">
+              <defName>CCot_RusticPlankFloor_CherryBlossom</defName>
+              <label>rustic plank floor</label>
+              <renderPrecedence>250</renderPrecedence>
+              <description>Rustic plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
+              <texturePath>Terrain/Surfaces/RusticPlanks</texturePath>
+              <burnedDef>BurnedWoodPlankFloor</burnedDef>
+              <color>(165, 82, 40)</color>
+              <statBases>
+                <WorkToBuild>85</WorkToBuild>
+                <Flammability>0.22</Flammability>
+                <Beauty>1</Beauty>
+              </statBases>
+              <constructEffect>ConstructWood</constructEffect>
+              <costList>
+                <WoodLog_CherryBlossom>6</WoodLog_CherryBlossom>
+              </costList>
+              <designatorDropdown>EW_Designator_CCot_RusticPlankFloor</designatorDropdown>
+            </TerrainDef>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="WoodLog_JapaneseMaple"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBase">
+              <defName>CCot_RusticPlankFloor_JapaneseMaple</defName>
+              <label>rustic plank floor</label>
+              <renderPrecedence>250</renderPrecedence>
+              <description>Rustic plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
+              <texturePath>Terrain/Surfaces/RusticPlanks</texturePath>
+              <burnedDef>BurnedWoodPlankFloor</burnedDef>
+              <color>(252, 170, 124)</color>
+              <statBases>
+                <WorkToBuild>85</WorkToBuild>
+                <Flammability>0.22</Flammability>
+                <Beauty>1</Beauty>
+              </statBases>
+              <constructEffect>ConstructWood</constructEffect>
+              <costList>
+                <WoodLog_JapaneseMaple>6</WoodLog_JapaneseMaple>
+              </costList>
+              <designatorDropdown>EW_Designator_CCot_RusticPlankFloor</designatorDropdown>
+            </TerrainDef>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="WoodLog_RedMaple"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBase">
+              <defName>CCot_RusticPlankFloor_RedMaple</defName>
+              <label>rustic plank floor</label>
+              <renderPrecedence>250</renderPrecedence>
+              <description>Rustic plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
+              <texturePath>Terrain/Surfaces/RusticPlanks</texturePath>
+              <burnedDef>BurnedWoodPlankFloor</burnedDef>
+              <color>(222, 197, 167)</color>
+              <statBases>
+                <WorkToBuild>85</WorkToBuild>
+                <Flammability>0.22</Flammability>
+                <Beauty>1</Beauty>
+              </statBases>
+              <constructEffect>ConstructWood</constructEffect>
+              <costList>
+                <WoodLog_RedMaple>6</WoodLog_RedMaple>
+              </costList>
+              <designatorDropdown>EW_Designator_CCot_RusticPlankFloor</designatorDropdown>
+            </TerrainDef>
+          </value>
+        </li>
+      </operations>
+    </match>
   </Operation>
 </Patch>

@@ -28,6 +28,7 @@ param (
         'CreateCostListPatch'
         'CreateRecipePatch'
         'CreateHarvestedThingPatch'
+        'AddManualPatches'
         'CreateDesignatorGroupDef'
         'CreateDesignatorGroupPatch'
         'CreateTerrainDef'
@@ -335,7 +336,7 @@ function UpdateLastVersion {
     $version = $buildInfo.RimWorldVersion.ShortVersion
     if ($version -notin $supportedVersions) {
         $lastVersion = $supportedVersions[-1]
-        
+
         $path = [Path]::Combine($buildInfo.Path.Archive, $lastVersion)
 
         if (-not (Test-Path $path)) {
@@ -380,11 +381,11 @@ function Discovery {
             continue
         }
 
-        $verbose = @('{0} ({1}):' -f $modInfo.Name.Trim(), $modInfo.PackageID)
+        $verbose = @('{0} ({1}):' -f $modInfo.Name.ToString().Trim(), $modInfo.PackageID)
 
         # CostList
         $discoveredDefs = $modInfo | Get-RWModDef -Version $buildInfo.RimWorldVersion.ShortVersion -XPathQuery (
-            '/Defs/*[name()!="TerrainDef" and defName and not(stuffCategories) and ./costList/WoodLog]'
+            'Defs/*[name()!="TerrainDef" and defName and not(stuffCategories) and ./costList/WoodLog]'
         ) | Where-Object DefName -notmatch $buildInfo.Data.ExcludedDefsPattern
 
         if ($discoveredDefs) {
@@ -396,7 +397,7 @@ function Discovery {
 
         # Recipe
         $discoveredDefs = $modInfo | Get-RWModDef -Version $buildInfo.RimWorldVersion.ShortVersion -XPathQuery (
-            '/Defs/RecipeDef[(@Abstract="False" or not(@Abstract)) and (ingredients/li/filter/thingDefs/li="WoodLog" or fixedIngredientFilter/thingDefs/li="WoodLog")]'
+            'Defs/RecipeDef[(@Abstract="False" or not(@Abstract)) and (ingredients/li/filter/thingDefs/li="WoodLog" or fixedIngredientFilter/thingDefs/li="WoodLog")]'
         ) | Where-Object DefName -notmatch $buildInfo.Data.ExcludedDefsPattern
 
         if ($discoveredDefs) {
@@ -408,7 +409,7 @@ function Discovery {
 
         # HarvestedThing
         $discoveredDefs = $modInfo | Get-RWModDef -Version $buildInfo.RimWorldVersion.ShortVersion -XPathQuery (
-            '/Defs/ThingDef[(@Abstract="False" or not(@Abstract)) and contains(@ParentName, "TreeBase") and not(plant/harvestedThingDef)]'
+            'Defs/ThingDef[(@Abstract="False" or not(@Abstract)) and contains(@ParentName, "TreeBase") and not(plant/harvestedThingDef)]'
         )  | Where-Object DefName -notmatch $buildInfo.Data.ExcludedDefsPattern | ForEach-Object {
             [PSCustomObject]@{
                 DefName  = $_.DefName
@@ -425,7 +426,7 @@ function Discovery {
 
         # Wood floor
         $discoveredDefs = $modInfo | Get-RWModDef -Version $buildInfo.RimWorldVersion.ShortVersion -XPathQuery (
-            '/Defs/TerrainDef[costList/WoodLog and description and not(designatorDropdown)]'
+            'Defs/TerrainDef[costList/WoodLog and description and not(designatorDropdown)]'
         ) | Where-Object DefName -notmatch $buildInfo.Data.ExcludedDefsPattern
         if ($discoveredDefs) {
             $verbose += '    Terrain: Patching {0} defs' -f $discoveredDefs.Count
@@ -442,8 +443,9 @@ function Discovery {
 
 function CopyFramework {
     Get-ChildItem -Path $buildInfo.Path.Archive | Copy-Item -Destination $buildInfo.Path.Generated -Recurse
-    Get-ChildItem -Path $buildInfo.Path.Source -Exclude template, conditional_template | Copy-Item -Destination $buildInfo.Path.Generated -Recurse
+    Get-ChildItem -Path $buildInfo.Path.Source -Exclude template, conditional_* | Copy-Item -Destination $buildInfo.Path.Generated -Recurse
     [Path]::Combine($buildInfo.Path.Source, 'template\*') | Copy-Item -Destination $buildInfo.Path.GeneratedVersioned -Recurse
+    [Path]::Combine($buildInfo.Path.Source, 'conditional_manual\*') | Copy-Item -Destination $buildInfo.Path.GeneratedConditionalVersioned -Recurse
     [Path]::Combine($buildInfo.Path.Source, 'conditional_template\*') | Copy-Item -Destination $buildInfo.Path.GeneratedConditionalVersioned -Recurse
 }
 
@@ -493,8 +495,7 @@ function CreateWoodLogDef {
             NewName = 'WoodLog_{0}' -f $wood.Name
             Update  = @{
                 label                                  = '{0} wood' -f $wood.Name
-                'graphicData.texPath'                  = 'Logs/WoodLog'
-                'graphicData.graphicClass'             = 'Graphic_Single'
+                'graphicData.texPath'                  = 'Logs/Stack/WoodLog'
                 'graphicData.color'                    = $wood.Colour
                 'stuffProps.color'                     = $wood.Colour
                 'stuffProps.statFactors.MaxHitPoints'  = $wood.MaxHitPoints
@@ -517,15 +518,14 @@ function CreatePaintedWoodLogDef {
         )
         Version = $buildInfo.RimWorldVersion.ShortVersion
     }
-    
+
     Confirm-ParentDirectory $commonParams['SaveAs']
 
     $params = @{
         Name    = 'Core\ResourceBase'
         NewName = 'ResourceBasePainted'
         Update  = @{
-            'graphicData.texPath'      = 'Logs/WoodLog'
-            'graphicData.graphicClass' = 'Graphic_Single'
+            'graphicData.texPath' = 'Logs/Stack/WoodLog'
         }
     }
     Copy-RWModDef @commonParams @params
@@ -567,7 +567,7 @@ function CreateModFuelPatch {
         Confirm-ParentDirectory $path
 
         Copy-Item -Path $templatePath -Destination $path
-    
+
         $xDocument = [XDocument]::Load($path)
         $filterValue = $xDocument.Root.Element('Operation').Element('value')
         $filterValue.ReplaceAll([XElement]::new([XName]'li', 'WoodLog_{0}' -f $wood.Name))
@@ -631,18 +631,16 @@ function CreateCostListPatch {
         Copy-Item -Path $templatePath -Destination $path
 
         $xDocument = [XDocument]::Load($path)
-        $parent = $xDocument.Root.Element('Operation').Element('operations')
-        $template = [XElement[]]$parent.Elements()
+        $parent = $xDocument.Element('Patch')
+        $template = $parent.Element('Operation')
 
         foreach ($item in $buildInfo.Data.DiscoveredDefs.CostList[$packageID]) {
-            foreach ($templateItem in $template) {
-                $xmlString = $templateItem.ToString() -replace '%NAME%', $item.XElement.Element('defName').Value
-                $xmlString = $xmlString -replace '%COST%', $item.XElement.Element('costList').Element('WoodLog').Value
+            $xmlString = $template.ToString() -replace '%NAME%', $item.XElement.Element('defName').Value
+            $xmlString = $xmlString -replace '%COST%', $item.XElement.Element('costList').Element('WoodLog').Value
 
-                $xElement = [XElement]::new($xmlString)
+            $xElement = [XElement]::new($xmlString)
 
-                $parent.Add($xElement)
-            }
+            $parent.Add($xElement)
         }
 
         $template.ForEach{
@@ -677,8 +675,8 @@ function CreateRecipePatch {
 
         $xDocument = [XDocument]::Load($path)
 
-        $parent = $xDocument.Root.Element('Operation').Element('operations')
-        $template = [XElement[]]$parent.Elements()
+        $parent = $xDocument.Element('Patch')
+        $template = $parent.Element('Operation')
 
         foreach ($item in $buildInfo.Data.DiscoveredDefs.Recipe[$packageID]) {
             if ($element = $item.XElement.Element('defName')) {
@@ -687,18 +685,16 @@ function CreateRecipePatch {
                 $defName = $attribute.Value
             }
 
-            foreach ($templateItem in $template) {
-                $xmlString = $templateItem.ToString() -replace '%NAME%', $defName
-                $count = [System.Xml.XPath.Extensions]::XPathSelectElements(
-                    $item.XElement,
-                    'ingredients/li[filter/thingDefs/li="WoodLog"]/count'
-                ).Value
-                $xmlString = $xmlString -replace '%COUNT%', $count
+            $xmlString = $template.ToString() -replace '%NAME%', $defName
+            $count = [System.Xml.XPath.Extensions]::XPathSelectElements(
+                $item.XElement,
+                'ingredients/li[filter/thingDefs/li="WoodLog"]/count'
+            ).Value
+            $xmlString = $xmlString -replace '%COUNT%', $count
 
-                $xElement = [XElement]::new($xmlString)
+            $xElement = [XElement]::new($xmlString)
 
-                $parent.Add($xElement)
-            }
+            $parent.Add($xElement)
         }
 
         $template.ForEach{ $_.Remove() }
@@ -730,8 +726,8 @@ function CreateHarvestedThingPatch {
         Copy-Item $templatePath -Destination $path -Force
 
         $xDocument = [XDocument]::Load($path)
-        $parent = $xDocument.Root.Element('Operation').Element('operations')
-        $template = $parent.Element('li')
+        $parent = $xDocument.Element('Patch')
+        $template = $parent.Element('Operation')
 
         foreach ($item in $buildInfo.Data.DiscoveredDefs.HarvestedThing[$packageID]) {
             $xmlString = $template.ToString() -replace '%NAME%', $item.DefName -replace '%TYPE%', $item.WoodType
@@ -742,6 +738,14 @@ function CreateHarvestedThingPatch {
 
         $template.Remove()
         $xDocument.Save($path)
+    }
+}
+
+function AddManualPatches {
+    $path = [Path]::Combine($buildInfo.Path.Source, 'conditional_manual\*')
+
+    foreach ($item in Get-ChildItem -Path $path -Directory) {
+        $buildInfo.Data.AddLoadFoldersEntry($item.Name, $item.Name)
     }
 }
 
@@ -775,7 +779,7 @@ function CreateDesignatorGroupDef {
         $xDocument = [XDocument]::Load($path)
         foreach ($def in $buildInfo.Data.DiscoveredDefs.Terrain[$packageID]) {
             $designatorName = 'EW_Designator_{0}' -f $def.DefName
-           
+
             $xDocument.Root.Add(
                 [XElement]::new(
                     [XName]'DesignatorDropdownGroupDef',
@@ -809,8 +813,8 @@ function CreateDesignatorGroupPatch {
             Copy-Item -Destination $path
 
         $xDocument = [XDocument]::Load($path)
-        $parent = $xDocument.Root.Element('Operation').Element('operations')
-        $template = $parent.Element('li')
+        $parent = $xDocument.Element('Patch')
+        $template = $parent.Element('Operation')
 
         foreach ($def in $buildInfo.Data.DiscoveredDefs.Terrain[$packageID]) {
             $designatorName = 'EW_Designator_{0}' -f $def.DefName
@@ -911,8 +915,8 @@ function CreateTerrainPatch {
         }
 
         $xDocument = [XDocument]::Load($path)
-        $parent = $xDocument.Root.Element('Operation').Element('operations')
-        $template = $parent.Element('li')
+        $parent = $xDocument.Element('Patch')
+        $template = $parent.Element('Operation')
 
         foreach ($wood in $buildInfo.Data.WoodStats) {
             if ($wood.ImplementingMod -contains 'ludeon.rimworld') {
@@ -947,13 +951,13 @@ function CreateTerrainPatch {
                     Remove  = 'costList'
                 }
                 $newDef = Copy-RWModDef @params
-                
+
                 $operations.Add(
                     [XElement]::new(
                         [XName]'li',
                         @(
                             [XAttribute]::new([XName]'Class', 'PatchOperationAdd')
-                            [XElement]::new([XName]'xpath', '/Defs')
+                            [XElement]::new([XName]'xpath', 'Defs')
                             [XElement]::new([XName]'value', $newDef.Root)
                         )
                     )
@@ -1047,7 +1051,7 @@ function UpdateLoadFolders {
     }
 
     $loadFoldersXml.Save($buildInfo.Path.LoadFolders)
-    
+
     Copy-Item $buildInfo.Path.LoadFolders -Destination $buildInfo.Path.Generated
 }
 

@@ -1,37 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Patch>
-  <Operation Class="PatchOperationSequence">
-    <operations>
-      <li Class="PatchOperationConditional">
-        <xpath>/Defs/TerrainDef[defName="WoodPlankFloor"]/designatorDropdown</xpath>
-        <match Class="PatchOperationReplace">
-          <xpath>/Defs/TerrainDef[defName="WoodPlankFloor"]/designatorDropdown</xpath>
-          <value>
-            <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
-          </value>
-        </match>
-        <nomatch Class="PatchOperationAdd">
-          <xpath>/Defs/TerrainDef[defName="WoodPlankFloor"]</xpath>
-          <value>
-            <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
-          </value>
-        </nomatch>
-      </li>
-      <li Class="PatchOperationConditional">
-        <xpath>/Defs/TerrainDef[defName="Bridge"]/designatorDropdown</xpath>
-        <match Class="PatchOperationReplace">
-          <xpath>/Defs/TerrainDef[defName="Bridge"]/designatorDropdown</xpath>
-          <value>
-            <designatorDropdown>EW_Designator_Bridge</designatorDropdown>
-          </value>
-        </match>
-        <nomatch Class="PatchOperationAdd">
-          <xpath>/Defs/TerrainDef[defName="Bridge"]</xpath>
-          <value>
-            <designatorDropdown>EW_Designator_Bridge</designatorDropdown>
-          </value>
-        </nomatch>
-      </li>
-    </operations>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/TerrainDef[defName="WoodPlankFloor"]/designatorDropdown</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/TerrainDef[defName="WoodPlankFloor"]/designatorDropdown</xpath>
+      <value>
+        <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/TerrainDef[defName="WoodPlankFloor"]</xpath>
+      <value>
+        <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
+      </value>
+    </nomatch>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/TerrainDef[defName="Bridge"]/designatorDropdown</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/TerrainDef[defName="Bridge"]/designatorDropdown</xpath>
+      <value>
+        <designatorDropdown>EW_Designator_Bridge</designatorDropdown>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/TerrainDef[defName="Bridge"]</xpath>
+      <value>
+        <designatorDropdown>EW_Designator_Bridge</designatorDropdown>
+      </value>
+    </nomatch>
   </Operation>
 </Patch>

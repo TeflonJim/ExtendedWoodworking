@@ -14,10 +14,10 @@
       <Beauty>1</Beauty>
     </statBases>
     <constructEffect>ConstructWood</constructEffect>
-    <designatorDropdown>EW_Designator_CCot_RusticPlankFloor</designatorDropdown>
     <costList>
       <WoodLog_Birch>6</WoodLog_Birch>
     </costList>
+    <designatorDropdown>EW_Designator_CCot_RusticPlankFloor</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>CCot_RusticPlankFloor_Cecropia</defName>
@@ -33,10 +33,10 @@
       <Beauty>1</Beauty>
     </statBases>
     <constructEffect>ConstructWood</constructEffect>
-    <designatorDropdown>EW_Designator_CCot_RusticPlankFloor</designatorDropdown>
     <costList>
       <WoodLog_Cecropia>6</WoodLog_Cecropia>
     </costList>
+    <designatorDropdown>EW_Designator_CCot_RusticPlankFloor</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>CCot_RusticPlankFloor_Cypress</defName>
@@ -128,10 +128,10 @@
       <Beauty>1</Beauty>
     </statBases>
     <constructEffect>ConstructWood</constructEffect>
-    <designatorDropdown>EW_Designator_CCot_RusticPlankFloor</designatorDropdown>
     <costList>
       <WoodLog_Palm>6</WoodLog_Palm>
     </costList>
+    <designatorDropdown>EW_Designator_CCot_RusticPlankFloor</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>CCot_RusticPlankFloor_Pine</defName>
@@ -147,10 +147,10 @@
       <Beauty>1</Beauty>
     </statBases>
     <constructEffect>ConstructWood</constructEffect>
-    <designatorDropdown>EW_Designator_CCot_RusticPlankFloor</designatorDropdown>
     <costList>
       <WoodLog_Pine>6</WoodLog_Pine>
     </costList>
+    <designatorDropdown>EW_Designator_CCot_RusticPlankFloor</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>CCot_RusticPlankFloor_Poplar</defName>
@@ -204,9 +204,9 @@
       <Beauty>1</Beauty>
     </statBases>
     <constructEffect>ConstructWood</constructEffect>
-    <designatorDropdown>EW_Designator_CCot_RusticPlankFloor</designatorDropdown>
     <costList>
       <WoodLog_Willow>6</WoodLog_Willow>
     </costList>
+    <designatorDropdown>EW_Designator_CCot_RusticPlankFloor</designatorDropdown>
   </TerrainDef>
 </Defs>

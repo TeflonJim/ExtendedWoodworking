@@ -1,119 +1,129 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Patch>
-  <Operation Class="PatchOperationSequence">
-    <success>Always</success>
-    <operations>
-      <li Class="PatchOperationRemove">
-        <xpath>/Defs/ThingDef[defName="VBE_WhiskeyCask"]/costList/WoodLog</xpath>
-      </li>
-      <li Class="PatchOperationConditional">
-        <xpath>/Defs/ThingDef[defName="VBE_WhiskeyCask" and (stuffCategories)]</xpath>
-        <match Class="PatchOperationAdd">
-          <xpath>/Defs/ThingDef[defName="VBE_WhiskeyCask"]/stuffCategories</xpath>
-          <value>
-            <li>Woody</li>
-          </value>
-        </match>
-        <nomatch Class="PatchOperationAdd">
-          <xpath>/Defs/ThingDef[defName="VBE_WhiskeyCask"]</xpath>
-          <value>
-            <stuffCategories>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="VBE_WhiskeyCask"]/costList/WoodLog</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/ThingDef[defName="VBE_WhiskeyCask"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="VBE_WhiskeyCask" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="VBE_WhiskeyCask"]/stuffCategories</xpath>
+            <value>
               <li>Woody</li>
-            </stuffCategories>
-          </value>
-        </nomatch>
-      </li>
-      <li Class="PatchOperationConditional">
-        <success>Always</success>
-        <xpath>/Defs/ThingDef[defName="VBE_WhiskeyCask" and not(costStuffCount)]</xpath>
-        <match Class="PatchOperationAdd">
-          <xpath>/Defs/ThingDef[defName="VBE_WhiskeyCask" and not(costStuffCount)]</xpath>
-          <value>
-            <costStuffCount>200</costStuffCount>
-          </value>
-        </match>
-      </li>
-      <li Class="PatchOperationConditional">
-        <success>Always</success>
-        <xpath>/Defs/ThingDef[defName="VBE_WhiskeyCask"]/constructEffect</xpath>
-        <match Class="PatchOperationRemove">
-          <xpath>/Defs/ThingDef[defName="VBE_WhiskeyCask"]/constructEffect</xpath>
-        </match>
-      </li>
-      <li Class="PatchOperationRemove">
-        <xpath>/Defs/ThingDef[defName="VBE_TequilaBarrel"]/costList/WoodLog</xpath>
-      </li>
-      <li Class="PatchOperationConditional">
-        <xpath>/Defs/ThingDef[defName="VBE_TequilaBarrel" and (stuffCategories)]</xpath>
-        <match Class="PatchOperationAdd">
-          <xpath>/Defs/ThingDef[defName="VBE_TequilaBarrel"]/stuffCategories</xpath>
-          <value>
-            <li>Woody</li>
-          </value>
-        </match>
-        <nomatch Class="PatchOperationAdd">
-          <xpath>/Defs/ThingDef[defName="VBE_TequilaBarrel"]</xpath>
-          <value>
-            <stuffCategories>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="VBE_WhiskeyCask"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="VBE_WhiskeyCask" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="VBE_WhiskeyCask" and not(costStuffCount)]</xpath>
+            <value>
+              <costStuffCount>200</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="VBE_WhiskeyCask"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>Defs/ThingDef[defName="VBE_WhiskeyCask"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="VBE_TequilaBarrel"]/costList/WoodLog</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/ThingDef[defName="VBE_TequilaBarrel"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="VBE_TequilaBarrel" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="VBE_TequilaBarrel"]/stuffCategories</xpath>
+            <value>
               <li>Woody</li>
-            </stuffCategories>
-          </value>
-        </nomatch>
-      </li>
-      <li Class="PatchOperationConditional">
-        <success>Always</success>
-        <xpath>/Defs/ThingDef[defName="VBE_TequilaBarrel" and not(costStuffCount)]</xpath>
-        <match Class="PatchOperationAdd">
-          <xpath>/Defs/ThingDef[defName="VBE_TequilaBarrel" and not(costStuffCount)]</xpath>
-          <value>
-            <costStuffCount>30</costStuffCount>
-          </value>
-        </match>
-      </li>
-      <li Class="PatchOperationConditional">
-        <success>Always</success>
-        <xpath>/Defs/ThingDef[defName="VBE_TequilaBarrel"]/constructEffect</xpath>
-        <match Class="PatchOperationRemove">
-          <xpath>/Defs/ThingDef[defName="VBE_TequilaBarrel"]/constructEffect</xpath>
-        </match>
-      </li>
-      <li Class="PatchOperationRemove">
-        <xpath>/Defs/ThingDef[defName="VBE_VodkaDrum"]/costList/WoodLog</xpath>
-      </li>
-      <li Class="PatchOperationConditional">
-        <xpath>/Defs/ThingDef[defName="VBE_VodkaDrum" and (stuffCategories)]</xpath>
-        <match Class="PatchOperationAdd">
-          <xpath>/Defs/ThingDef[defName="VBE_VodkaDrum"]/stuffCategories</xpath>
-          <value>
-            <li>Woody</li>
-          </value>
-        </match>
-        <nomatch Class="PatchOperationAdd">
-          <xpath>/Defs/ThingDef[defName="VBE_VodkaDrum"]</xpath>
-          <value>
-            <stuffCategories>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="VBE_TequilaBarrel"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="VBE_TequilaBarrel" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="VBE_TequilaBarrel" and not(costStuffCount)]</xpath>
+            <value>
+              <costStuffCount>30</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="VBE_TequilaBarrel"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>Defs/ThingDef[defName="VBE_TequilaBarrel"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="VBE_VodkaDrum"]/costList/WoodLog</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/ThingDef[defName="VBE_VodkaDrum"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="VBE_VodkaDrum" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="VBE_VodkaDrum"]/stuffCategories</xpath>
+            <value>
               <li>Woody</li>
-            </stuffCategories>
-          </value>
-        </nomatch>
-      </li>
-      <li Class="PatchOperationConditional">
-        <success>Always</success>
-        <xpath>/Defs/ThingDef[defName="VBE_VodkaDrum" and not(costStuffCount)]</xpath>
-        <match Class="PatchOperationAdd">
-          <xpath>/Defs/ThingDef[defName="VBE_VodkaDrum" and not(costStuffCount)]</xpath>
-          <value>
-            <costStuffCount>40</costStuffCount>
-          </value>
-        </match>
-      </li>
-      <li Class="PatchOperationConditional">
-        <success>Always</success>
-        <xpath>/Defs/ThingDef[defName="VBE_VodkaDrum"]/constructEffect</xpath>
-        <match Class="PatchOperationRemove">
-          <xpath>/Defs/ThingDef[defName="VBE_VodkaDrum"]/constructEffect</xpath>
-        </match>
-      </li>
-    </operations>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="VBE_VodkaDrum"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="VBE_VodkaDrum" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="VBE_VodkaDrum" and not(costStuffCount)]</xpath>
+            <value>
+              <costStuffCount>40</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="VBE_VodkaDrum"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>Defs/ThingDef[defName="VBE_VodkaDrum"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
   </Operation>
 </Patch>

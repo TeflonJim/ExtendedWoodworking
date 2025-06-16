@@ -112,8 +112,8 @@
     <label>Birch wood</label>
     <description>Wood from trees or other fibrous plants. Useful for building structures and weapons. It is a good fuel for campfires and generators, and can be refined into chemfuel. In a pinch, a piece of wood can be used as a weapon or a leg.</description>
     <graphicData>
-      <texPath>Logs/WoodLog</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Logs/Stack/WoodLog</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
       <color>(235,228,216)</color>
     </graphicData>
     <equippedAngleOffset>-20</equippedAngleOffset>
@@ -190,8 +190,8 @@
     <label>Cecropia wood</label>
     <description>Wood from trees or other fibrous plants. Useful for building structures and weapons. It is a good fuel for campfires and generators, and can be refined into chemfuel. In a pinch, a piece of wood can be used as a weapon or a leg.</description>
     <graphicData>
-      <texPath>Logs/WoodLog</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Logs/Stack/WoodLog</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
       <color>(126,74,63)</color>
     </graphicData>
     <equippedAngleOffset>-20</equippedAngleOffset>
@@ -268,8 +268,8 @@
     <label>Cypress wood</label>
     <description>Wood from trees or other fibrous plants. Useful for building structures and weapons. It is a good fuel for campfires and generators, and can be refined into chemfuel. In a pinch, a piece of wood can be used as a weapon or a leg.</description>
     <graphicData>
-      <texPath>Logs/WoodLog</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Logs/Stack/WoodLog</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
       <color>(239, 217, 184)</color>
     </graphicData>
     <equippedAngleOffset>-20</equippedAngleOffset>
@@ -346,8 +346,8 @@
     <label>Drago wood</label>
     <description>Wood from trees or other fibrous plants. Useful for building structures and weapons. It is a good fuel for campfires and generators, and can be refined into chemfuel. In a pinch, a piece of wood can be used as a weapon or a leg.</description>
     <graphicData>
-      <texPath>Logs/WoodLog</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Logs/Stack/WoodLog</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
       <color>(171, 159, 142)</color>
     </graphicData>
     <equippedAngleOffset>-20</equippedAngleOffset>
@@ -424,8 +424,8 @@
     <label>Maple wood</label>
     <description>Wood from trees or other fibrous plants. Useful for building structures and weapons. It is a good fuel for campfires and generators, and can be refined into chemfuel. In a pinch, a piece of wood can be used as a weapon or a leg.</description>
     <graphicData>
-      <texPath>Logs/WoodLog</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Logs/Stack/WoodLog</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
       <color>(236, 201, 163)</color>
     </graphicData>
     <equippedAngleOffset>-20</equippedAngleOffset>
@@ -502,8 +502,8 @@
     <label>Oak wood</label>
     <description>Wood from trees or other fibrous plants. Useful for building structures and weapons. It is a good fuel for campfires and generators, and can be refined into chemfuel. In a pinch, a piece of wood can be used as a weapon or a leg.</description>
     <graphicData>
-      <texPath>Logs/WoodLog</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Logs/Stack/WoodLog</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
       <color>(185,142,96)</color>
     </graphicData>
     <equippedAngleOffset>-20</equippedAngleOffset>
@@ -580,8 +580,8 @@
     <label>Palm wood</label>
     <description>Wood from trees or other fibrous plants. Useful for building structures and weapons. It is a good fuel for campfires and generators, and can be refined into chemfuel. In a pinch, a piece of wood can be used as a weapon or a leg.</description>
     <graphicData>
-      <texPath>Logs/WoodLog</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Logs/Stack/WoodLog</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
       <color>(224, 150, 87)</color>
     </graphicData>
     <equippedAngleOffset>-20</equippedAngleOffset>
@@ -658,8 +658,8 @@
     <label>Pine wood</label>
     <description>Wood from trees or other fibrous plants. Useful for building structures and weapons. It is a good fuel for campfires and generators, and can be refined into chemfuel. In a pinch, a piece of wood can be used as a weapon or a leg.</description>
     <graphicData>
-      <texPath>Logs/WoodLog</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Logs/Stack/WoodLog</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
       <color>(198,146,68)</color>
     </graphicData>
     <equippedAngleOffset>-20</equippedAngleOffset>
@@ -736,8 +736,8 @@
     <label>Poplar wood</label>
     <description>Wood from trees or other fibrous plants. Useful for building structures and weapons. It is a good fuel for campfires and generators, and can be refined into chemfuel. In a pinch, a piece of wood can be used as a weapon or a leg.</description>
     <graphicData>
-      <texPath>Logs/WoodLog</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Logs/Stack/WoodLog</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
       <color>(184,156,108)</color>
     </graphicData>
     <equippedAngleOffset>-20</equippedAngleOffset>
@@ -814,8 +814,8 @@
     <label>Teak wood</label>
     <description>Wood from trees or other fibrous plants. Useful for building structures and weapons. It is a good fuel for campfires and generators, and can be refined into chemfuel. In a pinch, a piece of wood can be used as a weapon or a leg.</description>
     <graphicData>
-      <texPath>Logs/WoodLog</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Logs/Stack/WoodLog</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
       <color>(154,102,59)</color>
     </graphicData>
     <equippedAngleOffset>-20</equippedAngleOffset>
@@ -892,8 +892,8 @@
     <label>Willow wood</label>
     <description>Wood from trees or other fibrous plants. Useful for building structures and weapons. It is a good fuel for campfires and generators, and can be refined into chemfuel. In a pinch, a piece of wood can be used as a weapon or a leg.</description>
     <graphicData>
-      <texPath>Logs/WoodLog</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
+      <texPath>Logs/Stack/WoodLog</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
       <color>(221, 186, 141)</color>
     </graphicData>
     <equippedAngleOffset>-20</equippedAngleOffset>
