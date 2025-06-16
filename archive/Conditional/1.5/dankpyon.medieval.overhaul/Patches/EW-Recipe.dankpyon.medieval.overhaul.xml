@@ -1,0 +1,387 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="DankPyon_Make_Tar"]/ingredients/li[filter/thingDefs/li="WoodLog"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/RecipeDef[defName="DankPyon_Make_Tar"]/ingredients/li[filter/thingDefs/li="WoodLog"]</xpath>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/RecipeDef[defName="DankPyon_Make_Tar"]/ingredients</xpath>
+          <value>
+            <li>
+              <filter>
+                <categories>
+                  <li>WoodTypes</li>
+                </categories>
+              </filter>
+              <count>10</count>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/RecipeDef[defName="DankPyon_Make_Tar"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>Defs/RecipeDef[defName="DankPyon_Make_Tar"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/RecipeDef[defName="DankPyon_Make_Tar"]/fixedIngredientFilter/thingDefs</xpath>
+          <match Class="PatchOperationConditional">
+            <xpath>Defs/RecipeDef[defName="DankPyon_Make_Tar"]/fixedIngredientFilter/thingDefs/li/*</xpath>
+            <nomatch Class="PatchOperationRemove">
+              <xpath>Defs/RecipeDef[defName="DankPyon_Make_Tar"]/fixedIngredientFilter/thingDefs</xpath>
+            </nomatch>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/RecipeDef[defName="DankPyon_Make_Tar"]/fixedIngredientFilter</xpath>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/RecipeDef[defName="DankPyon_Make_Tar"]</xpath>
+            <value>
+              <fixedIngredientFilter />
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/RecipeDef[defName="DankPyon_Make_Tar"]/fixedIngredientFilter/categories</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/RecipeDef[defName="DankPyon_Make_Tar"]/fixedIngredientFilter/categories</xpath>
+            <value>
+              <li>WoodTypes</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/RecipeDef[defName="DankPyon_Make_Tar"]/fixedIngredientFilter</xpath>
+            <value>
+              <categories>
+                <li>WoodTypes</li>
+              </categories>
+            </value>
+          </nomatch>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="DankPyon_Make_TarBulk"]/ingredients/li[filter/thingDefs/li="WoodLog"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/RecipeDef[defName="DankPyon_Make_TarBulk"]/ingredients/li[filter/thingDefs/li="WoodLog"]</xpath>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/RecipeDef[defName="DankPyon_Make_TarBulk"]/ingredients</xpath>
+          <value>
+            <li>
+              <filter>
+                <categories>
+                  <li>WoodTypes</li>
+                </categories>
+              </filter>
+              <count>50</count>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/RecipeDef[defName="DankPyon_Make_TarBulk"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>Defs/RecipeDef[defName="DankPyon_Make_TarBulk"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/RecipeDef[defName="DankPyon_Make_TarBulk"]/fixedIngredientFilter/thingDefs</xpath>
+          <match Class="PatchOperationConditional">
+            <xpath>Defs/RecipeDef[defName="DankPyon_Make_TarBulk"]/fixedIngredientFilter/thingDefs/li/*</xpath>
+            <nomatch Class="PatchOperationRemove">
+              <xpath>Defs/RecipeDef[defName="DankPyon_Make_TarBulk"]/fixedIngredientFilter/thingDefs</xpath>
+            </nomatch>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/RecipeDef[defName="DankPyon_Make_TarBulk"]/fixedIngredientFilter</xpath>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/RecipeDef[defName="DankPyon_Make_TarBulk"]</xpath>
+            <value>
+              <fixedIngredientFilter />
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/RecipeDef[defName="DankPyon_Make_TarBulk"]/fixedIngredientFilter/categories</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/RecipeDef[defName="DankPyon_Make_TarBulk"]/fixedIngredientFilter/categories</xpath>
+            <value>
+              <li>WoodTypes</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/RecipeDef[defName="DankPyon_Make_TarBulk"]/fixedIngredientFilter</xpath>
+            <value>
+              <categories>
+                <li>WoodTypes</li>
+              </categories>
+            </value>
+          </nomatch>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="DankPyon_MakeBullet_ScorpioBolt"]/ingredients/li[filter/thingDefs/li="WoodLog"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/RecipeDef[defName="DankPyon_MakeBullet_ScorpioBolt"]/ingredients/li[filter/thingDefs/li="WoodLog"]</xpath>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/RecipeDef[defName="DankPyon_MakeBullet_ScorpioBolt"]/ingredients</xpath>
+          <value>
+            <li>
+              <filter>
+                <categories>
+                  <li>WoodTypes</li>
+                </categories>
+              </filter>
+              <count>30</count>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/RecipeDef[defName="DankPyon_MakeBullet_ScorpioBolt"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>Defs/RecipeDef[defName="DankPyon_MakeBullet_ScorpioBolt"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/RecipeDef[defName="DankPyon_MakeBullet_ScorpioBolt"]/fixedIngredientFilter/thingDefs</xpath>
+          <match Class="PatchOperationConditional">
+            <xpath>Defs/RecipeDef[defName="DankPyon_MakeBullet_ScorpioBolt"]/fixedIngredientFilter/thingDefs/li/*</xpath>
+            <nomatch Class="PatchOperationRemove">
+              <xpath>Defs/RecipeDef[defName="DankPyon_MakeBullet_ScorpioBolt"]/fixedIngredientFilter/thingDefs</xpath>
+            </nomatch>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/RecipeDef[defName="DankPyon_MakeBullet_ScorpioBolt"]/fixedIngredientFilter</xpath>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/RecipeDef[defName="DankPyon_MakeBullet_ScorpioBolt"]</xpath>
+            <value>
+              <fixedIngredientFilter />
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/RecipeDef[defName="DankPyon_MakeBullet_ScorpioBolt"]/fixedIngredientFilter/categories</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/RecipeDef[defName="DankPyon_MakeBullet_ScorpioBolt"]/fixedIngredientFilter/categories</xpath>
+            <value>
+              <li>WoodTypes</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/RecipeDef[defName="DankPyon_MakeBullet_ScorpioBolt"]/fixedIngredientFilter</xpath>
+            <value>
+              <categories>
+                <li>WoodTypes</li>
+              </categories>
+            </value>
+          </nomatch>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="DankPyon_MakeBullet_ScorpioBoltBulk"]/ingredients/li[filter/thingDefs/li="WoodLog"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/RecipeDef[defName="DankPyon_MakeBullet_ScorpioBoltBulk"]/ingredients/li[filter/thingDefs/li="WoodLog"]</xpath>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/RecipeDef[defName="DankPyon_MakeBullet_ScorpioBoltBulk"]/ingredients</xpath>
+          <value>
+            <li>
+              <filter>
+                <categories>
+                  <li>WoodTypes</li>
+                </categories>
+              </filter>
+              <count>150</count>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/RecipeDef[defName="DankPyon_MakeBullet_ScorpioBoltBulk"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>Defs/RecipeDef[defName="DankPyon_MakeBullet_ScorpioBoltBulk"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/RecipeDef[defName="DankPyon_MakeBullet_ScorpioBoltBulk"]/fixedIngredientFilter/thingDefs</xpath>
+          <match Class="PatchOperationConditional">
+            <xpath>Defs/RecipeDef[defName="DankPyon_MakeBullet_ScorpioBoltBulk"]/fixedIngredientFilter/thingDefs/li/*</xpath>
+            <nomatch Class="PatchOperationRemove">
+              <xpath>Defs/RecipeDef[defName="DankPyon_MakeBullet_ScorpioBoltBulk"]/fixedIngredientFilter/thingDefs</xpath>
+            </nomatch>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/RecipeDef[defName="DankPyon_MakeBullet_ScorpioBoltBulk"]/fixedIngredientFilter</xpath>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/RecipeDef[defName="DankPyon_MakeBullet_ScorpioBoltBulk"]</xpath>
+            <value>
+              <fixedIngredientFilter />
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/RecipeDef[defName="DankPyon_MakeBullet_ScorpioBoltBulk"]/fixedIngredientFilter/categories</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/RecipeDef[defName="DankPyon_MakeBullet_ScorpioBoltBulk"]/fixedIngredientFilter/categories</xpath>
+            <value>
+              <li>WoodTypes</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/RecipeDef[defName="DankPyon_MakeBullet_ScorpioBoltBulk"]/fixedIngredientFilter</xpath>
+            <value>
+              <categories>
+                <li>WoodTypes</li>
+              </categories>
+            </value>
+          </nomatch>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="DankPyon_MakeBullet_BallistaBolt"]/ingredients/li[filter/thingDefs/li="WoodLog"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/RecipeDef[defName="DankPyon_MakeBullet_BallistaBolt"]/ingredients/li[filter/thingDefs/li="WoodLog"]</xpath>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/RecipeDef[defName="DankPyon_MakeBullet_BallistaBolt"]/ingredients</xpath>
+          <value>
+            <li>
+              <filter>
+                <categories>
+                  <li>WoodTypes</li>
+                </categories>
+              </filter>
+              <count>50</count>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/RecipeDef[defName="DankPyon_MakeBullet_BallistaBolt"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>Defs/RecipeDef[defName="DankPyon_MakeBullet_BallistaBolt"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/RecipeDef[defName="DankPyon_MakeBullet_BallistaBolt"]/fixedIngredientFilter/thingDefs</xpath>
+          <match Class="PatchOperationConditional">
+            <xpath>Defs/RecipeDef[defName="DankPyon_MakeBullet_BallistaBolt"]/fixedIngredientFilter/thingDefs/li/*</xpath>
+            <nomatch Class="PatchOperationRemove">
+              <xpath>Defs/RecipeDef[defName="DankPyon_MakeBullet_BallistaBolt"]/fixedIngredientFilter/thingDefs</xpath>
+            </nomatch>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/RecipeDef[defName="DankPyon_MakeBullet_BallistaBolt"]/fixedIngredientFilter</xpath>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/RecipeDef[defName="DankPyon_MakeBullet_BallistaBolt"]</xpath>
+            <value>
+              <fixedIngredientFilter />
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/RecipeDef[defName="DankPyon_MakeBullet_BallistaBolt"]/fixedIngredientFilter/categories</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/RecipeDef[defName="DankPyon_MakeBullet_BallistaBolt"]/fixedIngredientFilter/categories</xpath>
+            <value>
+              <li>WoodTypes</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/RecipeDef[defName="DankPyon_MakeBullet_BallistaBolt"]/fixedIngredientFilter</xpath>
+            <value>
+              <categories>
+                <li>WoodTypes</li>
+              </categories>
+            </value>
+          </nomatch>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="DankPyon_MakeBullet_BallistaBoltBulk"]/ingredients/li[filter/thingDefs/li="WoodLog"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/RecipeDef[defName="DankPyon_MakeBullet_BallistaBoltBulk"]/ingredients/li[filter/thingDefs/li="WoodLog"]</xpath>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/RecipeDef[defName="DankPyon_MakeBullet_BallistaBoltBulk"]/ingredients</xpath>
+          <value>
+            <li>
+              <filter>
+                <categories>
+                  <li>WoodTypes</li>
+                </categories>
+              </filter>
+              <count>250</count>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/RecipeDef[defName="DankPyon_MakeBullet_BallistaBoltBulk"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>Defs/RecipeDef[defName="DankPyon_MakeBullet_BallistaBoltBulk"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/RecipeDef[defName="DankPyon_MakeBullet_BallistaBoltBulk"]/fixedIngredientFilter/thingDefs</xpath>
+          <match Class="PatchOperationConditional">
+            <xpath>Defs/RecipeDef[defName="DankPyon_MakeBullet_BallistaBoltBulk"]/fixedIngredientFilter/thingDefs/li/*</xpath>
+            <nomatch Class="PatchOperationRemove">
+              <xpath>Defs/RecipeDef[defName="DankPyon_MakeBullet_BallistaBoltBulk"]/fixedIngredientFilter/thingDefs</xpath>
+            </nomatch>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/RecipeDef[defName="DankPyon_MakeBullet_BallistaBoltBulk"]/fixedIngredientFilter</xpath>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/RecipeDef[defName="DankPyon_MakeBullet_BallistaBoltBulk"]</xpath>
+            <value>
+              <fixedIngredientFilter />
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/RecipeDef[defName="DankPyon_MakeBullet_BallistaBoltBulk"]/fixedIngredientFilter/categories</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/RecipeDef[defName="DankPyon_MakeBullet_BallistaBoltBulk"]/fixedIngredientFilter/categories</xpath>
+            <value>
+              <li>WoodTypes</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/RecipeDef[defName="DankPyon_MakeBullet_BallistaBoltBulk"]/fixedIngredientFilter</xpath>
+            <value>
+              <categories>
+                <li>WoodTypes</li>
+              </categories>
+            </value>
+          </nomatch>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

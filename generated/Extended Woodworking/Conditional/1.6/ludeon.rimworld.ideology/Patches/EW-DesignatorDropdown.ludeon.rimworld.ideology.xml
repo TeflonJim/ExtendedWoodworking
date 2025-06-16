@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/TerrainDef[defName="Boards_Totemic"]/designatorDropdown</xpath>
+    <match Class="PatchOperationReplace">
+      <xpath>Defs/TerrainDef[defName="Boards_Totemic"]/designatorDropdown</xpath>
+      <value>
+        <designatorDropdown>EW_Designator_Boards_Totemic</designatorDropdown>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/TerrainDef[defName="Boards_Totemic"]</xpath>
+      <value>
+        <designatorDropdown>EW_Designator_Boards_Totemic</designatorDropdown>
+      </value>
+    </nomatch>
+  </Operation>
+</Patch>
