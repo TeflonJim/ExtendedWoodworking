@@ -47,7 +47,7 @@ A Woodworking table is available to paint wood or convert specific types of wood
   [*][HRK] RIM AT WAR - WW1 Winchester M97 "Trench Gun"
   [*][HRK] RIM AT WAR - WW2 Soviet SMGs
   [*][LTS]Furnishing
-  [*][T] MoreFloors 1.5
+  [*][T] MoreFloors 1.6
   [*]A Dog Said... Animal Prosthetics
   [*]Ancient urban ruins
   [*]Books From Paper
@@ -70,13 +70,14 @@ A Woodworking table is available to paint wood or convert specific types of wood
   [*]VGP Garden Tools
   [*]VGP Vegetable Garden
   [*]VGP Xtra Trees and Flowers
+  [*]Westerado (Continued)
 [/list]
 
 The following mods contain floors, the defs are duplicated for each available wood type. A drop down list is added to allow material selection:
 
 [list]
-  [*][T] MoreFloors 1.5
-  [*][WD] Expanded Floors
+  [*][T] MoreFloors 1.6
+  [*]Expanded Floors
   [*]Pen's Decor
   [*]RIMkea
 [/list]
@@ -121,6 +122,7 @@ Alternatively, mod content is expressed using LoadFolders.xml in the mod folder.
     <li>ludeon.rimworld.royalty</li>
     <li>mlie.coalexpanded</li>
     <li>mlie.roughbarricade</li>
+    <li>mlie.westerado</li>
     <li>pensdecor.theholyepicpenguin</li>
     <li>pensdecor.theholyepicpenguin</li>
     <li>prf.materials</li>
