@@ -1,0 +1,381 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="WoodLog_Acacia"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBase">
+              <defName>WoodPlankFloor_Acacia</defName>
+              <label>acacia wood floor</label>
+              <renderPrecedence>250</renderPrecedence>
+              <description>Acacia plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
+              <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
+              <burnedDef>BurnedWoodPlankFloor</burnedDef>
+              <color>(219, 184, 144)</color>
+              <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
+              <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
+              <isPaintable>true</isPaintable>
+              <statBases>
+                <WorkToBuild>85</WorkToBuild>
+                <Flammability>0.22</Flammability>
+              </statBases>
+              <constructEffect>ConstructWood</constructEffect>
+              <designationHotKey>Misc9</designationHotKey>
+              <uiOrder>2000</uiOrder>
+              <costList>
+                <WoodLog_Acacia>3</WoodLog_Acacia>
+              </costList>
+              <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <TerrainDef ParentName="BridgeBase">
+              <defName>Bridge_Acacia</defName>
+              <label>bridge</label>
+              <description>A flat acacia surface on supportive beams which can be built over water. You can build light structures on bridges, but be careful - bridges are fragile. If a bridge falls, buildings on top of it fall as well.</description>
+              <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
+              <bridgePropsPath>Terrain/Misc/BridgeProps</bridgePropsPath>
+              <color>(219, 184, 144)</color>
+              <uiIconPath>Terrain/Surfaces/Bridge_MenuIcon</uiIconPath>
+              <affordances>
+                <li>Light</li>
+              </affordances>
+              <constructEffect>ConstructWood</constructEffect>
+              <statBases>
+                <WorkToBuild>1500</WorkToBuild>
+                <Flammability>0.8</Flammability>
+              </statBases>
+              <designationHotKey>Misc4</designationHotKey>
+              <destroyOnBombDamageThreshold>35</destroyOnBombDamageThreshold>
+              <costList>
+                <WoodLog_Acacia>12</WoodLog_Acacia>
+              </costList>
+              <designatorDropdown>EW_Designator_Bridge</designatorDropdown>
+            </TerrainDef>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="WoodLog_Aspen"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBase">
+              <defName>WoodPlankFloor_Aspen</defName>
+              <label>aspen wood floor</label>
+              <renderPrecedence>250</renderPrecedence>
+              <description>Acacia plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
+              <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
+              <burnedDef>BurnedWoodPlankFloor</burnedDef>
+              <color>(228, 204, 171)</color>
+              <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
+              <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
+              <isPaintable>true</isPaintable>
+              <statBases>
+                <WorkToBuild>85</WorkToBuild>
+                <Flammability>0.22</Flammability>
+              </statBases>
+              <constructEffect>ConstructWood</constructEffect>
+              <designationHotKey>Misc9</designationHotKey>
+              <uiOrder>2000</uiOrder>
+              <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
+              <costList>
+                <WoodLog_Aspen>3</WoodLog_Aspen>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <TerrainDef ParentName="BridgeBase">
+              <defName>Bridge_Aspen</defName>
+              <label>bridge</label>
+              <description>A flat acacia surface on supportive beams which can be built over water. You can build light structures on bridges, but be careful - bridges are fragile. If a bridge falls, buildings on top of it fall as well.</description>
+              <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
+              <bridgePropsPath>Terrain/Misc/BridgeProps</bridgePropsPath>
+              <color>(228, 204, 171)</color>
+              <uiIconPath>Terrain/Surfaces/Bridge_MenuIcon</uiIconPath>
+              <affordances>
+                <li>Light</li>
+              </affordances>
+              <constructEffect>ConstructWood</constructEffect>
+              <statBases>
+                <WorkToBuild>1500</WorkToBuild>
+                <Flammability>0.8</Flammability>
+              </statBases>
+              <designationHotKey>Misc4</designationHotKey>
+              <destroyOnBombDamageThreshold>35</destroyOnBombDamageThreshold>
+              <designatorDropdown>EW_Designator_Bridge</designatorDropdown>
+              <costList>
+                <WoodLog_Aspen>12</WoodLog_Aspen>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="WoodLog_Camellia"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBase">
+              <defName>WoodPlankFloor_Camellia</defName>
+              <label>camellia wood floor</label>
+              <renderPrecedence>250</renderPrecedence>
+              <description>Camellia plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
+              <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
+              <burnedDef>BurnedWoodPlankFloor</burnedDef>
+              <color>(201, 160, 130)</color>
+              <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
+              <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
+              <isPaintable>true</isPaintable>
+              <statBases>
+                <WorkToBuild>85</WorkToBuild>
+                <Flammability>0.22</Flammability>
+              </statBases>
+              <constructEffect>ConstructWood</constructEffect>
+              <designationHotKey>Misc9</designationHotKey>
+              <uiOrder>2000</uiOrder>
+              <costList>
+                <WoodLog_Camellia>3</WoodLog_Camellia>
+              </costList>
+              <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <TerrainDef ParentName="BridgeBase">
+              <defName>Bridge_Camellia</defName>
+              <label>bridge</label>
+              <description>A flat camellia surface on supportive beams which can be built over water. You can build light structures on bridges, but be careful - bridges are fragile. If a bridge falls, buildings on top of it fall as well.</description>
+              <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
+              <bridgePropsPath>Terrain/Misc/BridgeProps</bridgePropsPath>
+              <color>(201, 160, 130)</color>
+              <uiIconPath>Terrain/Surfaces/Bridge_MenuIcon</uiIconPath>
+              <affordances>
+                <li>Light</li>
+              </affordances>
+              <constructEffect>ConstructWood</constructEffect>
+              <statBases>
+                <WorkToBuild>1500</WorkToBuild>
+                <Flammability>0.8</Flammability>
+              </statBases>
+              <designationHotKey>Misc4</designationHotKey>
+              <destroyOnBombDamageThreshold>35</destroyOnBombDamageThreshold>
+              <costList>
+                <WoodLog_Camellia>12</WoodLog_Camellia>
+              </costList>
+              <designatorDropdown>EW_Designator_Bridge</designatorDropdown>
+            </TerrainDef>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="WoodLog_CherryBlossom"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBase">
+              <defName>WoodPlankFloor_CherryBlossom</defName>
+              <label>cherryblossom wood floor</label>
+              <renderPrecedence>250</renderPrecedence>
+              <description>Cherry blossom plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
+              <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
+              <burnedDef>BurnedWoodPlankFloor</burnedDef>
+              <color>(165, 82, 40)</color>
+              <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
+              <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
+              <isPaintable>true</isPaintable>
+              <statBases>
+                <WorkToBuild>85</WorkToBuild>
+                <Flammability>0.22</Flammability>
+              </statBases>
+              <constructEffect>ConstructWood</constructEffect>
+              <designationHotKey>Misc9</designationHotKey>
+              <uiOrder>2000</uiOrder>
+              <costList>
+                <WoodLog_CherryBlossom>3</WoodLog_CherryBlossom>
+              </costList>
+              <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <TerrainDef ParentName="BridgeBase">
+              <defName>Bridge_CherryBlossom</defName>
+              <label>bridge</label>
+              <description>A flat cherry blossom surface on supportive beams which can be built over water. You can build light structures on bridges, but be careful - bridges are fragile. If a bridge falls, buildings on top of it fall as well.</description>
+              <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
+              <bridgePropsPath>Terrain/Misc/BridgeProps</bridgePropsPath>
+              <color>(165, 82, 40)</color>
+              <uiIconPath>Terrain/Surfaces/Bridge_MenuIcon</uiIconPath>
+              <affordances>
+                <li>Light</li>
+              </affordances>
+              <constructEffect>ConstructWood</constructEffect>
+              <statBases>
+                <WorkToBuild>1500</WorkToBuild>
+                <Flammability>0.8</Flammability>
+              </statBases>
+              <designationHotKey>Misc4</designationHotKey>
+              <destroyOnBombDamageThreshold>35</destroyOnBombDamageThreshold>
+              <costList>
+                <WoodLog_CherryBlossom>12</WoodLog_CherryBlossom>
+              </costList>
+              <designatorDropdown>EW_Designator_Bridge</designatorDropdown>
+            </TerrainDef>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="WoodLog_JapaneseMaple"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBase">
+              <defName>WoodPlankFloor_JapaneseMaple</defName>
+              <label>japanesemaple wood floor</label>
+              <renderPrecedence>250</renderPrecedence>
+              <description>Japanese maple plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
+              <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
+              <burnedDef>BurnedWoodPlankFloor</burnedDef>
+              <color>(252, 170, 124)</color>
+              <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
+              <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
+              <isPaintable>true</isPaintable>
+              <statBases>
+                <WorkToBuild>85</WorkToBuild>
+                <Flammability>0.22</Flammability>
+              </statBases>
+              <constructEffect>ConstructWood</constructEffect>
+              <designationHotKey>Misc9</designationHotKey>
+              <uiOrder>2000</uiOrder>
+              <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
+              <costList>
+                <WoodLog_JapaneseMaple>3</WoodLog_JapaneseMaple>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <TerrainDef ParentName="BridgeBase">
+              <defName>Bridge_JapaneseMaple</defName>
+              <label>bridge</label>
+              <description>A flat japanese maple surface on supportive beams which can be built over water. You can build light structures on bridges, but be careful - bridges are fragile. If a bridge falls, buildings on top of it fall as well.</description>
+              <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
+              <bridgePropsPath>Terrain/Misc/BridgeProps</bridgePropsPath>
+              <color>(252, 170, 124)</color>
+              <uiIconPath>Terrain/Surfaces/Bridge_MenuIcon</uiIconPath>
+              <affordances>
+                <li>Light</li>
+              </affordances>
+              <constructEffect>ConstructWood</constructEffect>
+              <statBases>
+                <WorkToBuild>1500</WorkToBuild>
+                <Flammability>0.8</Flammability>
+              </statBases>
+              <designationHotKey>Misc4</designationHotKey>
+              <destroyOnBombDamageThreshold>35</destroyOnBombDamageThreshold>
+              <designatorDropdown>EW_Designator_Bridge</designatorDropdown>
+              <costList>
+                <WoodLog_JapaneseMaple>12</WoodLog_JapaneseMaple>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="WoodLog_RedMaple"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <TerrainDef ParentName="FloorBase">
+              <defName>WoodPlankFloor_RedMaple</defName>
+              <label>redmaple wood floor</label>
+              <renderPrecedence>250</renderPrecedence>
+              <description>Red maple plank flooring for that warm, homey feeling. While it is quick to lay, it is also very flammable.</description>
+              <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
+              <burnedDef>BurnedWoodPlankFloor</burnedDef>
+              <color>(222, 197, 167)</color>
+              <pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughSoftLight</pollutionShaderType>
+              <pollutionOverlayTexturePath>Terrain/Surfaces/PollutionFloorSmooth</pollutionOverlayTexturePath>
+              <isPaintable>true</isPaintable>
+              <statBases>
+                <WorkToBuild>85</WorkToBuild>
+                <Flammability>0.22</Flammability>
+              </statBases>
+              <constructEffect>ConstructWood</constructEffect>
+              <designationHotKey>Misc9</designationHotKey>
+              <uiOrder>2000</uiOrder>
+              <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
+              <costList>
+                <WoodLog_RedMaple>3</WoodLog_RedMaple>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <TerrainDef ParentName="BridgeBase">
+              <defName>Bridge_RedMaple</defName>
+              <label>bridge</label>
+              <description>A flat red maple surface on supportive beams which can be built over water. You can build light structures on bridges, but be careful - bridges are fragile. If a bridge falls, buildings on top of it fall as well.</description>
+              <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
+              <bridgePropsPath>Terrain/Misc/BridgeProps</bridgePropsPath>
+              <color>(222, 197, 167)</color>
+              <uiIconPath>Terrain/Surfaces/Bridge_MenuIcon</uiIconPath>
+              <affordances>
+                <li>Light</li>
+              </affordances>
+              <constructEffect>ConstructWood</constructEffect>
+              <statBases>
+                <WorkToBuild>1500</WorkToBuild>
+                <Flammability>0.8</Flammability>
+              </statBases>
+              <designationHotKey>Misc4</designationHotKey>
+              <destroyOnBombDamageThreshold>35</destroyOnBombDamageThreshold>
+              <designatorDropdown>EW_Designator_Bridge</designatorDropdown>
+              <costList>
+                <WoodLog_RedMaple>12</WoodLog_RedMaple>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

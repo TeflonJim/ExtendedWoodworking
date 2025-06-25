@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="RG_Plant_TreeBoilingBirch"]/plant</xpath>
+    <value>
+      <harvestedThingDef>WoodLog_Birch</harvestedThingDef>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="RG_Plant_SpikedBoilingTreePine"]/plant</xpath>
+    <value>
+      <harvestedThingDef>WoodLog_Pine</harvestedThingDef>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="RG_Plant_BoilingTreePine"]/plant</xpath>
+    <value>
+      <harvestedThingDef>WoodLog_Pine</harvestedThingDef>
+    </value>
+  </Operation>
+</Patch>

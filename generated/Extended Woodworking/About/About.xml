@@ -10,6 +10,7 @@
     <li>1.3</li>
     <li>1.4</li>
     <li>1.5</li>
+    <li>1.6</li>
   </supportedVersions>
   <description>
 [h1]Extended Woodworking[/h1]
@@ -20,7 +21,7 @@ Previous versions of this module can be downloaded from GitHub:
 
 https://github.com/TeflonJim/ExtendedWoodworking/releases
 
-This release supports RimWorld 1.0 to 1.5.
+This release supports RimWorld 1.0 to 1.6.
 
 This mod changes trees so that when they are cut down, they produce wood of that tree type. Different wood types have slightly different properties.
 
@@ -46,85 +47,37 @@ A Woodworking table is available to paint wood or convert specific types of wood
   [*][HRK] RIM AT WAR - WW1 Winchester M97 "Trench Gun"
   [*][HRK] RIM AT WAR - WW2 Soviet SMGs
   [*][LTS]Furnishing
-  [*][RH2] Rimmu-Nation² - Weapons
-  [*][T] MoreFloors 1.5
+  [*][T] MoreFloors 1.6
   [*]A Dog Said... Animal Prosthetics
-  [*]A RimWorld of Magic
-  [*]Alpha Memes
   [*]Ancient urban ruins
   [*]Books From Paper
   [*]Camping Tent
-  [*]Caravan Adventures
-  [*]Caravan Equipment (Continued)
   [*]Caravan Gear
   [*]Coal Expanded (Continued)
   [*]Cosmere - Metals
-  [*]Erin's Cottage Collection
-  [*]Erin's Japanese Furniture
-  [*]Expanded Materials - Metals
-  [*]Fertile Fields 1.5
   [*]Fishing Village Decor and Props (Continued)
-  [*]Fortification Industrial - Citadel
-  [*]Fortifications - Medieval
-  [*]Fortifications - Neolithic
-  [*]GloomyFurniture
   [*]M1 Garand, Winchester 1894 &amp; Colt 1862
-  [*]Medieval Overhaul
-  [*]Musical Instruments (Continued)
-  [*]Nature's Pretty Sweet (Continued)
-  [*]Outland - Furniture &amp; Decor
   [*]Pen's Decor
   [*]Project RimFactory - Materials
-  [*]Realistic Planets Continued
-  [*]ReGrowth: Aspen
-  [*]ReGrowth: Boiling
-  [*]ReGrowth: Boreal
-  [*]ReGrowth: Swamp
-  [*]ReGrowth: Temperate
-  [*]ReGrowth: Tropical
-  [*]ReGrowth: Tundra
   [*]Rimsenal - Augmented Vanilla Pack
-  [*]RimWriter - Books, Scrolls, Tablets, and Libraries (Continued)
   [*]RoughBarricade (Continued)
   [*]Ruger Mini
-  [*]Signs and Comments
   [*]Simple Learning
   [*]Simple Ships
   [*]Tabletop Decorations
   [*]Tabletop Trove - Additional Joy Objects and Decor
   [*]TMC Weapon Pack
-  [*]Vanilla Animals Expanded
-  [*]Vanilla Animals Expanded — Royal Animals
-  [*]Vanilla Apparel Expanded — Accessories
-  [*]Vanilla Books Expanded
-  [*]Vanilla Brewing Expanded
-  [*]Vanilla Cooking Expanded
-  [*]Vanilla Cooking Expanded - Stews
-  [*]Vanilla Factions Expanded - Classical
-  [*]Vanilla Factions Expanded - Empire
-  [*]Vanilla Factions Expanded - Medieval 2
-  [*]Vanilla Factions Expanded - Settlers
-  [*]Vanilla Factions Expanded - Tribals
-  [*]Vanilla Furniture Expanded - Architect
-  [*]Vanilla Furniture Expanded - Security
-  [*]Vanilla Ideology Expanded - Memes and Structures
-  [*]Vanilla Psycasts Expanded
-  [*]Vanilla Vehicles Expanded
-  [*]Vanilla Weapons Expanded
-  [*]Vanilla Weapons Expanded - Tribal
   [*]VGP Garden Tools
   [*]VGP Vegetable Garden
   [*]VGP Xtra Trees and Flowers
   [*]Westerado (Continued)
-  [*]Wild West Firearms (Non CE Version)
 [/list]
 
 The following mods contain floors, the defs are duplicated for each available wood type. A drop down list is added to allow material selection:
 
 [list]
-  [*][T] MoreFloors 1.5
-  [*][WD] Expanded Floors
-  [*]Erin's Cottage Collection
+  [*][T] MoreFloors 1.6
+  [*]Expanded Floors
   [*]Pen's Decor
   [*]RIMkea
 [/list]
@@ -140,38 +93,25 @@ The following mods contain floors, the defs are duplicated for each available wo
 
 This mod does not include an options menu. Painted wood may be disabled using the [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3230046902]Cherry Picker[/url] mod. A predefined list is available for painted woods "Extended Woodworking: Enable painted wood".
 
-Alternatively, mod content is expressed using LoadFolders.xml in the mod folder. The first line can be deleted to disable painted woods and associated recipes:
-[code]&lt;li&gt;Conditional/1.5/_EW-Painted&lt;/li&gt;[/code]
+Alternatively, mod content is expressed using LoadFolders.xml in the mod folder. The first line for each version can be deleted to disable painted woods and associated recipes:
+[code]&lt;li&gt;Conditional/1.x/_EW-Painted&lt;/li&gt;[/code]
     </description>
   <incompatibleWith>
     <li>Adventurer.ExpandWoodwork</li>
     <li>owlchemist.simplechains.lumber</li>
   </incompatibleWith>
   <loadAfter>
-    <li>aoba.fortress.industrial.citadel</li>
-    <li>aoba.fortress.medieval</li>
-    <li>aoba.fortress.neolithic</li>
     <li>aoba.tent</li>
-    <li>argon.expandedmaterials.metals</li>
-    <li>augdog777.wildwestfirearmsnonce</li>
-    <li>cp.rimmunation.2.weapons</li>
     <li>cryptiklemur.cosmere.metals</li>
-    <li>dankpyon.medieval.overhaul</li>
-    <li>dark.signs</li>
     <li>dismarzero.vgp.vgpgardentools</li>
     <li>dismarzero.vgp.vgpvegetablegarden</li>
     <li>dismarzero.vgp.xtratreesandflowers</li>
-    <li>erin.cottagecollection</li>
-    <li>erin.cottagecollection</li>
-    <li>erin.japanesefurniture</li>
     <li>fox.simplelearning</li>
-    <li>greysuki.rf.fertilefields</li>
     <li>harkon.other.garandwinchestercolt</li>
     <li>harkon.other.rugermini</li>
     <li>harkon.rimatwar.ww1m97trenchgun</li>
     <li>harkon.rimatwar.ww1ww2frenchweapons</li>
     <li>harkon.rimatwar.ww2sovietsmgs</li>
-    <li>iforgotmysocks.caravanadventures</li>
     <li>jelly.caravangear</li>
     <li>klvlt.booksfrompaper</li>
     <li>limetreesnake.furnishing</li>
@@ -180,59 +120,24 @@ Alternatively, mod content is expressed using LoadFolders.xml in the mod folder.
     <li>ludeon.rimworld.ideology</li>
     <li>ludeon.rimworld.ideology</li>
     <li>ludeon.rimworld.royalty</li>
-    <li>mlie.caravanequipment</li>
     <li>mlie.coalexpanded</li>
-    <li>mlie.musicalinstruments</li>
-    <li>mlie.naturesprettysweet</li>
-    <li>mlie.rimwriter</li>
     <li>mlie.roughbarricade</li>
     <li>mlie.westerado</li>
-    <li>neronix17.outland.furnitureanddecor</li>
-    <li>oskarpotocki.vanillafactionsexpanded.settlersmodule</li>
-    <li>oskarpotocki.vanillavehiclesexpanded</li>
-    <li>oskarpotocki.vfe.classical</li>
-    <li>oskarpotocki.vfe.empire</li>
-    <li>oskarpotocki.vfe.medieval2</li>
-    <li>oskarpotocki.vfe.tribals</li>
     <li>pensdecor.theholyepicpenguin</li>
     <li>pensdecor.theholyepicpenguin</li>
     <li>prf.materials</li>
     <li>reel.expanded.storage</li>
-    <li>regrowth.botr.aspenforest</li>
-    <li>regrowth.botr.boilingforest</li>
-    <li>regrowth.botr.borealforestexpansion</li>
-    <li>regrowth.botr.swampexpansion</li>
-    <li>regrowth.botr.temperateforestexpansion</li>
-    <li>regrowth.botr.tropicalexpansion</li>
-    <li>regrowth.botr.tundraexpansion</li>
     <li>ricktmc.tmcweaponpack</li>
     <li>rimsenal.evp</li>
     <li>rudinov.commissionpla</li>
-    <li>sarg.alphamemes</li>
-    <li>solaris.furniturebase</li>
     <li>soulfulpumpkin.tabletoptrove</li>
     <li>spoonshortage.adogsaidanimalprosthetics</li>
     <li>spoonshortage.rimkea</li>
     <li>telkir.tmods.morefloors</li>
     <li>telkir.tmods.morefloors</li>
-    <li>torann.arimworldofmagic</li>
     <li>ucp.tabletopdecorations</li>
-    <li>vanillaexpanded.vaeaccessories</li>
-    <li>vanillaexpanded.vaeroy</li>
-    <li>vanillaexpanded.vanillaanimalsexpanded</li>
-    <li>vanillaexpanded.vbookse</li>
-    <li>vanillaexpanded.vbrewe</li>
-    <li>vanillaexpanded.vcooke</li>
-    <li>vanillaexpanded.vcookestews</li>
-    <li>vanillaexpanded.vfearchitect</li>
-    <li>vanillaexpanded.vfesecurity</li>
-    <li>vanillaexpanded.vmemese</li>
-    <li>vanillaexpanded.vpsycastse</li>
-    <li>vanillaexpanded.vwe</li>
-    <li>vanillaexpanded.vwetb</li>
     <li>wemd.expandedfloors</li>
     <li>xmb.ancienturbanruins.mo</li>
     <li>zal.fishprops</li>
-    <li>zvq.realisticplanetscontinued</li>
   </loadAfter>
 </ModMetaData>

@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Plant_TreeDrago"]/plant</xpath>
+    <value>
+      <harvestedThingDef>WoodLog_Drago</harvestedThingDef>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Plant_TreeWillow"]/plant</xpath>
+    <value>
+      <harvestedThingDef>WoodLog_Willow</harvestedThingDef>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Plant_TreeCypress"]/plant</xpath>
+    <value>
+      <harvestedThingDef>WoodLog_Cypress</harvestedThingDef>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Plant_TreeMaple"]/plant</xpath>
+    <value>
+      <harvestedThingDef>WoodLog_Maple</harvestedThingDef>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Plant_TreeOak"]/plant</xpath>
+    <value>
+      <harvestedThingDef>WoodLog_Oak</harvestedThingDef>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Plant_TreePoplar"]/plant</xpath>
+    <value>
+      <harvestedThingDef>WoodLog_Poplar</harvestedThingDef>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Plant_TreePine"]/plant</xpath>
+    <value>
+      <harvestedThingDef>WoodLog_Pine</harvestedThingDef>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Plant_TreeBirch"]/plant</xpath>
+    <value>
+      <harvestedThingDef>WoodLog_Birch</harvestedThingDef>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Plant_TreeTeak"]/plant</xpath>
+    <value>
+      <harvestedThingDef>WoodLog_Teak</harvestedThingDef>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Plant_TreeCecropia"]/plant</xpath>
+    <value>
+      <harvestedThingDef>WoodLog_Cecropia</harvestedThingDef>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="Plant_TreePalm"]/plant</xpath>
+    <value>
+      <harvestedThingDef>WoodLog_Palm</harvestedThingDef>
+    </value>
+  </Operation>
+</Patch>

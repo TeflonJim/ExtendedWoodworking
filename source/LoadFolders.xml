@@ -111,4 +111,48 @@
     <li IfModActive="zal.fishprops">Conditional/1.5/zal.fishprops</li>
     <li IfModActive="zvq.realisticplanetscontinued">Conditional/1.5/zvq.realisticplanetscontinued</li>
   </v1.5>
+  <v1.6>
+    <li>/</li>
+    <li>1.6</li>
+    <li>Conditional/1.6/_EW-Painted</li>
+    <li IfModActive="dismarzero.vgp.xtratreesandflowers">Conditional/1.6/_EW-WoodLog_Acacia</li>
+    <li>Conditional/1.6/_EW-WoodLog_Aspen</li>
+    <li IfModActive="dismarzero.vgp.xtratreesandflowers">Conditional/1.6/_EW-WoodLog_Camellia</li>
+    <li IfModActive="dismarzero.vgp.xtratreesandflowers">Conditional/1.6/_EW-WoodLog_CherryBlossom</li>
+    <li IfModActive="dismarzero.vgp.xtratreesandflowers">Conditional/1.6/_EW-WoodLog_JapaneseMaple</li>
+    <li IfModActive="dismarzero.vgp.xtratreesandflowers">Conditional/1.6/_EW-WoodLog_RedMaple</li>
+    <li IfModActive="aoba.tent">Conditional/1.6/aoba.tent</li>
+    <li IfModActive="cryptiklemur.cosmere.metals">Conditional/1.6/cryptiklemur.cosmere.metals</li>
+    <li IfModActive="dismarzero.vgp.vgpgardentools">Conditional/1.6/dismarzero.vgp.vgpgardentools</li>
+    <li IfModActive="dismarzero.vgp.vgpvegetablegarden">Conditional/1.6/dismarzero.vgp.vgpvegetablegarden</li>
+    <li IfModActive="dismarzero.vgp.xtratreesandflowers">Conditional/1.6/dismarzero.vgp.xtratreesandflowers</li>
+    <li IfModActive="dubwise.dubsbadhygiene">Conditional/1.6/dubwise.dubsbadhygiene</li>
+    <li IfModActive="fox.simplelearning">Conditional/1.6/fox.simplelearning</li>
+    <li IfModActive="harkon.other.garandwinchestercolt">Conditional/1.6/harkon.other.garandwinchestercolt</li>
+    <li IfModActive="harkon.other.rugermini">Conditional/1.6/harkon.other.rugermini</li>
+    <li IfModActive="harkon.rimatwar.ww1m97trenchgun">Conditional/1.6/harkon.rimatwar.ww1m97trenchgun</li>
+    <li IfModActive="harkon.rimatwar.ww1ww2frenchweapons">Conditional/1.6/harkon.rimatwar.ww1ww2frenchweapons</li>
+    <li IfModActive="harkon.rimatwar.ww2sovietsmgs">Conditional/1.6/harkon.rimatwar.ww2sovietsmgs</li>
+    <li IfModActive="jelly.caravangear">Conditional/1.6/jelly.caravangear</li>
+    <li IfModActive="klvlt.booksfrompaper">Conditional/1.6/klvlt.booksfrompaper</li>
+    <li IfModActive="limetreesnake.furnishing">Conditional/1.6/limetreesnake.furnishing</li>
+    <li IfModActive="ludeon.rimworld.ideology">Conditional/1.6/ludeon.rimworld.ideology</li>
+    <li IfModActive="ludeon.rimworld.royalty">Conditional/1.6/ludeon.rimworld.royalty</li>
+    <li IfModActive="mlie.coalexpanded">Conditional/1.6/mlie.coalexpanded</li>
+    <li IfModActive="mlie.roughbarricade">Conditional/1.6/mlie.roughbarricade</li>
+    <li IfModActive="mlie.westerado">Conditional/1.6/mlie.westerado</li>
+    <li IfModActive="pensdecor.theholyepicpenguin">Conditional/1.6/pensdecor.theholyepicpenguin</li>
+    <li IfModActive="prf.materials">Conditional/1.6/prf.materials</li>
+    <li IfModActive="ricktmc.tmcweaponpack">Conditional/1.6/ricktmc.tmcweaponpack</li>
+    <li IfModActive="rimsenal.evp">Conditional/1.6/rimsenal.evp</li>
+    <li IfModActive="rudinov.commissionpla">Conditional/1.6/rudinov.commissionpla</li>
+    <li IfModActive="soulfulpumpkin.tabletoptrove">Conditional/1.6/soulfulpumpkin.tabletoptrove</li>
+    <li IfModActive="spoonshortage.adogsaidanimalprosthetics">Conditional/1.6/spoonshortage.adogsaidanimalprosthetics</li>
+    <li IfModActive="spoonshortage.rimkea">Conditional/1.6/spoonshortage.rimkea</li>
+    <li IfModActive="telkir.tmods.morefloors">Conditional/1.6/telkir.tmods.morefloors</li>
+    <li IfModActive="ucp.tabletopdecorations">Conditional/1.6/ucp.tabletopdecorations</li>
+    <li IfModActive="wemd.expandedfloors">Conditional/1.6/wemd.expandedfloors</li>
+    <li IfModActive="xmb.ancienturbanruins.mo">Conditional/1.6/xmb.ancienturbanruins.mo</li>
+    <li IfModActive="zal.fishprops">Conditional/1.6/zal.fishprops</li>
+  </v1.6>
 </loadFolders>
