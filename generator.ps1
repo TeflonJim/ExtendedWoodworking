@@ -121,7 +121,9 @@ class ModBuildData {
     <#
         Defs which should be excluded because they are not compatible, or something goes wrong attempting to patch.
     #>
-    [string[]] $ExcludedDefs
+    [string[]] $ExcludedDefs = @(
+        'VFET_Stake'
+    )
 
     <#
         A regex generated from ExcludedDefs.

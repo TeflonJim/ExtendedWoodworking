@@ -10,11 +10,11 @@
     <renderPrecedence>250</renderPrecedence>
     <description>Rustic birch floorboards, finely polished and with splinters removed. Nice to look at but somewhat slow to build.</description>
     <texturePath>Terrain/Surfaces/WoodFloor1</texturePath>
+    <designatorDropdown>EW_Designator_FloorWoodRustic</designatorDropdown>
+    <color>(235,228,216)</color>
     <costList>
       <WoodLog_Birch>6</WoodLog_Birch>
     </costList>
-    <designatorDropdown>EW_Designator_FloorWoodRustic</designatorDropdown>
-    <color>(235,228,216)</color>
   </TerrainDef>
   <TerrainDef ParentName="TFloorBaseWood">
     <defName>FloorWoodRustic_Cecropia</defName>
@@ -26,11 +26,11 @@
     <renderPrecedence>250</renderPrecedence>
     <description>Rustic cecropia floorboards, finely polished and with splinters removed. Nice to look at but somewhat slow to build.</description>
     <texturePath>Terrain/Surfaces/WoodFloor1</texturePath>
+    <designatorDropdown>EW_Designator_FloorWoodRustic</designatorDropdown>
+    <color>(126,74,63)</color>
     <costList>
       <WoodLog_Cecropia>6</WoodLog_Cecropia>
     </costList>
-    <designatorDropdown>EW_Designator_FloorWoodRustic</designatorDropdown>
-    <color>(126,74,63)</color>
   </TerrainDef>
   <TerrainDef ParentName="TFloorBaseWood">
     <defName>FloorWoodRustic_Cypress</defName>
@@ -58,11 +58,11 @@
     <renderPrecedence>250</renderPrecedence>
     <description>Rustic drago floorboards, finely polished and with splinters removed. Nice to look at but somewhat slow to build.</description>
     <texturePath>Terrain/Surfaces/WoodFloor1</texturePath>
+    <designatorDropdown>EW_Designator_FloorWoodRustic</designatorDropdown>
+    <color>(171, 159, 142)</color>
     <costList>
       <WoodLog_Drago>6</WoodLog_Drago>
     </costList>
-    <designatorDropdown>EW_Designator_FloorWoodRustic</designatorDropdown>
-    <color>(171, 159, 142)</color>
   </TerrainDef>
   <TerrainDef ParentName="TFloorBaseWood">
     <defName>FloorWoodRustic_Maple</defName>
@@ -74,11 +74,11 @@
     <renderPrecedence>250</renderPrecedence>
     <description>Rustic maple floorboards, finely polished and with splinters removed. Nice to look at but somewhat slow to build.</description>
     <texturePath>Terrain/Surfaces/WoodFloor1</texturePath>
+    <designatorDropdown>EW_Designator_FloorWoodRustic</designatorDropdown>
+    <color>(236, 201, 163)</color>
     <costList>
       <WoodLog_Maple>6</WoodLog_Maple>
     </costList>
-    <designatorDropdown>EW_Designator_FloorWoodRustic</designatorDropdown>
-    <color>(236, 201, 163)</color>
   </TerrainDef>
   <TerrainDef ParentName="TFloorBaseWood">
     <defName>FloorWoodRustic_Oak</defName>
@@ -90,11 +90,11 @@
     <renderPrecedence>250</renderPrecedence>
     <description>Rustic oak floorboards, finely polished and with splinters removed. Nice to look at but somewhat slow to build.</description>
     <texturePath>Terrain/Surfaces/WoodFloor1</texturePath>
+    <designatorDropdown>EW_Designator_FloorWoodRustic</designatorDropdown>
+    <color>(185,142,96)</color>
     <costList>
       <WoodLog_Oak>6</WoodLog_Oak>
     </costList>
-    <designatorDropdown>EW_Designator_FloorWoodRustic</designatorDropdown>
-    <color>(185,142,96)</color>
   </TerrainDef>
   <TerrainDef ParentName="TFloorBaseWood">
     <defName>FloorWoodRustic_Palm</defName>
@@ -123,10 +123,10 @@
     <description>Rustic pine floorboards, finely polished and with splinters removed. Nice to look at but somewhat slow to build.</description>
     <texturePath>Terrain/Surfaces/WoodFloor1</texturePath>
     <designatorDropdown>EW_Designator_FloorWoodRustic</designatorDropdown>
-    <color>(198,146,68)</color>
     <costList>
       <WoodLog_Pine>6</WoodLog_Pine>
     </costList>
+    <color>(198,146,68)</color>
   </TerrainDef>
   <TerrainDef ParentName="TFloorBaseWood">
     <defName>FloorWoodRustic_Poplar</defName>
@@ -185,11 +185,11 @@
     <renderPrecedence>249</renderPrecedence>
     <description>Wide, plain-looking floorboards for that minimalistic feel. Easy to build.</description>
     <texturePath>Terrain/Surfaces/WoodFloor2</texturePath>
+    <designatorDropdown>EW_Designator_FloorWoodWide</designatorDropdown>
+    <color>(235,228,216)</color>
     <costList>
       <WoodLog_Birch>2</WoodLog_Birch>
     </costList>
-    <designatorDropdown>EW_Designator_FloorWoodWide</designatorDropdown>
-    <color>(235,228,216)</color>
   </TerrainDef>
   <TerrainDef ParentName="TFloorBaseWood">
     <defName>FloorWoodWide_Cecropia</defName>
@@ -200,11 +200,11 @@
     <renderPrecedence>249</renderPrecedence>
     <description>Wide, plain-looking floorboards for that minimalistic feel. Easy to build.</description>
     <texturePath>Terrain/Surfaces/WoodFloor2</texturePath>
+    <designatorDropdown>EW_Designator_FloorWoodWide</designatorDropdown>
+    <color>(126,74,63)</color>
     <costList>
       <WoodLog_Cecropia>2</WoodLog_Cecropia>
     </costList>
-    <designatorDropdown>EW_Designator_FloorWoodWide</designatorDropdown>
-    <color>(126,74,63)</color>
   </TerrainDef>
   <TerrainDef ParentName="TFloorBaseWood">
     <defName>FloorWoodWide_Cypress</defName>
@@ -230,11 +230,11 @@
     <renderPrecedence>249</renderPrecedence>
     <description>Wide, plain-looking floorboards for that minimalistic feel. Easy to build.</description>
     <texturePath>Terrain/Surfaces/WoodFloor2</texturePath>
+    <designatorDropdown>EW_Designator_FloorWoodWide</designatorDropdown>
+    <color>(171, 159, 142)</color>
     <costList>
       <WoodLog_Drago>2</WoodLog_Drago>
     </costList>
-    <designatorDropdown>EW_Designator_FloorWoodWide</designatorDropdown>
-    <color>(171, 159, 142)</color>
   </TerrainDef>
   <TerrainDef ParentName="TFloorBaseWood">
     <defName>FloorWoodWide_Maple</defName>
@@ -245,11 +245,11 @@
     <renderPrecedence>249</renderPrecedence>
     <description>Wide, plain-looking floorboards for that minimalistic feel. Easy to build.</description>
     <texturePath>Terrain/Surfaces/WoodFloor2</texturePath>
+    <designatorDropdown>EW_Designator_FloorWoodWide</designatorDropdown>
+    <color>(236, 201, 163)</color>
     <costList>
       <WoodLog_Maple>2</WoodLog_Maple>
     </costList>
-    <designatorDropdown>EW_Designator_FloorWoodWide</designatorDropdown>
-    <color>(236, 201, 163)</color>
   </TerrainDef>
   <TerrainDef ParentName="TFloorBaseWood">
     <defName>FloorWoodWide_Oak</defName>
@@ -260,11 +260,11 @@
     <renderPrecedence>249</renderPrecedence>
     <description>Wide, plain-looking floorboards for that minimalistic feel. Easy to build.</description>
     <texturePath>Terrain/Surfaces/WoodFloor2</texturePath>
+    <designatorDropdown>EW_Designator_FloorWoodWide</designatorDropdown>
+    <color>(185,142,96)</color>
     <costList>
       <WoodLog_Oak>2</WoodLog_Oak>
     </costList>
-    <designatorDropdown>EW_Designator_FloorWoodWide</designatorDropdown>
-    <color>(185,142,96)</color>
   </TerrainDef>
   <TerrainDef ParentName="TFloorBaseWood">
     <defName>FloorWoodWide_Palm</defName>
@@ -291,10 +291,10 @@
     <description>Wide, plain-looking floorboards for that minimalistic feel. Easy to build.</description>
     <texturePath>Terrain/Surfaces/WoodFloor2</texturePath>
     <designatorDropdown>EW_Designator_FloorWoodWide</designatorDropdown>
-    <color>(198,146,68)</color>
     <costList>
       <WoodLog_Pine>2</WoodLog_Pine>
     </costList>
+    <color>(198,146,68)</color>
   </TerrainDef>
   <TerrainDef ParentName="TFloorBaseWood">
     <defName>FloorWoodWide_Poplar</defName>
@@ -351,11 +351,11 @@
     <renderPrecedence>248</renderPrecedence>
     <description>Light-coloured polished birch floorboards in a pleasant interlocking pattern.</description>
     <texturePath>Terrain/Surfaces/WoodFloor3</texturePath>
+    <designatorDropdown>EW_Designator_FloorWoodLight</designatorDropdown>
+    <color>(235,228,216)</color>
     <costList>
       <WoodLog_Birch>5</WoodLog_Birch>
     </costList>
-    <designatorDropdown>EW_Designator_FloorWoodLight</designatorDropdown>
-    <color>(235,228,216)</color>
   </TerrainDef>
   <TerrainDef ParentName="TFloorBaseWood">
     <defName>FloorWoodLight_Cecropia</defName>
@@ -367,11 +367,11 @@
     <renderPrecedence>248</renderPrecedence>
     <description>Light-coloured polished cecropia floorboards in a pleasant interlocking pattern.</description>
     <texturePath>Terrain/Surfaces/WoodFloor3</texturePath>
+    <designatorDropdown>EW_Designator_FloorWoodLight</designatorDropdown>
+    <color>(126,74,63)</color>
     <costList>
       <WoodLog_Cecropia>5</WoodLog_Cecropia>
     </costList>
-    <designatorDropdown>EW_Designator_FloorWoodLight</designatorDropdown>
-    <color>(126,74,63)</color>
   </TerrainDef>
   <TerrainDef ParentName="TFloorBaseWood">
     <defName>FloorWoodLight_Cypress</defName>
@@ -399,11 +399,11 @@
     <renderPrecedence>248</renderPrecedence>
     <description>Light-coloured polished drago floorboards in a pleasant interlocking pattern.</description>
     <texturePath>Terrain/Surfaces/WoodFloor3</texturePath>
+    <designatorDropdown>EW_Designator_FloorWoodLight</designatorDropdown>
+    <color>(171, 159, 142)</color>
     <costList>
       <WoodLog_Drago>5</WoodLog_Drago>
     </costList>
-    <designatorDropdown>EW_Designator_FloorWoodLight</designatorDropdown>
-    <color>(171, 159, 142)</color>
   </TerrainDef>
   <TerrainDef ParentName="TFloorBaseWood">
     <defName>FloorWoodLight_Maple</defName>
@@ -415,11 +415,11 @@
     <renderPrecedence>248</renderPrecedence>
     <description>Light-coloured polished maple floorboards in a pleasant interlocking pattern.</description>
     <texturePath>Terrain/Surfaces/WoodFloor3</texturePath>
+    <designatorDropdown>EW_Designator_FloorWoodLight</designatorDropdown>
+    <color>(236, 201, 163)</color>
     <costList>
       <WoodLog_Maple>5</WoodLog_Maple>
     </costList>
-    <designatorDropdown>EW_Designator_FloorWoodLight</designatorDropdown>
-    <color>(236, 201, 163)</color>
   </TerrainDef>
   <TerrainDef ParentName="TFloorBaseWood">
     <defName>FloorWoodLight_Oak</defName>
@@ -431,11 +431,11 @@
     <renderPrecedence>248</renderPrecedence>
     <description>Light-coloured polished oak floorboards in a pleasant interlocking pattern.</description>
     <texturePath>Terrain/Surfaces/WoodFloor3</texturePath>
+    <designatorDropdown>EW_Designator_FloorWoodLight</designatorDropdown>
+    <color>(185,142,96)</color>
     <costList>
       <WoodLog_Oak>5</WoodLog_Oak>
     </costList>
-    <designatorDropdown>EW_Designator_FloorWoodLight</designatorDropdown>
-    <color>(185,142,96)</color>
   </TerrainDef>
   <TerrainDef ParentName="TFloorBaseWood">
     <defName>FloorWoodLight_Palm</defName>
@@ -464,10 +464,10 @@
     <description>Light-coloured polished pine floorboards in a pleasant interlocking pattern.</description>
     <texturePath>Terrain/Surfaces/WoodFloor3</texturePath>
     <designatorDropdown>EW_Designator_FloorWoodLight</designatorDropdown>
-    <color>(198,146,68)</color>
     <costList>
       <WoodLog_Pine>5</WoodLog_Pine>
     </costList>
+    <color>(198,146,68)</color>
   </TerrainDef>
   <TerrainDef ParentName="TFloorBaseWood">
     <defName>FloorWoodLight_Poplar</defName>
@@ -527,11 +527,11 @@
     <renderPrecedence>247</renderPrecedence>
     <description>A birch floor with planks laid in a mosaic-like pattern - beautiful, but needs a lot of birch and is time-consuming to build.</description>
     <texturePath>Terrain/Surfaces/WoodFloor4</texturePath>
+    <designatorDropdown>EW_Designator_FloorWoodMosaic</designatorDropdown>
+    <color>(235,228,216)</color>
     <costList>
       <WoodLog_Birch>9</WoodLog_Birch>
     </costList>
-    <designatorDropdown>EW_Designator_FloorWoodMosaic</designatorDropdown>
-    <color>(235,228,216)</color>
   </TerrainDef>
   <TerrainDef ParentName="TFloorBaseWood">
     <defName>FloorWoodMosaic_Cecropia</defName>
@@ -543,11 +543,11 @@
     <renderPrecedence>247</renderPrecedence>
     <description>A cecropia floor with planks laid in a mosaic-like pattern - beautiful, but needs a lot of cecropia and is time-consuming to build.</description>
     <texturePath>Terrain/Surfaces/WoodFloor4</texturePath>
+    <designatorDropdown>EW_Designator_FloorWoodMosaic</designatorDropdown>
+    <color>(126,74,63)</color>
     <costList>
       <WoodLog_Cecropia>9</WoodLog_Cecropia>
     </costList>
-    <designatorDropdown>EW_Designator_FloorWoodMosaic</designatorDropdown>
-    <color>(126,74,63)</color>
   </TerrainDef>
   <TerrainDef ParentName="TFloorBaseWood">
     <defName>FloorWoodMosaic_Cypress</defName>
@@ -575,11 +575,11 @@
     <renderPrecedence>247</renderPrecedence>
     <description>A drago floor with planks laid in a mosaic-like pattern - beautiful, but needs a lot of drago and is time-consuming to build.</description>
     <texturePath>Terrain/Surfaces/WoodFloor4</texturePath>
+    <designatorDropdown>EW_Designator_FloorWoodMosaic</designatorDropdown>
+    <color>(171, 159, 142)</color>
     <costList>
       <WoodLog_Drago>9</WoodLog_Drago>
     </costList>
-    <designatorDropdown>EW_Designator_FloorWoodMosaic</designatorDropdown>
-    <color>(171, 159, 142)</color>
   </TerrainDef>
   <TerrainDef ParentName="TFloorBaseWood">
     <defName>FloorWoodMosaic_Maple</defName>
@@ -591,11 +591,11 @@
     <renderPrecedence>247</renderPrecedence>
     <description>A maple floor with planks laid in a mosaic-like pattern - beautiful, but needs a lot of maple and is time-consuming to build.</description>
     <texturePath>Terrain/Surfaces/WoodFloor4</texturePath>
+    <designatorDropdown>EW_Designator_FloorWoodMosaic</designatorDropdown>
+    <color>(236, 201, 163)</color>
     <costList>
       <WoodLog_Maple>9</WoodLog_Maple>
     </costList>
-    <designatorDropdown>EW_Designator_FloorWoodMosaic</designatorDropdown>
-    <color>(236, 201, 163)</color>
   </TerrainDef>
   <TerrainDef ParentName="TFloorBaseWood">
     <defName>FloorWoodMosaic_Oak</defName>
@@ -607,11 +607,11 @@
     <renderPrecedence>247</renderPrecedence>
     <description>A oak floor with planks laid in a mosaic-like pattern - beautiful, but needs a lot of oak and is time-consuming to build.</description>
     <texturePath>Terrain/Surfaces/WoodFloor4</texturePath>
+    <designatorDropdown>EW_Designator_FloorWoodMosaic</designatorDropdown>
+    <color>(185,142,96)</color>
     <costList>
       <WoodLog_Oak>9</WoodLog_Oak>
     </costList>
-    <designatorDropdown>EW_Designator_FloorWoodMosaic</designatorDropdown>
-    <color>(185,142,96)</color>
   </TerrainDef>
   <TerrainDef ParentName="TFloorBaseWood">
     <defName>FloorWoodMosaic_Palm</defName>
@@ -640,10 +640,10 @@
     <description>A pine floor with planks laid in a mosaic-like pattern - beautiful, but needs a lot of pine and is time-consuming to build.</description>
     <texturePath>Terrain/Surfaces/WoodFloor4</texturePath>
     <designatorDropdown>EW_Designator_FloorWoodMosaic</designatorDropdown>
-    <color>(198,146,68)</color>
     <costList>
       <WoodLog_Pine>9</WoodLog_Pine>
     </costList>
+    <color>(198,146,68)</color>
   </TerrainDef>
   <TerrainDef ParentName="TFloorBaseWood">
     <defName>FloorWoodMosaic_Poplar</defName>
@@ -702,11 +702,11 @@
     <renderPrecedence>246</renderPrecedence>
     <description>Dark birch floorboards.</description>
     <texturePath>Terrain/Surfaces/WoodFloor5</texturePath>
+    <designatorDropdown>EW_Designator_FloorWoodVertical</designatorDropdown>
+    <color>(235,228,216)</color>
     <costList>
       <WoodLog_Birch>3</WoodLog_Birch>
     </costList>
-    <designatorDropdown>EW_Designator_FloorWoodVertical</designatorDropdown>
-    <color>(235,228,216)</color>
   </TerrainDef>
   <TerrainDef ParentName="TFloorBaseWood">
     <defName>FloorWoodVertical_Cecropia</defName>
@@ -717,11 +717,11 @@
     <renderPrecedence>246</renderPrecedence>
     <description>Dark cecropia floorboards.</description>
     <texturePath>Terrain/Surfaces/WoodFloor5</texturePath>
+    <designatorDropdown>EW_Designator_FloorWoodVertical</designatorDropdown>
+    <color>(126,74,63)</color>
     <costList>
       <WoodLog_Cecropia>3</WoodLog_Cecropia>
     </costList>
-    <designatorDropdown>EW_Designator_FloorWoodVertical</designatorDropdown>
-    <color>(126,74,63)</color>
   </TerrainDef>
   <TerrainDef ParentName="TFloorBaseWood">
     <defName>FloorWoodVertical_Cypress</defName>
@@ -747,11 +747,11 @@
     <renderPrecedence>246</renderPrecedence>
     <description>Dark drago floorboards.</description>
     <texturePath>Terrain/Surfaces/WoodFloor5</texturePath>
+    <designatorDropdown>EW_Designator_FloorWoodVertical</designatorDropdown>
+    <color>(171, 159, 142)</color>
     <costList>
       <WoodLog_Drago>3</WoodLog_Drago>
     </costList>
-    <designatorDropdown>EW_Designator_FloorWoodVertical</designatorDropdown>
-    <color>(171, 159, 142)</color>
   </TerrainDef>
   <TerrainDef ParentName="TFloorBaseWood">
     <defName>FloorWoodVertical_Maple</defName>
@@ -762,11 +762,11 @@
     <renderPrecedence>246</renderPrecedence>
     <description>Dark maple floorboards.</description>
     <texturePath>Terrain/Surfaces/WoodFloor5</texturePath>
+    <designatorDropdown>EW_Designator_FloorWoodVertical</designatorDropdown>
+    <color>(236, 201, 163)</color>
     <costList>
       <WoodLog_Maple>3</WoodLog_Maple>
     </costList>
-    <designatorDropdown>EW_Designator_FloorWoodVertical</designatorDropdown>
-    <color>(236, 201, 163)</color>
   </TerrainDef>
   <TerrainDef ParentName="TFloorBaseWood">
     <defName>FloorWoodVertical_Oak</defName>
@@ -777,11 +777,11 @@
     <renderPrecedence>246</renderPrecedence>
     <description>Dark oak floorboards.</description>
     <texturePath>Terrain/Surfaces/WoodFloor5</texturePath>
+    <designatorDropdown>EW_Designator_FloorWoodVertical</designatorDropdown>
+    <color>(185,142,96)</color>
     <costList>
       <WoodLog_Oak>3</WoodLog_Oak>
     </costList>
-    <designatorDropdown>EW_Designator_FloorWoodVertical</designatorDropdown>
-    <color>(185,142,96)</color>
   </TerrainDef>
   <TerrainDef ParentName="TFloorBaseWood">
     <defName>FloorWoodVertical_Palm</defName>
@@ -808,10 +808,10 @@
     <description>Dark pine floorboards.</description>
     <texturePath>Terrain/Surfaces/WoodFloor5</texturePath>
     <designatorDropdown>EW_Designator_FloorWoodVertical</designatorDropdown>
-    <color>(198,146,68)</color>
     <costList>
       <WoodLog_Pine>3</WoodLog_Pine>
     </costList>
+    <color>(198,146,68)</color>
   </TerrainDef>
   <TerrainDef ParentName="TFloorBaseWood">
     <defName>FloorWoodVertical_Poplar</defName>
@@ -868,11 +868,11 @@
     <renderPrecedence>245</renderPrecedence>
     <description>Rough barn board flooring. Quick to build.</description>
     <texturePath>Terrain/Surfaces/WoodFloor6</texturePath>
+    <designatorDropdown>EW_Designator_FloorWoodBarn</designatorDropdown>
+    <color>(235,228,216)</color>
     <costList>
       <WoodLog_Birch>2</WoodLog_Birch>
     </costList>
-    <designatorDropdown>EW_Designator_FloorWoodBarn</designatorDropdown>
-    <color>(235,228,216)</color>
   </TerrainDef>
   <TerrainDef ParentName="TFloorBaseWood">
     <defName>FloorWoodBarn_Cecropia</defName>
@@ -884,11 +884,11 @@
     <renderPrecedence>245</renderPrecedence>
     <description>Rough barn board flooring. Quick to build.</description>
     <texturePath>Terrain/Surfaces/WoodFloor6</texturePath>
+    <designatorDropdown>EW_Designator_FloorWoodBarn</designatorDropdown>
+    <color>(126,74,63)</color>
     <costList>
       <WoodLog_Cecropia>2</WoodLog_Cecropia>
     </costList>
-    <designatorDropdown>EW_Designator_FloorWoodBarn</designatorDropdown>
-    <color>(126,74,63)</color>
   </TerrainDef>
   <TerrainDef ParentName="TFloorBaseWood">
     <defName>FloorWoodBarn_Cypress</defName>
@@ -916,11 +916,11 @@
     <renderPrecedence>245</renderPrecedence>
     <description>Rough barn board flooring. Quick to build.</description>
     <texturePath>Terrain/Surfaces/WoodFloor6</texturePath>
+    <designatorDropdown>EW_Designator_FloorWoodBarn</designatorDropdown>
+    <color>(171, 159, 142)</color>
     <costList>
       <WoodLog_Drago>2</WoodLog_Drago>
     </costList>
-    <designatorDropdown>EW_Designator_FloorWoodBarn</designatorDropdown>
-    <color>(171, 159, 142)</color>
   </TerrainDef>
   <TerrainDef ParentName="TFloorBaseWood">
     <defName>FloorWoodBarn_Maple</defName>
@@ -932,11 +932,11 @@
     <renderPrecedence>245</renderPrecedence>
     <description>Rough barn board flooring. Quick to build.</description>
     <texturePath>Terrain/Surfaces/WoodFloor6</texturePath>
+    <designatorDropdown>EW_Designator_FloorWoodBarn</designatorDropdown>
+    <color>(236, 201, 163)</color>
     <costList>
       <WoodLog_Maple>2</WoodLog_Maple>
     </costList>
-    <designatorDropdown>EW_Designator_FloorWoodBarn</designatorDropdown>
-    <color>(236, 201, 163)</color>
   </TerrainDef>
   <TerrainDef ParentName="TFloorBaseWood">
     <defName>FloorWoodBarn_Oak</defName>
@@ -948,11 +948,11 @@
     <renderPrecedence>245</renderPrecedence>
     <description>Rough barn board flooring. Quick to build.</description>
     <texturePath>Terrain/Surfaces/WoodFloor6</texturePath>
+    <designatorDropdown>EW_Designator_FloorWoodBarn</designatorDropdown>
+    <color>(185,142,96)</color>
     <costList>
       <WoodLog_Oak>2</WoodLog_Oak>
     </costList>
-    <designatorDropdown>EW_Designator_FloorWoodBarn</designatorDropdown>
-    <color>(185,142,96)</color>
   </TerrainDef>
   <TerrainDef ParentName="TFloorBaseWood">
     <defName>FloorWoodBarn_Palm</defName>
@@ -981,10 +981,10 @@
     <description>Rough barn board flooring. Quick to build.</description>
     <texturePath>Terrain/Surfaces/WoodFloor6</texturePath>
     <designatorDropdown>EW_Designator_FloorWoodBarn</designatorDropdown>
-    <color>(198,146,68)</color>
     <costList>
       <WoodLog_Pine>2</WoodLog_Pine>
     </costList>
+    <color>(198,146,68)</color>
   </TerrainDef>
   <TerrainDef ParentName="TFloorBaseWood">
     <defName>FloorWoodBarn_Poplar</defName>

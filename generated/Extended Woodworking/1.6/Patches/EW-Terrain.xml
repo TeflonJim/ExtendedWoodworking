@@ -25,22 +25,23 @@
               <constructEffect>ConstructWood</constructEffect>
               <designationHotKey>Misc9</designationHotKey>
               <uiOrder>2000</uiOrder>
+              <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
               <costList>
                 <WoodLog_Acacia>3</WoodLog_Acacia>
               </costList>
-              <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
             </TerrainDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>Defs</xpath>
           <value>
-            <TerrainDef ParentName="BridgeBase">
+            <TerrainDef ParentName="BridgeBase" Name="Bridge">
               <defName>Bridge_Acacia</defName>
               <label>bridge</label>
               <description>A flat acacia surface on supportive beams which can be built over water. You can build light structures on bridges, but be careful - bridges are fragile. If a bridge falls, buildings on top of it fall as well.</description>
               <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
               <bridgePropsPath>Terrain/Misc/BridgeProps</bridgePropsPath>
+              <spaceBridgePropsPath>Terrain/Misc/BridgeSpaceProps</spaceBridgePropsPath>
               <color>(219, 184, 144)</color>
               <uiIconPath>Terrain/Surfaces/Bridge_MenuIcon</uiIconPath>
               <affordances>
@@ -53,10 +54,10 @@
               </statBases>
               <designationHotKey>Misc4</designationHotKey>
               <destroyOnBombDamageThreshold>35</destroyOnBombDamageThreshold>
+              <designatorDropdown>EW_Designator_Bridge</designatorDropdown>
               <costList>
                 <WoodLog_Acacia>12</WoodLog_Acacia>
               </costList>
-              <designatorDropdown>EW_Designator_Bridge</designatorDropdown>
             </TerrainDef>
           </value>
         </li>
@@ -98,12 +99,13 @@
         <li Class="PatchOperationAdd">
           <xpath>Defs</xpath>
           <value>
-            <TerrainDef ParentName="BridgeBase">
+            <TerrainDef ParentName="BridgeBase" Name="Bridge">
               <defName>Bridge_Aspen</defName>
               <label>bridge</label>
               <description>A flat acacia surface on supportive beams which can be built over water. You can build light structures on bridges, but be careful - bridges are fragile. If a bridge falls, buildings on top of it fall as well.</description>
               <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
               <bridgePropsPath>Terrain/Misc/BridgeProps</bridgePropsPath>
+              <spaceBridgePropsPath>Terrain/Misc/BridgeSpaceProps</spaceBridgePropsPath>
               <color>(228, 204, 171)</color>
               <uiIconPath>Terrain/Surfaces/Bridge_MenuIcon</uiIconPath>
               <affordances>
@@ -151,22 +153,23 @@
               <constructEffect>ConstructWood</constructEffect>
               <designationHotKey>Misc9</designationHotKey>
               <uiOrder>2000</uiOrder>
+              <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
               <costList>
                 <WoodLog_Camellia>3</WoodLog_Camellia>
               </costList>
-              <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
             </TerrainDef>
           </value>
         </li>
         <li Class="PatchOperationAdd">
           <xpath>Defs</xpath>
           <value>
-            <TerrainDef ParentName="BridgeBase">
+            <TerrainDef ParentName="BridgeBase" Name="Bridge">
               <defName>Bridge_Camellia</defName>
               <label>bridge</label>
               <description>A flat camellia surface on supportive beams which can be built over water. You can build light structures on bridges, but be careful - bridges are fragile. If a bridge falls, buildings on top of it fall as well.</description>
               <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
               <bridgePropsPath>Terrain/Misc/BridgeProps</bridgePropsPath>
+              <spaceBridgePropsPath>Terrain/Misc/BridgeSpaceProps</spaceBridgePropsPath>
               <color>(201, 160, 130)</color>
               <uiIconPath>Terrain/Surfaces/Bridge_MenuIcon</uiIconPath>
               <affordances>
@@ -179,10 +182,10 @@
               </statBases>
               <designationHotKey>Misc4</designationHotKey>
               <destroyOnBombDamageThreshold>35</destroyOnBombDamageThreshold>
+              <designatorDropdown>EW_Designator_Bridge</designatorDropdown>
               <costList>
                 <WoodLog_Camellia>12</WoodLog_Camellia>
               </costList>
-              <designatorDropdown>EW_Designator_Bridge</designatorDropdown>
             </TerrainDef>
           </value>
         </li>
@@ -224,12 +227,13 @@
         <li Class="PatchOperationAdd">
           <xpath>Defs</xpath>
           <value>
-            <TerrainDef ParentName="BridgeBase">
+            <TerrainDef ParentName="BridgeBase" Name="Bridge">
               <defName>Bridge_CherryBlossom</defName>
               <label>bridge</label>
               <description>A flat cherry blossom surface on supportive beams which can be built over water. You can build light structures on bridges, but be careful - bridges are fragile. If a bridge falls, buildings on top of it fall as well.</description>
               <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
               <bridgePropsPath>Terrain/Misc/BridgeProps</bridgePropsPath>
+              <spaceBridgePropsPath>Terrain/Misc/BridgeSpaceProps</spaceBridgePropsPath>
               <color>(165, 82, 40)</color>
               <uiIconPath>Terrain/Surfaces/Bridge_MenuIcon</uiIconPath>
               <affordances>
@@ -287,12 +291,13 @@
         <li Class="PatchOperationAdd">
           <xpath>Defs</xpath>
           <value>
-            <TerrainDef ParentName="BridgeBase">
+            <TerrainDef ParentName="BridgeBase" Name="Bridge">
               <defName>Bridge_JapaneseMaple</defName>
               <label>bridge</label>
               <description>A flat japanese maple surface on supportive beams which can be built over water. You can build light structures on bridges, but be careful - bridges are fragile. If a bridge falls, buildings on top of it fall as well.</description>
               <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
               <bridgePropsPath>Terrain/Misc/BridgeProps</bridgePropsPath>
+              <spaceBridgePropsPath>Terrain/Misc/BridgeSpaceProps</spaceBridgePropsPath>
               <color>(252, 170, 124)</color>
               <uiIconPath>Terrain/Surfaces/Bridge_MenuIcon</uiIconPath>
               <affordances>
@@ -350,12 +355,13 @@
         <li Class="PatchOperationAdd">
           <xpath>Defs</xpath>
           <value>
-            <TerrainDef ParentName="BridgeBase">
+            <TerrainDef ParentName="BridgeBase" Name="Bridge">
               <defName>Bridge_RedMaple</defName>
               <label>bridge</label>
               <description>A flat red maple surface on supportive beams which can be built over water. You can build light structures on bridges, but be careful - bridges are fragile. If a bridge falls, buildings on top of it fall as well.</description>
               <texturePath>Terrain/Surfaces/WoodFloor</texturePath>
               <bridgePropsPath>Terrain/Misc/BridgeProps</bridgePropsPath>
+              <spaceBridgePropsPath>Terrain/Misc/BridgeSpaceProps</spaceBridgePropsPath>
               <color>(222, 197, 167)</color>
               <uiIconPath>Terrain/Surfaces/Bridge_MenuIcon</uiIconPath>
               <affordances>
