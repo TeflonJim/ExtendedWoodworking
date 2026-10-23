@@ -209,4 +209,48 @@
     <li IfModActive="zal.fishprops">Conditional/1.6/zal.fishprops</li>
     <li IfModActive="zal.rimkea">Conditional/1.6/zal.rimkea</li>
   </v1.6>
+  <v1.7>
+    <li>/</li>
+    <li>1.7</li>
+    <li>Conditional/1.7/_EW-Painted</li>
+    <li>Conditional/1.7/_EW-WoodLog_Acacia</li>
+    <li>Conditional/1.7/_EW-WoodLog_Aspen</li>
+    <li>Conditional/1.7/_EW-WoodLog_Camellia</li>
+    <li>Conditional/1.7/_EW-WoodLog_CherryBlossom</li>
+    <li>Conditional/1.7/_EW-WoodLog_JapaneseMaple</li>
+    <li>Conditional/1.7/_EW-WoodLog_RedMaple</li>
+    <li IfModActive="argon.expandedmaterials.metals">Conditional/1.7/argon.expandedmaterials.metals</li>
+    <li IfModActive="cryptiklemur.cosmere.resources">Conditional/1.7/cryptiklemur.cosmere.resources</li>
+    <li IfModActive="dankpyon.medieval.overhaul">Conditional/1.7/dankpyon.medieval.overhaul</li>
+    <li IfModActive="dismarzero.vgp.vgpvegetablegarden">Conditional/1.7/dismarzero.vgp.vgpvegetablegarden</li>
+    <li IfModActive="dubwise.dubsbadhygiene">Conditional/1.7/dubwise.dubsbadhygiene</li>
+    <li IfModActive="fox.simplelearning">Conditional/1.7/fox.simplelearning</li>
+    <li IfModActive="gunmar.tribalwarriorset">Conditional/1.7/gunmar.tribalwarriorset</li>
+    <li IfModActive="iforgotmysocks.caravanadventures">Conditional/1.7/iforgotmysocks.caravanadventures</li>
+    <li IfModActive="jamaicancastle.rf.fertilefields">Conditional/1.7/jamaicancastle.rf.fertilefields</li>
+    <li IfModActive="jelly.caravangear">Conditional/1.7/jelly.caravangear</li>
+    <li IfModActive="jellycreative.isekaileveling">Conditional/1.7/jellycreative.isekaileveling</li>
+    <li IfModActive="klvlt.booksfrompaper">Conditional/1.7/klvlt.booksfrompaper</li>
+    <li IfModActive="ks.flooringfloors">Conditional/1.7/ks.flooringfloors</li>
+    <li IfModActive="lordfelix.fieldtents">Conditional/1.7/lordfelix.fieldtents</li>
+    <li IfModActive="ludeon.rimworld.ideology">Conditional/1.7/ludeon.rimworld.ideology</li>
+    <li IfModActive="ludeon.rimworld.royalty">Conditional/1.7/ludeon.rimworld.royalty</li>
+    <li IfModActive="meat.thezoneguitar">Conditional/1.7/meat.thezoneguitar</li>
+    <li IfModActive="mingtuwuxiang.fishingdecorative">Conditional/1.7/mingtuwuxiang.fishingdecorative</li>
+    <li IfModActive="mlie.coalexpanded">Conditional/1.7/mlie.coalexpanded</li>
+    <li IfModActive="mlie.roughbarricade">Conditional/1.7/mlie.roughbarricade</li>
+    <li IfModActive="oskarpotocki.vfe.empire">Conditional/1.7/oskarpotocki.vfe.empire</li>
+    <li IfModActive="poupun.guildfactionaddon">Conditional/1.7/poupun.guildfactionaddon</li>
+    <li IfModActive="ricktmc.tmcweaponpack">Conditional/1.7/ricktmc.tmcweaponpack</li>
+    <li IfModActive="rimsenal.evp">Conditional/1.7/rimsenal.evp</li>
+    <li IfModActive="sarg.alphagenes">Conditional/1.7/sarg.alphagenes</li>
+    <li IfModActive="soulfulpumpkin.tabletoptroveunofficial">Conditional/1.7/soulfulpumpkin.tabletoptroveunofficial</li>
+    <li IfModActive="telkir.tmods.morefloors">Conditional/1.7/telkir.tmods.morefloors</li>
+    <li IfModActive="ucp.tabletopdecorations">Conditional/1.7/ucp.tabletopdecorations</li>
+    <li IfModActive="ucp.walldecorations">Conditional/1.7/ucp.walldecorations</li>
+    <li IfModActive="vanillaexpanded.vpsycastse">Conditional/1.7/vanillaexpanded.vpsycastse</li>
+    <li IfModActive="vvenchov.vvnewharvest">Conditional/1.7/vvenchov.vvnewharvest</li>
+    <li IfModActive="wemd.expandedfloors">Conditional/1.7/wemd.expandedfloors</li>
+    <li IfModActive="zal.fishprops">Conditional/1.7/zal.fishprops</li>
+  </v1.7>
 </loadFolders>

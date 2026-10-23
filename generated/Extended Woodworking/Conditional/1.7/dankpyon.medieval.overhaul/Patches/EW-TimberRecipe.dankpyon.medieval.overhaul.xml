@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <RecipeDef ParentName="DankPyon_MakeTimberBase">
+      <defName>DankPyon_Make_TimberDark_Tribal</defName>
+      <label>make dark timber x2</label>
+      <description>Cuts raw wood into timber.</description>
+      <workAmount Inherit="False">120</workAmount>
+      <ingredients>
+        <li>
+          <filter>
+            <thingDefs>
+              <li>DankPyon_RawDarkWood</li>
+            </thingDefs>
+          </filter>
+          <count>1</count>
+        </li>
+      </ingredients>
+      <fixedIngredientFilter>
+        <thingDefs>
+          <li>DankPyon_RawDarkWood</li>
+        </thingDefs>
+      </fixedIngredientFilter>
+      <products>
+        <DankPyon_DarkWood>2</DankPyon_DarkWood>
+      </products>
+      <recipeUsers Inherit="false">
+        <li>CraftingSpot</li>
+      </recipeUsers>
+    </RecipeDef>
+  </Operation>
+</Patch>

@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="WoodLog_Acacia"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <TerrainDef>
+              <defName>SoilShip_Acacia</defName>
+              <label>artificial soil substrate</label>
+              <description>Synthetic soil laced with catalysts and micro-organisms, theoretically self-sustaining even aboard a starship.</description>
+              <layerable>true</layerable>
+              <texturePath>Terrain/Surfaces/Light_Tech_Soil</texturePath>
+              <edgeType>Hard</edgeType>
+              <renderPrecedence>340</renderPrecedence>
+              <pathCost>2</pathCost>
+              <statBases>
+                <Beauty>-1</Beauty>
+                <Cleanliness>-1</Cleanliness>
+              </statBases>
+              <tags>
+                <li>Ship</li>
+              </tags>
+              <affordances>
+                <li>Light</li>
+                <li>Medium</li>
+                <li>Heavy</li>
+                <li>GrowSoil</li>
+                <li>Diggable</li>
+              </affordances>
+              <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+              <generatedFilth>Filth_Dirt</generatedFilth>
+              <fertility>1.0</fertility>
+              <takeFootprints>True</takeFootprints>
+              <tools>
+                <li>
+                  <label>dirt</label>
+                  <capacities>
+                    <li>KickMaterialInEyes</li>
+                  </capacities>
+                  <hediff>DirtInEyes</hediff>
+                  <cooldownTime>1.5</cooldownTime>
+                </li>
+              </tools>
+              <filthAcceptanceMask>
+                <li>Unnatural</li>
+              </filthAcceptanceMask>
+              <researchPrerequisites>
+                <li>ShipBasics</li>
+              </researchPrerequisites>
+              <designationCategory>Floors</designationCategory>
+              <designatorDropdown>EW_Designator_SoilShip</designatorDropdown>
+              <costList>
+                <WoodLog_Acacia>1</WoodLog_Acacia>
+              </costList>
+              <color>(219, 184, 144)</color>
+            </TerrainDef>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="WoodLog_Aspen"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <TerrainDef>
+              <defName>SoilShip_Aspen</defName>
+              <label>artificial soil substrate</label>
+              <description>Synthetic soil laced with catalysts and micro-organisms, theoretically self-sustaining even aboard a starship.</description>
+              <layerable>true</layerable>
+              <texturePath>Terrain/Surfaces/Light_Tech_Soil</texturePath>
+              <edgeType>Hard</edgeType>
+              <renderPrecedence>340</renderPrecedence>
+              <pathCost>2</pathCost>
+              <statBases>
+                <Beauty>-1</Beauty>
+                <Cleanliness>-1</Cleanliness>
+              </statBases>
+              <tags>
+                <li>Ship</li>
+              </tags>
+              <affordances>
+                <li>Light</li>
+                <li>Medium</li>
+                <li>Heavy</li>
+                <li>GrowSoil</li>
+                <li>Diggable</li>
+              </affordances>
+              <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+              <generatedFilth>Filth_Dirt</generatedFilth>
+              <fertility>1.0</fertility>
+              <takeFootprints>True</takeFootprints>
+              <tools>
+                <li>
+                  <label>dirt</label>
+                  <capacities>
+                    <li>KickMaterialInEyes</li>
+                  </capacities>
+                  <hediff>DirtInEyes</hediff>
+                  <cooldownTime>1.5</cooldownTime>
+                </li>
+              </tools>
+              <filthAcceptanceMask>
+                <li>Unnatural</li>
+              </filthAcceptanceMask>
+              <researchPrerequisites>
+                <li>ShipBasics</li>
+              </researchPrerequisites>
+              <designationCategory>Floors</designationCategory>
+              <designatorDropdown>EW_Designator_SoilShip</designatorDropdown>
+              <color>(228, 204, 171)</color>
+              <costList>
+                <WoodLog_Aspen>1</WoodLog_Aspen>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="WoodLog_Camellia"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <TerrainDef>
+              <defName>SoilShip_Camellia</defName>
+              <label>artificial soil substrate</label>
+              <description>Synthetic soil laced with catalysts and micro-organisms, theoretically self-sustaining even aboard a starship.</description>
+              <layerable>true</layerable>
+              <texturePath>Terrain/Surfaces/Light_Tech_Soil</texturePath>
+              <edgeType>Hard</edgeType>
+              <renderPrecedence>340</renderPrecedence>
+              <pathCost>2</pathCost>
+              <statBases>
+                <Beauty>-1</Beauty>
+                <Cleanliness>-1</Cleanliness>
+              </statBases>
+              <tags>
+                <li>Ship</li>
+              </tags>
+              <affordances>
+                <li>Light</li>
+                <li>Medium</li>
+                <li>Heavy</li>
+                <li>GrowSoil</li>
+                <li>Diggable</li>
+              </affordances>
+              <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+              <generatedFilth>Filth_Dirt</generatedFilth>
+              <fertility>1.0</fertility>
+              <takeFootprints>True</takeFootprints>
+              <tools>
+                <li>
+                  <label>dirt</label>
+                  <capacities>
+                    <li>KickMaterialInEyes</li>
+                  </capacities>
+                  <hediff>DirtInEyes</hediff>
+                  <cooldownTime>1.5</cooldownTime>
+                </li>
+              </tools>
+              <filthAcceptanceMask>
+                <li>Unnatural</li>
+              </filthAcceptanceMask>
+              <researchPrerequisites>
+                <li>ShipBasics</li>
+              </researchPrerequisites>
+              <designationCategory>Floors</designationCategory>
+              <designatorDropdown>EW_Designator_SoilShip</designatorDropdown>
+              <color>(201, 160, 130)</color>
+              <costList>
+                <WoodLog_Camellia>1</WoodLog_Camellia>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="WoodLog_CherryBlossom"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <TerrainDef>
+              <defName>SoilShip_CherryBlossom</defName>
+              <label>artificial soil substrate</label>
+              <description>Synthetic soil laced with catalysts and micro-organisms, theoretically self-sustaining even aboard a starship.</description>
+              <layerable>true</layerable>
+              <texturePath>Terrain/Surfaces/Light_Tech_Soil</texturePath>
+              <edgeType>Hard</edgeType>
+              <renderPrecedence>340</renderPrecedence>
+              <pathCost>2</pathCost>
+              <statBases>
+                <Beauty>-1</Beauty>
+                <Cleanliness>-1</Cleanliness>
+              </statBases>
+              <tags>
+                <li>Ship</li>
+              </tags>
+              <affordances>
+                <li>Light</li>
+                <li>Medium</li>
+                <li>Heavy</li>
+                <li>GrowSoil</li>
+                <li>Diggable</li>
+              </affordances>
+              <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+              <generatedFilth>Filth_Dirt</generatedFilth>
+              <fertility>1.0</fertility>
+              <takeFootprints>True</takeFootprints>
+              <tools>
+                <li>
+                  <label>dirt</label>
+                  <capacities>
+                    <li>KickMaterialInEyes</li>
+                  </capacities>
+                  <hediff>DirtInEyes</hediff>
+                  <cooldownTime>1.5</cooldownTime>
+                </li>
+              </tools>
+              <filthAcceptanceMask>
+                <li>Unnatural</li>
+              </filthAcceptanceMask>
+              <researchPrerequisites>
+                <li>ShipBasics</li>
+              </researchPrerequisites>
+              <designationCategory>Floors</designationCategory>
+              <costList>
+                <WoodLog_CherryBlossom>1</WoodLog_CherryBlossom>
+              </costList>
+              <designatorDropdown>EW_Designator_SoilShip</designatorDropdown>
+              <color>(165, 82, 40)</color>
+            </TerrainDef>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="WoodLog_JapaneseMaple"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <TerrainDef>
+              <defName>SoilShip_JapaneseMaple</defName>
+              <label>artificial soil substrate</label>
+              <description>Synthetic soil laced with catalysts and micro-organisms, theoretically self-sustaining even aboard a starship.</description>
+              <layerable>true</layerable>
+              <texturePath>Terrain/Surfaces/Light_Tech_Soil</texturePath>
+              <edgeType>Hard</edgeType>
+              <renderPrecedence>340</renderPrecedence>
+              <pathCost>2</pathCost>
+              <statBases>
+                <Beauty>-1</Beauty>
+                <Cleanliness>-1</Cleanliness>
+              </statBases>
+              <tags>
+                <li>Ship</li>
+              </tags>
+              <affordances>
+                <li>Light</li>
+                <li>Medium</li>
+                <li>Heavy</li>
+                <li>GrowSoil</li>
+                <li>Diggable</li>
+              </affordances>
+              <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+              <generatedFilth>Filth_Dirt</generatedFilth>
+              <fertility>1.0</fertility>
+              <takeFootprints>True</takeFootprints>
+              <tools>
+                <li>
+                  <label>dirt</label>
+                  <capacities>
+                    <li>KickMaterialInEyes</li>
+                  </capacities>
+                  <hediff>DirtInEyes</hediff>
+                  <cooldownTime>1.5</cooldownTime>
+                </li>
+              </tools>
+              <filthAcceptanceMask>
+                <li>Unnatural</li>
+              </filthAcceptanceMask>
+              <researchPrerequisites>
+                <li>ShipBasics</li>
+              </researchPrerequisites>
+              <designationCategory>Floors</designationCategory>
+              <designatorDropdown>EW_Designator_SoilShip</designatorDropdown>
+              <color>(252, 170, 124)</color>
+              <costList>
+                <WoodLog_JapaneseMaple>1</WoodLog_JapaneseMaple>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="WoodLog_RedMaple"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <TerrainDef>
+              <defName>SoilShip_RedMaple</defName>
+              <label>artificial soil substrate</label>
+              <description>Synthetic soil laced with catalysts and micro-organisms, theoretically self-sustaining even aboard a starship.</description>
+              <layerable>true</layerable>
+              <texturePath>Terrain/Surfaces/Light_Tech_Soil</texturePath>
+              <edgeType>Hard</edgeType>
+              <renderPrecedence>340</renderPrecedence>
+              <pathCost>2</pathCost>
+              <statBases>
+                <Beauty>-1</Beauty>
+                <Cleanliness>-1</Cleanliness>
+              </statBases>
+              <tags>
+                <li>Ship</li>
+              </tags>
+              <affordances>
+                <li>Light</li>
+                <li>Medium</li>
+                <li>Heavy</li>
+                <li>GrowSoil</li>
+                <li>Diggable</li>
+              </affordances>
+              <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+              <generatedFilth>Filth_Dirt</generatedFilth>
+              <fertility>1.0</fertility>
+              <takeFootprints>True</takeFootprints>
+              <tools>
+                <li>
+                  <label>dirt</label>
+                  <capacities>
+                    <li>KickMaterialInEyes</li>
+                  </capacities>
+                  <hediff>DirtInEyes</hediff>
+                  <cooldownTime>1.5</cooldownTime>
+                </li>
+              </tools>
+              <filthAcceptanceMask>
+                <li>Unnatural</li>
+              </filthAcceptanceMask>
+              <researchPrerequisites>
+                <li>ShipBasics</li>
+              </researchPrerequisites>
+              <designationCategory>Floors</designationCategory>
+              <designatorDropdown>EW_Designator_SoilShip</designatorDropdown>
+              <costList>
+                <WoodLog_RedMaple>1</WoodLog_RedMaple>
+              </costList>
+              <color>(222, 197, 167)</color>
+            </TerrainDef>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

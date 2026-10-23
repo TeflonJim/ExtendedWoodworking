@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="WoodLog_Acacia"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <TerrainDef ParentName="ksWoodParquetBase">
+              <defName>KS_WoodDiamond_Acacia</defName>
+              <label>diamond parquet</label>
+              <description>Parquet floor laid in an exquisite diamond pattern, for expressing economic status. Takes a long time to lay but is very beautiful.</description>
+              <texturePath>Terrain/Surfaces/Wood/ksWoodDiamond</texturePath>
+              <uiIconPath>Icons/Wood/ksWoodDiamond</uiIconPath>
+              <statBases>
+                <WorkToBuild>1800</WorkToBuild>
+                <Beauty>3</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Acacia>15</WoodLog_Acacia>
+              </costList>
+              <color>(219, 184, 144)</color>
+              <designatorDropdown>EW_Designator_KS_WoodDiamond</designatorDropdown>
+            </TerrainDef>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="WoodLog_Aspen"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <TerrainDef ParentName="ksWoodParquetBase">
+              <defName>KS_WoodDiamond_Aspen</defName>
+              <label>diamond parquet</label>
+              <description>Parquet floor laid in an exquisite diamond pattern, for expressing economic status. Takes a long time to lay but is very beautiful.</description>
+              <texturePath>Terrain/Surfaces/Wood/ksWoodDiamond</texturePath>
+              <uiIconPath>Icons/Wood/ksWoodDiamond</uiIconPath>
+              <statBases>
+                <WorkToBuild>1800</WorkToBuild>
+                <Beauty>3</Beauty>
+              </statBases>
+              <color>(228, 204, 171)</color>
+              <costList>
+                <WoodLog_Aspen>15</WoodLog_Aspen>
+              </costList>
+              <designatorDropdown>EW_Designator_KS_WoodDiamond</designatorDropdown>
+            </TerrainDef>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="WoodLog_Camellia"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <TerrainDef ParentName="ksWoodParquetBase">
+              <defName>KS_WoodDiamond_Camellia</defName>
+              <label>diamond parquet</label>
+              <description>Parquet floor laid in an exquisite diamond pattern, for expressing economic status. Takes a long time to lay but is very beautiful.</description>
+              <texturePath>Terrain/Surfaces/Wood/ksWoodDiamond</texturePath>
+              <uiIconPath>Icons/Wood/ksWoodDiamond</uiIconPath>
+              <statBases>
+                <WorkToBuild>1800</WorkToBuild>
+                <Beauty>3</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_Camellia>15</WoodLog_Camellia>
+              </costList>
+              <color>(201, 160, 130)</color>
+              <designatorDropdown>EW_Designator_KS_WoodDiamond</designatorDropdown>
+            </TerrainDef>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="WoodLog_CherryBlossom"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <TerrainDef ParentName="ksWoodParquetBase">
+              <defName>KS_WoodDiamond_CherryBlossom</defName>
+              <label>diamond parquet</label>
+              <description>Parquet floor laid in an exquisite diamond pattern, for expressing economic status. Takes a long time to lay but is very beautiful.</description>
+              <texturePath>Terrain/Surfaces/Wood/ksWoodDiamond</texturePath>
+              <uiIconPath>Icons/Wood/ksWoodDiamond</uiIconPath>
+              <statBases>
+                <WorkToBuild>1800</WorkToBuild>
+                <Beauty>3</Beauty>
+              </statBases>
+              <color>(165, 82, 40)</color>
+              <costList>
+                <WoodLog_CherryBlossom>15</WoodLog_CherryBlossom>
+              </costList>
+              <designatorDropdown>EW_Designator_KS_WoodDiamond</designatorDropdown>
+            </TerrainDef>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="WoodLog_JapaneseMaple"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <TerrainDef ParentName="ksWoodParquetBase">
+              <defName>KS_WoodDiamond_JapaneseMaple</defName>
+              <label>diamond parquet</label>
+              <description>Parquet floor laid in an exquisite diamond pattern, for expressing economic status. Takes a long time to lay but is very beautiful.</description>
+              <texturePath>Terrain/Surfaces/Wood/ksWoodDiamond</texturePath>
+              <uiIconPath>Icons/Wood/ksWoodDiamond</uiIconPath>
+              <statBases>
+                <WorkToBuild>1800</WorkToBuild>
+                <Beauty>3</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_JapaneseMaple>15</WoodLog_JapaneseMaple>
+              </costList>
+              <color>(252, 170, 124)</color>
+              <designatorDropdown>EW_Designator_KS_WoodDiamond</designatorDropdown>
+            </TerrainDef>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="WoodLog_RedMaple"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <TerrainDef ParentName="ksWoodParquetBase">
+              <defName>KS_WoodDiamond_RedMaple</defName>
+              <label>diamond parquet</label>
+              <description>Parquet floor laid in an exquisite diamond pattern, for expressing economic status. Takes a long time to lay but is very beautiful.</description>
+              <texturePath>Terrain/Surfaces/Wood/ksWoodDiamond</texturePath>
+              <uiIconPath>Icons/Wood/ksWoodDiamond</uiIconPath>
+              <statBases>
+                <WorkToBuild>1800</WorkToBuild>
+                <Beauty>3</Beauty>
+              </statBases>
+              <costList>
+                <WoodLog_RedMaple>15</WoodLog_RedMaple>
+              </costList>
+              <color>(222, 197, 167)</color>
+              <designatorDropdown>EW_Designator_KS_WoodDiamond</designatorDropdown>
+            </TerrainDef>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>
