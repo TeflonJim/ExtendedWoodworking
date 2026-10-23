@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <DesignatorDropdownGroupDef>
+    <defName>EW_Designator_WoodPlankFloor</defName>
+  </DesignatorDropdownGroupDef>
+  <DesignatorDropdownGroupDef>
+    <defName>EW_Designator_Bridge</defName>
+  </DesignatorDropdownGroupDef>
+</Defs>
