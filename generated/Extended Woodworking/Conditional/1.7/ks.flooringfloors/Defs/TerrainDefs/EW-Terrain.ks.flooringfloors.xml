@@ -10,11 +10,11 @@
       <WorkToBuild>1800</WorkToBuild>
       <Beauty>3</Beauty>
     </statBases>
-    <designatorDropdown>EW_Designator_KS_WoodDiamond</designatorDropdown>
-    <color>(235,228,216)</color>
     <costList>
       <WoodLog_Birch>15</WoodLog_Birch>
     </costList>
+    <color>(235,228,216)</color>
+    <designatorDropdown>EW_Designator_KS_WoodDiamond</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="ksWoodParquetBase">
     <defName>KS_WoodDiamond_Cecropia</defName>
@@ -26,11 +26,11 @@
       <WorkToBuild>1800</WorkToBuild>
       <Beauty>3</Beauty>
     </statBases>
-    <designatorDropdown>EW_Designator_KS_WoodDiamond</designatorDropdown>
     <color>(126,74,63)</color>
     <costList>
       <WoodLog_Cecropia>15</WoodLog_Cecropia>
     </costList>
+    <designatorDropdown>EW_Designator_KS_WoodDiamond</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="ksWoodParquetBase">
     <defName>KS_WoodDiamond_Cypress</defName>
@@ -42,11 +42,11 @@
       <WorkToBuild>1800</WorkToBuild>
       <Beauty>3</Beauty>
     </statBases>
-    <designatorDropdown>EW_Designator_KS_WoodDiamond</designatorDropdown>
     <costList>
       <WoodLog_Cypress>15</WoodLog_Cypress>
     </costList>
     <color>(239, 217, 184)</color>
+    <designatorDropdown>EW_Designator_KS_WoodDiamond</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="ksWoodParquetBase">
     <defName>KS_WoodDiamond_Drago</defName>
@@ -58,11 +58,11 @@
       <WorkToBuild>1800</WorkToBuild>
       <Beauty>3</Beauty>
     </statBases>
-    <designatorDropdown>EW_Designator_KS_WoodDiamond</designatorDropdown>
-    <color>(171, 159, 142)</color>
     <costList>
       <WoodLog_Drago>15</WoodLog_Drago>
     </costList>
+    <color>(171, 159, 142)</color>
+    <designatorDropdown>EW_Designator_KS_WoodDiamond</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="ksWoodParquetBase">
     <defName>KS_WoodDiamond_Maple</defName>
@@ -74,11 +74,11 @@
       <WorkToBuild>1800</WorkToBuild>
       <Beauty>3</Beauty>
     </statBases>
-    <designatorDropdown>EW_Designator_KS_WoodDiamond</designatorDropdown>
-    <color>(236, 201, 163)</color>
     <costList>
       <WoodLog_Maple>15</WoodLog_Maple>
     </costList>
+    <color>(236, 201, 163)</color>
+    <designatorDropdown>EW_Designator_KS_WoodDiamond</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="ksWoodParquetBase">
     <defName>KS_WoodDiamond_Oak</defName>
@@ -90,8 +90,8 @@
       <WorkToBuild>1800</WorkToBuild>
       <Beauty>3</Beauty>
     </statBases>
-    <designatorDropdown>EW_Designator_KS_WoodDiamond</designatorDropdown>
     <color>(185,142,96)</color>
+    <designatorDropdown>EW_Designator_KS_WoodDiamond</designatorDropdown>
     <costList>
       <WoodLog_Oak>15</WoodLog_Oak>
     </costList>
@@ -109,8 +109,8 @@
     <costList>
       <WoodLog_Palm>15</WoodLog_Palm>
     </costList>
-    <designatorDropdown>EW_Designator_KS_WoodDiamond</designatorDropdown>
     <color>(224, 150, 87)</color>
+    <designatorDropdown>EW_Designator_KS_WoodDiamond</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="ksWoodParquetBase">
     <defName>KS_WoodDiamond_Pine</defName>
@@ -122,11 +122,11 @@
       <WorkToBuild>1800</WorkToBuild>
       <Beauty>3</Beauty>
     </statBases>
+    <color>(198,146,68)</color>
     <designatorDropdown>EW_Designator_KS_WoodDiamond</designatorDropdown>
     <costList>
       <WoodLog_Pine>15</WoodLog_Pine>
     </costList>
-    <color>(198,146,68)</color>
   </TerrainDef>
   <TerrainDef ParentName="ksWoodParquetBase">
     <defName>KS_WoodDiamond_Poplar</defName>
@@ -141,8 +141,8 @@
     <costList>
       <WoodLog_Poplar>15</WoodLog_Poplar>
     </costList>
-    <designatorDropdown>EW_Designator_KS_WoodDiamond</designatorDropdown>
     <color>(184,156,108)</color>
+    <designatorDropdown>EW_Designator_KS_WoodDiamond</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="ksWoodParquetBase">
     <defName>KS_WoodDiamond_Teak</defName>
@@ -154,8 +154,8 @@
       <WorkToBuild>1800</WorkToBuild>
       <Beauty>3</Beauty>
     </statBases>
-    <designatorDropdown>EW_Designator_KS_WoodDiamond</designatorDropdown>
     <color>(154,102,59)</color>
+    <designatorDropdown>EW_Designator_KS_WoodDiamond</designatorDropdown>
     <costList>
       <WoodLog_Teak>15</WoodLog_Teak>
     </costList>
@@ -170,10 +170,10 @@
       <WorkToBuild>1800</WorkToBuild>
       <Beauty>3</Beauty>
     </statBases>
+    <color>(221, 186, 141)</color>
     <designatorDropdown>EW_Designator_KS_WoodDiamond</designatorDropdown>
     <costList>
       <WoodLog_Willow>15</WoodLog_Willow>
     </costList>
-    <color>(221, 186, 141)</color>
   </TerrainDef>
 </Defs>

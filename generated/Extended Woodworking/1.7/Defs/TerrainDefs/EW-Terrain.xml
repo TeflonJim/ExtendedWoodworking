@@ -18,10 +18,10 @@
     <constructEffect>ConstructWood</constructEffect>
     <designationHotKey>Misc9</designationHotKey>
     <uiOrder>2000</uiOrder>
-    <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
     <costList>
       <WoodLog_Birch>3</WoodLog_Birch>
     </costList>
+    <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>WoodPlankFloor_Cecropia</defName>
@@ -41,10 +41,10 @@
     <constructEffect>ConstructWood</constructEffect>
     <designationHotKey>Misc9</designationHotKey>
     <uiOrder>2000</uiOrder>
-    <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
     <costList>
       <WoodLog_Cecropia>3</WoodLog_Cecropia>
     </costList>
+    <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>WoodPlankFloor_Cypress</defName>
@@ -64,10 +64,10 @@
     <constructEffect>ConstructWood</constructEffect>
     <designationHotKey>Misc9</designationHotKey>
     <uiOrder>2000</uiOrder>
-    <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
     <costList>
       <WoodLog_Cypress>3</WoodLog_Cypress>
     </costList>
+    <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>WoodPlankFloor_Drago</defName>
@@ -87,10 +87,10 @@
     <constructEffect>ConstructWood</constructEffect>
     <designationHotKey>Misc9</designationHotKey>
     <uiOrder>2000</uiOrder>
-    <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
     <costList>
       <WoodLog_Drago>3</WoodLog_Drago>
     </costList>
+    <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>WoodPlankFloor_Maple</defName>
@@ -110,10 +110,10 @@
     <constructEffect>ConstructWood</constructEffect>
     <designationHotKey>Misc9</designationHotKey>
     <uiOrder>2000</uiOrder>
-    <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
     <costList>
       <WoodLog_Maple>3</WoodLog_Maple>
     </costList>
+    <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>WoodPlankFloor_Oak</defName>
@@ -253,7 +253,7 @@
       <WoodLog_Willow>3</WoodLog_Willow>
     </costList>
   </TerrainDef>
-  <TerrainDef ParentName="BridgeBase" Name="Bridge">
+  <TerrainDef ParentName="BridgeBase" Name="Bridge_Birch">
     <defName>Bridge_Birch</defName>
     <label>birch bridge</label>
     <description>A flat birch surface on supportive beams which can be built over water. You can build light structures on bridges, but be careful - bridges are fragile. If a bridge falls, buildings on top of it fall as well.</description>
@@ -272,12 +272,12 @@
     </statBases>
     <designationHotKey>Misc4</designationHotKey>
     <destroyOnBombDamageThreshold>35</destroyOnBombDamageThreshold>
-    <designatorDropdown>EW_Designator_Bridge</designatorDropdown>
     <costList>
       <WoodLog_Birch>12</WoodLog_Birch>
     </costList>
+    <designatorDropdown>EW_Designator_Bridge</designatorDropdown>
   </TerrainDef>
-  <TerrainDef ParentName="BridgeBase" Name="Bridge">
+  <TerrainDef ParentName="BridgeBase" Name="Bridge_Cecropia">
     <defName>Bridge_Cecropia</defName>
     <label>cecropia bridge</label>
     <description>A flat cecropia surface on supportive beams which can be built over water. You can build light structures on bridges, but be careful - bridges are fragile. If a bridge falls, buildings on top of it fall as well.</description>
@@ -296,12 +296,12 @@
     </statBases>
     <designationHotKey>Misc4</designationHotKey>
     <destroyOnBombDamageThreshold>35</destroyOnBombDamageThreshold>
-    <designatorDropdown>EW_Designator_Bridge</designatorDropdown>
     <costList>
       <WoodLog_Cecropia>12</WoodLog_Cecropia>
     </costList>
+    <designatorDropdown>EW_Designator_Bridge</designatorDropdown>
   </TerrainDef>
-  <TerrainDef ParentName="BridgeBase" Name="Bridge">
+  <TerrainDef ParentName="BridgeBase" Name="Bridge_Cypress">
     <defName>Bridge_Cypress</defName>
     <label>cypress bridge</label>
     <description>A flat cypress surface on supportive beams which can be built over water. You can build light structures on bridges, but be careful - bridges are fragile. If a bridge falls, buildings on top of it fall as well.</description>
@@ -320,12 +320,12 @@
     </statBases>
     <designationHotKey>Misc4</designationHotKey>
     <destroyOnBombDamageThreshold>35</destroyOnBombDamageThreshold>
-    <designatorDropdown>EW_Designator_Bridge</designatorDropdown>
     <costList>
       <WoodLog_Cypress>12</WoodLog_Cypress>
     </costList>
+    <designatorDropdown>EW_Designator_Bridge</designatorDropdown>
   </TerrainDef>
-  <TerrainDef ParentName="BridgeBase" Name="Bridge">
+  <TerrainDef ParentName="BridgeBase" Name="Bridge_Drago">
     <defName>Bridge_Drago</defName>
     <label>drago bridge</label>
     <description>A flat drago surface on supportive beams which can be built over water. You can build light structures on bridges, but be careful - bridges are fragile. If a bridge falls, buildings on top of it fall as well.</description>
@@ -344,12 +344,12 @@
     </statBases>
     <designationHotKey>Misc4</designationHotKey>
     <destroyOnBombDamageThreshold>35</destroyOnBombDamageThreshold>
-    <designatorDropdown>EW_Designator_Bridge</designatorDropdown>
     <costList>
       <WoodLog_Drago>12</WoodLog_Drago>
     </costList>
+    <designatorDropdown>EW_Designator_Bridge</designatorDropdown>
   </TerrainDef>
-  <TerrainDef ParentName="BridgeBase" Name="Bridge">
+  <TerrainDef ParentName="BridgeBase" Name="Bridge_Maple">
     <defName>Bridge_Maple</defName>
     <label>maple bridge</label>
     <description>A flat maple surface on supportive beams which can be built over water. You can build light structures on bridges, but be careful - bridges are fragile. If a bridge falls, buildings on top of it fall as well.</description>
@@ -368,12 +368,12 @@
     </statBases>
     <designationHotKey>Misc4</designationHotKey>
     <destroyOnBombDamageThreshold>35</destroyOnBombDamageThreshold>
-    <designatorDropdown>EW_Designator_Bridge</designatorDropdown>
     <costList>
       <WoodLog_Maple>12</WoodLog_Maple>
     </costList>
+    <designatorDropdown>EW_Designator_Bridge</designatorDropdown>
   </TerrainDef>
-  <TerrainDef ParentName="BridgeBase" Name="Bridge">
+  <TerrainDef ParentName="BridgeBase" Name="Bridge_Oak">
     <defName>Bridge_Oak</defName>
     <label>oak bridge</label>
     <description>A flat oak surface on supportive beams which can be built over water. You can build light structures on bridges, but be careful - bridges are fragile. If a bridge falls, buildings on top of it fall as well.</description>
@@ -397,7 +397,7 @@
       <WoodLog_Oak>12</WoodLog_Oak>
     </costList>
   </TerrainDef>
-  <TerrainDef ParentName="BridgeBase" Name="Bridge">
+  <TerrainDef ParentName="BridgeBase" Name="Bridge_Palm">
     <defName>Bridge_Palm</defName>
     <label>palm bridge</label>
     <description>A flat palm surface on supportive beams which can be built over water. You can build light structures on bridges, but be careful - bridges are fragile. If a bridge falls, buildings on top of it fall as well.</description>
@@ -421,7 +421,7 @@
     </costList>
     <designatorDropdown>EW_Designator_Bridge</designatorDropdown>
   </TerrainDef>
-  <TerrainDef ParentName="BridgeBase" Name="Bridge">
+  <TerrainDef ParentName="BridgeBase" Name="Bridge_Pine">
     <defName>Bridge_Pine</defName>
     <label>pine bridge</label>
     <description>A flat pine surface on supportive beams which can be built over water. You can build light structures on bridges, but be careful - bridges are fragile. If a bridge falls, buildings on top of it fall as well.</description>
@@ -445,7 +445,7 @@
       <WoodLog_Pine>12</WoodLog_Pine>
     </costList>
   </TerrainDef>
-  <TerrainDef ParentName="BridgeBase" Name="Bridge">
+  <TerrainDef ParentName="BridgeBase" Name="Bridge_Poplar">
     <defName>Bridge_Poplar</defName>
     <label>poplar bridge</label>
     <description>A flat poplar surface on supportive beams which can be built over water. You can build light structures on bridges, but be careful - bridges are fragile. If a bridge falls, buildings on top of it fall as well.</description>
@@ -469,7 +469,7 @@
     </costList>
     <designatorDropdown>EW_Designator_Bridge</designatorDropdown>
   </TerrainDef>
-  <TerrainDef ParentName="BridgeBase" Name="Bridge">
+  <TerrainDef ParentName="BridgeBase" Name="Bridge_Teak">
     <defName>Bridge_Teak</defName>
     <label>teak bridge</label>
     <description>A flat teak surface on supportive beams which can be built over water. You can build light structures on bridges, but be careful - bridges are fragile. If a bridge falls, buildings on top of it fall as well.</description>
@@ -493,7 +493,7 @@
       <WoodLog_Teak>12</WoodLog_Teak>
     </costList>
   </TerrainDef>
-  <TerrainDef ParentName="BridgeBase" Name="Bridge">
+  <TerrainDef ParentName="BridgeBase" Name="Bridge_Willow">
     <defName>Bridge_Willow</defName>
     <label>willow bridge</label>
     <description>A flat willow surface on supportive beams which can be built over water. You can build light structures on bridges, but be careful - bridges are fragile. If a bridge falls, buildings on top of it fall as well.</description>
