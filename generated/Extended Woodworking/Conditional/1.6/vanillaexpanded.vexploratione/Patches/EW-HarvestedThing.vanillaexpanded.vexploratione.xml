@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="VEE_Plant_TreeOak_Auburn"]/plant</xpath>
+    <value>
+      <harvestedThingDef>WoodLog_Oak</harvestedThingDef>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="VEE_Plant_TreePoplar_Auburn"]/plant</xpath>
+    <value>
+      <harvestedThingDef>WoodLog_Poplar</harvestedThingDef>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="VEE_Plant_TreeBirch_Auburn"]/plant</xpath>
+    <value>
+      <harvestedThingDef>WoodLog_Birch</harvestedThingDef>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="VEE_Plant_TreeMaple_Auburn"]/plant</xpath>
+    <value>
+      <harvestedThingDef>WoodLog_Maple</harvestedThingDef>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="VEE_Plant_ScrewPine"]/plant</xpath>
+    <value>
+      <harvestedThingDef>WoodLog_Pine</harvestedThingDef>
+    </value>
+  </Operation>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="VEE_Plant_GnarledPine"]/plant</xpath>
+    <value>
+      <harvestedThingDef>WoodLog_Pine</harvestedThingDef>
+    </value>
+  </Operation>
+</Patch>
