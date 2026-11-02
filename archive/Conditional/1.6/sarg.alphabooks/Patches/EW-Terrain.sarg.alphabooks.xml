@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="WoodLog_Acacia"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <TerrainDef ParentName="ABooks_FloorBase">
+              <defName>ABooks_OldWoodenFloor_Acacia</defName>
+              <label>old acacia wood floor</label>
+              <description>An old ruined acacia floor. Broken due to lack of maintenance.</description>
+              <texturePath>Terrain/Surfaces/ABooks_RuinedFloor</texturePath>
+              <edgeType>Hard</edgeType>
+              <renderPrecedence>71</renderPrecedence>
+              <statBases>
+                <Beauty>-1</Beauty>
+                <WorkToBuild>100</WorkToBuild>
+              </statBases>
+              <designatorDropdown>EW_Designator_ABooks_OldWoodenFloor</designatorDropdown>
+              <costList>
+                <WoodLog_Acacia>1</WoodLog_Acacia>
+              </costList>
+              <color>(219, 184, 144)</color>
+            </TerrainDef>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="WoodLog_Aspen"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <TerrainDef ParentName="ABooks_FloorBase">
+              <defName>ABooks_OldWoodenFloor_Aspen</defName>
+              <label>old aspen wood floor</label>
+              <description>An old ruined acacia floor. Broken due to lack of maintenance.</description>
+              <texturePath>Terrain/Surfaces/ABooks_RuinedFloor</texturePath>
+              <edgeType>Hard</edgeType>
+              <renderPrecedence>71</renderPrecedence>
+              <statBases>
+                <Beauty>-1</Beauty>
+                <WorkToBuild>100</WorkToBuild>
+              </statBases>
+              <designatorDropdown>EW_Designator_ABooks_OldWoodenFloor</designatorDropdown>
+              <color>(228, 204, 171)</color>
+              <costList>
+                <WoodLog_Aspen>1</WoodLog_Aspen>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="WoodLog_Camellia"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <TerrainDef ParentName="ABooks_FloorBase">
+              <defName>ABooks_OldWoodenFloor_Camellia</defName>
+              <label>old camellia wood floor</label>
+              <description>An old ruined camellia floor. Broken due to lack of maintenance.</description>
+              <texturePath>Terrain/Surfaces/ABooks_RuinedFloor</texturePath>
+              <edgeType>Hard</edgeType>
+              <renderPrecedence>71</renderPrecedence>
+              <statBases>
+                <Beauty>-1</Beauty>
+                <WorkToBuild>100</WorkToBuild>
+              </statBases>
+              <designatorDropdown>EW_Designator_ABooks_OldWoodenFloor</designatorDropdown>
+              <color>(201, 160, 130)</color>
+              <costList>
+                <WoodLog_Camellia>1</WoodLog_Camellia>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="WoodLog_CherryBlossom"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <TerrainDef ParentName="ABooks_FloorBase">
+              <defName>ABooks_OldWoodenFloor_CherryBlossom</defName>
+              <label>old cherryblossom wood floor</label>
+              <description>An old ruined cherry blossom floor. Broken due to lack of maintenance.</description>
+              <texturePath>Terrain/Surfaces/ABooks_RuinedFloor</texturePath>
+              <edgeType>Hard</edgeType>
+              <renderPrecedence>71</renderPrecedence>
+              <statBases>
+                <Beauty>-1</Beauty>
+                <WorkToBuild>100</WorkToBuild>
+              </statBases>
+              <costList>
+                <WoodLog_CherryBlossom>1</WoodLog_CherryBlossom>
+              </costList>
+              <designatorDropdown>EW_Designator_ABooks_OldWoodenFloor</designatorDropdown>
+              <color>(165, 82, 40)</color>
+            </TerrainDef>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="WoodLog_JapaneseMaple"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <TerrainDef ParentName="ABooks_FloorBase">
+              <defName>ABooks_OldWoodenFloor_JapaneseMaple</defName>
+              <label>old japanesemaple wood floor</label>
+              <description>An old ruined japanese maple floor. Broken due to lack of maintenance.</description>
+              <texturePath>Terrain/Surfaces/ABooks_RuinedFloor</texturePath>
+              <edgeType>Hard</edgeType>
+              <renderPrecedence>71</renderPrecedence>
+              <statBases>
+                <Beauty>-1</Beauty>
+                <WorkToBuild>100</WorkToBuild>
+              </statBases>
+              <designatorDropdown>EW_Designator_ABooks_OldWoodenFloor</designatorDropdown>
+              <color>(252, 170, 124)</color>
+              <costList>
+                <WoodLog_JapaneseMaple>1</WoodLog_JapaneseMaple>
+              </costList>
+            </TerrainDef>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="WoodLog_RedMaple"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs</xpath>
+          <value>
+            <TerrainDef ParentName="ABooks_FloorBase">
+              <defName>ABooks_OldWoodenFloor_RedMaple</defName>
+              <label>old redmaple wood floor</label>
+              <description>An old ruined red maple floor. Broken due to lack of maintenance.</description>
+              <texturePath>Terrain/Surfaces/ABooks_RuinedFloor</texturePath>
+              <edgeType>Hard</edgeType>
+              <renderPrecedence>71</renderPrecedence>
+              <statBases>
+                <Beauty>-1</Beauty>
+                <WorkToBuild>100</WorkToBuild>
+              </statBases>
+              <designatorDropdown>EW_Designator_ABooks_OldWoodenFloor</designatorDropdown>
+              <costList>
+                <WoodLog_RedMaple>1</WoodLog_RedMaple>
+              </costList>
+              <color>(222, 197, 167)</color>
+            </TerrainDef>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

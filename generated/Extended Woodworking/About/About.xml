@@ -11,6 +11,7 @@
     <li>1.4</li>
     <li>1.5</li>
     <li>1.6</li>
+    <li>1.7</li>
   </supportedVersions>
   <description>
 [h1]Extended Woodworking[/h1]
@@ -43,98 +44,41 @@ A Woodworking table is available to paint wood or convert specific types of wood
 [h3]Mods[/h3]
 
 [list]
-  [*][LTS]Furnishing
   [*][MUS]捕鱼装饰 FishingDecorative
   [*][T] MoreFloors
-  [*]A RimWorld of Magic
-  [*]Alpha Books
   [*]Alpha Genes
-  [*]Alpha Memes
-  [*]Alpha Vehicles - Age of Sail
-  [*]Alpha Vehicles - Neolithic
-  [*]Ancient urban ruins
   [*]Books From Paper
-  [*]Camping Tent
   [*]Caravan Adventures
-  [*]Caravan Equipment (Continued)
   [*]Caravan Gear
-  [*]Children, school and learning
   [*]Coal Expanded (Continued)
   [*]Cosmere - Resources
-  [*]Eccentric Tech - Spacer Furniture
-  [*]Erin's Cottage Collection
-  [*]Erin's Japanese Furniture
   [*]Expanded Materials - Metals
+  [*]Fertile Fields 1.6
+  [*]Field Tents
   [*]Fishing Village Decor and Props (Continued)
-  [*]Fortification Industrial - Citadel
-  [*]Fortifications - Medieval
-  [*]Fortifications - Neolithic
-  [*]GloomyFurniture
   [*]GUILD FACTION ADD-ON - Isekai RPG Leveling
   [*]ISEKAI RPG LEVELING
-  [*]Medieval Overhaul
-  [*]Medieval Overhaul: House Ignivar
-  [*]Medieval Overhaul: House Roxmont
-  [*]Musical Instruments (Continued)
-  [*]Nature's Pretty Sweet (Continued)
-  [*]Outland - Furniture &amp; Decor
-  [*]Progression: Education
-  [*]ReGrowth 2
-  [*]ReGrowth 2: Aspen
-  [*]Research Reinvented: Stepping Stones
   [*]Rimsenal - Augmented Vanilla Pack
-  [*]RimWriter - Books, Scrolls, Tablets, and Libraries (Continued)
   [*]RoughBarricade (Continued)
-  [*]Signs and Comments
   [*]Simple Learning (Continued)
   [*]Tabletop Decorations
   [*]Tabletop Trove - Additional Joy Objects and Decor (Unofficial 1.6)
   [*]The Zone - Guitar
   [*]TMC Weapon Pack - Continued
   [*]Tribal Warrior Set!
-  [*]Vanilla Animals Expanded
-  [*]Vanilla Apparel Expanded — Accessories
-  [*]Vanilla Books Expanded
-  [*]Vanilla Brewing Expanded
-  [*]Vanilla Cooking Expanded
-  [*]Vanilla Cooking Expanded - Stews
-  [*]Vanilla Factions Expanded - Classical
   [*]Vanilla Factions Expanded - Empire
-  [*]Vanilla Factions Expanded - Medieval 2
-  [*]Vanilla Factions Expanded - Settlers
-  [*]Vanilla Factions Expanded - Tribals
-  [*]Vanilla Furniture Expanded - Architect
-  [*]Vanilla Furniture Expanded - Security
-  [*]Vanilla Ideology Expanded - Memes and Structures
-  [*]Vanilla Landmarks Expanded
   [*]Vanilla Psycasts Expanded
-  [*]Vanilla Quests Expanded - Ancients
-  [*]Vanilla Quests Expanded - Deadlife
-  [*]Vanilla Vehicles Expanded
-  [*]Vanilla Weapons Expanded
-  [*]Vanilla Weapons Expanded - Tribal
-  [*]VGP Garden Tools
   [*]VGP Vegetable Garden
-  [*]VGP Xtra Trees and Flowers
   [*]VV - New Harvest
   [*]Wall Decorations
-  [*]Westerado (Continued)
-  [*]Wild West Firearms
-  [*]Wild West Firearms (Non CE Version)
-  [*]Wild West Weapons: European Imports
-  [*]Wild West Weapons: European Imports (Non CE)
 [/list]
 
 The following mods contain floors, the defs are duplicated for each available wood type. A drop down list is added to allow material selection:
 
 [list]
   [*][T] MoreFloors
-  [*]Alpha Books
-  [*]Erin's Cottage Collection
   [*]Expanded Floors
   [*]Flooring Floors
-  [*]RIMkea (Continued)
-  [*]Save Our Ship 2
 [/list]
 
 [h3]Incompatible mods[/h3]
@@ -156,38 +100,18 @@ Alternatively, mod content is expressed using LoadFolders.xml in the mod folder.
     <li>owlchemist.simplechains.lumber</li>
   </incompatibleWith>
   <loadAfter>
-    <li>aelanna.eccentrictech.furniture</li>
-    <li>aoba.fortress.industrial.citadel</li>
-    <li>aoba.fortress.medieval</li>
-    <li>aoba.fortress.neolithic</li>
-    <li>aoba.tent</li>
     <li>argon.expandedmaterials.metals</li>
-    <li>augdog777.wildwestfirearms</li>
-    <li>augdog777.wildwestfirearmseuro</li>
-    <li>augdog777.wildwestfirearmseuronoce</li>
-    <li>augdog777.wildwestfirearmsnonce</li>
-    <li>bigt.houseignivar</li>
     <li>cryptiklemur.cosmere.resources</li>
-    <li>dankpyon.medieval.overhaul</li>
-    <li>dankpyon.medieval.overhaul.house.roxmont</li>
-    <li>dark.signs</li>
-    <li>dismarzero.vgp.vgpgardentools</li>
     <li>dismarzero.vgp.vgpvegetablegarden</li>
-    <li>dismarzero.vgp.xtratreesandflowers</li>
-    <li>dylan.csl</li>
-    <li>erin.cottagecollection</li>
-    <li>erin.cottagecollection</li>
-    <li>erin.japanesefurniture</li>
-    <li>ferny.progressioneducation</li>
     <li>fox.simplelearning</li>
     <li>gunmar.tribalwarriorset</li>
     <li>iforgotmysocks.caravanadventures</li>
+    <li>jamaicancastle.rf.fertilefields</li>
     <li>jelly.caravangear</li>
     <li>jellycreative.isekaileveling</li>
-    <li>kentington.saveourship2</li>
     <li>klvlt.booksfrompaper</li>
     <li>ks.flooringfloors</li>
-    <li>limetreesnake.furnishing</li>
+    <li>lordfelix.fieldtents</li>
     <li>ludeon.rimworld</li>
     <li>ludeon.rimworld</li>
     <li>ludeon.rimworld.ideology</li>
@@ -195,59 +119,22 @@ Alternatively, mod content is expressed using LoadFolders.xml in the mod folder.
     <li>ludeon.rimworld.royalty</li>
     <li>meat.thezoneguitar</li>
     <li>mingtuwuxiang.fishingdecorative</li>
-    <li>mlie.caravanequipment</li>
     <li>mlie.coalexpanded</li>
-    <li>mlie.musicalinstruments</li>
-    <li>mlie.naturesprettysweet</li>
-    <li>mlie.rimwriter</li>
     <li>mlie.roughbarricade</li>
-    <li>mlie.westerado</li>
-    <li>neronix17.outland.furnitureanddecor</li>
-    <li>oskarpotocki.vanillafactionsexpanded.settlersmodule</li>
-    <li>oskarpotocki.vanillavehiclesexpanded</li>
-    <li>oskarpotocki.vfe.classical</li>
     <li>oskarpotocki.vfe.empire</li>
-    <li>oskarpotocki.vfe.medieval2</li>
-    <li>oskarpotocki.vfe.tribals</li>
-    <li>petetimessix.researchreinvented.steppingstones</li>
     <li>poupun.guildfactionaddon</li>
     <li>reel.expanded.storage</li>
-    <li>regrowth.botr.aspenforest</li>
-    <li>regrowth.botr.core</li>
     <li>ricktmc.tmcweaponpack</li>
     <li>rimsenal.evp</li>
-    <li>sarg.alphabooks</li>
-    <li>sarg.alphabooks</li>
     <li>sarg.alphagenes</li>
-    <li>sarg.alphamemes</li>
-    <li>sarg.alphavehiclesageofsail</li>
-    <li>sarg.alphavehiclesneolithic</li>
-    <li>solaris.furniturebase</li>
     <li>soulfulpumpkin.tabletoptroveunofficial</li>
     <li>telkir.tmods.morefloors</li>
     <li>telkir.tmods.morefloors</li>
-    <li>torann.arimworldofmagic</li>
     <li>ucp.tabletopdecorations</li>
     <li>ucp.walldecorations</li>
-    <li>vanillaexpanded.vaeaccessories</li>
-    <li>vanillaexpanded.vanillaanimalsexpanded</li>
-    <li>vanillaexpanded.vbookse</li>
-    <li>vanillaexpanded.vbrewe</li>
-    <li>vanillaexpanded.vcooke</li>
-    <li>vanillaexpanded.vcookestews</li>
-    <li>vanillaexpanded.vexploratione</li>
-    <li>vanillaexpanded.vfearchitect</li>
-    <li>vanillaexpanded.vfesecurity</li>
-    <li>vanillaexpanded.vmemese</li>
     <li>vanillaexpanded.vpsycastse</li>
-    <li>vanillaexpanded.vwe</li>
-    <li>vanillaexpanded.vwetb</li>
-    <li>vanillaquestsexpanded.ancients</li>
-    <li>vanillaquestsexpanded.deadlife</li>
     <li>vvenchov.vvnewharvest</li>
     <li>wemd.expandedfloors</li>
-    <li>xmb.ancienturbanruins.mo</li>
     <li>zal.fishprops</li>
-    <li>zal.rimkea</li>
   </loadAfter>
 </ModMetaData>

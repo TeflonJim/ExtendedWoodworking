@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <TerrainDef ParentName="ABooks_FloorBase">
+    <defName>ABooks_OldWoodenFloor_Birch</defName>
+    <label>old birch wood floor</label>
+    <description>An old ruined birch floor. Broken due to lack of maintenance.</description>
+    <texturePath>Terrain/Surfaces/ABooks_RuinedFloor</texturePath>
+    <edgeType>Hard</edgeType>
+    <renderPrecedence>71</renderPrecedence>
+    <statBases>
+      <Beauty>-1</Beauty>
+      <WorkToBuild>100</WorkToBuild>
+    </statBases>
+    <designatorDropdown>EW_Designator_ABooks_OldWoodenFloor</designatorDropdown>
+    <color>(235,228,216)</color>
+    <costList>
+      <WoodLog_Birch>1</WoodLog_Birch>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="ABooks_FloorBase">
+    <defName>ABooks_OldWoodenFloor_Cecropia</defName>
+    <label>old cecropia wood floor</label>
+    <description>An old ruined cecropia floor. Broken due to lack of maintenance.</description>
+    <texturePath>Terrain/Surfaces/ABooks_RuinedFloor</texturePath>
+    <edgeType>Hard</edgeType>
+    <renderPrecedence>71</renderPrecedence>
+    <statBases>
+      <Beauty>-1</Beauty>
+      <WorkToBuild>100</WorkToBuild>
+    </statBases>
+    <designatorDropdown>EW_Designator_ABooks_OldWoodenFloor</designatorDropdown>
+    <color>(126,74,63)</color>
+    <costList>
+      <WoodLog_Cecropia>1</WoodLog_Cecropia>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="ABooks_FloorBase">
+    <defName>ABooks_OldWoodenFloor_Cypress</defName>
+    <label>old cypress wood floor</label>
+    <description>An old ruined cypress floor. Broken due to lack of maintenance.</description>
+    <texturePath>Terrain/Surfaces/ABooks_RuinedFloor</texturePath>
+    <edgeType>Hard</edgeType>
+    <renderPrecedence>71</renderPrecedence>
+    <statBases>
+      <Beauty>-1</Beauty>
+      <WorkToBuild>100</WorkToBuild>
+    </statBases>
+    <designatorDropdown>EW_Designator_ABooks_OldWoodenFloor</designatorDropdown>
+    <costList>
+      <WoodLog_Cypress>1</WoodLog_Cypress>
+    </costList>
+    <color>(239, 217, 184)</color>
+  </TerrainDef>
+  <TerrainDef ParentName="ABooks_FloorBase">
+    <defName>ABooks_OldWoodenFloor_Drago</defName>
+    <label>old drago wood floor</label>
+    <description>An old ruined drago floor. Broken due to lack of maintenance.</description>
+    <texturePath>Terrain/Surfaces/ABooks_RuinedFloor</texturePath>
+    <edgeType>Hard</edgeType>
+    <renderPrecedence>71</renderPrecedence>
+    <statBases>
+      <Beauty>-1</Beauty>
+      <WorkToBuild>100</WorkToBuild>
+    </statBases>
+    <designatorDropdown>EW_Designator_ABooks_OldWoodenFloor</designatorDropdown>
+    <color>(171, 159, 142)</color>
+    <costList>
+      <WoodLog_Drago>1</WoodLog_Drago>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="ABooks_FloorBase">
+    <defName>ABooks_OldWoodenFloor_Maple</defName>
+    <label>old maple wood floor</label>
+    <description>An old ruined maple floor. Broken due to lack of maintenance.</description>
+    <texturePath>Terrain/Surfaces/ABooks_RuinedFloor</texturePath>
+    <edgeType>Hard</edgeType>
+    <renderPrecedence>71</renderPrecedence>
+    <statBases>
+      <Beauty>-1</Beauty>
+      <WorkToBuild>100</WorkToBuild>
+    </statBases>
+    <designatorDropdown>EW_Designator_ABooks_OldWoodenFloor</designatorDropdown>
+    <color>(236, 201, 163)</color>
+    <costList>
+      <WoodLog_Maple>1</WoodLog_Maple>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="ABooks_FloorBase">
+    <defName>ABooks_OldWoodenFloor_Oak</defName>
+    <label>old oak wood floor</label>
+    <description>An old ruined oak floor. Broken due to lack of maintenance.</description>
+    <texturePath>Terrain/Surfaces/ABooks_RuinedFloor</texturePath>
+    <edgeType>Hard</edgeType>
+    <renderPrecedence>71</renderPrecedence>
+    <statBases>
+      <Beauty>-1</Beauty>
+      <WorkToBuild>100</WorkToBuild>
+    </statBases>
+    <designatorDropdown>EW_Designator_ABooks_OldWoodenFloor</designatorDropdown>
+    <color>(185,142,96)</color>
+    <costList>
+      <WoodLog_Oak>1</WoodLog_Oak>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="ABooks_FloorBase">
+    <defName>ABooks_OldWoodenFloor_Palm</defName>
+    <label>old palm wood floor</label>
+    <description>An old ruined palm floor. Broken due to lack of maintenance.</description>
+    <texturePath>Terrain/Surfaces/ABooks_RuinedFloor</texturePath>
+    <edgeType>Hard</edgeType>
+    <renderPrecedence>71</renderPrecedence>
+    <statBases>
+      <Beauty>-1</Beauty>
+      <WorkToBuild>100</WorkToBuild>
+    </statBases>
+    <costList>
+      <WoodLog_Palm>1</WoodLog_Palm>
+    </costList>
+    <designatorDropdown>EW_Designator_ABooks_OldWoodenFloor</designatorDropdown>
+    <color>(224, 150, 87)</color>
+  </TerrainDef>
+  <TerrainDef ParentName="ABooks_FloorBase">
+    <defName>ABooks_OldWoodenFloor_Pine</defName>
+    <label>old pine wood floor</label>
+    <description>An old ruined pine floor. Broken due to lack of maintenance.</description>
+    <texturePath>Terrain/Surfaces/ABooks_RuinedFloor</texturePath>
+    <edgeType>Hard</edgeType>
+    <renderPrecedence>71</renderPrecedence>
+    <statBases>
+      <Beauty>-1</Beauty>
+      <WorkToBuild>100</WorkToBuild>
+    </statBases>
+    <designatorDropdown>EW_Designator_ABooks_OldWoodenFloor</designatorDropdown>
+    <costList>
+      <WoodLog_Pine>1</WoodLog_Pine>
+    </costList>
+    <color>(198,146,68)</color>
+  </TerrainDef>
+  <TerrainDef ParentName="ABooks_FloorBase">
+    <defName>ABooks_OldWoodenFloor_Poplar</defName>
+    <label>old poplar wood floor</label>
+    <description>An old ruined poplar floor. Broken due to lack of maintenance.</description>
+    <texturePath>Terrain/Surfaces/ABooks_RuinedFloor</texturePath>
+    <edgeType>Hard</edgeType>
+    <renderPrecedence>71</renderPrecedence>
+    <statBases>
+      <Beauty>-1</Beauty>
+      <WorkToBuild>100</WorkToBuild>
+    </statBases>
+    <costList>
+      <WoodLog_Poplar>1</WoodLog_Poplar>
+    </costList>
+    <designatorDropdown>EW_Designator_ABooks_OldWoodenFloor</designatorDropdown>
+    <color>(184,156,108)</color>
+  </TerrainDef>
+  <TerrainDef ParentName="ABooks_FloorBase">
+    <defName>ABooks_OldWoodenFloor_Teak</defName>
+    <label>old teak wood floor</label>
+    <description>An old ruined teak floor. Broken due to lack of maintenance.</description>
+    <texturePath>Terrain/Surfaces/ABooks_RuinedFloor</texturePath>
+    <edgeType>Hard</edgeType>
+    <renderPrecedence>71</renderPrecedence>
+    <statBases>
+      <Beauty>-1</Beauty>
+      <WorkToBuild>100</WorkToBuild>
+    </statBases>
+    <designatorDropdown>EW_Designator_ABooks_OldWoodenFloor</designatorDropdown>
+    <color>(154,102,59)</color>
+    <costList>
+      <WoodLog_Teak>1</WoodLog_Teak>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="ABooks_FloorBase">
+    <defName>ABooks_OldWoodenFloor_Willow</defName>
+    <label>old willow wood floor</label>
+    <description>An old ruined willow floor. Broken due to lack of maintenance.</description>
+    <texturePath>Terrain/Surfaces/ABooks_RuinedFloor</texturePath>
+    <edgeType>Hard</edgeType>
+    <renderPrecedence>71</renderPrecedence>
+    <statBases>
+      <Beauty>-1</Beauty>
+      <WorkToBuild>100</WorkToBuild>
+    </statBases>
+    <designatorDropdown>EW_Designator_ABooks_OldWoodenFloor</designatorDropdown>
+    <costList>
+      <WoodLog_Willow>1</WoodLog_Willow>
+    </costList>
+    <color>(221, 186, 141)</color>
+  </TerrainDef>
+</Defs>

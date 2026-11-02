@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="VV_MakeLacqueredWood"]/ingredients/li[filter/thingDefs/li="WoodLog"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/RecipeDef[defName="VV_MakeLacqueredWood"]/ingredients/li[filter/thingDefs/li="WoodLog"]</xpath>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/RecipeDef[defName="VV_MakeLacqueredWood"]/ingredients</xpath>
+          <value>
+            <li>
+              <filter>
+                <categories>
+                  <li>WoodTypes</li>
+                </categories>
+              </filter>
+              <count>25</count>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/RecipeDef[defName="VV_MakeLacqueredWood"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>Defs/RecipeDef[defName="VV_MakeLacqueredWood"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/RecipeDef[defName="VV_MakeLacqueredWood"]/fixedIngredientFilter/thingDefs</xpath>
+          <match Class="PatchOperationConditional">
+            <xpath>Defs/RecipeDef[defName="VV_MakeLacqueredWood"]/fixedIngredientFilter/thingDefs/li/*</xpath>
+            <nomatch Class="PatchOperationRemove">
+              <xpath>Defs/RecipeDef[defName="VV_MakeLacqueredWood"]/fixedIngredientFilter/thingDefs</xpath>
+            </nomatch>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/RecipeDef[defName="VV_MakeLacqueredWood"]/fixedIngredientFilter</xpath>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/RecipeDef[defName="VV_MakeLacqueredWood"]</xpath>
+            <value>
+              <fixedIngredientFilter />
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/RecipeDef[defName="VV_MakeLacqueredWood"]/fixedIngredientFilter/categories</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/RecipeDef[defName="VV_MakeLacqueredWood"]/fixedIngredientFilter/categories</xpath>
+            <value>
+              <li>WoodTypes</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/RecipeDef[defName="VV_MakeLacqueredWood"]/fixedIngredientFilter</xpath>
+            <value>
+              <categories>
+                <li>WoodTypes</li>
+              </categories>
+            </value>
+          </nomatch>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/RecipeDef[defName="VV_MakeLacqueredWoodBulk"]/ingredients/li[filter/thingDefs/li="WoodLog"]</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/RecipeDef[defName="VV_MakeLacqueredWoodBulk"]/ingredients/li[filter/thingDefs/li="WoodLog"]</xpath>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/RecipeDef[defName="VV_MakeLacqueredWoodBulk"]/ingredients</xpath>
+          <value>
+            <li>
+              <filter>
+                <categories>
+                  <li>WoodTypes</li>
+                </categories>
+              </filter>
+              <count>100</count>
+            </li>
+          </value>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/RecipeDef[defName="VV_MakeLacqueredWoodBulk"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>Defs/RecipeDef[defName="VV_MakeLacqueredWoodBulk"]/fixedIngredientFilter/thingDefs/li[.="WoodLog"]</xpath>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/RecipeDef[defName="VV_MakeLacqueredWoodBulk"]/fixedIngredientFilter/thingDefs</xpath>
+          <match Class="PatchOperationConditional">
+            <xpath>Defs/RecipeDef[defName="VV_MakeLacqueredWoodBulk"]/fixedIngredientFilter/thingDefs/li/*</xpath>
+            <nomatch Class="PatchOperationRemove">
+              <xpath>Defs/RecipeDef[defName="VV_MakeLacqueredWoodBulk"]/fixedIngredientFilter/thingDefs</xpath>
+            </nomatch>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/RecipeDef[defName="VV_MakeLacqueredWoodBulk"]/fixedIngredientFilter</xpath>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/RecipeDef[defName="VV_MakeLacqueredWoodBulk"]</xpath>
+            <value>
+              <fixedIngredientFilter />
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/RecipeDef[defName="VV_MakeLacqueredWoodBulk"]/fixedIngredientFilter/categories</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/RecipeDef[defName="VV_MakeLacqueredWoodBulk"]/fixedIngredientFilter/categories</xpath>
+            <value>
+              <li>WoodTypes</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/RecipeDef[defName="VV_MakeLacqueredWoodBulk"]/fixedIngredientFilter</xpath>
+            <value>
+              <categories>
+                <li>WoodTypes</li>
+              </categories>
+            </value>
+          </nomatch>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

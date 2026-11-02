@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <TerrainDef ParentName="ksWoodParquetBase">
+    <defName>KS_WoodDiamond_Birch</defName>
+    <label>birch diamond parquet</label>
+    <description>Parquet floor laid in an exquisite diamond pattern, for expressing economic status. Takes a long time to lay but is very beautiful.</description>
+    <texturePath>Terrain/Surfaces/Wood/ksWoodDiamond</texturePath>
+    <uiIconPath>Icons/Wood/ksWoodDiamond</uiIconPath>
+    <statBases>
+      <WorkToBuild>1800</WorkToBuild>
+      <Beauty>3</Beauty>
+    </statBases>
+    <costList>
+      <WoodLog_Birch>15</WoodLog_Birch>
+    </costList>
+    <color>(235,228,216)</color>
+    <designatorDropdown>EW_Designator_KS_WoodDiamond</designatorDropdown>
+  </TerrainDef>
+  <TerrainDef ParentName="ksWoodParquetBase">
+    <defName>KS_WoodDiamond_Cecropia</defName>
+    <label>cecropia diamond parquet</label>
+    <description>Parquet floor laid in an exquisite diamond pattern, for expressing economic status. Takes a long time to lay but is very beautiful.</description>
+    <texturePath>Terrain/Surfaces/Wood/ksWoodDiamond</texturePath>
+    <uiIconPath>Icons/Wood/ksWoodDiamond</uiIconPath>
+    <statBases>
+      <WorkToBuild>1800</WorkToBuild>
+      <Beauty>3</Beauty>
+    </statBases>
+    <color>(126,74,63)</color>
+    <costList>
+      <WoodLog_Cecropia>15</WoodLog_Cecropia>
+    </costList>
+    <designatorDropdown>EW_Designator_KS_WoodDiamond</designatorDropdown>
+  </TerrainDef>
+  <TerrainDef ParentName="ksWoodParquetBase">
+    <defName>KS_WoodDiamond_Cypress</defName>
+    <label>cypress diamond parquet</label>
+    <description>Parquet floor laid in an exquisite diamond pattern, for expressing economic status. Takes a long time to lay but is very beautiful.</description>
+    <texturePath>Terrain/Surfaces/Wood/ksWoodDiamond</texturePath>
+    <uiIconPath>Icons/Wood/ksWoodDiamond</uiIconPath>
+    <statBases>
+      <WorkToBuild>1800</WorkToBuild>
+      <Beauty>3</Beauty>
+    </statBases>
+    <costList>
+      <WoodLog_Cypress>15</WoodLog_Cypress>
+    </costList>
+    <color>(239, 217, 184)</color>
+    <designatorDropdown>EW_Designator_KS_WoodDiamond</designatorDropdown>
+  </TerrainDef>
+  <TerrainDef ParentName="ksWoodParquetBase">
+    <defName>KS_WoodDiamond_Drago</defName>
+    <label>drago diamond parquet</label>
+    <description>Parquet floor laid in an exquisite diamond pattern, for expressing economic status. Takes a long time to lay but is very beautiful.</description>
+    <texturePath>Terrain/Surfaces/Wood/ksWoodDiamond</texturePath>
+    <uiIconPath>Icons/Wood/ksWoodDiamond</uiIconPath>
+    <statBases>
+      <WorkToBuild>1800</WorkToBuild>
+      <Beauty>3</Beauty>
+    </statBases>
+    <costList>
+      <WoodLog_Drago>15</WoodLog_Drago>
+    </costList>
+    <color>(171, 159, 142)</color>
+    <designatorDropdown>EW_Designator_KS_WoodDiamond</designatorDropdown>
+  </TerrainDef>
+  <TerrainDef ParentName="ksWoodParquetBase">
+    <defName>KS_WoodDiamond_Maple</defName>
+    <label>maple diamond parquet</label>
+    <description>Parquet floor laid in an exquisite diamond pattern, for expressing economic status. Takes a long time to lay but is very beautiful.</description>
+    <texturePath>Terrain/Surfaces/Wood/ksWoodDiamond</texturePath>
+    <uiIconPath>Icons/Wood/ksWoodDiamond</uiIconPath>
+    <statBases>
+      <WorkToBuild>1800</WorkToBuild>
+      <Beauty>3</Beauty>
+    </statBases>
+    <costList>
+      <WoodLog_Maple>15</WoodLog_Maple>
+    </costList>
+    <color>(236, 201, 163)</color>
+    <designatorDropdown>EW_Designator_KS_WoodDiamond</designatorDropdown>
+  </TerrainDef>
+  <TerrainDef ParentName="ksWoodParquetBase">
+    <defName>KS_WoodDiamond_Oak</defName>
+    <label>oak diamond parquet</label>
+    <description>Parquet floor laid in an exquisite diamond pattern, for expressing economic status. Takes a long time to lay but is very beautiful.</description>
+    <texturePath>Terrain/Surfaces/Wood/ksWoodDiamond</texturePath>
+    <uiIconPath>Icons/Wood/ksWoodDiamond</uiIconPath>
+    <statBases>
+      <WorkToBuild>1800</WorkToBuild>
+      <Beauty>3</Beauty>
+    </statBases>
+    <color>(185,142,96)</color>
+    <designatorDropdown>EW_Designator_KS_WoodDiamond</designatorDropdown>
+    <costList>
+      <WoodLog_Oak>15</WoodLog_Oak>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="ksWoodParquetBase">
+    <defName>KS_WoodDiamond_Palm</defName>
+    <label>palm diamond parquet</label>
+    <description>Parquet floor laid in an exquisite diamond pattern, for expressing economic status. Takes a long time to lay but is very beautiful.</description>
+    <texturePath>Terrain/Surfaces/Wood/ksWoodDiamond</texturePath>
+    <uiIconPath>Icons/Wood/ksWoodDiamond</uiIconPath>
+    <statBases>
+      <WorkToBuild>1800</WorkToBuild>
+      <Beauty>3</Beauty>
+    </statBases>
+    <costList>
+      <WoodLog_Palm>15</WoodLog_Palm>
+    </costList>
+    <color>(224, 150, 87)</color>
+    <designatorDropdown>EW_Designator_KS_WoodDiamond</designatorDropdown>
+  </TerrainDef>
+  <TerrainDef ParentName="ksWoodParquetBase">
+    <defName>KS_WoodDiamond_Pine</defName>
+    <label>pine diamond parquet</label>
+    <description>Parquet floor laid in an exquisite diamond pattern, for expressing economic status. Takes a long time to lay but is very beautiful.</description>
+    <texturePath>Terrain/Surfaces/Wood/ksWoodDiamond</texturePath>
+    <uiIconPath>Icons/Wood/ksWoodDiamond</uiIconPath>
+    <statBases>
+      <WorkToBuild>1800</WorkToBuild>
+      <Beauty>3</Beauty>
+    </statBases>
+    <color>(198,146,68)</color>
+    <designatorDropdown>EW_Designator_KS_WoodDiamond</designatorDropdown>
+    <costList>
+      <WoodLog_Pine>15</WoodLog_Pine>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="ksWoodParquetBase">
+    <defName>KS_WoodDiamond_Poplar</defName>
+    <label>poplar diamond parquet</label>
+    <description>Parquet floor laid in an exquisite diamond pattern, for expressing economic status. Takes a long time to lay but is very beautiful.</description>
+    <texturePath>Terrain/Surfaces/Wood/ksWoodDiamond</texturePath>
+    <uiIconPath>Icons/Wood/ksWoodDiamond</uiIconPath>
+    <statBases>
+      <WorkToBuild>1800</WorkToBuild>
+      <Beauty>3</Beauty>
+    </statBases>
+    <costList>
+      <WoodLog_Poplar>15</WoodLog_Poplar>
+    </costList>
+    <color>(184,156,108)</color>
+    <designatorDropdown>EW_Designator_KS_WoodDiamond</designatorDropdown>
+  </TerrainDef>
+  <TerrainDef ParentName="ksWoodParquetBase">
+    <defName>KS_WoodDiamond_Teak</defName>
+    <label>teak diamond parquet</label>
+    <description>Parquet floor laid in an exquisite diamond pattern, for expressing economic status. Takes a long time to lay but is very beautiful.</description>
+    <texturePath>Terrain/Surfaces/Wood/ksWoodDiamond</texturePath>
+    <uiIconPath>Icons/Wood/ksWoodDiamond</uiIconPath>
+    <statBases>
+      <WorkToBuild>1800</WorkToBuild>
+      <Beauty>3</Beauty>
+    </statBases>
+    <color>(154,102,59)</color>
+    <designatorDropdown>EW_Designator_KS_WoodDiamond</designatorDropdown>
+    <costList>
+      <WoodLog_Teak>15</WoodLog_Teak>
+    </costList>
+  </TerrainDef>
+  <TerrainDef ParentName="ksWoodParquetBase">
+    <defName>KS_WoodDiamond_Willow</defName>
+    <label>willow diamond parquet</label>
+    <description>Parquet floor laid in an exquisite diamond pattern, for expressing economic status. Takes a long time to lay but is very beautiful.</description>
+    <texturePath>Terrain/Surfaces/Wood/ksWoodDiamond</texturePath>
+    <uiIconPath>Icons/Wood/ksWoodDiamond</uiIconPath>
+    <statBases>
+      <WorkToBuild>1800</WorkToBuild>
+      <Beauty>3</Beauty>
+    </statBases>
+    <color>(221, 186, 141)</color>
+    <designatorDropdown>EW_Designator_KS_WoodDiamond</designatorDropdown>
+    <costList>
+      <WoodLog_Willow>15</WoodLog_Willow>
+    </costList>
+  </TerrainDef>
+</Defs>
