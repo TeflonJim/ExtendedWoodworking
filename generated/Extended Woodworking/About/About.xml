@@ -39,6 +39,7 @@ A Woodworking table is available to paint wood or convert specific types of wood
   [*]Ideology
   [*]Biotech
   [*]Anomaly
+  [*]Odyssey
 [/list]
 
 [h3]Mods[/h3]
@@ -47,17 +48,22 @@ A Woodworking table is available to paint wood or convert specific types of wood
   [*][MUS]捕鱼装饰 FishingDecorative
   [*][T] MoreFloors
   [*]Alpha Genes
+  [*]Alpha Memes
+  [*]Atmosphere Overhaul
   [*]Books From Paper
   [*]Caravan Adventures
+  [*]Caravan Equipment (Continued)
   [*]Caravan Gear
   [*]Coal Expanded (Continued)
   [*]Cosmere - Resources
+  [*]Erin's Cottage Collection
   [*]Expanded Materials - Metals
   [*]Fertile Fields 1.6
   [*]Field Tents
   [*]Fishing Village Decor and Props (Continued)
   [*]GUILD FACTION ADD-ON - Isekai RPG Leveling
   [*]ISEKAI RPG LEVELING
+  [*]Outland - Furniture &amp; Decor
   [*]Rimsenal - Augmented Vanilla Pack
   [*]RoughBarricade (Continued)
   [*]Simple Learning (Continued)
@@ -67,8 +73,8 @@ A Woodworking table is available to paint wood or convert specific types of wood
   [*]TMC Weapon Pack - Continued
   [*]Tribal Warrior Set!
   [*]Vanilla Factions Expanded - Empire
+  [*]Vanilla Ideology Expanded - Memes and Structures
   [*]Vanilla Psycasts Expanded
-  [*]VGP Vegetable Garden
   [*]VV - New Harvest
   [*]Wall Decorations
 [/list]
@@ -77,6 +83,7 @@ The following mods contain floors, the defs are duplicated for each available wo
 
 [list]
   [*][T] MoreFloors
+  [*]Erin's Cottage Collection
   [*]Expanded Floors
   [*]Flooring Floors
 [/list]
@@ -100,9 +107,11 @@ Alternatively, mod content is expressed using LoadFolders.xml in the mod folder.
     <li>owlchemist.simplechains.lumber</li>
   </incompatibleWith>
   <loadAfter>
+    <li>acutus.atmosphereoverhaul.release</li>
     <li>argon.expandedmaterials.metals</li>
     <li>cryptiklemur.cosmere.resources</li>
-    <li>dismarzero.vgp.vgpvegetablegarden</li>
+    <li>erin.cottagecollection</li>
+    <li>erin.cottagecollection</li>
     <li>fox.simplelearning</li>
     <li>gunmar.tribalwarriorset</li>
     <li>iforgotmysocks.caravanadventures</li>
@@ -119,19 +128,23 @@ Alternatively, mod content is expressed using LoadFolders.xml in the mod folder.
     <li>ludeon.rimworld.royalty</li>
     <li>meat.thezoneguitar</li>
     <li>mingtuwuxiang.fishingdecorative</li>
+    <li>mlie.caravanequipment</li>
     <li>mlie.coalexpanded</li>
     <li>mlie.roughbarricade</li>
+    <li>neronix17.outland.furnitureanddecor</li>
     <li>oskarpotocki.vfe.empire</li>
     <li>poupun.guildfactionaddon</li>
     <li>reel.expanded.storage</li>
     <li>ricktmc.tmcweaponpack</li>
     <li>rimsenal.evp</li>
     <li>sarg.alphagenes</li>
+    <li>sarg.alphamemes</li>
     <li>soulfulpumpkin.tabletoptroveunofficial</li>
     <li>telkir.tmods.morefloors</li>
     <li>telkir.tmods.morefloors</li>
     <li>ucp.tabletopdecorations</li>
     <li>ucp.walldecorations</li>
+    <li>vanillaexpanded.vmemese</li>
     <li>vanillaexpanded.vpsycastse</li>
     <li>vvenchov.vvnewharvest</li>
     <li>wemd.expandedfloors</li>

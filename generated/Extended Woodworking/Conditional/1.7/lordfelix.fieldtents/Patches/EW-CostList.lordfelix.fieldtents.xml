@@ -126,4 +126,46 @@
       </operations>
     </match>
   </Operation>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/ThingDef[defName="FieldTentRound"]/costList/WoodLog</xpath>
+    <match Class="PatchOperationSequence">
+      <operations>
+        <li Class="PatchOperationRemove">
+          <xpath>Defs/ThingDef[defName="FieldTentRound"]/costList/WoodLog</xpath>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="FieldTentRound" and (stuffCategories)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="FieldTentRound"]/stuffCategories</xpath>
+            <value>
+              <li>Woody</li>
+            </value>
+          </match>
+          <nomatch Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="FieldTentRound"]</xpath>
+            <value>
+              <stuffCategories>
+                <li>Woody</li>
+              </stuffCategories>
+            </value>
+          </nomatch>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="FieldTentRound" and not(costStuffCount)]</xpath>
+          <match Class="PatchOperationAdd">
+            <xpath>Defs/ThingDef[defName="FieldTentRound" and not(costStuffCount)]</xpath>
+            <value>
+              <costStuffCount>120</costStuffCount>
+            </value>
+          </match>
+        </li>
+        <li Class="PatchOperationConditional">
+          <xpath>Defs/ThingDef[defName="FieldTentRound"]/constructEffect</xpath>
+          <match Class="PatchOperationRemove">
+            <xpath>Defs/ThingDef[defName="FieldTentRound"]/constructEffect</xpath>
+          </match>
+        </li>
+      </operations>
+    </match>
+  </Operation>
 </Patch>
