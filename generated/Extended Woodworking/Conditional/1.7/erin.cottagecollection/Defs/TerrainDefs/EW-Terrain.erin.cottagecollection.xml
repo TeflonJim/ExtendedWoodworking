@@ -71,10 +71,10 @@
       <Beauty>1</Beauty>
     </statBases>
     <constructEffect>ConstructWood</constructEffect>
-    <designatorDropdown>EW_Designator_CCot_RusticPlankFloor</designatorDropdown>
     <costList>
       <WoodLog_Drago>6</WoodLog_Drago>
     </costList>
+    <designatorDropdown>EW_Designator_CCot_RusticPlankFloor</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>CCot_RusticPlankFloor_Maple</defName>
@@ -109,10 +109,10 @@
       <Beauty>1</Beauty>
     </statBases>
     <constructEffect>ConstructWood</constructEffect>
+    <designatorDropdown>EW_Designator_CCot_RusticPlankFloor</designatorDropdown>
     <costList>
       <WoodLog_Oak>6</WoodLog_Oak>
     </costList>
-    <designatorDropdown>EW_Designator_CCot_RusticPlankFloor</designatorDropdown>
   </TerrainDef>
   <TerrainDef ParentName="FloorBase">
     <defName>CCot_RusticPlankFloor_Palm</defName>

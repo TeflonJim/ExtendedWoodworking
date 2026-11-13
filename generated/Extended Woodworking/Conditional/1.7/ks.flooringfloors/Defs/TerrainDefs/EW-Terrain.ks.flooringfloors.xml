@@ -58,10 +58,10 @@
       <WorkToBuild>1800</WorkToBuild>
       <Beauty>3</Beauty>
     </statBases>
-    <designatorDropdown>EW_Designator_KS_WoodDiamond</designatorDropdown>
     <costList>
       <WoodLog_Drago>15</WoodLog_Drago>
     </costList>
+    <designatorDropdown>EW_Designator_KS_WoodDiamond</designatorDropdown>
     <color>(171, 159, 142)</color>
   </TerrainDef>
   <TerrainDef ParentName="ksWoodParquetBase">
@@ -90,10 +90,10 @@
       <WorkToBuild>1800</WorkToBuild>
       <Beauty>3</Beauty>
     </statBases>
+    <designatorDropdown>EW_Designator_KS_WoodDiamond</designatorDropdown>
     <costList>
       <WoodLog_Oak>15</WoodLog_Oak>
     </costList>
-    <designatorDropdown>EW_Designator_KS_WoodDiamond</designatorDropdown>
     <color>(185,142,96)</color>
   </TerrainDef>
   <TerrainDef ParentName="ksWoodParquetBase">

@@ -213,7 +213,7 @@
     <li>/</li>
     <li>1.7</li>
     <li>Conditional/1.7/_EW-Painted</li>
-    <li>Conditional/1.7/_EW-WoodLog_Acacia</li>
+    <li IfModActive="hali.npsbiomes">Conditional/1.7/_EW-WoodLog_Acacia</li>
     <li>Conditional/1.7/_EW-WoodLog_Aspen</li>
     <li>Conditional/1.7/_EW-WoodLog_Camellia</li>
     <li>Conditional/1.7/_EW-WoodLog_CherryBlossom</li>
@@ -224,9 +224,11 @@
     <li IfModActive="cryptiklemur.cosmere.resources">Conditional/1.7/cryptiklemur.cosmere.resources</li>
     <li IfModActive="dankpyon.medieval.overhaul">Conditional/1.7/dankpyon.medieval.overhaul</li>
     <li IfModActive="dubwise.dubsbadhygiene">Conditional/1.7/dubwise.dubsbadhygiene</li>
+    <li IfModActive="dylan.csl">Conditional/1.7/dylan.csl</li>
     <li IfModActive="erin.cottagecollection">Conditional/1.7/erin.cottagecollection</li>
     <li IfModActive="fox.simplelearning">Conditional/1.7/fox.simplelearning</li>
     <li IfModActive="gunmar.tribalwarriorset">Conditional/1.7/gunmar.tribalwarriorset</li>
+    <li IfModActive="hali.npsbiomes">Conditional/1.7/hali.npsbiomes</li>
     <li IfModActive="iforgotmysocks.caravanadventures">Conditional/1.7/iforgotmysocks.caravanadventures</li>
     <li IfModActive="jamaicancastle.rf.fertilefields">Conditional/1.7/jamaicancastle.rf.fertilefields</li>
     <li IfModActive="jelly.caravangear">Conditional/1.7/jelly.caravangear</li>

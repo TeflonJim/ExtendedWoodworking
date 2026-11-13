@@ -17,10 +17,10 @@
                 <WorkToBuild>1800</WorkToBuild>
                 <Beauty>3</Beauty>
               </statBases>
+              <designatorDropdown>EW_Designator_KS_WoodDiamond</designatorDropdown>
               <costList>
                 <WoodLog_Acacia>15</WoodLog_Acacia>
               </costList>
-              <designatorDropdown>EW_Designator_KS_WoodDiamond</designatorDropdown>
               <color>(219, 184, 144)</color>
             </TerrainDef>
           </value>

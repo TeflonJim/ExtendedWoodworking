@@ -21,10 +21,10 @@
                 <Beauty>1</Beauty>
               </statBases>
               <constructEffect>ConstructWood</constructEffect>
+              <designatorDropdown>EW_Designator_CCot_RusticPlankFloor</designatorDropdown>
               <costList>
                 <WoodLog_Acacia>6</WoodLog_Acacia>
               </costList>
-              <designatorDropdown>EW_Designator_CCot_RusticPlankFloor</designatorDropdown>
             </TerrainDef>
           </value>
         </li>

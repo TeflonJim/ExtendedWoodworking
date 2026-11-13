@@ -25,10 +25,10 @@
               <constructEffect>ConstructWood</constructEffect>
               <designationHotKey>Misc9</designationHotKey>
               <uiOrder>2000</uiOrder>
+              <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
               <costList>
                 <WoodLog_Acacia>3</WoodLog_Acacia>
               </costList>
-              <designatorDropdown>EW_Designator_WoodPlankFloor</designatorDropdown>
             </TerrainDef>
           </value>
         </li>
@@ -54,10 +54,10 @@
               </statBases>
               <designationHotKey>Misc4</designationHotKey>
               <destroyOnBombDamageThreshold>35</destroyOnBombDamageThreshold>
+              <designatorDropdown>EW_Designator_Bridge</designatorDropdown>
               <costList>
                 <WoodLog_Acacia>12</WoodLog_Acacia>
               </costList>
-              <designatorDropdown>EW_Designator_Bridge</designatorDropdown>
             </TerrainDef>
           </value>
         </li>

@@ -54,6 +54,7 @@ A Woodworking table is available to paint wood or convert specific types of wood
   [*]Caravan Adventures
   [*]Caravan Equipment (Continued)
   [*]Caravan Gear
+  [*]Children, school and learning
   [*]Coal Expanded (Continued)
   [*]Cosmere - Resources
   [*]Erin's Cottage Collection
@@ -63,6 +64,7 @@ A Woodworking table is available to paint wood or convert specific types of wood
   [*]Fishing Village Decor and Props (Continued)
   [*]GUILD FACTION ADD-ON - Isekai RPG Leveling
   [*]ISEKAI RPG LEVELING
+  [*]Nature's Pretty Sweet: Biomes
   [*]Outland - Furniture &amp; Decor
   [*]Rimsenal - Augmented Vanilla Pack
   [*]RoughBarricade (Continued)
@@ -110,10 +112,12 @@ Alternatively, mod content is expressed using LoadFolders.xml in the mod folder.
     <li>acutus.atmosphereoverhaul.release</li>
     <li>argon.expandedmaterials.metals</li>
     <li>cryptiklemur.cosmere.resources</li>
+    <li>dylan.csl</li>
     <li>erin.cottagecollection</li>
     <li>erin.cottagecollection</li>
     <li>fox.simplelearning</li>
     <li>gunmar.tribalwarriorset</li>
+    <li>hali.npsbiomes</li>
     <li>iforgotmysocks.caravanadventures</li>
     <li>jamaicancastle.rf.fertilefields</li>
     <li>jelly.caravangear</li>
